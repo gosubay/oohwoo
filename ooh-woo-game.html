@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>OOH WOO</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #1a1a2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+    touch-action: none;
+  }
+  #gameWrapper {
+    position: relative;
+    width: 390px;
+    height: 844px;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+  }
+  #ui {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+  }
+  .screen {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    text-align: center;
+    padding: 30px;
+  }
+  .screen.hidden { display: none; }
+  .title {
+    font-size: 56px;
+    font-weight: 900;
+    color: #FFD700;
+    text-shadow: 3px 3px 0 #8B6914, 0 0 30px #FFD700;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    font-size: 18px;
+    color: #90EE90;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 0 #2d5a2d;
+  }
+  .song-card {
+    background: linear-gradient(135deg, #2d6a4f, #1b4332);
+    border: 3px solid #52b788;
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin: 10px 0;
+    cursor: pointer;
+    pointer-events: all;
+    transition: transform 0.1s, box-shadow 0.1s;
+    width: 280px;
+    box-shadow: 0 4px 15px rgba(82,183,136,0.3);
+  }
+  .song-card:active { transform: scale(0.96); }
+  .song-card h3 { font-size: 20px; color: #FFD700; margin-bottom: 4px; }
+  .song-card p { font-size: 13px; color: #95d5b2; }
+  .btn {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #1a1a1a;
+    border: none;
+    border-radius: 50px;
+    padding: 16px 40px;
+    font-size: 22px;
+    font-weight: 900;
+    cursor: pointer;
+    pointer-events: all;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(255,165,0,0.5);
+    transition: transform 0.1s;
+    letter-spacing: 1px;
+  }
+  .btn:active { transform: scale(0.95); }
+  .btn.secondary {
+    background: linear-gradient(135deg, #52b788, #2d6a4f);
+    color: white;
+    box-shadow: 0 4px 15px rgba(82,183,136,0.4);
+  }
+  #scoreDisplay {
+    position: absolute;
+    top: 20px;
+    left: 0; right: 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.5);
+    pointer-events: none;
+  }
+  #pitchMeter {
+    position: absolute;
+    right: 12px;
+    top: 80px;
+    bottom: 80px;
+    width: 16px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 8px;
+    border: 2px solid rgba(255,255,255,0.2);
+    overflow: hidden;
+    pointer-events: none;
+  }
+  #pitchFill {
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    background: linear-gradient(to top, #FF4444, #FFD700, #00FF88);
+    border-radius: 6px;
+    transition: height 0.05s;
+  }
+  #pitchDot {
+    position: absolute;
+    left: -3px; right: -3px;
+    height: 6px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0 0 8px white;
+  }
+  #noteHint {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+    pointer-events: none;
+    background: rgba(0,0,0,0.3);
+    padding: 4px 10px;
+    border-radius: 20px;
+  }
+  #micStatus {
+    position: absolute;
+    bottom: 20px;
+    left: 0; right: 0;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    pointer-events: none;
+  }
+  .score-big {
+    font-size: 72px;
+    font-weight: 900;
+    color: #FFD700;
+    text-shadow: 3px 3px 0 #8B6914;
+  }
+  .score-label {
+    font-size: 18px;
+    color: #90EE90;
+    margin-bottom: 5px;
+  }
+  #celebrate { font-size: 50px; margin: 10px; }
+  .perfect-flash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: 900;
+    color: #FFD700;
+    text-shadow: 0 0 20px #FFD700;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+</style>
+</head>
+<body>
+<div id="gameWrapper">
+  <canvas id="gameCanvas"></canvas>
+  <div id="ui">
+    <!-- Song Select -->
+    <div class="screen" id="screenSelect">
+      <div class="title">OOH WOO</div>
+      <div class="subtitle">🎤 Sing to fly the bird!</div>
+      <div class="song-card" id="btnTwinkle">
+        <h3>⭐ Twinkle Twinkle</h3>
+        <p>Beginner · 16 pipes · 1:00</p>
+      </div>
+      <!-- Vocal range indicator + recalibrate -->
+      <div style="font-size:13px;color:rgba(255,255,255,0.55);margin-top:16px;text-align:center;line-height:2;">
+        🎤 Voice: <span id="rangeDisplay" style="color:#90EE90;font-weight:bold;">not set</span><br>
+        <span id="btnRecal" style="color:#52b788;cursor:pointer;pointer-events:all;text-decoration:underline;font-size:12px;">🔧 Set up my voice</span>
+      </div>
+
+      <!-- Live mic tester -->
+      <div id="micTester" style="margin-top:24px;width:280px;background:rgba(0,0,0,0.5);border:2px solid #52b788;border-radius:16px;padding:14px 18px;font-size:12px;font-family:monospace;color:#0f0;line-height:2;pointer-events:none;">
+        <div style="color:#95d5b2;font-family:sans-serif;font-size:13px;font-weight:bold;margin-bottom:4px;">🎤 Mic Test — sing now!</div>
+        <div id="mtRms">RMS: —</div>
+        <div id="mtHz">Hz: —</div>
+        <div id="mtNote">Note: —</div>
+        <!-- Volume bar -->
+        <div style="margin-top:6px;background:rgba(255,255,255,0.1);border-radius:4px;height:8px;overflow:hidden;">
+          <div id="mtVolBar" style="height:8px;width:0%;background:linear-gradient(to right,#00ff88,#ffd700,#ff4444);border-radius:4px;transition:width 0.05s;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vocal Range Calibration -->
+    <div class="screen hidden" id="screenCalibrate" style="background:none;justify-content:space-between;padding:0;">
+
+      <!-- TOP BAR: title + bubbles -->
+      <div style="width:100%;background:linear-gradient(to bottom,rgba(0,0,0,0.85) 80%,transparent);padding:12px 16px 20px;text-align:center;">
+        <div style="font-size:16px;font-weight:900;color:#FFD700;letter-spacing:2px;margin-bottom:8px;">🎤 SING THE SCALE!</div>
+        <div id="calBubbles" style="display:flex;gap:4px;justify-content:center;flex-wrap:nowrap;">
+          <!-- filled by JS -->
+        </div>
+      </div>
+
+      <!-- BOTTOM PILL: ring + note + volume -->
+      <div style="width:100%;background:linear-gradient(to top,rgba(0,0,0,0.85) 80%,transparent);padding:20px 20px 14px;">
+        <div style="display:flex;align-items:center;gap:14px;">
+          <!-- ring -->
+          <div style="position:relative;width:56px;height:56px;flex-shrink:0;">
+            <svg width="56" height="56" style="transform:rotate(-90deg)">
+              <circle cx="28" cy="28" r="23" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="6"/>
+              <circle id="calRing" cx="28" cy="28" r="23" fill="none" stroke="#FFD700" stroke-width="6"
+                stroke-dasharray="144.5" stroke-dashoffset="144.5" style="transition:stroke-dashoffset 0.1s;"/>
+            </svg>
+            <div id="calRingLabel" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:16px;font-weight:900;color:white;">?</div>
+          </div>
+          <!-- note info -->
+          <div style="flex:1;">
+            <div id="calInstruction" style="font-size:26px;font-weight:900;color:#FFD700;line-height:1;">Sing: Do</div>
+            <div id="calNote" style="font-size:12px;color:#95d5b2;margin:3px 0;">—</div>
+            <div style="background:rgba(255,255,255,0.12);border-radius:4px;height:7px;overflow:hidden;">
+              <div id="calVolBar" style="height:7px;width:0%;background:linear-gradient(to right,#00ff88,#ffd700);border-radius:4px;transition:width 0.05s;"></div>
+            </div>
+            <div id="calHint" style="font-size:11px;color:rgba(255,255,255,0.45);margin-top:3px;">Sing louder to start</div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:10px;">
+          <button class="btn secondary" id="btnSkipCal" style="font-size:13px;padding:8px 24px;pointer-events:all;">Skip (use defaults)</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Gameplay HUD -->
+    <div class="screen hidden" id="screenGame" style="background:none; pointer-events:none;">
+      <div id="scoreDisplay">0</div>
+      <div id="pitchMeter"><div id="pitchFill"></div><div id="pitchDot" style="bottom:50%"></div></div>
+      <div id="noteHint">🎵 —</div>
+      <div id="micStatus">🎤 Initializing mic...</div>
+      <div id="micIndicator" style="position:absolute;top:60px;right:35px;width:10px;height:10px;border-radius:50%;background:#555;box-shadow:0 0 6px #555;transition:background 0.3s;"></div>
+      <div id="debugBox" style="position:absolute;bottom:55px;left:10px;right:10px;background:rgba(0,0,0,0.6);color:#0f0;font-size:11px;font-family:monospace;padding:6px 10px;border-radius:8px;line-height:1.8;">debug loading...</div>
+    </div>
+
+    <!-- Game Over -->
+    <div class="screen hidden" id="screenOver">
+      <div style="font-size:50px; margin-bottom:10px;">💥</div>
+      <div class="title" style="font-size:38px;">GAME OVER</div>
+      <div class="score-label">Score</div>
+      <div class="score-big" id="finalScore">0</div>
+      <div style="font-size:14px; color:#95d5b2; margin:10px 0 25px;">pipes cleared</div>
+      <button class="btn" id="btnRestart">Try Again</button>
+      <button class="btn secondary" id="btnMenu">Song Select</button>
+    </div>
+
+    <!-- Complete -->
+    <div class="screen hidden" id="screenComplete">
+      <div id="celebrate">🎉🐦🎉</div>
+      <div class="title" style="font-size:36px; color:#90EE90;">SONG COMPLETE!</div>
+      <div class="score-label" style="margin-top:15px;">Final Score</div>
+      <div class="score-big" id="completeScore">0</div>
+      <div style="font-size:14px; color:#95d5b2; margin:10px 0 25px;">pipes cleared</div>
+      <button class="btn" id="btnPlayAgain">Play Again</button>
+      <button class="btn secondary" id="btnMenu2">Song Select</button>
+    </div>
+
+    <div class="perfect-flash" id="perfectFlash">PERFECT! +2</div>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// SONG DATA — Twinkle Twinkle Little Star
+// pitchRatio: 0=bottom, 1=top of play field
+// duration: beats (at 120bpm = 0.5s per beat)
+// ============================================================
+const TWINKLE_NOTES = [
+  // C4=0.0  D4=0.14  E4=0.29  F4=0.43  G4=0.57  A4=0.71  B4=0.86  C5=1.0
+  // "Twin-kle twin-kle lit-tle star"
+  {note:'C4', ratio:0.00, beats:1}, {note:'C4', ratio:0.00, beats:1},
+  {note:'G4', ratio:0.57, beats:1}, {note:'G4', ratio:0.57, beats:1},
+  {note:'A4', ratio:0.71, beats:1}, {note:'A4', ratio:0.71, beats:1},
+  {note:'G4', ratio:0.57, beats:2},
+  // "how I won-der what you are"
+  {note:'F4', ratio:0.43, beats:1}, {note:'F4', ratio:0.43, beats:1},
+  {note:'E4', ratio:0.29, beats:1}, {note:'E4', ratio:0.29, beats:1},
+  {note:'D4', ratio:0.14, beats:1}, {note:'D4', ratio:0.14, beats:1},
+  {note:'C4', ratio:0.00, beats:2},
+  // "up a-bove the world so high"
+  {note:'G4', ratio:0.57, beats:1}, {note:'G4', ratio:0.57, beats:1},
+  {note:'F4', ratio:0.43, beats:1}, {note:'F4', ratio:0.43, beats:1},
+  {note:'E4', ratio:0.29, beats:1}, {note:'E4', ratio:0.29, beats:1},
+  {note:'D4', ratio:0.14, beats:2},
+  // "like a dia-mond in the sky"
+  {note:'G4', ratio:0.57, beats:1}, {note:'G4', ratio:0.57, beats:1},
+  {note:'F4', ratio:0.43, beats:1}, {note:'F4', ratio:0.43, beats:1},
+  {note:'E4', ratio:0.29, beats:1}, {note:'E4', ratio:0.29, beats:1},
+  {note:'D4', ratio:0.14, beats:2},
+  // "Twin-kle twin-kle lit-tle star"
+  {note:'C4', ratio:0.00, beats:1}, {note:'C4', ratio:0.00, beats:1},
+  {note:'G4', ratio:0.57, beats:1}, {note:'G4', ratio:0.57, beats:1},
+  {note:'A4', ratio:0.71, beats:1}, {note:'A4', ratio:0.71, beats:1},
+  {note:'G4', ratio:0.57, beats:2},
+  // "how I won-der what you are"
+  {note:'F4', ratio:0.43, beats:1}, {note:'F4', ratio:0.43, beats:1},
+  {note:'E4', ratio:0.29, beats:1}, {note:'E4', ratio:0.29, beats:1},
+  {note:'D4', ratio:0.14, beats:1}, {note:'D4', ratio:0.14, beats:1},
+  {note:'C4', ratio:0.00, beats:2},
+];
+
+// Build pipe schedule from notes
+// Each note with beats >= 1 gets a pipe (multi-beat notes get one pipe at their first beat)
+function buildPipes(notes, bps) {
+  const pipes = [];
+  let time = 0;
+  let seen = new Set();
+  for (let i = 0; i < notes.length; i++) {
+    const n = notes[i];
+    // Only create pipe if different from prev or 2+ beats gap
+    pipes.push({ spawnTime: time, ratio: n.ratio, note: n.note, beats: n.beats });
+    time += n.beats / bps;
+  }
+  return pipes;
+}
+
+// ============================================================
+// GAME
+// ============================================================
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+const wrapper = document.getElementById('gameWrapper');
+
+const W = 390, H = 844;
+canvas.width = W;
+canvas.height = H;
+
+// Screens
+const screens = {
+  select: document.getElementById('screenSelect'),
+  calibrate: document.getElementById('screenCalibrate'),
+  game: document.getElementById('screenGame'),
+  over: document.getElementById('screenOver'),
+  complete: document.getElementById('screenComplete'),
+};
+function showScreen(name) {
+  Object.keys(screens).forEach(k => screens[k].classList.add('hidden'));
+  screens[name].classList.remove('hidden');
+}
+
+// UI elements
+const scoreDisplay = document.getElementById('scoreDisplay');
+const pitchFill = document.getElementById('pitchFill');
+const pitchDot = document.getElementById('pitchDot');
+const noteHint = document.getElementById('noteHint');
+const micStatus = document.getElementById('micStatus');
+const perfectFlash = document.getElementById('perfectFlash');
+const micIndicator = document.getElementById('micIndicator');
+
+function setMicIndicator(state) {
+  // state: 'off' | 'ready' | 'active'
+  const colors = { off: '#555', ready: '#FFD700', active: '#00FF88' };
+  const c = colors[state] || '#555';
+  micIndicator.style.background = c;
+  micIndicator.style.boxShadow = `0 0 8px ${c}`;
+}
+
+// ============================================================
+// AUDIO / PITCH DETECTION
+// ============================================================
+let audioCtx = null, analyser = null, pitchBuffer = null;
+let micStream = null;
+let currentPitch = -1; // Hz, -1 = silence
+let currentRatio = 0.5; // 0-1 pitch ratio for display
+let micReady = false;
+
+const NOTE_FREQS = {
+  'C4': 261.63, 'D4': 293.66, 'E4': 329.63,
+  'F4': 349.23, 'G4': 392.00, 'A4': 440.00,
+  'B4': 493.88, 'C5': 523.25,
+};
+const MIN_FREQ = 100, MAX_FREQ = 600; // singing range (100Hz covers low male voice, 600Hz covers high female)
+
+async function initMic() {
+  try {
+    micStatus.textContent = '🎤 Requesting microphone...';
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+    micStream = stream;
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    // Resume in case browser suspended it (Chrome autoplay policy)
+    if (audioCtx.state === 'suspended') await audioCtx.resume();
+    analyser = audioCtx.createAnalyser();
+    analyser.fftSize = 2048;
+    pitchBuffer = new Float32Array(analyser.fftSize);
+    const src = audioCtx.createMediaStreamSource(stream);
+    src.connect(analyser);
+    micReady = true;
+    setMicIndicator('ready');
+    console.log('Mic ready, AudioContext state:', audioCtx.state);
+  } catch (e) {
+    micReady = false;
+    setMicIndicator('off');
+    console.warn('Mic error:', e);
+  }
+}
+
+async function ensureMicRunning() {
+  if (!micReady) return;
+  if (audioCtx && audioCtx.state === 'suspended') {
+    await audioCtx.resume();
+    console.log('AudioContext resumed:', audioCtx.state);
+  }
+}
+
+let debugRms = 0, debugHz = 0, debugAcMax = 0;
+
+function detectPitch() {
+  if (!micReady || !analyser) return -1;
+  analyser.getFloatTimeDomainData(pitchBuffer);
+
+  // RMS silence check
+  let rms = 0;
+  for (let i = 0; i < pitchBuffer.length; i++) rms += pitchBuffer[i] * pitchBuffer[i];
+  rms = Math.sqrt(rms / pitchBuffer.length);
+  debugRms = rms;
+  if (rms < 0.005) { debugHz = 0; return -1; }
+
+  const sampleRate = audioCtx.sampleRate;
+  const buf = pitchBuffer;
+  const SIZE = buf.length;
+
+  // Lag range covering 60Hz–1200Hz (wide voice range)
+  const minLag = Math.floor(sampleRate / 1200);
+  const maxLag = Math.floor(sampleRate / 60);
+
+  // Normalized autocorrelation (YIN-inspired)
+  // Compute difference function d[tau] = sum (x[i] - x[i+tau])^2
+  // Then find first tau where d is a local minimum below threshold
+  let bestLag = -1, bestCorr = -1;
+
+  // Use unnormalized autocorrelation but normalize by energy
+  const energy = rms * rms * SIZE;
+  for (let lag = minLag; lag <= maxLag && lag < SIZE / 2; lag++) {
+    let s = 0;
+    for (let i = 0; i < SIZE - lag; i++) s += buf[i] * buf[i + lag];
+    const corr = s / energy;
+    if (corr > bestCorr) { bestCorr = corr; bestLag = lag; }
+  }
+
+  debugAcMax = bestCorr;
+  if (bestLag < 1 || bestCorr < 0.1) { debugHz = -1; return -1; }
+
+  // Parabolic interpolation for sub-sample accuracy
+  const prev = bestLag > minLag ? (() => { let s=0; for(let i=0;i<SIZE-(bestLag-1);i++) s+=buf[i]*buf[i+bestLag-1]; return s/energy; })() : bestCorr;
+  const next = bestLag < maxLag ? (() => { let s=0; for(let i=0;i<SIZE-(bestLag+1);i++) s+=buf[i]*buf[i+bestLag+1]; return s/energy; })() : bestCorr;
+  const refinedLag = bestLag + 0.5 * (next - prev) / (2 * bestCorr - prev - next + 1e-9);
+
+  const freq = sampleRate / refinedLag;
+  debugHz = freq;
+
+  if (freq < MIN_FREQ || freq > MAX_FREQ) return -1;
+  return freq;
+}
+
+// Player's personal vocal range (calibrated or defaults)
+let playerMinFreq = parseFloat(localStorage.getItem('oohwoo_minFreq')) || 150;
+let playerMaxFreq = parseFloat(localStorage.getItem('oohwoo_maxFreq')) || 550;
+
+function freqToRatio(freq) {
+  if (freq < 0) return -1;
+  return Math.max(0, Math.min(1, (freq - playerMinFreq) / (playerMaxFreq - playerMinFreq)));
+}
+
+// ============================================================
+// CALIBRATION — Do Re Mi scale (1.5-octave range)
+// ============================================================
+const SOLFEGE = [
+  { label: 'Do',  ratio: 1.000 },              // semitone 0
+  { label: 'Re',  ratio: 1.1225 },             // semitone 2
+  { label: 'Mi',  ratio: 1.2599 },             // semitone 4
+  { label: 'Fa',  ratio: 1.3348 },             // semitone 5
+  { label: 'Sol', ratio: 1.4983 },             // semitone 7
+  { label: 'La',  ratio: 1.6818 },             // semitone 9
+  { label: 'Ti',  ratio: 1.8877 },             // semitone 11
+  { label: 'Do',  ratio: 2.000  },             // semitone 12
+  { label: 'Re',  ratio: 2.2449 },             // semitone 14
+  { label: 'Mi',  ratio: 2.5198 },             // semitone 16
+  { label: 'Fa',  ratio: 2.6697 },             // semitone 17
+  { label: 'Sol', ratio: 2.9966 },             // semitone 19
+];
+const CAL_HOLD_SECS = 1.0;
+const CAL_CIRCUMFERENCE = 144.5; // 2π×23
+
+let calStep = 0;
+let calHoldTimer = 0;
+let calSamples = [];
+let calBaseFreq = 0;
+let calAnimId = null;
+let calBubbleEls = [];
+let calBirdY = 762; // = PLAY_BOT - BIRD_R, set properly in startCalibration()
+let calBirdAngle = 0;
+let calDecoPipes = [];
+let isCalibrating = false;
+
+function buildCalBubbles() {
+  const container = document.getElementById('calBubbles');
+  container.innerHTML = '';
+  calBubbleEls = [];
+  SOLFEGE.forEach((s, i) => {
+    const el = document.createElement('div');
+    el.textContent = s.label;
+    el.style.cssText = 'width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;border:2px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.4);background:rgba(0,0,0,0.3);transition:all 0.2s;';
+    container.appendChild(el);
+    calBubbleEls.push(el);
+  });
+}
+
+function updateCalBubbles() {
+  calBubbleEls.forEach((el, i) => {
+    if (i < calStep) {
+      el.style.background = '#2d6a4f';
+      el.style.borderColor = '#52b788';
+      el.style.color = '#90EE90';
+    } else if (i === calStep) {
+      el.style.background = 'linear-gradient(135deg,#FFD700,#FFA500)';
+      el.style.borderColor = '#FFD700';
+      el.style.color = '#1a1a1a';
+      el.style.transform = 'scale(1.2)';
+      el.style.boxShadow = '0 0 12px #FFD700';
+    } else {
+      el.style.background = 'rgba(0,0,0,0.3)';
+      el.style.borderColor = 'rgba(255,255,255,0.2)';
+      el.style.color = 'rgba(255,255,255,0.4)';
+      el.style.transform = 'scale(1)';
+      el.style.boxShadow = 'none';
+    }
+  });
+}
+
+function calStepTargetY() {
+  const t = calStep / (SOLFEGE.length - 1);
+  return PLAY_BOT - BIRD_R - t * (PLAY_BOT - PLAY_TOP - 2 * BIRD_R);
+}
+
+function drawCalibrationCanvas(dt) {
+  bgOffset1 += PIPE_SPEED * dt;
+  bgOffset2 += PIPE_SPEED * 0.5 * dt;
+  bgOffset3 += PIPE_SPEED * 0.2 * dt;
+  drawBackground();
+
+  // Scroll decorative pipes
+  for (const p of calDecoPipes) p.x -= PIPE_SPEED * dt;
+  calDecoPipes = calDecoPipes.filter(p => p.x > -PIPE_W - 20);
+  const lastX = calDecoPipes.length ? Math.max(...calDecoPipes.map(p => p.x)) : W;
+  if (calDecoPipes.length < 4) {
+    const t = (calStep + calDecoPipes.length) / (SOLFEGE.length - 1);
+    calDecoPipes.push({ x: lastX + 220, ratio: Math.max(0.05, Math.min(0.95, t)), passed: true });
+  }
+  for (const p of calDecoPipes) drawPipe(p);
+
+  // Bird smoothly rises toward target for current step
+  const targetY = calStepTargetY();
+  const diff = targetY - calBirdY;
+  calBirdY += diff * (1 - Math.pow(0.01, dt));
+  calBirdAngle = Math.max(-0.4, Math.min(0.4, -diff * 0.003));
+  birdWingPhase += dt * 10;
+  drawBird(birdX, calBirdY, calBirdAngle);
+}
+
+function startCalibration() {
+  calStep = 0;
+  calHoldTimer = 0;
+  calSamples = [];
+  calBaseFreq = 0;
+  calBirdY = PLAY_BOT - BIRD_R;
+  calDecoPipes = [];
+  isCalibrating = true;
+  buildCalBubbles();
+  updateCalBubbles();
+  showScreen('calibrate');
+  if (calAnimId) cancelAnimationFrame(calAnimId);
+  let last = null;
+  calAnimId = requestAnimationFrame(function tick(ts) {
+    if (state !== 'select') return;
+    const dt = last ? Math.min((ts - last) / 1000, 0.1) : 0;
+    last = ts;
+    drawCalibrationCanvas(dt);
+    runCalibrationFrame(dt);
+    calAnimId = requestAnimationFrame(tick);
+  });
+}
+
+function runCalibrationFrame(dt) {
+  const pitch = detectPitch();
+  const vol = Math.min(100, debugRms * 200);
+
+  const elNote  = document.getElementById('calNote');
+  const elVol   = document.getElementById('calVolBar');
+  const elRing  = document.getElementById('calRing');
+  const elLabel = document.getElementById('calRingLabel');
+  const elHint  = document.getElementById('calHint');
+  const elInstr = document.getElementById('calInstruction');
+
+  const solfege = SOLFEGE[calStep];
+  elInstr.textContent = 'Sing: ' + solfege.label;
+  elVol.style.width = vol + '%';
+
+  if (pitch > 0 && debugRms > 0.02) {
+    calSamples.push(pitch);
+    if (calSamples.length > 20) calSamples.shift();
+    elNote.textContent = getCurrentNoteName(pitch);
+    calHoldTimer += dt;
+    elHint.textContent = 'Hold it…';
+
+    const progress = Math.min(1, calHoldTimer / CAL_HOLD_SECS);
+    elRing.style.strokeDashoffset = CAL_CIRCUMFERENCE * (1 - progress);
+    elLabel.textContent = calHoldTimer >= CAL_HOLD_SECS ? '✓' : Math.ceil(CAL_HOLD_SECS - calHoldTimer) || '✓';
+    elRing.style.stroke = '#FFD700';
+
+    if (calHoldTimer >= CAL_HOLD_SECS) {
+      const medFreq = calSamples.slice().sort((a,b)=>a-b)[Math.floor(calSamples.length/2)];
+      if (calStep === 0) calBaseFreq = medFreq;
+      calStep++;
+      calHoldTimer = 0;
+      calSamples = [];
+      elRing.style.strokeDashoffset = CAL_CIRCUMFERENCE;
+      elLabel.textContent = '?';
+      if (calStep >= SOLFEGE.length) {
+        finishCalibration();
+        return;
+      }
+      updateCalBubbles();
+    }
+  } else {
+    calHoldTimer = Math.max(0, calHoldTimer - dt * 2);
+    elNote.textContent = pitch > 0 ? getCurrentNoteName(pitch) : '—';
+    elHint.textContent = debugRms < 0.02 ? 'Sing louder to start' : 'Detecting…';
+    const progress = Math.min(1, calHoldTimer / CAL_HOLD_SECS);
+    elRing.style.strokeDashoffset = CAL_CIRCUMFERENCE * (1 - progress);
+    elLabel.textContent = calHoldTimer < 0.1 ? '?' : Math.ceil(CAL_HOLD_SECS - calHoldTimer);
+  }
+}
+
+function finishCalibration() {
+  cancelAnimationFrame(calAnimId);
+  // 1.5-octave range anchored to the user's Do, with headroom
+  const base = calBaseFreq || 220;
+  playerMinFreq = Math.round(base * 0.85);
+  playerMaxFreq = Math.round(base * Math.pow(2, 1.5) * 1.15);
+  localStorage.setItem('oohwoo_minFreq', playerMinFreq);
+  localStorage.setItem('oohwoo_maxFreq', playerMaxFreq);
+  console.log(`Calibrated: base=${Math.round(base)}Hz range=${playerMinFreq}–${playerMaxFreq}Hz`);
+  updateRangeDisplay();
+  isCalibrating = false;
+  showScreen('select');
+  startMicTester();
+  requestAnimationFrame(drawSelectBg);
+}
+
+// ============================================================
+// BACKGROUND RENDERING
+// ============================================================
+// Pre-generate background layers
+let bgOffset1 = 0, bgOffset2 = 0, bgOffset3 = 0;
+
+function drawBackground() {
+  // Sky gradient
+  const sky = ctx.createLinearGradient(0, 0, 0, H);
+  sky.addColorStop(0, '#87CEEB');
+  sky.addColorStop(0.5, '#98D8C8');
+  sky.addColorStop(1, '#228B22');
+  ctx.fillStyle = sky;
+  ctx.fillRect(0, 0, W, H);
+
+  // Sun
+  ctx.save();
+  ctx.globalAlpha = 0.8;
+  const sunGrad = ctx.createRadialGradient(60, 80, 5, 60, 80, 50);
+  sunGrad.addColorStop(0, '#FFD700');
+  sunGrad.addColorStop(1, 'rgba(255,215,0,0)');
+  ctx.fillStyle = sunGrad;
+  ctx.beginPath();
+  ctx.arc(60, 80, 50, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.globalAlpha = 1;
+  ctx.restore();
+
+  // Far trees (layer 1)
+  drawTreeLayer(bgOffset3, 0.3, '#1a5c1a', 60, 120, 80, 160);
+  // Mid trees (layer 2)
+  drawTreeLayer(bgOffset2, 0.5, '#228B22', 80, 160, 100, 200);
+  // Ground
+  ctx.fillStyle = '#2d5a1b';
+  ctx.fillRect(0, H - 120, W, 120);
+  ctx.fillStyle = '#3a7a24';
+  ctx.fillRect(0, H - 130, W, 20);
+  // Near grass
+  drawTreeLayer(bgOffset1, 1.0, '#1b4a0d', 40, 100, 60, 140);
+}
+
+function drawTreeLayer(offset, alpha, color, minW, maxW, minH, maxH) {
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  // Use deterministic positions based on offset
+  const spacing = 90;
+  const count = Math.ceil(W / spacing) + 2;
+  for (let i = -1; i < count; i++) {
+    const seed = i * 73 + 17;
+    const x = (i * spacing - (offset % (spacing))) + ((seed * 29) % 30) - 15;
+    const w = minW + (seed * 37 % (maxW - minW));
+    const h = minH + (seed * 53 % (maxH - minH));
+    const y = H - 110 - h;
+    ctx.fillStyle = color;
+    // Triangle tree
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(x - w/2, y + h);
+    ctx.lineTo(x + w/2, y + h);
+    ctx.closePath();
+    ctx.fill();
+    // Lighter top
+    ctx.fillStyle = lightenColor(color, 30);
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(x - w/3, y + h * 0.4);
+    ctx.lineTo(x + w/3, y + h * 0.4);
+    ctx.closePath();
+    ctx.fill();
+  }
+  ctx.restore();
+}
+
+function lightenColor(hex, amt) {
+  const num = parseInt(hex.slice(1), 16);
+  const r = Math.min(255, (num >> 16) + amt);
+  const g = Math.min(255, ((num >> 8) & 0xff) + amt);
+  const b = Math.min(255, (num & 0xff) + amt);
+  return `rgb(${r},${g},${b})`;
+}
+
+// ============================================================
+// GAME STATE
+// ============================================================
+let state = 'select'; // select | playing | dead | complete
+let score = 0;
+let birdY = H / 2;
+let birdVY = 0;
+let birdX = 100;
+let gameTime = 0;
+let pipes = [];
+let pipeSchedule = [];
+let nextPipeIdx = 0;
+let bps = 2; // beats per second (120bpm)
+let lastTime = null;
+let animId = null;
+let perfectTimeout = null;
+
+const PIPE_W = 60;
+const PIPE_GAP = 200; // px gap height
+const PIPE_SPEED = 180; // px/s
+const PIPE_SPAWN_X = W + 80;
+const PLAY_TOP = 60; // top dead zone
+const PLAY_BOT = H - 60; // bottom dead zone
+const PLAY_H = PLAY_BOT - PLAY_TOP;
+const BIRD_R = 22;
+const GRAVITY = 350; // px/s² when silent
+const PITCH_FORCE = 800; // upward force from pitch
+
+let pitchRatioSmooth = 0.5;
+let targetBirdY = H / 2;
+let birdAngle = 0;
+let birdWingPhase = 0;
+
+// Fallback: keyboard / touch control when mic unavailable
+let keyHeld = false;
+document.addEventListener('keydown', e => { if (e.code === 'Space') { e.preventDefault(); keyHeld = true; } });
+document.addEventListener('keyup',   e => { if (e.code === 'Space') keyHeld = false; });
+canvas.addEventListener('touchstart', e => { e.preventDefault(); keyHeld = true; }, { passive: false });
+canvas.addEventListener('touchend',   e => { e.preventDefault(); keyHeld = false; }, { passive: false });
+canvas.addEventListener('mousedown',  e => { keyHeld = true; });
+canvas.addEventListener('mouseup',    e => { keyHeld = false; });
+
+function startGame(song) {
+  score = 0;
+  birdY = H / 2;
+  birdVY = 0;
+  gameTime = 0;
+  pipes = [];
+  pipeSchedule = buildPipes(TWINKLE_NOTES, bps);
+  nextPipeIdx = 0;
+  pitchRatioSmooth = 0.5;
+  bgOffset1 = bgOffset2 = bgOffset3 = 0;
+  showScreen('game');
+  scoreDisplay.textContent = '0';
+  state = 'playing';
+  lastTime = null;
+  if (animId) cancelAnimationFrame(animId);
+  animId = requestAnimationFrame(gameLoop);
+  ensureMicRunning();
+}
+
+function gameOver() {
+  state = 'dead';
+  document.getElementById('finalScore').textContent = score;
+  setTimeout(() => showScreen('over'), 600);
+}
+
+function songComplete() {
+  state = 'complete';
+  document.getElementById('completeScore').textContent = score;
+  showScreen('complete');
+}
+
+function showPerfect() {
+  perfectFlash.style.opacity = '1';
+  clearTimeout(perfectTimeout);
+  perfectTimeout = setTimeout(() => { perfectFlash.style.opacity = '0'; }, 600);
+}
+
+// ============================================================
+// PIPE RENDERING
+// ============================================================
+function drawPipe(pipe) {
+  const gapCenter = PLAY_TOP + (1 - pipe.ratio) * PLAY_H;
+  const topH = gapCenter - PIPE_GAP / 2;
+  const botY = gapCenter + PIPE_GAP / 2;
+  const botH = H - botY;
+  const x = pipe.x;
+
+  // Vine/pipe gradient
+  const vineGrad = ctx.createLinearGradient(x, 0, x + PIPE_W, 0);
+  vineGrad.addColorStop(0, '#1a5c1a');
+  vineGrad.addColorStop(0.3, '#2d8b2d');
+  vineGrad.addColorStop(0.7, '#3da03d');
+  vineGrad.addColorStop(1, '#1a5c1a');
+
+  // Top pipe
+  if (topH > 0) {
+    ctx.fillStyle = vineGrad;
+    ctx.fillRect(x, 0, PIPE_W, topH);
+    // Cap
+    ctx.fillStyle = '#4cbb4c';
+    ctx.beginPath();
+    ctx.roundRect(x - 8, topH - 20, PIPE_W + 16, 24, 6);
+    ctx.fill();
+    // Vines detail
+    for (let i = 0; i < 3; i++) {
+      ctx.strokeStyle = 'rgba(0,100,0,0.3)';
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      const vx = x + 12 + i * 18;
+      ctx.moveTo(vx, 0);
+      ctx.lineTo(vx + 5, topH);
+      ctx.stroke();
+    }
+    // Hanging leaves
+    ctx.fillStyle = '#2d8b2d';
+    for (let i = 0; i < 4; i++) {
+      const lx = x + 8 + i * 14;
+      const ly = topH + 4 + Math.sin(i * 1.5) * 6;
+      ctx.beginPath();
+      ctx.ellipse(lx, ly, 7, 12, -0.3 + i * 0.2, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  // Bottom pipe
+  if (botH > 0) {
+    ctx.fillStyle = vineGrad;
+    ctx.fillRect(x, botY, PIPE_W, botH);
+    // Cap
+    ctx.fillStyle = '#4cbb4c';
+    ctx.beginPath();
+    ctx.roundRect(x - 8, botY - 4, PIPE_W + 16, 24, 6);
+    ctx.fill();
+    for (let i = 0; i < 3; i++) {
+      ctx.strokeStyle = 'rgba(0,100,0,0.3)';
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      const vx = x + 12 + i * 18;
+      ctx.moveTo(vx, botY);
+      ctx.lineTo(vx + 5, H);
+      ctx.stroke();
+    }
+  }
+
+  // Target zone indicator (subtle)
+  if (!pipe.passed) {
+    const alpha = Math.max(0, 1 - Math.abs(pipe.x - birdX) / 300);
+    ctx.save();
+    ctx.globalAlpha = alpha * 0.25;
+    ctx.fillStyle = '#FFD700';
+    ctx.fillRect(x, gapCenter - PIPE_GAP / 2, PIPE_W, PIPE_GAP);
+    ctx.restore();
+  }
+}
+
+// ============================================================
+// BIRD RENDERING
+// ============================================================
+function drawBird(x, y, angle) {
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.rotate(angle);
+
+  // Shadow
+  ctx.save();
+  ctx.globalAlpha = 0.2;
+  ctx.fillStyle = '#000';
+  ctx.beginPath();
+  ctx.ellipse(4, BIRD_R + 5, BIRD_R * 0.8, 6, 0, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.restore();
+
+  // Body
+  const bodyGrad = ctx.createRadialGradient(-4, -4, 2, 0, 0, BIRD_R);
+  bodyGrad.addColorStop(0, '#FF6B35');
+  bodyGrad.addColorStop(0.6, '#E84F1D');
+  bodyGrad.addColorStop(1, '#C43B0F');
+  ctx.fillStyle = bodyGrad;
+  ctx.beginPath();
+  ctx.ellipse(0, 0, BIRD_R, BIRD_R * 0.85, 0, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Wings (animated)
+  const wingAnim = Math.sin(birdWingPhase) * 0.4;
+  ctx.fillStyle = '#FF8C55';
+  // Left wing
+  ctx.save();
+  ctx.rotate(wingAnim - 0.3);
+  ctx.beginPath();
+  ctx.ellipse(-BIRD_R * 0.6, -5, BIRD_R * 0.9, 8, -0.5, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.restore();
+
+  // Eye
+  ctx.fillStyle = 'white';
+  ctx.beginPath();
+  ctx.arc(10, -8, 7, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.fillStyle = '#1a1a1a';
+  ctx.beginPath();
+  ctx.arc(12, -8, 4, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.fillStyle = 'white';
+  ctx.beginPath();
+  ctx.arc(13, -10, 1.5, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Beak
+  ctx.fillStyle = '#FFB347';
+  ctx.beginPath();
+  ctx.moveTo(BIRD_R - 2, -3);
+  ctx.lineTo(BIRD_R + 12, 0);
+  ctx.lineTo(BIRD_R - 2, 3);
+  ctx.closePath();
+  ctx.fill();
+
+  // Cheek blush
+  ctx.save();
+  ctx.globalAlpha = 0.4;
+  ctx.fillStyle = '#FF9999';
+  ctx.beginPath();
+  ctx.ellipse(6, 2, 7, 5, 0, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.restore();
+
+  ctx.restore();
+}
+
+// ============================================================
+// COLLISION
+// ============================================================
+function checkCollision(pipe) {
+  const gapCenter = PLAY_TOP + (1 - pipe.ratio) * PLAY_H;
+  const gapTop = gapCenter - PIPE_GAP / 2;
+  const gapBot = gapCenter + PIPE_GAP / 2;
+  const px = pipe.x, pw = PIPE_W;
+  const bx = birdX, by = birdY, br = BIRD_R - 4;
+
+  if (bx + br < px || bx - br > px + pw) return false;
+  if (by - br > gapTop && by + br < gapBot) return false;
+  return true;
+}
+
+function isPerfect(pipe) {
+  const gapCenter = PLAY_TOP + (1 - pipe.ratio) * PLAY_H;
+  return Math.abs(birdY - gapCenter) < 30;
+}
+
+// ============================================================
+// GAME LOOP
+// ============================================================
+function gameLoop(ts) {
+  if (!lastTime) lastTime = ts;
+  const dt = Math.min((ts - lastTime) / 1000, 0.05);
+  lastTime = ts;
+
+  if (state === 'playing') {
+    gameTime += dt;
+
+    // Pitch detection
+    const rawPitch = detectPitch();
+    const rawRatio = freqToRatio(rawPitch);
+    const micSinging = rawPitch > 0;
+    const isSinging = micSinging || (keyHeld && !micReady);
+
+    if (micSinging) {
+      pitchRatioSmooth += (rawRatio - pitchRatioSmooth) * 0.2;
+      currentRatio = pitchRatioSmooth;
+    } else if (keyHeld) {
+      pitchRatioSmooth = 0.7; // fixed mid-high when using fallback
+      currentRatio = 0.7;
+    }
+
+    // Bird physics
+    if (micSinging) {
+      const targetY = PLAY_TOP + (1 - pitchRatioSmooth) * PLAY_H;
+      const diff = targetY - birdY;
+      birdVY += diff * 8 * dt;
+      birdVY *= 0.85;
+      setMicIndicator('active');
+      micStatus.textContent = '🎤 ' + getCurrentNoteName(rawPitch);
+    } else if (keyHeld) {
+      birdVY -= 600 * dt;
+      birdVY *= 0.88;
+      setMicIndicator('off');
+      micStatus.textContent = '👆 Tap to fly (no mic)';
+    } else {
+      birdVY += GRAVITY * dt;
+      birdVY *= 0.98;
+      if (micReady) {
+        setMicIndicator('ready');
+        micStatus.textContent = '🎤 Mic ready — sing!';
+      } else {
+        setMicIndicator('off');
+        micStatus.textContent = '⚠️ Mic inactive — hold screen to fly';
+      }
+    }
+
+    birdY += birdVY * dt;
+    birdY = Math.max(PLAY_TOP + BIRD_R, Math.min(PLAY_BOT - BIRD_R, birdY));
+
+    // Bird angle and wings
+    birdAngle = Math.max(-0.4, Math.min(0.5, birdVY * 0.002));
+    birdWingPhase += dt * (isSinging ? 12 : 4);
+
+    // Scroll backgrounds at different speeds
+    bgOffset1 += PIPE_SPEED * dt;
+    bgOffset2 += PIPE_SPEED * 0.5 * dt;
+    bgOffset3 += PIPE_SPEED * 0.2 * dt;
+
+    // Spawn pipes from schedule
+    while (nextPipeIdx < pipeSchedule.length) {
+      const sched = pipeSchedule[nextPipeIdx];
+      if (gameTime >= sched.spawnTime) {
+        pipes.push({
+          x: PIPE_SPAWN_X,
+          ratio: sched.ratio,
+          note: sched.note,
+          passed: false,
+          scored: false,
+        });
+        nextPipeIdx++;
+      } else break;
+    }
+
+    // Move pipes
+    for (const pipe of pipes) {
+      pipe.x -= PIPE_SPEED * dt;
+    }
+
+    // Score + collision
+    for (const pipe of pipes) {
+      if (!pipe.passed && pipe.x + PIPE_W < birdX) {
+        pipe.passed = true;
+        if (isPerfect(pipe)) {
+          score += 2;
+          showPerfect();
+        } else {
+          score += 1;
+        }
+        scoreDisplay.textContent = score;
+      }
+      if (!pipe.passed && checkCollision(pipe)) {
+        gameOver();
+        break;
+      }
+    }
+
+    // Out of bounds (floor/ceiling already clamped, but check anyway)
+    if (birdY >= PLAY_BOT - BIRD_R && birdVY > 200) {
+      gameOver();
+    }
+
+    // Remove off-screen pipes
+    pipes = pipes.filter(p => p.x > -PIPE_W - 20);
+
+    // Song complete
+    if (nextPipeIdx >= pipeSchedule.length && pipes.length === 0) {
+      songComplete();
+    }
+
+    // Update pitch meter UI
+    const pct = isSinging ? currentRatio * 100 : 0;
+    pitchFill.style.height = pct + '%';
+    pitchDot.style.bottom = pct + '%';
+
+    // Note hint
+    if (pipes.length > 0) {
+      const next = pipes.find(p => !p.passed);
+      if (next) {
+        noteHint.textContent = '🎵 ' + next.note;
+      }
+    }
+
+    // Debug readout
+    const dbEl = document.getElementById('debugBox');
+    if (dbEl) {
+      const inRange = debugHz >= MIN_FREQ && debugHz <= MAX_FREQ;
+      dbEl.innerHTML =
+        `RMS: ${debugRms.toFixed(4)} ${debugRms > 0.005 ? '✓' : '✗ (too quiet)'}<br>` +
+        `Hz: ${debugHz > 0 ? Math.round(debugHz) : '—'} ${inRange ? '✓ IN RANGE' : debugHz > 0 ? `✗ out of ${MIN_FREQ}–${MAX_FREQ}Hz` : ''}<br>` +
+        `AC strength: ${debugAcMax.toFixed(3)} ${debugAcMax > 0.01 ? '✓' : '✗'}<br>` +
+        `Mic: ${micReady ? 'ready (' + (audioCtx ? audioCtx.state : '?') + ')' : 'NOT READY'}`;
+    }
+  }
+
+  // Draw
+  drawBackground();
+  for (const pipe of pipes) drawPipe(pipe);
+  if (state === 'playing' || state === 'dead') {
+    drawBird(birdX, birdY, birdAngle);
+  }
+  if (state === 'dead') {
+    ctx.save();
+    ctx.globalAlpha = 0.5;
+    ctx.fillStyle = 'red';
+    ctx.fillRect(0, 0, W, H);
+    ctx.restore();
+  }
+
+  animId = requestAnimationFrame(gameLoop);
+}
+
+function getCurrentNoteName(freq) {
+  if (freq < 0) return '—';
+  let best = '?', bestDiff = Infinity;
+  for (const [name, f] of Object.entries(NOTE_FREQS)) {
+    const d = Math.abs(freq - f);
+    if (d < bestDiff) { bestDiff = d; best = name; }
+  }
+  return best + ' (' + Math.round(freq) + 'Hz)';
+}
+
+// ============================================================
+// AUDIO SYNTHESIS — backing track
+// ============================================================
+let backingCtx = null;
+
+function playBackingTrack() {
+  try {
+    backingCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const bpm = 120;
+    const beatDur = 60 / bpm;
+    let t = backingCtx.currentTime + 0.3;
+
+    for (const note of TWINKLE_NOTES) {
+      const freq = NOTE_FREQS[note.note];
+      const dur = note.beats * beatDur * 0.85;
+
+      const osc = backingCtx.createOscillator();
+      const gain = backingCtx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(freq, t);
+      gain.gain.setValueAtTime(0, t);
+      gain.gain.linearRampToValueAtTime(0.15, t + 0.02);
+      gain.gain.linearRampToValueAtTime(0.1, t + dur * 0.7);
+      gain.gain.linearRampToValueAtTime(0, t + dur);
+      osc.connect(gain);
+      gain.connect(backingCtx.destination);
+      osc.start(t);
+      osc.stop(t + dur);
+
+      // Harmony
+      const osc2 = backingCtx.createOscillator();
+      const g2 = backingCtx.createGain();
+      osc2.type = 'triangle';
+      osc2.frequency.setValueAtTime(freq * 1.5, t);
+      g2.gain.setValueAtTime(0, t);
+      g2.gain.linearRampToValueAtTime(0.05, t + 0.02);
+      g2.gain.linearRampToValueAtTime(0, t + dur);
+      osc2.connect(g2);
+      g2.connect(backingCtx.destination);
+      osc2.start(t);
+      osc2.stop(t + dur);
+
+      t += note.beats * beatDur;
+    }
+  } catch (e) {
+    console.warn('Audio playback failed:', e);
+  }
+}
+
+function stopBackingTrack() {
+  if (backingCtx) {
+    backingCtx.close();
+    backingCtx = null;
+  }
+}
+
+// ============================================================
+// BUTTON WIRING
+// ============================================================
+document.getElementById('btnTwinkle').addEventListener('click', () => {
+  if (!micReady) initMic();
+  // If never calibrated, run calibration first; otherwise go straight to game
+  const hasCalibration = localStorage.getItem('oohwoo_minFreq');
+  if (!hasCalibration) {
+    startCalibration();
+  } else {
+    stopBackingTrack();
+    playBackingTrack();
+    startGame('twinkle');
+  }
+});
+
+document.getElementById('btnSkipCal').addEventListener('click', () => {
+  cancelAnimationFrame(calAnimId);
+  isCalibrating = false;
+  showScreen('select');
+  updateRangeDisplay();
+  startMicTester();
+  requestAnimationFrame(drawSelectBg);
+});
+document.getElementById('btnRestart').addEventListener('click', () => {
+  stopBackingTrack();
+  playBackingTrack();
+  startGame('twinkle');
+});
+document.getElementById('btnPlayAgain').addEventListener('click', () => {
+  stopBackingTrack();
+  playBackingTrack();
+  startGame('twinkle');
+});
+document.getElementById('btnMenu').addEventListener('click', () => {
+  stopBackingTrack();
+  state = 'select';
+  showScreen('select');
+});
+document.getElementById('btnMenu2').addEventListener('click', () => {
+  stopBackingTrack();
+  state = 'select';
+  showScreen('select');
+});
+
+// ============================================================
+// BOOT
+// ============================================================
+showScreen('select');
+initMic().then(startMicTester);
+
+function freqToNoteName(freq) {
+  // Returns closest note name like "C3", "G4" etc.
+  const notes = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+  const midi = Math.round(12 * Math.log2(freq / 440) + 69);
+  const octave = Math.floor(midi / 12) - 1;
+  const note = notes[((midi % 12) + 12) % 12];
+  return note + octave;
+}
+
+function voiceLabel(minHz, maxHz) {
+  // Give a friendly voice type label based on range
+  const mid = (minHz + maxHz) / 2;
+  if (mid < 180) return 'Bass 🎸';
+  if (mid < 230) return 'Baritone';
+  if (mid < 290) return 'Tenor';
+  if (mid < 350) return 'Alto';
+  if (mid < 430) return 'Mezzo-soprano';
+  return 'Soprano 🎵';
+}
+
+function updateRangeDisplay() {
+  const el = document.getElementById('rangeDisplay');
+  if (!el) return;
+  const hasCalibration = localStorage.getItem('oohwoo_minFreq');
+  if (!hasCalibration) {
+    el.textContent = 'not set up yet';
+    return;
+  }
+  const low = freqToNoteName(playerMinFreq);
+  const high = freqToNoteName(playerMaxFreq);
+  const label = voiceLabel(playerMinFreq, playerMaxFreq);
+  el.textContent = `${label} · ${low} → ${high}`;
+}
+updateRangeDisplay();
+
+document.getElementById('btnRecal').addEventListener('click', () => {
+  localStorage.removeItem('oohwoo_minFreq');
+  localStorage.removeItem('oohwoo_maxFreq');
+  startCalibration();
+});
+
+function startMicTester() {
+  const elRms  = document.getElementById('mtRms');
+  const elHz   = document.getElementById('mtHz');
+  const elNote = document.getElementById('mtNote');
+  const elVol  = document.getElementById('mtVolBar');
+  function tick() {
+    if (state !== 'select') return; // stop when game starts
+    const pitch = detectPitch();
+    const vol = Math.min(100, debugRms * 200);
+    elRms.textContent  = 'RMS: ' + debugRms.toFixed(4) + (debugRms > 0.005 ? ' ✓' : ' ✗ too quiet');
+    elHz.textContent   = 'Hz: '  + (debugHz > 0 ? Math.round(debugHz) + (debugHz >= MIN_FREQ && debugHz <= MAX_FREQ ? ' ✓' : ' ✗ out of range') : '—');
+    elNote.textContent = 'Note: ' + (pitch > 0 ? getCurrentNoteName(pitch) : '—');
+    elVol.style.width  = vol + '%';
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
+// Draw background on select screen
+function drawSelectBg() {
+  bgOffset1 += 0.3;
+  bgOffset2 += 0.15;
+  bgOffset3 += 0.06;
+  drawBackground();
+  // Animate a demo bird
+  const demoY = H * 0.4 + Math.sin(Date.now() / 600) * 60;
+  drawBird(W * 0.5 + Math.sin(Date.now() / 1000) * 30, demoY, Math.sin(Date.now() / 600) * 0.15);
+  birdWingPhase += 0.15;
+  if (state === 'select' && !isCalibrating) requestAnimationFrame(drawSelectBg);
+}
+requestAnimationFrame(drawSelectBg);
+</script>
+</body>
+</html>

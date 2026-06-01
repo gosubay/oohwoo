@@ -68,9 +68,12 @@ This could be the default mode for first-time players or when a new song is sele
 
 ---
 
+## Decisions Made
+
+- **Lives reset between songs** (not carried over)
+- **Max BPM: 150** — covers nearly all pop songs; 170+ is too fast to pitch-match individual notes. Note density matters more than raw BPM — long held notes at 150 BPM are fine.
+
 ## Open Questions
 
-- Should lives reset between songs or carry over?
-- What's the max BPM the game should support?
 - Do we want a song editor in the browser, or is JSON authoring fine for now?
 - Should Practice Mode have a separate leaderboard or no leaderboard at all?

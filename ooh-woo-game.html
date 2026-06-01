@@ -262,6 +262,7 @@
       <div id="micStatus">🎤 Initializing mic...</div>
       <div id="micIndicator" style="position:absolute;top:60px;right:35px;width:10px;height:10px;border-radius:50%;background:#555;box-shadow:0 0 6px #555;transition:background 0.3s;"></div>
       <div id="debugBox" style="position:absolute;bottom:55px;left:10px;right:10px;background:rgba(0,0,0,0.6);color:#0f0;font-size:11px;font-family:monospace;padding:6px 10px;border-radius:8px;line-height:1.8;">debug loading...</div>
+      <div id="karaokeBar" style="position:absolute;bottom:0;left:0;right:0;height:52px;background:rgba(0,0,0,0.65);display:flex;align-items:center;justify-content:center;gap:6px;padding:0 12px;overflow:hidden;"></div>
     </div>
 
     <!-- Game Over -->
@@ -287,6 +288,11 @@
     </div>
 
     <div class="perfect-flash" id="perfectFlash">PERFECT! +2</div>
+    <div class="screen hidden" id="screenPause" style="background:rgba(0,0,0,0.6);">
+      <div class="title" style="font-size:40px;">PAUSED</div>
+      <div style="color:rgba(255,255,255,0.7);font-size:16px;margin-top:24px;">Press <kbd style="background:#333;border:1px solid #666;border-radius:4px;padding:2px 8px;">Esc</kbd> to resume</div>
+      <div style="color:rgba(255,255,255,0.7);font-size:16px;margin-top:12px;">Press <kbd style="background:#333;border:1px solid #666;border-radius:4px;padding:2px 8px;">Q</kbd> to quit to menu</div>
+    </div>
   </div>
 </div>
 
@@ -298,51 +304,57 @@
 // ============================================================
 const TWINKLE_NOTES = [
   // C4=0.0  D4=0.14  E4=0.29  F4=0.43  G4=0.57  A4=0.71  B4=0.86  C5=1.0
+  // key:  1=C4  2=D4  3=E4  4=F4  5=G4  6=A4  7=B4  8=C5
   // "Twin-kle twin-kle lit-tle star"
-  {note:'C4', ratio:0.00, beats:1}, {note:'C4', ratio:0.00, beats:1},
-  {note:'G4', ratio:0.57, beats:1}, {note:'G4', ratio:0.57, beats:1},
-  {note:'A4', ratio:0.71, beats:1}, {note:'A4', ratio:0.71, beats:1},
-  {note:'G4', ratio:0.57, beats:2},
+  {note:'C4', ratio:0.00, beats:1, lyric:'Twin-'}, {note:'C4', ratio:0.00, beats:1, lyric:'kle'},
+  {note:'G4', ratio:0.57, beats:1, lyric:'Twin-'}, {note:'G4', ratio:0.57, beats:1, lyric:'kle'},
+  {note:'A4', ratio:0.71, beats:1, lyric:'Lit-'},  {note:'A4', ratio:0.71, beats:1, lyric:'tle'},
+  {note:'G4', ratio:0.57, beats:2, lyric:'Star'},
   // "how I won-der what you are"
-  {note:'F4', ratio:0.43, beats:1}, {note:'F4', ratio:0.43, beats:1},
-  {note:'E4', ratio:0.29, beats:1}, {note:'E4', ratio:0.29, beats:1},
-  {note:'D4', ratio:0.14, beats:1}, {note:'D4', ratio:0.14, beats:1},
-  {note:'C4', ratio:0.00, beats:2},
+  {note:'F4', ratio:0.43, beats:1, lyric:'How'},   {note:'F4', ratio:0.43, beats:1, lyric:'I'},
+  {note:'E4', ratio:0.29, beats:1, lyric:'Won-'},  {note:'E4', ratio:0.29, beats:1, lyric:'der'},
+  {note:'D4', ratio:0.14, beats:1, lyric:'What'},  {note:'D4', ratio:0.14, beats:1, lyric:'you'},
+  {note:'C4', ratio:0.00, beats:2, lyric:'Are'},
   // "up a-bove the world so high"
-  {note:'G4', ratio:0.57, beats:1}, {note:'G4', ratio:0.57, beats:1},
-  {note:'F4', ratio:0.43, beats:1}, {note:'F4', ratio:0.43, beats:1},
-  {note:'E4', ratio:0.29, beats:1}, {note:'E4', ratio:0.29, beats:1},
-  {note:'D4', ratio:0.14, beats:2},
+  {note:'G4', ratio:0.57, beats:1, lyric:'Up'},    {note:'G4', ratio:0.57, beats:1, lyric:'a-'},
+  {note:'F4', ratio:0.43, beats:1, lyric:'bove'},  {note:'F4', ratio:0.43, beats:1, lyric:'the'},
+  {note:'E4', ratio:0.29, beats:1, lyric:'world'}, {note:'E4', ratio:0.29, beats:1, lyric:'so'},
+  {note:'D4', ratio:0.14, beats:2, lyric:'high'},
   // "like a dia-mond in the sky"
-  {note:'G4', ratio:0.57, beats:1}, {note:'G4', ratio:0.57, beats:1},
-  {note:'F4', ratio:0.43, beats:1}, {note:'F4', ratio:0.43, beats:1},
-  {note:'E4', ratio:0.29, beats:1}, {note:'E4', ratio:0.29, beats:1},
-  {note:'D4', ratio:0.14, beats:2},
+  {note:'G4', ratio:0.57, beats:1, lyric:'Like'},  {note:'G4', ratio:0.57, beats:1, lyric:'a'},
+  {note:'F4', ratio:0.43, beats:1, lyric:'dia-'},  {note:'F4', ratio:0.43, beats:1, lyric:'mond'},
+  {note:'E4', ratio:0.29, beats:1, lyric:'in'},    {note:'E4', ratio:0.29, beats:1, lyric:'the'},
+  {note:'D4', ratio:0.14, beats:2, lyric:'sky'},
   // "Twin-kle twin-kle lit-tle star"
-  {note:'C4', ratio:0.00, beats:1}, {note:'C4', ratio:0.00, beats:1},
-  {note:'G4', ratio:0.57, beats:1}, {note:'G4', ratio:0.57, beats:1},
-  {note:'A4', ratio:0.71, beats:1}, {note:'A4', ratio:0.71, beats:1},
-  {note:'G4', ratio:0.57, beats:2},
+  {note:'C4', ratio:0.00, beats:1, lyric:'Twin-'}, {note:'C4', ratio:0.00, beats:1, lyric:'kle'},
+  {note:'G4', ratio:0.57, beats:1, lyric:'Twin-'}, {note:'G4', ratio:0.57, beats:1, lyric:'kle'},
+  {note:'A4', ratio:0.71, beats:1, lyric:'Lit-'},  {note:'A4', ratio:0.71, beats:1, lyric:'tle'},
+  {note:'G4', ratio:0.57, beats:2, lyric:'Star'},
   // "how I won-der what you are"
-  {note:'F4', ratio:0.43, beats:1}, {note:'F4', ratio:0.43, beats:1},
-  {note:'E4', ratio:0.29, beats:1}, {note:'E4', ratio:0.29, beats:1},
-  {note:'D4', ratio:0.14, beats:1}, {note:'D4', ratio:0.14, beats:1},
-  {note:'C4', ratio:0.00, beats:2},
+  {note:'F4', ratio:0.43, beats:1, lyric:'How'},   {note:'F4', ratio:0.43, beats:1, lyric:'I'},
+  {note:'E4', ratio:0.29, beats:1, lyric:'Won-'},  {note:'E4', ratio:0.29, beats:1, lyric:'der'},
+  {note:'D4', ratio:0.14, beats:1, lyric:'What'},  {note:'D4', ratio:0.14, beats:1, lyric:'you'},
+  {note:'C4', ratio:0.00, beats:2, lyric:'Are'},
 ];
 
-// Build pipe schedule from notes
-// Each note with beats >= 1 gets a pipe (multi-beat notes get one pipe at their first beat)
+// Build schedule from notes. isPipe=true on every 2nd beat (every 1s) — those get obstacle pipes.
+// All notes get a coin. spawnTime adjusted so each item arrives at birdX on its beat.
 function buildPipes(notes, bps) {
-  const pipes = [];
+  const travelTime = (PIPE_SPAWN_X - birdX) / PIPE_SPEED;
+  const schedule = [];
   let time = 0;
-  let seen = new Set();
   for (let i = 0; i < notes.length; i++) {
     const n = notes[i];
-    // Only create pipe if different from prev or 2+ beats gap
-    pipes.push({ spawnTime: time, ratio: n.ratio, note: n.note, beats: n.beats });
+    const isPipe = Math.round(time * bps) % 2 === 0;
+    // Gap widens based on note steps from previous note
+    const prevRatio = i > 0 ? notes[i - 1].ratio : n.ratio;
+    const steps = Math.round(Math.abs(n.ratio - prevRatio) / 0.14); // each note step = 0.14 ratio
+    const GAP_TABLE = [350, 350, 350, 350, 375, 400, 425, 450, 475, 500, 525, 550];
+    const gap = GAP_TABLE[Math.min(steps, GAP_TABLE.length - 1)];
+    schedule.push({ spawnTime: time - travelTime - 0.15, ratio: n.ratio, note: n.note, beats: n.beats, lyric: n.lyric || '', isPipe, gap });
     time += n.beats / bps;
   }
-  return pipes;
+  return schedule;
 }
 
 // ============================================================
@@ -363,6 +375,7 @@ const screens = {
   game: document.getElementById('screenGame'),
   over: document.getElementById('screenOver'),
   complete: document.getElementById('screenComplete'),
+  pause: document.getElementById('screenPause'),
 };
 function showScreen(name) {
   Object.keys(screens).forEach(k => screens[k].classList.add('hidden'));
@@ -771,44 +784,113 @@ let gameTime = 0;
 let pipes = [];
 let pipeSchedule = [];
 let nextPipeIdx = 0;
+let activeCoins = [];
+let nextCoinIdx = 0;
 let bps = 2; // beats per second (120bpm)
 let lastTime = null;
 let animId = null;
 let perfectTimeout = null;
+let paused = false;
+
+document.addEventListener('keydown', e => {
+  if (e.code === 'Escape') {
+    if (state === 'playing' && !paused) {
+      paused = true;
+      if (backingCtx) backingCtx.suspend();
+      screens.pause.classList.remove('hidden');
+    } else if (paused) {
+      paused = false;
+      if (backingCtx) backingCtx.resume();
+      screens.pause.classList.add('hidden');
+    }
+  }
+  if (e.key === 'q' || e.key === 'Q') {
+    if (paused) {
+      paused = false;
+      stopBackingTrack();
+      state = 'select';
+      screens.pause.classList.add('hidden');
+      showScreen('select');
+    }
+  }
+});
 
 const PIPE_W = 60;
-const PIPE_GAP = 200; // px gap height
+const PIPE_GAP = 350; // px gap height
+const COIN_R = 14;
 const PIPE_SPEED = 180; // px/s
 const PIPE_SPAWN_X = W + 80;
 const PLAY_TOP = 60; // top dead zone
 const PLAY_BOT = H - 60; // bottom dead zone
 const PLAY_H = PLAY_BOT - PLAY_TOP;
 const BIRD_R = 22;
-const GRAVITY = 350; // px/s² when silent
-const PITCH_FORCE = 800; // upward force from pitch
+const GRAVITY = 0; // no gravity — pipes come from all heights
+const PITCH_FORCE = 800;
 
 let pitchRatioSmooth = 0.5;
 let targetBirdY = H / 2;
 let birdAngle = 0;
 let birdWingPhase = 0;
 
-// Fallback: keyboard / touch control when mic unavailable
-let keyHeld = false;
-document.addEventListener('keydown', e => { if (e.code === 'Space') { e.preventDefault(); keyHeld = true; } });
-document.addEventListener('keyup',   e => { if (e.code === 'Space') keyHeld = false; });
-canvas.addEventListener('touchstart', e => { e.preventDefault(); keyHeld = true; }, { passive: false });
-canvas.addEventListener('touchend',   e => { e.preventDefault(); keyHeld = false; }, { passive: false });
-canvas.addEventListener('mousedown',  e => { keyHeld = true; });
-canvas.addEventListener('mouseup',    e => { keyHeld = false; });
+// Keyboard note control — 1234567890-= maps to Do–Sol (1.5 octaves)
+// Ratios match the pipe note positions: C4=0.00 … C5=1.00, then clamped above
+const KEY_RATIOS = {
+  '1': 0.00,  // C4  Do
+  '2': 0.14,  // D4  Re
+  '3': 0.29,  // E4  Mi
+  '4': 0.43,  // F4  Fa
+  '5': 0.57,  // G4  Sol
+  '6': 0.71,  // A4  La
+  '7': 0.86,  // B4  Ti
+  '8': 1.00,  // C5  Do
+  '9': 1.00,  // D5  Re  (clamped — above play range)
+  '0': 1.00,  // E5  Mi
+  '-': 1.00,  // F5  Fa
+  '=': 1.00,  // G5  Sol
+};
+let heldKeys = new Set();
+let keyRatio = -1; // -1 = no key held
+
+function updateKeyRatio() {
+  // Use the highest-ratio key currently held
+  let best = -1;
+  for (const k of heldKeys) {
+    const r = KEY_RATIOS[k];
+    if (r !== undefined && r > best) best = r;
+  }
+  keyRatio = best;
+}
+
+document.addEventListener('keydown', e => {
+  const k = e.key;
+  if (k in KEY_RATIOS) { e.preventDefault(); heldKeys.add(k); updateKeyRatio(); }
+  if (e.code === 'Space') { e.preventDefault(); heldKeys.add('5'); updateKeyRatio(); } // space = mid G4
+});
+document.addEventListener('keyup', e => {
+  const k = e.key;
+  heldKeys.delete(k);
+  if (e.code === 'Space') heldKeys.delete('5');
+  updateKeyRatio();
+});
+
+// Touch / mouse: hold = fly at mid height (mobile fallback)
+let touchHeld = false;
+canvas.addEventListener('touchstart', e => { e.preventDefault(); touchHeld = true; }, { passive: false });
+canvas.addEventListener('touchend',   e => { e.preventDefault(); touchHeld = false; }, { passive: false });
+canvas.addEventListener('mousedown',  e => { touchHeld = true; });
+canvas.addEventListener('mouseup',    e => { touchHeld = false; });
 
 function startGame(song) {
   score = 0;
+  paused = false;
   birdY = H / 2;
   birdVY = 0;
-  gameTime = 0;
+  gameTime = -2.5;
   pipes = [];
+  activeCoins = [];
   pipeSchedule = buildPipes(TWINKLE_NOTES, bps);
   nextPipeIdx = 0;
+  nextCoinIdx = 0;
   pitchRatioSmooth = 0.5;
   bgOffset1 = bgOffset2 = bgOffset3 = 0;
   showScreen('game');
@@ -832,6 +914,30 @@ function songComplete() {
   showScreen('complete');
 }
 
+// Karaoke bar — shows a rolling window of upcoming lyrics
+let karaokeCache = '';
+function updateKaraoke(activeLyric) {
+  if (activeLyric === karaokeCache) return;
+  karaokeCache = activeLyric;
+  const bar = document.getElementById('karaokeBar');
+  if (!bar) return;
+
+  // Build upcoming lyrics from pipeSchedule around current position
+  const windowSize = 7;
+  const currentIdx = nextPipeIdx - 1;
+  const start = Math.max(0, currentIdx - 1);
+  const end = Math.min(pipeSchedule.length, start + windowSize);
+  const slice = pipeSchedule.slice(start, end);
+
+  bar.innerHTML = slice.map((p, i) => {
+    const isActive = p.lyric === activeLyric && i === Math.min(1, currentIdx - start);
+    const style = isActive
+      ? 'font-size:22px;font-weight:900;color:#FFD700;text-shadow:0 0 12px #FFD700;transition:all 0.15s;'
+      : 'font-size:16px;color:rgba(255,255,255,0.45);transition:all 0.15s;';
+    return `<span style="${style}">${p.lyric}</span>`;
+  }).join('<span style="color:rgba(255,255,255,0.2);font-size:14px;margin:0 2px;">·</span>');
+}
+
 function showPerfect() {
   perfectFlash.style.opacity = '1';
   clearTimeout(perfectTimeout);
@@ -842,9 +948,10 @@ function showPerfect() {
 // PIPE RENDERING
 // ============================================================
 function drawPipe(pipe) {
+  const gap = pipe.gap || PIPE_GAP;
   const gapCenter = PLAY_TOP + (1 - pipe.ratio) * PLAY_H;
-  const topH = gapCenter - PIPE_GAP / 2;
-  const botY = gapCenter + PIPE_GAP / 2;
+  const topH = gapCenter - gap / 2;
+  const botY = gapCenter + gap / 2;
   const botH = H - botY;
   const x = pipe.x;
 
@@ -911,9 +1018,36 @@ function drawPipe(pipe) {
     ctx.save();
     ctx.globalAlpha = alpha * 0.25;
     ctx.fillStyle = '#FFD700';
-    ctx.fillRect(x, gapCenter - PIPE_GAP / 2, PIPE_W, PIPE_GAP);
+    ctx.fillRect(x, gapCenter - gap / 2, PIPE_W, gap);
     ctx.restore();
   }
+}
+
+// ============================================================
+// COIN RENDERING
+// ============================================================
+function drawCoin(x, y) {
+  ctx.save();
+  // Glow
+  ctx.shadowColor = '#FFD700';
+  ctx.shadowBlur = 12;
+  // Circle
+  const grad = ctx.createRadialGradient(x - 4, y - 4, 2, x, y, COIN_R);
+  grad.addColorStop(0, '#FFF176');
+  grad.addColorStop(0.5, '#FFD700');
+  grad.addColorStop(1, '#F9A825');
+  ctx.fillStyle = grad;
+  ctx.beginPath();
+  ctx.arc(x, y, COIN_R, 0, Math.PI * 2);
+  ctx.fill();
+  // ♪ symbol
+  ctx.shadowBlur = 0;
+  ctx.fillStyle = '#7B4F00';
+  ctx.font = 'bold 14px Arial';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('♪', x, y);
+  ctx.restore();
 }
 
 // ============================================================
@@ -993,9 +1127,10 @@ function drawBird(x, y, angle) {
 // COLLISION
 // ============================================================
 function checkCollision(pipe) {
+  const gap = pipe.gap || PIPE_GAP;
   const gapCenter = PLAY_TOP + (1 - pipe.ratio) * PLAY_H;
-  const gapTop = gapCenter - PIPE_GAP / 2;
-  const gapBot = gapCenter + PIPE_GAP / 2;
+  const gapTop = gapCenter - gap / 2;
+  const gapBot = gapCenter + gap / 2;
   const px = pipe.x, pw = PIPE_W;
   const bx = birdX, by = birdY, br = BIRD_R - 4;
 
@@ -1017,6 +1152,12 @@ function gameLoop(ts) {
   const dt = Math.min((ts - lastTime) / 1000, 0.05);
   lastTime = ts;
 
+  if (state === 'playing' && paused) {
+    lastTime = ts;
+    animId = requestAnimationFrame(gameLoop);
+    return;
+  }
+
   if (state === 'playing') {
     gameTime += dt;
 
@@ -1024,29 +1165,41 @@ function gameLoop(ts) {
     const rawPitch = detectPitch();
     const rawRatio = freqToRatio(rawPitch);
     const micSinging = rawPitch > 0;
-    const isSinging = micSinging || (keyHeld && !micReady);
+    const keyActive = keyRatio >= 0;
+    const touchActive = touchHeld;
+    const isSinging = micSinging || keyActive || touchActive;
 
     if (micSinging) {
       pitchRatioSmooth += (rawRatio - pitchRatioSmooth) * 0.2;
       currentRatio = pitchRatioSmooth;
-    } else if (keyHeld) {
-      pitchRatioSmooth = 0.7; // fixed mid-high when using fallback
-      currentRatio = 0.7;
+    } else if (keyActive) {
+      pitchRatioSmooth += (keyRatio - pitchRatioSmooth) * 0.3;
+      currentRatio = keyRatio;
+    } else if (touchActive) {
+      pitchRatioSmooth = 0.65;
+      currentRatio = 0.65;
     }
 
     // Bird physics
     if (micSinging) {
       const targetY = PLAY_TOP + (1 - pitchRatioSmooth) * PLAY_H;
       const diff = targetY - birdY;
-      birdVY += diff * 8 * dt;
-      birdVY *= 0.85;
+      birdVY += diff * 120 * dt;
+      birdVY *= 0.6;
       setMicIndicator('active');
       micStatus.textContent = '🎤 ' + getCurrentNoteName(rawPitch);
-    } else if (keyHeld) {
+    } else if (keyActive) {
+      const targetY = PLAY_TOP + (1 - pitchRatioSmooth) * PLAY_H;
+      const diff = targetY - birdY;
+      birdVY += diff * 120 * dt;
+      birdVY *= 0.6;
+      setMicIndicator('off');
+      micStatus.textContent = '🎹 Key ' + [...heldKeys].join('+');
+    } else if (touchActive) {
       birdVY -= 600 * dt;
       birdVY *= 0.88;
       setMicIndicator('off');
-      micStatus.textContent = '👆 Tap to fly (no mic)';
+      micStatus.textContent = '👆 Tap to fly';
     } else {
       birdVY += GRAVITY * dt;
       birdVY *= 0.98;
@@ -1055,7 +1208,7 @@ function gameLoop(ts) {
         micStatus.textContent = '🎤 Mic ready — sing!';
       } else {
         setMicIndicator('off');
-        micStatus.textContent = '⚠️ Mic inactive — hold screen to fly';
+        micStatus.textContent = '⚠️ No mic — use keys 1–8';
       }
     }
 
@@ -1075,13 +1228,22 @@ function gameLoop(ts) {
     while (nextPipeIdx < pipeSchedule.length) {
       const sched = pipeSchedule[nextPipeIdx];
       if (gameTime >= sched.spawnTime) {
-        pipes.push({
-          x: PIPE_SPAWN_X,
-          ratio: sched.ratio,
-          note: sched.note,
-          passed: false,
-          scored: false,
-        });
+        const elapsed = gameTime - sched.spawnTime;
+        const spawnX = PIPE_SPAWN_X - PIPE_SPEED * elapsed;
+        if (spawnX > -PIPE_W - 20) {
+          const coinY = PLAY_TOP + (1 - sched.ratio) * PLAY_H;
+          activeCoins.push({ x: spawnX + PIPE_W / 2, y: coinY, collected: false });
+          if (sched.isPipe) {
+            pipes.push({
+              x: spawnX,
+              ratio: sched.ratio,
+              note: sched.note,
+              lyric: sched.lyric || '',
+              gap: sched.gap,
+              passed: false,
+            });
+          }
+        }
         nextPipeIdx++;
       } else break;
     }
@@ -1090,6 +1252,17 @@ function gameLoop(ts) {
     for (const pipe of pipes) {
       pipe.x -= PIPE_SPEED * dt;
     }
+
+    // Move and collect coins
+    for (const coin of activeCoins) {
+      coin.x -= PIPE_SPEED * dt;
+      if (!coin.collected && Math.abs(coin.x - birdX) < 28 && Math.abs(coin.y - birdY) < 28) {
+        coin.collected = true;
+        score += 1;
+        scoreDisplay.textContent = score;
+      }
+    }
+    activeCoins = activeCoins.filter(c => c.x > -COIN_R * 2 && !c.collected);
 
     // Score + collision
     for (const pipe of pipes) {
@@ -1118,7 +1291,7 @@ function gameLoop(ts) {
     pipes = pipes.filter(p => p.x > -PIPE_W - 20);
 
     // Song complete
-    if (nextPipeIdx >= pipeSchedule.length && pipes.length === 0) {
+    if (nextPipeIdx >= pipeSchedule.length && pipes.length === 0 && activeCoins.length === 0) {
       songComplete();
     }
 
@@ -1127,13 +1300,13 @@ function gameLoop(ts) {
     pitchFill.style.height = pct + '%';
     pitchDot.style.bottom = pct + '%';
 
-    // Note hint
-    if (pipes.length > 0) {
-      const next = pipes.find(p => !p.passed);
-      if (next) {
-        noteHint.textContent = '🎵 ' + next.note;
-      }
+    // Note hint + karaoke bar
+    const upcomingPipes = pipes.filter(p => !p.passed);
+    const nextPipe = upcomingPipes[0];
+    if (nextPipe) {
+      noteHint.textContent = '🎵 ' + nextPipe.note;
     }
+    updateKaraoke(nextPipe ? nextPipe.lyric : '');
 
     // Debug readout
     const dbEl = document.getElementById('debugBox');
@@ -1150,6 +1323,7 @@ function gameLoop(ts) {
   // Draw
   drawBackground();
   for (const pipe of pipes) drawPipe(pipe);
+  for (const coin of activeCoins) drawCoin(coin.x, coin.y);
   if (state === 'playing' || state === 'dead') {
     drawBird(birdX, birdY, birdAngle);
   }
@@ -1184,7 +1358,7 @@ function playBackingTrack() {
     backingCtx = new (window.AudioContext || window.webkitAudioContext)();
     const bpm = 120;
     const beatDur = 60 / bpm;
-    let t = backingCtx.currentTime + 0.3;
+    let t = backingCtx.currentTime + 2.8;
 
     for (const note of TWINKLE_NOTES) {
       const freq = NOTE_FREQS[note.note];
@@ -1249,6 +1423,8 @@ document.getElementById('btnTwinkle').addEventListener('click', () => {
 document.getElementById('btnSkipCal').addEventListener('click', () => {
   cancelAnimationFrame(calAnimId);
   isCalibrating = false;
+  localStorage.setItem('oohwoo_minFreq', playerMinFreq);
+  localStorage.setItem('oohwoo_maxFreq', playerMaxFreq);
   showScreen('select');
   updateRangeDisplay();
   startMicTester();

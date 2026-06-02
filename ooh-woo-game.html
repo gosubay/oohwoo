@@ -1354,7 +1354,7 @@ function playBackingTrack() {
     backingCtx = new (window.AudioContext || window.webkitAudioContext)();
     const bpm = 120;
     const beatDur = 60 / bpm;
-    let t = backingCtx.currentTime + 2.8;
+    let t = backingCtx.currentTime + 2.5; // match gameTime intro (-2.5s)
 
     for (const note of TWINKLE_NOTES) {
       const freq = NOTE_FREQS[note.note];

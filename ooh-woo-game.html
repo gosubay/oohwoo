@@ -1262,23 +1262,23 @@ function gameLoop(ts) {
     const isSinging = micSinging || keyActive || touchActive;
 
     if (micSinging) {
-      // Outlier rejection: if pitch jumps more than 0.35 ratio in one frame, it's likely
-      // an octave error from the autocorrelation algorithm — clamp how far it can move
+      // Outlier rejection only — clamp jumps > 0.35 ratio (likely octave errors).
+      // No lerp smoothing: we want the bird to respond as fast as keyboard.
       const rawDelta = rawRatio - pitchRatioSmooth;
       const clampedRatio = Math.abs(rawDelta) > 0.35
         ? pitchRatioSmooth + Math.sign(rawDelta) * 0.35
         : rawRatio;
-      pitchRatioSmooth += (clampedRatio - pitchRatioSmooth) * 0.35;
+      pitchRatioSmooth = clampedRatio; // instant update, no smoothing lag
       currentRatio = pitchRatioSmooth;
     } else if (keyActive) {
-      pitchRatioSmooth += (keyRatio - pitchRatioSmooth) * 0.3;
+      pitchRatioSmooth = keyRatio; // instant, no smoothing
       currentRatio = keyRatio;
     } else if (touchActive) {
       pitchRatioSmooth = 0.65;
       currentRatio = 0.65;
     }
 
-    // Bird physics
+    // Bird physics — same spring constants for mic and keyboard
     if (micSinging) {
       const targetY = PLAY_TOP + (1 - pitchRatioSmooth) * PLAY_H;
       const diff = targetY - birdY;
@@ -1287,7 +1287,7 @@ function gameLoop(ts) {
       setMicIndicator('active');
       micStatus.textContent = '🎤 ' + getCurrentNoteName(rawPitch);
     } else if (keyActive) {
-      const targetY = PLAY_TOP + (1 - keyRatio) * PLAY_H; // keyboard = no smoothing needed, snap to target
+      const targetY = PLAY_TOP + (1 - keyRatio) * PLAY_H;
       const diff = targetY - birdY;
       birdVY += diff * 220 * dt;
       birdVY *= 0.4;

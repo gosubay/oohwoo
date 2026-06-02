@@ -187,39 +187,44 @@
 <div id="gameWrapper">
   <canvas id="gameCanvas"></canvas>
   <div id="ui">
-    <!-- Song Select -->
-    <div class="screen" id="screenSelect">
+    <!-- Main Menu -->
+    <div class="screen" id="screenMain">
       <div class="title">OOH WOO</div>
       <div class="subtitle">🎤 Sing to fly the bird!</div>
-      <div class="song-card" id="btnTwinkle">
-        <h3>⭐ Twinkle Twinkle</h3>
-        <p>Beginner · 16 pipes · 1:00</p>
+      <button class="btn" id="btnPlay" style="width:260px;font-size:26px;margin-bottom:6px;">▶ Play</button>
+      <button class="btn secondary" id="btnSetupVoice" style="width:260px;font-size:18px;margin-bottom:6px;">🎤 Set up my voice</button>
+      <button class="btn secondary" id="btnMicToggle" style="width:260px;font-size:18px;">🎤 Mic ON</button>
+      <!-- Vocal range indicator -->
+      <div style="font-size:13px;color:rgba(255,255,255,0.55);margin-top:20px;text-align:center;line-height:1.8;">
+        Voice: <span id="rangeDisplay" style="color:#90EE90;font-weight:bold;">not set up yet</span>
       </div>
-      <div class="song-card" id="btnBrotherJohn">
-        <h3>🐯 Brother John / 两只老虎</h3>
-        <p>Beginner · 32 pipes · 1:47</p>
-      </div>
-      <!-- Vocal range indicator + recalibrate -->
-      <div style="font-size:13px;color:rgba(255,255,255,0.55);margin-top:16px;text-align:center;line-height:2;">
-        🎤 Voice: <span id="rangeDisplay" style="color:#90EE90;font-weight:bold;">not set</span><br>
-        <span id="btnRecal" style="color:#52b788;cursor:pointer;pointer-events:all;text-decoration:underline;font-size:12px;">🔧 Set up my voice</span>
-      </div>
-      <!-- Mic toggle -->
-      <div style="margin-top:10px;">
-        <button id="btnMicToggle" class="btn secondary" style="font-size:13px;padding:8px 20px;pointer-events:all;">🎤 Mic ON</button>
-      </div>
-
       <!-- Live mic tester -->
-      <div id="micTester" style="margin-top:24px;width:280px;background:rgba(0,0,0,0.5);border:2px solid #52b788;border-radius:16px;padding:14px 18px;font-size:12px;font-family:monospace;color:#0f0;line-height:2;pointer-events:none;">
+      <div id="micTester" style="margin-top:18px;width:280px;background:rgba(0,0,0,0.5);border:2px solid #52b788;border-radius:16px;padding:14px 18px;font-size:12px;font-family:monospace;color:#0f0;line-height:2;pointer-events:none;">
         <div style="color:#95d5b2;font-family:sans-serif;font-size:13px;font-weight:bold;margin-bottom:4px;">🎤 Mic Test — sing now!</div>
         <div id="mtRms">RMS: —</div>
         <div id="mtHz">Hz: —</div>
         <div id="mtNote">Note: —</div>
-        <!-- Volume bar -->
         <div style="margin-top:6px;background:rgba(255,255,255,0.1);border-radius:4px;height:8px;overflow:hidden;">
           <div id="mtVolBar" style="height:8px;width:0%;background:linear-gradient(to right,#00ff88,#ffd700,#ff4444);border-radius:4px;transition:width 0.05s;"></div>
         </div>
       </div>
+    </div>
+
+    <!-- Song Select -->
+    <div class="screen hidden" id="screenSelect">
+      <div class="title" style="font-size:36px;">Choose a Song</div>
+      <div class="subtitle" style="margin-bottom:24px;">Tap a song to start!</div>
+      <div class="song-card" id="btnTwinkle">
+        <h3>⭐ Twinkle Twinkle Little Star</h3>
+        <h3 style="font-size:16px;color:#95d5b2;margin-top:2px;">一闪一闪亮晶晶</h3>
+        <p style="margin-top:6px;">Beginner · 16 pipes · 1:00</p>
+      </div>
+      <div class="song-card" id="btnBrotherJohn">
+        <h3>🐯 Brother John / Are You Sleeping?</h3>
+        <h3 style="font-size:16px;color:#95d5b2;margin-top:2px;">两只老虎 / 法国民谣</h3>
+        <p style="margin-top:6px;">Beginner · 32 pipes · 1:47</p>
+      </div>
+      <button class="btn secondary" id="btnBackToMain" style="font-size:15px;padding:10px 30px;margin-top:16px;">← Back</button>
     </div>
 
     <!-- Vocal Range Calibration -->
@@ -474,6 +479,7 @@ canvas.height = H;
 
 // Screens
 const screens = {
+  main: document.getElementById('screenMain'),
   select: document.getElementById('screenSelect'),
   calibrate: document.getElementById('screenCalibrate'),
   game: document.getElementById('screenGame'),
@@ -724,7 +730,7 @@ function startCalibration() {
   if (calAnimId) cancelAnimationFrame(calAnimId);
   let last = null;
   calAnimId = requestAnimationFrame(function tick(ts) {
-    if (state !== 'select') return;
+    if (!isCalibrating) return;
     const dt = last ? Math.min((ts - last) / 1000, 0.1) : 0;
     last = ts;
     drawCalibrationCanvas(dt);
@@ -886,7 +892,7 @@ function lightenColor(hex, amt) {
 // ============================================================
 // GAME STATE
 // ============================================================
-let state = 'select'; // select | playing | dead | complete
+let state = 'main'; // main | select | playing | dead | complete
 let score = 0;
 let birdY = H / 2;
 let birdVY = 0;
@@ -931,6 +937,7 @@ document.addEventListener('keydown', e => {
       state = 'select';
       screens.pause.classList.add('hidden');
       showScreen('select');
+
     }
   }
 });
@@ -1676,12 +1683,12 @@ document.getElementById('btnSkipCal').addEventListener('click', () => {
 document.getElementById('btnRestart').addEventListener('click', () => {
   stopBackingTrack();
   playBackingTrack();
-  startGame('twinkle');
+  startGame(currentSong);
 });
 document.getElementById('btnPlayAgain').addEventListener('click', () => {
   stopBackingTrack();
   playBackingTrack();
-  startGame('twinkle');
+  startGame(currentSong);
 });
 document.getElementById('btnMenu').addEventListener('click', () => {
   stopBackingTrack();
@@ -1692,6 +1699,21 @@ document.getElementById('btnMenu2').addEventListener('click', () => {
   stopBackingTrack();
   state = 'select';
   showScreen('select');
+});
+document.getElementById('btnBackToMain').addEventListener('click', () => {
+  state = 'main';
+  showScreen('main');
+});
+document.getElementById('btnPlay').addEventListener('click', () => {
+  state = 'select';
+  showScreen('select');
+  requestAnimationFrame(drawSelectBg);
+});
+document.getElementById('btnSetupVoice').addEventListener('click', () => {
+  if (!micReady) initMic();
+  localStorage.removeItem('oohwoo_minFreq');
+  localStorage.removeItem('oohwoo_maxFreq');
+  startCalibration();
 });
 
 // ============================================================
@@ -1711,7 +1733,7 @@ window.addEventListener('resize', resizeGame);
 // Show song select immediately on all devices.
 // Mic permission is requested when the user taps a song card (user gesture).
 // Desktop also tries to init mic early (lenient browsers allow this).
-showScreen('select');
+showScreen('main');
 const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
 if (!isMobile) {
   initMic().then(startMicTester);
@@ -1754,11 +1776,6 @@ function updateRangeDisplay() {
 }
 updateRangeDisplay();
 
-document.getElementById('btnRecal').addEventListener('click', () => {
-  localStorage.removeItem('oohwoo_minFreq');
-  localStorage.removeItem('oohwoo_maxFreq');
-  startCalibration();
-});
 
 function updateMicToggleUI() {
   const label = micEnabled ? '🎤 Mic ON' : '🎹 Mic OFF';
@@ -1785,7 +1802,7 @@ function startMicTester() {
   const elNote = document.getElementById('mtNote');
   const elVol  = document.getElementById('mtVolBar');
   function tick() {
-    if (state !== 'select') return; // stop when game starts
+    if (state !== 'select' && state !== 'main') return; // stop when game starts
     const pitch = detectPitch();
     const vol = Math.min(100, debugRms * 200);
     elRms.textContent  = 'RMS: ' + debugRms.toFixed(4) + (debugRms > 0.005 ? ' ✓' : ' ✗ too quiet');
@@ -1807,7 +1824,7 @@ function drawSelectBg() {
   const demoY = H * 0.4 + Math.sin(Date.now() / 600) * 60;
   drawBird(W * 0.5 + Math.sin(Date.now() / 1000) * 30, demoY, Math.sin(Date.now() / 600) * 0.15);
   birdWingPhase += 0.15;
-  if (state === 'select' && !isCalibrating) requestAnimationFrame(drawSelectBg);
+  if ((state === 'select' || state === 'main') && !isCalibrating) requestAnimationFrame(drawSelectBg);
 }
 requestAnimationFrame(drawSelectBg);
 </script>

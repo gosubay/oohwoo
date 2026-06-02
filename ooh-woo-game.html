@@ -1250,7 +1250,7 @@ function gameLoop(ts) {
       setMicIndicator('active');
       micStatus.textContent = '🎤 ' + getCurrentNoteName(rawPitch);
     } else if (keyActive) {
-      const targetY = PLAY_TOP + (1 - pitchRatioSmooth) * PLAY_H;
+      const targetY = PLAY_TOP + (1 - keyRatio) * PLAY_H; // keyboard = no smoothing needed, snap to target
       const diff = targetY - birdY;
       birdVY += diff * 220 * dt;
       birdVY *= 0.4;

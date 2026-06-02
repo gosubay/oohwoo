@@ -200,6 +200,10 @@
         🎤 Voice: <span id="rangeDisplay" style="color:#90EE90;font-weight:bold;">not set</span><br>
         <span id="btnRecal" style="color:#52b788;cursor:pointer;pointer-events:all;text-decoration:underline;font-size:12px;">🔧 Set up my voice</span>
       </div>
+      <!-- Mic toggle -->
+      <div style="margin-top:10px;">
+        <button id="btnMicToggle" class="btn secondary" style="font-size:13px;padding:8px 20px;pointer-events:all;">🎤 Mic ON</button>
+      </div>
 
       <!-- Live mic tester -->
       <div id="micTester" style="margin-top:24px;width:280px;background:rgba(0,0,0,0.5);border:2px solid #52b788;border-radius:16px;padding:14px 18px;font-size:12px;font-family:monospace;color:#0f0;line-height:2;pointer-events:none;">
@@ -260,6 +264,7 @@
       <div id="pitchMeter"><div id="pitchFill"></div><div id="pitchDot" style="bottom:50%"></div></div>
       <div id="noteHint">🎵 —</div>
       <div id="micStatus">🎤 Initializing mic...</div>
+      <button id="btnMicToggleHud" style="position:absolute;top:16px;left:16px;background:rgba(0,0,0,0.5);border:2px solid #52b788;color:white;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:bold;cursor:pointer;pointer-events:all;">🎤 ON</button>
       <div id="micIndicator" style="position:absolute;top:60px;right:35px;width:10px;height:10px;border-radius:50%;background:#555;box-shadow:0 0 6px #555;transition:background 0.3s;"></div>
       <div id="debugBox" style="position:absolute;bottom:55px;left:10px;right:10px;background:rgba(0,0,0,0.6);color:#0f0;font-size:11px;font-family:monospace;padding:6px 10px;border-radius:8px;line-height:1.8;">debug loading...</div>
       <div id="karaokeBar" style="position:absolute;bottom:0;left:0;right:0;height:52px;background:rgba(0,0,0,0.65);display:flex;align-items:center;justify-content:center;gap:6px;padding:0 12px;overflow:hidden;"></div>
@@ -407,6 +412,7 @@ let micStream = null;
 let currentPitch = -1; // Hz, -1 = silence
 let currentRatio = 0.5; // 0-1 pitch ratio for display
 let micReady = false;
+let micEnabled = true; // can be toggled off for keyboard-only testing
 
 const NOTE_FREQS = {
   'C4': 261.63, 'D4': 293.66, 'E4': 329.63,
@@ -449,7 +455,7 @@ async function ensureMicRunning() {
 let debugRms = 0, debugHz = 0, debugAcMax = 0;
 
 function detectPitch() {
-  if (!micReady || !analyser) return -1;
+  if (!micReady || !analyser || !micEnabled) return -1;
   analyser.getFloatTimeDomainData(pitchBuffer);
 
   // RMS silence check
@@ -1493,6 +1499,24 @@ document.getElementById('btnRecal').addEventListener('click', () => {
   localStorage.removeItem('oohwoo_maxFreq');
   startCalibration();
 });
+
+function updateMicToggleUI() {
+  const label = micEnabled ? '🎤 Mic ON' : '🎹 Mic OFF';
+  const hudLabel = micEnabled ? '🎤 ON' : '🎹 OFF';
+  const border = micEnabled ? '#52b788' : '#FFA500';
+  document.getElementById('btnMicToggle').textContent = label;
+  const hud = document.getElementById('btnMicToggleHud');
+  hud.textContent = hudLabel;
+  hud.style.borderColor = border;
+}
+
+function toggleMic() {
+  micEnabled = !micEnabled;
+  updateMicToggleUI();
+}
+
+document.getElementById('btnMicToggle').addEventListener('click', toggleMic);
+document.getElementById('btnMicToggleHud').addEventListener('click', toggleMic);
 
 function startMicTester() {
   const elRms  = document.getElementById('mtRms');

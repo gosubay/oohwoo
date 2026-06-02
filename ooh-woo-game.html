@@ -145,6 +145,30 @@
     letter-spacing: 1px;
   }
   .btn:active { transform: scale(0.95); }
+  .cal-range-btn {
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.25);
+    border-radius: 16px;
+    color: white;
+    padding: 14px 18px;
+    cursor: pointer;
+    min-width: 90px;
+    transition: all 0.15s;
+  }
+  .cal-range-btn:hover, .cal-range-btn.selected {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    border-color: #FFD700;
+    color: #1a1a1a;
+    transform: scale(1.05);
+  }
+  .cal-dot {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+    transition: all 0.3s;
+  }
+  .cal-dot.done   { background: #52b788; }
+  .cal-dot.active { background: #FFD700; box-shadow: 0 0 8px #FFD700; transform: scale(1.3); }
   .btn.secondary {
     background: linear-gradient(135deg, #52b788, #2d6a4f);
     color: white;
@@ -304,38 +328,65 @@
     <!-- Vocal Range Calibration -->
     <div class="screen hidden" id="screenCalibrate" style="background:none;justify-content:space-between;padding:0;">
 
-      <!-- TOP BAR: title + bubbles -->
-      <div style="width:100%;background:linear-gradient(to bottom,rgba(0,0,0,0.85) 80%,transparent);padding:12px 16px 20px;text-align:center;">
-        <div style="font-size:16px;font-weight:900;color:#FFD700;letter-spacing:2px;margin-bottom:8px;">🎤 SING THE SCALE!</div>
-        <div id="calBubbles" style="display:flex;gap:4px;justify-content:center;flex-wrap:nowrap;">
-          <!-- filled by JS -->
+      <!-- Phase 0: Range selection -->
+      <div id="calPhase0Ui" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:40px;">
+        <div style="width:100%;background:linear-gradient(to top,rgba(0,0,0,0.9) 80%,transparent);padding:28px 20px 20px;text-align:center;">
+          <div style="font-size:18px;font-weight:900;color:#FFD700;letter-spacing:1px;margin-bottom:6px;">How high can you sing?</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.55);margin-bottom:20px;">Choose the range that fits your voice</div>
+          <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+            <button class="cal-range-btn" data-range="Low"    style="pointer-events:all;">
+              <div style="font-size:28px;margin-bottom:4px;">🐦</div>
+              <div style="font-weight:900;font-size:15px;">Low</div>
+              <div style="font-size:11px;opacity:0.7;">Adult male</div>
+            </button>
+            <button class="cal-range-btn" data-range="Medium" style="pointer-events:all;">
+              <div style="font-size:28px;margin-bottom:4px;">🦜</div>
+              <div style="font-weight:900;font-size:15px;">Medium</div>
+              <div style="font-size:11px;opacity:0.7;">Adult female / teens</div>
+            </button>
+            <button class="cal-range-btn" data-range="High"   style="pointer-events:all;">
+              <div style="font-size:28px;margin-bottom:4px;">🐤</div>
+              <div style="font-weight:900;font-size:15px;">High</div>
+              <div style="font-size:11px;opacity:0.7;">Young children</div>
+            </button>
+          </div>
+          <div style="margin-top:16px;">
+            <button class="btn secondary" id="btnSkipCal" style="font-size:13px;padding:8px 24px;pointer-events:all;">Skip (use defaults)</button>
+          </div>
         </div>
       </div>
 
-      <!-- BOTTOM PILL: ring + note + volume -->
-      <div style="width:100%;background:linear-gradient(to top,rgba(0,0,0,0.85) 80%,transparent);padding:20px 20px 14px;">
-        <div style="display:flex;align-items:center;gap:14px;">
-          <!-- ring -->
-          <div style="position:relative;width:56px;height:56px;flex-shrink:0;">
-            <svg width="56" height="56" style="transform:rotate(-90deg)">
-              <circle cx="28" cy="28" r="23" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="6"/>
-              <circle id="calRing" cx="28" cy="28" r="23" fill="none" stroke="#FFD700" stroke-width="6"
-                stroke-dasharray="144.5" stroke-dashoffset="144.5" style="transition:stroke-dashoffset 0.1s;"/>
-            </svg>
-            <div id="calRingLabel" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:16px;font-weight:900;color:white;">?</div>
-          </div>
-          <!-- note info -->
-          <div style="flex:1;">
-            <div id="calInstruction" style="font-size:26px;font-weight:900;color:#FFD700;line-height:1;">Sing: Do</div>
-            <div id="calNote" style="font-size:12px;color:#95d5b2;margin:3px 0;">—</div>
-            <div style="background:rgba(255,255,255,0.12);border-radius:4px;height:7px;overflow:hidden;">
-              <div id="calVolBar" style="height:7px;width:0%;background:linear-gradient(to right,#00ff88,#ffd700);border-radius:4px;transition:width 0.05s;"></div>
-            </div>
-            <div id="calHint" style="font-size:11px;color:rgba(255,255,255,0.45);margin-top:3px;">Sing louder to start</div>
+      <!-- Phase 1: Do Re Mi call-and-response -->
+      <div id="calPhase1Ui" style="position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:40px;">
+        <!-- progress dots -->
+        <div style="position:absolute;top:16px;left:0;right:0;text-align:center;">
+          <div id="calDotRow" style="display:inline-flex;gap:8px;">
+            <div class="cal-dot" id="calDot0"></div>
+            <div class="cal-dot" id="calDot1"></div>
+            <div class="cal-dot" id="calDot2"></div>
           </div>
         </div>
-        <div style="text-align:center;margin-top:10px;">
-          <button class="btn secondary" id="btnSkipCal" style="font-size:13px;padding:8px 24px;pointer-events:all;">Skip (use defaults)</button>
+        <div style="width:100%;background:linear-gradient(to top,rgba(0,0,0,0.9) 80%,transparent);padding:28px 20px 20px;text-align:center;">
+          <div id="calDRMInstruction" style="font-size:32px;font-weight:900;color:#FFD700;line-height:1;margin-bottom:6px;">Do</div>
+          <div id="calDRMStatus" style="font-size:14px;color:rgba(255,255,255,0.7);margin-bottom:14px;">🐦 Listen...</div>
+          <!-- ring -->
+          <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:10px;">
+            <div style="position:relative;width:64px;height:64px;flex-shrink:0;">
+              <svg width="64" height="64" style="transform:rotate(-90deg)">
+                <circle cx="32" cy="32" r="26" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="6"/>
+                <circle id="calRing" cx="32" cy="32" r="26" fill="none" stroke="#FFD700" stroke-width="6"
+                  stroke-dasharray="163.4" stroke-dashoffset="163.4" style="transition:stroke-dashoffset 0.1s;"/>
+              </svg>
+              <div id="calRingLabel" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:18px;font-weight:900;color:white;">🎵</div>
+            </div>
+            <div style="flex:1;text-align:left;">
+              <div id="calNote" style="font-size:13px;color:#95d5b2;margin-bottom:4px;">—</div>
+              <div style="background:rgba(255,255,255,0.12);border-radius:4px;height:7px;overflow:hidden;">
+                <div id="calVolBar" style="height:7px;width:0%;background:linear-gradient(to right,#00ff88,#ffd700);border-radius:4px;transition:width 0.05s;"></div>
+              </div>
+              <div id="calHint" style="font-size:11px;color:rgba(255,255,255,0.45);margin-top:3px;">Waiting...</div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -344,6 +395,11 @@
     <!-- Gameplay HUD -->
     <div class="screen hidden" id="screenGame" style="background:none; pointer-events:none;">
       <div id="scoreDisplay">0</div>
+      <!-- Combo + speed bar (top-left, below mic toggle) -->
+      <div id="comboDisplay" style="position:absolute;top:50px;left:16px;pointer-events:none;display:none;">
+        <div id="comboCount" style="font-size:22px;font-weight:900;color:#FFD700;text-shadow:0 0 8px #FFD700;line-height:1;">x<span id="comboNum">0</span></div>
+        <div id="speedBadge" style="font-size:11px;font-weight:bold;color:#fff;background:rgba(0,0,0,0.4);border-radius:8px;padding:2px 6px;margin-top:2px;">1.0x</div>
+      </div>
       <div id="pitchMeter"><div id="pitchFill"></div><div id="pitchDot" style="bottom:50%"></div></div>
       <div id="noteHint">🎵 —</div>
       <div id="micStatus">🎤 Initializing mic...</div>
@@ -444,12 +500,12 @@ const BROTHER_JOHN_NOTES = [
   {note:'F#4',ratio:0.29, beats:1, lyric:'Bro-'},  {note:'G4', ratio:0.43, beats:1, lyric:'ther'},
   {note:'A4', ratio:0.57, beats:2, lyric:'John.'},
   // "Morning bells are ringing! Morning bells are ringing!"
-  {note:'A4', ratio:0.57, beats:1, lyric:'Mor-'},  {note:'B4', ratio:0.71, beats:1, lyric:'ning'},
-  {note:'A4', ratio:0.57, beats:1, lyric:'bells'}, {note:'G4', ratio:0.43, beats:1, lyric:'are'},
-  {note:'F#4',ratio:0.29, beats:1, lyric:'ring-'}, {note:'D4', ratio:0.00, beats:1, lyric:'ing!'},
-  {note:'A4', ratio:0.57, beats:1, lyric:'Mor-'},  {note:'B4', ratio:0.71, beats:1, lyric:'ning'},
-  {note:'A4', ratio:0.57, beats:1, lyric:'bells'}, {note:'G4', ratio:0.43, beats:1, lyric:'are'},
-  {note:'F#4',ratio:0.29, beats:1, lyric:'ring-'}, {note:'D4', ratio:0.00, beats:1, lyric:'ing!'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'Mor-'},  {note:'B4', ratio:0.71, beats:0.5, lyric:'ning'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'bells'}, {note:'G4', ratio:0.43, beats:0.5, lyric:'are'},
+  {note:'F#4',ratio:0.29, beats:0.5, lyric:'ring-'}, {note:'D4', ratio:0.00, beats:0.5, lyric:'ing!'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'Mor-'},  {note:'B4', ratio:0.71, beats:0.5, lyric:'ning'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'bells'}, {note:'G4', ratio:0.43, beats:0.5, lyric:'are'},
+  {note:'F#4',ratio:0.29, beats:0.5, lyric:'ring-'}, {note:'D4', ratio:0.00, beats:0.5, lyric:'ing!'},
   // "Ding, dang, dong. Ding, dang, dong."
   {note:'D4', ratio:0.00, beats:1, lyric:'Ding,'},  {note:'A4', ratio:0.57, beats:1, lyric:'dang,'},
   {note:'D4', ratio:0.00, beats:2, lyric:'dong.'},
@@ -465,12 +521,12 @@ const BROTHER_JOHN_NOTES = [
   {note:'A4', ratio:0.57, beats:2, lyric:'John,'},
   {note:'F#4',ratio:0.29, beats:1, lyric:'Bro-'},  {note:'G4', ratio:0.43, beats:1, lyric:'ther'},
   {note:'A4', ratio:0.57, beats:2, lyric:'John.'},
-  {note:'A4', ratio:0.57, beats:1, lyric:'Mor-'},  {note:'B4', ratio:0.71, beats:1, lyric:'ning'},
-  {note:'A4', ratio:0.57, beats:1, lyric:'bells'}, {note:'G4', ratio:0.43, beats:1, lyric:'are'},
-  {note:'F#4',ratio:0.29, beats:1, lyric:'ring-'}, {note:'D4', ratio:0.00, beats:1, lyric:'ing!'},
-  {note:'A4', ratio:0.57, beats:1, lyric:'Mor-'},  {note:'B4', ratio:0.71, beats:1, lyric:'ning'},
-  {note:'A4', ratio:0.57, beats:1, lyric:'bells'}, {note:'G4', ratio:0.43, beats:1, lyric:'are'},
-  {note:'F#4',ratio:0.29, beats:1, lyric:'ring-'}, {note:'D4', ratio:0.00, beats:1, lyric:'ing!'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'Mor-'},  {note:'B4', ratio:0.71, beats:0.5, lyric:'ning'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'bells'}, {note:'G4', ratio:0.43, beats:0.5, lyric:'are'},
+  {note:'F#4',ratio:0.29, beats:0.5, lyric:'ring-'}, {note:'D4', ratio:0.00, beats:0.5, lyric:'ing!'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'Mor-'},  {note:'B4', ratio:0.71, beats:0.5, lyric:'ning'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'bells'}, {note:'G4', ratio:0.43, beats:0.5, lyric:'are'},
+  {note:'F#4',ratio:0.29, beats:0.5, lyric:'ring-'}, {note:'D4', ratio:0.00, beats:0.5, lyric:'ing!'},
   {note:'D4', ratio:0.00, beats:1, lyric:'Ding,'},  {note:'A4', ratio:0.57, beats:1, lyric:'dang,'},
   {note:'D4', ratio:0.00, beats:2, lyric:'dong.'},
   {note:'D4', ratio:0.00, beats:1, lyric:'Ding,'},  {note:'A4', ratio:0.57, beats:1, lyric:'dang,'},
@@ -487,12 +543,12 @@ const BROTHER_JOHN_NOTES = [
   {note:'F#4',ratio:0.29, beats:1, lyric:'跑得'},  {note:'G4', ratio:0.43, beats:1, lyric:'快。'},
   {note:'A4', ratio:0.57, beats:2, lyric:'——'},
   // "一只没有耳朵，一只没有尾巴，"
-  {note:'A4', ratio:0.57, beats:1, lyric:'一只'},  {note:'B4', ratio:0.71, beats:1, lyric:'没有'},
-  {note:'A4', ratio:0.57, beats:1, lyric:'耳'},    {note:'G4', ratio:0.43, beats:1, lyric:'朵，'},
-  {note:'F#4',ratio:0.29, beats:1, lyric:'一只'},  {note:'D4', ratio:0.00, beats:1, lyric:'没有'},
-  {note:'A4', ratio:0.57, beats:1, lyric:'尾'},    {note:'B4', ratio:0.71, beats:1, lyric:'巴，'},
-  {note:'A4', ratio:0.57, beats:1, lyric:'一只'},  {note:'G4', ratio:0.43, beats:1, lyric:'没有'},
-  {note:'F#4',ratio:0.29, beats:1, lyric:'尾'},    {note:'D4', ratio:0.00, beats:1, lyric:'巴，'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'一只'},  {note:'B4', ratio:0.71, beats:0.5, lyric:'没有'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'耳'},    {note:'G4', ratio:0.43, beats:0.5, lyric:'朵，'},
+  {note:'F#4',ratio:0.29, beats:0.5, lyric:'一只'},  {note:'D4', ratio:0.00, beats:0.5, lyric:'没有'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'尾'},    {note:'B4', ratio:0.71, beats:0.5, lyric:'巴，'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'一只'},  {note:'G4', ratio:0.43, beats:0.5, lyric:'没有'},
+  {note:'F#4',ratio:0.29, beats:0.5, lyric:'尾'},    {note:'D4', ratio:0.00, beats:0.5, lyric:'巴，'},
   // "真奇怪，真奇怪。"
   {note:'E4', ratio:0.14, beats:1, lyric:'真奇'},  {note:'A4', ratio:0.57, beats:1, lyric:'怪，'},
   {note:'D4', ratio:0.00, beats:2, lyric:'——'},
@@ -508,12 +564,12 @@ const BROTHER_JOHN_NOTES = [
   {note:'A4', ratio:0.57, beats:2, lyric:'——'},
   {note:'F#4',ratio:0.29, beats:1, lyric:'跑得'},  {note:'G4', ratio:0.43, beats:1, lyric:'快。'},
   {note:'A4', ratio:0.57, beats:2, lyric:'——'},
-  {note:'A4', ratio:0.57, beats:1, lyric:'一只'},  {note:'B4', ratio:0.71, beats:1, lyric:'没有'},
-  {note:'A4', ratio:0.57, beats:1, lyric:'耳'},    {note:'G4', ratio:0.43, beats:1, lyric:'朵，'},
-  {note:'F#4',ratio:0.29, beats:1, lyric:'一只'},  {note:'D4', ratio:0.00, beats:1, lyric:'没有'},
-  {note:'A4', ratio:0.57, beats:1, lyric:'尾'},    {note:'B4', ratio:0.71, beats:1, lyric:'巴，'},
-  {note:'A4', ratio:0.57, beats:1, lyric:'一只'},  {note:'G4', ratio:0.43, beats:1, lyric:'没有'},
-  {note:'F#4',ratio:0.29, beats:1, lyric:'尾'},    {note:'D4', ratio:0.00, beats:1, lyric:'巴，'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'一只'},  {note:'B4', ratio:0.71, beats:0.5, lyric:'没有'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'耳'},    {note:'G4', ratio:0.43, beats:0.5, lyric:'朵，'},
+  {note:'F#4',ratio:0.29, beats:0.5, lyric:'一只'},  {note:'D4', ratio:0.00, beats:0.5, lyric:'没有'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'尾'},    {note:'B4', ratio:0.71, beats:0.5, lyric:'巴，'},
+  {note:'A4', ratio:0.57, beats:0.5, lyric:'一只'},  {note:'G4', ratio:0.43, beats:0.5, lyric:'没有'},
+  {note:'F#4',ratio:0.29, beats:0.5, lyric:'尾'},    {note:'D4', ratio:0.00, beats:0.5, lyric:'巴，'},
   {note:'E4', ratio:0.14, beats:1, lyric:'真奇'},  {note:'A4', ratio:0.57, beats:1, lyric:'怪，'},
   {note:'D4', ratio:0.00, beats:2, lyric:'——'},
   {note:'E4', ratio:0.14, beats:1, lyric:'真奇'},  {note:'A4', ratio:0.57, beats:1, lyric:'怪。'},
@@ -528,7 +584,7 @@ function buildPipes(notes, bps) {
   let time = 0;
   for (let i = 0; i < notes.length; i++) {
     const n = notes[i];
-    const isPipe = Math.round(time * bps) % 2 === 0;
+    const isPipe = false; // coins only for now — pipes disabled
     // Gap widens based on note steps from previous note
     const prevRatio = i > 0 ? notes[i - 1].ratio : n.ratio;
     const steps = Math.round(Math.abs(n.ratio - prevRatio) / 0.14); // each note step = 0.14 ratio
@@ -667,7 +723,7 @@ function detectPitch() {
   }
 
   debugAcMax = bestCorr;
-  if (bestLag < 1 || bestCorr < 0.75) { debugHz = -1; return -1; } // B: clarity threshold — reject noisy/uncertain readings
+  if (bestLag < 1 || bestCorr < 0.82) { debugHz = -1; return -1; } // B: clarity threshold — reject noisy/uncertain readings
 
   // Parabolic interpolation for sub-sample accuracy
   const prev = bestLag > minLag ? (() => { let s=0; for(let i=0;i<SIZE-(bestLag-1);i++) s+=buf[i]*buf[i+bestLag-1]; return s/energy; })() : bestCorr;
@@ -697,109 +753,242 @@ function freqToRatio(freq) {
 // ============================================================
 // CALIBRATION — Do Re Mi scale (1.5-octave range)
 // ============================================================
-const SOLFEGE = [
-  { label: 'Do',  ratio: 1.000 },              // semitone 0
-  { label: 'Re',  ratio: 1.1225 },             // semitone 2
-  { label: 'Mi',  ratio: 1.2599 },             // semitone 4
-  { label: 'Fa',  ratio: 1.3348 },             // semitone 5
-  { label: 'Sol', ratio: 1.4983 },             // semitone 7
-  { label: 'La',  ratio: 1.6818 },             // semitone 9
-  { label: 'Ti',  ratio: 1.8877 },             // semitone 11
-  { label: 'Do',  ratio: 2.000  },             // semitone 12
-  { label: 'Re',  ratio: 2.2449 },             // semitone 14
-  { label: 'Mi',  ratio: 2.5198 },             // semitone 16
-  { label: 'Fa',  ratio: 2.6697 },             // semitone 17
-  { label: 'Sol', ratio: 2.9966 },             // semitone 19
+// ============================================================
+// CALIBRATION — Phase 0: range pick  Phase 1: Do Re Mi echo
+// ============================================================
+
+// Base frequencies for the three range presets
+const CAL_RANGE_FREQS = { Low: 130.81, Medium: 261.63, High: 523.25 }; // C3, C4, C5
+
+// Only three notes for call-and-response: Do, Re, Mi
+const CAL_DRM = [
+  { label: 'Do', ratio: 1.000 },
+  { label: 'Re', ratio: 1.1225 },
+  { label: 'Mi', ratio: 1.2599 },
 ];
-const CAL_HOLD_SECS = 1.0;
-const CAL_CIRCUMFERENCE = 144.5; // 2π×23
+const CAL_HOLD_SECS    = 0.5;   // seconds player must hold note
+const CAL_TOLERANCE    = 0.15;  // ±15% freq tolerance = ~2.5 semitones
+const CAL_CIRCUMFERENCE = 163.4; // 2π×26  (ring r=26 in new HTML)
 
-let calStep = 0;
-let calHoldTimer = 0;
-let calSamples = [];
-let calBaseFreq = 0;
-let calAnimId = null;
-let calBubbleEls = [];
-let calBirdY = 762; // = PLAY_BOT - BIRD_R, set properly in startCalibration()
-let calBirdAngle = 0;
-let calDecoPipes = [];
+let calPhase      = 0;   // 0 = range select, 1 = Do Re Mi
+let calDRMStep    = 0;   // 0=Do 1=Re 2=Mi
+let calDRMMissCount = 0; // misses on current step
+let calDRMState   = 'playing'; // playing | listening | confirmed
+let calDRMTimer   = 0;
+let calHoldTimer  = 0;
+let calSamples    = [];
+let calBaseFreq   = 0;
+let calRangeChoice = 'Medium';
+let calAnimId     = null;
+let calBirdY      = 762;
+let calBirdAngle  = 0;
 let isCalibrating = false;
+let calBirdOsc    = null; // oscillator for bird note playback
 
-function buildCalBubbles() {
-  const container = document.getElementById('calBubbles');
-  container.innerHTML = '';
-  calBubbleEls = [];
-  SOLFEGE.forEach((s, i) => {
-    const el = document.createElement('div');
-    el.textContent = s.label;
-    el.style.cssText = 'width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;border:2px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.4);background:rgba(0,0,0,0.3);transition:all 0.2s;';
-    container.appendChild(el);
-    calBubbleEls.push(el);
+function calPlayNote(freq, duration = 1.2) {
+  if (!audioCtx) return;
+  try {
+    if (calBirdOsc) { try { calBirdOsc.stop(); } catch(e){} calBirdOsc = null; }
+    const osc  = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = freq;
+    gain.gain.setValueAtTime(0, audioCtx.currentTime);
+    gain.gain.linearRampToValueAtTime(0.35, audioCtx.currentTime + 0.05);
+    gain.gain.linearRampToValueAtTime(0.35, audioCtx.currentTime + duration - 0.1);
+    gain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + duration);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(audioCtx.currentTime + duration);
+    calBirdOsc = osc;
+  } catch(e) { console.warn('calPlayNote error:', e); }
+}
+
+function calChime() {
+  if (!audioCtx) return;
+  [1, 1.25, 1.5].forEach((r, i) => {
+    const osc = audioCtx.createOscillator();
+    const g   = audioCtx.createGain();
+    const base = CAL_RANGE_FREQS[calRangeChoice] * CAL_DRM[Math.min(calDRMStep, 2)].ratio;
+    osc.frequency.value = base * r;
+    osc.type = 'sine';
+    g.gain.setValueAtTime(0, audioCtx.currentTime + i * 0.12);
+    g.gain.linearRampToValueAtTime(0.2, audioCtx.currentTime + i * 0.12 + 0.04);
+    g.gain.linearRampToValueAtTime(0, audioCtx.currentTime + i * 0.12 + 0.4);
+    osc.connect(g); g.connect(audioCtx.destination);
+    osc.start(audioCtx.currentTime + i * 0.12);
+    osc.stop(audioCtx.currentTime + i * 0.12 + 0.5);
   });
 }
 
-function updateCalBubbles() {
-  calBubbleEls.forEach((el, i) => {
-    if (i < calStep) {
-      el.style.background = '#2d6a4f';
-      el.style.borderColor = '#52b788';
-      el.style.color = '#90EE90';
-    } else if (i === calStep) {
-      el.style.background = 'linear-gradient(135deg,#FFD700,#FFA500)';
-      el.style.borderColor = '#FFD700';
-      el.style.color = '#1a1a1a';
-      el.style.transform = 'scale(1.2)';
-      el.style.boxShadow = '0 0 12px #FFD700';
-    } else {
-      el.style.background = 'rgba(0,0,0,0.3)';
-      el.style.borderColor = 'rgba(255,255,255,0.2)';
-      el.style.color = 'rgba(255,255,255,0.4)';
-      el.style.transform = 'scale(1)';
-      el.style.boxShadow = 'none';
-    }
-  });
+function calUpdateDots() {
+  for (let i = 0; i < 3; i++) {
+    const d = document.getElementById('calDot' + i);
+    if (!d) continue;
+    d.className = 'cal-dot' + (i < calDRMStep ? ' done' : i === calDRMStep ? ' active' : '');
+  }
 }
 
-function calStepTargetY() {
-  const t = calStep / (SOLFEGE.length - 1);
-  return PLAY_BOT - BIRD_R - t * (PLAY_BOT - PLAY_TOP - 2 * BIRD_R);
-}
-
-function drawCalibrationCanvas(dt) {
+function calDrawCanvas(dt) {
   bgOffset1 += PIPE_SPEED * dt;
   bgOffset2 += PIPE_SPEED * 0.5 * dt;
   bgOffset3 += PIPE_SPEED * 0.2 * dt;
   drawBackground();
-
-  // Scroll decorative pipes
-  for (const p of calDecoPipes) p.x -= PIPE_SPEED * dt;
-  calDecoPipes = calDecoPipes.filter(p => p.x > -PIPE_W - 20);
-  const lastX = calDecoPipes.length ? Math.max(...calDecoPipes.map(p => p.x)) : W;
-  if (calDecoPipes.length < 4) {
-    const t = (calStep + calDecoPipes.length) / (SOLFEGE.length - 1);
-    calDecoPipes.push({ x: lastX + 220, ratio: Math.max(0.05, Math.min(0.95, t)), passed: true });
-  }
-  for (const p of calDecoPipes) drawPipe(p);
-
-  // Bird smoothly rises toward target for current step
-  const targetY = calStepTargetY();
+  // Bird hovers at mid-height during phase 0, rises with each note in phase 1
+  const targetY = calPhase === 0
+    ? H / 2
+    : PLAY_BOT - BIRD_R - (calDRMStep / 2) * (PLAY_BOT - PLAY_TOP - 2 * BIRD_R) * 0.5;
   const diff = targetY - calBirdY;
   calBirdY += diff * (1 - Math.pow(0.01, dt));
-  calBirdAngle = Math.max(-0.4, Math.min(0.4, -diff * 0.003));
-  birdWingPhase += dt * 10;
+  calBirdAngle = Math.max(-0.3, Math.min(0.3, -diff * 0.003));
+  birdWingPhase += dt * 8;
   drawBird(birdX, calBirdY, calBirdAngle);
 }
 
+function startDRMStep() {
+  calDRMState   = 'playing';
+  calDRMTimer   = 0;
+  calHoldTimer  = 0;
+  calSamples    = [];
+  const note    = CAL_DRM[calDRMStep];
+  const freq    = CAL_RANGE_FREQS[calRangeChoice] * note.ratio;
+  const instr   = document.getElementById('calDRMInstruction');
+  const status  = document.getElementById('calDRMStatus');
+  const ring    = document.getElementById('calRing');
+  const label   = document.getElementById('calRingLabel');
+  const hint    = document.getElementById('calHint');
+  if (instr)  instr.textContent  = note.label;
+  if (status) status.textContent = '🐦 Listen...';
+  if (ring)   { ring.style.stroke = 'rgba(255,255,255,0.3)'; ring.style.strokeDashoffset = CAL_CIRCUMFERENCE; }
+  if (label)  label.textContent  = '🎵';
+  if (hint)   hint.textContent   = 'Listen to the bird...';
+  calUpdateDots();
+  calPlayNote(freq, 1.3);
+  // After 1.5s switch to listening
+  setTimeout(() => {
+    if (!isCalibrating) return;
+    calDRMState = 'listening';
+    if (status) status.textContent = 'Now you sing!';
+    if (hint)   hint.textContent   = 'Sing this note back';
+    if (label)  label.textContent  = '?';
+  }, 1500);
+}
+
+function runDRMFrame(dt) {
+  calDRMTimer += dt;
+  const elNote  = document.getElementById('calNote');
+  const elVol   = document.getElementById('calVolBar');
+  const elRing  = document.getElementById('calRing');
+  const elLabel = document.getElementById('calRingLabel');
+  const elHint  = document.getElementById('calHint');
+  const elStatus = document.getElementById('calDRMStatus');
+
+  if (calDRMState !== 'listening') return;
+
+  const pitch = detectPitch();
+  const vol   = Math.min(100, debugRms * 200);
+  if (elVol) elVol.style.width = vol + '%';
+  if (elNote) elNote.textContent = pitch > 0 ? getCurrentNoteName(pitch) : '—';
+
+  const targetFreq = CAL_RANGE_FREQS[calRangeChoice] * CAL_DRM[calDRMStep].ratio;
+
+  if (pitch > 0 && debugRms > 0.015) {
+    const ratio = pitch / targetFreq;
+    const inTune = ratio >= (1 - CAL_TOLERANCE) && ratio <= (1 + CAL_TOLERANCE);
+    if (inTune) {
+      calSamples.push(pitch);
+      calHoldTimer += dt;
+      if (elHint)  elHint.textContent  = 'Hold it!';
+      if (elStatus) elStatus.textContent = 'Great, hold it!';
+      if (elRing)  { elRing.style.stroke = '#52b788'; }
+      if (elLabel) elLabel.textContent  = calHoldTimer >= CAL_HOLD_SECS ? 'v' : '...';
+      const progress = Math.min(1, calHoldTimer / CAL_HOLD_SECS);
+      if (elRing) elRing.style.strokeDashoffset = CAL_CIRCUMFERENCE * (1 - progress);
+
+      if (calHoldTimer >= CAL_HOLD_SECS) {
+        // Confirmed! Record base freq from Do
+        if (calDRMStep === 0) {
+          const med = calSamples.slice().sort((a,b)=>a-b)[Math.floor(calSamples.length/2)];
+          calBaseFreq = med;
+        }
+        calDRMState = 'confirmed';
+        if (elRing)  { elRing.style.stroke = '#FFD700'; elRing.style.strokeDashoffset = '0'; }
+        if (elLabel) elLabel.textContent = 'v';
+        if (elStatus) elStatus.textContent = 'Perfect!';
+        calChime();
+        setTimeout(() => advanceDRM(), 800);
+      }
+    } else {
+      // Singing but wrong pitch
+      calHoldTimer = Math.max(0, calHoldTimer - dt * 3);
+      if (elHint) elHint.textContent = 'A little ' + (pitch < targetFreq ? 'higher' : 'lower') + '...';
+      if (elRing) { elRing.style.stroke = '#FFA500'; }
+      const progress = Math.min(1, calHoldTimer / CAL_HOLD_SECS);
+      if (elRing) elRing.style.strokeDashoffset = CAL_CIRCUMFERENCE * (1 - progress);
+    }
+  } else {
+    calHoldTimer = Math.max(0, calHoldTimer - dt * 2);
+    if (elHint) elHint.textContent = debugRms < 0.015 ? 'Sing louder to start' : 'Detecting...';
+    if (elRing) { elRing.style.stroke = 'rgba(255,255,255,0.3)'; }
+    const progress = Math.min(1, calHoldTimer / CAL_HOLD_SECS);
+    if (elRing) elRing.style.strokeDashoffset = CAL_CIRCUMFERENCE * (1 - progress);
+
+    // Auto-pass after 8s of no match
+    if (calDRMTimer > 8) {
+      calDRMMissCount++;
+      if (calDRMMissCount >= 2) {
+        // Auto-pass this note with range default
+        if (calDRMStep === 0) calBaseFreq = CAL_RANGE_FREQS[calRangeChoice];
+        calDRMState = 'confirmed';
+        if (elStatus) elStatus.textContent = "That's OK!";
+        if (elLabel) elLabel.textContent = 'v';
+        setTimeout(() => advanceDRM(), 800);
+      } else {
+        // Replay the note once
+        if (elStatus) elStatus.textContent = "Let's try again!";
+        const freq = CAL_RANGE_FREQS[calRangeChoice] * CAL_DRM[calDRMStep].ratio;
+        calPlayNote(freq, 1.3);
+        calDRMTimer = 0;
+        calDRMMissCount++;
+        setTimeout(() => {
+          if (!isCalibrating) return;
+          calDRMState = 'listening';
+          if (elStatus) elStatus.textContent = 'Now you sing!';
+        }, 1500);
+        calDRMState = 'playing';
+      }
+    }
+  }
+}
+
+function advanceDRM() {
+  calDRMStep++;
+  calDRMMissCount = 0;
+  calHoldTimer    = 0;
+  calSamples      = [];
+  if (calDRMStep >= CAL_DRM.length) {
+    finishCalibration();
+  } else {
+    startDRMStep();
+  }
+}
+
 function startCalibration() {
-  calStep = 0;
-  calHoldTimer = 0;
-  calSamples = [];
-  calBaseFreq = 0;
-  calBirdY = PLAY_BOT - BIRD_R;
-  calDecoPipes = [];
-  isCalibrating = true;
-  buildCalBubbles();
-  updateCalBubbles();
+  calPhase       = 0;
+  calDRMStep     = 0;
+  calDRMMissCount = 0;
+  calBaseFreq    = 0;
+  calRangeChoice = 'Medium';
+  calBirdY       = H / 2;
+  isCalibrating  = true;
+
+  // Show phase 0
+  const p0 = document.getElementById('calPhase0Ui');
+  const p1 = document.getElementById('calPhase1Ui');
+  if (p0) p0.style.display = 'flex';
+  if (p1) p1.style.display = 'none';
+
   showScreen('calibrate');
   if (calAnimId) cancelAnimationFrame(calAnimId);
   let last = null;
@@ -807,74 +996,31 @@ function startCalibration() {
     if (!isCalibrating) return;
     const dt = last ? Math.min((ts - last) / 1000, 0.1) : 0;
     last = ts;
-    drawCalibrationCanvas(dt);
-    runCalibrationFrame(dt);
+    calDrawCanvas(dt);
+    if (calPhase === 1) runDRMFrame(dt);
     calAnimId = requestAnimationFrame(tick);
   });
 }
 
-function runCalibrationFrame(dt) {
-  const pitch = detectPitch();
-  const vol = Math.min(100, debugRms * 200);
-
-  const elNote  = document.getElementById('calNote');
-  const elVol   = document.getElementById('calVolBar');
-  const elRing  = document.getElementById('calRing');
-  const elLabel = document.getElementById('calRingLabel');
-  const elHint  = document.getElementById('calHint');
-  const elInstr = document.getElementById('calInstruction');
-
-  const solfege = SOLFEGE[calStep];
-  elInstr.textContent = 'Sing: ' + solfege.label;
-  elVol.style.width = vol + '%';
-
-  if (pitch > 0 && debugRms > 0.02) {
-    calSamples.push(pitch);
-    if (calSamples.length > 20) calSamples.shift();
-    elNote.textContent = getCurrentNoteName(pitch);
-    calHoldTimer += dt;
-    elHint.textContent = 'Hold it…';
-
-    const progress = Math.min(1, calHoldTimer / CAL_HOLD_SECS);
-    elRing.style.strokeDashoffset = CAL_CIRCUMFERENCE * (1 - progress);
-    elLabel.textContent = calHoldTimer >= CAL_HOLD_SECS ? '✓' : Math.ceil(CAL_HOLD_SECS - calHoldTimer) || '✓';
-    elRing.style.stroke = '#FFD700';
-
-    if (calHoldTimer >= CAL_HOLD_SECS) {
-      const medFreq = calSamples.slice().sort((a,b)=>a-b)[Math.floor(calSamples.length/2)];
-      if (calStep === 0) calBaseFreq = medFreq;
-      calStep++;
-      calHoldTimer = 0;
-      calSamples = [];
-      elRing.style.strokeDashoffset = CAL_CIRCUMFERENCE;
-      elLabel.textContent = '?';
-      if (calStep >= SOLFEGE.length) {
-        finishCalibration();
-        return;
-      }
-      updateCalBubbles();
-    }
-  } else {
-    calHoldTimer = Math.max(0, calHoldTimer - dt * 2);
-    elNote.textContent = pitch > 0 ? getCurrentNoteName(pitch) : '—';
-    elHint.textContent = debugRms < 0.02 ? 'Sing louder to start' : 'Detecting…';
-    const progress = Math.min(1, calHoldTimer / CAL_HOLD_SECS);
-    elRing.style.strokeDashoffset = CAL_CIRCUMFERENCE * (1 - progress);
-    elLabel.textContent = calHoldTimer < 0.1 ? '?' : Math.ceil(CAL_HOLD_SECS - calHoldTimer);
-  }
+function startCalPhase1() {
+  calPhase = 1;
+  calDRMStep = 0;
+  const p0 = document.getElementById('calPhase0Ui');
+  const p1 = document.getElementById('calPhase1Ui');
+  if (p0) p0.style.display = 'none';
+  if (p1) p1.style.display = 'flex';
+  ensureMicRunning().then(() => startDRMStep());
 }
 
 function finishCalibration() {
-  cancelAnimationFrame(calAnimId);
-  // 1-octave range anchored to the user's Do (base = C4 equivalent).
-  // With log mapping, base→0.00 and base*2→1.00 — exactly matching pipe ratios C4..C5.
-  // Small headroom (5%) so the user doesn't clip at the very top/bottom.
-  const base = calBaseFreq || 220;
+  if (calAnimId) cancelAnimationFrame(calAnimId);
+  const base = calBaseFreq || CAL_RANGE_FREQS[calRangeChoice];
   playerMinFreq = Math.round(base * 0.95);
   playerMaxFreq = Math.round(base * 2.0 * 1.05);
   localStorage.setItem('oohwoo_minFreq', playerMinFreq);
   localStorage.setItem('oohwoo_maxFreq', playerMaxFreq);
-  console.log(`Calibrated: base=${Math.round(base)}Hz range=${playerMinFreq}–${playerMaxFreq}Hz`);
+  localStorage.setItem('oohwoo_range', calRangeChoice);
+  console.log(`Calibrated: range=${calRangeChoice} base=${Math.round(base)}Hz range=${playerMinFreq}-${playerMaxFreq}Hz`);
   updateRangeDisplay();
   isCalibrating = false;
   showScreen('select');
@@ -969,6 +1115,41 @@ function lightenColor(hex, amt) {
 // ============================================================
 let state = 'main'; // main | select | playing | dead | complete
 let score = 0;
+let combo = 0;
+let speedMult = 1.0;
+
+// Speed tiers: [minCombo, multiplier, label]
+const SPEED_TIERS = [
+  [0,  1.0,  '1.0x'],
+  [10, 1.25, '1.25x'],
+  [20, 1.5,  '1.5x'],
+  [30, 2.0,  '2.0x'],
+  [50, 2.5,  '2.5x'],
+  [80, 3.0,  '3.0x'],
+];
+
+function comboToSpeed(c) {
+  let tier = SPEED_TIERS[0];
+  for (const t of SPEED_TIERS) { if (c >= t[0]) tier = t; }
+  return tier;
+}
+
+function updateComboHUD() {
+  const el = document.getElementById('comboDisplay');
+  const numEl = document.getElementById('comboNum');
+  const badge = document.getElementById('speedBadge');
+  if (!el) return;
+  if (combo > 0) {
+    el.style.display = 'block';
+    numEl.textContent = combo;
+    const tier = comboToSpeed(combo);
+    badge.textContent = tier[2];
+    badge.style.color = tier[1] >= 2.0 ? '#FFD700' : '#fff';
+  } else {
+    el.style.display = 'none';
+  }
+}
+
 let birdY = H / 2;
 let birdVY = 0;
 // Mic mode shifts bird 18px left to compensate for ~100ms audio detection lag.
@@ -1021,7 +1202,7 @@ document.addEventListener('keydown', e => {
 const PIPE_W = 60;
 const PIPE_GAP = 350; // px gap height
 const COIN_R = 14;
-const PIPE_SPEED = 180; // px/s
+const PIPE_SPEED = 240; // px/s
 const PIPE_SPAWN_X = W + 80;
 const HIT_ZONE_X = 190; // dotted line — beats align here, bird at x=100 has 0.5s buffer to reposition
 const PLAY_TOP = 60; // top dead zone
@@ -1088,6 +1269,8 @@ canvas.addEventListener('mouseup',    e => { touchHeld = false; });
 
 function startGame(song) {
   score = 0;
+  combo = 0;
+  speedMult = 1.0;
   paused = false;
   birdY = H / 2;
   birdVY = 0;
@@ -1114,12 +1297,14 @@ function startGame(song) {
 
 function gameOver() {
   state = 'dead';
+  combo = 0; speedMult = 1.0; updateComboHUD();
   document.getElementById('finalScore').textContent = score;
   setTimeout(() => showScreen('over'), 600);
 }
 
 function songComplete() {
   state = 'complete';
+  combo = 0; speedMult = 1.0; updateComboHUD();
   document.getElementById('completeScore').textContent = score;
   showScreen('complete');
 }
@@ -1469,14 +1654,14 @@ function gameLoop(ts) {
     if (micSinging) {
       const targetY = PLAY_TOP + (1 - pitchRatioSmooth) * PLAY_H;
       const diff = targetY - birdY;
-      birdVY += diff * 220 * dt;
+      birdVY += diff * 400 * dt;
       birdVY *= 0.4;
       setMicIndicator('active');
       micStatus.textContent = '🎤 ' + getCurrentNoteName(rawPitch);
     } else if (keyActive) {
       const targetY = PLAY_TOP + (1 - keyRatio) * PLAY_H;
       const diff = targetY - birdY;
-      birdVY += diff * 220 * dt;
+      birdVY += diff * 400 * dt;
       birdVY *= 0.4;
       setMicIndicator('off');
       micStatus.textContent = '🎹 Key ' + [...heldKeys].join('+');
@@ -1535,19 +1720,31 @@ function gameLoop(ts) {
 
     // Move pipes
     for (const pipe of pipes) {
-      pipe.x -= PIPE_SPEED * dt;
+      pipe.x -= PIPE_SPEED * speedMult * dt;
     }
 
     // Move and collect coins
+    let comboChanged = false;
     for (const coin of activeCoins) {
-      coin.x -= PIPE_SPEED * dt;
+      coin.x -= PIPE_SPEED * speedMult * dt;
       if (!coin.collected && Math.abs(coin.x - birdX) < 28 && Math.abs(coin.y - birdY) < 28) {
         coin.collected = true;
         score += 1;
         scoreDisplay.textContent = score;
+        combo++;
+        speedMult = comboToSpeed(combo)[1];
+        comboChanged = true;
+      }
+      // Miss: coin passed bird without being collected
+      if (!coin.collected && coin.x < birdX - 40) {
+        coin.missed = true;
+        combo = 0;
+        speedMult = 1.0;
+        comboChanged = true;
       }
     }
-    activeCoins = activeCoins.filter(c => c.x > -COIN_R * 2 && !c.collected);
+    if (comboChanged) updateComboHUD();
+    activeCoins = activeCoins.filter(c => c.x > -COIN_R * 2 && !c.collected && !c.missed);
 
     // Score + collision
     for (const pipe of pipes) {
@@ -1863,12 +2060,12 @@ const ROW_BOAT_NOTES = [
   {note:'E4',ratio:0.29,beats:1,lyric:'gent-'},{note:'D4',ratio:0.14,beats:1,lyric:'ly'},
   {note:'E4',ratio:0.29,beats:1,lyric:'down'},{note:'F4',ratio:0.43,beats:1,lyric:'the'},
   {note:'G4',ratio:0.57,beats:2,lyric:'stream'},
-  {note:'C5',ratio:1.00,beats:1,lyric:'Mer-'},{note:'C5',ratio:1.00,beats:1,lyric:'ri-'},
-  {note:'C5',ratio:1.00,beats:1,lyric:'ly'},
-  {note:'G4',ratio:0.57,beats:1,lyric:'mer-'},{note:'G4',ratio:0.57,beats:1,lyric:'ri-'},
-  {note:'G4',ratio:0.57,beats:1,lyric:'ly'},
-  {note:'E4',ratio:0.29,beats:1,lyric:'mer-'},{note:'E4',ratio:0.29,beats:1,lyric:'ri-'},
-  {note:'E4',ratio:0.29,beats:1,lyric:'ly'},
+  {note:'C5',ratio:1.00,beats:0.5,lyric:'Mer-'},{note:'C5',ratio:1.00,beats:0.5,lyric:'ri-'},
+  {note:'C5',ratio:1.00,beats:0.5,lyric:'ly'},
+  {note:'G4',ratio:0.57,beats:0.5,lyric:'mer-'},{note:'G4',ratio:0.57,beats:0.5,lyric:'ri-'},
+  {note:'G4',ratio:0.57,beats:0.5,lyric:'ly'},
+  {note:'E4',ratio:0.29,beats:0.5,lyric:'mer-'},{note:'E4',ratio:0.29,beats:0.5,lyric:'ri-'},
+  {note:'E4',ratio:0.29,beats:0.5,lyric:'ly'},
   {note:'C4',ratio:0.00,beats:1,lyric:'life'},{note:'D4',ratio:0.14,beats:1,lyric:'is'},
   {note:'E4',ratio:0.29,beats:1,lyric:'but'},{note:'F4',ratio:0.43,beats:1,lyric:'a'},
   {note:'G4',ratio:0.57,beats:2,lyric:'dream'},
@@ -1903,6 +2100,7 @@ const MORE_TOGETHER_NOTES = [
 
 // 11. Little Bunny / 小兔子乖乖 (BPM 123)
 const LITTLE_BUNNY_NOTES = [
+  // --- Verse 1 Chinese: wolf knocks, bunny refuses ---
   {note:'G4',ratio:0.57,beats:1,lyric:'小'},{note:'G4',ratio:0.57,beats:1,lyric:'兔'},
   {note:'E4',ratio:0.29,beats:1,lyric:'子'},{note:'G4',ratio:0.57,beats:1,lyric:'乖'},
   {note:'A4',ratio:0.71,beats:1,lyric:'乖'},{note:'G4',ratio:0.57,beats:1,lyric:'把'},
@@ -1918,6 +2116,57 @@ const LITTLE_BUNNY_NOTES = [
   {note:'C4',ratio:0.00,beats:1,lyric:'妈'},{note:'D4',ratio:0.14,beats:1,lyric:'妈'},
   {note:'E4',ratio:0.29,beats:1,lyric:'没'},{note:'D4',ratio:0.14,beats:1,lyric:'回'},
   {note:'C4',ratio:0.00,beats:2,lyric:'来'},
+
+  // --- Verse 2 Chinese: mama returns, bunny opens ---
+  {note:'G4',ratio:0.57,beats:1,lyric:'小'},{note:'G4',ratio:0.57,beats:1,lyric:'兔'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'子'},{note:'G4',ratio:0.57,beats:1,lyric:'乖'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'乖'},{note:'G4',ratio:0.57,beats:1,lyric:'把'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'门'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'儿'},{note:'G4',ratio:0.57,beats:1,lyric:'开'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'开'},{note:'G4',ratio:0.57,beats:1,lyric:'妈'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'妈'},{note:'G4',ratio:0.57,beats:1,lyric:'回'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'来'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'就'},{note:'A4',ratio:0.71,beats:1,lyric:'开'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'就'},{note:'F4',ratio:0.43,beats:1,lyric:'开'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'我'},{note:'E4',ratio:0.29,beats:1,lyric:'就'},
+  {note:'D4',ratio:0.14,beats:2,lyric:'开'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'妈'},{note:'D4',ratio:0.14,beats:1,lyric:'妈'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'回'},{note:'D4',ratio:0.14,beats:1,lyric:'来'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'了'},
+
+  // --- Verse 3 English: wolf knocks, bunny refuses ---
+  {note:'G4',ratio:0.57,beats:1,lyric:'Lit-'},{note:'G4',ratio:0.57,beats:1,lyric:'tle'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'Bun-'},{note:'G4',ratio:0.57,beats:1,lyric:'ny'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'o-'},{note:'G4',ratio:0.57,beats:1,lyric:'pen'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'the'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'door'},{note:'G4',ratio:0.57,beats:1,lyric:'o-'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'pen'},{note:'G4',ratio:0.57,beats:1,lyric:'it'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'quick-'},{note:'G4',ratio:0.57,beats:1,lyric:'ly'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'please'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'No'},{note:'A4',ratio:0.71,beats:1,lyric:'way'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'no'},{note:'F4',ratio:0.43,beats:1,lyric:'way'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'go'},{note:'E4',ratio:0.29,beats:1,lyric:'a-'},
+  {note:'D4',ratio:0.14,beats:2,lyric:'way'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'Ma-'},{note:'D4',ratio:0.14,beats:1,lyric:'ma'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'is-'},{note:'D4',ratio:0.14,beats:1,lyric:"n't"},
+  {note:'C4',ratio:0.00,beats:2,lyric:'here'},
+
+  // --- Verse 4 English: mama returns, bunny opens ---
+  {note:'G4',ratio:0.57,beats:1,lyric:'Lit-'},{note:'G4',ratio:0.57,beats:1,lyric:'tle'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'Bun-'},{note:'G4',ratio:0.57,beats:1,lyric:'ny'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'o-'},{note:'G4',ratio:0.57,beats:1,lyric:'pen'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'the'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'door'},{note:'G4',ratio:0.57,beats:1,lyric:'o-'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'pen'},{note:'G4',ratio:0.57,beats:1,lyric:'it'},
+  {note:'A4',ratio:0.71,beats:1,lyric:"Ma-"},{note:'G4',ratio:0.57,beats:1,lyric:"ma's"},
+  {note:'E4',ratio:0.29,beats:2,lyric:'home'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'Yes'},{note:'A4',ratio:0.71,beats:1,lyric:'mom'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'yes'},{note:'F4',ratio:0.43,beats:1,lyric:'mom'},
+  {note:'E4',ratio:0.29,beats:1,lyric:"I'm"},{note:'E4',ratio:0.29,beats:1,lyric:'here'},
+  {note:'D4',ratio:0.14,beats:2,lyric:'now'},
+  {note:'C4',ratio:0.00,beats:1,lyric:"I'll"},{note:'D4',ratio:0.14,beats:1,lyric:'o-'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'pen'},{note:'D4',ratio:0.14,beats:1,lyric:'the'},
+  {note:'C4',ratio:0.00,beats:4,lyric:'door'},
 ];
 
 // 12. Rain Rain Go Away (BPM 89)
@@ -1985,11 +2234,11 @@ const OLD_MCDONALD_NOTES = [
   {note:'E4',ratio:0.29,beats:1,lyric:'E'},{note:'E4',ratio:0.29,beats:1,lyric:'I'},
   {note:'D4',ratio:0.14,beats:1,lyric:'E'},{note:'D4',ratio:0.14,beats:1,lyric:'I'},
   {note:'C4',ratio:0.00,beats:2,lyric:'O'},
-  {note:'C4',ratio:0.00,beats:1,lyric:'With'},{note:'C4',ratio:0.00,beats:1,lyric:'a'},
+  {note:'C4',ratio:0.00,beats:0.5,lyric:'With'},{note:'C4',ratio:0.00,beats:0.5,lyric:'a'},
   {note:'G4',ratio:0.57,beats:1,lyric:'moo'},{note:'G4',ratio:0.57,beats:1,lyric:'moo'},
-  {note:'C4',ratio:0.00,beats:1,lyric:'here'},{note:'C4',ratio:0.00,beats:1,lyric:'and'},
-  {note:'G4',ratio:0.57,beats:1,lyric:'moo'},{note:'G4',ratio:0.57,beats:1,lyric:'moo'},
-  {note:'C4',ratio:0.00,beats:2,lyric:'there'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'here'},{note:'C4',ratio:0.00,beats:0.5,lyric:'and'},
+  {note:'G4',ratio:0.57,beats:0.5,lyric:'a'},{note:'G4',ratio:0.57,beats:1,lyric:'moo'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'moo'},{note:'C4',ratio:0.00,beats:2,lyric:'there'},
   {note:'E4',ratio:0.29,beats:1,lyric:'E'},{note:'E4',ratio:0.29,beats:1,lyric:'I'},
   {note:'D4',ratio:0.14,beats:1,lyric:'E'},{note:'D4',ratio:0.14,beats:1,lyric:'I'},
   {note:'C4',ratio:0.00,beats:2,lyric:'O'},
@@ -2257,6 +2506,20 @@ document.getElementById('btnSkipCal').addEventListener('click', () => {
   updateRangeDisplay();
   startMicTester();
   requestAnimationFrame(drawSelectBg);
+});
+
+// Range picker buttons (phase 0)
+document.querySelectorAll('.cal-range-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    calRangeChoice = btn.dataset.range;
+    // Visual selection feedback
+    document.querySelectorAll('.cal-range-btn').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    // Preview the Do note for this range
+    if (audioCtx) calPlayNote(CAL_RANGE_FREQS[calRangeChoice], 0.8);
+    // Short delay then move to phase 1
+    setTimeout(() => startCalPhase1(), 400);
+  });
 });
 document.getElementById('btnRestart').addEventListener('click', () => {
   stopBackingTrack();

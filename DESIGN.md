@@ -119,5 +119,23 @@ Chrome blocks microphone access on `file://` URLs. The included `start-game.bat`
 
 ---
 
+## Roadmap / Future Features
+
+**Trance mode** (combo 80+, speed 3x):
+- Motion blur on bird
+- Colour shift / saturation boost
+- Speed lines radiating from bird
+- Music pitch shifts up ~2 semitones
+- Screen edge glow pulses with beat
+- Coins shimmer brighter
+
+**3 lives system** — 3 misses before combo fully resets.
+
+**Practice mode** — song at 50% speed, no combo pressure, for learning the melody.
+
+**iPhone compatibility** — test and fix iOS Safari mic/audio issues.
+
+---
+
 *Last updated: 2026-06-02*
 *Maintainer: Galvin (gosu/gosubay)*

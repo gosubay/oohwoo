@@ -502,12 +502,16 @@ function detectPitch() {
 }
 
 // Player's personal vocal range (calibrated or defaults)
-let playerMinFreq = parseFloat(localStorage.getItem('oohwoo_minFreq')) || 150;
-let playerMaxFreq = parseFloat(localStorage.getItem('oohwoo_maxFreq')) || 550;
+let playerMinFreq = parseFloat(localStorage.getItem('oohwoo_minFreq')) || 248;  // ~C4 with 5% headroom
+let playerMaxFreq = parseFloat(localStorage.getItem('oohwoo_maxFreq')) || 549;  // ~C5 with 5% headroom
 
 function freqToRatio(freq) {
-  if (freq < 0) return -1;
-  return Math.max(0, Math.min(1, (freq - playerMinFreq) / (playerMaxFreq - playerMinFreq)));
+  if (freq < 0 || playerMinFreq <= 0 || playerMaxFreq <= playerMinFreq) return -1;
+  // Logarithmic mapping — pitch is perceived logarithmically (semitones),
+  // so log2 gives a ratio that matches the diatonic pipe positions.
+  const logMin = Math.log2(playerMinFreq);
+  const logMax = Math.log2(playerMaxFreq);
+  return Math.max(0, Math.min(1, (Math.log2(freq) - logMin) / (logMax - logMin)));
 }
 
 // ============================================================
@@ -682,10 +686,12 @@ function runCalibrationFrame(dt) {
 
 function finishCalibration() {
   cancelAnimationFrame(calAnimId);
-  // 1.5-octave range anchored to the user's Do, with headroom
+  // 1-octave range anchored to the user's Do (base = C4 equivalent).
+  // With log mapping, base→0.00 and base*2→1.00 — exactly matching pipe ratios C4..C5.
+  // Small headroom (5%) so the user doesn't clip at the very top/bottom.
   const base = calBaseFreq || 220;
-  playerMinFreq = Math.round(base * 0.85);
-  playerMaxFreq = Math.round(base * Math.pow(2, 1.5) * 1.15);
+  playerMinFreq = Math.round(base * 0.95);
+  playerMaxFreq = Math.round(base * 2.0 * 1.05);
   localStorage.setItem('oohwoo_minFreq', playerMinFreq);
   localStorage.setItem('oohwoo_maxFreq', playerMaxFreq);
   console.log(`Calibrated: base=${Math.round(base)}Hz range=${playerMinFreq}–${playerMaxFreq}Hz`);

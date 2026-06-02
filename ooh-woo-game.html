@@ -1231,7 +1231,13 @@ function gameLoop(ts) {
     const isSinging = micSinging || keyActive || touchActive;
 
     if (micSinging) {
-      pitchRatioSmooth += (rawRatio - pitchRatioSmooth) * 0.2;
+      // Outlier rejection: if pitch jumps more than 0.35 ratio in one frame, it's likely
+      // an octave error from the autocorrelation algorithm — clamp how far it can move
+      const rawDelta = rawRatio - pitchRatioSmooth;
+      const clampedRatio = Math.abs(rawDelta) > 0.35
+        ? pitchRatioSmooth + Math.sign(rawDelta) * 0.35
+        : rawRatio;
+      pitchRatioSmooth += (clampedRatio - pitchRatioSmooth) * 0.35;
       currentRatio = pitchRatioSmooth;
     } else if (keyActive) {
       pitchRatioSmooth += (keyRatio - pitchRatioSmooth) * 0.3;

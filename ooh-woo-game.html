@@ -345,7 +345,7 @@ const TWINKLE_NOTES = [
 // Build schedule from notes. isPipe=true on every 2nd beat (every 1s) — those get obstacle pipes.
 // All notes get a coin. spawnTime adjusted so each item arrives at birdX on its beat.
 function buildPipes(notes, bps) {
-  const travelTime = (PIPE_SPAWN_X - birdX) / PIPE_SPEED;
+  const travelTime = (PIPE_SPAWN_X - HIT_ZONE_X) / PIPE_SPEED; // pipes arrive at dotted line on the beat
   const schedule = [];
   let time = 0;
   for (let i = 0; i < notes.length; i++) {
@@ -826,6 +826,7 @@ const PIPE_GAP = 350; // px gap height
 const COIN_R = 14;
 const PIPE_SPEED = 180; // px/s
 const PIPE_SPAWN_X = W + 80;
+const HIT_ZONE_X = 190; // dotted line — beats align here, bird at x=100 has 0.5s buffer to reposition
 const PLAY_TOP = 60; // top dead zone
 const PLAY_BOT = H - 60; // bottom dead zone
 const PLAY_H = PLAY_BOT - PLAY_TOP;
@@ -1155,7 +1156,7 @@ function isPerfect(pipe) {
 // ============================================================
 function drawHitZone() {
   // Check if any pipe is currently crossing the hit zone
-  const hitX = birdX;
+  const hitX = HIT_ZONE_X;
   const activePipe = pipes.find(p => !p.passed && p.x <= hitX + PIPE_W/2 && p.x + PIPE_W >= hitX - PIPE_W/2);
 
   // Base glow — always visible, subtle

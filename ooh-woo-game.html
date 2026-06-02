@@ -1344,7 +1344,7 @@ function gameLoop(ts) {
         const spawnX = PIPE_SPAWN_X - PIPE_SPEED * elapsed;
         if (spawnX > -PIPE_W - 20) {
           const coinY = PLAY_TOP + (1 - sched.ratio) * PLAY_H;
-          activeCoins.push({ x: spawnX + PIPE_W / 2, y: coinY, collected: false });
+          activeCoins.push({ x: spawnX + PIPE_W / 2, y: coinY, lyric: sched.lyric || '', collected: false });
           if (sched.isPipe) {
             pipes.push({
               x: spawnX,
@@ -1434,7 +1434,24 @@ function gameLoop(ts) {
   drawBackground();
   if (state === 'playing') drawHitZone();
   for (const pipe of pipes) drawPipe(pipe);
-  for (const coin of activeCoins) drawCoin(coin.x, coin.y);
+  for (const coin of activeCoins) {
+    drawCoin(coin.x, coin.y);
+    if (coin.lyric) {
+      const alpha = Math.min(1, Math.max(0, 1 - Math.abs(coin.x - HIT_ZONE_X) / 260));
+      if (alpha > 0.05) {
+        ctx.save();
+        ctx.globalAlpha = alpha;
+        ctx.font = 'bold 18px "Segoe UI", Arial, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.shadowColor = 'rgba(0,0,0,0.9)';
+        ctx.shadowBlur = 8;
+        ctx.fillStyle = coin.x <= HIT_ZONE_X + 40 ? '#FFD700' : '#ffffff';
+        ctx.fillText(coin.lyric, coin.x, coin.y - 30); // draw above the coin
+        ctx.restore();
+      }
+    }
+  }
   if (state === 'playing' || state === 'dead') {
     drawBird(birdX, birdY, birdAngle);
   }

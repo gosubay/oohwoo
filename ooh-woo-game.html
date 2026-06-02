@@ -1592,8 +1592,15 @@ function resizeGame() {
 resizeGame();
 window.addEventListener('resize', resizeGame);
 
-// Show splash first — mic permission requires a user gesture (strict on mobile).
-showScreen('splash');
+// Mobile requires a user gesture before getUserMedia — show splash to get that tap.
+// Desktop is lenient, so skip splash and init mic straight away.
+const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+if (!isMobile) {
+  showScreen('select');
+  initMic().then(startMicTester);
+} else {
+  showScreen('splash');
+}
 document.getElementById('btnSplashStart').addEventListener('click', async () => {
   const statusEl = document.getElementById('splashMicStatus');
   statusEl.textContent = 'Requesting microphone…';

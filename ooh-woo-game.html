@@ -429,7 +429,7 @@ async function initMic() {
     // Resume in case browser suspended it (Chrome autoplay policy)
     if (audioCtx.state === 'suspended') await audioCtx.resume();
     analyser = audioCtx.createAnalyser();
-    analyser.fftSize = 2048;
+    analyser.fftSize = 1024; // 1024 @ 44100Hz = ~23ms latency (was 2048 = ~46ms)
     pitchBuffer = new Float32Array(analyser.fftSize);
     const src = audioCtx.createMediaStreamSource(stream);
     src.connect(analyser);

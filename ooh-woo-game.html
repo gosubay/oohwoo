@@ -1241,14 +1241,14 @@ function gameLoop(ts) {
       const targetY = PLAY_TOP + (1 - pitchRatioSmooth) * PLAY_H;
       const diff = targetY - birdY;
       birdVY += diff * 220 * dt;
-      birdVY *= 0.6;
+      birdVY *= 0.4;
       setMicIndicator('active');
       micStatus.textContent = '🎤 ' + getCurrentNoteName(rawPitch);
     } else if (keyActive) {
       const targetY = PLAY_TOP + (1 - pitchRatioSmooth) * PLAY_H;
       const diff = targetY - birdY;
       birdVY += diff * 220 * dt;
-      birdVY *= 0.6;
+      birdVY *= 0.4;
       setMicIndicator('off');
       micStatus.textContent = '🎹 Key ' + [...heldKeys].join('+');
     } else if (touchActive) {

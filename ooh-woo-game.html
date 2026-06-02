@@ -488,7 +488,7 @@ function detectPitch() {
   }
 
   debugAcMax = bestCorr;
-  if (bestLag < 1 || bestCorr < 0.85) { debugHz = -1; return -1; } // B: high clarity threshold — reject noisy/uncertain readings
+  if (bestLag < 1 || bestCorr < 0.75) { debugHz = -1; return -1; } // B: clarity threshold — reject noisy/uncertain readings
 
   // Parabolic interpolation for sub-sample accuracy
   const prev = bestLag > minLag ? (() => { let s=0; for(let i=0;i<SIZE-(bestLag-1);i++) s+=buf[i]*buf[i+bestLag-1]; return s/energy; })() : bestCorr;
@@ -840,7 +840,7 @@ const GRAVITY = 0; // no gravity — pipes come from all heights
 const PITCH_FORCE = 800;
 
 let pitchRatioSmooth = 0.5;
-const PITCH_MEDIAN_SIZE = 5;
+const PITCH_MEDIAN_SIZE = 3;
 const pitchMedianBuf = []; // C: median filter — stores last N valid Hz readings
 let targetBirdY = H / 2;
 let birdAngle = 0;

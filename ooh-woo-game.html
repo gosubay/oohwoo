@@ -267,7 +267,7 @@
       <button id="btnMicToggleHud" style="position:absolute;top:16px;left:16px;background:rgba(0,0,0,0.5);border:2px solid #52b788;color:white;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:bold;cursor:pointer;pointer-events:all;">🎤 ON</button>
       <div id="micIndicator" style="position:absolute;top:60px;right:35px;width:10px;height:10px;border-radius:50%;background:#555;box-shadow:0 0 6px #555;transition:background 0.3s;"></div>
       <div id="debugBox" style="position:absolute;bottom:55px;left:10px;right:10px;background:rgba(0,0,0,0.6);color:#0f0;font-size:11px;font-family:monospace;padding:6px 10px;border-radius:8px;line-height:1.8;display:none;">debug loading...</div>
-      <div id="karaokeBar" style="position:absolute;bottom:0;left:0;right:0;height:52px;background:rgba(0,0,0,0.65);display:flex;align-items:center;justify-content:center;gap:6px;padding:0 12px;overflow:hidden;"></div>
+      <div id="karaokeBar" style="position:absolute;top:0;left:0;right:0;height:52px;background:rgba(0,0,0,0.55);display:flex;align-items:center;justify-content:center;gap:8px;padding:0 16px;overflow:hidden;"></div>
     </div>
 
     <!-- Game Over -->
@@ -929,28 +929,41 @@ function songComplete() {
   showScreen('complete');
 }
 
-// Karaoke bar — shows a rolling window of upcoming lyrics
-let karaokeCache = '';
-function updateKaraoke(activeLyric) {
-  if (activeLyric === karaokeCache) return;
-  karaokeCache = activeLyric;
+// Karaoke bar — line-by-line display, active word highlighted in gold
+// Lines defined by natural phrase breaks in the song (7 notes each)
+const LYRIC_LINES = [
+  [0,  6],   // "Twinkle twinkle little star"    (idx 0–6)
+  [7,  13],  // "How I wonder what you are"      (idx 7–13)
+  [14, 20],  // "Up above the world so high"     (idx 14–20)
+  [21, 27],  // "Like a diamond in the sky"      (idx 21–27)
+  [28, 34],  // "Twinkle twinkle little star"    (idx 28–34)
+  [35, 41],  // "How I wonder what you are"      (idx 35–41)
+];
+
+let karaokeActiveIdx = -1;
+function updateKaraoke(activeIdx) {
+  if (activeIdx === karaokeActiveIdx) return;
+  karaokeActiveIdx = activeIdx;
   const bar = document.getElementById('karaokeBar');
   if (!bar) return;
 
-  // Build upcoming lyrics from pipeSchedule around current position
-  const windowSize = 7;
-  const currentIdx = nextPipeIdx - 1;
-  const start = Math.max(0, currentIdx - 1);
-  const end = Math.min(pipeSchedule.length, start + windowSize);
-  const slice = pipeSchedule.slice(start, end);
+  // Find which line the active note belongs to
+  const line = LYRIC_LINES.find(([s, e]) => activeIdx >= s && activeIdx <= e);
+  if (!line) { bar.innerHTML = ''; return; }
+  const [lineStart, lineEnd] = line;
+  const lineNotes = pipeSchedule.slice(lineStart, lineEnd + 1);
 
-  bar.innerHTML = slice.map((p, i) => {
-    const isActive = p.lyric === activeLyric && i === Math.min(1, currentIdx - start);
+  bar.innerHTML = lineNotes.map((p, i) => {
+    const idx = lineStart + i;
+    const isActive = idx === activeIdx;
+    const isPast = idx < activeIdx;
     const style = isActive
-      ? 'font-size:22px;font-weight:900;color:#FFD700;text-shadow:0 0 12px #FFD700;transition:all 0.15s;'
-      : 'font-size:16px;color:rgba(255,255,255,0.45);transition:all 0.15s;';
+      ? 'font-size:20px;font-weight:900;color:#FFD700;text-shadow:0 0 14px #FFD700,0 0 6px #FF8C00;transition:all 0.1s;'
+      : isPast
+        ? 'font-size:17px;font-weight:500;color:rgba(255,255,255,0.25);transition:all 0.1s;'
+        : 'font-size:17px;font-weight:500;color:rgba(255,255,255,0.6);transition:all 0.1s;';
     return `<span style="${style}">${p.lyric}</span>`;
-  }).join('<span style="color:rgba(255,255,255,0.2);font-size:14px;margin:0 2px;">·</span>');
+  }).join('<span style="color:rgba(255,255,255,0.15);font-size:13px;margin:0 3px"> </span>');
 }
 
 function showPerfect() {
@@ -1035,6 +1048,26 @@ function drawPipe(pipe) {
     ctx.fillStyle = '#FFD700';
     ctx.fillRect(x, gapCenter - gap / 2, PIPE_W, gap);
     ctx.restore();
+  }
+
+  // Option A: lyric word in the gap, scrolls with the pipe
+  if (pipe.lyric && !pipe.passed) {
+    const alpha = Math.min(1, Math.max(0, 1 - Math.abs(pipe.x - HIT_ZONE_X) / 260));
+    if (alpha > 0.05) {
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      const wordX = x + PIPE_W / 2;
+      const wordY = gapCenter;
+      // Shadow for legibility over background
+      ctx.font = 'bold 18px "Segoe UI", Arial, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.shadowColor = 'rgba(0,0,0,0.9)';
+      ctx.shadowBlur = 8;
+      ctx.fillStyle = pipe.x <= HIT_ZONE_X + 40 ? '#FFD700' : '#ffffff'; // gold when at hit zone
+      ctx.fillText(pipe.lyric, wordX, wordY);
+      ctx.restore();
+    }
   }
 }
 
@@ -1381,7 +1414,9 @@ function gameLoop(ts) {
     if (nextPipe) {
       noteHint.textContent = '🎵 ' + nextPipe.note;
     }
-    updateKaraoke(nextPipe ? nextPipe.lyric : '');
+    // Pass the schedule index of the active pipe (the one at/just past the hit zone)
+    const activePipeIdx = nextPipeIdx - 1;
+    updateKaraoke(activePipeIdx);
 
     // Debug readout
     const dbEl = document.getElementById('debugBox');

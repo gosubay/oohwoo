@@ -1282,10 +1282,6 @@ function gameLoop(ts) {
       }
     }
 
-    // Out of bounds (floor/ceiling already clamped, but check anyway)
-    if (birdY >= PLAY_BOT - BIRD_R && birdVY > 200) {
-      gameOver();
-    }
 
     // Remove off-screen pipes
     pipes = pipes.filter(p => p.x > -PIPE_W - 20);

@@ -187,13 +187,6 @@
 <div id="gameWrapper">
   <canvas id="gameCanvas"></canvas>
   <div id="ui">
-    <!-- Splash / mic permission -->
-    <div class="screen hidden" id="screenSplash" style="flex-direction:column;align-items:center;justify-content:center;gap:24px;pointer-events:all;">
-      <div class="title">OOH WOO</div>
-      <div style="font-size:22px;opacity:0.85;">🎤 Sing to fly the bird</div>
-      <button id="btnSplashStart" style="margin-top:16px;padding:18px 48px;font-size:22px;font-weight:bold;border-radius:999px;border:none;background:#52b788;color:#fff;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,0.3);">Tap to Start</button>
-      <div id="splashMicStatus" style="font-size:14px;opacity:0.6;min-height:20px;"></div>
-    </div>
     <!-- Song Select -->
     <div class="screen" id="screenSelect">
       <div class="title">OOH WOO</div>
@@ -381,7 +374,6 @@ canvas.height = H;
 
 // Screens
 const screens = {
-  splash: document.getElementById('screenSplash'),
   select: document.getElementById('screenSelect'),
   calibrate: document.getElementById('screenCalibrate'),
   game: document.getElementById('screenGame'),
@@ -1592,30 +1584,16 @@ function resizeGame() {
 resizeGame();
 window.addEventListener('resize', resizeGame);
 
-// Mobile requires a user gesture before getUserMedia — show splash to get that tap.
-// Desktop is lenient, so skip splash and init mic straight away.
+// Show song select immediately on all devices.
+// Mic permission is requested when the user taps a song card (user gesture).
+// Desktop also tries to init mic early (lenient browsers allow this).
+showScreen('select');
 const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
 if (!isMobile) {
-  showScreen('select');
   initMic().then(startMicTester);
 } else {
-  showScreen('splash');
+  startMicTester(); // show live pitch tester; mic will init on song card tap
 }
-document.getElementById('btnSplashStart').addEventListener('click', async () => {
-  const statusEl = document.getElementById('splashMicStatus');
-  statusEl.textContent = 'Requesting microphone…';
-  try {
-    await initMic();
-    statusEl.textContent = micReady ? '🎤 Microphone ready!' : '🎹 No mic — keyboard/touch only';
-  } catch(e) {
-    statusEl.textContent = '🎹 No mic — keyboard/touch only';
-  }
-  setTimeout(() => {
-    showScreen('select');
-    startMicTester();
-    requestAnimationFrame(drawSelectBg);
-  }, micReady ? 600 : 300);
-});
 
 function freqToNoteName(freq) {
   // Returns closest note name like "C3", "G4" etc.

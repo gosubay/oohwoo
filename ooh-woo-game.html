@@ -790,7 +790,11 @@ let state = 'select'; // select | playing | dead | complete
 let score = 0;
 let birdY = H / 2;
 let birdVY = 0;
-let birdX = 100;
+// Mic mode shifts bird 18px left to compensate for ~100ms audio detection lag.
+// Keyboard is instant so no offset needed.
+const BIRD_X_KEY  = 100;
+const BIRD_X_MIC  = 82; // 100 - (180 px/s × 0.1s)
+let birdX = BIRD_X_KEY;
 let gameTime = 0;
 let pipes = [];
 let pipeSchedule = [];
@@ -912,6 +916,7 @@ function startGame(song) {
   nextCoinIdx = 0;
   pitchRatioSmooth = 0.5;
   pitchMedianBuf.length = 0;
+  birdX = micEnabled ? BIRD_X_MIC : BIRD_X_KEY;
   bgOffset1 = bgOffset2 = bgOffset3 = 0;
   showScreen('game');
   scoreDisplay.textContent = '0';
@@ -1620,6 +1625,7 @@ function updateMicToggleUI() {
 
 function toggleMic() {
   micEnabled = !micEnabled;
+  birdX = micEnabled ? BIRD_X_MIC : BIRD_X_KEY;
   updateMicToggleUI();
 }
 

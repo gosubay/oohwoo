@@ -17,10 +17,10 @@
     touch-action: none;
   }
   #gameWrapper {
-    position: relative;
+    position: absolute;
     width: 390px;
     height: 844px;
-    max-height: 100vh;
+    transform-origin: top left;
     overflow: hidden;
   }
   canvas {
@@ -1581,6 +1581,17 @@ document.getElementById('btnMenu2').addEventListener('click', () => {
 // ============================================================
 // BOOT
 // ============================================================
+// Scale the game to fit any screen size while preserving the 390×844 aspect ratio.
+function resizeGame() {
+  const scale = Math.min(window.innerWidth / 390, window.innerHeight / 844);
+  const wrapper = document.getElementById('gameWrapper');
+  wrapper.style.transform = `scale(${scale})`;
+  wrapper.style.left = `${(window.innerWidth - 390 * scale) / 2}px`;
+  wrapper.style.top  = `${(window.innerHeight - 844 * scale) / 2}px`;
+}
+resizeGame();
+window.addEventListener('resize', resizeGame);
+
 // Show splash first — mic permission requires a user gesture (strict on mobile).
 showScreen('splash');
 document.getElementById('btnSplashStart').addEventListener('click', async () => {

@@ -1153,6 +1153,55 @@ function isPerfect(pipe) {
 // ============================================================
 // GAME LOOP
 // ============================================================
+function drawHitZone() {
+  // Check if any pipe is currently crossing the hit zone
+  const hitX = birdX;
+  const activePipe = pipes.find(p => !p.passed && p.x <= hitX + PIPE_W/2 && p.x + PIPE_W >= hitX - PIPE_W/2);
+
+  // Base glow — always visible, subtle
+  const baseAlpha = 0.12;
+  const activeAlpha = 0.35;
+  const alpha = activePipe ? activeAlpha : baseAlpha;
+  const color = activePipe ? '#FFD700' : '#ffffff';
+
+  ctx.save();
+
+  // Vertical glow column
+  const grad = ctx.createLinearGradient(hitX - 18, 0, hitX + 18, 0);
+  grad.addColorStop(0, 'transparent');
+  grad.addColorStop(0.5, color);
+  grad.addColorStop(1, 'transparent');
+  ctx.globalAlpha = alpha;
+  ctx.fillStyle = grad;
+  ctx.fillRect(hitX - 18, PLAY_TOP, 36, PLAY_H);
+
+  // Highlight the gap area when a pipe is active
+  if (activePipe) {
+    const gapCenter = PLAY_TOP + (1 - activePipe.ratio) * PLAY_H;
+    const gapTop = gapCenter - activePipe.gap / 2;
+    const gapH = activePipe.gap;
+    const gapGrad = ctx.createLinearGradient(hitX - 18, 0, hitX + 18, 0);
+    gapGrad.addColorStop(0, 'transparent');
+    gapGrad.addColorStop(0.5, '#FFD700');
+    gapGrad.addColorStop(1, 'transparent');
+    ctx.globalAlpha = 0.3;
+    ctx.fillStyle = gapGrad;
+    ctx.fillRect(hitX - 18, gapTop, 36, gapH);
+  }
+
+  // Hard line at exact hit position
+  ctx.globalAlpha = activePipe ? 0.9 : 0.3;
+  ctx.strokeStyle = color;
+  ctx.lineWidth = activePipe ? 2 : 1;
+  ctx.setLineDash([6, 6]);
+  ctx.beginPath();
+  ctx.moveTo(hitX, PLAY_TOP);
+  ctx.lineTo(hitX, PLAY_BOT);
+  ctx.stroke();
+
+  ctx.restore();
+}
+
 function gameLoop(ts) {
   if (!lastTime) lastTime = ts;
   const dt = Math.min((ts - lastTime) / 1000, 0.05);
@@ -1324,6 +1373,7 @@ function gameLoop(ts) {
 
   // Draw
   drawBackground();
+  if (state === 'playing') drawHitZone();
   for (const pipe of pipes) drawPipe(pipe);
   for (const coin of activeCoins) drawCoin(coin.x, coin.y);
   if (state === 'playing' || state === 'dead') {

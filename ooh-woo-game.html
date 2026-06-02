@@ -192,11 +192,14 @@
       <div class="title">OOH WOO</div>
       <div class="subtitle">🎤 Sing to fly the bird!</div>
       <button class="btn" id="btnPlay" style="width:260px;font-size:26px;margin-bottom:6px;">▶ Play</button>
-      <button class="btn secondary" id="btnSetupVoice" style="width:260px;font-size:18px;margin-bottom:6px;">🎤 Set up my voice</button>
-      <button class="btn secondary" id="btnMicToggle" style="width:260px;font-size:18px;">🎤 Mic ON</button>
-      <!-- Vocal range indicator -->
-      <div style="font-size:13px;color:rgba(255,255,255,0.55);margin-top:20px;text-align:center;line-height:1.8;">
-        Voice: <span id="rangeDisplay" style="color:#90EE90;font-weight:bold;">not set up yet</span>
+      <!-- Vocal range indicator + setup link -->
+      <div style="font-size:13px;color:rgba(255,255,255,0.55);margin-top:16px;text-align:center;line-height:2;">
+        🎤 Voice: <span id="rangeDisplay" style="color:#90EE90;font-weight:bold;">not set</span><br>
+        <span id="btnSetupVoice" style="color:#52b788;cursor:pointer;pointer-events:all;text-decoration:underline;font-size:12px;">🔧 Set up my voice</span>
+      </div>
+      <!-- Mic toggle -->
+      <div style="margin-top:10px;">
+        <button id="btnMicToggle" class="btn secondary" style="font-size:13px;padding:8px 20px;pointer-events:all;">🎤 Mic ON</button>
       </div>
       <!-- Live mic tester -->
       <div id="micTester" style="margin-top:18px;width:280px;background:rgba(0,0,0,0.5);border:2px solid #52b788;border-radius:16px;padding:14px 18px;font-size:12px;font-family:monospace;color:#0f0;line-height:2;pointer-events:none;">

@@ -195,6 +195,10 @@
         <h3>⭐ Twinkle Twinkle</h3>
         <p>Beginner · 16 pipes · 1:00</p>
       </div>
+      <div class="song-card" id="btnBrotherJohn">
+        <h3>🐯 Brother John / 两只老虎</h3>
+        <p>Beginner · 32 pipes · 1:47</p>
+      </div>
       <!-- Vocal range indicator + recalibrate -->
       <div style="font-size:13px;color:rgba(255,255,255,0.55);margin-top:16px;text-align:center;line-height:2;">
         🎤 Voice: <span id="rangeDisplay" style="color:#90EE90;font-weight:bold;">not set</span><br>
@@ -341,6 +345,102 @@ const TWINKLE_NOTES = [
   {note:'C4', ratio:0.00, beats:2, lyric:'Are'},
 ];
 
+// ============================================================
+// SONG DATA — Brother John / 两只老虎  (Frère Jacques)
+// Key: D major  D4=Do(0.00) E4=Re(0.14) F#4=Mi(0.29) G4=Fa(0.43)
+//               A4=Sol(0.57) B4=La(0.71) C#5=Ti(0.86) D5=Do(1.00)
+// BPM: 112
+// Structure: Verse 1+2 English → Verse 3+4 Mandarin
+// ============================================================
+const BROTHER_JOHN_NOTES = [
+  // --- Verse 1 English: "Are you sleeping? Are you sleeping?" ---
+  // "Are you slee-ping? Are you slee-ping?"
+  {note:'D4', ratio:0.00, beats:1, lyric:'Are'},   {note:'E4', ratio:0.14, beats:1, lyric:'you'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'slee-'}, {note:'D4', ratio:0.00, beats:1, lyric:'ping?'},
+  {note:'D4', ratio:0.00, beats:1, lyric:'Are'},   {note:'E4', ratio:0.14, beats:1, lyric:'you'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'slee-'}, {note:'D4', ratio:0.00, beats:1, lyric:'ping?'},
+  // "Brother John, Brother John."
+  {note:'F#4',ratio:0.29, beats:1, lyric:'Bro-'},  {note:'G4', ratio:0.43, beats:1, lyric:'ther'},
+  {note:'A4', ratio:0.57, beats:2, lyric:'John,'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'Bro-'},  {note:'G4', ratio:0.43, beats:1, lyric:'ther'},
+  {note:'A4', ratio:0.57, beats:2, lyric:'John.'},
+  // "Morning bells are ringing! Morning bells are ringing!"
+  {note:'A4', ratio:0.57, beats:1, lyric:'Mor-'},  {note:'B4', ratio:0.71, beats:1, lyric:'ning'},
+  {note:'A4', ratio:0.57, beats:1, lyric:'bells'}, {note:'G4', ratio:0.43, beats:1, lyric:'are'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'ring-'}, {note:'D4', ratio:0.00, beats:1, lyric:'ing!'},
+  {note:'A4', ratio:0.57, beats:1, lyric:'Mor-'},  {note:'B4', ratio:0.71, beats:1, lyric:'ning'},
+  {note:'A4', ratio:0.57, beats:1, lyric:'bells'}, {note:'G4', ratio:0.43, beats:1, lyric:'are'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'ring-'}, {note:'D4', ratio:0.00, beats:1, lyric:'ing!'},
+  // "Ding, dang, dong. Ding, dang, dong."
+  {note:'D4', ratio:0.00, beats:1, lyric:'Ding,'},  {note:'A4', ratio:0.57, beats:1, lyric:'dang,'},
+  {note:'D4', ratio:0.00, beats:2, lyric:'dong.'},
+  {note:'D4', ratio:0.00, beats:1, lyric:'Ding,'},  {note:'A4', ratio:0.57, beats:1, lyric:'dang,'},
+  {note:'D4', ratio:0.00, beats:2, lyric:'dong.'},
+
+  // --- Verse 2 English (repeat) ---
+  {note:'D4', ratio:0.00, beats:1, lyric:'Are'},   {note:'E4', ratio:0.14, beats:1, lyric:'you'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'slee-'}, {note:'D4', ratio:0.00, beats:1, lyric:'ping?'},
+  {note:'D4', ratio:0.00, beats:1, lyric:'Are'},   {note:'E4', ratio:0.14, beats:1, lyric:'you'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'slee-'}, {note:'D4', ratio:0.00, beats:1, lyric:'ping?'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'Bro-'},  {note:'G4', ratio:0.43, beats:1, lyric:'ther'},
+  {note:'A4', ratio:0.57, beats:2, lyric:'John,'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'Bro-'},  {note:'G4', ratio:0.43, beats:1, lyric:'ther'},
+  {note:'A4', ratio:0.57, beats:2, lyric:'John.'},
+  {note:'A4', ratio:0.57, beats:1, lyric:'Mor-'},  {note:'B4', ratio:0.71, beats:1, lyric:'ning'},
+  {note:'A4', ratio:0.57, beats:1, lyric:'bells'}, {note:'G4', ratio:0.43, beats:1, lyric:'are'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'ring-'}, {note:'D4', ratio:0.00, beats:1, lyric:'ing!'},
+  {note:'A4', ratio:0.57, beats:1, lyric:'Mor-'},  {note:'B4', ratio:0.71, beats:1, lyric:'ning'},
+  {note:'A4', ratio:0.57, beats:1, lyric:'bells'}, {note:'G4', ratio:0.43, beats:1, lyric:'are'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'ring-'}, {note:'D4', ratio:0.00, beats:1, lyric:'ing!'},
+  {note:'D4', ratio:0.00, beats:1, lyric:'Ding,'},  {note:'A4', ratio:0.57, beats:1, lyric:'dang,'},
+  {note:'D4', ratio:0.00, beats:2, lyric:'dong.'},
+  {note:'D4', ratio:0.00, beats:1, lyric:'Ding,'},  {note:'A4', ratio:0.57, beats:1, lyric:'dang,'},
+  {note:'D4', ratio:0.00, beats:2, lyric:'dong.'},
+
+  // --- Verse 3 Mandarin: "两只老虎，两只老虎，" ---
+  {note:'D4', ratio:0.00, beats:1, lyric:'两只'},  {note:'E4', ratio:0.14, beats:1, lyric:'老虎，'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'两只'},  {note:'D4', ratio:0.00, beats:1, lyric:'老虎，'},
+  {note:'D4', ratio:0.00, beats:1, lyric:'两只'},  {note:'E4', ratio:0.14, beats:1, lyric:'老虎，'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'两只'},  {note:'D4', ratio:0.00, beats:1, lyric:'老虎，'},
+  // "跑得快，跑得快。"
+  {note:'F#4',ratio:0.29, beats:1, lyric:'跑得'},  {note:'G4', ratio:0.43, beats:1, lyric:'快，'},
+  {note:'A4', ratio:0.57, beats:2, lyric:'——'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'跑得'},  {note:'G4', ratio:0.43, beats:1, lyric:'快。'},
+  {note:'A4', ratio:0.57, beats:2, lyric:'——'},
+  // "一只没有耳朵，一只没有尾巴，"
+  {note:'A4', ratio:0.57, beats:1, lyric:'一只'},  {note:'B4', ratio:0.71, beats:1, lyric:'没有'},
+  {note:'A4', ratio:0.57, beats:1, lyric:'耳'},    {note:'G4', ratio:0.43, beats:1, lyric:'朵，'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'一只'},  {note:'D4', ratio:0.00, beats:1, lyric:'没有'},
+  {note:'A4', ratio:0.57, beats:1, lyric:'尾'},    {note:'B4', ratio:0.71, beats:1, lyric:'巴，'},
+  {note:'A4', ratio:0.57, beats:1, lyric:'一只'},  {note:'G4', ratio:0.43, beats:1, lyric:'没有'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'尾'},    {note:'D4', ratio:0.00, beats:1, lyric:'巴，'},
+  // "真奇怪，真奇怪。"
+  {note:'E4', ratio:0.14, beats:1, lyric:'真奇'},  {note:'A4', ratio:0.57, beats:1, lyric:'怪，'},
+  {note:'D4', ratio:0.00, beats:2, lyric:'——'},
+  {note:'E4', ratio:0.14, beats:1, lyric:'真奇'},  {note:'A4', ratio:0.57, beats:1, lyric:'怪。'},
+  {note:'D4', ratio:0.00, beats:2, lyric:'——'},
+
+  // --- Verse 4 Mandarin (repeat) ---
+  {note:'D4', ratio:0.00, beats:1, lyric:'两只'},  {note:'E4', ratio:0.14, beats:1, lyric:'老虎，'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'两只'},  {note:'D4', ratio:0.00, beats:1, lyric:'老虎，'},
+  {note:'D4', ratio:0.00, beats:1, lyric:'两只'},  {note:'E4', ratio:0.14, beats:1, lyric:'老虎，'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'两只'},  {note:'D4', ratio:0.00, beats:1, lyric:'老虎，'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'跑得'},  {note:'G4', ratio:0.43, beats:1, lyric:'快，'},
+  {note:'A4', ratio:0.57, beats:2, lyric:'——'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'跑得'},  {note:'G4', ratio:0.43, beats:1, lyric:'快。'},
+  {note:'A4', ratio:0.57, beats:2, lyric:'——'},
+  {note:'A4', ratio:0.57, beats:1, lyric:'一只'},  {note:'B4', ratio:0.71, beats:1, lyric:'没有'},
+  {note:'A4', ratio:0.57, beats:1, lyric:'耳'},    {note:'G4', ratio:0.43, beats:1, lyric:'朵，'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'一只'},  {note:'D4', ratio:0.00, beats:1, lyric:'没有'},
+  {note:'A4', ratio:0.57, beats:1, lyric:'尾'},    {note:'B4', ratio:0.71, beats:1, lyric:'巴，'},
+  {note:'A4', ratio:0.57, beats:1, lyric:'一只'},  {note:'G4', ratio:0.43, beats:1, lyric:'没有'},
+  {note:'F#4',ratio:0.29, beats:1, lyric:'尾'},    {note:'D4', ratio:0.00, beats:1, lyric:'巴，'},
+  {note:'E4', ratio:0.14, beats:1, lyric:'真奇'},  {note:'A4', ratio:0.57, beats:1, lyric:'怪，'},
+  {note:'D4', ratio:0.00, beats:2, lyric:'——'},
+  {note:'E4', ratio:0.14, beats:1, lyric:'真奇'},  {note:'A4', ratio:0.57, beats:1, lyric:'怪。'},
+  {note:'D4', ratio:0.00, beats:4, lyric:'——'},
+];
+
 // Build schedule from notes. isPipe=true on every 2nd beat (every 1s) — those get obstacle pipes.
 // All notes get a coin. spawnTime adjusted so each item arrives at birdX on its beat.
 function buildPipes(notes, bps) {
@@ -414,9 +514,9 @@ let micReady = false;
 let micEnabled = true; // can be toggled off for keyboard-only testing
 
 const NOTE_FREQS = {
-  'C4': 261.63, 'D4': 293.66, 'E4': 329.63,
-  'F4': 349.23, 'G4': 392.00, 'A4': 440.00,
-  'B4': 493.88, 'C5': 523.25,
+  'C4': 261.63, 'D4': 293.66, 'E4': 329.63, 'F4': 349.23,
+  'F#4': 369.99, 'G4': 392.00, 'A4': 440.00, 'B4': 493.88,
+  'C#5': 554.37, 'C5': 523.25, 'D5': 587.33,
 };
 const MIN_FREQ = 100, MAX_FREQ = 600; // singing range (100Hz covers low male voice, 600Hz covers high female)
 
@@ -911,7 +1011,9 @@ function startGame(song) {
   gameTime = -2.5;
   pipes = [];
   activeCoins = [];
-  pipeSchedule = buildPipes(TWINKLE_NOTES, bps);
+  const songInfo = SONG_DATA[currentSong] || SONG_DATA.twinkle;
+  bps = songInfo.bpm / 60;
+  pipeSchedule = buildPipes(songInfo.notes, bps);
   nextPipeIdx = 0;
   nextCoinIdx = 0;
   pitchRatioSmooth = 0.5;
@@ -1472,14 +1574,22 @@ function getCurrentNoteName(freq) {
 // ============================================================
 let backingCtx = null;
 
+let currentSong = 'twinkle'; // track which song is playing
+
+const SONG_DATA = {
+  twinkle:     { get notes() { return TWINKLE_NOTES; },      bpm: 120 },
+  brotherjohn: { get notes() { return BROTHER_JOHN_NOTES; }, bpm: 112 },
+};
+
 function playBackingTrack() {
   try {
     backingCtx = new (window.AudioContext || window.webkitAudioContext)();
-    const bpm = 120;
+    const song = SONG_DATA[currentSong] || SONG_DATA.twinkle;
+    const bpm = song.bpm;
     const beatDur = 60 / bpm;
     let t = backingCtx.currentTime + 2.5; // match gameTime intro (-2.5s)
 
-    for (const note of TWINKLE_NOTES) {
+    for (const note of song.notes) {
       const freq = NOTE_FREQS[note.note];
       const dur = note.beats * beatDur * 0.85;
 
@@ -1533,9 +1643,23 @@ document.getElementById('btnTwinkle').addEventListener('click', () => {
   if (!hasCalibration) {
     startCalibration();
   } else {
+    currentSong = 'twinkle';
     stopBackingTrack();
     playBackingTrack();
     startGame('twinkle');
+  }
+});
+
+document.getElementById('btnBrotherJohn').addEventListener('click', () => {
+  if (!micReady) initMic();
+  const hasCalibration = localStorage.getItem('oohwoo_minFreq');
+  if (!hasCalibration) {
+    startCalibration();
+  } else {
+    currentSong = 'brotherjohn';
+    stopBackingTrack();
+    playBackingTrack();
+    startGame('brotherjohn');
   }
 });
 

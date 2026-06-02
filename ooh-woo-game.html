@@ -1244,19 +1244,12 @@ function gameLoop(ts) {
   if (state === 'playing') {
     gameTime += dt;
 
-    // Pitch detection — B: clarity threshold inside detectPitch(), C: 5-frame median filter
+    // Pitch detection — clarity threshold inside detectPitch()
+    // No median filter: the outlier clamp below handles octave-jump errors,
+    // and the filter was adding ~3 frames of lag vs keyboard (which has none).
     const rawPitch = detectPitch();
-    let filteredPitch = -1;
-    if (rawPitch > 0) {
-      pitchMedianBuf.push(rawPitch);
-      if (pitchMedianBuf.length > PITCH_MEDIAN_SIZE) pitchMedianBuf.shift();
-      const sorted = [...pitchMedianBuf].sort((a, b) => a - b);
-      filteredPitch = sorted[Math.floor(sorted.length / 2)]; // median
-    } else {
-      if (pitchMedianBuf.length > 0) pitchMedianBuf.shift(); // drain buffer on silence
-    }
-    const rawRatio = freqToRatio(filteredPitch);
-    const micSinging = filteredPitch > 0;
+    const rawRatio = freqToRatio(rawPitch);
+    const micSinging = rawPitch > 0;
     const keyActive = keyRatio >= 0;
     const touchActive = touchHeld;
     const isSinging = micSinging || keyActive || touchActive;

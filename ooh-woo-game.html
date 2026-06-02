@@ -1648,8 +1648,28 @@ let currentSong = 'twinkle'; // track which song is playing
 
 // ── Song catalogue (drives the carousel) ────────────────────────────────────
 const SONGS = [
-  { id: 'twinkle',     emoji: '⭐', title: 'Twinkle Twinkle Little Star', titleCn: '一闪一闪亮晶晶',          difficulty: 'Beginner', pipes: 16, duration: '1:00' },
-  { id: 'brotherjohn', emoji: '🐯', title: 'Brother John / Are You Sleeping?', titleCn: '两只老虎 / 法国民谣', difficulty: 'Beginner', pipes: 32, duration: '1:47' },
+  { id:'twinkle',      emoji:'⭐', title:'Twinkle Twinkle Little Star',           titleCn:'一闪一闪亮晶晶',            difficulty:'Beginner',     pipes:16, duration:'1:00' },
+  { id:'brotherjohn',  emoji:'🐯', title:'Brother John / Are You Sleeping?',      titleCn:'两只老虎 / 法国民谣',        difficulty:'Beginner',     pipes:32, duration:'1:47' },
+  { id:'humptydumpty', emoji:'🥚', title:'Humpty Dumpty',                         titleCn:'汉普蒂·邓普蒂',              difficulty:'Beginner',     pipes:28, duration:'0:50' },
+  { id:'headshoulders',emoji:'🙆', title:'Head Shoulders Knees and Toes',         titleCn:'头肩膝脚趾',                 difficulty:'Beginner',     pipes:22, duration:'0:40' },
+  { id:'londonbridge', emoji:'🌉', title:'London Bridge',                         titleCn:'伦敦大桥',                   difficulty:'Beginner',     pipes:24, duration:'0:50' },
+  { id:'itsybitsy',    emoji:'🕷️', title:'Itsy Bitsy Spider',                     titleCn:'小小蜘蛛',                   difficulty:'Beginner',     pipes:36, duration:'1:10' },
+  { id:'baabaa',       emoji:'🐑', title:'Baa Baa Black Sheep',                   titleCn:'咩咩小黑羊',                 difficulty:'Beginner',     pipes:28, duration:'1:00' },
+  { id:'marylamb',     emoji:'🐑', title:'Mary Had a Little Lamb',                titleCn:'玛丽有只小羔羊',              difficulty:'Beginner',     pipes:24, duration:'0:45' },
+  { id:'rowboat',      emoji:'🚣', title:'Row Row Row Your Boat',                 titleCn:'划呀划小船',                 difficulty:'Beginner',     pipes:22, duration:'0:50' },
+  { id:'moretogether', emoji:'🤝', title:'The More We Get Together',              titleCn:'我们在一起',                 difficulty:'Intermediate', pipes:38, duration:'1:10' },
+  { id:'littlebunny',  emoji:'🐰', title:'Little Bunny / 小兔子乖乖',             titleCn:'小兔子乖乖',                 difficulty:'Beginner',     pipes:24, duration:'0:45' },
+  { id:'rainrain',     emoji:'🌧️', title:'Rain Rain Go Away',                     titleCn:'雨啊雨快走开',               difficulty:'Beginner',     pipes:20, duration:'0:45' },
+  { id:'fingerfamily', emoji:'👋', title:'Finger Family',                         titleCn:'手指家族',                   difficulty:'Beginner',     pipes:24, duration:'0:50' },
+  { id:'wheelsbus',    emoji:'🚌', title:'Wheels on the Bus',                     titleCn:'公共汽车的轮子',              difficulty:'Beginner',     pipes:22, duration:'1:00' },
+  { id:'oldmcdonald',  emoji:'🐄', title:'Old McDonald Had a Farm',               titleCn:'老麦克唐纳有个农场',          difficulty:'Intermediate', pipes:36, duration:'1:30' },
+  { id:'ifhappy',      emoji:'😊', title:"If You're Happy and You Know It",       titleCn:'如果感到幸福就拍拍手',        difficulty:'Beginner',     pipes:30, duration:'0:50' },
+  { id:'fivemonkeys',  emoji:'🐒', title:'Five Little Monkeys',                   titleCn:'五只小猴子',                 difficulty:'Intermediate', pipes:28, duration:'0:50' },
+  { id:'babyshark',    emoji:'🦈', title:'Baby Shark',                            titleCn:'鲨鱼宝宝',                   difficulty:'Beginner',     pipes:24, duration:'0:45' },
+  { id:'baluobo',      emoji:'🥕', title:'Ba Luo Bo / Pulling Turnips',           titleCn:'拔萝卜',                     difficulty:'Beginner',     pipes:24, duration:'0:55' },
+  { id:'xiaoyanzi',    emoji:'🐦', title:'Xiao Yan Zi / Little Swallow',          titleCn:'小燕子',                     difficulty:'Intermediate', pipes:24, duration:'1:00' },
+  { id:'rasasayang',   emoji:'🌴', title:'Rasa Sayang',                           titleCn:'爱的感觉 (马来民谣)',          difficulty:'Intermediate', pipes:24, duration:'1:00' },
+  { id:'chanmalichan', emoji:'🎶', title:'Chan Mali Chan',                        titleCn:'赞马来赞 (马来民谣)',          difficulty:'Intermediate', pipes:32, duration:'1:00' },
 ];
 let carouselIndex = 0;
 
@@ -1697,9 +1717,427 @@ function carouselPrev() {
   renderCarousel('prev');
 }
 
+// ============================================================
+// SONG DATA — Songs 3–22  (Do=0.00 Re=0.14 Mi=0.29 Fa=0.43 Sol=0.57 La=0.71 Ti=0.86 Do(hi)=1.00)
+// ============================================================
+
+// 3. Humpty Dumpty (BPM 100)
+const HUMPTY_DUMPTY_NOTES = [
+  {note:'G4',ratio:0.57,beats:1,lyric:'Hump-'},{note:'G4',ratio:0.57,beats:1,lyric:'ty'},
+  {note:'C5',ratio:1.00,beats:1,lyric:'Dump-'},{note:'C5',ratio:1.00,beats:1,lyric:'ty'},
+  {note:'B4',ratio:0.86,beats:1,lyric:'sat'}, {note:'A4',ratio:0.71,beats:1,lyric:'on a'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'wall'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'Hump-'},{note:'F4',ratio:0.43,beats:1,lyric:'ty'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'Dump-'},{note:'E4',ratio:0.29,beats:1,lyric:'ty'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'had a'},{note:'D4',ratio:0.14,beats:1,lyric:'great'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'fall'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'All'}, {note:'G4',ratio:0.57,beats:1,lyric:'the'},
+  {note:'F4',ratio:0.43,beats:1,lyric:"king's"},{note:'F4',ratio:0.43,beats:1,lyric:'hor-'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'ses'}, {note:'E4',ratio:0.29,beats:1,lyric:'and'},
+  {note:'D4',ratio:0.14,beats:2,lyric:'all'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'the'}, {note:'G4',ratio:0.57,beats:1,lyric:"king's"},
+  {note:'F4',ratio:0.43,beats:1,lyric:'men'}, {note:'F4',ratio:0.43,beats:1,lyric:''},
+  {note:'E4',ratio:0.29,beats:1,lyric:''},    {note:'E4',ratio:0.29,beats:1,lyric:''},
+  {note:'D4',ratio:0.14,beats:2,lyric:''},
+  {note:'G4',ratio:0.57,beats:1,lyric:"Could-"},{note:'G4',ratio:0.57,beats:1,lyric:"n't"},
+  {note:'F4',ratio:0.43,beats:1,lyric:'put'}, {note:'F4',ratio:0.43,beats:1,lyric:'Hump-'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'ty'},  {note:'E4',ratio:0.29,beats:1,lyric:'to-'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'again'},
+];
+
+// 4. Head Shoulders Knees and Toes (BPM 123)
+const HEAD_SHOULDERS_NOTES = [
+  {note:'C4',ratio:0.00,beats:1,lyric:'Head'}, {note:'D4',ratio:0.14,beats:1,lyric:'shoul-'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'ders'},{note:'C4',ratio:0.00,beats:1,lyric:'knees'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'and'}, {note:'F4',ratio:0.43,beats:1,lyric:'toes'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'knees'},{note:'G4',ratio:0.57,beats:2,lyric:'toes'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'eyes'},{note:'A4',ratio:0.71,beats:1,lyric:'and'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'ears'},{note:'F4',ratio:0.43,beats:1,lyric:'and'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'mouth'},{note:'D4',ratio:0.14,beats:1,lyric:'and'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'nose'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'Head'},{note:'D4',ratio:0.14,beats:1,lyric:'shoul-'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'ders'},{note:'C4',ratio:0.00,beats:1,lyric:'knees'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'and'}, {note:'F4',ratio:0.43,beats:1,lyric:'toes'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'knees'},{note:'G4',ratio:0.57,beats:2,lyric:'toes'},
+];
+
+// 5. London Bridge (BPM 108)
+const LONDON_BRIDGE_NOTES = [
+  {note:'G4',ratio:0.57,beats:1,lyric:'Lon-'}, {note:'A4',ratio:0.71,beats:1,lyric:'don'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'Bridge'},{note:'F4',ratio:0.43,beats:1,lyric:'is'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'fall-'},{note:'F4',ratio:0.43,beats:1,lyric:'ing'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'down'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'fall-'},{note:'E4',ratio:0.29,beats:1,lyric:'ing'},
+  {note:'F4',ratio:0.43,beats:2,lyric:'down'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'fall-'},{note:'F4',ratio:0.43,beats:1,lyric:'ing'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'down'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'Lon-'}, {note:'A4',ratio:0.71,beats:1,lyric:'don'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'Bridge'},{note:'F4',ratio:0.43,beats:1,lyric:'is'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'fall-'},{note:'F4',ratio:0.43,beats:1,lyric:'ing'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'down'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'my'},  {note:'G4',ratio:0.57,beats:1,lyric:'fair'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'la-'}, {note:'C4',ratio:0.00,beats:2,lyric:'dy'},
+];
+
+// 6. Itsy Bitsy Spider (BPM 89)
+const ITSY_BITSY_NOTES = [
+  {note:'C4',ratio:0.00,beats:1,lyric:'The'}, {note:'E4',ratio:0.29,beats:1,lyric:'it-sy'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'bit-'},{note:'G4',ratio:0.57,beats:1,lyric:'sy'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'spi-'},{note:'G4',ratio:0.57,beats:2,lyric:'der'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'went'},{note:'G4',ratio:0.57,beats:1,lyric:'up'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'the'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'wa-'},{note:'E4',ratio:0.29,beats:1,lyric:'ter'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'spout'},{note:'G4',ratio:0.57,beats:2,lyric:''},
+  {note:'G4',ratio:0.57,beats:1,lyric:'Down'},{note:'A4',ratio:0.71,beats:1,lyric:'came'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'the'},{note:'E4',ratio:0.29,beats:1,lyric:'rain'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'and'},{note:'E4',ratio:0.29,beats:1,lyric:'washed'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'the'},{note:'C4',ratio:0.00,beats:2,lyric:'out'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'Out'},{note:'A4',ratio:0.71,beats:1,lyric:'came'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'the'},{note:'E4',ratio:0.29,beats:1,lyric:'sun'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'and'},{note:'C4',ratio:0.00,beats:1,lyric:'dried'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'up'},{note:'C4',ratio:0.00,beats:2,lyric:'rain'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'And'},{note:'E4',ratio:0.29,beats:1,lyric:'the'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'it-sy'},{note:'A4',ratio:0.71,beats:1,lyric:'bit-sy'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'spi-der'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'went'},{note:'E4',ratio:0.29,beats:1,lyric:'up'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'the'},{note:'C4',ratio:0.00,beats:2,lyric:'again'},
+];
+
+// 7. Baa Baa Black Sheep (BPM 99) — same tune as Twinkle
+const BAA_BAA_NOTES = [
+  {note:'C4',ratio:0.00,beats:1,lyric:'Baa'}, {note:'C4',ratio:0.00,beats:1,lyric:'baa'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'black'},{note:'G4',ratio:0.57,beats:1,lyric:'sheep'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'have'},{note:'A4',ratio:0.71,beats:1,lyric:'you'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'wool?'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'Yes'},  {note:'F4',ratio:0.43,beats:1,lyric:'sir'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'yes'},  {note:'E4',ratio:0.29,beats:1,lyric:'sir'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'three'},{note:'D4',ratio:0.14,beats:1,lyric:'bags'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'full'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'One'},  {note:'G4',ratio:0.57,beats:1,lyric:'for'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'mas-'},{note:'F4',ratio:0.43,beats:1,lyric:'ter'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'one'},  {note:'E4',ratio:0.29,beats:1,lyric:'for'},
+  {note:'D4',ratio:0.14,beats:2,lyric:'dame'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'one'},  {note:'G4',ratio:0.57,beats:1,lyric:'for'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'lit-'},{note:'F4',ratio:0.43,beats:1,lyric:'tle'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'boy'}, {note:'E4',ratio:0.29,beats:1,lyric:'down'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'lane'},
+];
+
+// 8. Mary Had a Little Lamb (BPM 123)
+const MARY_LAMB_NOTES = [
+  {note:'E4',ratio:0.29,beats:1,lyric:'Ma-'},{note:'D4',ratio:0.14,beats:1,lyric:'ry'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'had'},{note:'D4',ratio:0.14,beats:1,lyric:'a'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'lit-'},{note:'E4',ratio:0.29,beats:1,lyric:'tle'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'lamb'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'lit-'},{note:'D4',ratio:0.14,beats:1,lyric:'tle'},
+  {note:'D4',ratio:0.14,beats:2,lyric:'lamb'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'lit-'},{note:'G4',ratio:0.57,beats:1,lyric:'tle'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'lamb'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'Ma-'},{note:'D4',ratio:0.14,beats:1,lyric:'ry'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'had'},{note:'D4',ratio:0.14,beats:1,lyric:'a'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'lit-'},{note:'E4',ratio:0.29,beats:1,lyric:'tle'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'lamb'},{note:'E4',ratio:0.29,beats:1,lyric:'its'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'fleece'},{note:'D4',ratio:0.14,beats:1,lyric:'was'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'white'},{note:'D4',ratio:0.14,beats:1,lyric:'as'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'snow'},
+];
+
+// 9. Row Row Row Your Boat (BPM 96)
+const ROW_BOAT_NOTES = [
+  {note:'C4',ratio:0.00,beats:2,lyric:'Row'}, {note:'C4',ratio:0.00,beats:1,lyric:'row'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'row'},{note:'D4',ratio:0.14,beats:1,lyric:'your'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'boat'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'gent-'},{note:'D4',ratio:0.14,beats:1,lyric:'ly'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'down'},{note:'F4',ratio:0.43,beats:1,lyric:'the'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'stream'},
+  {note:'C5',ratio:1.00,beats:1,lyric:'Mer-'},{note:'C5',ratio:1.00,beats:1,lyric:'ri-'},
+  {note:'C5',ratio:1.00,beats:1,lyric:'ly'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'mer-'},{note:'G4',ratio:0.57,beats:1,lyric:'ri-'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'ly'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'mer-'},{note:'E4',ratio:0.29,beats:1,lyric:'ri-'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'ly'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'life'},{note:'D4',ratio:0.14,beats:1,lyric:'is'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'but'},{note:'F4',ratio:0.43,beats:1,lyric:'a'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'dream'},
+];
+
+// 10. The More We Get Together (BPM 117)
+const MORE_TOGETHER_NOTES = [
+  {note:'E4',ratio:0.29,beats:1,lyric:'The'},{note:'G4',ratio:0.57,beats:1,lyric:'more'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'we'},{note:'G4',ratio:0.57,beats:1,lyric:'get'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'to-'},{note:'F4',ratio:0.43,beats:1,lyric:'ge-'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'ther'},{note:'E4',ratio:0.29,beats:1,lyric:'to-'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'ge-'},{note:'C5',ratio:1.00,beats:1,lyric:'ther'},
+  {note:'B4',ratio:0.86,beats:1,lyric:'to-'},{note:'B4',ratio:0.86,beats:1,lyric:'ge-'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'ther'},{note:'G4',ratio:0.57,beats:2,lyric:'the'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'hap-'},{note:'A4',ratio:0.71,beats:1,lyric:'pi-'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'er'},{note:'F4',ratio:0.43,beats:1,lyric:"we'll"},
+  {note:'E4',ratio:0.29,beats:2,lyric:'be'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'For'},{note:'A4',ratio:0.71,beats:1,lyric:'your'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'friends'},{note:'F4',ratio:0.43,beats:1,lyric:'are'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'my'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'friends'},{note:'A4',ratio:0.71,beats:1,lyric:'and'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'my'},{note:'F4',ratio:0.43,beats:1,lyric:'friends'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'are'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'your'},{note:'G4',ratio:0.57,beats:1,lyric:'friends'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'the'},{note:'G4',ratio:0.57,beats:1,lyric:'more'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'we'},{note:'F4',ratio:0.43,beats:1,lyric:'get'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'to-'},{note:'E4',ratio:0.29,beats:1,lyric:'ge-'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'ther'},{note:'C5',ratio:1.00,beats:1,lyric:'the'},
+  {note:'B4',ratio:0.86,beats:1,lyric:'hap-'},{note:'A4',ratio:0.71,beats:1,lyric:'pi-'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'er'},
+];
+
+// 11. Little Bunny / 小兔子乖乖 (BPM 123)
+const LITTLE_BUNNY_NOTES = [
+  {note:'G4',ratio:0.57,beats:1,lyric:'小'},{note:'G4',ratio:0.57,beats:1,lyric:'兔'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'子'},{note:'G4',ratio:0.57,beats:1,lyric:'乖'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'乖'},{note:'G4',ratio:0.57,beats:1,lyric:'把'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'门'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'儿'},{note:'G4',ratio:0.57,beats:1,lyric:'开'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'开'},{note:'G4',ratio:0.57,beats:1,lyric:'快'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'点'},{note:'G4',ratio:0.57,beats:1,lyric:'儿'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'开'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'不'},{note:'A4',ratio:0.71,beats:1,lyric:'开'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'不'},{note:'F4',ratio:0.43,beats:1,lyric:'开'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'我'},{note:'E4',ratio:0.29,beats:1,lyric:'不'},
+  {note:'D4',ratio:0.14,beats:2,lyric:'开'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'妈'},{note:'D4',ratio:0.14,beats:1,lyric:'妈'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'没'},{note:'D4',ratio:0.14,beats:1,lyric:'回'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'来'},
+];
+
+// 12. Rain Rain Go Away (BPM 89)
+const RAIN_RAIN_NOTES = [
+  {note:'G4',ratio:0.57,beats:1,lyric:'Rain'},{note:'G4',ratio:0.57,beats:1,lyric:'rain'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'go'},{note:'E4',ratio:0.29,beats:1,lyric:'a-'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'way'},{note:'G4',ratio:0.57,beats:1,lyric:'rain'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'rain'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'go'},{note:'A4',ratio:0.71,beats:1,lyric:'a-'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'way'},{note:'E4',ratio:0.29,beats:1,lyric:'come'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'a-'},{note:'D4',ratio:0.14,beats:1,lyric:'gain'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'day'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'Lit-'},{note:'A4',ratio:0.71,beats:1,lyric:'tle'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'ones'},{note:'E4',ratio:0.29,beats:1,lyric:'want'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'to'},{note:'C4',ratio:0.00,beats:2,lyric:'play'},
+];
+
+// 13. Finger Family (BPM 112)
+const FINGER_FAMILY_NOTES = [
+  {note:'C4',ratio:0.00,beats:1,lyric:'Dad-'},{note:'D4',ratio:0.14,beats:1,lyric:'dy'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'fin-'},{note:'C4',ratio:0.00,beats:1,lyric:'ger'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'Dad-'},{note:'D4',ratio:0.14,beats:1,lyric:'dy'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'fin-'},{note:'C4',ratio:0.00,beats:1,lyric:'ger'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'where'},{note:'F4',ratio:0.43,beats:1,lyric:'are'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'you?'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'Here'},{note:'A4',ratio:0.71,beats:1,lyric:'I'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'am'},{note:'F4',ratio:0.43,beats:1,lyric:'here'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'I'},{note:'C4',ratio:0.00,beats:2,lyric:'am'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'how'},{note:'A4',ratio:0.71,beats:1,lyric:'do'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'you'},{note:'F4',ratio:0.43,beats:1,lyric:'do?'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'How'},{note:'C4',ratio:0.00,beats:2,lyric:'do'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'you'},{note:'D4',ratio:0.14,beats:1,lyric:'do?'},
+  {note:'C4',ratio:0.00,beats:2,lyric:''},
+];
+
+// 14. Wheels on the Bus (BPM 89)
+const WHEELS_BUS_NOTES = [
+  {note:'C4',ratio:0.00,beats:1,lyric:'The'},{note:'E4',ratio:0.29,beats:1,lyric:'wheels'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'on'},{note:'G4',ratio:0.57,beats:1,lyric:'the'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'bus'},{note:'G4',ratio:0.57,beats:2,lyric:'go'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'round'},{note:'F4',ratio:0.43,beats:1,lyric:'and'},
+  {note:'F4',ratio:0.43,beats:2,lyric:'round'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'round'},{note:'E4',ratio:0.29,beats:1,lyric:'and'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'round'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'The'},{note:'E4',ratio:0.29,beats:1,lyric:'wheels'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'on'},{note:'G4',ratio:0.57,beats:1,lyric:'the'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'bus'},{note:'G4',ratio:0.57,beats:2,lyric:'go'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'all'},{note:'E4',ratio:0.29,beats:1,lyric:'thru'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'the'},{note:'C4',ratio:0.00,beats:2,lyric:'town'},
+];
+
+// 15. Old McDonald Had a Farm (BPM 92)
+const OLD_MCDONALD_NOTES = [
+  {note:'C4',ratio:0.00,beats:1,lyric:'Old'},{note:'C4',ratio:0.00,beats:1,lyric:'Mac-'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'don-'},{note:'G4',ratio:0.57,beats:1,lyric:'ald'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'had'},{note:'A4',ratio:0.71,beats:1,lyric:'a'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'farm'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'E'},{note:'E4',ratio:0.29,beats:1,lyric:'I'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'E'},{note:'D4',ratio:0.14,beats:1,lyric:'I'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'O'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'And'},{note:'G4',ratio:0.57,beats:1,lyric:'on'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'his'},{note:'G4',ratio:0.57,beats:1,lyric:'farm'},
+  {note:'C5',ratio:1.00,beats:1,lyric:'he'},{note:'B4',ratio:0.86,beats:1,lyric:'had'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'a'},{note:'G4',ratio:0.57,beats:2,lyric:'cow'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'E'},{note:'E4',ratio:0.29,beats:1,lyric:'I'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'E'},{note:'D4',ratio:0.14,beats:1,lyric:'I'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'O'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'With'},{note:'C4',ratio:0.00,beats:1,lyric:'a'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'moo'},{note:'G4',ratio:0.57,beats:1,lyric:'moo'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'here'},{note:'C4',ratio:0.00,beats:1,lyric:'and'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'moo'},{note:'G4',ratio:0.57,beats:1,lyric:'moo'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'there'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'E'},{note:'E4',ratio:0.29,beats:1,lyric:'I'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'E'},{note:'D4',ratio:0.14,beats:1,lyric:'I'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'O'},
+];
+
+// 16. If You're Happy and You Know It (BPM 129)
+const IF_HAPPY_NOTES = [
+  {note:'C4',ratio:0.00,beats:1,lyric:'If'},{note:'C4',ratio:0.00,beats:1,lyric:"you're"},
+  {note:'F4',ratio:0.43,beats:1,lyric:'hap-'},{note:'F4',ratio:0.43,beats:1,lyric:'py'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'and'},{note:'E4',ratio:0.29,beats:1,lyric:'you'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'know'},{note:'G4',ratio:0.57,beats:1,lyric:'it'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'clap'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'your'},{note:'A4',ratio:0.71,beats:1,lyric:'hands'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'if'},{note:'F4',ratio:0.43,beats:1,lyric:"you're"},
+  {note:'E4',ratio:0.29,beats:1,lyric:'hap-'},{note:'F4',ratio:0.43,beats:2,lyric:'py'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'If'},{note:'C4',ratio:0.00,beats:1,lyric:"you're"},
+  {note:'F4',ratio:0.43,beats:1,lyric:'hap-'},{note:'F4',ratio:0.43,beats:1,lyric:'py'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'and'},{note:'E4',ratio:0.29,beats:1,lyric:'you'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'know'},{note:'G4',ratio:0.57,beats:1,lyric:'it'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'clap'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'your'},{note:'A4',ratio:0.71,beats:1,lyric:'hands'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'if'},{note:'F4',ratio:0.43,beats:1,lyric:"you're"},
+  {note:'E4',ratio:0.29,beats:1,lyric:'hap-'},{note:'F4',ratio:0.43,beats:2,lyric:'py'},
+];
+
+// 17. Five Little Monkeys (BPM 123)
+const FIVE_MONKEYS_NOTES = [
+  {note:'G4',ratio:0.57,beats:1,lyric:'Five'},{note:'G4',ratio:0.57,beats:1,lyric:'lit-'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'tle'},{note:'A4',ratio:0.71,beats:1,lyric:'mon-'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'keys'},{note:'F4',ratio:0.43,beats:1,lyric:'jump-'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'ing'},{note:'D4',ratio:0.14,beats:1,lyric:'on'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'the'},{note:'F4',ratio:0.43,beats:1,lyric:'bed'},
+  {note:'G4',ratio:0.57,beats:2,lyric:''},
+  {note:'G4',ratio:0.57,beats:1,lyric:'One'},{note:'A4',ratio:0.71,beats:1,lyric:'fell'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'off'},{note:'F4',ratio:0.43,beats:1,lyric:'and'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'bumped'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'Ma-'},{note:'A4',ratio:0.71,beats:1,lyric:'ma'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'called'},{note:'F4',ratio:0.43,beats:1,lyric:'the'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'doc-'},{note:'D4',ratio:0.14,beats:2,lyric:'tor'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'No'},{note:'G4',ratio:0.57,beats:1,lyric:'more'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'mon-'},{note:'G4',ratio:0.57,beats:1,lyric:'keys'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'jump-'},{note:'E4',ratio:0.29,beats:1,lyric:'ing'},
+  {note:'D4',ratio:0.14,beats:1,lyric:'on'},{note:'C4',ratio:0.00,beats:2,lyric:'bed'},
+];
+
+// 18. Baby Shark (BPM 144)
+const BABY_SHARK_NOTES = [
+  {note:'C4',ratio:0.00,beats:1,lyric:'Ba-'},{note:'E4',ratio:0.29,beats:1,lyric:'by'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'shark'},{note:'G4',ratio:0.57,beats:3,lyric:'doo'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'Mom-'},{note:'E4',ratio:0.29,beats:1,lyric:'my'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'shark'},{note:'B4',ratio:0.86,beats:3,lyric:'doo'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'Dad-'},{note:'E4',ratio:0.29,beats:1,lyric:'dy'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'shark'},{note:'C5',ratio:1.00,beats:3,lyric:'doo'},
+  {note:'G4',ratio:0.57,beats:1,lyric:"Let's"},{note:'A4',ratio:0.71,beats:1,lyric:'go'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'hunt'},{note:'G4',ratio:0.57,beats:3,lyric:'doo'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'Run'},{note:'F4',ratio:0.43,beats:1,lyric:'a-'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'way'},{note:'D4',ratio:0.14,beats:3,lyric:'doo'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'Safe'},{note:'E4',ratio:0.29,beats:1,lyric:'at'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'last'},{note:'G4',ratio:0.57,beats:3,lyric:'doo'},
+  {note:'C4',ratio:0.00,beats:4,lyric:'end'},
+];
+
+// 19. 拔萝卜 Ba Luo Bo — Pulling Turnips (BPM 96)
+const BA_LUO_BO_NOTES = [
+  {note:'G4',ratio:0.57,beats:1,lyric:'拔'},{note:'G4',ratio:0.57,beats:1,lyric:'萝'},
+  {note:'C5',ratio:1.00,beats:1,lyric:'卜'},{note:'A4',ratio:0.71,beats:1,lyric:'拔'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'萝'},{note:'E4',ratio:0.29,beats:1,lyric:'卜'},
+  {note:'D4',ratio:0.14,beats:2,lyric:'哎'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'嗨'},{note:'D4',ratio:0.14,beats:1,lyric:'哟'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'拔'},{note:'F4',ratio:0.43,beats:1,lyric:'不'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'动'},{note:'A4',ratio:0.71,beats:1,lyric:'哎'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'哟'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'爷'},{note:'G4',ratio:0.57,beats:1,lyric:'爷'},
+  {note:'C5',ratio:1.00,beats:1,lyric:'来'},{note:'A4',ratio:0.71,beats:1,lyric:'帮'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'忙'},{note:'E4',ratio:0.29,beats:1,lyric:'快'},
+  {note:'D4',ratio:0.14,beats:2,lyric:'来'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'一'},{note:'D4',ratio:0.14,beats:1,lyric:'起'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'拔'},{note:'D4',ratio:0.14,beats:1,lyric:'萝'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'卜'},
+];
+
+// 20. 小燕子 Xiao Yan Zi — Little Swallow (BPM 103)
+const XIAO_YAN_ZI_NOTES = [
+  {note:'E4',ratio:0.29,beats:1,lyric:'小'},{note:'E4',ratio:0.29,beats:1,lyric:'燕'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'子'},{note:'E4',ratio:0.29,beats:1,lyric:'穿'},
+  {note:'C5',ratio:1.00,beats:1,lyric:'花'},{note:'G4',ratio:0.57,beats:2,lyric:'衣'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'年'},{note:'G4',ratio:0.57,beats:1,lyric:'年'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'春'},{note:'G4',ratio:0.57,beats:1,lyric:'天'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'来'},{note:'D4',ratio:0.14,beats:2,lyric:'这'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'里'},{note:'D4',ratio:0.14,beats:1,lyric:'我'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'问'},{note:'G4',ratio:0.57,beats:1,lyric:'燕'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'子'},{note:'D4',ratio:0.14,beats:1,lyric:'你'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'为'},{note:'D4',ratio:0.14,beats:1,lyric:'啥'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'来'},{note:'G4',ratio:0.57,beats:1,lyric:'这'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'里'},{note:'C5',ratio:1.00,beats:1,lyric:'燕'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'子'},
+];
+
+// 21. Rasa Sayang (BPM 89)
+const RASA_SAYANG_NOTES = [
+  {note:'G4',ratio:0.57,beats:1,lyric:'Ra-'},{note:'G4',ratio:0.57,beats:1,lyric:'sa'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'sa-'},{note:'A4',ratio:0.71,beats:1,lyric:'yang'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'hey'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'ra-'},{note:'G4',ratio:0.57,beats:1,lyric:'sa'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'sa-'},{note:'A4',ratio:0.71,beats:1,lyric:'yang'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'sa-'},{note:'F4',ratio:0.43,beats:1,lyric:'yang'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'hey'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'Hey'},{note:'E4',ratio:0.29,beats:1,lyric:'li-'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'hat'},{note:'E4',ratio:0.29,beats:1,lyric:'no-'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'na'},{note:'D4',ratio:0.14,beats:1,lyric:'ja-'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'uh'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'ra-'},{note:'A4',ratio:0.71,beats:1,lyric:'sa'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'sa-'},{note:'F4',ratio:0.43,beats:1,lyric:'yang'},
+  {note:'E4',ratio:0.29,beats:2,lyric:'hey'},
+];
+
+// 22. Chan Mali Chan (BPM 92)
+const CHAN_MALI_CHAN_NOTES = [
+  {note:'C4',ratio:0.00,beats:1,lyric:'Chan'},{note:'E4',ratio:0.29,beats:1,lyric:'ma-'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'li'},{note:'G4',ratio:0.57,beats:1,lyric:'chan'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'chan'},{note:'G4',ratio:0.57,beats:2,lyric:'ma-'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'li'},{note:'G4',ratio:0.57,beats:1,lyric:'chan'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'chan'},{note:'D4',ratio:0.14,beats:1,lyric:'ma-'},
+  {note:'C4',ratio:0.00,beats:2,lyric:'li'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'Chan'},{note:'E4',ratio:0.29,beats:1,lyric:'ma-'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'li'},{note:'G4',ratio:0.57,beats:1,lyric:'chan'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'chan'},{note:'G4',ratio:0.57,beats:2,lyric:'ma-'},
+  {note:'A4',ratio:0.71,beats:1,lyric:'li'},{note:'G4',ratio:0.57,beats:1,lyric:'chan'},
+  {note:'F4',ratio:0.43,beats:1,lyric:'chan'},{note:'E4',ratio:0.29,beats:1,lyric:'ma-'},
+  {note:'D4',ratio:0.14,beats:2,lyric:'li'},
+  {note:'E4',ratio:0.29,beats:1,lyric:'eh'},{note:'G4',ratio:0.57,beats:1,lyric:'chan'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'ma-'},{note:'A4',ratio:0.71,beats:1,lyric:'li'},
+  {note:'G4',ratio:0.57,beats:2,lyric:'chan'},
+  {note:'C4',ratio:0.00,beats:1,lyric:'chan'},{note:'E4',ratio:0.29,beats:1,lyric:'ma-'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'li'},{note:'A4',ratio:0.71,beats:1,lyric:'chan'},
+  {note:'G4',ratio:0.57,beats:1,lyric:'la'},{note:'C4',ratio:0.00,beats:2,lyric:'la'},
+];
+
 const SONG_DATA = {
-  twinkle:     { get notes() { return TWINKLE_NOTES; },      bpm: 120 },
-  brotherjohn: { get notes() { return BROTHER_JOHN_NOTES; }, bpm: 112 },
+  twinkle:     { get notes() { return TWINKLE_NOTES; },        bpm: 120 },
+  brotherjohn: { get notes() { return BROTHER_JOHN_NOTES; },   bpm: 112 },
+  humptydumpty:{ get notes() { return HUMPTY_DUMPTY_NOTES; },  bpm: 100 },
+  headshoulders:{ get notes() { return HEAD_SHOULDERS_NOTES; },bpm: 123 },
+  londonbridge:{ get notes() { return LONDON_BRIDGE_NOTES; },  bpm: 108 },
+  itsybitsy:   { get notes() { return ITSY_BITSY_NOTES; },     bpm:  89 },
+  baabaa:      { get notes() { return BAA_BAA_NOTES; },        bpm:  99 },
+  marylamb:    { get notes() { return MARY_LAMB_NOTES; },      bpm: 123 },
+  rowboat:     { get notes() { return ROW_BOAT_NOTES; },       bpm:  96 },
+  moretogether:{ get notes() { return MORE_TOGETHER_NOTES; },  bpm: 117 },
+  littlebunny: { get notes() { return LITTLE_BUNNY_NOTES; },   bpm: 123 },
+  rainrain:    { get notes() { return RAIN_RAIN_NOTES; },      bpm:  89 },
+  fingerfamily:{ get notes() { return FINGER_FAMILY_NOTES; },  bpm: 112 },
+  wheelsbus:   { get notes() { return WHEELS_BUS_NOTES; },     bpm:  89 },
+  oldmcdonald: { get notes() { return OLD_MCDONALD_NOTES; },   bpm:  92 },
+  ifhappy:     { get notes() { return IF_HAPPY_NOTES; },       bpm: 129 },
+  fivemonkeys: { get notes() { return FIVE_MONKEYS_NOTES; },   bpm: 123 },
+  babyshark:   { get notes() { return BABY_SHARK_NOTES; },     bpm: 144 },
+  baluobo:     { get notes() { return BA_LUO_BO_NOTES; },      bpm:  96 },
+  xiaoyanzi:   { get notes() { return XIAO_YAN_ZI_NOTES; },   bpm: 103 },
+  rasasayang:  { get notes() { return RASA_SAYANG_NOTES; },    bpm:  89 },
+  chanmalichan:{ get notes() { return CHAN_MALI_CHAN_NOTES; },  bpm:  92 },
 };
 
 function playBackingTrack() {

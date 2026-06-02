@@ -488,7 +488,7 @@ function detectPitch() {
   }
 
   debugAcMax = bestCorr;
-  if (bestLag < 1 || bestCorr < 0.1) { debugHz = -1; return -1; }
+  if (bestLag < 1 || bestCorr < 0.85) { debugHz = -1; return -1; } // B: high clarity threshold — reject noisy/uncertain readings
 
   // Parabolic interpolation for sub-sample accuracy
   const prev = bestLag > minLag ? (() => { let s=0; for(let i=0;i<SIZE-(bestLag-1);i++) s+=buf[i]*buf[i+bestLag-1]; return s/energy; })() : bestCorr;
@@ -840,6 +840,8 @@ const GRAVITY = 0; // no gravity — pipes come from all heights
 const PITCH_FORCE = 800;
 
 let pitchRatioSmooth = 0.5;
+const PITCH_MEDIAN_SIZE = 5;
+const pitchMedianBuf = []; // C: median filter — stores last N valid Hz readings
 let targetBirdY = H / 2;
 let birdAngle = 0;
 let birdWingPhase = 0;
@@ -904,6 +906,7 @@ function startGame(song) {
   nextPipeIdx = 0;
   nextCoinIdx = 0;
   pitchRatioSmooth = 0.5;
+  pitchMedianBuf.length = 0;
   bgOffset1 = bgOffset2 = bgOffset3 = 0;
   showScreen('game');
   scoreDisplay.textContent = '0';
@@ -1222,10 +1225,19 @@ function gameLoop(ts) {
   if (state === 'playing') {
     gameTime += dt;
 
-    // Pitch detection
+    // Pitch detection — B: clarity threshold inside detectPitch(), C: 5-frame median filter
     const rawPitch = detectPitch();
-    const rawRatio = freqToRatio(rawPitch);
-    const micSinging = rawPitch > 0;
+    let filteredPitch = -1;
+    if (rawPitch > 0) {
+      pitchMedianBuf.push(rawPitch);
+      if (pitchMedianBuf.length > PITCH_MEDIAN_SIZE) pitchMedianBuf.shift();
+      const sorted = [...pitchMedianBuf].sort((a, b) => a - b);
+      filteredPitch = sorted[Math.floor(sorted.length / 2)]; // median
+    } else {
+      if (pitchMedianBuf.length > 0) pitchMedianBuf.shift(); // drain buffer on silence
+    }
+    const rawRatio = freqToRatio(filteredPitch);
+    const micSinging = filteredPitch > 0;
     const keyActive = keyRatio >= 0;
     const touchActive = touchHeld;
     const isSinging = micSinging || keyActive || touchActive;

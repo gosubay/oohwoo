@@ -1050,25 +1050,6 @@ function drawPipe(pipe) {
     ctx.restore();
   }
 
-  // Option A: lyric word in the gap, scrolls with the pipe
-  if (pipe.lyric && !pipe.passed) {
-    const alpha = Math.min(1, Math.max(0, 1 - Math.abs(pipe.x - HIT_ZONE_X) / 260));
-    if (alpha > 0.05) {
-      ctx.save();
-      ctx.globalAlpha = alpha;
-      const wordX = x + PIPE_W / 2;
-      const wordY = gapCenter;
-      // Shadow for legibility over background
-      ctx.font = 'bold 18px "Segoe UI", Arial, sans-serif';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.shadowColor = 'rgba(0,0,0,0.9)';
-      ctx.shadowBlur = 8;
-      ctx.fillStyle = pipe.x <= HIT_ZONE_X + 40 ? '#FFD700' : '#ffffff'; // gold when at hit zone
-      ctx.fillText(pipe.lyric, wordX, wordY);
-      ctx.restore();
-    }
-  }
 }
 
 // ============================================================

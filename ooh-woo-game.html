@@ -61,21 +61,74 @@
     margin-bottom: 40px;
     text-shadow: 1px 1px 0 #2d5a2d;
   }
-  .song-card {
-    background: linear-gradient(135deg, #2d6a4f, #1b4332);
+  /* ── Carousel ── */
+  .carousel-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 12px;
+  }
+  .carousel-card {
+    width: 270px;
+    min-height: 185px;
+    background: linear-gradient(145deg, #2d6a4f, #1b4332);
     border: 3px solid #52b788;
-    border-radius: 20px;
-    padding: 20px 30px;
-    margin: 10px 0;
+    border-radius: 24px;
+    padding: 22px 24px 18px;
+    box-shadow: 0 6px 28px rgba(82,183,136,0.45), 0 0 0 1px rgba(255,255,255,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    pointer-events: all;
+    cursor: pointer;
+    transition: transform 0.18s ease, opacity 0.18s ease;
+  }
+  .carousel-card.slide-out-left  { transform: translateX(-60px); opacity: 0; }
+  .carousel-card.slide-out-right { transform: translateX( 60px); opacity: 0; }
+  .carousel-card.slide-in-left  { animation: slideInLeft  0.22s ease forwards; }
+  .carousel-card.slide-in-right { animation: slideInRight 0.22s ease forwards; }
+  @keyframes slideInLeft  { from { transform: translateX(60px);  opacity:0; } to { transform:none; opacity:1; } }
+  @keyframes slideInRight { from { transform: translateX(-60px); opacity:0; } to { transform:none; opacity:1; } }
+  .carousel-card:active { transform: scale(0.97) !important; }
+  .carousel-emoji { font-size: 52px; line-height: 1; margin-bottom: 10px; }
+  .carousel-title    { font-size: 18px; font-weight: 900; color: #FFD700; line-height: 1.2; margin-bottom: 4px; }
+  .carousel-title-cn { font-size: 15px; color: #95d5b2; margin-bottom: 10px; }
+  .carousel-meta     { font-size: 12px; color: rgba(255,255,255,0.5); }
+  .carousel-arrow {
+    background: rgba(82,183,136,0.18);
+    border: 2px solid rgba(82,183,136,0.5);
+    color: #52b788;
+    border-radius: 50%;
+    width: 40px; height: 40px;
+    font-size: 22px; line-height: 1;
     cursor: pointer;
     pointer-events: all;
-    transition: transform 0.1s, box-shadow 0.1s;
-    width: 280px;
-    box-shadow: 0 4px 15px rgba(82,183,136,0.3);
+    flex-shrink: 0;
+    transition: background 0.15s, transform 0.1s;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 8px;
   }
-  .song-card:active { transform: scale(0.96); }
-  .song-card h3 { font-size: 20px; color: #FFD700; margin-bottom: 4px; }
-  .song-card p { font-size: 13px; color: #95d5b2; }
+  .carousel-arrow:active { background: rgba(82,183,136,0.4); transform: scale(0.9); }
+  .carousel-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+  .carousel-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+    transition: background 0.2s, transform 0.2s;
+  }
+  .carousel-dot.active {
+    background: #52b788;
+    transform: scale(1.3);
+  }
   .btn {
     background: linear-gradient(135deg, #FFD700, #FFA500);
     color: #1a1a1a;
@@ -213,21 +266,26 @@
       </div>
     </div>
 
-    <!-- Song Select -->
+    <!-- Song Select (Carousel) -->
     <div class="screen hidden" id="screenSelect">
       <div class="title" style="font-size:36px;">Choose a Song</div>
-      <div class="subtitle" style="margin-bottom:24px;">Tap a song to start!</div>
-      <div class="song-card" id="btnTwinkle">
-        <h3>⭐ Twinkle Twinkle Little Star</h3>
-        <h3 style="font-size:16px;color:#95d5b2;margin-top:2px;">一闪一闪亮晶晶</h3>
-        <p style="margin-top:6px;">Beginner · 16 pipes · 1:00</p>
+      <div class="subtitle" style="margin-bottom:4px;">Swipe or tap arrows</div>
+
+      <!-- Carousel -->
+      <div class="carousel-wrap">
+        <button class="carousel-arrow" id="btnPrevSong">‹</button>
+        <div class="carousel-card" id="carouselCard">
+          <!-- filled by JS -->
+        </div>
+        <button class="carousel-arrow" id="btnNextSong">›</button>
       </div>
-      <div class="song-card" id="btnBrotherJohn">
-        <h3>🐯 Brother John / Are You Sleeping?</h3>
-        <h3 style="font-size:16px;color:#95d5b2;margin-top:2px;">两只老虎 / 法国民谣</h3>
-        <p style="margin-top:6px;">Beginner · 32 pipes · 1:47</p>
-      </div>
-      <button class="btn secondary" id="btnBackToMain" style="font-size:15px;padding:10px 30px;margin-top:16px;">← Back</button>
+
+      <!-- Dots -->
+      <div class="carousel-dots" id="carouselDots"></div>
+
+      <!-- Play -->
+      <button class="btn" id="btnPlaySong" style="width:220px;font-size:22px;margin-bottom:6px;">▶ Play</button>
+      <button class="btn secondary" id="btnBackToMain" style="font-size:15px;padding:10px 30px;">← Back</button>
     </div>
 
     <!-- Vocal Range Calibration -->
@@ -807,6 +865,7 @@ function finishCalibration() {
   updateRangeDisplay();
   isCalibrating = false;
   showScreen('select');
+  renderCarousel();
   startMicTester();
   requestAnimationFrame(drawSelectBg);
 }
@@ -940,6 +999,7 @@ document.addEventListener('keydown', e => {
       state = 'select';
       screens.pause.classList.add('hidden');
       showScreen('select');
+      renderCarousel();
 
     }
   }
@@ -1586,6 +1646,57 @@ let backingCtx = null;
 
 let currentSong = 'twinkle'; // track which song is playing
 
+// ── Song catalogue (drives the carousel) ────────────────────────────────────
+const SONGS = [
+  { id: 'twinkle',     emoji: '⭐', title: 'Twinkle Twinkle Little Star', titleCn: '一闪一闪亮晶晶',          difficulty: 'Beginner', pipes: 16, duration: '1:00' },
+  { id: 'brotherjohn', emoji: '🐯', title: 'Brother John / Are You Sleeping?', titleCn: '两只老虎 / 法国民谣', difficulty: 'Beginner', pipes: 32, duration: '1:47' },
+];
+let carouselIndex = 0;
+
+function renderCarousel(direction) {
+  const card = document.getElementById('carouselCard');
+  const dotsEl = document.getElementById('carouselDots');
+  const song = SONGS[carouselIndex];
+
+  // Animate out
+  if (direction) {
+    card.classList.add(direction === 'next' ? 'slide-out-left' : 'slide-out-right');
+  }
+
+  const update = () => {
+    card.className = 'carousel-card';
+    card.innerHTML = `
+      <div class="carousel-emoji">${song.emoji}</div>
+      <div class="carousel-title">${song.title}</div>
+      <div class="carousel-title-cn">${song.titleCn}</div>
+      <div class="carousel-meta">${song.difficulty} · ${song.pipes} pipes · ${song.duration}</div>
+    `;
+    if (direction) {
+      card.classList.add(direction === 'next' ? 'slide-in-left' : 'slide-in-right');
+    }
+
+    // Dots
+    dotsEl.innerHTML = SONGS.map((_, i) =>
+      `<div class="carousel-dot${i === carouselIndex ? ' active' : ''}"></div>`
+    ).join('');
+  };
+
+  if (direction) {
+    setTimeout(update, 180);
+  } else {
+    update();
+  }
+}
+
+function carouselNext() {
+  carouselIndex = (carouselIndex + 1) % SONGS.length;
+  renderCarousel('next');
+}
+function carouselPrev() {
+  carouselIndex = (carouselIndex - 1 + SONGS.length) % SONGS.length;
+  renderCarousel('prev');
+}
+
 const SONG_DATA = {
   twinkle:     { get notes() { return TWINKLE_NOTES; },      bpm: 120 },
   brotherjohn: { get notes() { return BROTHER_JOHN_NOTES; }, bpm: 112 },
@@ -1646,31 +1757,43 @@ function stopBackingTrack() {
 // ============================================================
 // BUTTON WIRING
 // ============================================================
-document.getElementById('btnTwinkle').addEventListener('click', () => {
+
+// ── Carousel controls ────────────────────────────────────────
+document.getElementById('btnPrevSong').addEventListener('click', carouselPrev);
+document.getElementById('btnNextSong').addEventListener('click', carouselNext);
+
+// Touch swipe on the carousel card
+(function() {
+  let touchStartX = 0;
+  const card = document.getElementById('carouselCard');
+  document.getElementById('screenSelect').addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+  document.getElementById('screenSelect').addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 40) { dx < 0 ? carouselNext() : carouselPrev(); }
+  }, { passive: true });
+})();
+
+// Play selected song
+document.getElementById('btnPlaySong').addEventListener('click', () => {
+  const song = SONGS[carouselIndex];
   if (!micReady) initMic();
-  // If never calibrated, run calibration first; otherwise go straight to game
   const hasCalibration = localStorage.getItem('oohwoo_minFreq');
   if (!hasCalibration) {
+    currentSong = song.id;
     startCalibration();
   } else {
-    currentSong = 'twinkle';
+    currentSong = song.id;
     stopBackingTrack();
     playBackingTrack();
-    startGame('twinkle');
+    startGame(song.id);
   }
 });
 
-document.getElementById('btnBrotherJohn').addEventListener('click', () => {
-  if (!micReady) initMic();
-  const hasCalibration = localStorage.getItem('oohwoo_minFreq');
-  if (!hasCalibration) {
-    startCalibration();
-  } else {
-    currentSong = 'brotherjohn';
-    stopBackingTrack();
-    playBackingTrack();
-    startGame('brotherjohn');
-  }
+// Tapping the card itself also triggers play
+document.getElementById('carouselCard').addEventListener('click', () => {
+  document.getElementById('btnPlaySong').click();
 });
 
 document.getElementById('btnSkipCal').addEventListener('click', () => {
@@ -1679,6 +1802,7 @@ document.getElementById('btnSkipCal').addEventListener('click', () => {
   localStorage.setItem('oohwoo_minFreq', playerMinFreq);
   localStorage.setItem('oohwoo_maxFreq', playerMaxFreq);
   showScreen('select');
+  renderCarousel();
   updateRangeDisplay();
   startMicTester();
   requestAnimationFrame(drawSelectBg);
@@ -1697,11 +1821,13 @@ document.getElementById('btnMenu').addEventListener('click', () => {
   stopBackingTrack();
   state = 'select';
   showScreen('select');
+  renderCarousel();
 });
 document.getElementById('btnMenu2').addEventListener('click', () => {
   stopBackingTrack();
   state = 'select';
   showScreen('select');
+  renderCarousel();
 });
 document.getElementById('btnBackToMain').addEventListener('click', () => {
   state = 'main';
@@ -1710,6 +1836,7 @@ document.getElementById('btnBackToMain').addEventListener('click', () => {
 document.getElementById('btnPlay').addEventListener('click', () => {
   state = 'select';
   showScreen('select');
+  renderCarousel();
   requestAnimationFrame(drawSelectBg);
 });
 document.getElementById('btnSetupVoice').addEventListener('click', () => {

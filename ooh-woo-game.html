@@ -1261,12 +1261,16 @@ function gameLoop(ts) {
 
     if (micSinging) {
       // Outlier rejection only — clamp jumps > 0.35 ratio (likely octave errors).
-      // No lerp smoothing: we want the bird to respond as fast as keyboard.
       const rawDelta = rawRatio - pitchRatioSmooth;
-      const clampedRatio = Math.abs(rawDelta) > 0.35
-        ? pitchRatioSmooth + Math.sign(rawDelta) * 0.35
-        : rawRatio;
-      pitchRatioSmooth = clampedRatio; // instant update, no smoothing lag
+      // Dead zone: ignore tiny pitch wobbles (natural voice variation).
+      // Only move if pitch changed by more than 2% of the range (~half a semitone).
+      // Octave-error clamp: reject jumps > 0.35 ratio in one frame.
+      if (Math.abs(rawDelta) > 0.02) {
+        const clampedRatio = Math.abs(rawDelta) > 0.35
+          ? pitchRatioSmooth + Math.sign(rawDelta) * 0.35
+          : rawRatio;
+        pitchRatioSmooth = clampedRatio;
+      }
       currentRatio = pitchRatioSmooth;
     } else if (keyActive) {
       pitchRatioSmooth = keyRatio; // instant, no smoothing

@@ -1912,27 +1912,27 @@ let currentSong = 'twinkle'; // track which song is playing
 // ── Song catalogue (drives the carousel) ────────────────────────────────────
 const SONGS = [
   { id:'twinkle',      emoji:'⭐', title:'Twinkle Twinkle Little Star',           titleCn:'一闪一闪亮晶晶',            difficulty:'Beginner',     pipes:16, duration:'1:00' },
-  { id:'brotherjohn',  emoji:'🐯', title:'Brother John / Are You Sleeping?',      titleCn:'两只老虎 / 法国民谣',        difficulty:'Beginner',     pipes:32, duration:'1:47' },
-  { id:'humptydumpty', emoji:'🥚', title:'Humpty Dumpty',                         titleCn:'汉普蒂·邓普蒂',              difficulty:'Beginner',     pipes:28, duration:'0:50' },
-  { id:'headshoulders',emoji:'🙆', title:'Head Shoulders Knees and Toes',         titleCn:'头肩膝脚趾',                 difficulty:'Beginner',     pipes:22, duration:'0:40' },
+  { id:'brotherjohn',  emoji:'🐯', title:'Brother John',                          titleCn:'两只老虎',                   difficulty:'Beginner',     pipes:32, duration:'1:47' },
+  { id:'humptydumpty', emoji:'🥚', title:'Humpty Dumpty',                         titleCn:'胖蛋儿',                     difficulty:'Beginner',     pipes:28, duration:'0:50' },
+  { id:'headshoulders',emoji:'🙆', title:'Head Shoulders Knees & Toes',           titleCn:'头肩膀膝盖脚',               difficulty:'Beginner',     pipes:22, duration:'0:40' },
   { id:'londonbridge', emoji:'🌉', title:'London Bridge',                         titleCn:'伦敦大桥',                   difficulty:'Beginner',     pipes:24, duration:'0:50' },
   { id:'itsybitsy',    emoji:'🕷️', title:'Itsy Bitsy Spider',                     titleCn:'小小蜘蛛',                   difficulty:'Beginner',     pipes:36, duration:'1:10' },
-  { id:'baabaa',       emoji:'🐑', title:'Baa Baa Black Sheep',                   titleCn:'咩咩小黑羊',                 difficulty:'Beginner',     pipes:28, duration:'1:00' },
-  { id:'marylamb',     emoji:'🐑', title:'Mary Had a Little Lamb',                titleCn:'玛丽有只小羔羊',              difficulty:'Beginner',     pipes:24, duration:'0:45' },
+  { id:'baabaa',       emoji:'🐑', title:'Baa Baa Black Sheep',                   titleCn:'咩咩黑羊',                   difficulty:'Beginner',     pipes:28, duration:'1:00' },
+  { id:'marylamb',     emoji:'🐑', title:'Mary Had a Little Lamb',                titleCn:'玛丽有只小绵羊',              difficulty:'Beginner',     pipes:24, duration:'0:45' },
   { id:'rowboat',      emoji:'🚣', title:'Row Row Row Your Boat',                 titleCn:'划呀划小船',                 difficulty:'Beginner',     pipes:22, duration:'0:50' },
-  { id:'moretogether', emoji:'🤝', title:'The More We Get Together',              titleCn:'我们在一起',                 difficulty:'Intermediate', pipes:38, duration:'1:10' },
-  { id:'littlebunny',  emoji:'🐰', title:'Little Bunny / 小兔子乖乖',             titleCn:'小兔子乖乖',                 difficulty:'Beginner',     pipes:24, duration:'0:45' },
-  { id:'rainrain',     emoji:'🌧️', title:'Rain Rain Go Away',                     titleCn:'雨啊雨快走开',               difficulty:'Beginner',     pipes:20, duration:'0:45' },
+  { id:'moretogether', emoji:'🤝', title:'The More We Get Together',              titleCn:'当我们同在一起',              difficulty:'Intermediate', pipes:38, duration:'1:10' },
+  { id:'littlebunny',  emoji:'🐰', title:'Little Bunny',                          titleCn:'小兔子乖乖',                 difficulty:'Beginner',     pipes:24, duration:'0:45' },
+  { id:'rainrain',     emoji:'🌧️', title:'Rain Rain Go Away',                     titleCn:'小鱼小鱼快走开',             difficulty:'Beginner',     pipes:20, duration:'0:45' },
   { id:'fingerfamily', emoji:'👋', title:'Finger Family',                         titleCn:'手指家族',                   difficulty:'Beginner',     pipes:24, duration:'0:50' },
-  { id:'wheelsbus',    emoji:'🚌', title:'Wheels on the Bus',                     titleCn:'公共汽车的轮子',              difficulty:'Beginner',     pipes:22, duration:'1:00' },
-  { id:'oldmcdonald',  emoji:'🐄', title:'Old McDonald Had a Farm',               titleCn:'老麦克唐纳有个农场',          difficulty:'Intermediate', pipes:36, duration:'1:30' },
-  { id:'ifhappy',      emoji:'😊', title:"If You're Happy and You Know It",       titleCn:'如果感到幸福就拍拍手',        difficulty:'Beginner',     pipes:30, duration:'0:50' },
+  { id:'wheelsbus',    emoji:'🚌', title:'Wheels on the Bus',                     titleCn:'巴士的轮子转呀转',            difficulty:'Beginner',     pipes:22, duration:'1:00' },
+  { id:'oldmcdonald',  emoji:'🐄', title:'Old McDonald Had a Farm',               titleCn:'王老先生有块地',              difficulty:'Intermediate', pipes:36, duration:'1:30' },
+  { id:'ifhappy',      emoji:'😊', title:"If You're Happy and You Know It",       titleCn:'如果开心你就跟我拍拍手',      difficulty:'Beginner',     pipes:30, duration:'0:50' },
   { id:'fivemonkeys',  emoji:'🐒', title:'Five Little Monkeys',                   titleCn:'五只小猴子',                 difficulty:'Intermediate', pipes:28, duration:'0:50' },
   { id:'babyshark',    emoji:'🦈', title:'Baby Shark',                            titleCn:'鲨鱼宝宝',                   difficulty:'Beginner',     pipes:24, duration:'0:45' },
-  { id:'baluobo',      emoji:'🥕', title:'Ba Luo Bo / Pulling Turnips',           titleCn:'拔萝卜',                     difficulty:'Beginner',     pipes:24, duration:'0:55' },
-  { id:'xiaoyanzi',    emoji:'🐦', title:'Xiao Yan Zi / Little Swallow',          titleCn:'小燕子',                     difficulty:'Intermediate', pipes:24, duration:'1:00' },
-  { id:'rasasayang',   emoji:'🌴', title:'Rasa Sayang',                           titleCn:'爱的感觉 (马来民谣)',          difficulty:'Intermediate', pipes:24, duration:'1:00' },
-  { id:'chanmalichan', emoji:'🎶', title:'Chan Mali Chan',                        titleCn:'赞马来赞 (马来民谣)',          difficulty:'Intermediate', pipes:32, duration:'1:00' },
+  { id:'baluobo',      emoji:'🥕', title:'Pull Out The Big Radish',               titleCn:'拔萝卜',                     difficulty:'Beginner',     pipes:24, duration:'0:55' },
+  { id:'xiaoyanzi',    emoji:'🐦', title:'Little Swallow',                        titleCn:'小燕子',                     difficulty:'Intermediate', pipes:24, duration:'1:00' },
+  { id:'rasasayang',   emoji:'🌴', title:'I Feel Love - Rasa Sayang',             titleCn:'',                           difficulty:'Intermediate', pipes:24, duration:'1:00' },
+  { id:'chanmalichan', emoji:'🎶', title:'Chan Mali Chan',                        titleCn:'',                           difficulty:'Intermediate', pipes:32, duration:'1:00' },
 ];
 let carouselIndex = 0;
 
@@ -1951,7 +1951,7 @@ function renderCarousel(direction) {
     card.innerHTML = `
       <div class="carousel-emoji">${song.emoji}</div>
       <div class="carousel-title">${song.title}</div>
-      <div class="carousel-title-cn">${song.titleCn}</div>
+      ${song.titleCn ? `<div class="carousel-title-cn">${song.titleCn}</div>` : ''}
       <div class="carousel-meta">${song.difficulty} · ${song.pipes} pipes · ${song.duration}</div>
     `;
     if (direction) {

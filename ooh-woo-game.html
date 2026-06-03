@@ -1642,19 +1642,17 @@ function gameLoop(ts) {
       currentRatio = 0.65;
     }
 
-    // Bird physics — same spring constants for mic and keyboard
+    // Bird physics — lerp toward target, no overshoot possible
     if (micSinging) {
       const targetY = PLAY_TOP + (1 - pitchRatioSmooth) * PLAY_H;
-      const diff = targetY - birdY;
-      birdVY += diff * 400 * dt;
-      birdVY *= 0.4;
+      birdY += (targetY - birdY) * 8 * dt;
+      birdVY = 0;
       setMicIndicator('active');
       micStatus.textContent = '🎤 ' + getCurrentNoteName(rawPitch);
     } else if (keyActive) {
       const targetY = PLAY_TOP + (1 - keyRatio) * PLAY_H;
-      const diff = targetY - birdY;
-      birdVY += diff * 400 * dt;
-      birdVY *= 0.4;
+      birdY += (targetY - birdY) * 8 * dt;
+      birdVY = 0;
       setMicIndicator('off');
       micStatus.textContent = '🎹 Key ' + [...heldKeys].join('+');
     } else if (touchActive) {

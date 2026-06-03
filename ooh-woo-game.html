@@ -1948,10 +1948,13 @@ function renderCarousel(direction) {
 
   const update = () => {
     card.className = 'carousel-card';
+    const [mainTitle, subTitle] = song.title.includes(' - ')
+      ? song.title.split(' - ') : [song.title, null];
+    const subtitle = song.titleCn || subTitle || '';
     card.innerHTML = `
       <div class="carousel-emoji">${song.emoji}</div>
-      <div class="carousel-title">${song.title}</div>
-      ${song.titleCn ? `<div class="carousel-title-cn">${song.titleCn}</div>` : ''}
+      <div class="carousel-title">${mainTitle}</div>
+      ${subtitle ? `<div class="carousel-title-cn">${subtitle}</div>` : ''}
       <div class="carousel-meta">${song.difficulty} · ${song.pipes} pipes · ${song.duration}</div>
     `;
     if (direction) {

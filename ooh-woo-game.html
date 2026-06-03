@@ -1842,9 +1842,11 @@ function getCurrentNoteName(freq) {
 }
 
 // ============================================================
-// AUDIO SYNTHESIS — backing track
+// AUDIO PLAYBACK — backing track (real MP3 vocals)
 // ============================================================
 let backingCtx = null;
+let backingSource = null;  // AudioBufferSourceNode for the MP3
+let audioBufferCache = {}; // song key → AudioBuffer (preloaded)
 
 let currentSong = 'twinkle'; // track which song is playing
 
@@ -2370,77 +2372,68 @@ const CHAN_MALI_CHAN_NOTES = [
 ];
 
 const SONG_DATA = {
-  twinkle:     { get notes() { return TWINKLE_NOTES; } },
-  brotherjohn: { get notes() { return BROTHER_JOHN_NOTES; } },
-  humptydumpty:{ get notes() { return HUMPTY_DUMPTY_NOTES; } },
-  headshoulders:{ get notes() { return HEAD_SHOULDERS_NOTES; } },
-  londonbridge:{ get notes() { return LONDON_BRIDGE_NOTES; } },
-  itsybitsy:   { get notes() { return ITSY_BITSY_NOTES; } },
-  baabaa:      { get notes() { return BAA_BAA_NOTES; } },
-  marylamb:    { get notes() { return MARY_LAMB_NOTES; } },
-  rowboat:     { get notes() { return ROW_BOAT_NOTES; } },
-  moretogether:{ get notes() { return MORE_TOGETHER_NOTES; } },
-  littlebunny: { get notes() { return LITTLE_BUNNY_NOTES; } },
-  rainrain:    { get notes() { return RAIN_RAIN_NOTES; } },
-  fingerfamily:{ get notes() { return FINGER_FAMILY_NOTES; } },
-  wheelsbus:   { get notes() { return WHEELS_BUS_NOTES; } },
-  oldmcdonald: { get notes() { return OLD_MCDONALD_NOTES; } },
-  ifhappy:     { get notes() { return IF_HAPPY_NOTES; } },
-  fivemonkeys: { get notes() { return FIVE_MONKEYS_NOTES; } },
-  babyshark:   { get notes() { return BABY_SHARK_NOTES; } },
-  baluobo:     { get notes() { return BA_LUO_BO_NOTES; } },
-  xiaoyanzi:   { get notes() { return XIAO_YAN_ZI_NOTES; } },
-  rasasayang:  { get notes() { return RASA_SAYANG_NOTES; } },
-  chanmalichan:{ get notes() { return CHAN_MALI_CHAN_NOTES; } },
+  twinkle:     { audio: 'audio/1. Twinkle Twinkle Little Star.mp3',       get notes() { return TWINKLE_NOTES; } },
+  brotherjohn: { audio: 'audio/2. Brother John - Two Tigers.mp3',          get notes() { return BROTHER_JOHN_NOTES; } },
+  humptydumpty:{ audio: 'audio/3. Humpty Dumpty.mp3',                      get notes() { return HUMPTY_DUMPTY_NOTES; } },
+  headshoulders:{ audio: 'audio/4. Head Shoulders Knees Toes.mp3',         get notes() { return HEAD_SHOULDERS_NOTES; } },
+  londonbridge:{ audio: 'audio/5. London Bridge.mp3',                      get notes() { return LONDON_BRIDGE_NOTES; } },
+  itsybitsy:   { audio: 'audio/6. Itsy Bitsy Spider.mp3',                  get notes() { return ITSY_BITSY_NOTES; } },
+  baabaa:      { audio: 'audio/7. Baa Baa Black Sheep.mp3',                get notes() { return BAA_BAA_NOTES; } },
+  marylamb:    { audio: 'audio/8. Mary Had A Little Lamb.mp3',             get notes() { return MARY_LAMB_NOTES; } },
+  rowboat:     { audio: 'audio/9. Row Row Row Your Boat.mp3',              get notes() { return ROW_BOAT_NOTES; } },
+  moretogether:{ audio: 'audio/10. The More We Get Together.mp3',          get notes() { return MORE_TOGETHER_NOTES; } },
+  littlebunny: { audio: 'audio/11. Little Bunny.mp3',                      get notes() { return LITTLE_BUNNY_NOTES; } },
+  rainrain:    { audio: 'audio/12. Rain Rain Go Away.mp3',                 get notes() { return RAIN_RAIN_NOTES; } },
+  fingerfamily:{ audio: 'audio/13. Finger Family.mp3',                     get notes() { return FINGER_FAMILY_NOTES; } },
+  wheelsbus:   { audio: 'audio/14. Wheels On The Bus.mp3',                 get notes() { return WHEELS_BUS_NOTES; } },
+  oldmcdonald: { audio: 'audio/15. Old McDonald Had a Farm.mp3',           get notes() { return OLD_MCDONALD_NOTES; } },
+  ifhappy:     { audio: "audio/16. If you're happy and you know it.mp3",   get notes() { return IF_HAPPY_NOTES; } },
+  fivemonkeys: { audio: 'audio/17. 5 Little Monkeys.mp3',                  get notes() { return FIVE_MONKEYS_NOTES; } },
+  babyshark:   { audio: 'audio/18. Baby Shark.mp3',                        get notes() { return BABY_SHARK_NOTES; } },
+  baluobo:     { audio: 'audio/19. Ba Luo Bo.mp3',                         get notes() { return BA_LUO_BO_NOTES; } },
+  xiaoyanzi:   { audio: 'audio/20. Xiao Yan Zi - Little Bird.mp3',         get notes() { return XIAO_YAN_ZI_NOTES; } },
+  rasasayang:  { audio: 'audio/21. Rasa Sayang.mp3',                       get notes() { return RASA_SAYANG_NOTES; } },
+  chanmalichan:{ audio: 'audio/22. Chan Mali Chan.mp3',                    get notes() { return CHAN_MALI_CHAN_NOTES; } },
 };
 
 function playBackingTrack() {
+  const song = SONG_DATA[currentSong] || SONG_DATA.twinkle;
+  if (!song.audio) return;
+
   try {
     backingCtx = new (window.AudioContext || window.webkitAudioContext)();
-    const song = SONG_DATA[currentSong] || SONG_DATA.twinkle;
-    const notes = song.notes;
-    const audioStart = backingCtx.currentTime + 2.5; // 2.5s matches gameTime intro offset
-
-    for (let i = 0; i < notes.length; i++) {
-      const note = notes[i];
-      const freq = NOTE_FREQS[note.note];
-      // Duration = gap to next note, or 0.5s fallback for the last note
-      const nextT = i + 1 < notes.length ? notes[i + 1].t : note.t + 0.5;
-      const dur = (nextT - note.t) * 0.85;
-      const t = audioStart + note.t;
-
-      const osc = backingCtx.createOscillator();
-      const gain = backingCtx.createGain();
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(freq, t);
-      gain.gain.setValueAtTime(0, t);
-      gain.gain.linearRampToValueAtTime(0.15, t + 0.02);
-      gain.gain.linearRampToValueAtTime(0.1, t + dur * 0.7);
-      gain.gain.linearRampToValueAtTime(0, t + dur);
-      osc.connect(gain);
-      gain.connect(backingCtx.destination);
-      osc.start(t);
-      osc.stop(t + dur);
-
-      // Harmony (fifth above)
-      const osc2 = backingCtx.createOscillator();
-      const g2 = backingCtx.createGain();
-      osc2.type = 'triangle';
-      osc2.frequency.setValueAtTime(freq * 1.5, t);
-      g2.gain.setValueAtTime(0, t);
-      g2.gain.linearRampToValueAtTime(0.05, t + 0.02);
-      g2.gain.linearRampToValueAtTime(0, t + dur);
-      osc2.connect(g2);
-      g2.connect(backingCtx.destination);
-      osc2.start(t);
-      osc2.stop(t + dur);
+    const buf = audioBufferCache[currentSong];
+    if (buf) {
+      _startAudioBuffer(buf);
+    } else {
+      fetch(song.audio)
+        .then(r => r.arrayBuffer())
+        .then(ab => backingCtx.decodeAudioData(ab))
+        .then(decoded => {
+          audioBufferCache[currentSong] = decoded;
+          if (backingCtx) _startAudioBuffer(decoded); // still playing?
+        })
+        .catch(e => console.warn('Audio load failed:', e));
     }
   } catch (e) {
     console.warn('Audio playback failed:', e);
   }
 }
 
+function _startAudioBuffer(buf) {
+  if (!backingCtx) return;
+  backingSource = backingCtx.createBufferSource();
+  backingSource.buffer = buf;
+  backingSource.connect(backingCtx.destination);
+  // Start playback after the same 2.5s intro delay the game uses
+  backingSource.start(backingCtx.currentTime + 2.5);
+}
+
 function stopBackingTrack() {
+  if (backingSource) {
+    try { backingSource.stop(); } catch(e) {}
+    backingSource = null;
+  }
   if (backingCtx) {
     backingCtx.close();
     backingCtx = null;

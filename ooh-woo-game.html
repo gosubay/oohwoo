@@ -1848,6 +1848,65 @@ let backingCtx = null;
 let backingSource = null;  // AudioBufferSourceNode for the MP3
 let audioBufferCache = {}; // song key → AudioBuffer (preloaded)
 
+// ── Song preview (menu only) ──────────────────────────────────
+let previewCtx = null;
+let previewSource = null;
+let previewTimer = null;   // setTimeout handle to stop after 10s
+
+function stopPreview() {
+  clearTimeout(previewTimer);
+  previewTimer = null;
+  if (previewSource) {
+    try { previewSource.stop(); } catch(e) {}
+    previewSource = null;
+  }
+  if (previewCtx) {
+    previewCtx.close();
+    previewCtx = null;
+  }
+}
+
+function playPreview(songKey) {
+  stopPreview();
+  const song = SONG_DATA[songKey];
+  if (!song || !song.audio) return;
+  try {
+    previewCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const startPreview = (buf) => {
+      if (!previewCtx) return;
+      // Fade-in gain node
+      const gain = previewCtx.createGain();
+      gain.gain.setValueAtTime(0, previewCtx.currentTime);
+      gain.gain.linearRampToValueAtTime(1, previewCtx.currentTime + 0.5);
+      gain.connect(previewCtx.destination);
+
+      previewSource = previewCtx.createBufferSource();
+      previewSource.buffer = buf;
+      previewSource.connect(gain);
+      previewSource.start(previewCtx.currentTime, 0); // play from t=0
+      // Fade out and stop at 10s
+      gain.gain.setValueAtTime(1, previewCtx.currentTime + 8.5);
+      gain.gain.linearRampToValueAtTime(0, previewCtx.currentTime + 10);
+      previewTimer = setTimeout(stopPreview, 10000);
+    };
+    const cached = audioBufferCache[songKey];
+    if (cached) {
+      startPreview(cached);
+    } else {
+      fetch(song.audio)
+        .then(r => r.arrayBuffer())
+        .then(ab => previewCtx.decodeAudioData(ab))
+        .then(decoded => {
+          audioBufferCache[songKey] = decoded;
+          startPreview(decoded);
+        })
+        .catch(e => console.warn('Preview load failed:', e));
+    }
+  } catch(e) {
+    console.warn('Preview failed:', e);
+  }
+}
+
 let currentSong = 'twinkle'; // track which song is playing
 
 // ── Song catalogue (drives the carousel) ────────────────────────────────────
@@ -1906,9 +1965,10 @@ function renderCarousel(direction) {
   };
 
   if (direction) {
-    setTimeout(update, 180);
+    setTimeout(() => { update(); playPreview(SONGS[carouselIndex].id); }, 180);
   } else {
     update();
+    playPreview(SONGS[carouselIndex].id);
   }
 }
 
@@ -2464,6 +2524,7 @@ document.getElementById('btnNextSong').addEventListener('click', carouselNext);
 // Play selected song
 document.getElementById('btnPlaySong').addEventListener('click', () => {
   const song = SONGS[carouselIndex];
+  stopPreview();
   if (!micReady) initMic();
   const hasCalibration = localStorage.getItem('oohwoo_minFreq');
   if (!hasCalibration) {

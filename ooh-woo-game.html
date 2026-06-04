@@ -654,7 +654,7 @@ const NOTE_FREQS = {
   'F#4': 369.99, 'G4': 392.00, 'A4': 440.00, 'B4': 493.88,
   'C#5': 554.37, 'C5': 523.25, 'D5': 587.33,
 };
-const MIN_FREQ = 100, MAX_FREQ = 600; // singing range (100Hz covers low male voice, 600Hz covers high female)
+const MIN_FREQ = 80, MAX_FREQ = 800; // singing range (80Hz covers very low male, 800Hz covers high soprano/child)
 
 async function initMic() {
   try {
@@ -665,7 +665,7 @@ async function initMic() {
     // Resume in case browser suspended it (Chrome autoplay policy)
     if (audioCtx.state === 'suspended') await audioCtx.resume();
     analyser = audioCtx.createAnalyser();
-    analyser.fftSize = 2048; // 2048 @ 44100Hz = ~46ms — needed for reliable pitch detection down to C4
+    analyser.fftSize = 4096; // 4096 @ 44100Hz = ~93ms — needed for reliable pitch detection down to C3 (low male)
     pitchBuffer = new Float32Array(analyser.fftSize);
     const src = audioCtx.createMediaStreamSource(stream);
     src.connect(analyser);
@@ -698,7 +698,7 @@ function detectPitch() {
   for (let i = 0; i < pitchBuffer.length; i++) rms += pitchBuffer[i] * pitchBuffer[i];
   rms = Math.sqrt(rms / pitchBuffer.length);
   debugRms = rms;
-  if (rms < 0.005) { debugHz = 0; return -1; }
+  if (rms < 0.003) { debugHz = 0; return -1; }
 
   const sampleRate = audioCtx.sampleRate;
   const buf = pitchBuffer;
@@ -723,7 +723,7 @@ function detectPitch() {
   }
 
   debugAcMax = bestCorr;
-  if (bestLag < 1 || bestCorr < 0.82) { debugHz = -1; return -1; } // B: clarity threshold — reject noisy/uncertain readings
+  if (bestLag < 1 || bestCorr < 0.75) { debugHz = -1; return -1; } // clarity threshold — 0.75 is more lenient for low male / high child notes
 
   // Parabolic interpolation for sub-sample accuracy
   const prev = bestLag > minLag ? (() => { let s=0; for(let i=0;i<SIZE-(bestLag-1);i++) s+=buf[i]*buf[i+bestLag-1]; return s/energy; })() : bestCorr;
@@ -887,7 +887,7 @@ function runDRMFrame(dt) {
 
   const targetFreq = CAL_RANGE_FREQS[calRangeChoice] * CAL_DRM[calDRMStep].ratio;
 
-  if (pitch > 0 && debugRms > 0.015) {
+  if (pitch > 0 && debugRms > 0.008) {
     const ratio = pitch / targetFreq;
     const inTune = ratio >= (1 - CAL_TOLERANCE) && ratio <= (1 + CAL_TOLERANCE);
     if (inTune) {
@@ -1783,7 +1783,7 @@ function gameLoop(ts) {
     if (dbEl) {
       const inRange = debugHz >= MIN_FREQ && debugHz <= MAX_FREQ;
       dbEl.innerHTML =
-        `RMS: ${debugRms.toFixed(4)} ${debugRms > 0.005 ? '✓' : '✗ (too quiet)'}<br>` +
+        `RMS: ${debugRms.toFixed(4)} ${debugRms > 0.003 ? '✓' : '✗ (too quiet)'}<br>` +
         `Hz: ${debugHz > 0 ? Math.round(debugHz) : '—'} ${inRange ? '✓ IN RANGE' : debugHz > 0 ? `✗ out of ${MIN_FREQ}–${MAX_FREQ}Hz` : ''}<br>` +
         `AC strength: ${debugAcMax.toFixed(3)} ${debugAcMax > 0.01 ? '✓' : '✗'}<br>` +
         `Mic: ${micReady ? 'ready (' + (audioCtx ? audioCtx.state : '?') + ')' : 'NOT READY'}`;
@@ -2698,10 +2698,10 @@ function startMicTester() {
     if (state !== 'select' && state !== 'main') return; // stop when game starts
     const pitch = detectPitch();
     const vol = Math.min(100, debugRms * 200);
-    elRms.textContent  = 'RMS: ' + debugRms.toFixed(4) + (debugRms > 0.005 ? ' ✓' : ' ✗ too quiet');
+    elRms.textContent  = 'RMS: ' + debugRms.toFixed(4) + (debugRms > 0.003 ? ' ✓' : ' ✗ too quiet');
     elHz.textContent   = 'Hz: '  + (debugHz > 0 ? Math.round(debugHz) + (debugHz >= MIN_FREQ && debugHz <= MAX_FREQ ? ' ✓' : ' ✗ out of range') : '—');
     elNote.textContent = 'Note: ' + (pitch > 0 ? getCurrentNoteName(pitch) : '—');
-    elAc.textContent   = 'AC: '  + (debugAcMax > 0 ? debugAcMax.toFixed(3) + (debugAcMax >= 0.82 ? ' ✓' : ' ✗ <0.82 rejected') : '—');
+    elAc.textContent   = 'AC: '  + (debugAcMax > 0 ? debugAcMax.toFixed(3) + (debugAcMax >= 0.75 ? ' ✓' : ' ✗ <0.75 rejected') : '—');
     elVol.style.width  = vol + '%';
     // Feed debug recorder if active
     if (debugRecording) {
@@ -2764,8 +2764,8 @@ function finishDebugLog() {
   const maxHz = detected.length ? Math.max(...detected.map(r => r.hz)) : 0;
   const avgRms = debugLog.reduce((s,r) => s + r.rms, 0) / debugLog.length;
   const avgAc  = debugLog.reduce((s,r) => s + r.ac,  0) / debugLog.length;
-  const rejectedLowAc  = debugLog.filter(r => !r.pass && r.ac > 0 && r.ac < 0.82).length;
-  const rejectedLowRms = debugLog.filter(r => r.rms < 0.005).length;
+  const rejectedLowAc  = debugLog.filter(r => !r.pass && r.ac > 0 && r.ac < 0.75).length;
+  const rejectedLowRms = debugLog.filter(r => r.rms < 0.003).length;
   const rejectedRange  = debugLog.filter(r => !r.pass && r.hz > 0 && (r.hz < MIN_FREQ || r.hz > MAX_FREQ)).length;
 
   status.innerHTML =

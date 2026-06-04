@@ -337,8 +337,8 @@
       <!-- Phase 0: Range selection -->
       <div id="calPhase0Ui" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:40px;">
         <div style="width:100%;background:linear-gradient(to top,rgba(0,0,0,0.9) 80%,transparent);padding:28px 20px 20px;text-align:center;">
-          <div style="font-size:18px;font-weight:900;color:#FFD700;letter-spacing:1px;margin-bottom:6px;">How high can you sing?</div>
-          <div style="font-size:12px;color:rgba(255,255,255,0.55);margin-bottom:20px;">Choose the range that fits your voice</div>
+          <div style="font-size:18px;font-weight:900;color:#FFD700;letter-spacing:1px;margin-bottom:6px;">Pick your voice range</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.55);margin-bottom:20px;">Tap one — it saves instantly</div>
           <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
             <button class="cal-range-btn" data-range="Low"    style="pointer-events:all;">
               <div style="font-size:28px;margin-bottom:4px;">🐦</div>
@@ -356,8 +356,19 @@
               <div style="font-size:11px;opacity:0.7;">Young children</div>
             </button>
           </div>
-          <div style="margin-top:16px;">
-            <button class="btn secondary" id="btnSkipCal" style="font-size:13px;padding:8px 24px;pointer-events:all;">Skip (use defaults)</button>
+          <!-- Live mic feedback — shown after a range is picked -->
+          <div id="calQuickTest" style="display:none;margin-top:14px;background:rgba(0,0,0,0.4);border:1px solid rgba(82,183,136,0.4);border-radius:12px;padding:10px 14px;font-size:12px;font-family:monospace;color:#0f0;line-height:1.9;text-align:left;">
+            <div style="color:#95d5b2;font-family:sans-serif;font-size:12px;font-weight:bold;margin-bottom:2px;">✓ Saved! Sing to test:</div>
+            <div id="cqHz">Hz: —</div>
+            <div id="cqNote">Note: —</div>
+            <div id="cqAc">AC: —</div>
+            <div style="margin-top:5px;background:rgba(255,255,255,0.1);border-radius:4px;height:6px;overflow:hidden;">
+              <div id="cqVolBar" style="height:6px;width:0%;background:linear-gradient(to right,#00ff88,#ffd700,#ff4444);border-radius:4px;transition:width 0.05s;"></div>
+            </div>
+          </div>
+          <div style="margin-top:14px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+            <button class="btn secondary" id="btnSkipCal" style="font-size:13px;padding:8px 24px;pointer-events:all;">← Done</button>
+            <button class="btn secondary" id="btnFineTune" style="font-size:13px;padding:8px 24px;pointer-events:all;display:none;">Fine-tune →</button>
           </div>
         </div>
       </div>
@@ -2547,6 +2558,7 @@ document.getElementById('carouselCard').addEventListener('click', () => {
 document.getElementById('btnSkipCal').addEventListener('click', () => {
   cancelAnimationFrame(calAnimId);
   isCalibrating = false;
+  calQuickTestRunning = false;
   localStorage.setItem('oohwoo_minFreq', playerMinFreq);
   localStorage.setItem('oohwoo_maxFreq', playerMaxFreq);
   showScreen('select');
@@ -2556,18 +2568,61 @@ document.getElementById('btnSkipCal').addEventListener('click', () => {
   requestAnimationFrame(drawSelectBg);
 });
 
-// Range picker buttons (phase 0)
+// Range picker buttons (phase 0) — save immediately, show live mic tester
 document.querySelectorAll('.cal-range-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     calRangeChoice = btn.dataset.range;
-    // Visual selection feedback
     document.querySelectorAll('.cal-range-btn').forEach(b => b.classList.remove('selected'));
     btn.classList.add('selected');
-    // Preview the Do note for this range
-    if (audioCtx) calPlayNote(CAL_RANGE_FREQS[calRangeChoice], 0.8);
-    // Short delay then move to phase 1
-    setTimeout(() => startCalPhase1(), 400);
+    // Save range immediately
+    const base = CAL_RANGE_FREQS[calRangeChoice];
+    playerMinFreq = Math.round(base * 0.95);
+    playerMaxFreq = Math.round(base * 2.0 * 1.05);
+    localStorage.setItem('oohwoo_minFreq', playerMinFreq);
+    localStorage.setItem('oohwoo_maxFreq', playerMaxFreq);
+    localStorage.setItem('oohwoo_range', calRangeChoice);
+    // Play the Do note as audio confirmation
+    if (audioCtx) calPlayNote(base, 0.8);
+    // Show live mic tester + Fine-tune button
+    document.getElementById('calQuickTest').style.display = 'block';
+    document.getElementById('btnFineTune').style.display = 'inline-block';
+    startCalQuickTest();
   });
+});
+
+// Live mic tester inside calibration screen
+let calQuickTestRunning = false;
+function startCalQuickTest() {
+  if (calQuickTestRunning) return;
+  calQuickTestRunning = true;
+  function tick() {
+    if (!isCalibrating || calPhase !== 0) { calQuickTestRunning = false; return; }
+    const pitch = detectPitch();
+    const vol = Math.min(100, debugRms * 200);
+    document.getElementById('cqHz').textContent   = 'Hz: ' + (debugHz > 0 ? Math.round(debugHz) + (debugHz >= MIN_FREQ && debugHz <= MAX_FREQ ? ' ✓' : ' ✗ out of range') : '—');
+    document.getElementById('cqNote').textContent = 'Note: ' + (pitch > 0 ? getCurrentNoteName(pitch) : '—');
+    document.getElementById('cqAc').textContent   = 'AC: ' + (debugAcMax > 0 ? debugAcMax.toFixed(3) + (debugAcMax >= 0.75 ? ' ✓' : ' ✗ weak') : '—');
+    document.getElementById('cqVolBar').style.width = vol + '%';
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
+// Fine-tune button → go to Do Re Mi phase
+document.getElementById('btnFineTune').addEventListener('click', () => startCalPhase1());
+
+// Escape key exits calibration
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && isCalibrating) {
+    cancelAnimationFrame(calAnimId);
+    isCalibrating = false;
+    calQuickTestRunning = false;
+    showScreen('select');
+    renderCarousel();
+    updateRangeDisplay();
+    startMicTester();
+    requestAnimationFrame(drawSelectBg);
+  }
 });
 document.getElementById('btnRestart').addEventListener('click', () => {
   stopBackingTrack();

@@ -284,9 +284,15 @@
         <div id="mtRms">RMS: —</div>
         <div id="mtHz">Hz: —</div>
         <div id="mtNote">Note: —</div>
+        <div id="mtAc" style="color:#aaa;">AC: —</div>
         <div style="margin-top:6px;background:rgba(255,255,255,0.1);border-radius:4px;height:8px;overflow:hidden;">
           <div id="mtVolBar" style="height:8px;width:0%;background:linear-gradient(to right,#00ff88,#ffd700,#ff4444);border-radius:4px;transition:width 0.05s;"></div>
         </div>
+      </div>
+      <!-- Debug recorder -->
+      <div style="margin-top:10px;width:280px;pointer-events:all;">
+        <button id="btnDebugRecord" class="btn secondary" style="font-size:12px;padding:7px 18px;width:100%;">⏺ Record 10s Debug Log</button>
+        <div id="debugRecordStatus" style="font-size:11px;color:#95d5b2;font-family:monospace;text-align:center;min-height:16px;margin-top:4px;"></div>
       </div>
       <!-- Social links -->
       <div style="margin-top:16px;display:flex;gap:10px;pointer-events:all;">
@@ -853,20 +859,14 @@ function startDRMStep() {
   const label   = document.getElementById('calRingLabel');
   const hint    = document.getElementById('calHint');
   if (instr)  instr.textContent  = note.label;
-  if (status) status.textContent = '🐦 Listen...';
+  if (status) status.textContent = 'Sing along! 🎵';
   if (ring)   { ring.style.stroke = 'rgba(255,255,255,0.3)'; ring.style.strokeDashoffset = CAL_CIRCUMFERENCE; }
-  if (label)  label.textContent  = '🎵';
-  if (hint)   hint.textContent   = 'Listen to the bird...';
+  if (label)  label.textContent  = '?';
+  if (hint)   hint.textContent   = 'Sing this note';
   calUpdateDots();
   calPlayNote(freq, 1.3);
-  // After 1.5s switch to listening
-  setTimeout(() => {
-    if (!isCalibrating) return;
-    calDRMState = 'listening';
-    if (status) status.textContent = 'Now you sing!';
-    if (hint)   hint.textContent   = 'Sing this note back';
-    if (label)  label.textContent  = '?';
-  }, 1500);
+  // Switch to listening immediately — player sings along with the bird
+  calDRMState = 'listening';
 }
 
 function runDRMFrame(dt) {
@@ -2692,6 +2692,7 @@ function startMicTester() {
   const elRms  = document.getElementById('mtRms');
   const elHz   = document.getElementById('mtHz');
   const elNote = document.getElementById('mtNote');
+  const elAc   = document.getElementById('mtAc');
   const elVol  = document.getElementById('mtVolBar');
   function tick() {
     if (state !== 'select' && state !== 'main') return; // stop when game starts
@@ -2700,10 +2701,90 @@ function startMicTester() {
     elRms.textContent  = 'RMS: ' + debugRms.toFixed(4) + (debugRms > 0.005 ? ' ✓' : ' ✗ too quiet');
     elHz.textContent   = 'Hz: '  + (debugHz > 0 ? Math.round(debugHz) + (debugHz >= MIN_FREQ && debugHz <= MAX_FREQ ? ' ✓' : ' ✗ out of range') : '—');
     elNote.textContent = 'Note: ' + (pitch > 0 ? getCurrentNoteName(pitch) : '—');
+    elAc.textContent   = 'AC: '  + (debugAcMax > 0 ? debugAcMax.toFixed(3) + (debugAcMax >= 0.82 ? ' ✓' : ' ✗ <0.82 rejected') : '—');
     elVol.style.width  = vol + '%';
+    // Feed debug recorder if active
+    if (debugRecording) {
+      debugLog.push({
+        t: (Date.now() - debugStartTime),
+        rms: debugRms,
+        hz: debugHz,
+        ac: debugAcMax,
+        note: pitch > 0 ? getCurrentNoteName(pitch) : '',
+        pass: pitch > 0 ? 1 : 0
+      });
+    }
     requestAnimationFrame(tick);
   }
   requestAnimationFrame(tick);
+}
+
+// ── Debug Recorder ──────────────────────────────────────────────
+let debugRecording = false;
+let debugLog = [];
+let debugStartTime = 0;
+let debugRecordTimer = null;
+
+document.getElementById('btnDebugRecord').addEventListener('click', () => {
+  if (debugRecording) return;
+  if (!micReady) {
+    document.getElementById('debugRecordStatus').textContent = '⚠ Turn mic on first';
+    return;
+  }
+  debugLog = [];
+  debugRecording = true;
+  debugStartTime = Date.now();
+  const btn = document.getElementById('btnDebugRecord');
+  const status = document.getElementById('debugRecordStatus');
+  btn.textContent = '⏺ Recording… 10s';
+  btn.disabled = true;
+  let remaining = 10;
+  const countdown = setInterval(() => {
+    remaining--;
+    btn.textContent = '⏺ Recording… ' + remaining + 's';
+    if (remaining <= 0) clearInterval(countdown);
+  }, 1000);
+  debugRecordTimer = setTimeout(() => {
+    debugRecording = false;
+    btn.disabled = false;
+    btn.textContent = '⏺ Record 10s Debug Log';
+    clearInterval(countdown);
+    finishDebugLog();
+  }, 10000);
+});
+
+function finishDebugLog() {
+  const status = document.getElementById('debugRecordStatus');
+  if (debugLog.length === 0) { status.textContent = 'No data captured.'; return; }
+
+  // Build summary
+  const detected = debugLog.filter(r => r.pass);
+  const avgHz = detected.length ? (detected.reduce((s,r) => s + r.hz, 0) / detected.length) : 0;
+  const minHz = detected.length ? Math.min(...detected.map(r => r.hz)) : 0;
+  const maxHz = detected.length ? Math.max(...detected.map(r => r.hz)) : 0;
+  const avgRms = debugLog.reduce((s,r) => s + r.rms, 0) / debugLog.length;
+  const avgAc  = debugLog.reduce((s,r) => s + r.ac,  0) / debugLog.length;
+  const rejectedLowAc  = debugLog.filter(r => !r.pass && r.ac > 0 && r.ac < 0.82).length;
+  const rejectedLowRms = debugLog.filter(r => r.rms < 0.005).length;
+  const rejectedRange  = debugLog.filter(r => !r.pass && r.hz > 0 && (r.hz < MIN_FREQ || r.hz > MAX_FREQ)).length;
+
+  status.innerHTML =
+    `${debugLog.length} frames | ${detected.length} detected (${Math.round(detected.length/debugLog.length*100)}%)<br>` +
+    `Hz range: ${Math.round(minHz)}–${Math.round(maxHz)} avg ${Math.round(avgHz)}<br>` +
+    `avg RMS ${avgRms.toFixed(4)} | avg AC ${avgAc.toFixed(3)}<br>` +
+    `Rejected: lowAC=${rejectedLowAc} lowRMS=${rejectedLowRms} outRange=${rejectedRange}`;
+
+  // Build CSV
+  const rows = ['t_ms,rms,hz,ac,note,pass'];
+  for (const r of debugLog) rows.push(`${r.t},${r.rms.toFixed(5)},${Math.round(r.hz)},${r.ac.toFixed(4)},${r.note},${r.pass}`);
+  const csv = rows.join('\n');
+  const blob = new Blob([csv], { type: 'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'oohwoo_debug_' + Date.now() + '.csv';
+  a.style.display = 'none'; document.body.appendChild(a); a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
 }
 
 // Draw background on select screen

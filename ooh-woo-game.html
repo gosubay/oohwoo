@@ -593,9 +593,10 @@ const BROTHER_JOHN_NOTES = [
   {note:'D4', ratio:0.00, t:63.214, lyric:'——'},
 ];
 
-// Build schedule from notes using absolute timestamps (t = seconds from song start).
+// Build schedule from notes using absolute timestamps (t = seconds from when singing starts).
+// introOffset shifts all notes forward to align with the MP3's instrumental intro.
 // Each coin spawns early enough to arrive at HIT_ZONE_X exactly at its t.
-function buildPipes(notes) {
+function buildPipes(notes, introOffset = 0) {
   const travelTime = (PIPE_SPAWN_X - HIT_ZONE_X) / PIPE_SPEED;
   return notes.map((n, i) => {
     const isPipe = false; // coins only for now — pipes disabled
@@ -603,7 +604,8 @@ function buildPipes(notes) {
     const steps = Math.round(Math.abs(n.ratio - prevRatio) / 0.14);
     const GAP_TABLE = [350, 350, 350, 350, 375, 400, 425, 450, 475, 500, 525, 550];
     const gap = GAP_TABLE[Math.min(steps, GAP_TABLE.length - 1)];
-    return { spawnTime: n.t - travelTime - 0.15, ratio: n.ratio, note: n.note, t: n.t, lyric: n.lyric || '', isPipe, gap };
+    const t = n.t + introOffset; // absolute position in the audio file
+    return { spawnTime: t - travelTime - 0.15, ratio: n.ratio, note: n.note, t, lyric: n.lyric || '', isPipe, gap };
   });
 }
 
@@ -1282,7 +1284,7 @@ function startGame(song) {
   pipes = [];
   activeCoins = [];
   const songInfo = SONG_DATA[currentSong] || SONG_DATA.twinkle;
-  pipeSchedule = buildPipes(songInfo.notes);
+  pipeSchedule = buildPipes(songInfo.notes, songInfo.introOffset || 0);
   nextPipeIdx = 0;
   nextCoinIdx = 0;
   pitchRatioSmooth = 0.5;
@@ -2443,29 +2445,31 @@ const CHAN_MALI_CHAN_NOTES = [
   {note:'G4', ratio:0.57, t:23.478, lyric:'la'},{note:'C4', ratio:0.00, t:24.130, lyric:'la'},
 ];
 
+// introOffset = seconds of instrumental intro before singing starts in the MP3.
+// Measured automatically from Demucs-separated vocal tracks; fine-tune by ear if needed.
 const SONG_DATA = {
-  twinkle:     { audio: 'audio/1. Twinkle Twinkle Little Star.mp3',       get notes() { return TWINKLE_NOTES; } },
-  brotherjohn: { audio: 'audio/2. Brother John - Two Tigers.mp3',          get notes() { return BROTHER_JOHN_NOTES; } },
-  humptydumpty:{ audio: 'audio/3. Humpty Dumpty.mp3',                      get notes() { return HUMPTY_DUMPTY_NOTES; } },
-  headshoulders:{ audio: 'audio/4. Head Shoulders Knees Toes.mp3',         get notes() { return HEAD_SHOULDERS_NOTES; } },
-  londonbridge:{ audio: 'audio/5. London Bridge.mp3',                      get notes() { return LONDON_BRIDGE_NOTES; } },
-  itsybitsy:   { audio: 'audio/6. Itsy Bitsy Spider.mp3',                  get notes() { return ITSY_BITSY_NOTES; } },
-  baabaa:      { audio: 'audio/7. Baa Baa Black Sheep.mp3',                get notes() { return BAA_BAA_NOTES; } },
-  marylamb:    { audio: 'audio/8. Mary Had A Little Lamb.mp3',             get notes() { return MARY_LAMB_NOTES; } },
-  rowboat:     { audio: 'audio/9. Row Row Row Your Boat.mp3',              get notes() { return ROW_BOAT_NOTES; } },
-  moretogether:{ audio: 'audio/10. The More We Get Together.mp3',          get notes() { return MORE_TOGETHER_NOTES; } },
-  littlebunny: { audio: 'audio/11. Little Bunny.mp3',                      get notes() { return LITTLE_BUNNY_NOTES; } },
-  rainrain:    { audio: 'audio/12. Rain Rain Go Away.mp3',                 get notes() { return RAIN_RAIN_NOTES; } },
-  fingerfamily:{ audio: 'audio/13. Finger Family.mp3',                     get notes() { return FINGER_FAMILY_NOTES; } },
-  wheelsbus:   { audio: 'audio/14. Wheels On The Bus.mp3',                 get notes() { return WHEELS_BUS_NOTES; } },
-  oldmcdonald: { audio: 'audio/15. Old McDonald Had a Farm.mp3',           get notes() { return OLD_MCDONALD_NOTES; } },
-  ifhappy:     { audio: "audio/16. If you're happy and you know it.mp3",   get notes() { return IF_HAPPY_NOTES; } },
-  fivemonkeys: { audio: 'audio/17. 5 Little Monkeys.mp3',                  get notes() { return FIVE_MONKEYS_NOTES; } },
-  babyshark:   { audio: 'audio/18. Baby Shark.mp3',                        get notes() { return BABY_SHARK_NOTES; } },
-  baluobo:     { audio: 'audio/19. Ba Luo Bo.mp3',                         get notes() { return BA_LUO_BO_NOTES; } },
-  xiaoyanzi:   { audio: 'audio/20. Xiao Yan Zi - Little Bird.mp3',         get notes() { return XIAO_YAN_ZI_NOTES; } },
-  rasasayang:  { audio: 'audio/21. Rasa Sayang.mp3',                       get notes() { return RASA_SAYANG_NOTES; } },
-  chanmalichan:{ audio: 'audio/22. Chan Mali Chan.mp3',                    get notes() { return CHAN_MALI_CHAN_NOTES; } },
+  twinkle:     { audio: 'audio/1. Twinkle Twinkle Little Star.mp3',       introOffset: 10.29, get notes() { return TWINKLE_NOTES; } },
+  brotherjohn: { audio: 'audio/2. Brother John - Two Tigers.mp3',          introOffset: 17.28, get notes() { return BROTHER_JOHN_NOTES; } },
+  humptydumpty:{ audio: 'audio/3. Humpty Dumpty.mp3',                      introOffset: 14.16, get notes() { return HUMPTY_DUMPTY_NOTES; } },
+  headshoulders:{ audio: 'audio/4. Head Shoulders Knees Toes.mp3',         introOffset: 15.72, get notes() { return HEAD_SHOULDERS_NOTES; } },
+  londonbridge:{ audio: 'audio/5. London Bridge.mp3',                      introOffset: 11.45, get notes() { return LONDON_BRIDGE_NOTES; } },
+  itsybitsy:   { audio: 'audio/6. Itsy Bitsy Spider.mp3',                  introOffset:  4.48, get notes() { return ITSY_BITSY_NOTES; } },
+  baabaa:      { audio: 'audio/7. Baa Baa Black Sheep.mp3',                introOffset: 12.17, get notes() { return BAA_BAA_NOTES; } },
+  marylamb:    { audio: 'audio/8. Mary Had A Little Lamb.mp3',             introOffset: 10.12, get notes() { return MARY_LAMB_NOTES; } },
+  rowboat:     { audio: 'audio/9. Row Row Row Your Boat.mp3',              introOffset:  0.49, get notes() { return ROW_BOAT_NOTES; } },
+  moretogether:{ audio: 'audio/10. The More We Get Together.mp3',          introOffset:  0.35, get notes() { return MORE_TOGETHER_NOTES; } },
+  littlebunny: { audio: 'audio/11. Little Bunny.mp3',                      introOffset:  0.56, get notes() { return LITTLE_BUNNY_NOTES; } },
+  rainrain:    { audio: 'audio/12. Rain Rain Go Away.mp3',                 introOffset: 13.54, get notes() { return RAIN_RAIN_NOTES; } },
+  fingerfamily:{ audio: 'audio/13. Finger Family.mp3',                     introOffset:  8.85, get notes() { return FINGER_FAMILY_NOTES; } },
+  wheelsbus:   { audio: 'audio/14. Wheels On The Bus.mp3',                 introOffset: 11.12, get notes() { return WHEELS_BUS_NOTES; } },
+  oldmcdonald: { audio: 'audio/15. Old McDonald Had a Farm.mp3',           introOffset:  5.57, get notes() { return OLD_MCDONALD_NOTES; } },
+  ifhappy:     { audio: "audio/16. If you're happy and you know it.mp3",   introOffset:  7.36, get notes() { return IF_HAPPY_NOTES; } },
+  fivemonkeys: { audio: 'audio/17. 5 Little Monkeys.mp3',                  introOffset:  7.22, get notes() { return FIVE_MONKEYS_NOTES; } },
+  babyshark:   { audio: 'audio/18. Baby Shark.mp3',                        introOffset: 15.53, get notes() { return BABY_SHARK_NOTES; } },
+  baluobo:     { audio: 'audio/19. Ba Luo Bo.mp3',                         introOffset:  8.36, get notes() { return BA_LUO_BO_NOTES; } },
+  xiaoyanzi:   { audio: 'audio/20. Xiao Yan Zi - Little Bird.mp3',         introOffset: 12.65, get notes() { return XIAO_YAN_ZI_NOTES; } },
+  rasasayang:  { audio: 'audio/21. Rasa Sayang.mp3',                       introOffset: 10.26, get notes() { return RASA_SAYANG_NOTES; } },
+  chanmalichan:{ audio: 'audio/22. Chan Mali Chan.mp3',                    introOffset:  9.31, get notes() { return CHAN_MALI_CHAN_NOTES; } },
 };
 
 function playBackingTrack() {

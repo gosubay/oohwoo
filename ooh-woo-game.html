@@ -738,8 +738,8 @@ function detectPitch() {
 }
 
 // Player's personal vocal range (calibrated or defaults)
-let playerMinFreq = parseFloat(localStorage.getItem('oohwoo_minFreq')) || 248;  // ~C4 with 5% headroom
-let playerMaxFreq = parseFloat(localStorage.getItem('oohwoo_maxFreq')) || 549;  // ~C5 with 5% headroom
+let playerMinFreq = parseFloat(localStorage.getItem('oohwoo_minFreq')) || 124;  // ~C3 with 5% headroom (low male default)
+let playerMaxFreq = parseFloat(localStorage.getItem('oohwoo_maxFreq')) || 275;  // ~C4*2 with 5% headroom
 
 function freqToRatio(freq) {
   if (freq < 0 || playerMinFreq <= 0 || playerMaxFreq <= playerMinFreq) return -1;

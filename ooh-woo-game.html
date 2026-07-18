@@ -1215,7 +1215,10 @@ const PLAY_TOP = 60; // top dead zone
 const PLAY_BOT = H - 60; // bottom dead zone
 const PLAY_H = PLAY_BOT - PLAY_TOP;
 const BIRD_R = 22;
-const GRAVITY = 0; // no gravity — pipes come from all heights
+const GRAVITY = 900; // px/s^2 — downward glide accel when silent
+const GLIDE_MAX_SPEED = 260; // px/s — terminal velocity for the silent glide
+const MIC_GRACE_MS = 150; // brief mic dropouts (word gaps, breaths) keep the last pitch instead of gliding
+const OCTAVE_JUMP_FRAMES = 2; // a big pitch jump must repeat this many frames before it's trusted (kills 1-frame glitches)
 const PITCH_FORCE = 800;
 
 let pitchRatioSmooth = 0.5;
@@ -1224,6 +1227,8 @@ const pitchMedianBuf = []; // C: median filter — stores last N valid Hz readin
 let targetBirdY = H / 2;
 let birdAngle = 0;
 let birdWingPhase = 0;
+let lastSingMs = -Infinity; // performance.now() timestamp of the last valid mic pitch
+let pendingJumpRatio = null, pendingJumpFrames = 0; // octave-glitch persistence tracking
 
 // Keyboard note control — 1234567890-= maps to Do–Sol (1.5 octaves)
 // Ratios match the pipe note positions: C4=0.00 … C5=1.00, then clamped above
@@ -1289,6 +1294,9 @@ function startGame(song) {
   nextCoinIdx = 0;
   pitchRatioSmooth = 0.5;
   pitchMedianBuf.length = 0;
+  lastSingMs = -Infinity;
+  pendingJumpRatio = null;
+  pendingJumpFrames = 0;
   birdX = micEnabled ? BIRD_X_MIC : BIRD_X_KEY;
   bgOffset1 = bgOffset2 = bgOffset3 = 0;
   showScreen('game');
@@ -1629,22 +1637,36 @@ function gameLoop(ts) {
     // and the filter was adding ~3 frames of lag vs keyboard (which has none).
     const rawPitch = detectPitch();
     const rawRatio = freqToRatio(rawPitch);
-    const micSinging = rawPitch > 0;
+    const now = performance.now();
+    if (rawPitch > 0) lastSingMs = now;
+    // Grace period: brief mic dropouts between words/breaths still count as "singing"
+    // so the bird doesn't flicker into glide-mode mid-phrase.
+    const micSinging = (now - lastSingMs) < MIC_GRACE_MS;
     const keyActive = keyRatio >= 0;
     const touchActive = touchHeld;
     const isSinging = micSinging || keyActive || touchActive;
 
-    if (micSinging) {
-      // Outlier rejection only — clamp jumps > 0.35 ratio (likely octave errors).
+    if (rawPitch > 0) {
+      // Octave-glitch guard: a jump > 0.35 ratio must repeat for OCTAVE_JUMP_FRAMES
+      // frames before we trust it — kills single-frame octave errors with zero lag
+      // on normal singing (small/medium moves apply immediately).
       const rawDelta = rawRatio - pitchRatioSmooth;
-      // Dead zone: ignore tiny pitch wobbles (natural voice variation).
-      // Only move if pitch changed by more than 2% of the range (~half a semitone).
-      // Octave-error clamp: reject jumps > 0.35 ratio in one frame.
-      if (Math.abs(rawDelta) > 0.02) {
-        const clampedRatio = Math.abs(rawDelta) > 0.35
-          ? pitchRatioSmooth + Math.sign(rawDelta) * 0.35
-          : rawRatio;
-        pitchRatioSmooth = clampedRatio;
+      if (Math.abs(rawDelta) > 0.35) {
+        if (pendingJumpRatio !== null && Math.abs(rawRatio - pendingJumpRatio) < 0.05) {
+          pendingJumpFrames++;
+        } else {
+          pendingJumpRatio = rawRatio;
+          pendingJumpFrames = 1;
+        }
+        if (pendingJumpFrames >= OCTAVE_JUMP_FRAMES) {
+          pitchRatioSmooth = rawRatio;
+          pendingJumpRatio = null;
+          pendingJumpFrames = 0;
+        }
+      } else {
+        pendingJumpRatio = null;
+        pendingJumpFrames = 0;
+        pitchRatioSmooth = rawRatio;
       }
       currentRatio = pitchRatioSmooth;
     } else if (keyActive) {
@@ -1655,27 +1677,29 @@ function gameLoop(ts) {
       currentRatio = 0.65;
     }
 
-    // Bird physics — lerp toward target, no overshoot possible
-    if (micSinging) {
-      const targetY = PLAY_TOP + (1 - pitchRatioSmooth) * PLAY_H;
-      birdY += (targetY - birdY) * 8 * dt;
+    const prevBirdY = birdY;
+
+    // Bird physics — fast chase with a minimum speed so it actually arrives,
+    // instead of asymptotically crawling the last stretch.
+    if (micSinging || keyActive) {
+      const targetRatio = micSinging ? pitchRatioSmooth : keyRatio;
+      const targetY = PLAY_TOP + (1 - targetRatio) * PLAY_H;
+      const dy = targetY - birdY;
+      const chase = dy * 14 * dt; // proportional term — snappy on big jumps
+      const minStep = Math.sign(dy) * Math.min(Math.abs(dy), 220 * dt); // floor speed so small drifts don't crawl
+      birdY += Math.abs(chase) > Math.abs(minStep) ? chase : minStep;
       birdVY = 0;
-      setMicIndicator('active');
-      micStatus.textContent = '🎤 ' + getCurrentNoteName(rawPitch);
-    } else if (keyActive) {
-      const targetY = PLAY_TOP + (1 - keyRatio) * PLAY_H;
-      birdY += (targetY - birdY) * 8 * dt;
-      birdVY = 0;
-      setMicIndicator('off');
-      micStatus.textContent = '🎹 Key ' + [...heldKeys].join('+');
+      setMicIndicator(micSinging ? 'active' : 'off');
+      micStatus.textContent = micSinging ? '🎤 ' + getCurrentNoteName(rawPitch) : '🎹 Key ' + [...heldKeys].join('+');
     } else if (touchActive) {
       birdVY -= 600 * dt;
       birdVY *= 0.88;
       setMicIndicator('off');
       micStatus.textContent = '👆 Tap to fly';
     } else {
+      // Silence — glide down like a bird coasting, capped at GLIDE_MAX_SPEED.
       birdVY += GRAVITY * dt;
-      birdVY *= 0.98;
+      birdVY = Math.min(birdVY, GLIDE_MAX_SPEED);
       if (micReady) {
         setMicIndicator('ready');
         micStatus.textContent = '🎤 Mic ready — sing!';
@@ -1688,8 +1712,10 @@ function gameLoop(ts) {
     birdY += birdVY * dt;
     birdY = Math.max(PLAY_TOP + BIRD_R, Math.min(PLAY_BOT - BIRD_R, birdY));
 
-    // Bird angle and wings
-    birdAngle = Math.max(-0.4, Math.min(0.5, birdVY * 0.002));
+    // Bird angle and wings — tilt driven by actual on-screen movement, not just velocity,
+    // so mic-controlled climbs/dives visibly bank the bird instead of staying level.
+    const actualDy = (birdY - prevBirdY) / dt;
+    birdAngle = Math.max(-0.4, Math.min(0.5, actualDy * 0.002));
     birdWingPhase += dt * (isSinging ? 12 : 4);
 
     // Scroll backgrounds at different speeds

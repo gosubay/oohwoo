@@ -145,6 +145,11 @@
     letter-spacing: 1px;
   }
   .btn:active { transform: scale(0.95); }
+  .btn:disabled {
+    opacity: 0.65;
+    cursor: wait;
+    transform: none;
+  }
   .cal-range-btn {
     background: rgba(255,255,255,0.1);
     border: 2px solid rgba(255,255,255,0.25);
@@ -152,6 +157,7 @@
     color: white;
     padding: 14px 18px;
     cursor: pointer;
+    pointer-events: auto;
     min-width: 90px;
     transition: all 0.15s;
   }
@@ -174,17 +180,25 @@
     color: white;
     box-shadow: 0 4px 15px rgba(82,183,136,0.4);
   }
-  #scoreDisplay {
+  #comboDisplay {
     position: absolute;
-    top: 20px;
-    left: 0; right: 0;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 900;
+    top: 14px;
+    left: 96px;
+    right: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3px;
+    padding: 4px 3px;
+    border-radius: 12px;
+    background: rgba(0, 30, 24, 0.48);
     color: white;
-    text-shadow: 2px 2px 0 rgba(0,0,0,0.5);
+    text-align: center;
     pointer-events: none;
   }
+  .hud-stat { min-width: 0; }
+  .hud-label { display: block; font-size: 10px; font-weight: bold; line-height: 1.2; color: #b9f4d2; }
+  .hud-value { display: block; font-size: 21px; font-weight: 900; line-height: 1.2; white-space: nowrap; text-shadow: 1px 2px 2px rgba(0,0,0,.6); }
+  #comboNum, #multiplierNum { color: #FFD700; }
   #pitchMeter {
     position: absolute;
     right: 12px;
@@ -215,8 +229,10 @@
   }
   #noteHint {
     position: absolute;
-    top: 20px;
-    left: 15px;
+    top: 88px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
     font-size: 13px;
     color: rgba(255,255,255,0.7);
     pointer-events: none;
@@ -233,6 +249,21 @@
     color: rgba(255,255,255,0.6);
     pointer-events: none;
   }
+  #pitchFeedback {
+    position: absolute;
+    bottom: 44px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 85%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0,0,0,.65);
+    padding: 7px 14px;
+    border-radius: 14px;
+    pointer-events: none;
+  }
   .score-big {
     font-size: 72px;
     font-weight: 900;
@@ -245,6 +276,12 @@
     margin-bottom: 5px;
   }
   #celebrate { font-size: 50px; margin: 10px; }
+  #screenComplete { padding:20px; }
+  #screenComplete #celebrate { font-size:36px; margin:4px; }
+  #screenComplete .score-big { font-size:56px; }
+  #screenComplete .btn { font-size:18px; padding:12px 18px; margin:6px; }
+  #screenComplete .range-actions { display:flex; justify-content:center; width:100%; }
+  #screenComplete .range-actions .btn { width:145px; font-size:15px; padding:10px; }
   .perfect-flash {
     position: absolute;
     top: 50%;
@@ -280,11 +317,11 @@
       </div>
       <!-- Live mic tester -->
       <div id="micTester" style="margin-top:18px;width:280px;background:rgba(0,0,0,0.5);border:2px solid #52b788;border-radius:16px;padding:14px 18px;font-size:12px;font-family:monospace;color:#0f0;line-height:2;pointer-events:none;">
-        <div style="color:#95d5b2;font-family:sans-serif;font-size:13px;font-weight:bold;margin-bottom:4px;">🎤 Mic Test — sing now!</div>
+        <div id="mtPrompt" style="color:#95d5b2;font-family:sans-serif;font-size:13px;font-weight:bold;margin-bottom:4px;">🎤 Enable mic, then sing</div>
         <div id="mtRms">RMS: —</div>
         <div id="mtHz">Hz: —</div>
         <div id="mtNote">Note: —</div>
-        <div id="mtAc" style="color:#aaa;">AC: —</div>
+        <div id="mtAc" style="color:#aaa;">Clarity: —</div>
         <div style="margin-top:6px;background:rgba(255,255,255,0.1);border-radius:4px;height:8px;overflow:hidden;">
           <div id="mtVolBar" style="height:8px;width:0%;background:linear-gradient(to right,#00ff88,#ffd700,#ff4444);border-radius:4px;transition:width 0.05s;"></div>
         </div>
@@ -327,6 +364,19 @@
       <div class="carousel-dots" id="carouselDots"></div>
 
       <!-- Play -->
+      <div style="margin:8px 0 14px;text-align:center;font-size:13px;color:#b7e4c7;pointer-events:all;">
+        <div style="margin-bottom:8px;">Sing comfortably — nearby notes and coherent octave alternatives count.</div>
+        <div id="comfortMessage" style="max-width:320px;margin:8px auto;"></div>
+        <button id="btnTooHigh" class="btn secondary" style="padding:6px 12px;font-size:13px;">Too high ↓</button>
+        <button id="btnTooLow" class="btn secondary" style="padding:6px 12px;font-size:13px;">Too low ↑</button>
+        <button id="btnResetComfort" class="btn secondary" style="padding:6px 12px;font-size:13px;">Reset comfort</button><br>
+        <label><input type="checkbox" id="guideEnabled" checked> Hear my guide melody</label>
+        <label style="margin-left:8px;">Voice
+          <select id="guideVoice" aria-label="Guide melody voice range" style="padding:5px;border-radius:8px;background:#173d30;color:white;border:1px solid #52b788;">
+            <option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option>
+          </select>
+        </label>
+      </div>
       <button class="btn" id="btnPlaySong" style="width:220px;font-size:22px;margin-bottom:6px;">▶ Play</button>
       <button class="btn secondary" id="btnBackToMain" style="font-size:15px;padding:10px 30px;">← Back</button>
     </div>
@@ -334,92 +384,39 @@
     <!-- Vocal Range Calibration -->
     <div class="screen hidden" id="screenCalibrate" style="background:none;justify-content:space-between;padding:0;">
 
-      <!-- Phase 0: Range selection -->
-      <div id="calPhase0Ui" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:40px;">
-        <div style="width:100%;background:linear-gradient(to top,rgba(0,0,0,0.9) 80%,transparent);padding:28px 20px 20px;text-align:center;">
-          <div style="font-size:18px;font-weight:900;color:#FFD700;letter-spacing:1px;margin-bottom:6px;">Pick your voice range</div>
-          <div style="font-size:12px;color:rgba(255,255,255,0.55);margin-bottom:20px;">Tap one — it saves instantly</div>
-          <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-            <button class="cal-range-btn" data-range="Low"    style="pointer-events:all;">
-              <div style="font-size:28px;margin-bottom:4px;">🐦</div>
-              <div style="font-weight:900;font-size:15px;">Low</div>
-              <div style="font-size:11px;opacity:0.7;">Adult male</div>
-            </button>
-            <button class="cal-range-btn" data-range="Medium" style="pointer-events:all;">
-              <div style="font-size:28px;margin-bottom:4px;">🦜</div>
-              <div style="font-weight:900;font-size:15px;">Medium</div>
-              <div style="font-size:11px;opacity:0.7;">Adult female / teens</div>
-            </button>
-            <button class="cal-range-btn" data-range="High"   style="pointer-events:all;">
-              <div style="font-size:28px;margin-bottom:4px;">🐤</div>
-              <div style="font-weight:900;font-size:15px;">High</div>
-              <div style="font-size:11px;opacity:0.7;">Young children</div>
-            </button>
-          </div>
-          <!-- Live mic feedback — shown after a range is picked -->
-          <div id="calQuickTest" style="display:none;margin-top:14px;background:rgba(0,0,0,0.4);border:1px solid rgba(82,183,136,0.4);border-radius:12px;padding:10px 14px;font-size:12px;font-family:monospace;color:#0f0;line-height:1.9;text-align:left;">
-            <div style="color:#95d5b2;font-family:sans-serif;font-size:12px;font-weight:bold;margin-bottom:2px;">✓ Saved! Sing to test:</div>
-            <div id="cqHz">Hz: —</div>
-            <div id="cqNote">Note: —</div>
-            <div id="cqAc">AC: —</div>
-            <div style="margin-top:5px;background:rgba(255,255,255,0.1);border-radius:4px;height:6px;overflow:hidden;">
-              <div id="cqVolBar" style="height:6px;width:0%;background:linear-gradient(to right,#00ff88,#ffd700,#ff4444);border-radius:4px;transition:width 0.05s;"></div>
-            </div>
-          </div>
-          <div style="margin-top:14px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-            <button class="btn secondary" id="btnSkipCal" style="font-size:13px;padding:8px 24px;pointer-events:all;">← Done</button>
-            <button class="btn secondary" id="btnFineTune" style="font-size:13px;padding:8px 24px;pointer-events:all;display:none;">Fine-tune →</button>
-          </div>
+      <div id="calPhase0Ui" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:25px;background:rgba(0,0,0,.7);">
+        <h2>Find your comfortable notes</h2>
+        <p style="text-align:center;line-height:1.5;">Listen, then match each played note in the same octave.<br>Three 2-second steps: 6 seconds total. Nearby tuning is fine.</p>
+        <p>Choose notes that feel easy to sing</p>
+        <div style="display:flex;gap:8px;">
+          <button class="cal-range-btn" data-range="Low">Low</button>
+          <button class="cal-range-btn" data-range="Medium">Middle</button>
+          <button class="cal-range-btn" data-range="High">High</button>
         </div>
+        <div style="display:flex;gap:8px;margin-top:10px;"><button class="btn secondary" id="calTooHigh" style="padding:8px 12px;font-size:14px;">Notes too high ↓</button><button class="btn secondary" id="calTooLow" style="padding:8px 12px;font-size:14px;">Notes too low ↑</button></div>
+        <p id="calSetupStatus" style="text-align:center;">Use headphones so we hear your voice clearly.</p>
+        <button class="btn" id="btnFineTune">Start 6-second check</button>
       </div>
-
-      <!-- Phase 1: Do Re Mi call-and-response -->
-      <div id="calPhase1Ui" style="position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:40px;">
-        <!-- progress dots -->
-        <div style="position:absolute;top:16px;left:0;right:0;text-align:center;">
-          <div id="calDotRow" style="display:inline-flex;gap:8px;">
-            <div class="cal-dot" id="calDot0"></div>
-            <div class="cal-dot" id="calDot1"></div>
-            <div class="cal-dot" id="calDot2"></div>
-          </div>
-        </div>
-        <div style="width:100%;background:linear-gradient(to top,rgba(0,0,0,0.9) 80%,transparent);padding:28px 20px 20px;text-align:center;">
-          <div id="calDRMInstruction" style="font-size:32px;font-weight:900;color:#FFD700;line-height:1;margin-bottom:6px;">Do</div>
-          <div id="calDRMStatus" style="font-size:14px;color:rgba(255,255,255,0.7);margin-bottom:14px;">🐦 Listen...</div>
-          <!-- ring -->
-          <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:10px;">
-            <div style="position:relative;width:64px;height:64px;flex-shrink:0;">
-              <svg width="64" height="64" style="transform:rotate(-90deg)">
-                <circle cx="32" cy="32" r="26" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="6"/>
-                <circle id="calRing" cx="32" cy="32" r="26" fill="none" stroke="#FFD700" stroke-width="6"
-                  stroke-dasharray="163.4" stroke-dashoffset="163.4" style="transition:stroke-dashoffset 0.1s;"/>
-              </svg>
-              <div id="calRingLabel" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:18px;font-weight:900;color:white;">🎵</div>
-            </div>
-            <div style="flex:1;text-align:left;">
-              <div id="calNote" style="font-size:13px;color:#95d5b2;margin-bottom:4px;">—</div>
-              <div style="background:rgba(255,255,255,0.12);border-radius:4px;height:7px;overflow:hidden;">
-                <div id="calVolBar" style="height:7px;width:0%;background:linear-gradient(to right,#00ff88,#ffd700);border-radius:4px;transition:width 0.05s;"></div>
-              </div>
-              <div id="calHint" style="font-size:11px;color:rgba(255,255,255,0.45);margin-top:3px;">Waiting...</div>
-            </div>
-          </div>
-        </div>
+      <div id="calPhase1Ui" style="position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;padding:25px;background:rgba(0,0,0,.7);text-align:center;">
+        <h2 id="calDRMInstruction">Match the played note</h2><p id="calDRMStatus"></p>
+        <svg width="64" height="64"><circle id="calRing" cx="32" cy="32" r="26" fill="none" stroke="#FFD700" stroke-width="6" stroke-dasharray="163.4"/></svg>
+        <p id="calRingLabel">2</p><p id="calNote">No steady note</p>
+        <div style="width:180px;height:7px;background:#333;"><div id="calVolBar" style="height:7px;background:#52b788;"></div></div>
       </div>
-
+      <button class="btn secondary" id="btnSkipCal" style="position:absolute;bottom:30px;align-self:center;pointer-events:all;">Skip / back</button>
     </div>
 
     <!-- Gameplay HUD -->
     <div class="screen hidden" id="screenGame" style="background:none; pointer-events:none;">
-      <div id="scoreDisplay">0</div>
-      <!-- Combo + speed bar (top-left, below mic toggle) -->
-      <div id="comboDisplay" style="position:absolute;top:50px;left:16px;pointer-events:none;display:none;">
-        <div id="comboCount" style="font-size:22px;font-weight:900;color:#FFD700;text-shadow:0 0 8px #FFD700;line-height:1;">x<span id="comboNum">0</span></div>
-        <div id="speedBadge" style="font-size:11px;font-weight:bold;color:#fff;background:rgba(0,0,0,0.4);border-radius:8px;padding:2px 6px;margin-top:2px;">1.0x</div>
+      <div id="comboDisplay" aria-label="Score, combo and points multiplier">
+        <div class="hud-stat"><span class="hud-label">Score</span><span class="hud-value" id="scoreDisplay">0</span></div>
+        <div class="hud-stat"><span class="hud-label">Combo</span><span class="hud-value" id="comboNum">0</span></div>
+        <div class="hud-stat"><span class="hud-label">Multiplier</span><span class="hud-value" id="multiplierNum">1×</span></div>
       </div>
       <div id="pitchMeter"><div id="pitchFill"></div><div id="pitchDot" style="bottom:50%"></div></div>
       <div id="noteHint">🎵 —</div>
       <div id="micStatus">🎤 Initializing mic...</div>
+      <div id="pitchFeedback"></div>
       <button id="btnMicToggleHud" style="position:absolute;top:16px;left:16px;background:rgba(0,0,0,0.5);border:2px solid #52b788;color:white;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:bold;cursor:pointer;pointer-events:all;">🎤 ON</button>
       <div id="micIndicator" style="position:absolute;top:60px;right:35px;width:10px;height:10px;border-radius:50%;background:#555;box-shadow:0 0 6px #555;transition:background 0.3s;"></div>
       <div id="debugBox" style="position:absolute;bottom:55px;left:10px;right:10px;background:rgba(0,0,0,0.6);color:#0f0;font-size:11px;font-family:monospace;padding:6px 10px;border-radius:8px;line-height:1.8;display:none;">debug loading...</div>
@@ -431,7 +428,8 @@
       <div class="title" style="font-size:38px;">GAME OVER</div>
       <div class="score-label">Score</div>
       <div class="score-big" id="finalScore">0</div>
-      <div style="font-size:14px; color:#95d5b2; margin:10px 0 25px;">pipes cleared</div>
+      <div style="font-size:14px; color:#95d5b2; margin:10px 0 25px;">points</div>
+      <p id="overComfortMessage">Adjust your next attempt</p><div><button class="btn secondary" id="overTooHigh">Too high ↓</button><button class="btn secondary" id="overTooLow">Too low ↑</button></div>
       <button class="btn" id="btnRestart">Try Again</button>
       <button class="btn secondary" id="btnMenu">Song Select</button>
     </div>
@@ -439,10 +437,12 @@
     <!-- Complete -->
     <div class="screen hidden" id="screenComplete">
       <div id="celebrate">🎉🐦🎉</div>
-      <div class="title" style="font-size:36px; color:#90EE90;">SONG COMPLETE!</div>
+      <div class="title" style="font-size:28px; color:#90EE90;">SONG COMPLETE!</div>
       <div class="score-label" style="margin-top:15px;">Final Score</div>
       <div class="score-big" id="completeScore">0</div>
-      <div style="font-size:14px; color:#95d5b2; margin:10px 0 25px;">pipes cleared</div>
+      <div style="font-size:12px; color:#95d5b2; margin:0 0 8px;">points</div>
+      <div id="performanceReport" style="font-size:14px;line-height:1.5;text-align:center;margin-bottom:12px;"></div>
+      <p id="completeComfortMessage">Adjust your next attempt</p><div class="range-actions"><button class="btn secondary" id="completeTooHigh">Too high ↓</button><button class="btn secondary" id="completeTooLow">Too low ↑</button></div>
       <button class="btn" id="btnPlayAgain">Play Again</button>
       <button class="btn secondary" id="btnMenu2">Song Select</button>
     </div>
@@ -456,46 +456,835 @@
   </div>
 </div>
 
+<script id="twinkle-chart" type="application/json">
+{
+  "id": "twinkle-reference-v1",
+  "status": "numerically-reviewed; owner-listening-pending",
+  "timebase": "seconds in decoded backing asset; no microphone latency correction",
+  "provenance": {
+    "assets": [
+      {
+        "role": "source",
+        "path": "songs/1. Twinkle Twinkle Little Star.mp3",
+        "bytes": 1884981,
+        "sha256": "73e6d5f4e2e521ac146e5dd485a1365c947897effaef5ea774db9b55736120c0"
+      },
+      {
+        "role": "backing",
+        "path": "audio/1. Twinkle Twinkle Little Star.mp3",
+        "bytes": 1712927,
+        "sha256": "23b692312c02814b84c97505a60937b7131cc48d3f09de94c87eaf79e629a4a3"
+      },
+      {
+        "role": "vocal",
+        "path": "separated/vocals/1. Twinkle Twinkle Little Star.mp3",
+        "bytes": 1350371,
+        "sha256": "2da1c493906a5627cbf1dc8529dc7b2f87f403208cad94b7132a97ac3bd74de8"
+      }
+    ],
+    "draft": "transcriptions/1. Twinkle Twinkle Little Star.txt and existing authored 42-note verse",
+    "processing": "Existing batch_instruments.py describes Demucs htdemucs non-vocal stem sum; execution history unknown; numerical comparison required.",
+    "listeningVerified": false,
+    "ownerApproved": false,
+    "timestampUncertaintySeconds": 0.35,
+    "numericalEvidence": "docs/twinkle-analysis.json; 42/42 vocal medians within 0.35 semitone; stem alignment 0s, reconstruction RMS error 3.51%",
+    "timingCaution": "Onsets remain beat-derived drafts, not syllable attack measurements; up to 0.35s uncertainty (first notes include slides/consonants). Non-phrase ends are provisional articulation boundaries; owner listening must correct them."
+  },
+  "level": {
+    "start": 0,
+    "melodyStart": 10.33,
+    "melodyEnd": 39.9,
+    "fadeStart": 40,
+    "end": 40.6,
+    "ending": "Final D4 held through 39.90s; backing fades 40.00\u201340.60s in inter-verse space. Deliberate excerpt ending, ear approval pending."
+  },
+  "tonicMidi": 62,
+  "notes": [
+    {
+      "id": "n01",
+      "pitch": "D4",
+      "midi": 62,
+      "onset": 10.33,
+      "end": 11.04,
+      "lyric": "Twin-",
+      "phrase": 1,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n02",
+      "pitch": "D4",
+      "midi": 62,
+      "onset": 11.12,
+      "end": 11.58,
+      "lyric": "kle",
+      "phrase": 1,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n03",
+      "pitch": "A4",
+      "midi": 69,
+      "onset": 11.66,
+      "end": 12.3,
+      "lyric": "Twin-",
+      "phrase": 1,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n04",
+      "pitch": "A4",
+      "midi": 69,
+      "onset": 12.38,
+      "end": 12.95,
+      "lyric": "kle",
+      "phrase": 1,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n05",
+      "pitch": "B4",
+      "midi": 71,
+      "onset": 13.03,
+      "end": 13.46,
+      "lyric": "Lit-",
+      "phrase": 1,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n06",
+      "pitch": "B4",
+      "midi": 71,
+      "onset": 13.54,
+      "end": 14.13,
+      "lyric": "tle",
+      "phrase": 1,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n07",
+      "pitch": "A4",
+      "midi": 69,
+      "onset": 14.21,
+      "end": 14.76,
+      "lyric": "Star",
+      "phrase": 1,
+      "timingStatus": "phrase release numerically inspected; listening pending"
+    },
+    {
+      "id": "n08",
+      "pitch": "G4",
+      "midi": 67,
+      "onset": 15.39,
+      "end": 15.99,
+      "lyric": "How",
+      "phrase": 2,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n09",
+      "pitch": "G4",
+      "midi": 67,
+      "onset": 16.07,
+      "end": 16.59,
+      "lyric": "I",
+      "phrase": 2,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n10",
+      "pitch": "F#4",
+      "midi": 66,
+      "onset": 16.67,
+      "end": 17.17,
+      "lyric": "Won-",
+      "phrase": 2,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n11",
+      "pitch": "F#4",
+      "midi": 66,
+      "onset": 17.25,
+      "end": 17.82,
+      "lyric": "der",
+      "phrase": 2,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n12",
+      "pitch": "E4",
+      "midi": 64,
+      "onset": 17.9,
+      "end": 18.4,
+      "lyric": "What",
+      "phrase": 2,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n13",
+      "pitch": "E4",
+      "midi": 64,
+      "onset": 18.48,
+      "end": 19.05,
+      "lyric": "you",
+      "phrase": 2,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n14",
+      "pitch": "D4",
+      "midi": 62,
+      "onset": 19.13,
+      "end": 19.7,
+      "lyric": "Are",
+      "phrase": 2,
+      "timingStatus": "phrase release numerically inspected; listening pending"
+    },
+    {
+      "id": "n15",
+      "pitch": "A4",
+      "midi": 69,
+      "onset": 20.36,
+      "end": 20.86,
+      "lyric": "Up",
+      "phrase": 3,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n16",
+      "pitch": "A4",
+      "midi": 69,
+      "onset": 20.94,
+      "end": 21.47,
+      "lyric": "a-",
+      "phrase": 3,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n17",
+      "pitch": "G4",
+      "midi": 67,
+      "onset": 21.55,
+      "end": 22.07,
+      "lyric": "bove",
+      "phrase": 3,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n18",
+      "pitch": "G4",
+      "midi": 67,
+      "onset": 22.15,
+      "end": 22.7,
+      "lyric": "the",
+      "phrase": 3,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n19",
+      "pitch": "F#4",
+      "midi": 66,
+      "onset": 22.78,
+      "end": 23.3,
+      "lyric": "world",
+      "phrase": 3,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n20",
+      "pitch": "F#4",
+      "midi": 66,
+      "onset": 23.38,
+      "end": 23.95,
+      "lyric": "so",
+      "phrase": 3,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n21",
+      "pitch": "E4",
+      "midi": 64,
+      "onset": 24.03,
+      "end": 24.5,
+      "lyric": "high",
+      "phrase": 3,
+      "timingStatus": "phrase release numerically inspected; listening pending"
+    },
+    {
+      "id": "n22",
+      "pitch": "A4",
+      "midi": 69,
+      "onset": 25.19,
+      "end": 25.67,
+      "lyric": "Like",
+      "phrase": 4,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n23",
+      "pitch": "A4",
+      "midi": 69,
+      "onset": 25.75,
+      "end": 26.25,
+      "lyric": "a",
+      "phrase": 4,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n24",
+      "pitch": "G4",
+      "midi": 67,
+      "onset": 26.33,
+      "end": 26.86,
+      "lyric": "dia-",
+      "phrase": 4,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n25",
+      "pitch": "G4",
+      "midi": 67,
+      "onset": 26.94,
+      "end": 27.46,
+      "lyric": "mond",
+      "phrase": 4,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n26",
+      "pitch": "F#4",
+      "midi": 66,
+      "onset": 27.54,
+      "end": 28.06,
+      "lyric": "in",
+      "phrase": 4,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n27",
+      "pitch": "F#4",
+      "midi": 66,
+      "onset": 28.14,
+      "end": 28.64,
+      "lyric": "the",
+      "phrase": 4,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n28",
+      "pitch": "E4",
+      "midi": 64,
+      "onset": 28.72,
+      "end": 29.35,
+      "lyric": "sky",
+      "phrase": 4,
+      "timingStatus": "phrase release numerically inspected; listening pending"
+    },
+    {
+      "id": "n29",
+      "pitch": "D4",
+      "midi": 62,
+      "onset": 30.0,
+      "end": 30.57,
+      "lyric": "Twin-",
+      "phrase": 5,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n30",
+      "pitch": "D4",
+      "midi": 62,
+      "onset": 30.65,
+      "end": 31.1,
+      "lyric": "kle",
+      "phrase": 5,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n31",
+      "pitch": "A4",
+      "midi": 69,
+      "onset": 31.18,
+      "end": 31.75,
+      "lyric": "Twin-",
+      "phrase": 5,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n32",
+      "pitch": "A4",
+      "midi": 69,
+      "onset": 31.83,
+      "end": 32.4,
+      "lyric": "kle",
+      "phrase": 5,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n33",
+      "pitch": "B4",
+      "midi": 71,
+      "onset": 32.48,
+      "end": 33.01,
+      "lyric": "Lit-",
+      "phrase": 5,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n34",
+      "pitch": "B4",
+      "midi": 71,
+      "onset": 33.09,
+      "end": 33.59,
+      "lyric": "tle",
+      "phrase": 5,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n35",
+      "pitch": "A4",
+      "midi": 69,
+      "onset": 33.67,
+      "end": 34.22,
+      "lyric": "Star",
+      "phrase": 5,
+      "timingStatus": "phrase release numerically inspected; listening pending"
+    },
+    {
+      "id": "n36",
+      "pitch": "G4",
+      "midi": 67,
+      "onset": 34.85,
+      "end": 35.45,
+      "lyric": "How",
+      "phrase": 6,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n37",
+      "pitch": "G4",
+      "midi": 67,
+      "onset": 35.53,
+      "end": 36.05,
+      "lyric": "I",
+      "phrase": 6,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n38",
+      "pitch": "F#4",
+      "midi": 66,
+      "onset": 36.13,
+      "end": 36.61,
+      "lyric": "Won-",
+      "phrase": 6,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n39",
+      "pitch": "F#4",
+      "midi": 66,
+      "onset": 36.69,
+      "end": 37.28,
+      "lyric": "der",
+      "phrase": 6,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n40",
+      "pitch": "E4",
+      "midi": 64,
+      "onset": 37.36,
+      "end": 37.91,
+      "lyric": "What",
+      "phrase": 6,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n41",
+      "pitch": "E4",
+      "midi": 64,
+      "onset": 37.99,
+      "end": 38.58,
+      "lyric": "you",
+      "phrase": 6,
+      "timingStatus": "draft-pending-listening"
+    },
+    {
+      "id": "n42",
+      "pitch": "D4",
+      "midi": 62,
+      "onset": 38.66,
+      "end": 39.9,
+      "lyric": "Are",
+      "phrase": 6,
+      "timingStatus": "phrase release numerically inspected; listening pending"
+    }
+  ],
+  "phrases": [
+    {
+      "id": 1,
+      "firstNote": 0,
+      "lastNote": 6
+    },
+    {
+      "id": 2,
+      "firstNote": 7,
+      "lastNote": 13
+    },
+    {
+      "id": 3,
+      "firstNote": 14,
+      "lastNote": 20
+    },
+    {
+      "id": 4,
+      "firstNote": 21,
+      "lastNote": 27
+    },
+    {
+      "id": 5,
+      "firstNote": 28,
+      "lastNote": 34
+    },
+    {
+      "id": 6,
+      "firstNote": 35,
+      "lastNote": 41
+    }
+  ],
+  "rests": [
+    {
+      "start": 0,
+      "end": 10.33,
+      "kind": "intro",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 11.04,
+      "end": 11.12,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 11.58,
+      "end": 11.66,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 12.3,
+      "end": 12.38,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 12.95,
+      "end": 13.03,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 13.46,
+      "end": 13.54,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 14.13,
+      "end": 14.21,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 14.76,
+      "end": 15.39,
+      "kind": "phrase-breath",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 15.99,
+      "end": 16.07,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 16.59,
+      "end": 16.67,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 17.17,
+      "end": 17.25,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 17.82,
+      "end": 17.9,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 18.4,
+      "end": 18.48,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 19.05,
+      "end": 19.13,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 19.7,
+      "end": 20.36,
+      "kind": "phrase-breath",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 20.86,
+      "end": 20.94,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 21.47,
+      "end": 21.55,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 22.07,
+      "end": 22.15,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 22.7,
+      "end": 22.78,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 23.3,
+      "end": 23.38,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 23.95,
+      "end": 24.03,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 24.5,
+      "end": 25.19,
+      "kind": "phrase-breath",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 25.67,
+      "end": 25.75,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 26.25,
+      "end": 26.33,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 26.86,
+      "end": 26.94,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 27.46,
+      "end": 27.54,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 28.06,
+      "end": 28.14,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 28.64,
+      "end": 28.72,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 29.35,
+      "end": 30.0,
+      "kind": "phrase-breath",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 30.57,
+      "end": 30.65,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 31.1,
+      "end": 31.18,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 31.75,
+      "end": 31.83,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 32.4,
+      "end": 32.48,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 33.01,
+      "end": 33.09,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 33.59,
+      "end": 33.67,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 34.22,
+      "end": 34.85,
+      "kind": "phrase-breath",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 35.45,
+      "end": 35.53,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 36.05,
+      "end": 36.13,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 36.61,
+      "end": 36.69,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 37.28,
+      "end": 37.36,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 37.91,
+      "end": 37.99,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 38.58,
+      "end": 38.66,
+      "kind": "syllable-gap",
+      "status": "numerically inspected phrase release; other gaps provisional; listening pending"
+    },
+    {
+      "start": 39.9,
+      "end": 40.6,
+      "kind": "outro",
+      "status": "vocal decay numerically inspected; listening pending"
+    }
+  ],
+  "beatMarkers": {
+    "status": "automatic draft; separate from melody events",
+    "times": [
+      10.33,
+      11.12,
+      11.66,
+      12.38,
+      13.03,
+      13.54,
+      14.21,
+      14.79,
+      15.39,
+      16.07,
+      16.67,
+      17.25,
+      17.9,
+      18.48,
+      19.13,
+      19.83,
+      20.36,
+      20.94,
+      21.55,
+      22.15,
+      22.78,
+      23.38,
+      24.03,
+      24.68,
+      25.19,
+      25.75,
+      26.33,
+      26.94,
+      27.54,
+      28.14,
+      28.72,
+      29.37,
+      30.0,
+      30.65,
+      31.18,
+      31.83,
+      32.48,
+      33.09,
+      33.67,
+      34.27,
+      34.85,
+      35.53,
+      36.13,
+      36.69,
+      37.36,
+      37.99,
+      38.66,
+      39.29,
+      39.92,
+      40.54
+    ]
+  }
+}
+</script>
+
 <script>
+
 // ============================================================
 // SONG DATA — Twinkle Twinkle Little Star
 // pitchRatio: 0=bottom, 1=top of play field
 // t: absolute time in seconds from song start
 // ============================================================
-const TWINKLE_NOTES = [
-  // C4=0.0  D4=0.14  E4=0.29  F4=0.43  G4=0.57  A4=0.71  B4=0.86  C5=1.0
-  // key:  1=C4  2=D4  3=E4  4=F4  5=G4  6=A4  7=B4  8=C5
-  // "Twin-kle twin-kle lit-tle star"
-  {note:'C4', ratio:0.00, t:0.000, lyric:'Twin-'}, {note:'C4', ratio:0.00, t:0.500, lyric:'kle'},
-  {note:'G4', ratio:0.57, t:1.000, lyric:'Twin-'}, {note:'G4', ratio:0.57, t:1.500, lyric:'kle'},
-  {note:'A4', ratio:0.71, t:2.000, lyric:'Lit-'},  {note:'A4', ratio:0.71, t:2.500, lyric:'tle'},
-  {note:'G4', ratio:0.57, t:3.000, lyric:'Star'},
-  // "how I won-der what you are"
-  {note:'F4', ratio:0.43, t:4.000, lyric:'How'},   {note:'F4', ratio:0.43, t:4.500, lyric:'I'},
-  {note:'E4', ratio:0.29, t:5.000, lyric:'Won-'},  {note:'E4', ratio:0.29, t:5.500, lyric:'der'},
-  {note:'D4', ratio:0.14, t:6.000, lyric:'What'},  {note:'D4', ratio:0.14, t:6.500, lyric:'you'},
-  {note:'C4', ratio:0.00, t:7.000, lyric:'Are'},
-  // "up a-bove the world so high"
-  {note:'G4', ratio:0.57, t:8.000, lyric:'Up'},    {note:'G4', ratio:0.57, t:8.500, lyric:'a-'},
-  {note:'F4', ratio:0.43, t:9.000, lyric:'bove'},  {note:'F4', ratio:0.43, t:9.500, lyric:'the'},
-  {note:'E4', ratio:0.29, t:10.000, lyric:'world'}, {note:'E4', ratio:0.29, t:10.500, lyric:'so'},
-  {note:'D4', ratio:0.14, t:11.000, lyric:'high'},
-  // "like a dia-mond in the sky"
-  {note:'G4', ratio:0.57, t:12.000, lyric:'Like'},  {note:'G4', ratio:0.57, t:12.500, lyric:'a'},
-  {note:'F4', ratio:0.43, t:13.000, lyric:'dia-'},  {note:'F4', ratio:0.43, t:13.500, lyric:'mond'},
-  {note:'E4', ratio:0.29, t:14.000, lyric:'in'},    {note:'E4', ratio:0.29, t:14.500, lyric:'the'},
-  {note:'D4', ratio:0.14, t:15.000, lyric:'sky'},
-  // "Twin-kle twin-kle lit-tle star"
-  {note:'C4', ratio:0.00, t:16.000, lyric:'Twin-'}, {note:'C4', ratio:0.00, t:16.500, lyric:'kle'},
-  {note:'G4', ratio:0.57, t:17.000, lyric:'Twin-'}, {note:'G4', ratio:0.57, t:17.500, lyric:'kle'},
-  {note:'A4', ratio:0.71, t:18.000, lyric:'Lit-'},  {note:'A4', ratio:0.71, t:18.500, lyric:'tle'},
-  {note:'G4', ratio:0.57, t:19.000, lyric:'Star'},
-  // "how I won-der what you are"
-  {note:'F4', ratio:0.43, t:20.000, lyric:'How'},   {note:'F4', ratio:0.43, t:20.500, lyric:'I'},
-  {note:'E4', ratio:0.29, t:21.000, lyric:'Won-'},  {note:'E4', ratio:0.29, t:21.500, lyric:'der'},
-  {note:'D4', ratio:0.14, t:22.000, lyric:'What'},  {note:'D4', ratio:0.14, t:22.500, lyric:'you'},
-  {note:'C4', ratio:0.00, t:23.000, lyric:'Are'},
-];
+// One chart owns absolute backing timestamps, MIDI/octave, lyric phrases and ending.
+// Numerical pitch review is complete; listening approval is still pending (see docs).
+const TWINKLE_CHART = JSON.parse(document.getElementById("twinkle-chart").textContent);
+const TWINKLE_NOTES = TWINKLE_CHART.notes.map(n => ({
+  ...n, note: n.pitch, t: n.onset,
+  ratio: [0, 0.14, 0.29, 0.43, 0.57, 0.71, 0.86, 1][[0, 2, 4, 5, 7, 9, 11, 12].indexOf(n.midi - TWINKLE_CHART.tonicMidi)]
+}));
 
 // ============================================================
 // SONG DATA — Brother John / 两只老虎  (Frère Jacques)
@@ -597,7 +1386,7 @@ const BROTHER_JOHN_NOTES = [
 // introOffset shifts all notes forward to align with the MP3's instrumental intro.
 // Each coin spawns early enough to arrive at HIT_ZONE_X exactly at its t.
 function buildPipes(notes, introOffset = 0) {
-  const travelTime = (PIPE_SPAWN_X - HIT_ZONE_X) / PIPE_SPEED;
+  const travelTime = (PIPE_SPAWN_X + PIPE_W / 2 - HIT_ZONE_X) / PIPE_SPEED;
   return notes.map((n, i) => {
     const isPipe = false; // coins only for now — pipes disabled
     const prevRatio = i > 0 ? notes[i - 1].ratio : n.ratio;
@@ -605,7 +1394,9 @@ function buildPipes(notes, introOffset = 0) {
     const GAP_TABLE = [350, 350, 350, 350, 375, 400, 425, 450, 475, 500, 525, 550];
     const gap = GAP_TABLE[Math.min(steps, GAP_TABLE.length - 1)];
     const t = n.t + introOffset; // absolute position in the audio file
-    return { spawnTime: t - travelTime - 0.15, ratio: n.ratio, note: n.note, t, lyric: n.lyric || '', isPipe, gap };
+    return { spawnTime: t - travelTime, ratio: n.ratio, note: n.note, t,
+      end: n.end === undefined ? undefined : n.end + introOffset,
+      midi: n.midi, id: n.id, phrase: n.phrase, lyric: n.lyric || '', isPipe, gap };
   });
 }
 
@@ -657,6 +1448,8 @@ function setMicIndicator(state) {
 // ============================================================
 let audioCtx = null, analyser = null, pitchBuffer = null;
 let micStream = null;
+let micSource = null, micInitPromise = null, micTesterRunning = false;
+let micTiming = { sampleRate: null, captureLatencyMs: null, baseLatencyMs: null, outputLatencyMs: null, settings: {} };
 let currentPitch = -1; // Hz, -1 = silence
 let currentRatio = 0.5; // 0-1 pitch ratio for display
 let micReady = false;
@@ -667,87 +1460,173 @@ const NOTE_FREQS = {
   'F#4': 369.99, 'G4': 392.00, 'A4': 440.00, 'B4': 493.88,
   'C#5': 554.37, 'C5': 523.25, 'D5': 587.33,
 };
-const MIN_FREQ = 80, MAX_FREQ = 800; // singing range (80Hz covers very low male, 800Hz covers high soprano/child)
+const MIN_FREQ = 80, MAX_FREQ = 1600; // includes the high guide range; octave equivalents are accepted
 
-async function initMic() {
-  try {
+function initMic() {
+  if (micInitPromise) return micInitPromise;
+  if (micReady && audioCtx?.state !== 'closed' && micStream?.getAudioTracks().some(t => t.readyState === 'live')) {
+    return ensureMicRunning();
+  }
+  micInitPromise = Promise.resolve().then(async () => {
+    let stream = null, context = null, source = null;
+    try {
     micStatus.textContent = '🎤 Requesting microphone...';
-    const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
-    micStream = stream;
-    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    // Resume in case browser suspended it (Chrome autoplay policy)
-    if (audioCtx.state === 'suspended') await audioCtx.resume();
-    analyser = audioCtx.createAnalyser();
-    analyser.fftSize = 4096; // 4096 @ 44100Hz = ~93ms — needed for reliable pitch detection down to C3 (low male)
-    pitchBuffer = new Float32Array(analyser.fftSize);
-    const src = audioCtx.createMediaStreamSource(stream);
-    src.connect(analyser);
+    // Best-effort echo cancellation reduces speaker leakage; disable AGC/noise
+    // suppression where supported to preserve soft sustained singing.
+    stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: false, autoGainControl: false }, video: false });
+    context = new (window.AudioContext || window.webkitAudioContext)({ latencyHint: 'interactive' });
+    if (context.state === 'suspended') await context.resume();
+    const nextAnalyser = context.createAnalyser();
+    nextAnalyser.fftSize = Math.min(32768, Math.max(4096, 2**Math.ceil(Math.log2(context.sampleRate*.06)))); // enough history at 96kHz too; only the recent ~36–48ms is estimated
+    source = context.createMediaStreamSource(stream);
+    source.connect(nextAnalyser);
+    // Dispose stale capture only after replacement setup succeeds.
+    if (micSource) micSource.disconnect();
+    if (micStream) micStream.getTracks().forEach(t => t.stop());
+    if (audioCtx && audioCtx.state !== 'closed') audioCtx.close().catch(() => {});
+    micStream = stream; audioCtx = context; micSource = source;
+    analyser = nextAnalyser; pitchBuffer = new Float32Array(analyser.fftSize);
+    const track = stream.getAudioTracks()[0];
+    const settings = track.getSettings ? track.getSettings() : {};
+    micTiming = { sampleRate: context.sampleRate,
+      captureLatencyMs: Number.isFinite(settings.latency) ? settings.latency * 1000 : null,
+      baseLatencyMs: Number.isFinite(context.baseLatency) ? context.baseLatency * 1000 : null,
+      outputLatencyMs: Number.isFinite(context.outputLatency) ? context.outputLatency * 1000 : null,
+      settings: { echoCancellation: settings.echoCancellation ?? null, noiseSuppression: settings.noiseSuppression ?? null, autoGainControl: settings.autoGainControl ?? null } };
+    track.addEventListener('ended', () => {
+      if (micStream !== stream) return;
+      micReady = false; clearPitchReading('track-ended'); setMicIndicator('off'); updateMicToggleUI();
+      micStatus.textContent = '🎤 Microphone disconnected — tap Mic ON to reconnect';
+    });
     micReady = true;
+    clearPitchReading('waiting');
+    updateMicToggleUI();
     setMicIndicator('ready');
     console.log('Mic ready, AudioContext state:', audioCtx.state);
+    return true;
   } catch (e) {
+    if (source) source.disconnect();
+    if (stream) stream.getTracks().forEach(t => t.stop());
+    if (context && context.state !== 'closed') context.close().catch(() => {});
     micReady = false;
+    clearPitchReading('capture-unavailable');
+    updateMicToggleUI();
     setMicIndicator('off');
+    micStatus.textContent = '⚠️ Microphone unavailable — use keys 1–8 or tap Mic ON to retry';
     console.warn('Mic error:', e);
+    return false;
   }
+  }).finally(() => { micInitPromise = null; });
+  return micInitPromise;
 }
 
 async function ensureMicRunning() {
-  if (!micReady) return;
+  if (!micReady || !audioCtx) return false;
   if (audioCtx && audioCtx.state === 'suspended') {
-    await audioCtx.resume();
-    console.log('AudioContext resumed:', audioCtx.state);
+    try { await audioCtx.resume(); } catch (error) {
+      clearPitchReading('context-suspended');
+      console.warn('Microphone resume failed:', error); return false;
+    }
   }
+  return audioCtx.state === 'running';
 }
 
 let debugRms = 0, debugHz = 0, debugAcMax = 0;
+const PITCH_RMS_MIN = 0.003;
+const PITCH_YIN_THRESHOLD = 0.15; // periodicity confidence >= 0.85; not the old AC score
+const PITCH_INTEGRATION_SECONDS = 0.035;
+let pitchScratchA = new Float32Array(4096), pitchScratchB = new Float32Array(4096);
+let pitchDifference = new Float64Array(2048), pitchNormalized = new Float64Array(2048);
+let pitchReading = { frequency: -1, voiced: false, confidence: 0, rms: 0, reason: 'waiting', computeMs: 0, windowMs: 0, windowCenterAgeMs: 0, audioTime: null };
+let lastPitchPollMs = null;
+
+function clearPitchReading(reason) {
+  debugRms = debugHz = debugAcMax = 0;
+  currentPitch = -1;
+  lastPitchPollMs = null;
+  pitchReading = { frequency: -1, voiced: false, confidence: 0, rms: 0, reason, computeMs: 0, windowMs: 0, windowCenterAgeMs: 0, audioTime: null };
+}
+
+// Adapted YIN difference/CMND and first qualifying trough, with raw-difference
+// interpolation. See de Cheveigne & Kawahara (2002), steps 2–5:
+// https://www.ee.columbia.edu/~dpwe/papers/deChevK02-yin.pdf
+// This estimator never sees an expected note, song, calibration or score.
+function analysePitchPCM(input, sampleRate) {
+  const fail = (reason, rms = 0, confidence = 0) => ({ frequency: -1, voiced: false, rms, confidence, reason, windowMs: 0, windowCenterAgeMs: 0 });
+  if (!Number.isFinite(sampleRate) || sampleRate < 8000 || input.length < 512) return fail('invalid-buffer');
+  if (pitchScratchA.length < input.length) {
+    pitchScratchA = new Float32Array(input.length); pitchScratchB = new Float32Array(input.length);
+  }
+  // A 5-tap low-pass before each /2 reduction reduces high-harmonic aliasing.
+  let data = input, length = input.length, rate = sampleRate, filterDelay = 0;
+  while (rate >= 20000) {
+    const out = data === pitchScratchA ? pitchScratchB : pitchScratchA;
+    let count = 0;
+    for (let i = 0; i + 4 < length; i += 2) out[count++] = (data[i] + 4*data[i+1] + 6*data[i+2] + 4*data[i+3] + data[i+4]) / 16;
+    filterDelay += 2 / rate;
+    data = out; length = count; rate /= 2;
+  }
+  const maxLag = Math.ceil(rate / MIN_FREQ) + 1;
+  const window = Math.ceil(rate * PITCH_INTEGRATION_SECONDS);
+  if (window + maxLag >= length) return fail('short-buffer');
+  const start = length - window;
+  let mean = 0, energy = 0;
+  for (let i = start; i < length; i++) {
+    if (!Number.isFinite(data[i])) return fail('invalid-samples');
+    mean += data[i]; energy += data[i]*data[i];
+  }
+  const rms = Math.sqrt(Math.max(0, energy/window - (mean/window)**2));
+  if (rms < PITCH_RMS_MIN) return fail('quiet', rms);
+  if (pitchDifference.length <= maxLag) {
+    pitchDifference = new Float64Array(maxLag + 2); pitchNormalized = new Float64Array(maxLag + 2);
+  }
+  let cumulative = 0;
+  pitchNormalized[0] = 1;
+  for (let lag = 1; lag <= maxLag; lag++) {
+    let sum = 0;
+    for (let i = start; i < length; i++) { const d = data[i] - data[i-lag]; sum += d*d; }
+    pitchDifference[lag] = sum; cumulative += sum;
+    pitchNormalized[lag] = cumulative > 1e-20 ? sum * lag / cumulative : 1;
+  }
+  let selected = -1, best = 1;
+  // Include upper-range headroom so out-of-range sound is rejected rather than
+  // silently promoted to a later, lower octave candidate.
+  for (let lag = 2; lag < maxLag; lag++) {
+    const value = pitchNormalized[lag]; best = Math.min(best, value);
+    if (value < PITCH_YIN_THRESHOLD && value <= pitchNormalized[lag-1] && value < pitchNormalized[lag+1]) { selected = lag; break; }
+  }
+  if (selected < 0) return fail('aperiodic', rms, Math.max(0, 1-best));
+  const prev = pitchDifference[selected-1], center = pitchDifference[selected], next = pitchDifference[selected+1];
+  const denom = prev - 2*center + next;
+  const offset = Math.abs(denom) > 1e-20 ? Math.max(-.5, Math.min(.5, .5*(prev-next)/denom)) : 0;
+  const period = selected + offset;
+  let frequency = rate / period;
+  const confidence = Math.max(0, Math.min(1, 1-pitchNormalized[selected]));
+  // Interpolation at a supported boundary can land a few cents outside it.
+  // Clamp only this numerical fringe; do not accept a new vocal range.
+  if (frequency < MIN_FREQ && 1200*Math.log2(MIN_FREQ/frequency) <= 5) frequency = MIN_FREQ;
+  if (frequency > MAX_FREQ && 1200*Math.log2(frequency/MAX_FREQ) <= 5) frequency = MAX_FREQ;
+  if (frequency < MIN_FREQ || frequency > MAX_FREQ) return fail('out-of-range', rms, confidence);
+  const windowMs = (window + period) / rate * 1000;
+  return { frequency, voiced: true, confidence, rms, reason: 'voiced', windowMs,
+    windowCenterAgeMs: windowMs/2 + filterDelay*1000 };
+}
 
 function detectPitch() {
-  if (!micReady || !analyser || !micEnabled) return -1;
-  analyser.getFloatTimeDomainData(pitchBuffer);
-
-  // RMS silence check
-  let rms = 0;
-  for (let i = 0; i < pitchBuffer.length; i++) rms += pitchBuffer[i] * pitchBuffer[i];
-  rms = Math.sqrt(rms / pitchBuffer.length);
-  debugRms = rms;
-  if (rms < 0.003) { debugHz = 0; return -1; }
-
-  const sampleRate = audioCtx.sampleRate;
-  const buf = pitchBuffer;
-  const SIZE = buf.length;
-
-  // Lag range covering 60Hz–1200Hz (wide voice range)
-  const minLag = Math.floor(sampleRate / 1200);
-  const maxLag = Math.floor(sampleRate / 60);
-
-  // Normalized autocorrelation (YIN-inspired)
-  // Compute difference function d[tau] = sum (x[i] - x[i+tau])^2
-  // Then find first tau where d is a local minimum below threshold
-  let bestLag = -1, bestCorr = -1;
-
-  // Use unnormalized autocorrelation but normalize by energy
-  const energy = rms * rms * SIZE;
-  for (let lag = minLag; lag <= maxLag && lag < SIZE / 2; lag++) {
-    let s = 0;
-    for (let i = 0; i < SIZE - lag; i++) s += buf[i] * buf[i + lag];
-    const corr = s / energy;
-    if (corr > bestCorr) { bestCorr = corr; bestLag = lag; }
+  if (!micReady || !analyser || !micEnabled || !audioCtx || (audioCtx.state && audioCtx.state !== 'running')) {
+    clearPitchReading(!micEnabled ? 'mic-disabled' : 'mic-not-running'); return -1;
   }
-
-  debugAcMax = bestCorr;
-  if (bestLag < 1 || bestCorr < 0.75) { debugHz = -1; return -1; } // clarity threshold — 0.75 is more lenient for low male / high child notes
-
-  // Parabolic interpolation for sub-sample accuracy
-  const prev = bestLag > minLag ? (() => { let s=0; for(let i=0;i<SIZE-(bestLag-1);i++) s+=buf[i]*buf[i+bestLag-1]; return s/energy; })() : bestCorr;
-  const next = bestLag < maxLag ? (() => { let s=0; for(let i=0;i<SIZE-(bestLag+1);i++) s+=buf[i]*buf[i+bestLag+1]; return s/energy; })() : bestCorr;
-  const refinedLag = bestLag + 0.5 * (next - prev) / (2 * bestCorr - prev - next + 1e-9);
-
-  const freq = sampleRate / refinedLag;
-  debugHz = freq;
-
-  if (freq < MIN_FREQ || freq > MAX_FREQ) return -1;
-  return freq;
+  const started = performance.now();
+  const pollIntervalMs = lastPitchPollMs === null ? null : started - lastPitchPollMs;
+  lastPitchPollMs = started;
+  analyser.getFloatTimeDomainData(pitchBuffer);
+  pitchReading = { ...analysePitchPCM(pitchBuffer, audioCtx.sampleRate),
+    audioTime: Number.isFinite(audioCtx.currentTime) ? audioCtx.currentTime : null,
+    pollIntervalMs,
+    computeMs: performance.now() - started };
+  debugRms = pitchReading.rms; debugAcMax = pitchReading.confidence;
+  debugHz = pitchReading.voiced ? pitchReading.frequency : 0;
+  return pitchReading.frequency;
 }
 
 // Player's personal vocal range (calibrated or defaults)
@@ -763,277 +1642,330 @@ function freqToRatio(freq) {
   return Math.max(0, Math.min(1, (Math.log2(freq) - logMin) / (logMax - logMin)));
 }
 
-// ============================================================
-// CALIBRATION — Do Re Mi scale (1.5-octave range)
-// ============================================================
-// ============================================================
-// CALIBRATION — Phase 0: range pick  Phase 1: Do Re Mi echo
-// ============================================================
+// Song-relative musical lanes, independent of the player's range width.
+// Keys come from the saved transcriptions; those automatic estimates can be refined per song.
+const SONG_TONICS = {
+  twinkle: 2, brotherjohn: 2, humptydumpty: 0, headshoulders: 7,
+  londonbridge: 2, itsybitsy: 5, baabaa: 9, marylamb: 1, rowboat: 2,
+  moretogether: 2, littlebunny: 9, rainrain: 5, fingerfamily: 9, wheelsbus: 0,
+  oldmcdonald: 2, ifhappy: 7, fivemonkeys: 3, babyshark: 7, baluobo: 5,
+  xiaoyanzi: 9, rasasayang: 11, chanmalichan: 0,
+};
+const SCALE_STEPS = [0, 2, 4, 5, 7, 9, 11, 12];
+const NOTE_LANES = [0, 0.14, 0.29, 0.43, 0.57, 0.71, 0.86, 1];
+const SOLFEGE = ['Do', 'Re', 'Mi', 'Fa', 'Sol', 'La', 'Ti', 'Do'];
+let assistedLane = null;
 
-// Base frequencies for the three range presets
-const CAL_RANGE_FREQS = { Low: 130.81, Medium: 261.63, High: 523.25 }; // C3, C4, C5
-
-// Only three notes for call-and-response: Do, Re, Mi
-const CAL_DRM = [
-  { label: 'Do', ratio: 1.000 },
-  { label: 'Re', ratio: 1.1225 },
-  { label: 'Mi', ratio: 1.2599 },
-];
-const CAL_HOLD_SECS    = 0.5;   // seconds player must hold note
-const CAL_TOLERANCE    = 0.15;  // ±15% freq tolerance = ~2.5 semitones
-const CAL_CIRCUMFERENCE = 163.4; // 2π×26  (ring r=26 in new HTML)
-
-let calPhase      = 0;   // 0 = range select, 1 = Do Re Mi
-let calDRMStep    = 0;   // 0=Do 1=Re 2=Mi
-let calDRMMissCount = 0; // misses on current step
-let calDRMState   = 'playing'; // playing | listening | confirmed
-let calDRMTimer   = 0;
-let calHoldTimer  = 0;
-let calSamples    = [];
-let calBaseFreq   = 0;
-let calRangeChoice = 'Medium';
-let calAnimId     = null;
-let calBirdY      = 762;
-let calBirdAngle  = 0;
-let isCalibrating = false;
-let calBirdOsc    = null; // oscillator for bird note playback
-
-function calPlayNote(freq, duration = 1.2) {
-  if (!audioCtx) return;
-  try {
-    if (calBirdOsc) { try { calBirdOsc.stop(); } catch(e){} calBirdOsc = null; }
-    const osc  = audioCtx.createOscillator();
-    const gain = audioCtx.createGain();
-    osc.type = 'sine';
-    osc.frequency.value = freq;
-    gain.gain.setValueAtTime(0, audioCtx.currentTime);
-    gain.gain.linearRampToValueAtTime(0.35, audioCtx.currentTime + 0.05);
-    gain.gain.linearRampToValueAtTime(0.35, audioCtx.currentTime + duration - 0.1);
-    gain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + duration);
-    osc.connect(gain);
-    gain.connect(audioCtx.destination);
-    osc.start();
-    osc.stop(audioCtx.currentTime + duration);
-    calBirdOsc = osc;
-  } catch(e) { console.warn('calPlayNote error:', e); }
+function laneIndex(ratio) {
+  return NOTE_LANES.reduce((best, r, i) =>
+    Math.abs(r - ratio) < Math.abs(NOTE_LANES[best] - ratio) ? i : best, 0);
 }
 
-function calChime() {
-  if (!audioCtx) return;
-  [1, 1.25, 1.5].forEach((r, i) => {
-    const osc = audioCtx.createOscillator();
-    const g   = audioCtx.createGain();
-    const base = CAL_RANGE_FREQS[calRangeChoice] * CAL_DRM[Math.min(calDRMStep, 2)].ratio;
-    osc.frequency.value = base * r;
-    osc.type = 'sine';
-    g.gain.setValueAtTime(0, audioCtx.currentTime + i * 0.12);
-    g.gain.linearRampToValueAtTime(0.2, audioCtx.currentTime + i * 0.12 + 0.04);
-    g.gain.linearRampToValueAtTime(0, audioCtx.currentTime + i * 0.12 + 0.4);
-    osc.connect(g); g.connect(audioCtx.destination);
-    osc.start(audioCtx.currentTime + i * 0.12);
-    osc.stop(audioCtx.currentTime + i * 0.12 + 0.5);
+function melodyNoteAt(time, schedule = pipeSchedule) {
+  // Lookup supplies a nearby assistance target, never a replacement for the input.
+  let active = schedule[0];
+  for (const note of schedule) {
+    if (note.t > time) break;
+    active = note;
+  }
+  return active;
+}
+
+// Absolute MIDI stays intact. Register alignment changes only after 80 ms of
+// near-target evidence at a phrase boundary; geometry never changes intervals.
+const ASSIST_CENTS = 65;
+let registerOffset = null, registerCandidate = null, registerSince = 0;
+let registerPhrase = null, trackedMidi = null;
+let introRegisterLocked = false;
+function midiOf(freq) { return 69 + 12 * Math.log2(freq / 440); }
+function hzOf(midi) { return 440 * 2 ** ((midi - 69) / 12); }
+function resetRegister() {
+  registerOffset = 0; registerCandidate = registerPhrase = trackedMidi = null;
+  registerSince = 0; assistedLane = null;
+  introRegisterLocked = false;
+}
+function songTonicMidi(songKey) {
+  return SONG_DATA[songKey]?.chart?.tonicMidi ?? 60 + (SONG_TONICS[songKey] ?? 0);
+}
+function melodySemitones(ratio) {
+  const octave = Math.floor(ratio), local = ratio - octave;
+  let i = 0;
+  while (i < 6 && local > NOTE_LANES[i + 1]) i++;
+  return octave * 12 + SCALE_STEPS[i] + (local - NOTE_LANES[i]) /
+    (NOTE_LANES[i + 1] - NOTE_LANES[i]) * (SCALE_STEPS[i + 1] - SCALE_STEPS[i]);
+}
+function pitchLane(semitones) {
+  const octave = Math.floor(semitones / 12), local = semitones - octave * 12;
+  let i = 0;
+  while (i < 6 && local > SCALE_STEPS[i + 1]) i++;
+  return octave + NOTE_LANES[i] + (local - SCALE_STEPS[i]) /
+    (SCALE_STEPS[i + 1] - SCALE_STEPS[i]) * (NOTE_LANES[i + 1] - NOTE_LANES[i]);
+}
+function singingToRatio(freq, songKey = currentSong, expectedRatio = melodyNoteAt(gameTime)?.ratio) {
+  if (!Number.isFinite(freq) || freq <= 0) {
+    trackedMidi = null; assistedLane = null; registerCandidate = null; return -1;
+  }
+  const midi = midiOf(freq), tonic = songTonicMidi(songKey) + songShift(songKey);
+  const note = melodyNoteAt(gameTime);
+  const inNote = note && gameTime >= note.t - NOTE_EARLY_SECONDS &&
+    gameTime <= (note.end ?? note.t + NOTE_LATE_SECONDS);
+  const expected = expectedRatio === undefined ? null :
+    Number.isFinite(note?.midi) && expectedRatio === note.ratio ? note.midi + songShift(songKey) : tonic + melodySemitones(expectedRatio);
+  const now = performance.now();
+  if (registerOffset === null) registerOffset = 0; // Start in the selected register until stable register evidence arrives.
+  // Intro warm-up: establish a stable octave around the song's range before targets
+  // begin. Lock it once so rising pitch keeps moving upward instead of wrapping.
+  const inIntro = state === 'playing' && pipeSchedule.length && gameTime < pipeSchedule[0].t - NOTE_EARLY_SECONDS;
+  if (inIntro && !introRegisterLocked) {
+    const pitches=pipeSchedule.map(n => Number.isFinite(n.midi) ? n.midi+songShift(songKey) :
+      tonic+melodySemitones(n.ratio));
+    const middle=(Math.min(...pitches)+Math.max(...pitches))/2;
+    const candidate=12*Math.round((midi-middle)/12);
+    if (registerCandidate!==candidate) { registerCandidate=candidate; registerSince=now; }
+    if (now-registerSince>=80) {
+      registerOffset=candidate; introRegisterLocked=true; registerCandidate=null;
+    }
+  }
+  // Only an octave-equivalent near target can establish a different register.
+  // Lock inside a phrase; never chase chart pitch with an unrelated held sound.
+  if (expected !== null && inNote && registerPhrase !== note.phrase) {
+    const candidate = 12 * Math.round((midi - expected) / 12);
+    if (Math.abs(midi - candidate - expected) * 100 <= ASSIST_CENTS) {
+      if (registerCandidate !== candidate) { registerCandidate = candidate; registerSince = now; }
+      if (now - registerSince >= 80) { registerOffset = candidate; registerPhrase = note.phrase; }
+    } else { registerCandidate = null; }
+  } else if (!inIntro) registerCandidate = null;
+  trackedMidi = midi - registerOffset;
+  const near = expected !== null && inNote && Math.abs(trackedMidi - expected) * 100 <= ASSIST_CENTS;
+  assistedLane = near ? laneIndex(expectedRatio) : null;
+  return near ? expectedRatio : pitchLane(trackedMidi - tonic);
+}
+function voiceMatchesTarget(freq, ratio, songKey = currentSong, midi = undefined) {
+  return freq > 0 && trackedMidi !== null && Math.abs(trackedMidi -
+    ((Number.isFinite(midi) ? midi : songTonicMidi(songKey) + melodySemitones(ratio)) + songShift(songKey))) * 100 <= ASSIST_CENTS;
+}
+
+function updatePitchFeedback(freq, keyActive = false, touchActive = false) {
+  const feedback = document.getElementById('pitchFeedback');
+  const note = melodyNoteAt(gameTime);
+  const active = note && gameTime >= note.t && gameTime < (note.end ?? note.t + NOTE_LATE_SECONDS);
+  const targetMidi = active ? (Number.isFinite(note.midi) ? note.midi :
+    songTonicMidi(currentSong) + melodySemitones(note.ratio)) + songShift(currentSong) : null;
+  const warmingUp=state==='playing' && pipeSchedule.length && gameTime<pipeSchedule[0].t;
+  noteHint.textContent = active ? `Sing ${SOLFEGE[laneIndex(note.ratio)]} · ${freqToNoteName(hzOf(targetMidi))}` :
+    warmingUp ? 'Warm up · sing high or low' : 'Listen · breathe';
+  feedback.style.color = 'white';
+  if (keyActive || touchActive) {
+    feedback.textContent = 'Enable your mic for singing feedback';
+    return; // Keyboard/touch input is not a detected sung note.
+  }
+  const voiced = micEnabled && micReady && Number.isFinite(freq) && freq > 0 && trackedMidi !== null;
+  micStatus.textContent = voiced ? `🎤 You: ${freqToNoteName(freq)}` :
+    micEnabled && micReady ? '🎤 You: — · No steady note' : '🎤 Mic off · use Mic ON to sing';
+  if (!active) feedback.textContent = warmingUp ? (voiced ? 'Try higher and lower notes' : 'Sing to try your wings') : 'Listen · breathe';
+  else if (!voiced) feedback.textContent = 'Sing the guide note';
+  else {
+    // Use detected pitch/register, never the smoothed bird height or a grace-period sample.
+    const cents = (trackedMidi - targetMidi) * 100;
+    const matched = Math.abs(cents) <= ASSIST_CENTS;
+    feedback.textContent = matched ? 'On pitch — hold!' : cents < 0 ? 'Sing higher ↑' : 'Sing lower ↓';
+    feedback.style.color = matched ? '#90EE90' : '#FFD700';
+  }
+}
+
+// Preferences are measured comfort, not a diagnosis or an extreme vocal range.
+let comfort = null;
+try {
+  const saved = JSON.parse(localStorage.getItem('oohwoo_comfort_v1'));
+  if (saved && Number.isFinite(saved.low) && Number.isFinite(saved.high) && saved.high > saved.low &&
+      saved.low >= midiOf(MIN_FREQ) && saved.high <= midiOf(MAX_FREQ)) comfort = saved;
+} catch (_) {}
+let songPreferences = {};
+try { songPreferences = JSON.parse(localStorage.getItem('oohwoo_song_keys_v1')) || {}; } catch (_) {}
+function defaultSongShift(songKey) {
+  const chart = SONG_DATA[songKey]?.chart;
+  if (!comfort) return guideVoice === 'High' ? 12 : guideVoice === 'Medium' ? 0 : -12;
+  const pitches = (chart?.notes ?? SONG_DATA[songKey].notes).map(n => n.midi);
+  const shift=(comfort.low + comfort.high - Math.min(...pitches) - Math.max(...pitches)) / 2;
+  // Catalogue backings retain their original key; guides may move by whole octaves.
+  return chart ? Math.round(shift) : 12*Math.round(shift/12);
+}
+function songShift(songKey) {
+  const value = songPreferences[songKey];
+  return Number.isInteger(value) && value >= -36 && value <= 24 &&
+    (SONG_DATA[songKey]?.chart || value%12===0) ? value : defaultSongShift(songKey);
+}
+function backingKey(shift) { return ((shift + 5) % 12 + 12) % 12 - 5; }
+function comfortFits(songKey) {
+  const chart = SONG_DATA[songKey]?.chart;
+  if (!comfort || !chart) return true;
+  const pitches = chart.notes.map(n => n.midi + songShift(songKey));
+  return Math.min(...pitches) >= comfort.low - .65 && Math.max(...pitches) <= comfort.high + .65;
+}
+function adjustSongKey(delta) {
+  if (state === 'playing' || isStartingSong) return;
+  const key = state === 'select' ? SONGS[carouselIndex].id : currentSong;
+  if (!SONG_DATA[key]?.notes.length) return;
+  const step=SONG_DATA[key].chart ? delta : 12*Math.sign(delta);
+  songPreferences[key] = Math.max(-36, Math.min(24, songShift(key) + step));
+  localStorage.setItem('oohwoo_song_keys_v1', JSON.stringify(songPreferences));
+  stopPreview(); resetRegister(); updateComfortUI();
+}
+function updateComfortUI() {
+  const key = SONGS[carouselIndex]?.id ?? currentSong;
+  const chart = SONG_DATA[key]?.chart;
+  const el = document.getElementById('comfortMessage');
+  const notes=SONG_DATA[key].notes;
+  el.textContent = !chart ? `Guide: ${freqToNoteName(hzOf(Math.min(...notes.map(n=>n.midi))+songShift(key)))}–${freqToNoteName(hzOf(Math.max(...notes.map(n=>n.midi))+songShift(key)))}. Original backing key; arrows change your singing octave.` :
+    comfortFits(key) ? `Guide: ${freqToNoteName(guideFrequency(0,key))}–${freqToNoteName(hzOf(Math.max(...chart.notes.map(n=>n.midi))+songShift(key)))}. Too high or low? Adjust the next attempt.` :
+    'This melody is wider than your measured comfort. Retry setup or listen to the guide; a narrower arrangement is needed.';
+  document.getElementById('btnPlaySong').disabled = !notes.length || !comfortFits(key);
+  for (const id of ['overComfortMessage','completeComfortMessage']) {
+    document.getElementById(id).textContent = `Next guide starts at ${freqToNoteName(guideFrequency(0,currentSong))}. Adjust, then retry.`;
+  }
+  for (const id of ['btnTooHigh','btnTooLow','overTooHigh','overTooLow','completeTooHigh','completeTooLow']) {
+    document.getElementById(id).disabled = !notes.length;
+  }
+}
+
+// ============================================================
+// GUIDED SETUP — match three played pitches, 2 seconds each (6 seconds total).
+// ============================================================
+const COMFORT_STEP_SECONDS = 2;
+const COMFORT_TOTAL_SECONDS = COMFORT_STEP_SECONDS * 3;
+const CAL_RANGE_FREQS = { Low: 110, Medium: 220, High: 440 }; // A2, A3, A4
+const CAL_STEPS = [0,4,9]; // Preserve the nine-semitone Twinkle span.
+let calBaseMidi = 45, calPlayedStep = -1, calMatchedSeconds = [0,0,0], calMatchHold = 0;
+let calPhase = 0, calRangeChoice = 'Low', calAnimId = null;
+let calBirdY = 400, calBirdAngle = 0, isCalibrating = false, calBirdOsc = null;
+let calElapsed = 0, calSamples = [[], [], []], calLastMidi = null, calSteady = 0;
+let calEchoPlayed = false, calQuickTestRunning = false;
+let comfortSetupId = 0;
+let calTones = [];
+function updateCalRangeSelection() {
+  document.querySelectorAll('.cal-range-btn').forEach(btn => {
+    const selected = btn.dataset.range === calRangeChoice;
+    btn.classList.toggle('selected', selected);
+    btn.setAttribute('aria-pressed', String(selected));
   });
 }
-
-function calUpdateDots() {
-  for (let i = 0; i < 3; i++) {
-    const d = document.getElementById('calDot' + i);
-    if (!d) continue;
-    d.className = 'cal-dot' + (i < calDRMStep ? ' done' : i === calDRMStep ? ' active' : '');
-  }
+function calPlayNote(freq, duration = .45, delay = 0) {
+  if (!audioCtx) return;
+  const osc = audioCtx.createOscillator(), gain = audioCtx.createGain();
+  const when = audioCtx.currentTime + delay;
+  // Retain the fundamental, with quieter harmonics audible on small speakers.
+  const real = new Float32Array([0, 0, 0, 0]);
+  const imag = new Float32Array([0, 1, .45, .2]);
+  osc.setPeriodicWave(audioCtx.createPeriodicWave(real, imag));
+  osc.frequency.value = freq;
+  gain.gain.setValueAtTime(0, when);
+  gain.gain.linearRampToValueAtTime(.15, when + .02);
+  gain.gain.setValueAtTime(.15, when + Math.max(.02, duration - .06));
+  gain.gain.linearRampToValueAtTime(0, when + duration);
+  osc.connect(gain); gain.connect(audioCtx.destination);
+  osc.onended = () => { osc.disconnect(); gain.disconnect(); };
+  osc.start(when); osc.stop(when + duration); calBirdOsc = osc; calTones.push(osc);
 }
-
-function calDrawCanvas(dt) {
-  bgOffset1 += PIPE_SPEED * dt;
-  bgOffset2 += PIPE_SPEED * 0.5 * dt;
-  bgOffset3 += PIPE_SPEED * 0.2 * dt;
-  drawBackground();
-  // Bird hovers at mid-height during phase 0, rises with each note in phase 1
-  const targetY = calPhase === 0
-    ? H / 2
-    : PLAY_BOT - BIRD_R - (calDRMStep / 2) * (PLAY_BOT - PLAY_TOP - 2 * BIRD_R) * 0.5;
-  const diff = targetY - calBirdY;
-  calBirdY += diff * (1 - Math.pow(0.01, dt));
-  calBirdAngle = Math.max(-0.3, Math.min(0.3, -diff * 0.003));
-  birdWingPhase += dt * 8;
-  drawBird(birdX, calBirdY, calBirdAngle);
+function stopComfortSetup() {
+  comfortSetupId++;
+  isCalibrating = false; calQuickTestRunning = false;
+  cancelAnimationFrame(calAnimId);
+  if (calBirdOsc) { try { calBirdOsc.stop(); } catch (_) {} calBirdOsc = null; }
+  for (const tone of calTones) { try { tone.stop(); } catch (_) {} }
+  calTones = [];
 }
-
-function startDRMStep() {
-  calDRMState   = 'playing';
-  calDRMTimer   = 0;
-  calHoldTimer  = 0;
-  calSamples    = [];
-  const note    = CAL_DRM[calDRMStep];
-  const freq    = CAL_RANGE_FREQS[calRangeChoice] * note.ratio;
-  const instr   = document.getElementById('calDRMInstruction');
-  const status  = document.getElementById('calDRMStatus');
-  const ring    = document.getElementById('calRing');
-  const label   = document.getElementById('calRingLabel');
-  const hint    = document.getElementById('calHint');
-  if (instr)  instr.textContent  = note.label;
-  if (status) status.textContent = 'Sing along! 🎵';
-  if (ring)   { ring.style.stroke = 'rgba(255,255,255,0.3)'; ring.style.strokeDashoffset = CAL_CIRCUMFERENCE; }
-  if (label)  label.textContent  = '?';
-  if (hint)   hint.textContent   = 'Sing this note';
-  calUpdateDots();
-  calPlayNote(freq, 1.3);
-  // Switch to listening immediately — player sings along with the bird
-  calDRMState = 'listening';
-}
-
-function runDRMFrame(dt) {
-  calDRMTimer += dt;
-  const elNote  = document.getElementById('calNote');
-  const elVol   = document.getElementById('calVolBar');
-  const elRing  = document.getElementById('calRing');
-  const elLabel = document.getElementById('calRingLabel');
-  const elHint  = document.getElementById('calHint');
-  const elStatus = document.getElementById('calDRMStatus');
-
-  if (calDRMState !== 'listening') return;
-
-  const pitch = detectPitch();
-  const vol   = Math.min(100, debugRms * 200);
-  if (elVol) elVol.style.width = vol + '%';
-  if (elNote) elNote.textContent = pitch > 0 ? getCurrentNoteName(pitch) : '—';
-
-  const targetFreq = CAL_RANGE_FREQS[calRangeChoice] * CAL_DRM[calDRMStep].ratio;
-
-  if (pitch > 0 && debugRms > 0.008) {
-    const ratio = pitch / targetFreq;
-    const inTune = ratio >= (1 - CAL_TOLERANCE) && ratio <= (1 + CAL_TOLERANCE);
-    if (inTune) {
-      calSamples.push(pitch);
-      calHoldTimer += dt;
-      if (elHint)  elHint.textContent  = 'Hold it!';
-      if (elStatus) elStatus.textContent = 'Great, hold it!';
-      if (elRing)  { elRing.style.stroke = '#52b788'; }
-      if (elLabel) elLabel.textContent  = calHoldTimer >= CAL_HOLD_SECS ? 'v' : '...';
-      const progress = Math.min(1, calHoldTimer / CAL_HOLD_SECS);
-      if (elRing) elRing.style.strokeDashoffset = CAL_CIRCUMFERENCE * (1 - progress);
-
-      if (calHoldTimer >= CAL_HOLD_SECS) {
-        // Confirmed! Record base freq from Do
-        if (calDRMStep === 0) {
-          const med = calSamples.slice().sort((a,b)=>a-b)[Math.floor(calSamples.length/2)];
-          calBaseFreq = med;
-        }
-        calDRMState = 'confirmed';
-        if (elRing)  { elRing.style.stroke = '#FFD700'; elRing.style.strokeDashoffset = '0'; }
-        if (elLabel) elLabel.textContent = 'v';
-        if (elStatus) elStatus.textContent = 'Perfect!';
-        calChime();
-        setTimeout(() => advanceDRM(), 800);
-      }
-    } else {
-      // Singing but wrong pitch
-      calHoldTimer = Math.max(0, calHoldTimer - dt * 3);
-      if (elHint) elHint.textContent = 'A little ' + (pitch < targetFreq ? 'higher' : 'lower') + '...';
-      if (elRing) { elRing.style.stroke = '#FFA500'; }
-      const progress = Math.min(1, calHoldTimer / CAL_HOLD_SECS);
-      if (elRing) elRing.style.strokeDashoffset = CAL_CIRCUMFERENCE * (1 - progress);
-    }
-  } else {
-    calHoldTimer = Math.max(0, calHoldTimer - dt * 2);
-    if (elHint) elHint.textContent = debugRms < 0.015 ? 'Sing louder to start' : 'Detecting...';
-    if (elRing) { elRing.style.stroke = 'rgba(255,255,255,0.3)'; }
-    const progress = Math.min(1, calHoldTimer / CAL_HOLD_SECS);
-    if (elRing) elRing.style.strokeDashoffset = CAL_CIRCUMFERENCE * (1 - progress);
-
-    // Auto-pass after 8s of no match
-    if (calDRMTimer > 8) {
-      calDRMMissCount++;
-      if (calDRMMissCount >= 2) {
-        // Auto-pass this note with range default
-        if (calDRMStep === 0) calBaseFreq = CAL_RANGE_FREQS[calRangeChoice];
-        calDRMState = 'confirmed';
-        if (elStatus) elStatus.textContent = "That's OK!";
-        if (elLabel) elLabel.textContent = 'v';
-        setTimeout(() => advanceDRM(), 800);
-      } else {
-        // Replay the note once
-        if (elStatus) elStatus.textContent = "Let's try again!";
-        const freq = CAL_RANGE_FREQS[calRangeChoice] * CAL_DRM[calDRMStep].ratio;
-        calPlayNote(freq, 1.3);
-        calDRMTimer = 0;
-        calDRMMissCount++;
-        setTimeout(() => {
-          if (!isCalibrating) return;
-          calDRMState = 'listening';
-          if (elStatus) elStatus.textContent = 'Now you sing!';
-        }, 1500);
-        calDRMState = 'playing';
-      }
-    }
-  }
-}
-
-function advanceDRM() {
-  calDRMStep++;
-  calDRMMissCount = 0;
-  calHoldTimer    = 0;
-  calSamples      = [];
-  if (calDRMStep >= CAL_DRM.length) {
-    finishCalibration();
-  } else {
-    startDRMStep();
-  }
-}
-
 function startCalibration() {
-  calPhase       = 0;
-  calDRMStep     = 0;
-  calDRMMissCount = 0;
-  calBaseFreq    = 0;
-  calRangeChoice = 'Medium';
-  calBirdY       = H / 2;
-  isCalibrating  = true;
-
-  // Show phase 0
-  const p0 = document.getElementById('calPhase0Ui');
-  const p1 = document.getElementById('calPhase1Ui');
-  if (p0) p0.style.display = 'flex';
-  if (p1) p1.style.display = 'none';
-
+  stopPreview(); stopComfortSetup();
+  state = 'calibrate';
+  calRangeChoice = guideVoice;
+  calBaseMidi = comfort?.matched ? comfort.low : midiOf(CAL_RANGE_FREQS[calRangeChoice]);
+  updateCalRangeSelection();
+  calPlayedStep = -1; calMatchedSeconds = [0,0,0]; calMatchHold = 0;
+  document.getElementById('calSetupStatus').textContent = 'Use headphones. Match the note you hear; adjust if it feels too high or low.';
+  calPhase = 0; calElapsed = 0; calSamples = [[], [], []];
+  calLastMidi = null; calSteady = 0; calEchoPlayed = false; isCalibrating = true;
+  document.getElementById('calPhase0Ui').style.display = 'flex';
+  document.getElementById('calPhase1Ui').style.display = 'none';
   showScreen('calibrate');
-  if (calAnimId) cancelAnimationFrame(calAnimId);
   let last = null;
   calAnimId = requestAnimationFrame(function tick(ts) {
     if (!isCalibrating) return;
-    const dt = last ? Math.min((ts - last) / 1000, 0.1) : 0;
-    last = ts;
-    calDrawCanvas(dt);
+    const dt = last === null ? 0 : Math.min((ts-last)/1000,.1); last=ts;
+    drawBackground(); birdWingPhase += dt * 8; drawBird(birdX, H/2, 0);
     if (calPhase === 1) runDRMFrame(dt);
-    calAnimId = requestAnimationFrame(tick);
+    if (isCalibrating) calAnimId = requestAnimationFrame(tick);
   });
 }
-
-function startCalPhase1() {
-  calPhase = 1;
-  calDRMStep = 0;
-  const p0 = document.getElementById('calPhase0Ui');
-  const p1 = document.getElementById('calPhase1Ui');
-  if (p0) p0.style.display = 'none';
-  if (p1) p1.style.display = 'flex';
-  ensureMicRunning().then(() => startDRMStep());
+async function startCalPhase1() {
+  const setupId = comfortSetupId;
+  const ready = await initMic();
+  if (!isCalibrating || setupId !== comfortSetupId) return;
+  if (!ready) {
+    document.getElementById('calSetupStatus').textContent = 'Microphone unavailable. Allow access, retry, or skip.'; return;
+  }
+  calPhase = 1; calElapsed = 0; calSamples = [[], [], []];
+  calPlayedStep = -1; calMatchedSeconds = [0,0,0]; calMatchHold = 0;
+  calLastMidi = null; calSteady = 0; calEchoPlayed = false;
+  document.getElementById('calPhase0Ui').style.display = 'none';
+  document.getElementById('calPhase1Ui').style.display = 'flex';
 }
-
+function median(values) { const a=values.slice().sort((a,b)=>a-b); return a[Math.floor(a.length/2)]; }
+function runDRMFrame(dt) {
+  calElapsed += dt;
+  const phase = Math.min(2, Math.floor(calElapsed/COMFORT_STEP_SECONDS)), pitch = detectPitch();
+  const local = calElapsed - phase*COMFORT_STEP_SECONDS;
+  const targetMidi = calBaseMidi + CAL_STEPS[phase], targetHz = hzOf(targetMidi);
+  if (calPlayedStep !== phase) {
+    calPlayedStep = phase; calMatchHold = 0;
+    calPlayNote(targetHz, .4); // The listening period ends at .5 seconds, before capture.
+  }
+  const error = pitch > 0 ? (midiOf(pitch) - targetMidi) * 100 : null;
+  const matched = error !== null && Math.abs(error) <= ASSIST_CENTS;
+  if (local > .5 && matched) {
+    calMatchHold += dt;
+    calMatchedSeconds[phase] = Math.max(calMatchedSeconds[phase],calMatchHold);
+    calSamples[phase].push(midiOf(pitch));
+  } else calMatchHold = 0;
+  document.getElementById('calDRMInstruction').textContent = `Match ${freqToNoteName(targetHz)}`;
+  document.getElementById('calDRMStatus').textContent = `Step ${phase+1} of 3 · ${Math.max(0,Math.ceil(COMFORT_STEP_SECONDS-local))} seconds`;
+  document.getElementById('calNote').textContent = local <= .5 ? 'Listen, then sing this same note' :
+    error === null ? 'Sing the note you just heard' : matched ? 'Matched — hold comfortably' :
+    Math.abs(error) > 900 ? 'Use the same octave — '+(error > 0 ? 'sing lower' : 'sing higher') :
+    error > 0 ? 'A little lower ↓' : 'A little higher ↑';
+  document.getElementById('calNote').textContent += ` · target ${Math.round(targetHz)} Hz` + (pitch>0 ? ` · you ${Math.round(pitch)} Hz` : '');
+  document.getElementById('calRingLabel').textContent = Math.max(0,Math.ceil(COMFORT_STEP_SECONDS-local));
+  document.getElementById('calRing').style.strokeDashoffset = 163.4 * (1-Math.min(1,local/COMFORT_STEP_SECONDS));
+  document.getElementById('calVolBar').style.width = Math.min(100,debugRms*200)+'%';
+  if (calElapsed >= COMFORT_TOTAL_SECONDS) finishCalibration();
+}
 function finishCalibration() {
-  if (calAnimId) cancelAnimationFrame(calAnimId);
-  const base = calBaseFreq || CAL_RANGE_FREQS[calRangeChoice];
-  playerMinFreq = Math.round(base * 0.95);
-  playerMaxFreq = Math.round(base * 2.0 * 1.05);
-  localStorage.setItem('oohwoo_minFreq', playerMinFreq);
-  localStorage.setItem('oohwoo_maxFreq', playerMaxFreq);
-  localStorage.setItem('oohwoo_range', calRangeChoice);
-  console.log(`Calibrated: range=${calRangeChoice} base=${Math.round(base)}Hz range=${playerMinFreq}-${playerMaxFreq}Hz`);
-  updateRangeDisplay();
-  isCalibrating = false;
-  showScreen('select');
-  renderCarousel();
-  startMicTester();
-  requestAnimationFrame(drawSelectBg);
+  if (!isCalibrating) return;
+  const valid = calSamples.every(a=>a.length >= 6) && calMatchedSeconds.every(t=>t >= .3);
+  if (!valid) {
+    calPhase=0;
+    document.getElementById('calPhase0Ui').style.display='flex';
+    document.getElementById('calPhase1Ui').style.display='none';
+    document.getElementById('calSetupStatus').textContent='Not all three notes matched yet. Retry, adjust the notes above, or skip with your current settings.';
+    return;
+  }
+  const medians=calSamples.map(median);
+  const low=calBaseMidi, high=calBaseMidi+CAL_STEPS[2]; // Verified target range; do not retune the song to singing errors.
+  if (high-low < 2) {
+    calPhase=0;
+    document.getElementById('calPhase0Ui').style.display='flex';
+    document.getElementById('calPhase1Ui').style.display='none';
+    document.getElementById('calSetupStatus').textContent='Only a small range was measured. Retry with a comfortable lower and higher note, or skip.';
+    return;
+  }
+  comfort={low,high,measured:true,matched:true,version:2,observed:medians};
+  guideVoice = calRangeChoice; guideVoiceSelect.value = guideVoice;
+  localStorage.setItem('oohwoo_guideVoice',guideVoice);
+  playerMinFreq=hzOf(low); playerMaxFreq=hzOf(high);
+  localStorage.setItem('oohwoo_comfort_v1',JSON.stringify(comfort));
+  localStorage.setItem('oohwoo_minFreq',playerMinFreq); localStorage.setItem('oohwoo_maxFreq',playerMaxFreq);
+  songPreferences={}; localStorage.setItem('oohwoo_song_keys_v1','{}');
+  stopComfortSetup(); state = 'select'; updateRangeDisplay(); showScreen('select'); renderCarousel();
+  updateComfortUI(); startMicTester(); requestAnimationFrame(drawSelectBg);
 }
 
 // ============================================================
@@ -1042,7 +1974,46 @@ function finishCalibration() {
 // Pre-generate background layers
 let bgOffset1 = 0, bgOffset2 = 0, bgOffset3 = 0;
 
+// Load artwork once; keep the original scenery available while loading or offline.
+const rainforestLayers = {};
+if (typeof Image !== 'undefined') {
+  for (const name of ['far', 'mid', 'near']) {
+    const image = new Image();
+    image.decoding = 'async';
+    image.onload = () => { rainforestLayers[name] = image; };
+    image.src = `assets/backgrounds/rainforest-${name}.png`;
+  }
+}
+
+function drawRainforestLayer(image, offset, height, opacity = 1) {
+  const width = height * image.naturalWidth / image.naturalHeight;
+  // Alternate original and mirrored tiles so both edges join without a hard seam.
+  const first = Math.floor(offset / width);
+  const shift = offset - first * width;
+  ctx.save();
+  ctx.globalAlpha = opacity;
+  for (let i = 0; i * width - shift < W; i++) {
+    const x = i * width - shift;
+    ctx.save();
+    ctx.translate(x, H - height);
+    if ((first + i) % 2 !== 0) {
+      ctx.translate(width, 0);
+      ctx.scale(-1, 1);
+    }
+    // A subpixel overlap prevents hairline gaps during scrolling.
+    ctx.drawImage(image, 0, 0, width + 0.5, height);
+    ctx.restore();
+  }
+  ctx.restore();
+}
+
 function drawBackground() {
+  if (rainforestLayers.far) {
+    drawRainforestLayer(rainforestLayers.far, bgOffset3, H);
+    if (rainforestLayers.mid) drawRainforestLayer(rainforestLayers.mid, bgOffset2, H * 0.48, 0.8);
+    if (rainforestLayers.near) drawRainforestLayer(rainforestLayers.near, bgOffset1, H * 0.25);
+    return;
+  }
   // Sky gradient
   const sky = ctx.createLinearGradient(0, 0, 0, H);
   sky.addColorStop(0, '#87CEEB');
@@ -1123,46 +2094,65 @@ function lightenColor(hex, amt) {
 let state = 'main'; // main | select | playing | dead | complete
 let score = 0;
 let combo = 0;
-let speedMult = 1.0;
 
-// Speed tiers: [minCombo, multiplier, label]
-const SPEED_TIERS = [
-  [0,  1.0,  '1.0x'],
-  [10, 1.25, '1.25x'],
-  [20, 1.5,  '1.5x'],
-  [30, 2.0,  '2.0x'],
-  [50, 2.5,  '2.5x'],
-  [80, 3.0,  '3.0x'],
+// Visual flight speed is separate from the music, scoring and collision clock.
+const FLIGHT_TIERS = [[0, 1], [10, 1.3], [20, 1.6], [40, 2]];
+let flightSpeed = 1, flightDistance = 0;
+function comboFlightTier(count) {
+  return FLIGHT_TIERS.reduce((tier, next) => count >= next[0] ? next : tier, FLIGHT_TIERS[0]);
+}
+function updateFlightSpeed(dt) {
+  const target = comboFlightTier(combo)[1];
+  flightSpeed += (target - flightSpeed) * (1 - Math.exp(-Math.max(0, dt) / .55));
+  flightDistance += PIPE_SPEED * flightSpeed * dt;
+}
+function flightX(logicalX) {
+  // Spread notes around the fixed singing line: their arrival times stay exact.
+  return HIT_ZONE_X + (logicalX - HIT_ZONE_X) * flightSpeed;
+}
+function drawFlightWind() {
+  if (state !== 'playing' || flightSpeed < 1.02 || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+  ctx.save();
+  ctx.strokeStyle = 'white'; ctx.lineWidth = 1.5;
+  ctx.globalAlpha = Math.min(.22, (flightSpeed - 1) * .25);
+  for (let i = 0; i < 12; i++) {
+    const cycle = W + 180;
+    const x = ((i * 137 - flightDistance * 1.4) % cycle + cycle) % cycle - 90;
+    const y = PLAY_TOP + 25 + (i * 97 % (PLAY_H - 50));
+    ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + 25 + 35 * (flightSpeed - 1), y); ctx.stroke();
+  }
+  ctx.restore();
+}
+
+// Combo tiers affect points and visual intensity, never musical timing.
+// [minCombo, pointMultiplier]
+const COMBO_TIERS = [
+  [0, 1],
+  [10, 2],
+  [20, 2.5],
+  [40, 3],
 ];
 
-function comboToSpeed(c) {
-  let tier = SPEED_TIERS[0];
-  for (const t of SPEED_TIERS) { if (c >= t[0]) tier = t; }
+function comboToReward(c) {
+  let tier = COMBO_TIERS[0];
+  for (const t of COMBO_TIERS) { if (c >= t[0]) tier = t; }
   return tier;
 }
 
 function updateComboHUD() {
-  const el = document.getElementById('comboDisplay');
-  const numEl = document.getElementById('comboNum');
-  const badge = document.getElementById('speedBadge');
-  if (!el) return;
-  if (combo > 0) {
-    el.style.display = 'block';
-    numEl.textContent = combo;
-    const tier = comboToSpeed(combo);
-    badge.textContent = tier[2];
-    badge.style.color = tier[1] >= 2.0 ? '#FFD700' : '#fff';
-  } else {
-    el.style.display = 'none';
-  }
+  document.getElementById('comboNum').textContent = combo;
+  document.getElementById('multiplierNum').textContent = `${comboToReward(combo)[1]}×`;
+}
+
+function formatScore(points) {
+  return String(Number(points.toFixed(2)));
 }
 
 let birdY = H / 2;
 let birdVY = 0;
-// Mic mode shifts bird 18px left to compensate for ~100ms audio detection lag.
-// Keyboard is instant so no offset needed.
-const BIRD_X_KEY  = 100;
-const BIRD_X_MIC  = 82; // 100 - (180 px/s × 0.1s)
+// All controls share the same beat position. Input tolerance belongs in scoring.
+const BIRD_X_KEY = 100;
+const BIRD_X_MIC = BIRD_X_KEY;
 let birdX = BIRD_X_KEY;
 let gameTime = 0;
 let pipes = [];
@@ -1174,6 +2164,124 @@ let lastTime = null;
 let animId = null;
 let perfectTimeout = null;
 let paused = false;
+
+const NOTE_GRADES = [
+  {name:'Perfect', cents:35, timing:0.100, coverage:0.80, weight:1, color:'#ffe66d'},
+  {name:'Great', cents:65, timing:0.180, coverage:0.60, weight:0.8, color:'#80efb0'},
+  {name:'Good', cents:90, timing:0.250, coverage:0.35, weight:0.5, color:'#8edcff'},
+];
+let noteJudgements = [], judgementCounts = {}, bestCombo = 0;
+let judgementFeedback = [], judgementLastTime = null, fallbackJudgementUsed = false;
+
+function makeNoteJudgement(note, next) {
+  return {note, end:note.end ?? Math.min(next?.t ?? note.t + 0.4, note.t + 0.4), samples:[], resolved:false};
+}
+
+// Samples are time intervals, so coverage and median are independent of render FPS.
+function gradeNote(entry) {
+  const {note, end, samples} = entry;
+  const duration = Math.max(0.001, end - note.t);
+  const voiced = samples.filter(s => s.error !== null && s.b > note.t && s.a < end)
+    .map(s => ({error:s.error, seconds:Math.max(0, Math.min(s.b,end)-Math.max(s.a,note.t))}));
+  const voicedSeconds = voiced.reduce((sum,s) => sum+s.seconds,0);
+  let medianError = Infinity, accumulated = 0;
+  for (const s of voiced.sort((a,b) => a.error-b.error)) {
+    accumulated += s.seconds;
+    if (accumulated >= voicedSeconds/2) { medianError=s.error; break; }
+  }
+  const stableSeconds = Math.min(0.060, duration * 0.30);
+  let runStart = null, runEnd = null, arrival = null;
+  for (const s of samples) {
+    if (s.error !== null && s.error <= 90) {
+      if (runEnd === null || s.a-runEnd > 0.00001) runStart=s.a;
+      runEnd=s.b;
+      if (arrival === null && runEnd-runStart + 1e-9 >= stableSeconds) arrival=Math.max(note.t,runStart);
+    } else { runStart=null; runEnd=null; }
+  }
+  const timingError = arrival === null ? Infinity : Math.abs(arrival-note.t);
+  for (const grade of NOTE_GRADES) {
+    let correct = 0, allowance = duration*0.15;
+    for (let i=0; i<samples.length; i++) {
+      const s=samples[i], seconds=Math.max(0,Math.min(end,s.b)-Math.max(note.t,s.a));
+      if (s.error !== null && s.error <= grade.cents) correct+=seconds;
+      // Bridge only silence bounded by correct voice, never an incorrect pitch.
+      if (s.error === null && i>0 && samples[i-1].error !== null && samples[i-1].error <= grade.cents) {
+        let j=i, gap=0;
+        while (j<samples.length && samples[j].error === null) {
+          gap+=Math.max(0,Math.min(end,samples[j].b)-Math.max(note.t,samples[j].a)); j++;
+        }
+        if (j<samples.length && samples[j].error<=grade.cents && samples[j].error!==null &&
+            samples[j].a-s.a<=0.080+1e-9) {
+          const credit=Math.min(gap,allowance); correct+=credit; allowance-=credit;
+        }
+      }
+    }
+    if (medianError <= grade.cents+1e-7 && timingError <= grade.timing+1e-9 &&
+        correct/duration + 1e-9 >= grade.coverage) return {...grade,coverage:correct/duration,timingError,medianError};
+  }
+  return {name:'Miss',weight:0,color:'#ff9393',timingError,medianError,coverage:0};
+}
+
+function resolveNoteJudgement(entry) {
+  if (entry.resolved) return;
+  entry.resolved=true; entry.result=gradeNote(entry);
+  const result=entry.result;
+  judgementCounts[result.name]++;
+  if (result.name==='Perfect' || result.name==='Great') combo++;
+  else combo=0;
+  bestCombo=Math.max(bestCombo,combo);
+  score+=result.weight*comboToReward(combo)[1];
+  score=Math.round(score*100)/100;
+  scoreDisplay.textContent=formatScore(score); updateComboHUD();
+  judgementFeedback.push({text:result.name,color:result.color,t:gameTime,x:birdX+28,y:birdY-28});
+}
+
+function updateNoteJudgements(time, midi, fallback=false) {
+  if (fallback) fallbackJudgementUsed=true;
+  // Never credit unobserved time after a stall or tab suspension.
+  const previous=judgementLastTime ?? time;
+  const start=Math.max(previous,time-0.060);
+  const targetMidi=entry => (Number.isFinite(entry.note.midi) ? entry.note.midi :
+    songTonicMidi(currentSong)+melodySemitones(entry.note.ratio))+songShift(currentSong);
+  const overlapping=noteJudgements.filter(e => !e.resolved && time>=e.note.t && time<=e.end);
+  const owner=Number.isFinite(midi) ? overlapping.reduce((best,e) =>
+    !best || Math.abs(midi-targetMidi(e))<Math.abs(midi-targetMidi(best)) ? e : best,null) : null;
+  for (const entry of noteJudgements) {
+    if (entry.resolved) continue;
+    const a=Math.max(start,entry.note.t-0.250), b=Math.min(time,entry.end);
+    if (b>a) {
+      const target=targetMidi(entry);
+      if (a>Math.max(previous,entry.note.t-0.250)+1e-6) {
+        entry.samples.push({a:Math.max(previous,entry.note.t-0.250),b:a,error:null});
+      }
+      const competing=owner && owner!==entry && b>entry.note.t &&
+        Math.abs(targetMidi(owner)-target)>0.001;
+      entry.samples.push({a,b,error:competing ? Infinity : Number.isFinite(midi) ? Math.abs(midi-target)*100 : null});
+    }
+    if (time>=entry.end) resolveNoteJudgement(entry);
+  }
+  judgementLastTime=time;
+}
+
+function performanceSummary() {
+  const total=noteJudgements.length;
+  const hits=(judgementCounts.Perfect||0)+(judgementCounts.Great||0)+(judgementCounts.Good||0);
+  const performance=total ? 100*((judgementCounts.Perfect||0)+0.8*(judgementCounts.Great||0)+0.5*(judgementCounts.Good||0))/total : 0;
+  const rank=performance>=95?'S':performance>=85?'A':performance>=75?'B':performance>=65?'C':performance>=50?'D':'F';
+  return {total,hits,performance,rank};
+}
+
+function drawJudgementFeedback() {
+  judgementFeedback=judgementFeedback.filter(f => gameTime-f.t<0.85);
+  for (const f of judgementFeedback) {
+    const age=gameTime-f.t;
+    ctx.save(); ctx.globalAlpha=Math.max(0,1-age/0.85);
+    ctx.font='bold 20px "Segoe UI", Arial, sans-serif'; ctx.textAlign='center';
+    ctx.lineWidth=4; ctx.strokeStyle='#17312c'; ctx.fillStyle=f.color;
+    const x=Math.max(55,Math.min(W-55,f.x)), y=Math.max(85,f.y-age*28);
+    ctx.strokeText(f.text,x,y); ctx.fillText(f.text,x,y); ctx.restore();
+  }
+}
 
 document.addEventListener('keydown', e => {
   if (e.code === 'F1') {
@@ -1210,25 +2318,62 @@ const PIPE_GAP = 350; // px gap height
 const COIN_R = 14;
 const PIPE_SPEED = 240; // px/s
 const PIPE_SPAWN_X = W + 80;
-const HIT_ZONE_X = 190; // dotted line — beats align here, bird at x=100 has 0.5s buffer to reposition
+const HIT_ZONE_X = BIRD_X_KEY; // coin centre reaches the bird on the note onset
 const PLAY_TOP = 60; // top dead zone
 const PLAY_BOT = H - 60; // bottom dead zone
 const PLAY_H = PLAY_BOT - PLAY_TOP;
 const BIRD_R = 22;
 const GRAVITY = 900; // px/s^2 — downward glide accel when silent
+const BIRD_SPRING_RATE = 38; // critically damped: ~125ms to travel 95%, no bounce
+const NOTE_EARLY_SECONDS = 0.09;
+const NOTE_LATE_SECONDS = 0.20; // allow pitch detection and movement after a sung onset
 const GLIDE_MAX_SPEED = 260; // px/s — terminal velocity for the silent glide
 const MIC_GRACE_MS = 150; // brief mic dropouts (word gaps, breaths) keep the last pitch instead of gliding
-const OCTAVE_JUMP_FRAMES = 2; // a big pitch jump must repeat this many frames before it's trusted (kills 1-frame glitches)
+const OCTAVE_JUMP_MS = 25; // confirmation time is independent of display refresh rate
 const PITCH_FORCE = 800;
 
 let pitchRatioSmooth = 0.5;
+let flightRatioFiltered = null;
+// Visual-only smoothing, with no locked height or threshold-triggered jumps.
+// Small wobble is damped; bigger note changes use a faster response.
+function steadyFlightRatio(ratio, dt, freshAttack = false) {
+  if (freshAttack || flightRatioFiltered === null) { flightRatioFiltered = ratio; return ratio; }
+  const previous = melodySemitones(flightRatioFiltered);
+  const change = melodySemitones(ratio) - previous;
+  const responseSeconds = .025 + .075 * Math.exp(-Math.abs(change) / .3);
+  const alpha = 1 - Math.exp(-Math.max(0, dt) / responseSeconds);
+  flightRatioFiltered = pitchLane(previous + change * alpha);
+  return flightRatioFiltered;
+}
 const PITCH_MEDIAN_SIZE = 3;
 const pitchMedianBuf = []; // C: median filter — stores last N valid Hz readings
 let targetBirdY = H / 2;
 let birdAngle = 0;
 let birdWingPhase = 0;
 let lastSingMs = -Infinity; // performance.now() timestamp of the last valid mic pitch
-let pendingJumpRatio = null, pendingJumpFrames = 0; // octave-glitch persistence tracking
+let pendingJumpRatio = null, pendingJumpSince = null; // octave-glitch persistence tracking
+
+// Use reachable centres for both targets and the bird, including Do at each edge.
+function ratioToY(ratio) {
+  return PLAY_TOP + BIRD_R + (1 - ratio) * (PLAY_H - 2 * BIRD_R);
+}
+
+function followPitch(targetY, dt) {
+  if (dt <= 0) return;
+  const offset = birdY - targetY;
+  // Reversing pitch should not make the bird coast in the wrong direction.
+  if (birdVY * offset > 0) birdVY = 0;
+  const decay = Math.exp(-BIRD_SPRING_RATE * dt);
+  const impulse = birdVY + BIRD_SPRING_RATE * offset;
+  const nextY = targetY + (offset + impulse * dt) * decay;
+  birdVY = (birdVY - BIRD_SPRING_RATE * impulse * dt) * decay;
+  if ((nextY - targetY) * offset < 0) {
+    birdY = targetY;
+    birdVY = 0;
+  } else {
+    birdY = nextY;
+  }
+}
 
 // Keyboard note control — 1234567890-= maps to Do–Sol (1.5 octaves)
 // Ratios match the pipe note positions: C4=0.00 … C5=1.00, then clamped above
@@ -1277,26 +2422,45 @@ canvas.addEventListener('touchstart', e => { e.preventDefault(); touchHeld = tru
 canvas.addEventListener('touchend',   e => { e.preventDefault(); touchHeld = false; }, { passive: false });
 canvas.addEventListener('mousedown',  e => { touchHeld = true; });
 canvas.addEventListener('mouseup',    e => { touchHeld = false; });
+canvas.addEventListener('touchcancel', () => { touchHeld = false; });
+window.addEventListener('mouseup', () => { touchHeld = false; });
+window.addEventListener('blur', () => {
+  heldKeys.clear();
+  updateKeyRatio();
+  touchHeld = false;
+  lastSingMs = -Infinity;
+});
 
 function startGame(song) {
   score = 0;
   combo = 0;
-  speedMult = 1.0;
+  flightSpeed = 1; flightDistance = 0;
   paused = false;
   birdY = H / 2;
   birdVY = 0;
-  gameTime = -2.5;
+  gameTime = getBackingTrackTime() ?? 0;
   pipes = [];
   activeCoins = [];
-  const songInfo = SONG_DATA[currentSong] || SONG_DATA.twinkle;
+  currentSong = song;
+  const songInfo = SONG_DATA[song] || SONG_DATA.twinkle;
   pipeSchedule = buildPipes(songInfo.notes, songInfo.introOffset || 0);
+  noteJudgements=pipeSchedule.map((n,i) => makeNoteJudgement(n,pipeSchedule[i+1]));
+  judgementCounts={Perfect:0,Great:0,Good:0,Miss:0}; bestCombo=0;
+  judgementFeedback=[]; judgementLastTime=gameTime; fallbackJudgementUsed=false;
   nextPipeIdx = 0;
   nextCoinIdx = 0;
+  karaokeActiveIdx = -2;
+  updateKaraoke(-1);
+  noteHint.textContent = '';
+  birdAngle = 0;
+  updateComboHUD();
   pitchRatioSmooth = 0.5;
+  flightRatioFiltered = null;
+  resetRegister();
   pitchMedianBuf.length = 0;
   lastSingMs = -Infinity;
   pendingJumpRatio = null;
-  pendingJumpFrames = 0;
+  pendingJumpSince = null;
   birdX = micEnabled ? BIRD_X_MIC : BIRD_X_KEY;
   bgOffset1 = bgOffset2 = bgOffset3 = 0;
   showScreen('game');
@@ -1309,16 +2473,25 @@ function startGame(song) {
 }
 
 function gameOver() {
+  stopBackingTrack();
   state = 'dead';
-  combo = 0; speedMult = 1.0; updateComboHUD();
+  combo = 0; updateComboHUD();
   document.getElementById('finalScore').textContent = score;
   setTimeout(() => showScreen('over'), 600);
 }
 
 function songComplete() {
+  for (const entry of noteJudgements) resolveNoteJudgement(entry);
+  stopBackingTrack();
   state = 'complete';
-  combo = 0; speedMult = 1.0; updateComboHUD();
+  combo = 0; updateComboHUD();
   document.getElementById('completeScore').textContent = score;
+  const report=performanceSummary();
+  document.getElementById('performanceReport').innerHTML=`<strong style="font-size:42px;color:#ffe66d">${report.rank}</strong><br>`+
+    `Performance ${report.performance.toFixed(1)}%<br>Notes hit ${report.hits}/${report.total} (${report.total ? (100*report.hits/report.total).toFixed(1) : '0.0'}%)<br>`+
+    `Perfect ${judgementCounts.Perfect} · Great ${judgementCounts.Great}<br>`+
+    `Good ${judgementCounts.Good} · Miss ${judgementCounts.Miss}<br>Best combo ${bestCombo}`+
+    (fallbackJudgementUsed?'<br><small>Includes keyboard/touch practice</small>':'');
   showScreen('complete');
 }
 
@@ -1341,7 +2514,9 @@ function updateKaraoke(activeIdx) {
   if (!bar) return;
 
   // Find which line the active note belongs to
-  const line = LYRIC_LINES.find(([s, e]) => activeIdx >= s && activeIdx <= e);
+  const lines = SONG_DATA[currentSong]?.chart?.phrases.map(p => [p.firstNote, p.lastNote]) ||
+    SONG_DATA[currentSong]?.lyricPhrases || LYRIC_LINES;
+  const line = lines.find(([s, e]) => activeIdx >= s && activeIdx <= e);
   if (!line) { bar.innerHTML = ''; return; }
   const [lineStart, lineEnd] = line;
   const lineNotes = pipeSchedule.slice(lineStart, lineEnd + 1);
@@ -1370,7 +2545,7 @@ function showPerfect() {
 // ============================================================
 function drawPipe(pipe) {
   const gap = pipe.gap || PIPE_GAP;
-  const gapCenter = PLAY_TOP + (1 - pipe.ratio) * PLAY_H;
+  const gapCenter = ratioToY(pipe.ratio);
   const topH = gapCenter - gap / 2;
   const botY = gapCenter + gap / 2;
   const botH = H - botY;
@@ -1450,9 +2625,12 @@ function drawPipe(pipe) {
 // ============================================================
 function drawCoin(x, y) {
   ctx.save();
+  const rewardTier = comboToReward(combo);
+  const glowBoost = rewardTier[1] - 1;
+  const pulse = glowBoost > 0 ? Math.sin(performance.now() * 0.008) * glowBoost : 0;
   // Glow
   ctx.shadowColor = '#FFD700';
-  ctx.shadowBlur = 12;
+  ctx.shadowBlur = 12 + glowBoost * 4 + pulse;
   // Circle
   const grad = ctx.createRadialGradient(x - 4, y - 4, 2, x, y, COIN_R);
   grad.addColorStop(0, '#FFF176');
@@ -1475,7 +2653,35 @@ function drawCoin(x, y) {
 // ============================================================
 // BIRD RENDERING
 // ============================================================
+// One shared cruise animation for now; later flight tiers can supply their own sheets.
+let koelSpriteSheet = null;
+if (typeof Image !== 'undefined') {
+  const image = new Image();
+  image.decoding = 'async';
+  image.onload = () => { koelSpriteSheet = image; };
+  image.src = 'assets/sprites/koel-cruise.png';
+}
+// Anchor the torso rather than the full silhouette: raised wings must not move the bird.
+const KOEL_FRAME_ANCHORS = [[0.68, 0.53], [0.66, 0.53], [0.68, 0.50], [0.66, 0.50]];
 function drawBird(x, y, angle) {
+  if (koelSpriteSheet) {
+    const frame = Math.floor(((birdWingPhase % (Math.PI * 2)) / (Math.PI * 2)) * 4);
+    const cellW = koelSpriteSheet.naturalWidth / 2;
+    const cellH = koelSpriteSheet.naturalHeight / 2;
+    const size = BIRD_R * 4.4;
+    const [anchorX, anchorY] = KOEL_FRAME_ANCHORS[frame];
+    ctx.save();
+    ctx.translate(x, y);
+    ctx.rotate(angle);
+    ctx.drawImage(koelSpriteSheet, (frame % 2) * cellW, Math.floor(frame / 2) * cellH,
+      cellW, cellH, -anchorX * size, -anchorY * size, size, size);
+    ctx.restore();
+    return;
+  }
+  drawFallbackBird(x, y, angle);
+}
+
+function drawFallbackBird(x, y, angle) {
   ctx.save();
   ctx.translate(x, y);
   ctx.rotate(angle);
@@ -1550,7 +2756,7 @@ function drawBird(x, y, angle) {
 // ============================================================
 function checkCollision(pipe) {
   const gap = pipe.gap || PIPE_GAP;
-  const gapCenter = PLAY_TOP + (1 - pipe.ratio) * PLAY_H;
+  const gapCenter = ratioToY(pipe.ratio);
   const gapTop = gapCenter - gap / 2;
   const gapBot = gapCenter + gap / 2;
   const px = pipe.x, pw = PIPE_W;
@@ -1562,7 +2768,7 @@ function checkCollision(pipe) {
 }
 
 function isPerfect(pipe) {
-  const gapCenter = PLAY_TOP + (1 - pipe.ratio) * PLAY_H;
+  const gapCenter = ratioToY(pipe.ratio);
   return Math.abs(birdY - gapCenter) < 30;
 }
 
@@ -1570,15 +2776,18 @@ function isPerfect(pipe) {
 // GAME LOOP
 // ============================================================
 function drawHitZone() {
-  // Check if any pipe is currently crossing the hit zone
+  // Highlight the beat guide for coins as well as optional pipes.
   const hitX = HIT_ZONE_X;
   const activePipe = pipes.find(p => !p.passed && p.x <= hitX + PIPE_W/2 && p.x + PIPE_W >= hitX - PIPE_W/2);
+
+  const activeCoin = activeCoins.some(c => !c.collected && Math.abs(c.x - hitX) <= COIN_R);
+  const beatActive = activePipe || activeCoin;
 
   // Base glow — always visible, subtle
   const baseAlpha = 0.12;
   const activeAlpha = 0.35;
-  const alpha = activePipe ? activeAlpha : baseAlpha;
-  const color = activePipe ? '#FFD700' : '#ffffff';
+  const alpha = beatActive ? activeAlpha : baseAlpha;
+  const color = beatActive ? '#FFD700' : '#ffffff';
 
   ctx.save();
 
@@ -1593,7 +2802,7 @@ function drawHitZone() {
 
   // Highlight the gap area when a pipe is active
   if (activePipe) {
-    const gapCenter = PLAY_TOP + (1 - activePipe.ratio) * PLAY_H;
+    const gapCenter = ratioToY(activePipe.ratio);
     const gapTop = gapCenter - activePipe.gap / 2;
     const gapH = activePipe.gap;
     const gapGrad = ctx.createLinearGradient(hitX - 18, 0, hitX + 18, 0);
@@ -1606,9 +2815,9 @@ function drawHitZone() {
   }
 
   // Hard line at exact hit position
-  ctx.globalAlpha = activePipe ? 0.9 : 0.3;
+  ctx.globalAlpha = beatActive ? 0.9 : 0.3;
   ctx.strokeStyle = color;
-  ctx.lineWidth = activePipe ? 2 : 1;
+  ctx.lineWidth = beatActive ? 2 : 1;
   ctx.setLineDash([6, 6]);
   ctx.beginPath();
   ctx.moveTo(hitX, PLAY_TOP);
@@ -1630,46 +2839,52 @@ function gameLoop(ts) {
   }
 
   if (state === 'playing') {
-    gameTime += dt;
+    const audioTime = getBackingTrackTime();
+    gameTime = audioTime === null ? gameTime + dt : audioTime;
 
     // Pitch detection — clarity threshold inside detectPitch()
     // No median filter: the outlier clamp below handles octave-jump errors,
     // and the filter was adding ~3 frames of lag vs keyboard (which has none).
     const rawPitch = detectPitch();
-    const rawRatio = freqToRatio(rawPitch);
+    const rawRatio = singingToRatio(rawPitch);
     const now = performance.now();
+    const freshAttack = now - lastSingMs >= MIC_GRACE_MS;
     if (rawPitch > 0) lastSingMs = now;
     // Grace period: brief mic dropouts between words/breaths still count as "singing"
     // so the bird doesn't flicker into glide-mode mid-phrase.
-    const micSinging = (now - lastSingMs) < MIC_GRACE_MS;
+    const micSinging = micEnabled && (now - lastSingMs) < MIC_GRACE_MS;
     const keyActive = keyRatio >= 0;
     const touchActive = touchHeld;
+    const judgementMidi = keyActive ? songTonicMidi(currentSong)+melodySemitones(keyRatio)+songShift(currentSong) :
+      touchActive ? songTonicMidi(currentSong)+melodySemitones(Math.max(0,Math.min(1,
+        1-(birdY-PLAY_TOP-BIRD_R)/(PLAY_H-2*BIRD_R))))+songShift(currentSong) :
+      micEnabled && micReady && rawPitch>0 ? midiOf(rawPitch)-registerOffset : null;
+    updateNoteJudgements(gameTime,judgementMidi,keyActive||touchActive);
     const isSinging = micSinging || keyActive || touchActive;
 
     if (rawPitch > 0) {
-      // Octave-glitch guard: a jump > 0.35 ratio must repeat for OCTAVE_JUMP_FRAMES
-      // frames before we trust it — kills single-frame octave errors with zero lag
-      // on normal singing (small/medium moves apply immediately).
-      const rawDelta = rawRatio - pitchRatioSmooth;
-      if (Math.abs(rawDelta) > 0.35) {
-        if (pendingJumpRatio !== null && Math.abs(rawRatio - pendingJumpRatio) < 0.05) {
-          pendingJumpFrames++;
-        } else {
+      // Reject isolated large jumps, but respond immediately after a breath.
+      if (!freshAttack && Math.abs(rawRatio - pitchRatioSmooth) > 0.35) {
+        if (pendingJumpRatio === null || Math.abs(rawRatio - pendingJumpRatio) >= 0.05) {
           pendingJumpRatio = rawRatio;
-          pendingJumpFrames = 1;
+          pendingJumpSince = now;
         }
-        if (pendingJumpFrames >= OCTAVE_JUMP_FRAMES) {
+        if (now - pendingJumpSince >= OCTAVE_JUMP_MS) {
           pitchRatioSmooth = rawRatio;
           pendingJumpRatio = null;
-          pendingJumpFrames = 0;
+          pendingJumpSince = null;
         }
       } else {
         pendingJumpRatio = null;
-        pendingJumpFrames = 0;
+        pendingJumpSince = null;
         pitchRatioSmooth = rawRatio;
       }
       currentRatio = pitchRatioSmooth;
-    } else if (keyActive) {
+    } else {
+      pendingJumpRatio = null;
+      pendingJumpSince = null;
+    }
+    if (keyActive) {
       pitchRatioSmooth = keyRatio; // instant, no smoothing
       currentRatio = keyRatio;
     } else if (touchActive) {
@@ -1679,25 +2894,24 @@ function gameLoop(ts) {
 
     const prevBirdY = birdY;
 
-    // Bird physics — fast chase with a minimum speed so it actually arrives,
-    // instead of asymptotically crawling the last stretch.
+    // A damped spring eases in and out while preserving controlled momentum.
     if (micSinging || keyActive) {
-      const targetRatio = micSinging ? pitchRatioSmooth : keyRatio;
-      const targetY = PLAY_TOP + (1 - targetRatio) * PLAY_H;
-      const dy = targetY - birdY;
-      const chase = dy * 14 * dt; // proportional term — snappy on big jumps
-      const minStep = Math.sign(dy) * Math.min(Math.abs(dy), 220 * dt); // floor speed so small drifts don't crawl
-      birdY += Math.abs(chase) > Math.abs(minStep) ? chase : minStep;
-      birdVY = 0;
+      if (keyActive) flightRatioFiltered = null;
+      const targetRatio = keyActive ? keyRatio : rawPitch > 0
+        ? steadyFlightRatio(pitchRatioSmooth, dt, freshAttack) : flightRatioFiltered ?? pitchRatioSmooth;
+      const targetY = ratioToY(Math.max(0,Math.min(1,targetRatio))); // Off-range singing goes gently to an edge, not an off-screen target.
+      followPitch(targetY, dt);
       setMicIndicator(micSinging ? 'active' : 'off');
-      micStatus.textContent = micSinging ? '🎤 ' + getCurrentNoteName(rawPitch) : '🎹 Key ' + [...heldKeys].join('+');
+      micStatus.textContent = keyActive ? '🎹 Key ' + [...heldKeys].join('+') : '🎤 ' + SOLFEGE[laneIndex(pitchRatioSmooth)];
     } else if (touchActive) {
       birdVY -= 600 * dt;
-      birdVY *= 0.88;
+      birdVY *= Math.pow(0.88, dt * 60);
       setMicIndicator('off');
       micStatus.textContent = '👆 Tap to fly';
     } else {
       // Silence — glide down like a bird coasting, capped at GLIDE_MAX_SPEED.
+      // Keep a little lift on release, without carrying a fast climb through a breath.
+      birdVY = Math.max(birdVY, -80);
       birdVY += GRAVITY * dt;
       birdVY = Math.min(birdVY, GLIDE_MAX_SPEED);
       if (micReady) {
@@ -1709,19 +2923,22 @@ function gameLoop(ts) {
       }
     }
 
-    birdY += birdVY * dt;
+    if (!micSinging && !keyActive) birdY += birdVY * dt;
     birdY = Math.max(PLAY_TOP + BIRD_R, Math.min(PLAY_BOT - BIRD_R, birdY));
+    if (birdY === PLAY_TOP + BIRD_R || birdY === PLAY_BOT - BIRD_R) birdVY = 0;
 
     // Bird angle and wings — tilt driven by actual on-screen movement, not just velocity,
     // so mic-controlled climbs/dives visibly bank the bird instead of staying level.
-    const actualDy = (birdY - prevBirdY) / dt;
-    birdAngle = Math.max(-0.4, Math.min(0.5, actualDy * 0.002));
+    const actualDy = dt > 0 ? (birdY - prevBirdY) / dt : 0;
+    const targetAngle = Math.max(-0.4, Math.min(0.5, actualDy * 0.002));
+    birdAngle += (targetAngle - birdAngle) * (1 - Math.exp(-dt / 0.075));
     birdWingPhase += dt * (isSinging ? 12 : 4);
 
     // Scroll backgrounds at different speeds
-    bgOffset1 += PIPE_SPEED * dt;
-    bgOffset2 += PIPE_SPEED * 0.5 * dt;
-    bgOffset3 += PIPE_SPEED * 0.2 * dt;
+    updateFlightSpeed(dt);
+    bgOffset1 += PIPE_SPEED * flightSpeed * dt;
+    bgOffset2 += PIPE_SPEED * flightSpeed * 0.5 * dt;
+    bgOffset3 += PIPE_SPEED * flightSpeed * 0.2 * dt;
 
     // Spawn pipes from schedule
     while (nextPipeIdx < pipeSchedule.length) {
@@ -1730,8 +2947,18 @@ function gameLoop(ts) {
         const elapsed = gameTime - sched.spawnTime;
         const spawnX = PIPE_SPAWN_X - PIPE_SPEED * elapsed;
         if (spawnX > -PIPE_W - 20) {
-          const coinY = PLAY_TOP + (1 - sched.ratio) * PLAY_H;
-          activeCoins.push({ x: spawnX + PIPE_W / 2, y: coinY, lyric: sched.lyric || '', collected: false });
+          const coinY = ratioToY(sched.ratio);
+          activeCoins.push({
+            x: spawnX + PIPE_W / 2,
+            y: coinY,
+            lyric: sched.lyric || '',
+            spawnTime: sched.spawnTime,
+            t: sched.t,
+            ratio: sched.ratio,
+            midi: sched.midi,
+            judgement: noteJudgements[nextPipeIdx],
+            collected: false,
+          });
           if (sched.isPipe) {
             pipes.push({
               x: spawnX,
@@ -1739,6 +2966,7 @@ function gameLoop(ts) {
               note: sched.note,
               lyric: sched.lyric || '',
               gap: sched.gap,
+              spawnTime: sched.spawnTime,
               passed: false,
             });
           }
@@ -1747,32 +2975,20 @@ function gameLoop(ts) {
       } else break;
     }
 
-    // Move pipes
+    // Anchor every target to the backing track clock. Visual space may change,
+    // but musical time remains authoritative.
     for (const pipe of pipes) {
-      pipe.x -= PIPE_SPEED * speedMult * dt;
+      pipe.x = PIPE_SPAWN_X - PIPE_SPEED * (gameTime - pipe.spawnTime);
     }
 
-    // Move and collect coins
-    let comboChanged = false;
+    // Position and collect coins
     for (const coin of activeCoins) {
-      coin.x -= PIPE_SPEED * speedMult * dt;
-      if (!coin.collected && Math.abs(coin.x - birdX) < 28 && Math.abs(coin.y - birdY) < 28) {
-        coin.collected = true;
-        score += 1;
-        scoreDisplay.textContent = score;
-        combo++;
-        speedMult = comboToSpeed(combo)[1];
-        comboChanged = true;
-      }
-      // Miss: coin passed bird without being collected
-      if (!coin.collected && coin.x < birdX - 40) {
-        coin.missed = true;
-        combo = 0;
-        speedMult = 1.0;
-        comboChanged = true;
+      coin.x = PIPE_SPAWN_X + PIPE_W / 2 - PIPE_SPEED * (gameTime - coin.spawnTime);
+      if (coin.judgement?.resolved) {
+        coin.collected=coin.judgement.result.name!=='Miss';
+        coin.missed=!coin.collected;
       }
     }
-    if (comboChanged) updateComboHUD();
     activeCoins = activeCoins.filter(c => c.x > -COIN_R * 2 && !c.collected && !c.missed);
 
     // Score + collision
@@ -1785,7 +3001,7 @@ function gameLoop(ts) {
         } else {
           score += 1;
         }
-        scoreDisplay.textContent = score;
+        scoreDisplay.textContent = formatScore(score);
       }
       if (!pipe.passed && checkCollision(pipe)) {
         gameOver();
@@ -1798,7 +3014,8 @@ function gameLoop(ts) {
     pipes = pipes.filter(p => p.x > -PIPE_W - 20);
 
     // Song complete
-    if (nextPipeIdx >= pipeSchedule.length && pipes.length === 0 && activeCoins.length === 0) {
+    const level = SONG_DATA[currentSong]?.chart?.level ?? SONG_DATA[currentSong]?.playLevel;
+    if (level ? gameTime >= level.end : nextPipeIdx >= pipeSchedule.length && pipes.length === 0 && activeCoins.length === 0) {
       songComplete();
     }
 
@@ -1808,14 +3025,13 @@ function gameLoop(ts) {
     pitchDot.style.bottom = pct + '%';
 
     // Note hint + karaoke bar
-    const upcomingPipes = pipes.filter(p => !p.passed);
-    const nextPipe = upcomingPipes[0];
-    if (nextPipe) {
-      noteHint.textContent = '🎵 ' + nextPipe.note;
+    // Highlight the sung note, never the latest spawned (future) target.
+    let activeNoteIdx = -1;
+    for (let i = 0; i < pipeSchedule.length && pipeSchedule[i].t <= gameTime; i++) {
+      if (pipeSchedule[i].end === undefined || gameTime < pipeSchedule[i].end) activeNoteIdx = i;
     }
-    // Pass the schedule index of the active pipe (the one at/just past the hit zone)
-    const activePipeIdx = nextPipeIdx - 1;
-    updateKaraoke(activePipeIdx);
+    updatePitchFeedback(rawPitch, keyActive, touchActive);
+    updateKaraoke(activeNoteIdx);
 
     // Debug readout
     const dbEl = document.getElementById('debugBox');
@@ -1824,22 +3040,26 @@ function gameLoop(ts) {
       dbEl.innerHTML =
         `RMS: ${debugRms.toFixed(4)} ${debugRms > 0.003 ? '✓' : '✗ (too quiet)'}<br>` +
         `Hz: ${debugHz > 0 ? Math.round(debugHz) : '—'} ${inRange ? '✓ IN RANGE' : debugHz > 0 ? `✗ out of ${MIN_FREQ}–${MAX_FREQ}Hz` : ''}<br>` +
-        `AC strength: ${debugAcMax.toFixed(3)} ${debugAcMax > 0.01 ? '✓' : '✗'}<br>` +
+        `Clarity: ${debugAcMax.toFixed(3)} ${pitchReading.voiced ? '✓ voiced' : pitchReading.reason}<br>` +
+        `Estimate window: ${pitchReading.windowMs.toFixed(1)}ms; compute: ${pitchReading.computeMs.toFixed(2)}ms<br>` +
+        `Capture latency (reported): ${micTiming.captureLatencyMs === null ? 'unknown' : micTiming.captureLatencyMs.toFixed(1)+'ms'}; poll: ${pitchReading.pollIntervalMs == null ? '—' : pitchReading.pollIntervalMs.toFixed(1)+'ms'}<br>` +
         `Mic: ${micReady ? 'ready (' + (audioCtx ? audioCtx.state : '?') + ')' : 'NOT READY'}`;
     }
   }
 
   // Draw
   drawBackground();
+  drawFlightWind();
   if (state === 'playing') drawHitZone();
   for (const pipe of pipes) drawPipe(pipe);
   for (const coin of activeCoins) {
-    drawCoin(coin.x, coin.y);
+    drawCoin(flightX(coin.x), coin.y);
   }
   // Draw coin lyrics after all coins so text is always on top
   for (const coin of activeCoins) {
     if (coin.lyric) {
-      const alpha = Math.min(1, Math.max(0, 1 - Math.abs(coin.x - HIT_ZONE_X) / 260));
+      const visualX = flightX(coin.x);
+      const alpha = Math.min(1, Math.max(0, 1 - Math.abs(visualX - HIT_ZONE_X) / 260));
       if (alpha > 0.05) {
         ctx.save();
         ctx.globalAlpha = alpha;
@@ -1848,14 +3068,15 @@ function gameLoop(ts) {
         ctx.textBaseline = 'middle';
         ctx.shadowColor = 'rgba(0,0,0,0.9)';
         ctx.shadowBlur = 8;
-        ctx.fillStyle = coin.x <= HIT_ZONE_X + 40 ? '#FFD700' : '#ffffff';
-        ctx.fillText(coin.lyric, coin.x, coin.y - 30); // draw above the coin
+        ctx.fillStyle = visualX <= HIT_ZONE_X + 40 ? '#FFD700' : '#ffffff';
+        ctx.fillText(coin.lyric, visualX, coin.y - 30); // draw above the coin
         ctx.restore();
       }
     }
   }
   if (state === 'playing' || state === 'dead') {
-    drawBird(birdX, birdY, birdAngle);
+  drawBird(birdX, birdY, birdAngle);
+  drawJudgementFeedback();
   }
   if (state === 'dead') {
     ctx.save();
@@ -1870,12 +3091,7 @@ function gameLoop(ts) {
 
 function getCurrentNoteName(freq) {
   if (freq < 0) return '—';
-  let best = '?', bestDiff = Infinity;
-  for (const [name, f] of Object.entries(NOTE_FREQS)) {
-    const d = Math.abs(freq - f);
-    if (d < bestDiff) { bestDiff = d; best = name; }
-  }
-  return best + ' (' + Math.round(freq) + 'Hz)';
+  return freqToNoteName(freq) + ' (' + Math.round(freq) + 'Hz)';
 }
 
 // ============================================================
@@ -1884,6 +3100,61 @@ function getCurrentNoteName(freq) {
 let backingCtx = null;
 let backingSource = null;  // AudioBufferSourceNode for the MP3
 let audioBufferCache = {}; // song key → AudioBuffer (preloaded)
+let backingStartTime = null;
+let backingLoadId = 0;
+let isStartingSong = false;
+const GAME_START_DELAY = 1.7; // show approaching notes even for songs with no intro
+
+let guideEnabled = localStorage.getItem('oohwoo_guide') !== 'off';
+let guideVoice = localStorage.getItem('oohwoo_guideVoice') || localStorage.getItem('oohwoo_range') || 'Low';
+if (!['Low', 'Medium', 'High'].includes(guideVoice)) guideVoice = 'Low';
+const guideCheckbox = document.getElementById('guideEnabled');
+const guideVoiceSelect = document.getElementById('guideVoice');
+guideCheckbox.checked = guideEnabled;
+guideVoiceSelect.value = guideVoice;
+guideCheckbox.addEventListener('change', () => {
+  guideEnabled = guideCheckbox.checked;
+  localStorage.setItem('oohwoo_guide', guideEnabled ? 'on' : 'off');
+});
+guideVoiceSelect.addEventListener('change', () => {
+  comfort = null; songPreferences={}; localStorage.removeItem('oohwoo_comfort_v1'); localStorage.setItem('oohwoo_song_keys_v1','{}');
+  guideVoice = guideVoiceSelect.value;
+  localStorage.setItem('oohwoo_guideVoice', guideVoice);
+  stopPreview(); updateRangeDisplay(); updateComfortUI();
+});
+
+function guideFrequency(ratio, songKey, voice = guideVoice) {
+  // One selected key for guide, scoring and backing; octave choice only changes register.
+  return hzOf(songTonicMidi(songKey) + songShift(songKey) + melodySemitones(ratio));
+}
+
+function scheduleGuide(ctx, songKey, startTime) {
+  const song = SONG_DATA[songKey];
+  const notes = buildPipes(song.notes, song.introOffset);
+  const guideGain = ctx.createGain();
+  guideGain.gain.value = 0.17;
+  guideGain.connect(ctx.destination);
+  notes.forEach((note, i) => {
+    const when = startTime + note.t;
+    const duration = note.end === undefined
+      ? Math.max(0.08, Math.min(1.25, ((notes[i + 1]?.t ?? note.t + 0.8) - note.t) * 0.85))
+      : note.end - note.t;
+    const tone = ctx.createOscillator();
+    const envelope = ctx.createGain();
+    tone.type = 'triangle';
+    tone.frequency.value = note.midi === undefined ? guideFrequency(note.ratio, songKey)
+      : hzOf(note.midi + songShift(songKey));
+    envelope.gain.setValueAtTime(0, when);
+    envelope.gain.linearRampToValueAtTime(1, when + 0.02);
+    envelope.gain.setValueAtTime(1, when + Math.max(0.02, duration - 0.05));
+    envelope.gain.linearRampToValueAtTime(0, when + duration);
+    tone.connect(envelope);
+    envelope.connect(guideGain);
+    tone.onended = () => { tone.disconnect(); envelope.disconnect(); };
+    tone.start(when);
+    tone.stop(when + duration);
+  });
+}
 
 // ── Song preview (menu only) ──────────────────────────────────
 let previewCtx = null;
@@ -1909,8 +3180,9 @@ function playPreview(songKey) {
   if (!song || !song.audio) return;
   try {
     previewCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const context = previewCtx;
     const startPreview = (buf) => {
-      if (!previewCtx) return;
+      if (previewCtx !== context) return;
       // Fade-in gain node
       const gain = previewCtx.createGain();
       gain.gain.setValueAtTime(0, previewCtx.currentTime);
@@ -1926,19 +3198,7 @@ function playPreview(songKey) {
       gain.gain.linearRampToValueAtTime(0, previewCtx.currentTime + 10);
       previewTimer = setTimeout(stopPreview, 10000);
     };
-    const cached = audioBufferCache[songKey];
-    if (cached) {
-      startPreview(cached);
-    } else {
-      fetch(song.audio)
-        .then(r => r.arrayBuffer())
-        .then(ab => previewCtx.decodeAudioData(ab))
-        .then(decoded => {
-          audioBufferCache[songKey] = decoded;
-          startPreview(decoded);
-        })
-        .catch(e => console.warn('Preview load failed:', e));
-    }
+    loadSongBuffer(songKey, previewCtx).then(startPreview).catch(e => console.warn('Preview load failed:', e));
   } catch(e) {
     console.warn('Preview failed:', e);
   }
@@ -1948,7 +3208,7 @@ let currentSong = 'twinkle'; // track which song is playing
 
 // ── Song catalogue (drives the carousel) ────────────────────────────────────
 const SONGS = [
-  { id:'twinkle',      emoji:'⭐', title:'Twinkle Twinkle Little Star',           titleCn:'一闪一闪亮晶晶',            difficulty:'Beginner',     pipes:16, duration:'1:00' },
+  { id:'twinkle',      emoji:'⭐', title:'Twinkle Twinkle Little Star',           titleCn:'一闪一闪亮晶晶',            difficulty:'Reference verse · listening review pending', pipes:TWINKLE_CHART.notes.length, duration:Math.ceil(TWINKLE_CHART.level.end)+'s' },
   { id:'brotherjohn',  emoji:'🐯', title:'Brother John',                          titleCn:'两只老虎',                   difficulty:'Beginner',     pipes:32, duration:'1:47' },
   { id:'humptydumpty', emoji:'🥚', title:'Humpty Dumpty',                         titleCn:'胖蛋儿',                     difficulty:'Beginner',     pipes:28, duration:'0:50' },
   { id:'headshoulders',emoji:'🙆', title:'Head Shoulders Knees & Toes',           titleCn:'头肩膀膝盖脚',               difficulty:'Beginner',     pipes:22, duration:'0:40' },
@@ -1992,7 +3252,7 @@ function renderCarousel(direction) {
       <div class="carousel-emoji">${song.emoji}</div>
       <div class="carousel-title">${mainTitle}</div>
       ${subtitle ? `<div class="carousel-title-cn">${subtitle}</div>` : ''}
-      <div class="carousel-meta">${song.difficulty} · ${song.pipes} pipes · ${song.duration}</div>
+      <div class="carousel-meta">${song.id === 'twinkle' ? 'Reference verse' : 'Playable arrangement'} · ${SONG_DATA[song.id].notes.length} notes · ${Math.ceil((SONG_DATA[song.id].chart?.level ?? SONG_DATA[song.id].playLevel).end)}s${song.id === 'twinkle' ? '' : ' · Timing needs playtest'}</div>
     `;
     if (direction) {
       card.classList.add(direction === 'next' ? 'slide-in-left' : 'slide-in-right');
@@ -2010,6 +3270,7 @@ function renderCarousel(direction) {
     update();
     playPreview(SONGS[carouselIndex].id);
   }
+  updateComfortUI();
 }
 
 function carouselNext() {
@@ -2474,7 +3735,7 @@ const CHAN_MALI_CHAN_NOTES = [
 // introOffset = seconds of instrumental intro before singing starts in the MP3.
 // Measured automatically from Demucs-separated vocal tracks; fine-tune by ear if needed.
 const SONG_DATA = {
-  twinkle:     { audio: 'audio/1. Twinkle Twinkle Little Star.mp3',       introOffset: 10.29, get notes() { return TWINKLE_NOTES; } },
+  twinkle:     { audio: 'audio/1. Twinkle Twinkle Little Star.mp3', chart: TWINKLE_CHART, introOffset: 0, get notes() { return TWINKLE_NOTES; } },
   brotherjohn: { audio: 'audio/2. Brother John - Two Tigers.mp3',          introOffset: 17.28, get notes() { return BROTHER_JOHN_NOTES; } },
   humptydumpty:{ audio: 'audio/3. Humpty Dumpty.mp3',                      introOffset: 14.16, get notes() { return HUMPTY_DUMPTY_NOTES; } },
   headshoulders:{ audio: 'audio/4. Head Shoulders Knees Toes.mp3',         introOffset: 15.72, get notes() { return HEAD_SHOULDERS_NOTES; } },
@@ -2498,47 +3759,134 @@ const SONG_DATA = {
   chanmalichan:{ audio: 'audio/22. Chan Mali Chan.mp3',                    introOffset:  9.31, get notes() { return CHAN_MALI_CHAN_NOTES; } },
 };
 
-function playBackingTrack() {
-  const song = SONG_DATA[currentSong] || SONG_DATA.twinkle;
-  if (!song.audio) return;
+// Adapt existing catalogue arrangements; estimated holds are not a recording audit.
+Object.entries(SONG_DATA).forEach(([key, song]) => {
+  song.chartStatus = key === 'twinkle' ? TWINKLE_CHART.status : 'legacy-unverified';
+  if (song.chart) return;
+  const original=song.notes;
+  song.prototypeNotes=original;
+  const notes=original.map((n,i) => {
+    const midi=songTonicMidi(key)+Math.round(melodySemitones(n.ratio));
+    const duration=Math.max(.08,Math.min(1.25,((original[i+1]?.t ?? n.t+.8)-n.t)*.85));
+    return {...n,midi,note:freqToNoteName(hzOf(midi)),end:n.end ?? n.t+duration,
+      id:`${key}-${i}`,phrase:`${key}-phrase-${Math.floor(i/7)}`};
+  });
+  Object.defineProperty(song,'notes',{get:()=>notes,configurable:true});
+  song.lyricPhrases=[];
+  for(let i=0;i<notes.length;i+=7) song.lyricPhrases.push([i,Math.min(i+6,notes.length-1)]);
+  const end=notes.at(-1).end+song.introOffset+.8;
+  song.playLevel={start:0,end,fadeStart:end-.6};
+});
+
+async function loadSongBuffer(songKey, ctx) {
+  const shift = SONG_DATA[songKey]?.chart ? backingKey(songShift(songKey)) : 0;
+  const cacheKey = songKey + ':' + shift;
+  const cached = audioBufferCache[cacheKey] || (shift === 0 && audioBufferCache[songKey]);
+  if (cached) return cached;
+
+  const song = SONG_DATA[songKey] || SONG_DATA.twinkle;
+  const asset = shift === 0 ? song.audio : `audio/comfort/twinkle-key-${shift}.mp3`;
+  const response = await fetch(asset);
+  if (!response.ok) throw new Error(`Audio request failed (${response.status})`);
+  const encoded = await response.arrayBuffer();
+  const decoded = await ctx.decodeAudioData(encoded);
+  audioBufferCache[cacheKey] = decoded;
+  return decoded;
+}
+
+async function playBackingTrack() {
+  const songKey = currentSong;
+  const song = SONG_DATA[songKey] || SONG_DATA.twinkle;
+  if (!song.audio) throw new Error('This song has no backing track.');
+
+  const loadId = ++backingLoadId;
+  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+  const ctx = new AudioContextClass();
+  backingCtx = ctx;
 
   try {
-    backingCtx = new (window.AudioContext || window.webkitAudioContext)();
-    const buf = audioBufferCache[currentSong];
-    if (buf) {
-      _startAudioBuffer(buf);
-    } else {
-      fetch(song.audio)
-        .then(r => r.arrayBuffer())
-        .then(ab => backingCtx.decodeAudioData(ab))
-        .then(decoded => {
-          audioBufferCache[currentSong] = decoded;
-          if (backingCtx) _startAudioBuffer(decoded); // still playing?
-        })
-        .catch(e => console.warn('Audio load failed:', e));
+    if (ctx.state === 'suspended') await ctx.resume();
+    const buf = await loadSongBuffer(songKey, ctx);
+    if (loadId !== backingLoadId || backingCtx !== ctx) {
+      throw new DOMException('Song start cancelled', 'AbortError');
     }
-  } catch (e) {
-    console.warn('Audio playback failed:', e);
+
+    const source = ctx.createBufferSource();
+    source.buffer = buf;
+    const backingGain = ctx.createGain();
+    backingGain.gain.value = guideEnabled ? 0.45 : 0.85;
+    source.connect(backingGain);
+    backingGain.connect(ctx.destination);
+
+    backingSource = source;
+    backingStartTime = ctx.currentTime + GAME_START_DELAY;
+    if (guideEnabled) scheduleGuide(ctx, songKey, backingStartTime);
+    if (song.chart || song.playLevel) {
+      const level = song.chart?.level ?? song.playLevel;
+      backingGain.gain.setValueAtTime(backingGain.gain.value, backingStartTime);
+      backingGain.gain.setValueAtTime(backingGain.gain.value, backingStartTime + level.fadeStart);
+      backingGain.gain.linearRampToValueAtTime(0, backingStartTime + level.end);
+      source.start(backingStartTime, level.start, level.end - level.start);
+    } else {
+      source.start(backingStartTime);
+    }
+  } catch (error) {
+    if (backingCtx === ctx) {
+      backingCtx = null;
+      backingSource = null;
+      backingStartTime = null;
+    }
+    if (ctx.state !== 'closed') ctx.close().catch(() => {});
+    throw error;
   }
 }
 
-function _startAudioBuffer(buf) {
-  if (!backingCtx) return;
-  backingSource = backingCtx.createBufferSource();
-  backingSource.buffer = buf;
-  backingSource.connect(backingCtx.destination);
-  // Start playback after the same 2.5s intro delay the game uses
-  backingSource.start(backingCtx.currentTime + 2.5);
+function getBackingTrackTime() {
+  if (!backingCtx || backingStartTime === null) return null;
+  return backingCtx.currentTime - backingStartTime;
 }
 
 function stopBackingTrack() {
+  backingLoadId++;
+  backingStartTime = null;
   if (backingSource) {
     try { backingSource.stop(); } catch(e) {}
     backingSource = null;
   }
   if (backingCtx) {
-    backingCtx.close();
+    const ctx = backingCtx;
     backingCtx = null;
+    ctx.close().catch(() => {});
+  }
+}
+
+function setLaunchButtonLoading(button, loading) {
+  if (!button) return;
+  if (!button.dataset.idleText) button.dataset.idleText = button.textContent;
+  button.disabled = loading;
+  button.textContent = loading ? 'Loading song...' : button.dataset.idleText;
+}
+
+async function launchCurrentSong(button) {
+  if (isStartingSong) return;
+  isStartingSong = true;
+  setLaunchButtonLoading(button, true);
+  stopBackingTrack();
+
+  try {
+    if (!SONG_DATA[currentSong]?.notes.length || !comfortFits(currentSong)) {
+      throw new Error('This song does not yet fit your comfortable range. Retry setup or reset comfort settings.');
+    }
+    await playBackingTrack();
+    startGame(currentSong);
+  } catch (error) {
+    if (error.name !== 'AbortError') {
+      console.warn('Audio playback failed:', error);
+      alert(error.message || 'The song could not be loaded. Check the local server and try again.');
+    }
+  } finally {
+    isStartingSong = false;
+    setLaunchButtonLoading(button, false);
   }
 }
 
@@ -2564,20 +3912,13 @@ document.getElementById('btnNextSong').addEventListener('click', carouselNext);
 })();
 
 // Play selected song
-document.getElementById('btnPlaySong').addEventListener('click', () => {
+document.getElementById('btnPlaySong').addEventListener('click', async (event) => {
   const song = SONGS[carouselIndex];
   stopPreview();
   if (!micReady) initMic();
-  const hasCalibration = localStorage.getItem('oohwoo_minFreq');
-  if (!hasCalibration) {
-    currentSong = song.id;
-    startCalibration();
-  } else {
-    currentSong = song.id;
-    stopBackingTrack();
-    playBackingTrack();
-    startGame(song.id);
-  }
+  // Musical lanes accept any comfortable octave; range calibration is optional.
+  currentSong = song.id;
+  await launchCurrentSong(event.currentTarget);
 });
 
 // Tapping the card itself also triggers play
@@ -2586,9 +3927,8 @@ document.getElementById('carouselCard').addEventListener('click', () => {
 });
 
 document.getElementById('btnSkipCal').addEventListener('click', () => {
-  cancelAnimationFrame(calAnimId);
-  isCalibrating = false;
-  calQuickTestRunning = false;
+  stopComfortSetup();
+  state = 'select';
   localStorage.setItem('oohwoo_minFreq', playerMinFreq);
   localStorage.setItem('oohwoo_maxFreq', playerMaxFreq);
   showScreen('select');
@@ -2598,55 +3938,34 @@ document.getElementById('btnSkipCal').addEventListener('click', () => {
   requestAnimationFrame(drawSelectBg);
 });
 
-// Range picker buttons (phase 0) — save immediately, show live mic tester
+document.getElementById('btnFineTune').addEventListener('click', startCalPhase1);
+for (const [id,delta] of [['calTooHigh',-1],['calTooLow',1]]) {
+  document.getElementById(id).addEventListener('click',()=>{
+    if (calPhase !== 0) return;
+    calBaseMidi=Math.max(40,Math.min(78,calBaseMidi+delta));
+    document.getElementById('calSetupStatus').textContent=`Starting note: ${freqToNoteName(hzOf(calBaseMidi))}. Try matching these notes.`;
+  });
+}
 document.querySelectorAll('.cal-range-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     calRangeChoice = btn.dataset.range;
-    document.querySelectorAll('.cal-range-btn').forEach(b => b.classList.remove('selected'));
-    btn.classList.add('selected');
-    // Save range immediately
-    const base = CAL_RANGE_FREQS[calRangeChoice];
-    playerMinFreq = Math.round(base * 0.95);
-    playerMaxFreq = Math.round(base * 2.0 * 1.05);
-    localStorage.setItem('oohwoo_minFreq', playerMinFreq);
-    localStorage.setItem('oohwoo_maxFreq', playerMaxFreq);
-    localStorage.setItem('oohwoo_range', calRangeChoice);
-    // Play the Do note as audio confirmation
-    if (audioCtx) calPlayNote(base, 0.8);
-    // Show live mic tester + Fine-tune button
-    document.getElementById('calQuickTest').style.display = 'block';
-    document.getElementById('btnFineTune').style.display = 'inline-block';
-    startCalQuickTest();
+    calBaseMidi = midiOf(CAL_RANGE_FREQS[calRangeChoice]);
+    updateCalRangeSelection();
+    document.getElementById('calSetupStatus').textContent = `Starting note: ${freqToNoteName(hzOf(calBaseMidi))}. Match the notes you hear; your saved settings change only after a successful check.`;
   });
 });
-
-// Live mic tester inside calibration screen
-let calQuickTestRunning = false;
-function startCalQuickTest() {
-  if (calQuickTestRunning) return;
-  calQuickTestRunning = true;
-  function tick() {
-    if (!isCalibrating || calPhase !== 0) { calQuickTestRunning = false; return; }
-    const pitch = detectPitch();
-    const vol = Math.min(100, debugRms * 200);
-    document.getElementById('cqHz').textContent   = 'Hz: ' + (debugHz > 0 ? Math.round(debugHz) + (debugHz >= MIN_FREQ && debugHz <= MAX_FREQ ? ' ✓' : ' ✗ out of range') : '—');
-    document.getElementById('cqNote').textContent = 'Note: ' + (pitch > 0 ? getCurrentNoteName(pitch) : '—');
-    document.getElementById('cqAc').textContent   = 'AC: ' + (debugAcMax > 0 ? debugAcMax.toFixed(3) + (debugAcMax >= 0.75 ? ' ✓' : ' ✗ weak') : '—');
-    document.getElementById('cqVolBar').style.width = vol + '%';
-    requestAnimationFrame(tick);
-  }
-  requestAnimationFrame(tick);
-}
-
-// Fine-tune button → go to Do Re Mi phase
-document.getElementById('btnFineTune').addEventListener('click', () => startCalPhase1());
+for (const id of ['btnTooHigh','overTooHigh','completeTooHigh']) document.getElementById(id).addEventListener('click',()=>adjustSongKey(-1));
+for (const id of ['btnTooLow','overTooLow','completeTooLow']) document.getElementById(id).addEventListener('click',()=>adjustSongKey(1));
+document.getElementById('btnResetComfort').addEventListener('click',()=>{
+  comfort=null; songPreferences={}; localStorage.removeItem('oohwoo_comfort_v1');
+  localStorage.setItem('oohwoo_song_keys_v1','{}'); updateRangeDisplay(); updateComfortUI();
+});
 
 // Escape key exits calibration
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && isCalibrating) {
-    cancelAnimationFrame(calAnimId);
-    isCalibrating = false;
-    calQuickTestRunning = false;
+    stopComfortSetup();
+    state = 'select';
     showScreen('select');
     renderCarousel();
     updateRangeDisplay();
@@ -2654,15 +3973,11 @@ document.addEventListener('keydown', e => {
     requestAnimationFrame(drawSelectBg);
   }
 });
-document.getElementById('btnRestart').addEventListener('click', () => {
-  stopBackingTrack();
-  playBackingTrack();
-  startGame(currentSong);
+document.getElementById('btnRestart').addEventListener('click', async (event) => {
+  await launchCurrentSong(event.currentTarget);
 });
-document.getElementById('btnPlayAgain').addEventListener('click', () => {
-  stopBackingTrack();
-  playBackingTrack();
-  startGame(currentSong);
+document.getElementById('btnPlayAgain').addEventListener('click', async (event) => {
+  await launchCurrentSong(event.currentTarget);
 });
 document.getElementById('btnMenu').addEventListener('click', () => {
   stopBackingTrack();
@@ -2687,9 +4002,6 @@ document.getElementById('btnPlay').addEventListener('click', () => {
   requestAnimationFrame(drawSelectBg);
 });
 document.getElementById('btnSetupVoice').addEventListener('click', () => {
-  if (!micReady) initMic();
-  localStorage.removeItem('oohwoo_minFreq');
-  localStorage.removeItem('oohwoo_maxFreq');
   startCalibration();
 });
 
@@ -2709,14 +4021,9 @@ window.addEventListener('resize', resizeGame);
 
 // Show song select immediately on all devices.
 // Mic permission is requested when the user taps a song card (user gesture).
-// Desktop also tries to init mic early (lenient browsers allow this).
 showScreen('main');
-const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
-if (!isMobile) {
-  initMic().then(startMicTester);
-} else {
-  startMicTester(); // show live pitch tester; mic will init on song card tap
-}
+updateMicToggleUI();
+startMicTester(); // permission is requested only by Play, setup or Enable mic
 
 function freqToNoteName(freq) {
   // Returns closest note name like "C3", "G4" etc.
@@ -2741,31 +4048,37 @@ function voiceLabel(minHz, maxHz) {
 function updateRangeDisplay() {
   const el = document.getElementById('rangeDisplay');
   if (!el) return;
-  const hasCalibration = localStorage.getItem('oohwoo_minFreq');
+  const hasCalibration = comfort;
   if (!hasCalibration) {
-    el.textContent = 'not set up yet';
+    el.textContent = guideVoice + ' starting register · setup optional';
     return;
   }
   const low = freqToNoteName(playerMinFreq);
   const high = freqToNoteName(playerMaxFreq);
-  const label = voiceLabel(playerMinFreq, playerMaxFreq);
-  el.textContent = `${label} · ${low} → ${high}`;
+  el.textContent = comfort.matched
+    ? `Matched range: ${freqToNoteName(hzOf(comfort.low))} → ${freqToNoteName(hzOf(comfort.high))}`
+    : 'Previous range estimate · redo guided setup';
 }
 updateRangeDisplay();
 
 
 function updateMicToggleUI() {
-  const label = micEnabled ? '🎤 Mic ON' : '🎹 Mic OFF';
-  const hudLabel = micEnabled ? '🎤 ON' : '🎹 OFF';
+  const label = micEnabled ? (micReady ? '🎤 Mic ON' : '🎤 Enable mic') : '🎹 Mic OFF';
+  const hudLabel = micEnabled ? (micReady ? '🎤 ON' : '🎤 Enable mic') : '🎹 OFF';
   const border = micEnabled ? '#52b788' : '#FFA500';
   document.getElementById('btnMicToggle').textContent = label;
+  document.getElementById('mtPrompt').textContent = !micEnabled ? '🎹 Mic off — use keys 1–8' : micReady ? '🎤 Mic Test — sing now!' : '🎤 Enable mic, then sing';
   const hud = document.getElementById('btnMicToggleHud');
   hud.textContent = hudLabel;
   hud.style.borderColor = border;
 }
 
 function toggleMic() {
+  // An unavailable microphone can be retried without toggling through OFF.
+  if (micEnabled && !micReady) { initMic().then(startMicTester); return; }
   micEnabled = !micEnabled;
+  if (micEnabled) initMic().then(startMicTester);
+  else { clearPitchReading('mic-disabled'); setMicIndicator('off'); }
   birdX = micEnabled ? BIRD_X_MIC : BIRD_X_KEY;
   updateMicToggleUI();
 }
@@ -2774,19 +4087,21 @@ document.getElementById('btnMicToggle').addEventListener('click', toggleMic);
 document.getElementById('btnMicToggleHud').addEventListener('click', toggleMic);
 
 function startMicTester() {
+  if (micTesterRunning) return;
+  micTesterRunning = true;
   const elRms  = document.getElementById('mtRms');
   const elHz   = document.getElementById('mtHz');
   const elNote = document.getElementById('mtNote');
   const elAc   = document.getElementById('mtAc');
   const elVol  = document.getElementById('mtVolBar');
   function tick() {
-    if (state !== 'select' && state !== 'main') return; // stop when game starts
+    if (state !== 'select' && state !== 'main') { micTesterRunning = false; return; }
     const pitch = detectPitch();
     const vol = Math.min(100, debugRms * 200);
     elRms.textContent  = 'RMS: ' + debugRms.toFixed(4) + (debugRms > 0.003 ? ' ✓' : ' ✗ too quiet');
     elHz.textContent   = 'Hz: '  + (debugHz > 0 ? Math.round(debugHz) + (debugHz >= MIN_FREQ && debugHz <= MAX_FREQ ? ' ✓' : ' ✗ out of range') : '—');
     elNote.textContent = 'Note: ' + (pitch > 0 ? getCurrentNoteName(pitch) : '—');
-    elAc.textContent   = 'AC: '  + (debugAcMax > 0 ? debugAcMax.toFixed(3) + (debugAcMax >= 0.75 ? ' ✓' : ' ✗ <0.75 rejected') : '—');
+    elAc.textContent   = 'Clarity: ' + (debugAcMax > 0 ? debugAcMax.toFixed(3) : '—') + (pitchReading.voiced ? ' ✓' : ' · '+pitchReading.reason);
     elVol.style.width  = vol + '%';
     // Feed debug recorder if active
     if (debugRecording) {
@@ -2796,7 +4111,15 @@ function startMicTester() {
         hz: debugHz,
         ac: debugAcMax,
         note: pitch > 0 ? getCurrentNoteName(pitch) : '',
-        pass: pitch > 0 ? 1 : 0
+        pass: pitch > 0 ? 1 : 0,
+        reason: pitchReading.reason,
+        computeMs: pitchReading.computeMs,
+        windowMs: pitchReading.windowMs,
+        windowCenterAgeMs: pitchReading.windowCenterAgeMs,
+        pollIntervalMs: pitchReading.pollIntervalMs,
+        audioTime: pitchReading.audioTime,
+        captureLatencyMs: micTiming.captureLatencyMs,
+        sampleRate: micTiming.sampleRate
       });
     }
     requestAnimationFrame(tick);
@@ -2849,19 +4172,20 @@ function finishDebugLog() {
   const maxHz = detected.length ? Math.max(...detected.map(r => r.hz)) : 0;
   const avgRms = debugLog.reduce((s,r) => s + r.rms, 0) / debugLog.length;
   const avgAc  = debugLog.reduce((s,r) => s + r.ac,  0) / debugLog.length;
-  const rejectedLowAc  = debugLog.filter(r => !r.pass && r.ac > 0 && r.ac < 0.75).length;
+  const rejectedLowAc  = debugLog.filter(r => !r.pass && r.reason === 'aperiodic').length;
   const rejectedLowRms = debugLog.filter(r => r.rms < 0.003).length;
-  const rejectedRange  = debugLog.filter(r => !r.pass && r.hz > 0 && (r.hz < MIN_FREQ || r.hz > MAX_FREQ)).length;
+  const rejectedRange  = debugLog.filter(r => !r.pass && r.reason === 'out-of-range').length;
 
   status.innerHTML =
     `${debugLog.length} frames | ${detected.length} detected (${Math.round(detected.length/debugLog.length*100)}%)<br>` +
     `Hz range: ${Math.round(minHz)}–${Math.round(maxHz)} avg ${Math.round(avgHz)}<br>` +
-    `avg RMS ${avgRms.toFixed(4)} | avg AC ${avgAc.toFixed(3)}<br>` +
-    `Rejected: lowAC=${rejectedLowAc} lowRMS=${rejectedLowRms} outRange=${rejectedRange}`;
+    `avg RMS ${avgRms.toFixed(4)} | avg clarity ${avgAc.toFixed(3)}<br>` +
+    `Rejected: aperiodic=${rejectedLowAc} quiet=${rejectedLowRms} outRange=${rejectedRange}<br>` +
+    `Compute avg ${(debugLog.reduce((sum,r)=>sum+r.computeMs,0)/debugLog.length).toFixed(2)}ms; device input latency ${micTiming.captureLatencyMs === null ? 'unknown' : micTiming.captureLatencyMs.toFixed(1)+'ms'} (reported, not measured)`;
 
   // Build CSV
-  const rows = ['t_ms,rms,hz,ac,note,pass'];
-  for (const r of debugLog) rows.push(`${r.t},${r.rms.toFixed(5)},${Math.round(r.hz)},${r.ac.toFixed(4)},${r.note},${r.pass}`);
+  const rows = ['t_ms,rms,hz,confidence,note,voiced,reason,compute_ms,window_ms,window_center_age_ms,poll_interval_ms,capture_audio_time_s,reported_input_latency_ms,sample_rate'];
+  for (const r of debugLog) rows.push([r.t,r.rms.toFixed(5),r.hz.toFixed(2),r.ac.toFixed(4),r.note,r.pass,r.reason,r.computeMs.toFixed(3),r.windowMs.toFixed(2),r.windowCenterAgeMs.toFixed(2),r.pollIntervalMs ?? '',r.audioTime ?? '',r.captureLatencyMs ?? '',r.sampleRate ?? ''].join(','));
   const csv = rows.join('\n');
   const blob = new Blob([csv], { type: 'text/csv' });
   const url = URL.createObjectURL(blob);

@@ -1,0 +1,64 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Twinkle verse review</title>
+<style>body{font:16px system-ui;background:#102c28;color:#eef8ef;margin:24px;max-width:1100px}button,input,select{font:inherit;padding:8px;margin:4px}button{cursor:pointer}table{border-collapse:collapse;width:100%}td,th{padding:5px;text-align:left;border-bottom:1px solid #48665c}input[type=number]{width:90px}canvas{width:100%;background:#091e1a}pre{white-space:pre-wrap}a{color:#a4eac0}.active{background:#416647}</style>
+<h1>Twinkle: one verse listening review</h1>
+<p>42 syllables in D major. Recording accuracy and the ending still need a listener’s approval. Use headphones. This tool never requests a microphone.</p>
+<p><a href="../ooh-woo-game.html">Open game</a></p>
+<button id="load">Load three recordings</button><button id="analyse" disabled>Run numerical analysis</button>
+<p id="status">Loading chart…</p>
+<label>Listen to <select id="mix"><option value="source">Original recording</option><option value="backing">Instrumental backing</option><option value="vocal">Separated vocal</option></select></label>
+<label><input id="guide" type="checkbox" checked>Chart guide (recorded octave)</label>
+<label>Section <select id="section"><option value="all">Whole verse including ending</option></select></label>
+<label><input id="loop" type="checkbox">Loop section</label>
+<button id="play" disabled>Play section</button><button id="stop">Stop</button>
+<p id="clock">Stopped</p><canvas id="wave" width="1100" height="140"></canvas>
+<p>Green bars show chart notes; gaps are authored rests. Waveform is the selected recording. Onset/end edits below affect this preview only. Export the draft for a contributor to validate and incorporate; exporting does not approve or save it into the game.</p>
+<button id="export">Export edited draft JSON</button>
+<table><thead><tr><th>Note</th><th>Lyric</th><th>Pitch MIDI</th><th>Onset (s)</th><th>End (s)</th><th>Phrase</th></tr></thead><tbody id="rows"></tbody></table>
+<pre id="report"></pre>
+<script>
+let chart, buffers={}, context, playing=[], loopTimer, origin, bounds;
+const $=id=>document.getElementById(id);
+async function init(){
+ const html=await(await fetch('../ooh-woo-game.html')).text();
+ chart=JSON.parse(new DOMParser().parseFromString(html,'text/html').getElementById('twinkle-chart').textContent);
+ chart.phrases.forEach(p=>{const o=new Option(`Phrase ${p.id}: ${chart.notes.slice(p.firstNote,p.lastNote+1).map(n=>n.lyric).join(' ')}`,p.id);$('section').add(o)});
+ $('rows').innerHTML=chart.notes.map((n,i)=>`<tr id="row${i}"><td>${n.id}</td><td>${n.lyric}</td>${['midi','onset','end'].map(k=>`<td><input aria-label="${n.id} ${k}" type="number" step="${k==='midi'?1:.01}" data-index="${i}" data-field="${k}" value="${n[k]}"></td>`).join('')}<td>${n.phrase}</td></tr>`).join('');
+ $('status').textContent=`Chart ready. ${chart.notes.length} notes; end ${chart.level.end}s. Listening pending.`;
+ draw();
+}
+function stop(){clearTimeout(loopTimer);for(const n of playing){try{n.stop()}catch{}}playing=[];origin=null;$('clock').textContent='Stopped'}
+function editedChart(){
+ const copy=JSON.parse(JSON.stringify(chart));let cursor=copy.level.start;copy.rests=[];
+ copy.notes.forEach((n,i)=>{
+  if(!Number.isInteger(n.midi)||![0,2,4,5,7,9,11,12].includes(n.midi-copy.tonicMidi)||!Number.isFinite(n.onset)||!Number.isFinite(n.end)||n.onset<cursor||n.end<=n.onset||n.end>copy.level.fadeStart)throw Error(`${n.id}: choose a D-major pitch and ordered onset/end before the fade.`);
+  n.pitch=['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'][n.midi%12]+(Math.floor(n.midi/12)-1);
+  n.timingStatus='edited-draft-pending-listening';
+  if(n.onset>cursor)copy.rests.push({start:cursor,end:n.onset,kind:i===0?'intro':i%7===0?'phrase-breath':'syllable-gap',status:'edited-draft-pending-listening'});
+  cursor=n.end;
+ });
+ copy.rests.push({start:cursor,end:copy.level.end,kind:'outro',status:'edited-draft-pending-listening'});
+ copy.level.melodyStart=copy.notes[0].onset;copy.level.melodyEnd=copy.notes.at(-1).end;
+ copy.provenance.listeningVerified=false;copy.provenance.ownerApproved=false;copy.status='edited-draft-pending-validation';return copy;
+}
+function section(){const p=chart.phrases.find(p=>p.id===Number($('section').value));return p?[Math.max(0,chart.notes[p.firstNote].onset-.45),Math.min(chart.level.end,chart.notes[p.lastNote].end+.4)]:[chart.level.start,chart.level.end]}
+function draw(time){if(!chart)return;const c=$('wave').getContext('2d'),[a,b]=section(),width=1100,x=t=>(t-a)/(b-a)*width;c.clearRect(0,0,width,140);
+ const buf=buffers[$('mix').value];if(buf){const d=buf.getChannelData(0);c.strokeStyle='#8ba99f';c.beginPath();for(let px=0;px<width;px++){let peak=0,start=Math.floor((a+(b-a)*px/width)*buf.sampleRate),end=Math.floor((a+(b-a)*(px+1)/width)*buf.sampleRate);for(let k=start;k<end;k++)peak=Math.max(peak,Math.abs(d[k]||0));c.moveTo(px,65-peak*55);c.lineTo(px,65+peak*55)}c.stroke()}
+ c.fillStyle='#58d392';chart.notes.forEach(n=>{c.fillRect(x(n.onset),130-(n.midi-62)*4,x(n.end)-x(n.onset),5)});
+ if(time!==undefined){c.fillStyle='#ffe066';c.fillRect(x(time),0,2,140)}
+}
+async function play(){stop();try{editedChart()}catch(e){$('status').textContent=e.message;return}if(!context)context=new AudioContext();await context.resume();bounds=section();origin=context.currentTime+.08;
+ const [a,b]=bounds,g=context.createGain();g.connect(context.destination);g.gain.setValueAtTime(.65,origin);
+ if(b===chart.level.end){g.gain.setValueAtTime(.65,origin+chart.level.fadeStart-a);g.gain.linearRampToValueAtTime(0,origin+b-a)}
+ const s=context.createBufferSource();s.buffer=buffers[$('mix').value];s.connect(g);s.start(origin,a,b-a);playing.push(s);
+ if($('guide').checked)chart.notes.filter(n=>n.onset>=a&&n.onset<b).forEach(n=>{const o=context.createOscillator(),e=context.createGain(),when=origin+n.onset-a,end=origin+Math.min(n.end,b)-a;o.type='triangle';o.frequency.value=440*2**((n.midi-69)/12);e.gain.setValueAtTime(0,when);e.gain.linearRampToValueAtTime(.12,when+.02);e.gain.setValueAtTime(.12,Math.max(when+.02,end-.05));e.gain.linearRampToValueAtTime(0,end);o.connect(e);e.connect(context.destination);o.start(when);o.stop(end);playing.push(o)});
+ if($('loop').checked)loopTimer=setTimeout(play,(b-a+.2)*1000);
+}
+$('load').onclick=async()=>{try{$('status').textContent='Decoding recordings…';context??=new AudioContext();for(const asset of chart.provenance.assets){buffers[asset.role]=await context.decodeAudioData(await(await fetch('../'+asset.path)).arrayBuffer())}$('status').textContent='Three recordings decoded. Ready to listen or analyse.';$('play').disabled=$('analyse').disabled=false;draw()}catch(e){$('status').textContent=e.message}};
+$('analyse').onclick=async()=>{try{let result;$('status').textContent='Analysing decoded PCM…';for(const role of ['source','backing','vocal']){const buf=buffers[role],offline=new OfflineAudioContext(1,Math.ceil(buf.duration*11025),11025),s=offline.createBufferSource();s.buffer=buf;s.connect(offline.destination);s.start();const mono=await offline.startRendering();result=await(await fetch('/analyse/'+role,{method:'POST',body:mono.getChannelData(0).buffer})).json()}$('report').textContent=JSON.stringify(result,null,2);$('status').textContent='Numerical report saved to docs/twinkle-analysis.json. This is not listening verification.'}catch(e){$('status').textContent=e.message}};
+$('play').onclick=play;$('stop').onclick=stop;$('section').onchange=()=>{stop();draw()};$('mix').onchange=()=>{stop();draw()};
+$('rows').onchange=e=>{const i=Number(e.target.dataset.index),k=e.target.dataset.field;if(k){chart.notes[i][k]=Number(e.target.value);chart.status='edited-draft-pending-validation';draw()}};
+$('export').onclick=()=>{try{const copy=editedChart(),url=URL.createObjectURL(new Blob([JSON.stringify(copy,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='twinkle-edited-draft.json';a.click();URL.revokeObjectURL(url)}catch(e){$('status').textContent=e.message}};
+setInterval(()=>{if(origin===null||origin===undefined)return;const t=bounds[0]+context.currentTime-origin;if(t>bounds[1]){if(!$('loop').checked)stop();return}$('clock').textContent=`Recording ${Math.max(0,t).toFixed(2)} s`;draw(t);chart.notes.forEach((n,i)=>$('row'+i).classList.toggle('active',t>=n.onset&&t<n.end))},50);
+init().catch(e=>$('status').textContent=e.message);
+</script></html>

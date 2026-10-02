@@ -1,0 +1,2644 @@
+{
+  "kind": "synthetic PCM through actual game detector; no lane/matching mocks",
+  "estimatorSha256": "535dfaa79d7e6a664f79eaa5fb093522d2a8cd7e27b36b0baf0124053790ba3f",
+  "cases": [
+    {
+      "name": "sine 80 amp 0.02 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 80,
+      "detectedHz": 80.00038404673174,
+      "centsError": 0.008310914781478398,
+      "confidence": 0.9999657345205396
+    },
+    {
+      "name": "sine 80 amp 0.02 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 0.9999653980845731
+    },
+    {
+      "name": "sine 80 amp 0.2 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 80,
+      "detectedHz": 80.00038403424557,
+      "centsError": 0.008310644577081484,
+      "confidence": 0.9999657345273196
+    },
+    {
+      "name": "sine 80 amp 0.2 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 0.999965398075394
+    },
+    {
+      "name": "sine 80 amp 0.6 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 80,
+      "detectedHz": 80.00038404520197,
+      "centsError": 0.008310881676915282,
+      "confidence": 0.9999657345207379
+    },
+    {
+      "name": "sine 80 amp 0.6 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 0.999965398058171
+    },
+    {
+      "name": "sine 82.41 amp 0.02 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 82.41,
+      "detectedHz": 82.41041147434774,
+      "centsError": 0.008644055609062057,
+      "confidence": 0.999946902170312
+    },
+    {
+      "name": "sine 82.41 amp 0.02 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 82.41,
+      "detectedHz": 82.41015202554547,
+      "centsError": 0.003193684721313713,
+      "confidence": 0.9999502672066171
+    },
+    {
+      "name": "sine 82.41 amp 0.2 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 82.41,
+      "detectedHz": 82.41041145630818,
+      "centsError": 0.008643676643420464,
+      "confidence": 0.999946902184332
+    },
+    {
+      "name": "sine 82.41 amp 0.2 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 82.41,
+      "detectedHz": 82.41015204124359,
+      "centsError": 0.0031940145001376373,
+      "confidence": 0.9999502671949353
+    },
+    {
+      "name": "sine 82.41 amp 0.6 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 82.41,
+      "detectedHz": 82.41041144589886,
+      "centsError": 0.008643457969905772,
+      "confidence": 0.9999469021915879
+    },
+    {
+      "name": "sine 82.41 amp 0.6 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 82.41,
+      "detectedHz": 82.41015204085716,
+      "centsError": 0.0031940063821573055,
+      "confidence": 0.9999502671947066
+    },
+    {
+      "name": "sine 110 amp 0.02 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 110,
+      "detectedHz": 110.00013969286027,
+      "centsError": 0.0021985534776272184,
+      "confidence": 0.9999036897420304
+    },
+    {
+      "name": "sine 110 amp 0.02 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 110,
+      "detectedHz": 109.999110017163,
+      "centsError": -0.014007043850186168,
+      "confidence": 0.9998996842482749
+    },
+    {
+      "name": "sine 110 amp 0.2 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 110,
+      "detectedHz": 110.00013961632317,
+      "centsError": 0.0021973489005826094,
+      "confidence": 0.9999036896838828
+    },
+    {
+      "name": "sine 110 amp 0.2 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 110,
+      "detectedHz": 109.99911002633863,
+      "centsError": -0.014006899438422846,
+      "confidence": 0.9998996842561151
+    },
+    {
+      "name": "sine 110 amp 0.6 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 110,
+      "detectedHz": 110.00013966893336,
+      "centsError": 0.0021981769046845014,
+      "confidence": 0.9999036897243936
+    },
+    {
+      "name": "sine 110 amp 0.6 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 110,
+      "detectedHz": 109.99911003633021,
+      "centsError": -0.014006742184915743,
+      "confidence": 0.9998996842645274
+    },
+    {
+      "name": "sine 130.81 amp 0.02 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 130.81,
+      "detectedHz": 130.81020397126412,
+      "centsError": 0.0026995009719354038,
+      "confidence": 0.9997843904202134
+    },
+    {
+      "name": "sine 130.81 amp 0.02 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 130.81,
+      "detectedHz": 130.80941550080246,
+      "centsError": -0.007735701958638532,
+      "confidence": 0.9997800324420227
+    },
+    {
+      "name": "sine 130.81 amp 0.2 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 130.81,
+      "detectedHz": 130.81020395703922,
+      "centsError": 0.00269931270992861,
+      "confidence": 0.9997843904075302
+    },
+    {
+      "name": "sine 130.81 amp 0.2 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 130.81,
+      "detectedHz": 130.80941550908886,
+      "centsError": -0.007735592289675033,
+      "confidence": 0.99978003244976
+    },
+    {
+      "name": "sine 130.81 amp 0.6 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 130.81,
+      "detectedHz": 130.81020391958768,
+      "centsError": 0.002698817049772049,
+      "confidence": 0.9997843903699077
+    },
+    {
+      "name": "sine 130.81 amp 0.6 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 130.81,
+      "detectedHz": 130.80941548887097,
+      "centsError": -0.0077358598693064865,
+      "confidence": 0.9997800324283882
+    },
+    {
+      "name": "sine 220 amp 0.02 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 220,
+      "detectedHz": 220.0014827391153,
+      "centsError": 0.011667999054387491,
+      "confidence": 0.9999016719081882
+    },
+    {
+      "name": "sine 220 amp 0.02 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 220,
+      "detectedHz": 219.9955647434885,
+      "centsError": -0.034902474954685854,
+      "confidence": 0.9998995578111822
+    },
+    {
+      "name": "sine 220 amp 0.2 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 220,
+      "detectedHz": 220.0014827540546,
+      "centsError": 0.011668116614606781,
+      "confidence": 0.9999016719133708
+    },
+    {
+      "name": "sine 220 amp 0.2 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 220,
+      "detectedHz": 219.99556469363563,
+      "centsError": -0.034902867267082444,
+      "confidence": 0.999899557791306
+    },
+    {
+      "name": "sine 220 amp 0.6 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 220,
+      "detectedHz": 220.0014827513541,
+      "centsError": 0.01166809536411554,
+      "confidence": 0.999901671912986
+    },
+    {
+      "name": "sine 220 amp 0.6 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 220,
+      "detectedHz": 219.99556474914544,
+      "centsError": -0.03490243043782045,
+      "confidence": 0.9998995578135345
+    },
+    {
+      "name": "sine 293.66 amp 0.02 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 293.66,
+      "detectedHz": 293.6548730689327,
+      "centsError": -0.030225414128445635,
+      "confidence": 0.9970547954829129
+    },
+    {
+      "name": "sine 293.66 amp 0.02 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 293.66,
+      "detectedHz": 293.65782897854086,
+      "centsError": -0.012799019835351056,
+      "confidence": 0.9969805051568329
+    },
+    {
+      "name": "sine 293.66 amp 0.2 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 293.66,
+      "detectedHz": 293.6548730557175,
+      "centsError": -0.030225492038612,
+      "confidence": 0.9970547955023141
+    },
+    {
+      "name": "sine 293.66 amp 0.2 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 293.66,
+      "detectedHz": 293.65782896054213,
+      "centsError": -0.012799125945345874,
+      "confidence": 0.9969805051880481
+    },
+    {
+      "name": "sine 293.66 amp 0.6 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 293.66,
+      "detectedHz": 293.65487311101685,
+      "centsError": -0.0302251660226395,
+      "confidence": 0.9970547954103096
+    },
+    {
+      "name": "sine 293.66 amp 0.6 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 293.66,
+      "detectedHz": 293.65782893845017,
+      "centsError": -0.012799256186546547,
+      "confidence": 0.9969805052265159
+    },
+    {
+      "name": "sine 440 amp 0.02 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 440,
+      "detectedHz": 440.0009758266945,
+      "centsError": 0.003839505741512887,
+      "confidence": 0.9998978923795407
+    },
+    {
+      "name": "sine 440 amp 0.02 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 440,
+      "detectedHz": 440.0165447933494,
+      "centsError": 0.06509629791409131,
+      "confidence": 0.9998983420007067
+    },
+    {
+      "name": "sine 440 amp 0.2 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 440,
+      "detectedHz": 440.00097584108966,
+      "centsError": 0.0038395623805306013,
+      "confidence": 0.999897892384595
+    },
+    {
+      "name": "sine 440 amp 0.2 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 440,
+      "detectedHz": 440.01654476498976,
+      "centsError": 0.06509618633371593,
+      "confidence": 0.9998983419970633
+    },
+    {
+      "name": "sine 440 amp 0.6 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 440,
+      "detectedHz": 440.0009758302682,
+      "centsError": 0.0038395198024738612,
+      "confidence": 0.9998978923811963
+    },
+    {
+      "name": "sine 440 amp 0.6 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 440,
+      "detectedHz": 440.0165448028811,
+      "centsError": 0.06509633541660473,
+      "confidence": 0.9998983420025231
+    },
+    {
+      "name": "sine 880 amp 0.02 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 880,
+      "detectedHz": 879.9422661079968,
+      "centsError": -0.11358427100904737,
+      "confidence": 0.9713176503138125
+    },
+    {
+      "name": "sine 880 amp 0.02 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 880,
+      "detectedHz": 879.9025452070408,
+      "centsError": -0.19173454399229614,
+      "confidence": 0.9713559982245299
+    },
+    {
+      "name": "sine 880 amp 0.2 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 880,
+      "detectedHz": 879.9422660649167,
+      "centsError": -0.11358435576670202,
+      "confidence": 0.9713176503816533
+    },
+    {
+      "name": "sine 880 amp 0.2 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 880,
+      "detectedHz": 879.9025451971784,
+      "centsError": -0.19173456339702283,
+      "confidence": 0.9713559982267814
+    },
+    {
+      "name": "sine 880 amp 0.6 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 880,
+      "detectedHz": 879.9422659931131,
+      "centsError": -0.11358449703593114,
+      "confidence": 0.9713176505204072
+    },
+    {
+      "name": "sine 880 amp 0.6 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 880,
+      "detectedHz": 879.9025452506402,
+      "centsError": -0.1917344582093217,
+      "confidence": 0.9713559981560791
+    },
+    {
+      "name": "sine 1200 amp 0.02 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 1200,
+      "detectedHz": 1200.8325692125882,
+      "centsError": 1.2007269855467078,
+      "confidence": 0.9919584950138451
+    },
+    {
+      "name": "sine 1200 amp 0.02 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 1200,
+      "detectedHz": 1200.8197402774097,
+      "centsError": 1.1822314778442458,
+      "confidence": 0.9919548331734583
+    },
+    {
+      "name": "sine 1200 amp 0.2 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 1200,
+      "detectedHz": 1200.8325692062695,
+      "centsError": 1.2007269764371011,
+      "confidence": 0.9919584950153558
+    },
+    {
+      "name": "sine 1200 amp 0.2 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 1200,
+      "detectedHz": 1200.8197402535832,
+      "centsError": 1.1822314434932795,
+      "confidence": 0.9919548331532714
+    },
+    {
+      "name": "sine 1200 amp 0.6 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 1200,
+      "detectedHz": 1200.8325691795465,
+      "centsError": 1.2007269379108494,
+      "confidence": 0.9919584949930135
+    },
+    {
+      "name": "sine 1200 amp 0.6 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 1200,
+      "detectedHz": 1200.8197403368663,
+      "centsError": 1.1822315635635847,
+      "confidence": 0.991954833211775
+    },
+    {
+      "name": "sine 1590 amp 0.02 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 1590,
+      "detectedHz": 1589.1238613689388,
+      "centsError": -0.9542258397842045,
+      "confidence": 0.9981885002289906
+    },
+    {
+      "name": "sine 1590 amp 0.02 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 1590,
+      "detectedHz": 1589.184597296388,
+      "centsError": -0.8880597599454627,
+      "confidence": 0.9981987072817227
+    },
+    {
+      "name": "sine 1590 amp 0.2 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 1590,
+      "detectedHz": 1589.1238612787663,
+      "centsError": -0.9542259380206033,
+      "confidence": 0.9981885002667861
+    },
+    {
+      "name": "sine 1590 amp 0.2 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 1590,
+      "detectedHz": 1589.184597273118,
+      "centsError": -0.8880597852951959,
+      "confidence": 0.9981987072880436
+    },
+    {
+      "name": "sine 1590 amp 0.6 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 1590,
+      "detectedHz": 1589.1238614034853,
+      "centsError": -0.9542258021484477,
+      "confidence": 0.9981885002375253
+    },
+    {
+      "name": "sine 1590 amp 0.6 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 1590,
+      "detectedHz": 1589.1845973427771,
+      "centsError": -0.8880597094096471,
+      "confidence": 0.9981987072690625
+    },
+    {
+      "name": "sine 1600 amp 0.02 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 1600,
+      "detectedHz": 1598.2879232563178,
+      "centsError": -1.853495312191443,
+      "confidence": 0.9949567120230298
+    },
+    {
+      "name": "sine 1600 amp 0.02 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 1600,
+      "detectedHz": 1598.326952041081,
+      "centsError": -1.81122061616756,
+      "confidence": 0.9949585783189129
+    },
+    {
+      "name": "sine 1600 amp 0.2 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 1600,
+      "detectedHz": 1598.2879233228882,
+      "centsError": -1.853495240083702,
+      "confidence": 0.9949567120078788
+    },
+    {
+      "name": "sine 1600 amp 0.2 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 1600,
+      "detectedHz": 1598.3269521432194,
+      "centsError": -1.8112205055361619,
+      "confidence": 0.9949585782697014
+    },
+    {
+      "name": "sine 1600 amp 0.6 phase 0",
+      "sampleRate": 22050,
+      "inputHz": 1600,
+      "detectedHz": 1598.2879233423782,
+      "centsError": -1.8534952189725067,
+      "confidence": 0.9949567120007502
+    },
+    {
+      "name": "sine 1600 amp 0.6 phase 0.73",
+      "sampleRate": 22050,
+      "inputHz": 1600,
+      "detectedHz": 1598.326952159842,
+      "centsError": -1.8112204875313125,
+      "confidence": 0.9949585782602801
+    },
+    {
+      "name": "sine 80 amp 0.02 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 0.9999662458031614
+    },
+    {
+      "name": "sine 80 amp 0.02 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 0.9999631825411814
+    },
+    {
+      "name": "sine 80 amp 0.2 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 0.9999662458086466
+    },
+    {
+      "name": "sine 80 amp 0.2 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 0.9999631825563662
+    },
+    {
+      "name": "sine 80 amp 0.6 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 0.9999662458039481
+    },
+    {
+      "name": "sine 80 amp 0.6 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 0.9999631825756087
+    },
+    {
+      "name": "sine 82.41 amp 0.02 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 82.41,
+      "detectedHz": 82.4097035383754,
+      "centsError": -0.006227950272126236,
+      "confidence": 0.9999453891722212
+    },
+    {
+      "name": "sine 82.41 amp 0.02 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 82.41,
+      "detectedHz": 82.41028951151996,
+      "centsError": 0.0060819235599268206,
+      "confidence": 0.9999455954618587
+    },
+    {
+      "name": "sine 82.41 amp 0.2 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 82.41,
+      "detectedHz": 82.40970351907731,
+      "centsError": -0.006228355679573978,
+      "confidence": 0.9999453891871442
+    },
+    {
+      "name": "sine 82.41 amp 0.2 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 82.41,
+      "detectedHz": 82.41028948586016,
+      "centsError": 0.0060813845116323715,
+      "confidence": 0.9999455954827792
+    },
+    {
+      "name": "sine 82.41 amp 0.6 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 82.41,
+      "detectedHz": 82.40970354995599,
+      "centsError": -0.006227706991061558,
+      "confidence": 0.9999453891622121
+    },
+    {
+      "name": "sine 82.41 amp 0.6 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 82.41,
+      "detectedHz": 82.41028948414144,
+      "centsError": 0.006081348405554667,
+      "confidence": 0.999945595483682
+    },
+    {
+      "name": "sine 110 amp 0.02 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 110,
+      "detectedHz": 110.00032357894436,
+      "centsError": 0.005092636928083262,
+      "confidence": 0.9998937943263041
+    },
+    {
+      "name": "sine 110 amp 0.02 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 110,
+      "detectedHz": 110.00102385584717,
+      "centsError": 0.0161138714075843,
+      "confidence": 0.9998995634174114
+    },
+    {
+      "name": "sine 110 amp 0.2 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 110,
+      "detectedHz": 110.0003235634936,
+      "centsError": 0.005092393757205207,
+      "confidence": 0.9998937943138715
+    },
+    {
+      "name": "sine 110 amp 0.2 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 110,
+      "detectedHz": 110.00102382748142,
+      "centsError": 0.01611342497773715,
+      "confidence": 0.9998995633945483
+    },
+    {
+      "name": "sine 110 amp 0.6 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 110,
+      "detectedHz": 110.0003235491958,
+      "centsError": 0.005092168732019107,
+      "confidence": 0.9998937943016296
+    },
+    {
+      "name": "sine 110 amp 0.6 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 110,
+      "detectedHz": 110.00102381846143,
+      "centsError": 0.016113283017931548,
+      "confidence": 0.999899563388279
+    },
+    {
+      "name": "sine 130.81 amp 0.02 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 130.81,
+      "detectedHz": 130.81078886795459,
+      "centsError": 0.010440416980023366,
+      "confidence": 0.9997763594284291
+    },
+    {
+      "name": "sine 130.81 amp 0.02 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 130.81,
+      "detectedHz": 130.81054872529322,
+      "centsError": 0.007262211747573346,
+      "confidence": 0.9997834987772789
+    },
+    {
+      "name": "sine 130.81 amp 0.2 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 130.81,
+      "detectedHz": 130.8107888691021,
+      "centsError": 0.010440432166864286,
+      "confidence": 0.9997763594316985
+    },
+    {
+      "name": "sine 130.81 amp 0.2 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 130.81,
+      "detectedHz": 130.81054872194667,
+      "centsError": 0.007262167457440567,
+      "confidence": 0.9997834987734359
+    },
+    {
+      "name": "sine 130.81 amp 0.6 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 130.81,
+      "detectedHz": 130.81078887522614,
+      "centsError": 0.010440513216397612,
+      "confidence": 0.9997763594374516
+    },
+    {
+      "name": "sine 130.81 amp 0.6 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 130.81,
+      "detectedHz": 130.81054871007268,
+      "centsError": 0.00726201030888714,
+      "confidence": 0.9997834987631562
+    },
+    {
+      "name": "sine 220 amp 0.02 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 220,
+      "detectedHz": 219.99785698180185,
+      "centsError": -0.016864018829137843,
+      "confidence": 0.9999012890739541
+    },
+    {
+      "name": "sine 220 amp 0.02 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 220,
+      "detectedHz": 219.99592514845006,
+      "centsError": -0.03206630491397334,
+      "confidence": 0.9998974716085813
+    },
+    {
+      "name": "sine 220 amp 0.2 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 220,
+      "detectedHz": 219.997856931232,
+      "centsError": -0.01686441677950465,
+      "confidence": 0.9999012890553548
+    },
+    {
+      "name": "sine 220 amp 0.2 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 220,
+      "detectedHz": 219.99592521188174,
+      "centsError": -0.03206580574527231,
+      "confidence": 0.9998974716346469
+    },
+    {
+      "name": "sine 220 amp 0.6 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 220,
+      "detectedHz": 219.99785696010255,
+      "centsError": -0.016864189587785215,
+      "confidence": 0.9999012890664205
+    },
+    {
+      "name": "sine 220 amp 0.6 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 220,
+      "detectedHz": 219.9959251554286,
+      "centsError": -0.032066249996935955,
+      "confidence": 0.9998974716109554
+    },
+    {
+      "name": "sine 293.66 amp 0.02 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 293.66,
+      "detectedHz": 293.6616966224251,
+      "centsError": 0.010002186289439555,
+      "confidence": 0.9970083040489549
+    },
+    {
+      "name": "sine 293.66 amp 0.02 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 293.66,
+      "detectedHz": 293.6610339629898,
+      "centsError": 0.006095582585627856,
+      "confidence": 0.9970974600920224
+    },
+    {
+      "name": "sine 293.66 amp 0.2 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 293.66,
+      "detectedHz": 293.66169661551896,
+      "centsError": 0.010002145575533423,
+      "confidence": 0.9970083040704745
+    },
+    {
+      "name": "sine 293.66 amp 0.2 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 293.66,
+      "detectedHz": 293.66103392834344,
+      "centsError": 0.006095378333310381,
+      "confidence": 0.997097460155284
+    },
+    {
+      "name": "sine 293.66 amp 0.6 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 293.66,
+      "detectedHz": 293.66169663948045,
+      "centsError": 0.010002286836600234,
+      "confidence": 0.9970083040213047
+    },
+    {
+      "name": "sine 293.66 amp 0.6 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 293.66,
+      "detectedHz": 293.66103391938947,
+      "centsError": 0.006095325546537345,
+      "confidence": 0.9970974601623402
+    },
+    {
+      "name": "sine 440 amp 0.02 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 440,
+      "detectedHz": 440.016307977175,
+      "centsError": 0.06416455037040351,
+      "confidence": 0.9998983094578004
+    },
+    {
+      "name": "sine 440 amp 0.02 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 440,
+      "detectedHz": 440.01236962256866,
+      "centsError": 0.048669115356897656,
+      "confidence": 0.9998994648026194
+    },
+    {
+      "name": "sine 440 amp 0.2 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 440,
+      "detectedHz": 440.0163080104086,
+      "centsError": 0.06416468112724875,
+      "confidence": 0.9998983094656904
+    },
+    {
+      "name": "sine 440 amp 0.2 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 440,
+      "detectedHz": 440.0123696659097,
+      "centsError": 0.048669285883053914,
+      "confidence": 0.9998994648087086
+    },
+    {
+      "name": "sine 440 amp 0.6 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 440,
+      "detectedHz": 440.0163080253258,
+      "centsError": 0.0641647398188945,
+      "confidence": 0.9998983094677837
+    },
+    {
+      "name": "sine 440 amp 0.6 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 440,
+      "detectedHz": 440.0123697031004,
+      "centsError": 0.048669432210053425,
+      "confidence": 0.9998994648184971
+    },
+    {
+      "name": "sine 880 amp 0.02 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 880,
+      "detectedHz": 879.8949196720828,
+      "centsError": -0.20673807255201496,
+      "confidence": 0.9710941840236447
+    },
+    {
+      "name": "sine 880 amp 0.02 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 880,
+      "detectedHz": 879.9320666761423,
+      "centsError": -0.13365116258059948,
+      "confidence": 0.9709723460850523
+    },
+    {
+      "name": "sine 880 amp 0.2 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 880,
+      "detectedHz": 879.8949196635399,
+      "centsError": -0.20673808936047885,
+      "confidence": 0.9710941840655792
+    },
+    {
+      "name": "sine 880 amp 0.2 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 880,
+      "detectedHz": 879.9320666818994,
+      "centsError": -0.1336511512538185,
+      "confidence": 0.970972346055728
+    },
+    {
+      "name": "sine 880 amp 0.6 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 880,
+      "detectedHz": 879.8949196782736,
+      "centsError": -0.20673806037126102,
+      "confidence": 0.9710941840206868
+    },
+    {
+      "name": "sine 880 amp 0.6 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 880,
+      "detectedHz": 879.9320667205046,
+      "centsError": -0.1336510752994537,
+      "confidence": 0.970972345996484
+    },
+    {
+      "name": "sine 1200 amp 0.02 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 1200,
+      "detectedHz": 1200.834246385261,
+      "centsError": 1.203144954948924,
+      "confidence": 0.9919584489247837
+    },
+    {
+      "name": "sine 1200 amp 0.02 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 1200,
+      "detectedHz": 1200.820005166099,
+      "centsError": 1.1826133705233146,
+      "confidence": 0.9919553633857772
+    },
+    {
+      "name": "sine 1200 amp 0.2 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 1200,
+      "detectedHz": 1200.8342462946484,
+      "centsError": 1.203144824313801,
+      "confidence": 0.9919584488619481
+    },
+    {
+      "name": "sine 1200 amp 0.2 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 1200,
+      "detectedHz": 1200.8200052238324,
+      "centsError": 1.182613453757961,
+      "confidence": 0.9919553634373388
+    },
+    {
+      "name": "sine 1200 amp 0.6 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 1200,
+      "detectedHz": 1200.8342463177776,
+      "centsError": 1.203144857658663,
+      "confidence": 0.9919584488779042
+    },
+    {
+      "name": "sine 1200 amp 0.6 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 1200,
+      "detectedHz": 1200.820005201237,
+      "centsError": 1.1826134211821528,
+      "confidence": 0.9919553634165003
+    },
+    {
+      "name": "sine 1590 amp 0.02 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 1590,
+      "detectedHz": 1588.812079887455,
+      "centsError": -1.2939222517463835,
+      "confidence": 0.9982005868197076
+    },
+    {
+      "name": "sine 1590 amp 0.02 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 1590,
+      "detectedHz": 1588.7478619685023,
+      "centsError": -1.3638981136658124,
+      "confidence": 0.9981904077664301
+    },
+    {
+      "name": "sine 1590 amp 0.2 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 1590,
+      "detectedHz": 1588.8120799978258,
+      "centsError": -1.2939221314819083,
+      "confidence": 0.9982005867955038
+    },
+    {
+      "name": "sine 1590 amp 0.2 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 1590,
+      "detectedHz": 1588.7478618650073,
+      "centsError": -1.3638982264428405,
+      "confidence": 0.9981904077947786
+    },
+    {
+      "name": "sine 1590 amp 0.6 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 1590,
+      "detectedHz": 1588.8120799896399,
+      "centsError": -1.2939221404015302,
+      "confidence": 0.9982005867920676
+    },
+    {
+      "name": "sine 1590 amp 0.6 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 1590,
+      "detectedHz": 1588.7478619778005,
+      "centsError": -1.3638981035337885,
+      "confidence": 0.9981904077635981
+    },
+    {
+      "name": "sine 1600 amp 0.02 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 1600,
+      "detectedHz": 1598.276151268567,
+      "centsError": -1.8662465447926773,
+      "confidence": 0.9949616687241268
+    },
+    {
+      "name": "sine 1600 amp 0.02 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 1600,
+      "detectedHz": 1598.2671366683646,
+      "centsError": -1.8760110819212015,
+      "confidence": 0.994957977035993
+    },
+    {
+      "name": "sine 1600 amp 0.2 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 1600,
+      "detectedHz": 1598.2761512594345,
+      "centsError": -1.8662465546848164,
+      "confidence": 0.9949616687378414
+    },
+    {
+      "name": "sine 1600 amp 0.2 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 1600,
+      "detectedHz": 1598.2671366144157,
+      "centsError": -1.8760111403584825,
+      "confidence": 0.9949579770402351
+    },
+    {
+      "name": "sine 1600 amp 0.6 phase 0",
+      "sampleRate": 44100,
+      "inputHz": 1600,
+      "detectedHz": 1598.276151292546,
+      "centsError": -1.8662465188188602,
+      "confidence": 0.9949616687192288
+    },
+    {
+      "name": "sine 1600 amp 0.6 phase 0.73",
+      "sampleRate": 44100,
+      "inputHz": 1600,
+      "detectedHz": 1598.2671366511042,
+      "centsError": -1.8760111006176832,
+      "confidence": 0.9949579770505302
+    },
+    {
+      "name": "sine 80 amp 0.02 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 80,
+      "detectedHz": 80.00054961815714,
+      "centsError": 0.011893929988317137,
+      "confidence": 1
+    },
+    {
+      "name": "sine 80 amp 0.02 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 1
+    },
+    {
+      "name": "sine 80 amp 0.2 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 80,
+      "detectedHz": 80.00054961704434,
+      "centsError": 0.01189390590704418,
+      "confidence": 1
+    },
+    {
+      "name": "sine 80 amp 0.2 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 1
+    },
+    {
+      "name": "sine 80 amp 0.6 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 80,
+      "detectedHz": 80.00054961766239,
+      "centsError": 0.011893919281770495,
+      "confidence": 1
+    },
+    {
+      "name": "sine 80 amp 0.6 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 1
+    },
+    {
+      "name": "sine 82.41 amp 0.02 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 82.41,
+      "detectedHz": 82.40979795868721,
+      "centsError": -0.004244402727694876,
+      "confidence": 0.9998649341851513
+    },
+    {
+      "name": "sine 82.41 amp 0.02 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 82.41,
+      "detectedHz": 82.40982599653296,
+      "centsError": -0.0036553943067777596,
+      "confidence": 0.9998552305802365
+    },
+    {
+      "name": "sine 82.41 amp 0.2 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 82.41,
+      "detectedHz": 82.4097979510885,
+      "centsError": -0.004244562358288629,
+      "confidence": 0.9998649341926247
+    },
+    {
+      "name": "sine 82.41 amp 0.2 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 82.41,
+      "detectedHz": 82.40982599219917,
+      "centsError": -0.0036554853491841213,
+      "confidence": 0.9998552305838283
+    },
+    {
+      "name": "sine 82.41 amp 0.6 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 82.41,
+      "detectedHz": 82.4097979372564,
+      "centsError": -0.00424485293810327,
+      "confidence": 0.9998649342112962
+    },
+    {
+      "name": "sine 82.41 amp 0.6 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 82.41,
+      "detectedHz": 82.40982603503156,
+      "centsError": -0.003654585542964347,
+      "confidence": 0.9998552305292958
+    },
+    {
+      "name": "sine 110 amp 0.02 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 110,
+      "detectedHz": 110.00066494546464,
+      "centsError": 0.010465206815819325,
+      "confidence": 0.9999867710006551
+    },
+    {
+      "name": "sine 110 amp 0.02 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 110,
+      "detectedHz": 109.99943103078469,
+      "centsError": -0.008954740235536704,
+      "confidence": 0.9999868018967812
+    },
+    {
+      "name": "sine 110 amp 0.2 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 110,
+      "detectedHz": 110.0006649425497,
+      "centsError": 0.010465160939697545,
+      "confidence": 0.9999867709997502
+    },
+    {
+      "name": "sine 110 amp 0.2 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 110,
+      "detectedHz": 109.99943103451514,
+      "centsError": -0.008954681523536812,
+      "confidence": 0.999986801897887
+    },
+    {
+      "name": "sine 110 amp 0.6 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 110,
+      "detectedHz": 110.0006649489998,
+      "centsError": 0.010465262453619612,
+      "confidence": 0.9999867710016381
+    },
+    {
+      "name": "sine 110 amp 0.6 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 110,
+      "detectedHz": 109.99943100755284,
+      "centsError": -0.008955105871659914,
+      "confidence": 0.9999868018897107
+    },
+    {
+      "name": "sine 130.81 amp 0.02 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 130.81,
+      "detectedHz": 130.81055061325105,
+      "centsError": 0.007287198240915444,
+      "confidence": 0.9998345172829257
+    },
+    {
+      "name": "sine 130.81 amp 0.02 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 130.81,
+      "detectedHz": 130.81023556376104,
+      "centsError": 0.0031176181990919998,
+      "confidence": 0.9998401644718808
+    },
+    {
+      "name": "sine 130.81 amp 0.2 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 130.81,
+      "detectedHz": 130.81055065696887,
+      "centsError": 0.007287776831508474,
+      "confidence": 0.9998345172432394
+    },
+    {
+      "name": "sine 130.81 amp 0.2 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 130.81,
+      "detectedHz": 130.81023555682816,
+      "centsError": 0.0031175264445369773,
+      "confidence": 0.9998401644791433
+    },
+    {
+      "name": "sine 130.81 amp 0.6 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 130.81,
+      "detectedHz": 130.810550654178,
+      "centsError": 0.007287739895131275,
+      "confidence": 0.9998345172457183
+    },
+    {
+      "name": "sine 130.81 amp 0.6 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 130.81,
+      "detectedHz": 130.81023557446645,
+      "centsError": 0.003117759882034454,
+      "confidence": 0.9998401644641034
+    },
+    {
+      "name": "sine 220 amp 0.02 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 220,
+      "detectedHz": 220.0014326606292,
+      "centsError": 0.011273921755433984,
+      "confidence": 0.998618003024419
+    },
+    {
+      "name": "sine 220 amp 0.02 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 220,
+      "detectedHz": 219.99983584148274,
+      "centsError": -0.0012918041844258415,
+      "confidence": 0.9986594359988099
+    },
+    {
+      "name": "sine 220 amp 0.2 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 220,
+      "detectedHz": 220.00143268891438,
+      "centsError": 0.01127414433689944,
+      "confidence": 0.9986180029795986
+    },
+    {
+      "name": "sine 220 amp 0.2 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 220,
+      "detectedHz": 219.99983589378414,
+      "centsError": -0.0012913926114053438,
+      "confidence": 0.9986594359257255
+    },
+    {
+      "name": "sine 220 amp 0.6 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 220,
+      "detectedHz": 220.0014326531781,
+      "centsError": 0.011273863121194048,
+      "confidence": 0.9986180030326892
+    },
+    {
+      "name": "sine 220 amp 0.6 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 220,
+      "detectedHz": 219.99983584249574,
+      "centsError": -0.0012917962126930385,
+      "confidence": 0.9986594360029648
+    },
+    {
+      "name": "sine 293.66 amp 0.02 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 293.66,
+      "detectedHz": 293.6507494043509,
+      "centsError": -0.054536533443168764,
+      "confidence": 0.9997803420644968
+    },
+    {
+      "name": "sine 293.66 amp 0.02 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 293.66,
+      "detectedHz": 293.6557344785908,
+      "centsError": -0.025147005153551283,
+      "confidence": 0.9997746642206299
+    },
+    {
+      "name": "sine 293.66 amp 0.2 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 293.66,
+      "detectedHz": 293.6507493947512,
+      "centsError": -0.0545365900389266,
+      "confidence": 0.9997803420680995
+    },
+    {
+      "name": "sine 293.66 amp 0.2 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 293.66,
+      "detectedHz": 293.65573440987833,
+      "centsError": -0.025147410244633586,
+      "confidence": 0.9997746642522424
+    },
+    {
+      "name": "sine 293.66 amp 0.6 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 293.66,
+      "detectedHz": 293.6507494466698,
+      "centsError": -0.05453628394976249,
+      "confidence": 0.9997803420441972
+    },
+    {
+      "name": "sine 293.66 amp 0.6 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 293.66,
+      "detectedHz": 293.65573447028044,
+      "centsError": -0.025147054146699054,
+      "confidence": 0.9997746642242136
+    },
+    {
+      "name": "sine 440 amp 0.02 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 440,
+      "detectedHz": 440.01301226345953,
+      "centsError": 0.05119759195453788,
+      "confidence": 0.9980581512572293
+    },
+    {
+      "name": "sine 440 amp 0.02 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 440,
+      "detectedHz": 440.0079231406985,
+      "centsError": 0.031174289668321847,
+      "confidence": 0.9980465042431597
+    },
+    {
+      "name": "sine 440 amp 0.2 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 440,
+      "detectedHz": 440.0130123527246,
+      "centsError": 0.051197943168345715,
+      "confidence": 0.9980581513353497
+    },
+    {
+      "name": "sine 440 amp 0.2 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 440,
+      "detectedHz": 440.0079231280086,
+      "centsError": 0.031174239739205925,
+      "confidence": 0.9980465042291675
+    },
+    {
+      "name": "sine 440 amp 0.6 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 440,
+      "detectedHz": 440.01301239783646,
+      "centsError": 0.05119812066111508,
+      "confidence": 0.9980581513728036
+    },
+    {
+      "name": "sine 440 amp 0.6 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 440,
+      "detectedHz": 440.0079230783798,
+      "centsError": 0.03117404447222154,
+      "confidence": 0.9980465041931911
+    },
+    {
+      "name": "sine 880 amp 0.02 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 880,
+      "detectedHz": 879.8016933910649,
+      "centsError": -0.39017482059028785,
+      "confidence": 0.9857202423447593
+    },
+    {
+      "name": "sine 880 amp 0.02 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 880,
+      "detectedHz": 879.7679583737272,
+      "centsError": -0.45655833727504647,
+      "confidence": 0.9856464485845475
+    },
+    {
+      "name": "sine 880 amp 0.2 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 880,
+      "detectedHz": 879.8016933391198,
+      "centsError": -0.39017492280557453,
+      "confidence": 0.9857202424023535
+    },
+    {
+      "name": "sine 880 amp 0.2 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 880,
+      "detectedHz": 879.767958353373,
+      "centsError": -0.4565583773285673,
+      "confidence": 0.9856464486190772
+    },
+    {
+      "name": "sine 880 amp 0.6 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 880,
+      "detectedHz": 879.8016933154101,
+      "centsError": -0.3901749694601563,
+      "confidence": 0.9857202424424267
+    },
+    {
+      "name": "sine 880 amp 0.6 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 880,
+      "detectedHz": 879.7679583730596,
+      "centsError": -0.4565583385887336,
+      "confidence": 0.9856464485856226
+    },
+    {
+      "name": "sine 1200 amp 0.02 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 1200,
+      "detectedHz": 1200.0797225144893,
+      "centsError": 0.11501145592531145,
+      "confidence": 1
+    },
+    {
+      "name": "sine 1200 amp 0.02 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 1200,
+      "detectedHz": 1199.9830498322265,
+      "centsError": -0.024454095698230673,
+      "confidence": 1
+    },
+    {
+      "name": "sine 1200 amp 0.2 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 1200,
+      "detectedHz": 1200.0797225226806,
+      "centsError": 0.1150114677424793,
+      "confidence": 1
+    },
+    {
+      "name": "sine 1200 amp 0.2 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 1200,
+      "detectedHz": 1199.9830498337196,
+      "centsError": -0.0244540935441522,
+      "confidence": 1
+    },
+    {
+      "name": "sine 1200 amp 0.6 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 1200,
+      "detectedHz": 1200.0797225144927,
+      "centsError": 0.11501145593030847,
+      "confidence": 1
+    },
+    {
+      "name": "sine 1200 amp 0.6 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 1200,
+      "detectedHz": 1199.9830498401584,
+      "centsError": -0.024454084254724808,
+      "confidence": 1
+    },
+    {
+      "name": "sine 1590 amp 0.02 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 1590,
+      "detectedHz": 1588.92387342173,
+      "centsError": -1.1721117703685882,
+      "confidence": 0.9266008664948853
+    },
+    {
+      "name": "sine 1590 amp 0.02 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 1590,
+      "detectedHz": 1588.8304319703225,
+      "centsError": -1.2739251937933027,
+      "confidence": 0.9262843184836101
+    },
+    {
+      "name": "sine 1590 amp 0.2 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 1590,
+      "detectedHz": 1588.9238733975903,
+      "centsError": -1.1721117966701193,
+      "confidence": 0.9266008665374602
+    },
+    {
+      "name": "sine 1590 amp 0.2 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 1590,
+      "detectedHz": 1588.8304321657847,
+      "centsError": -1.273924980812194,
+      "confidence": 0.9262843182142555
+    },
+    {
+      "name": "sine 1590 amp 0.6 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 1590,
+      "detectedHz": 1588.9238734688224,
+      "centsError": -1.1721117190582144,
+      "confidence": 0.9266008664462342
+    },
+    {
+      "name": "sine 1590 amp 0.6 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 1590,
+      "detectedHz": 1588.8304320168043,
+      "centsError": -1.2739251431454324,
+      "confidence": 0.926284318466136
+    },
+    {
+      "name": "sine 1600 amp 0.02 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 1600,
+      "detectedHz": 1600,
+      "centsError": 0,
+      "confidence": 0.9195739212436388
+    },
+    {
+      "name": "sine 1600 amp 0.02 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 1600,
+      "detectedHz": 1600,
+      "centsError": 0,
+      "confidence": 0.9194337894984187
+    },
+    {
+      "name": "sine 1600 amp 0.2 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 1600,
+      "detectedHz": 1600,
+      "centsError": 0,
+      "confidence": 0.9195739212368529
+    },
+    {
+      "name": "sine 1600 amp 0.2 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 1600,
+      "detectedHz": 1600,
+      "centsError": 0,
+      "confidence": 0.9194337894526201
+    },
+    {
+      "name": "sine 1600 amp 0.6 phase 0",
+      "sampleRate": 48000,
+      "inputHz": 1600,
+      "detectedHz": 1600,
+      "centsError": 0,
+      "confidence": 0.9195739212056232
+    },
+    {
+      "name": "sine 1600 amp 0.6 phase 0.73",
+      "sampleRate": 48000,
+      "inputHz": 1600,
+      "detectedHz": 1600,
+      "centsError": 0,
+      "confidence": 0.9194337894347486
+    },
+    {
+      "name": "sine 80 amp 0.02 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 80,
+      "detectedHz": 80.0005446386681,
+      "centsError": 0.011786172463239966,
+      "confidence": 1
+    },
+    {
+      "name": "sine 80 amp 0.02 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 1
+    },
+    {
+      "name": "sine 80 amp 0.2 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 80,
+      "detectedHz": 80.00054463855169,
+      "centsError": 0.011786169943826244,
+      "confidence": 1
+    },
+    {
+      "name": "sine 80 amp 0.2 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 1
+    },
+    {
+      "name": "sine 80 amp 0.6 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 80,
+      "detectedHz": 80.00054463865644,
+      "centsError": 0.011786172210683543,
+      "confidence": 1
+    },
+    {
+      "name": "sine 80 amp 0.6 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 80,
+      "detectedHz": 80,
+      "centsError": 0,
+      "confidence": 1
+    },
+    {
+      "name": "sine 82.41 amp 0.02 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 82.41,
+      "detectedHz": 82.40979491333468,
+      "centsError": -0.004308378349788868,
+      "confidence": 0.9998648121936404
+    },
+    {
+      "name": "sine 82.41 amp 0.02 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 82.41,
+      "detectedHz": 82.40982965368018,
+      "centsError": -0.0035785663608640795,
+      "confidence": 0.9998551190712874
+    },
+    {
+      "name": "sine 82.41 amp 0.2 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 82.41,
+      "detectedHz": 82.40979494007333,
+      "centsError": -0.004307816634280818,
+      "confidence": 0.9998648121604201
+    },
+    {
+      "name": "sine 82.41 amp 0.2 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 82.41,
+      "detectedHz": 82.40982964184155,
+      "centsError": -0.003578815062149748,
+      "confidence": 0.9998551190852085
+    },
+    {
+      "name": "sine 82.41 amp 0.6 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 82.41,
+      "detectedHz": 82.40979491794756,
+      "centsError": -0.004308281443909844,
+      "confidence": 0.9998648121899758
+    },
+    {
+      "name": "sine 82.41 amp 0.6 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 82.41,
+      "detectedHz": 82.40982966444183,
+      "centsError": -0.0035783402843374413,
+      "confidence": 0.9998551190551735
+    },
+    {
+      "name": "sine 110 amp 0.02 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 110,
+      "detectedHz": 110.00064579997267,
+      "centsError": 0.010163887451346653,
+      "confidence": 0.9999867835936415
+    },
+    {
+      "name": "sine 110 amp 0.02 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 110,
+      "detectedHz": 109.99941116492666,
+      "centsError": -0.009267400515781976,
+      "confidence": 0.9999867898960717
+    },
+    {
+      "name": "sine 110 amp 0.2 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 110,
+      "detectedHz": 110.0006458398225,
+      "centsError": 0.010164514623731254,
+      "confidence": 0.9999867836051085
+    },
+    {
+      "name": "sine 110 amp 0.2 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 110,
+      "detectedHz": 109.99941115110636,
+      "centsError": -0.009267618027747964,
+      "confidence": 0.9999867898918617
+    },
+    {
+      "name": "sine 110 amp 0.6 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 110,
+      "detectedHz": 110.00064583168684,
+      "centsError": 0.01016438658173174,
+      "confidence": 0.9999867836027141
+    },
+    {
+      "name": "sine 110 amp 0.6 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 110,
+      "detectedHz": 109.99941117386813,
+      "centsError": -0.009267259789783728,
+      "confidence": 0.9999867898985313
+    },
+    {
+      "name": "sine 130.81 amp 0.02 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 130.81,
+      "detectedHz": 130.81055965473885,
+      "centsError": 0.007406859315018171,
+      "confidence": 0.9998346635864519
+    },
+    {
+      "name": "sine 130.81 amp 0.02 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 130.81,
+      "detectedHz": 130.8102135839218,
+      "centsError": 0.0028267216259943743,
+      "confidence": 0.9998402336698727
+    },
+    {
+      "name": "sine 130.81 amp 0.2 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 130.81,
+      "detectedHz": 130.81055961313885,
+      "centsError": 0.007406308752917432,
+      "confidence": 0.999834663625364
+    },
+    {
+      "name": "sine 130.81 amp 0.2 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 130.81,
+      "detectedHz": 130.8102135999342,
+      "centsError": 0.002826933545381551,
+      "confidence": 0.9998402336575981
+    },
+    {
+      "name": "sine 130.81 amp 0.6 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 130.81,
+      "detectedHz": 130.8105596236138,
+      "centsError": 0.007406447385219236,
+      "confidence": 0.9998346636157335
+    },
+    {
+      "name": "sine 130.81 amp 0.6 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 130.81,
+      "detectedHz": 130.8102136041315,
+      "centsError": 0.0028269890950128867,
+      "confidence": 0.9998402336518913
+    },
+    {
+      "name": "sine 220 amp 0.02 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 220,
+      "detectedHz": 220.00143098220977,
+      "centsError": 0.011260713946443726,
+      "confidence": 0.9986204175413996
+    },
+    {
+      "name": "sine 220 amp 0.02 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 220,
+      "detectedHz": 219.99973105095728,
+      "centsError": -0.0021164273855475207,
+      "confidence": 0.9986596391121618
+    },
+    {
+      "name": "sine 220 amp 0.2 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 220,
+      "detectedHz": 220.00143097188058,
+      "centsError": 0.011260632663997138,
+      "confidence": 0.9986204175579559
+    },
+    {
+      "name": "sine 220 amp 0.2 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 220,
+      "detectedHz": 219.99973105946418,
+      "centsError": -0.0021163604425650747,
+      "confidence": 0.9986596390985083
+    },
+    {
+      "name": "sine 220 amp 0.6 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 220,
+      "detectedHz": 220.00143096313494,
+      "centsError": 0.011260563842926728,
+      "confidence": 0.9986204175716659
+    },
+    {
+      "name": "sine 220 amp 0.6 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 220,
+      "detectedHz": 219.99973103590145,
+      "centsError": -0.0021165458637168533,
+      "confidence": 0.9986596391329186
+    },
+    {
+      "name": "sine 293.66 amp 0.02 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 293.66,
+      "detectedHz": 293.65064873205984,
+      "centsError": -0.05513005254138892,
+      "confidence": 0.9997799757068545
+    },
+    {
+      "name": "sine 293.66 amp 0.02 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 293.66,
+      "detectedHz": 293.65628811894055,
+      "centsError": -0.02188304668650849,
+      "confidence": 0.9997745558397267
+    },
+    {
+      "name": "sine 293.66 amp 0.2 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 293.66,
+      "detectedHz": 293.65064874812015,
+      "centsError": -0.05512995785693903,
+      "confidence": 0.9997799757005357
+    },
+    {
+      "name": "sine 293.66 amp 0.2 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 293.66,
+      "detectedHz": 293.65628809149325,
+      "centsError": -0.021883208500481872,
+      "confidence": 0.9997745558527841
+    },
+    {
+      "name": "sine 293.66 amp 0.6 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 293.66,
+      "detectedHz": 293.65064869797874,
+      "centsError": -0.05513025346855553,
+      "confidence": 0.9997799757235692
+    },
+    {
+      "name": "sine 293.66 amp 0.6 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 293.66,
+      "detectedHz": 293.6562881261262,
+      "centsError": -0.021883004324053143,
+      "confidence": 0.9997745558368559
+    },
+    {
+      "name": "sine 440 amp 0.02 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 440,
+      "detectedHz": 440.0123542739462,
+      "centsError": 0.04860872601328382,
+      "confidence": 0.9980579323483917
+    },
+    {
+      "name": "sine 440 amp 0.02 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 440,
+      "detectedHz": 440.0079698610562,
+      "centsError": 0.03135811333485977,
+      "confidence": 0.9980451465528752
+    },
+    {
+      "name": "sine 440 amp 0.2 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 440,
+      "detectedHz": 440.0123543471783,
+      "centsError": 0.0486090141459757,
+      "confidence": 0.9980579324163292
+    },
+    {
+      "name": "sine 440 amp 0.2 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 440,
+      "detectedHz": 440.00796993599175,
+      "centsError": 0.03135840817251025,
+      "confidence": 0.9980451466154323
+    },
+    {
+      "name": "sine 440 amp 0.6 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 440,
+      "detectedHz": 440.01235430958775,
+      "centsError": 0.04860886624523591,
+      "confidence": 0.9980579323828974
+    },
+    {
+      "name": "sine 440 amp 0.6 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 440,
+      "detectedHz": 440.0079698518589,
+      "centsError": 0.03135807714743113,
+      "confidence": 0.9980451465396852
+    },
+    {
+      "name": "sine 880 amp 0.02 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 880,
+      "detectedHz": 879.7939553846533,
+      "centsError": -0.4054013871949941,
+      "confidence": 0.9857178318553343
+    },
+    {
+      "name": "sine 880 amp 0.02 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 880,
+      "detectedHz": 879.7679829938862,
+      "centsError": -0.4565098889806554,
+      "confidence": 0.98562762558862
+    },
+    {
+      "name": "sine 880 amp 0.2 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 880,
+      "detectedHz": 879.7939554429831,
+      "centsError": -0.40540127241503915,
+      "confidence": 0.9857178317958696
+    },
+    {
+      "name": "sine 880 amp 0.2 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 880,
+      "detectedHz": 879.7679829701402,
+      "centsError": -0.4565099357087365,
+      "confidence": 0.9856276256139731
+    },
+    {
+      "name": "sine 880 amp 0.6 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 880,
+      "detectedHz": 879.7939555332861,
+      "centsError": -0.40540109471953606,
+      "confidence": 0.9857178316742664
+    },
+    {
+      "name": "sine 880 amp 0.6 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 880,
+      "detectedHz": 879.7679829364193,
+      "centsError": -0.45651000206579917,
+      "confidence": 0.9856276256481595
+    },
+    {
+      "name": "sine 1200 amp 0.02 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 1200,
+      "detectedHz": 1200.0678517143988,
+      "centsError": 0.09788656450034053,
+      "confidence": 1
+    },
+    {
+      "name": "sine 1200 amp 0.02 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 1200,
+      "detectedHz": 1199.9584887843826,
+      "centsError": -0.059889060780073756,
+      "confidence": 1
+    },
+    {
+      "name": "sine 1200 amp 0.2 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 1200,
+      "detectedHz": 1200.0678517144227,
+      "centsError": 0.09788656453493558,
+      "confidence": 1
+    },
+    {
+      "name": "sine 1200 amp 0.2 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 1200,
+      "detectedHz": 1199.9584887673518,
+      "centsError": -0.05988908535114095,
+      "confidence": 1
+    },
+    {
+      "name": "sine 1200 amp 0.6 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 1200,
+      "detectedHz": 1200.067851742747,
+      "centsError": 0.09788660539591806,
+      "confidence": 1
+    },
+    {
+      "name": "sine 1200 amp 0.6 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 1200,
+      "detectedHz": 1199.9584887700044,
+      "centsError": -0.05988908152419527,
+      "confidence": 1
+    },
+    {
+      "name": "sine 1590 amp 0.02 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 1590,
+      "detectedHz": 1588.881947519095,
+      "centsError": -1.2177933219002424,
+      "confidence": 0.9265656695669677
+    },
+    {
+      "name": "sine 1590 amp 0.02 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 1590,
+      "detectedHz": 1588.8405932092246,
+      "centsError": -1.2628532592672812,
+      "confidence": 0.9261455262746991
+    },
+    {
+      "name": "sine 1590 amp 0.2 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 1590,
+      "detectedHz": 1588.881947506957,
+      "centsError": -1.217793335125791,
+      "confidence": 0.9265656695178428
+    },
+    {
+      "name": "sine 1590 amp 0.2 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 1590,
+      "detectedHz": 1588.840593178709,
+      "centsError": -1.2628532925175306,
+      "confidence": 0.9261455263053324
+    },
+    {
+      "name": "sine 1590 amp 0.6 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 1590,
+      "detectedHz": 1588.8819475820285,
+      "centsError": -1.2177932533284248,
+      "confidence": 0.9265656694108743
+    },
+    {
+      "name": "sine 1590 amp 0.6 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 1590,
+      "detectedHz": 1588.840593113455,
+      "centsError": -1.2628533636197117,
+      "confidence": 0.9261455264001855
+    },
+    {
+      "name": "sine 1600 amp 0.02 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 1600,
+      "detectedHz": 1600,
+      "centsError": 0,
+      "confidence": 0.9195900089518568
+    },
+    {
+      "name": "sine 1600 amp 0.02 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 1600,
+      "detectedHz": 1600,
+      "centsError": 0,
+      "confidence": 0.9193202590313262
+    },
+    {
+      "name": "sine 1600 amp 0.2 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 1600,
+      "detectedHz": 1600,
+      "centsError": 0,
+      "confidence": 0.9195900090105081
+    },
+    {
+      "name": "sine 1600 amp 0.2 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 1600,
+      "detectedHz": 1600,
+      "centsError": 0,
+      "confidence": 0.9193202590155349
+    },
+    {
+      "name": "sine 1600 amp 0.6 phase 0",
+      "sampleRate": 96000,
+      "inputHz": 1600,
+      "detectedHz": 1600,
+      "centsError": 0,
+      "confidence": 0.9195900088756779
+    },
+    {
+      "name": "sine 1600 amp 0.6 phase 0.73",
+      "sampleRate": 96000,
+      "inputHz": 1600,
+      "detectedHz": 1600,
+      "centsError": 0,
+      "confidence": 0.9193202589781834
+    },
+    {
+      "name": "harmonics 82.41 1,0.6,0.3,0.15",
+      "sampleRate": 44100,
+      "inputHz": 82.41,
+      "detectedHz": 82.40989001865744,
+      "centsError": -0.0023104425682604402,
+      "confidence": 0.9998689789592184
+    },
+    {
+      "name": "harmonics 82.41 0.4,1,0.6,0.25",
+      "sampleRate": 44100,
+      "inputHz": 82.41,
+      "detectedHz": 82.4099504354053,
+      "centsError": -0.0010412321291322635,
+      "confidence": 0.9997168588172965
+    },
+    {
+      "name": "harmonics 82.41 0,1,0.5",
+      "sampleRate": 44100,
+      "inputHz": 82.41,
+      "detectedHz": 82.41025303671223,
+      "centsError": 0.005315678914868881,
+      "confidence": 0.9997313151167623
+    },
+    {
+      "name": "harmonics 110 1,0.6,0.3,0.15",
+      "sampleRate": 44100,
+      "inputHz": 110,
+      "detectedHz": 109.99998007823157,
+      "centsError": -0.000313538608631698,
+      "confidence": 0.9997472512444686
+    },
+    {
+      "name": "harmonics 110 0.4,1,0.6,0.25",
+      "sampleRate": 44100,
+      "inputHz": 110,
+      "detectedHz": 109.99946079733067,
+      "centsError": -0.008486257349171708,
+      "confidence": 0.9994595588988233
+    },
+    {
+      "name": "harmonics 110 0,1,0.5",
+      "sampleRate": 44100,
+      "inputHz": 110,
+      "detectedHz": 109.9989479000533,
+      "centsError": -0.01655854510354873,
+      "confidence": 0.9994956139610262
+    },
+    {
+      "name": "harmonics 220 1,0.6,0.3,0.15",
+      "sampleRate": 44100,
+      "inputHz": 220,
+      "detectedHz": 220.0029462615247,
+      "centsError": 0.023184700522755824,
+      "confidence": 0.9997514958645132
+    },
+    {
+      "name": "harmonics 220 0.4,1,0.6,0.25",
+      "sampleRate": 44100,
+      "inputHz": 220,
+      "detectedHz": 220.00447799155762,
+      "centsError": 0.03523805708351936,
+      "confidence": 0.9994577928366756
+    },
+    {
+      "name": "harmonics 220 0,1,0.5",
+      "sampleRate": 44100,
+      "inputHz": 220,
+      "detectedHz": 220.00261238712315,
+      "centsError": 0.020557394022807166,
+      "confidence": 0.9994865999464174
+    },
+    {
+      "name": "harmonics 440 1,0.6,0.3,0.15",
+      "sampleRate": 44100,
+      "inputHz": 440,
+      "detectedHz": 440.02110749583517,
+      "centsError": 0.08304804322576886,
+      "confidence": 0.9997684753733205
+    },
+    {
+      "name": "harmonics 440 0.4,1,0.6,0.25",
+      "sampleRate": 44100,
+      "inputHz": 440,
+      "detectedHz": 440.0201990419451,
+      "centsError": 0.07947378757443561,
+      "confidence": 0.9994886082614266
+    },
+    {
+      "name": "harmonics 440 0,1,0.5",
+      "sampleRate": 44100,
+      "inputHz": 440,
+      "detectedHz": 440.00546365043556,
+      "centsError": 0.021497270317087137,
+      "confidence": 0.9995053293038622
+    },
+    {
+      "name": "harmonics 880 1,0.6,0.3,0.15",
+      "sampleRate": 44100,
+      "inputHz": 880,
+      "detectedHz": 879.6756127050468,
+      "centsError": -0.6382884804613764,
+      "confidence": 0.9433491948844696
+    },
+    {
+      "name": "harmonics 880 0.4,1,0.6,0.25",
+      "sampleRate": 44100,
+      "inputHz": 880,
+      "detectedHz": 879.4769808996307,
+      "centsError": -1.0292473403981472,
+      "confidence": 0.8713537279778065
+    },
+    {
+      "name": "harmonics 880 0,1,0.5",
+      "sampleRate": 44100,
+      "inputHz": 880,
+      "detectedHz": 879.5605907157293,
+      "centsError": -0.864670798190275,
+      "confidence": 0.8673946036481136
+    },
+    {
+      "name": "harmonics 82.41 1,0.6,0.3,0.15",
+      "sampleRate": 48000,
+      "inputHz": 82.41,
+      "detectedHz": 82.40857683996752,
+      "centsError": -0.02989739570365631,
+      "confidence": 0.9996693110026226
+    },
+    {
+      "name": "harmonics 82.41 0.4,1,0.6,0.25",
+      "sampleRate": 48000,
+      "inputHz": 82.41,
+      "detectedHz": 82.40896974692619,
+      "centsError": -0.021643251420505,
+      "confidence": 0.9992505629245871
+    },
+    {
+      "name": "harmonics 82.41 0,1,0.5",
+      "sampleRate": 48000,
+      "inputHz": 82.41,
+      "detectedHz": 82.40931391647817,
+      "centsError": -0.014413009316395671,
+      "confidence": 0.9992929680874849
+    },
+    {
+      "name": "harmonics 110 1,0.6,0.3,0.15",
+      "sampleRate": 48000,
+      "inputHz": 110,
+      "detectedHz": 110.00000216643653,
+      "centsError": 0.00003409644219592711,
+      "confidence": 0.9999660441566538
+    },
+    {
+      "name": "harmonics 110 0.4,1,0.6,0.25",
+      "sampleRate": 48000,
+      "inputHz": 110,
+      "detectedHz": 110.00026148542545,
+      "centsError": 0.004115381216458042,
+      "confidence": 0.9999262144050338
+    },
+    {
+      "name": "harmonics 110 0,1,0.5",
+      "sampleRate": 48000,
+      "inputHz": 110,
+      "detectedHz": 110.00000238294385,
+      "centsError": 0.000037503940864510925,
+      "confidence": 0.9999306687978823
+    },
+    {
+      "name": "harmonics 220 1,0.6,0.3,0.15",
+      "sampleRate": 48000,
+      "inputHz": 220,
+      "detectedHz": 220.00468871756553,
+      "centsError": 0.036896277263968116,
+      "confidence": 0.996748613756117
+    },
+    {
+      "name": "harmonics 220 0.4,1,0.6,0.25",
+      "sampleRate": 48000,
+      "inputHz": 220,
+      "detectedHz": 220.00300652186854,
+      "centsError": 0.02365889755743106,
+      "confidence": 0.9929284863711668
+    },
+    {
+      "name": "harmonics 220 0,1,0.5",
+      "sampleRate": 48000,
+      "inputHz": 220,
+      "detectedHz": 220.00070012930786,
+      "centsError": 0.005509480762837759,
+      "confidence": 0.9932874015469306
+    },
+    {
+      "name": "harmonics 440 1,0.6,0.3,0.15",
+      "sampleRate": 48000,
+      "inputHz": 440,
+      "detectedHz": 440.10742839996755,
+      "centsError": 0.42263864338093143,
+      "confidence": 0.9955166464520472
+    },
+    {
+      "name": "harmonics 440 0.4,1,0.6,0.25",
+      "sampleRate": 48000,
+      "inputHz": 440,
+      "detectedHz": 440.124442100022,
+      "centsError": 0.4895635022181056,
+      "confidence": 0.990107436302017
+    },
+    {
+      "name": "harmonics 440 0,1,0.5",
+      "sampleRate": 48000,
+      "inputHz": 440,
+      "detectedHz": 440.09699673315293,
+      "centsError": 0.38160350139987764,
+      "confidence": 0.9904427724073346
+    },
+    {
+      "name": "harmonics 880 1,0.6,0.3,0.15",
+      "sampleRate": 48000,
+      "inputHz": 880,
+      "detectedHz": 879.1522057877281,
+      "centsError": -1.668679169078711,
+      "confidence": 0.9714070208656453
+    },
+    {
+      "name": "harmonics 880 0.4,1,0.6,0.25",
+      "sampleRate": 48000,
+      "inputHz": 880,
+      "detectedHz": 878.687143370007,
+      "centsError": -2.5847263740417743,
+      "confidence": 0.9347286086870592
+    },
+    {
+      "name": "harmonics 880 0,1,0.5",
+      "sampleRate": 48000,
+      "inputHz": 880,
+      "detectedHz": 878.869189545063,
+      "centsError": -2.226086901742614,
+      "confidence": 0.9332962598763642
+    },
+    {
+      "name": "silence",
+      "sampleRate": 44100,
+      "inputHz": -1,
+      "detectedHz": -1,
+      "centsError": null,
+      "confidence": 0
+    },
+    {
+      "name": "DC only",
+      "sampleRate": 44100,
+      "inputHz": -1,
+      "detectedHz": -1,
+      "centsError": null,
+      "confidence": 0
+    },
+    {
+      "name": "very quiet sine",
+      "sampleRate": 44100,
+      "inputHz": -1,
+      "detectedHz": -1,
+      "centsError": null,
+      "confidence": 0
+    },
+    {
+      "name": "white noise",
+      "sampleRate": 44100,
+      "inputHz": -1,
+      "detectedHz": -1,
+      "centsError": null,
+      "confidence": 0.17506307174819347
+    },
+    {
+      "name": "low-pass noise",
+      "sampleRate": 44100,
+      "inputHz": -1,
+      "detectedHz": -1,
+      "centsError": null,
+      "confidence": 0.14750224163187253
+    },
+    {
+      "name": "out of range low",
+      "sampleRate": 44100,
+      "inputHz": -1,
+      "detectedHz": -1,
+      "centsError": null,
+      "confidence": 0.7505666368887766
+    },
+    {
+      "name": "out of range high",
+      "sampleRate": 44100,
+      "inputHz": -1,
+      "detectedHz": -1,
+      "centsError": null,
+      "confidence": 0.8995863128748482
+    },
+    {
+      "name": "voiced with modest noise",
+      "sampleRate": 44100,
+      "inputHz": 110,
+      "detectedHz": 110.06564789055476,
+      "centsError": 1.0328905745942982,
+      "confidence": 0.9981763131454712
+    },
+    {
+      "name": "voice with DC",
+      "sampleRate": 44100,
+      "inputHz": 110,
+      "detectedHz": 110.00032349722773,
+      "centsError": 0.005091350835441548,
+      "confidence": 0.999893794256971
+    },
+    {
+      "name": "clipped harmonics",
+      "sampleRate": 44100,
+      "inputHz": 110,
+      "detectedHz": 110.00221720171423,
+      "centsError": 0.0348950583343745,
+      "confidence": 0.9998052734302286
+    },
+    {
+      "name": "amplitude ramp",
+      "sampleRate": 44100,
+      "inputHz": 110,
+      "detectedHz": 110.06269076259186,
+      "centsError": 0.9863769757687215,
+      "confidence": 0.9962130740253137
+    },
+    {
+      "name": "ambiguous dominant second harmonic",
+      "sampleRate": 44100,
+      "inputHz": 220,
+      "detectedHz": 220.1299082800495,
+      "centsError": 1.0219784658004079,
+      "confidence": 0.998224126196881
+    },
+    {
+      "name": "silence",
+      "sampleRate": 48000,
+      "inputHz": -1,
+      "detectedHz": -1,
+      "centsError": null,
+      "confidence": 0
+    },
+    {
+      "name": "DC only",
+      "sampleRate": 48000,
+      "inputHz": -1,
+      "detectedHz": -1,
+      "centsError": null,
+      "confidence": 0
+    },
+    {
+      "name": "very quiet sine",
+      "sampleRate": 48000,
+      "inputHz": -1,
+      "detectedHz": -1,
+      "centsError": null,
+      "confidence": 0
+    },
+    {
+      "name": "white noise",
+      "sampleRate": 48000,
+      "inputHz": -1,
+      "detectedHz": -1,
+      "centsError": null,
+      "confidence": 0.12994226777785556
+    },
+    {
+      "name": "low-pass noise",
+      "sampleRate": 48000,
+      "inputHz": -1,
+      "detectedHz": -1,
+      "centsError": null,
+      "confidence": 0.09847571392952259
+    },
+    {
+      "name": "out of range low",
+      "sampleRate": 48000,
+      "inputHz": -1,
+      "detectedHz": -1,
+      "centsError": null,
+      "confidence": 0.7468302168180155
+    },
+    {
+      "name": "out of range high",
+      "sampleRate": 48000,
+      "inputHz": -1,
+      "detectedHz": -1,
+      "centsError": null,
+      "confidence": 0.9986447110568549
+    },
+    {
+      "name": "voiced with modest noise",
+      "sampleRate": 48000,
+      "inputHz": 110,
+      "detectedHz": 110.02030836126417,
+      "centsError": 0.3195934671939523,
+      "confidence": 0.9981005146013834
+    },
+    {
+      "name": "voice with DC",
+      "sampleRate": 48000,
+      "inputHz": 110,
+      "detectedHz": 110.00066506026728,
+      "centsError": 0.010467013625474605,
+      "confidence": 0.9999867710310725
+    },
+    {
+      "name": "clipped harmonics",
+      "sampleRate": 48000,
+      "inputHz": 110,
+      "detectedHz": 109.99977435410659,
+      "centsError": -0.003551329585196742,
+      "confidence": 0.9999743355585395
+    },
+    {
+      "name": "amplitude ramp",
+      "sampleRate": 48000,
+      "inputHz": 110,
+      "detectedHz": 110.01457409603607,
+      "centsError": 0.22935909071108243,
+      "confidence": 0.9953059125791868
+    },
+    {
+      "name": "ambiguous dominant second harmonic",
+      "sampleRate": 48000,
+      "inputHz": 220,
+      "detectedHz": 219.97729518524577,
+      "centsError": -0.17867898569000557,
+      "confidence": 0.9967955544449046
+    }
+  ],
+  "transitions": [
+    {
+      "sampleRate": 44100,
+      "fromHz": 0,
+      "toHz": 110,
+      "firstMatchMs": 35,
+      "stableByMs": 35
+    },
+    {
+      "sampleRate": 44100,
+      "fromHz": 110,
+      "toHz": 220,
+      "firstMatchMs": 35,
+      "stableByMs": 35
+    },
+    {
+      "sampleRate": 44100,
+      "fromHz": 220,
+      "toHz": 110,
+      "firstMatchMs": 45,
+      "stableByMs": 45
+    },
+    {
+      "sampleRate": 44100,
+      "fromHz": 110,
+      "toHz": 440,
+      "firstMatchMs": 35,
+      "stableByMs": 35
+    },
+    {
+      "sampleRate": 44100,
+      "fromHz": 440,
+      "toHz": 110,
+      "firstMatchMs": 45,
+      "stableByMs": 45
+    },
+    {
+      "sampleRate": 44100,
+      "fromHz": 110,
+      "toHz": 0,
+      "firstMatchMs": 10,
+      "stableByMs": 10
+    },
+    {
+      "sampleRate": 48000,
+      "fromHz": 0,
+      "toHz": 110,
+      "firstMatchMs": 35,
+      "stableByMs": 35
+    },
+    {
+      "sampleRate": 48000,
+      "fromHz": 110,
+      "toHz": 220,
+      "firstMatchMs": 35,
+      "stableByMs": 35
+    },
+    {
+      "sampleRate": 48000,
+      "fromHz": 220,
+      "toHz": 110,
+      "firstMatchMs": 45,
+      "stableByMs": 45
+    },
+    {
+      "sampleRate": 48000,
+      "fromHz": 110,
+      "toHz": 440,
+      "firstMatchMs": 35,
+      "stableByMs": 35
+    },
+    {
+      "sampleRate": 48000,
+      "fromHz": 440,
+      "toHz": 110,
+      "firstMatchMs": 40,
+      "stableByMs": 40
+    },
+    {
+      "sampleRate": 48000,
+      "fromHz": 110,
+      "toHz": 0,
+      "firstMatchMs": 10,
+      "stableByMs": 10
+    }
+  ],
+  "performance": {
+    "runtime": "v24.16.0",
+    "platform": "win32",
+    "measured": "this host, Node VM; not mobile browser",
+    "medianMs": 0.11770000000001346,
+    "p95Ms": 0.12409999999999854,
+    "maxMs": 0.22440000000000282
+  }
+}

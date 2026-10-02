@@ -1,79 +1,156 @@
-# OohWoo — Roadmap & Design Ideas
+# OohWoo - Roadmap
 
-## 1. 3 Lives (Death Mechanic Rework)
+> 2026-10-01: The current staged plan and approval ledger are in
+> [TASK-BRIEFS.md](docs/TASK-BRIEFS.md), with requirements in
+> [GAMEPLAY-SPEC.md](docs/GAMEPLAY-SPEC.md). The roadmap below is historical context
+> and contains stale implementation descriptions. See the ledger for current approvals.
 
-**Current:** One hit = instant game over.
+## Current State
 
-**Idea:** Give the bird 3 lives. When it hits a pipe:
-- Bird flashes and briefly becomes invincible (so it doesn't die on the same pipe twice)
-- 1 life deducted, shown as hearts (❤️❤️❤️) in the HUD
-- Game only ends when all 3 lives are gone
+OohWoo is a playable single-file browser rhythm game with:
 
-This makes the game much friendlier for beginners and encourages players to keep trying through a song rather than restarting from the first missed pipe.
+- 22 selectable songs with English and Chinese titles where available
+- MP3 backing tracks and 10-second song previews
+- Absolute note timestamps (`t` in seconds) aligned to vocal onset
+- Microphone pitch detection with personal voice calibration
+- Keyboard, touch, and mouse fallback controls
+- Karaoke lyrics, note hints, coins, scoring, and combo tiers
+- Pause, retry, song-complete, and microphone status screens
 
----
-
-## 2. Octave Difficulty & Karaoke Realism
-
-**Vocal range per difficulty:**
-- **Easy:** 1 octave — covers nursery rhymes, kids' songs
-- **Normal:** 1.5 octaves — covers most pop songs (current calibration)
-- **Hard:** 2–3 octaves — advanced singers, game screen "zooms out" to show a taller play field
-
-**Zoom-out mechanic for hard mode:** Instead of squishing notes closer together, the visible game area expands vertically so the pitch gaps between notes are preserved but the bird has more space to travel.
-
-**Karaoke difficulty philosophy:** A player should NOT be able to complete a song on their first try — just like real karaoke, you need to practice the melody a few times before you can nail it. This is intentional design, not a bug. Difficulty should feel fair after several attempts.
+Gameplay currently uses collectible note coins. The pipe schedule and collision
+code still exist, but pipe spawning is disabled in `buildPipes()`.
 
 ---
 
-## 3. Faster Bird Response (Soaring & Gliding)
+## Completed: Timestamp-Anchored Gameplay
 
-**Problem:** At fast BPMs the bird can't move between notes quickly enough.
+- The selected MP3 finishes loading before gameplay starts.
+- Music and gameplay are scheduled from the same `AudioContext` clock.
+- Coin and pipe positions are calculated from their timestamps every frame.
+- Combo tiers increase points and visual glow without changing target speed.
+- Frame drops no longer accumulate timing drift.
 
-**Ideas:**
-- Make the bird snap to pitch height faster (reduce the smoothing lag)
-- Add a "boost" — when pitch changes dramatically, the bird accelerates instead of drifting
-- The glide-down (silence = gravity) should also be snappier so the bird drops fast when the singer stops
-
-This probably needs playtesting at different BPMs to find the right feel.
-
----
-
-## 4. Song-to-Pipes Pipeline
-
-**The problem:** Right now Twinkle Twinkle is hard-coded. We need a way to turn any song into a pipe schedule.
-
-**Proposed pipeline:**
-1. **Get the melody** — either by ear, MIDI file, or an AI tool that extracts melody from audio
-2. **Convert to note list** — list of `{ note, duration }` pairs (e.g. `C4, 0.5s`)
-3. **Map to pipe timestamps** — each note becomes a pipe that spawns at the right time, with its gap positioned at the note's pitch height
-4. **Pipe timing** — duration of each note determines how long the player has to hold that pitch before the next pipe arrives
-
-Tools to explore:
-- **Basic Pitch** (Spotify) — free AI melody extractor from audio/MP3
-- **MuseScore** — manual notation tool that exports MusicXML
-- A simple JSON format we define ourselves that anyone can author by hand
+Future score-zoom or space-warp effects must preserve this rule: visual distance
+may stretch, but every target remains anchored to its musical timestamp.
 
 ---
 
-## 5. Practice / No-Death Mode
+## Priority 2: Playtest and Tune All 22 Songs
 
-**Idea:** A mode where the bird cannot die — it just bounces off pipes instead.
+For each song, record:
 
-- Only scoring matters — hitting the center of the gap = more points
-- Good for learning a new song's melody before attempting a real run
-- Could show a "ghost" line of where the bird should be vs. where it actually is
+- Whether the first vocal and first note coin align
+- Whether alignment remains accurate near the middle and end
+- Notes that feel early, late, too dense, or impossible to reach
+- Whether the displayed lyric matches the sung syllable
+- Whether microphone control feels slower than keyboard control
 
-This could be the default mode for first-time players or when a new song is selected for the first time.
+Fine-tune `introOffset` only when the whole song has a consistent offset.
+Correct individual `t` values when only particular notes are mistimed.
+
+---
+
+## Priority 3: Bird Response and Silence
+
+**Current:** Singing and keyboard input move the bird toward a target height
+with a fixed lerp rate. `GRAVITY` is currently `0`, so silence does not glide
+the bird down even though that is part of the intended game design.
+
+Planned work:
+
+- Restore a gentle, predictable fall during silence
+- Test faster vertical response for dense note passages
+- Avoid adding smoothing that creates noticeable microphone lag
+- Compare microphone, keyboard, and touch behavior separately
+
+---
+
+## Priority 4: Three Lives
+
+**Current:** Pipe collision would cause instant game over, although pipes are
+currently disabled.
+
+Planned behavior:
+
+- Start each song with three lives
+- Lose one life on collision
+- Briefly flash and grant invincibility after a hit
+- Show remaining lives in the HUD
+- End the run only after the last life is lost
+- Reset lives between songs
+
+---
+
+## Priority 5: Practice Mode
+
+A no-death mode for learning a song:
+
+- Keep music and notes at normal speed initially
+- Continue after misses
+- Show whether the player was too high or too low
+- Show note accuracy and longest combo at the end
+- Consider slower playback only after synchronized speed control is reliable
+
+---
+
+## Priority 6: Mobile Browser Testing
+
+Test on iPhone Safari and Android Chrome:
+
+- Microphone permission and AudioContext startup
+- Audio resuming after pause, app switching, or screen locking
+- Bluetooth and wired-headphone latency
+- Portrait layout, safe areas, and orientation changes
+- Touch fallback and performance over a complete song
+
+---
+
+## Later Ideas
+
+### Difficulty Levels
+
+- **Easy:** Wider targets and forgiving scoring
+- **Normal:** Current target spacing and response
+- **Hard:** Narrower targets or a larger visible pitch range
+
+Difficulty should change tolerance and presentation without breaking timestamp
+alignment.
+
+### Trance Mode
+
+Combo-driven visual effects may include motion blur, colour shifts, speed lines,
+edge glow, and brighter coins. Do not change gameplay speed until audio and
+visual timing can share one reliable clock.
+
+### Song Authoring Pipeline
+
+The current pipeline is:
+
+1. Add an MP3 backing track.
+2. Create note entries with `{ note, ratio, t, lyric }`.
+3. Measure the vocal `introOffset`.
+4. Add the song to `SONG_DATA` and the carousel catalogue.
+5. Playtest the beginning, middle, and end for drift.
+
+Future work may add a JSON format or browser editor, but the existing timestamp
+format already supports mixed rhythms and tempos.
 
 ---
 
 ## Decisions Made
 
-- **Lives reset between songs** (not carried over)
-- **Max BPM: 150** — covers nearly all pop songs; 170+ is too fast to pitch-match individual notes. Note density matters more than raw BPM — long held notes at 150 BPM are fine.
+- Absolute timestamps are the source of truth for note timing.
+- The library currently contains 22 songs.
+- Personal vocal calibration is saved in `localStorage`.
+- Lives reset between songs.
+- Note density matters more than a song's headline BPM.
+- Timing accuracy takes priority over combo speed effects.
 
 ## Open Questions
 
-- Do we want a song editor in the browser, or is JSON authoring fine for now?
-- Should Practice Mode have a separate leaderboard or no leaderboard at all?
+- How should score zoom and space-warp effects visualize dense musical passages?
+- Should pipes return, or should collectible note coins remain the main mechanic?
+- Should Practice Mode have separate records or no leaderboard?
+- Is hand-authored song data sufficient, or is a browser editor needed?
+
+*Last updated: 2026-06-11*

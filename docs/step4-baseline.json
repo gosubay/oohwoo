@@ -1,0 +1,132 @@
+{
+  "method": "Actual pre-Step-4 detector; 4096 PCM samples; amplitude-0.2 clean sine; no mapping mocks",
+  "detectorSha256": "3a1d6bc49ee2b13dd37361c1dd9ee066f16554dc57a7716174d22612a0b5fe26",
+  "results": [
+    {
+      "sampleRate": 44100,
+      "inputHz": 82.41,
+      "hz": -1,
+      "candidateHz": 1876.5957331758152,
+      "confidence": 0.956776993152539,
+      "rms": 0.14072180442528434,
+      "computeMs": 4.542999999999999
+    },
+    {
+      "sampleRate": 44100,
+      "inputHz": 110,
+      "hz": -1,
+      "candidateHz": 1876.5957380837842,
+      "confidence": 0.9248873002442162,
+      "rms": 0.1411813520920693,
+      "computeMs": 2.0974999999999966
+    },
+    {
+      "sampleRate": 44100,
+      "inputHz": 130.81,
+      "hz": 131.00275861040026,
+      "candidateHz": 131.00275861040026,
+      "confidence": 0.9171807466060823,
+      "rms": 0.14096825227456666,
+      "computeMs": 2.4266000000000005
+    },
+    {
+      "sampleRate": 44100,
+      "inputHz": 220,
+      "hz": 220.0503717033643,
+      "candidateHz": 220.0503717033643,
+      "confidence": 0.9511227243708279,
+      "rms": 0.14162242930738134,
+      "computeMs": 1.9750999999999976
+    },
+    {
+      "sampleRate": 44100,
+      "inputHz": 440,
+      "hz": 440.1621514765665,
+      "candidateHz": 440.1621514765665,
+      "confidence": 0.9755076122744353,
+      "rms": 0.14154864938911732,
+      "computeMs": 3.0944999999999965
+    },
+    {
+      "sampleRate": 44100,
+      "inputHz": 880,
+      "hz": 880.2709784479083,
+      "candidateHz": 880.2709784479083,
+      "confidence": 0.9876868215684812,
+      "rms": 0.14139078400479066,
+      "computeMs": 1.9358000000000004
+    },
+    {
+      "sampleRate": 44100,
+      "inputHz": 1200,
+      "hz": 1200.0184526409123,
+      "candidateHz": 1200.0184526409123,
+      "confidence": 0.990118019165555,
+      "rms": 0.1414464267011414,
+      "computeMs": 1.836199999999998
+    },
+    {
+      "sampleRate": 48000,
+      "inputHz": 82.41,
+      "hz": -1,
+      "candidateHz": 1882.3529290003034,
+      "confidence": 0.9608475616332025,
+      "rms": 0.14110419093508667,
+      "computeMs": 2.072800000000001
+    },
+    {
+      "sampleRate": 48000,
+      "inputHz": 110,
+      "hz": -1,
+      "candidateHz": 1882.352934372983,
+      "confidence": 0.928357444367702,
+      "rms": 0.14200577107959686,
+      "computeMs": 2.0555999999999983
+    },
+    {
+      "sampleRate": 48000,
+      "inputHz": 130.81,
+      "hz": 131.04651775183362,
+      "candidateHz": 131.04651775183362,
+      "confidence": 0.9098729630243569,
+      "rms": 0.14095880864882995,
+      "computeMs": 2.413800000000002
+    },
+    {
+      "sampleRate": 48000,
+      "inputHz": 220,
+      "hz": 220.30814391095228,
+      "candidateHz": 220.30814391095228,
+      "confidence": 0.9468160234949263,
+      "rms": 0.14149105258521114,
+      "computeMs": 1.9474000000000018
+    },
+    {
+      "sampleRate": 48000,
+      "inputHz": 440,
+      "hz": 440.0207147153409,
+      "candidateHz": 440.0207147153409,
+      "confidence": 0.973322875203608,
+      "rms": 0.14133704638072575,
+      "computeMs": 1.9649
+    },
+    {
+      "sampleRate": 48000,
+      "inputHz": 880,
+      "hz": 880.0753991915052,
+      "candidateHz": 880.0753991915052,
+      "confidence": 0.9852887320495778,
+      "rms": 0.14134727834956345,
+      "computeMs": 2.000300000000003
+    },
+    {
+      "sampleRate": 48000,
+      "inputHz": 1200,
+      "hz": 1200.1247789043878,
+      "candidateHz": 1200.1247789043878,
+      "confidence": 0.9902407053792127,
+      "rms": 0.1414672156177079,
+      "computeMs": 1.9740000000000038
+    }
+  ]
+}

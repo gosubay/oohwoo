@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OohWoo rainforest preview</title>
+<style>
+  body { margin:0; background:#172d2d; color:#e0f2ec; font:16px system-ui; display:flex; flex-direction:column; align-items:center; }
+  p { margin:12px; text-align:center; }
+  iframe { border:0; width:390px; height:844px; max-width:100vw; }
+  a { color:#b9e8d6; }
+</style>
+<p>Rainforest preview · <a href="../ooh-woo-game.html">Play OohWoo</a></p>
+<!-- Uses the real game renderer, with menu controls hidden only in this preview. -->
+<iframe title="Animated rainforest and bird" src="../ooh-woo-game.html" onload="this.contentDocument.getElementById('ui').style.display='none'"></iframe>
+</html>

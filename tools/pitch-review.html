@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OohWoo microphone check</title>
+<style>body{font:18px system-ui;background:#12332c;color:#eef8ef;max-width:850px;margin:30px auto;padding:16px}button{font:inherit;padding:12px;margin:6px;cursor:pointer}pre{font:14px monospace;white-space:pre-wrap}a{color:#a3eac2}#pitch{font-size:42px;font-weight:bold;padding:20px 0}</style>
+<h1>Microphone check</h1>
+<p>Use headphones. Hum a comfortable low note, a middle note, then a higher note. Leave a few seconds of silence between them. Pitch should settle promptly and clear when you stop.</p>
+<button id="start" disabled>Enable microphone</button><button id="stop">Stop microphone</button>
+<div id="pitch">Waiting</div><p id="live">Microphone not enabled.</p>
+<button id="recording" disabled>Check recorded voice and processing speed</button>
+<p id="status">Loading the game’s actual pitch estimator…</p><details><summary>Technical recording report</summary><pre id="report"></pre></details>
+<p>Reported device latency and estimator window age are separate estimates. This page does not measure end-to-end singing delay or score the game.</p>
+<p><a href="../ooh-woo-game.html">Open OohWoo</a> · <a href="twinkle-review.html">Twinkle listening review</a></p>
+<script>
+const $=id=>document.getElementById(id);let estimate,chart,ctx,stream,analyser,buffer,liveTimer,starting=false,source,estimatorHash;
+const median=values=>values.sort((a,b)=>a-b)[Math.floor(values.length/2)];
+const sha=async bytes=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');
+async function init(){const html=await(await fetch('../ooh-woo-game.html')).text(),doc=new DOMParser().parseFromString(html,'text/html');chart=JSON.parse(doc.getElementById('twinkle-chart').textContent);
+ const code=html.slice(html.indexOf('const PITCH_RMS_MIN'),html.indexOf('function detectPitch()'));
+ const limits=html.match(/const MIN_FREQ = ([\d.]+), MAX_FREQ = ([\d.]+)/);
+ estimate=new Function('MIN_FREQ','MAX_FREQ',code+'\nreturn analysePitchPCM;')(Number(limits[1]),Number(limits[2]));
+ estimatorHash=await sha(new TextEncoder().encode(code.replace(/\r\n/g,'\n')));
+ $('start').disabled=$('recording').disabled=false;$('status').textContent='Ready. Estimator loaded from the current game; no microphone requested yet.';
+}
+async function stop(){clearInterval(liveTimer);liveTimer=null;if(source)source.disconnect();source=null;if(stream)stream.getTracks().forEach(t=>t.stop());stream=null;if(ctx){await ctx.close();ctx=null}$('pitch').textContent='Stopped';$('live').textContent='Microphone released.';$('status').textContent='Microphone stopped. Enable it again when ready.'}
+$('start').onclick=async()=>{if(starting||stream)return;starting=true;try{
+ stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:false,autoGainControl:false},video:false});ctx=new AudioContext({latencyHint:'interactive'});await ctx.resume();analyser=ctx.createAnalyser();analyser.fftSize=Math.min(32768,Math.max(4096,2**Math.ceil(Math.log2(ctx.sampleRate*.06))));buffer=new Float32Array(analyser.fftSize);source=ctx.createMediaStreamSource(stream);source.connect(analyser);
+ const settings=stream.getAudioTracks()[0].getSettings();
+ liveTimer=setInterval(()=>{analyser.getFloatTimeDomainData(buffer);const start=performance.now(),reading=estimate(buffer,ctx.sampleRate),compute=performance.now()-start;
+ $('pitch').textContent=reading.voiced?`${reading.frequency.toFixed(1)} Hz`:'No steady note';
+ $('live').textContent=`${reading.reason} · clarity ${reading.confidence.toFixed(2)} · processing ${compute.toFixed(2)} ms · window ${reading.windowMs.toFixed(1)} ms · ${ctx.sampleRate} Hz · reported input latency ${Number.isFinite(settings.latency)?(settings.latency*1000).toFixed(1)+' ms':'unknown'}`},20);
+ $('status').textContent='Microphone active. Hum, change notes, and pause in silence.';
+ }catch(e){await stop();$('status').textContent=`Microphone unavailable (${e.name}). Try allowing localhost microphone access or connecting a microphone.`}finally{starting=false}};
+$('stop').onclick=stop;
+$('recording').onclick=async()=>{try{$('recording').disabled=true;$('status').textContent='Decoding the recorded vocal and running the actual estimator…';
+ const asset=chart.provenance.assets.find(a=>a.role==='vocal'),encoded=await(await fetch('../'+asset.path)).arrayBuffer(),hash=await sha(encoded);if(hash!==asset.sha256)throw Error('Vocal asset hash differs from the reference chart.');
+ const offline=new OfflineAudioContext(1,48000,48000),decoded=await offline.decodeAudioData(encoded),resampler=new OfflineAudioContext(1,Math.ceil(decoded.duration*48000),48000),s=resampler.createBufferSource();s.buffer=decoded;s.connect(resampler.destination);s.start();const pcm=(await resampler.startRendering()).getChannelData(0),notes=[];
+ for(const n of chart.notes){const hz=[],frames=[];for(let t=n.onset+.12;t<n.end-.10;t+=.02){const end=Math.round(t*48000),reading=estimate(pcm.subarray(end-4096,end),48000);if(reading.voiced)hz.push(reading.frequency);frames.push(reading.voiced)}const mid=hz.length?median(hz):null;notes.push({id:n.id,expectedMidi:n.midi,medianHz:mid,centsError:mid?1200*Math.log2(mid/(440*2**((n.midi-69)/12))):null,voicedFrames:hz.length,totalFrames:frames.length})}
+ const sine=new Float32Array(4096);for(let i=0;i<sine.length;i++)sine[i]=.2*Math.sin(2*Math.PI*110*i/48000);for(let i=0;i<100;i++)estimate(sine,48000);const times=[];for(let i=0;i<300;i++){const start=performance.now();estimate(sine,48000);times.push(performance.now()-start)}times.sort((a,b)=>a-b);
+ const report={kind:'Decoded real Twinkle vocal recording through current game estimator; not live microphone evidence',estimatorSha256:estimatorHash,asset:{path:asset.path,sha256:hash},sampleRate:48000,browser:navigator.userAgent,notes,performance:{medianMs:times[150],p95Ms:times[285],maxMs:times.at(-1)},listeningVerified:false,liveMicrophoneVerified:false};
+ $('report').textContent=JSON.stringify(report,null,2);const response=await fetch('/pitch-report',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(report)});if(!response.ok)throw Error('Numerical results are visible, but saving needs tools/reference-server.py on port 8081.');
+ $('status').textContent=`Recording checks complete: ${notes.filter(n=>n.centsError!==null&&Math.abs(n.centsError)<50).length}/42 note medians within 50 cents. Browser median ${times[150].toFixed(3)} ms, p95 ${times[285].toFixed(3)} ms. Saved docs/step4-browser.json.`;
+ }catch(e){$('status').textContent=e.message}finally{$('recording').disabled=false}};
+init().catch(e=>$('status').textContent=e.message);
+</script></html>

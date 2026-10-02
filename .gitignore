@@ -1,0 +1,13 @@
+# Old copies and snapshots of the repo
+.oohwoo-github-import-*/
+.handover-baseline/
+oohwoo/
+
+# Original source MP3s (duplicates of audio/)
+songs/
+
+# Personal settings
+.claude/settings.local.json
+
+# Stray file from a mistyped path
+C*ClaudeCodeOohWoolyrics_raw.txt

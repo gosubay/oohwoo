@@ -1,141 +1,156 @@
-# OohWoo — Design Decisions
+# OohWoo - Design Decisions
 
-A running log of major design choices, the reasoning behind them, and alternatives considered.
-For future developers: read this to understand *why* the game works the way it does, not just *how*.
+> 2026-10-01: The new intended behaviour is specified in
+> [the approved gameplay specification](docs/GAMEPLAY-SPEC.md).
+> The historical notes below include outdated descriptions of movement, calibration,
+> and silence. Use [the implementation handover](docs/IMPLEMENTATION-HANDOVER.md)
+> for the current-code audit; do not treat all historical decisions as the new design.
 
----
+A running log of major design choices, their reasoning, and the current
+implementation status.
 
 ## Game Concept
 
-**Decision: Flappy Bird controlled by singing**
-The core loop is pitch-to-height mapping: sing higher to fly up, sing lower to fly down, silence = gentle fall. Pipes are timed to melody notes so the "correct" path through the level is the song itself.
+**Decision: Control a flying bird by singing**
 
-Why this works: the game teaches you the melody by making you survive it. Players who know the song do better. Players who don't know the song learn it by playing.
+Pitch maps to vertical position: higher pitch moves the bird up and lower pitch
+moves it down. The intended silence behavior is a gentle fall, although gravity
+is currently disabled and needs to be restored.
 
-Alternatives not pursued: volume control (too hard to sustain), rhythm tapping (too similar to existing games), speech recognition (too slow/complex).
+Notes from the melody travel across the screen. Matching the correct pitch at
+the correct time collects the note coin. The original vine-pipe drawing and
+collision systems remain in the code, but pipe spawning is currently disabled.
 
----
+## Audio and Pitch Detection
 
-## Audio / Pitch Detection
+**Decision: Use Web Audio autocorrelation**
 
-**Decision: Autocorrelation pitch detection via Web Audio API**
-We use `getUserMedia` → `AnalyserNode` → autocorrelation algorithm running in the game loop. No external library.
+The microphone path is `getUserMedia` -> `AnalyserNode` -> autocorrelation pitch
+detection. This keeps the game browser-only and avoids external libraries.
 
-Why: works in-browser with no install, low latency, sufficient accuracy for a melody game (doesn't need concert-hall precision).
+**Decision: Detect from 100 Hz to 600 Hz**
 
-**Decision: Global detection window `MIN_FREQ=100Hz`, `MAX_FREQ=600Hz`**
-Covers bass voice to soprano. Notes outside this range are ignored as noise.
+The global range covers low voices through high voices. A player's comfortable
+range is calibrated separately and saved in `localStorage`.
 
-**Decision: Personal calibration stored in localStorage**
-Players sing their lowest and highest comfortable notes. The game maps that personal range to 0–1 bird height, so a bass and a soprano play identically. Calibration persists across sessions.
+**Decision: Map personal vocal range to the full play area**
 
-Why: without calibration, a soprano's normal speaking voice would fly the bird off-screen, and a bass would never get off the ground. Calibration makes the game accessible to any voice.
+`playerMinFreq` and `playerMaxFreq` let different voice types control the same
+game path. Calibration is more accurate and inclusive than asking players to
+choose a fixed voice category.
 
-Alternatives considered: fixed range per voice type (tenor/soprano presets). Rejected because it still requires the player to self-identify their voice type, and manual calibration is more accurate.
+## Navigation
 
----
+**Decision: Main menu -> song selector -> game**
 
-## Navigation Structure
-
-**Decision: Main menu → Song selector → Game (3-level hierarchy)**
-Main menu has: Play (→ song selector), Set up my voice, Mic On/Off.
-Song selector shows all available songs with full bilingual titles.
-
-Why: keeps the main menu clean and uncluttered as the song library grows. Avoids a wall of song cards on the first screen players see.
-
-Previous structure: song selector *was* the main menu. Worked fine with 2 songs, would become unwieldy at 24.
-
-**Decision: "Set up my voice" and "Mic On/Off" are small/subtle controls on main menu**
-These are secondary actions — most players won't need them every session. They're styled as a small text link and a small secondary button rather than large primary buttons.
-
-Why: the primary action is Play. Secondary actions should not compete visually.
-
----
-
-## Pipe / Level Design
-
-**Decision: Pipes timed to melody notes**
-Each pipe appears at the pitch height the player should be singing at that moment in the song. Flying through the pipe = singing the right note at the right time.
-
-**Decision: Moving to absolute timestamps (t: seconds) instead of BPM + beats**
-*Status: planned, not yet implemented*
-
-Original system: song defines a BPM and each note has a `beats` duration. Pipe timing is calculated by multiplying.
-
-Problem: songs with fast sections (e.g. "morning bells are ringing" in Brother John) have eighth notes that are twice as fast as the rest of the song. Fixed BPM can't represent mixed note durations cleanly.
-
-New system: each pipe entry will have `t: seconds` — the exact time into the song when it should appear. The game loop compares `gameTime >= pipe.t` and spawns accordingly.
-
-Why this is durable: works regardless of BPM, handles mixed tempos, handles any rhythm. The transcription script already outputs timestamps in seconds so the data pipeline supports this naturally.
-
----
-
-## Bird Movement Speed
-
-**Decision: Dynamic bird speed based on gap to next pipe**
-*Status: under discussion, not yet implemented*
-
-The bird's vertical lerp speed should respond to how dense the upcoming notes are. When the next pipe is far away (slow passage, quarter notes), the bird glides gently. When the next pipe is close (fast passage, eighth notes), the bird moves more urgently.
-
-Why: a fixed speed feels either too sluggish on fast songs or too twitchy on slow ones. Tying speed to note density means the game *feels* like the music.
-
-Alternative considered: per-song `birdSpeed` setting. Rejected because it requires manual tuning for every song and breaks down within songs that have mixed tempos.
-
-Alternative considered: fixed speed based on overall song BPM. Rejected for same reason — doesn't handle intra-song variation.
-
-Preferred direction: Option D — bird glides lazily mid-gap, then accelerates as the next pipe approaches. Creates a sense of musical anticipation and urgency at the right moments.
-
----
+The song selector uses a carousel so the growing catalogue does not overwhelm
+the main menu. Voice setup and microphone controls remain secondary actions.
 
 ## Song Library
 
-**Decision: All songs are bilingual (English + Chinese)**
-Song titles and eventually lyrics are shown in both languages. The game is designed for a bilingual audience.
+**Decision: Ship 22 songs in the current library**
 
-Current songs:
-1. Twinkle Twinkle Little Star / 一闪一闪亮晶晶
-2. Brother John / Are You Sleeping? — 两只老虎 / 法国民谣
+Each carousel entry includes a title, optional Chinese title, difficulty label,
+estimated number of targets, and duration. Each song has an MP3 backing track
+and timestamped note data.
 
-Planned: 22 more songs (lyrics sourced from Children's Song Lyrics.docx).
+**Decision: Keep bilingual presentation where source material is available**
 
-**Decision: Fast melodic runs become single grouped pipes**
-Phrases like "morning bells are ringing" (4 fast notes) become one pipe at a representative pitch rather than 4 rapid-fire pipes.
+English and Chinese titles and lyrics are used where available. Two Malay songs
+currently use their Malay/English titles without Chinese subtitles.
 
-Why: pipe gaps under ~0.8–1.0 seconds are too fast for a player to physically reposition their pitch. Grouping keeps gameplay comfortable without losing the musical structure of the song.
+## Note Timing
 
----
+**Decision: Use absolute timestamps instead of BPM and beat counts**
+
+*Status: implemented for all 22 songs.*
+
+Each note uses:
+
+```js
+{ note: 'C4', ratio: 0.00, t: 0.500, lyric: 'word' }
+```
+
+`t` is the note time relative to the first vocal phrase. Each song also has an
+`introOffset`, measured from its separated vocal track, which places the note
+timeline at the correct position in the full MP3.
+
+`buildPipes()` subtracts the on-screen travel time so a note should arrive at
+the hit zone at its absolute audio timestamp.
+
+Why this is durable:
+
+- Mixed note lengths and tempo changes need no special BPM logic.
+- Individual notes can be corrected without shifting the whole song.
+- Transcription tools already produce timestamps in seconds.
+
+## Timing Clock
+
+**Decision: The backing track clock is authoritative**
+
+*Status: implemented.*
+
+The selected MP3 is fetched and decoded before gameplay begins. The backing
+track is then scheduled with a short pre-roll, and `gameTime` is derived from:
+
+```js
+backingCtx.currentTime - backingStartTime
+```
+
+Each target stores its schedule time. Its horizontal position is recalculated
+from the audio clock every frame instead of accumulating animation-frame
+movement. This prevents loading delays, frame drops, and combo rewards from
+causing musical drift.
+
+**Space-warp rule:** The score may zoom, compress, or stretch visually, but the
+mapping from each target to its musical timestamp must remain unchanged.
+
+## Bird Movement
+
+**Decision: Lerp toward detected pitch without spring overshoot**
+
+The current fixed lerp removed overshoot and reduced instability. Microphone
+input also uses a small bird-position compensation for pitch-detection latency.
+
+Still to decide:
+
+- Whether response should adapt to the time until the next note
+- How quickly silence should lower the bird
+- Whether keyboard and microphone need different movement tuning
+
+## Scoring and Combo
+
+**Current behavior**
+
+- Collecting a note coin increases the combo and awards its tier multiplier.
+- Missing a coin resets the combo.
+- Combo thresholds increase points and coin/HUD glow.
+- Combo thresholds never change note speed.
+- Passing enabled pipes would award additional points, but pipes are disabled.
+
+This keeps reward intensity separate from the musical timeline.
 
 ## Platform
 
-**Decision: Single HTML file, no build step**
-Everything — game logic, rendering, audio, UI — lives in `ooh-woo-game.html`. No framework, no bundler, no install.
+**Decision: Keep a single HTML file with no build step**
 
-Why: maximum portability. Any developer can open one file and understand the whole game. Deployment is copying one file.
+All UI, rendering, audio, song data, and game logic live in
+`ooh-woo-game.html`. This favors portability and easy local deployment over
+modular file organization.
 
-Trade-off: the file will get long. Acceptable for this project size.
+**Decision: Serve through localhost**
 
-**Decision: Must be served over `localhost`, not `file://`**
-Chrome blocks microphone access on `file://` URLs. The included `start-game.bat` launches a Python HTTP server automatically.
+Microphone access requires a secure context. The included `start-game.bat`
+serves the project at `http://localhost:8080/ooh-woo-game.html`.
 
----
+## Near-Term Priorities
 
-## Roadmap / Future Features
+1. Playtest timestamp alignment across all 22 songs.
+2. Design score zoom and visual space-warp effects around fixed timestamps.
+3. Restore silence gliding and tune bird response.
+4. Add three lives.
+5. Add Practice Mode and richer result statistics.
+6. Test iPhone Safari and Android Chrome.
 
-**Trance mode** (combo 80+, speed 3x):
-- Motion blur on bird
-- Colour shift / saturation boost
-- Speed lines radiating from bird
-- Music pitch shifts up ~2 semitones
-- Screen edge glow pulses with beat
-- Coins shimmer brighter
-
-**3 lives system** — 3 misses before combo fully resets.
-
-**Practice mode** — song at 50% speed, no combo pressure, for learning the melody.
-
-**iPhone compatibility** — test and fix iOS Safari mic/audio issues.
-
----
-
-*Last updated: 2026-06-02*
+*Last updated: 2026-06-11*
 *Maintainer: Galvin (gosu/gosubay)*

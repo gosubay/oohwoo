@@ -1,0 +1,142 @@
+{
+  "source": "audio/1. Twinkle Twinkle Little Star.mp3",
+  "sourceSha256": "23b692312c02814b84c97505a60937b7131cc48d3f09de94c87eaf79e629a4a3",
+  "method": "FFmpeg librubberband: tempo=1; pitchq=quality; channels=together; window=long; transients=mixed",
+  "ffmpeg": "ffmpeg version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+  "excerptSeconds": 40.6,
+  "listeningApproved": false,
+  "variants": [
+    {
+      "semitones": -5,
+      "path": "audio/comfort/twinkle-key--5.mp3",
+      "sha256": "93e9b7bbdd64216bb382ec5b9bbc81610907b04e495eabc37f6b556a77e9d3bb",
+      "decodedDuration": 40.6,
+      "peak": 0.38176679611206055,
+      "probeCentsError": 1.9550008653876136,
+      "probeDuration": 3.0,
+      "envelopeLagSeconds": 0.009977324263038548,
+      "envelopeCorrelation": 0.8701031748637079,
+      "rmsRatio": 0.6436960101127625
+    },
+    {
+      "semitones": -4,
+      "path": "audio/comfort/twinkle-key--4.mp3",
+      "sha256": "8b973498959e407307332249f387d32fc4cb150f63f43ac43a1daa07fe8e3f2c",
+      "decodedDuration": 40.6,
+      "peak": 0.4965803027153015,
+      "probeCentsError": 3.8216779692029266,
+      "probeDuration": 3.0,
+      "envelopeLagSeconds": 0.009977324263038548,
+      "envelopeCorrelation": 0.9163921925580679,
+      "rmsRatio": 0.6894366145133972
+    },
+    {
+      "semitones": -3,
+      "path": "audio/comfort/twinkle-key--3.mp3",
+      "sha256": "3cde9b75771b986b3187e34e0ea62008b76848f01b9b41e253bebc32bc0993eb",
+      "decodedDuration": 40.6,
+      "peak": 0.5457852482795715,
+      "probeCentsError": 0.026096389982859246,
+      "probeDuration": 3.0,
+      "envelopeLagSeconds": 0.0,
+      "envelopeCorrelation": 0.9178257122237655,
+      "rmsRatio": 0.7019102573394775
+    },
+    {
+      "semitones": -2,
+      "path": "audio/comfort/twinkle-key--2.mp3",
+      "sha256": "53f437c5156afeab573ecfcd5640b46f4df4c8e6d096a99194f513537ef777b2",
+      "decodedDuration": 40.6,
+      "peak": 0.4648630619049072,
+      "probeCentsError": 0.02015670865839516,
+      "probeDuration": 3.0,
+      "envelopeLagSeconds": 0.0,
+      "envelopeCorrelation": 0.9172098274507368,
+      "rmsRatio": 0.6867359280586243
+    },
+    {
+      "semitones": -1,
+      "path": "audio/comfort/twinkle-key--1.mp3",
+      "sha256": "d98777e504949b8180d817bcbf9006eb9becdc14a67251113ef037be56e07a51",
+      "decodedDuration": 40.6,
+      "peak": 0.3747735917568207,
+      "probeCentsError": 2.896005539719072,
+      "probeDuration": 3.0,
+      "envelopeLagSeconds": 0.0,
+      "envelopeCorrelation": 0.8872181189207604,
+      "rmsRatio": 0.7034980654716492
+    },
+    {
+      "semitones": 1,
+      "path": "audio/comfort/twinkle-key-1.mp3",
+      "sha256": "e2447b6333aff05d2fedd14a2addfcec2a91f6abbf12286954f4c2e8b98c11f8",
+      "decodedDuration": 40.6,
+      "peak": 0.480599045753479,
+      "probeCentsError": -0.6082826444551899,
+      "probeDuration": 3.0,
+      "envelopeLagSeconds": 0.0,
+      "envelopeCorrelation": 0.9167905057577266,
+      "rmsRatio": 0.7244600653648376
+    },
+    {
+      "semitones": 2,
+      "path": "audio/comfort/twinkle-key-2.mp3",
+      "sha256": "4806eb585cd10ebf8b5d5a336c08614be0c2e38dbfc22f9218f454193c46e1f2",
+      "decodedDuration": 40.6,
+      "peak": 0.47346287965774536,
+      "probeCentsError": 0.4090216720216504,
+      "probeDuration": 3.0,
+      "envelopeLagSeconds": -0.009977324263038548,
+      "envelopeCorrelation": 0.9353481894196465,
+      "rmsRatio": 0.7351887226104736
+    },
+    {
+      "semitones": 3,
+      "path": "audio/comfort/twinkle-key-3.mp3",
+      "sha256": "dbabe1387991529597e487926570534c8ceda99a6e2ab8e6758d00fbe21bbd99",
+      "decodedDuration": 40.6,
+      "peak": 0.558143138885498,
+      "probeCentsError": 2.4759456153490413,
+      "probeDuration": 3.0,
+      "envelopeLagSeconds": -0.009977324263038548,
+      "envelopeCorrelation": 0.9158869840220766,
+      "rmsRatio": 0.7156245112419128
+    },
+    {
+      "semitones": 4,
+      "path": "audio/comfort/twinkle-key-4.mp3",
+      "sha256": "8f11d038e7f0d357e1070aec702c7baa2774ca2d8bbd703ad2593af9a06f83a1",
+      "decodedDuration": 40.6,
+      "peak": 0.590855598449707,
+      "probeCentsError": -1.1410569705654359,
+      "probeDuration": 3.0,
+      "envelopeLagSeconds": -0.009977324263038548,
+      "envelopeCorrelation": 0.9098540923389957,
+      "rmsRatio": 0.6892802119255066
+    },
+    {
+      "semitones": 5,
+      "path": "audio/comfort/twinkle-key-5.mp3",
+      "sha256": "c1bf67476a6ead8a0ef8a86df180e726bcee139b1f12440e785148e9c780ef88",
+      "decodedDuration": 40.6,
+      "peak": 0.4262179136276245,
+      "probeCentsError": 1.9751575740457759,
+      "probeDuration": 3.0,
+      "envelopeLagSeconds": -0.009977324263038548,
+      "envelopeCorrelation": 0.9200093439779236,
+      "rmsRatio": 0.6978815197944641
+    },
+    {
+      "semitones": 6,
+      "path": "audio/comfort/twinkle-key-6.mp3",
+      "sha256": "7251a8c723094cd3cec0538e87f4c611bd0b24578a718642c394421686388122",
+      "decodedDuration": 40.6,
+      "peak": 0.4886731505393982,
+      "probeCentsError": -0.706732072868482,
+      "probeDuration": 3.0,
+      "envelopeLagSeconds": -0.009977324263038548,
+      "envelopeCorrelation": 0.8923456517971584,
+      "rmsRatio": 0.6787537932395935
+    }
+  ]
+}

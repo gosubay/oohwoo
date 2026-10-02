@@ -1,0 +1,355 @@
+{
+  "kind": "Decoded real Twinkle vocal recording through current game estimator; not live microphone evidence",
+  "estimatorSha256": "535dfaa79d7e6a664f79eaa5fb093522d2a8cd7e27b36b0baf0124053790ba3f",
+  "asset": {
+    "path": "separated/vocals/1. Twinkle Twinkle Little Star.mp3",
+    "sha256": "2da1c493906a5627cbf1dc8529dc7b2f87f403208cad94b7132a97ac3bd74de8"
+  },
+  "sampleRate": 48000,
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+  "notes": [
+    {
+      "id": "n01",
+      "expectedMidi": 62,
+      "medianHz": 291.6825350400957,
+      "centsError": -11.725422330450682,
+      "voicedFrames": 22,
+      "totalFrames": 25
+    },
+    {
+      "id": "n02",
+      "expectedMidi": 62,
+      "medianHz": 292.98199201003547,
+      "centsError": -4.029837078089219,
+      "voicedFrames": 13,
+      "totalFrames": 13
+    },
+    {
+      "id": "n03",
+      "expectedMidi": 69,
+      "medianHz": 439.8561923914099,
+      "centsError": -0.5659211877484993,
+      "voicedFrames": 22,
+      "totalFrames": 22
+    },
+    {
+      "id": "n04",
+      "expectedMidi": 69,
+      "medianHz": 437.18677668426164,
+      "centsError": -11.10451005267467,
+      "voicedFrames": 18,
+      "totalFrames": 18
+    },
+    {
+      "id": "n05",
+      "expectedMidi": 71,
+      "medianHz": 493.70371162675474,
+      "centsError": -0.6296390709777339,
+      "voicedFrames": 11,
+      "totalFrames": 11
+    },
+    {
+      "id": "n06",
+      "expectedMidi": 71,
+      "medianHz": 494.37526948653647,
+      "centsError": 1.723662707555492,
+      "voicedFrames": 16,
+      "totalFrames": 19
+    },
+    {
+      "id": "n07",
+      "expectedMidi": 69,
+      "medianHz": 440.3312110622667,
+      "centsError": 1.3027003661210512,
+      "voicedFrames": 17,
+      "totalFrames": 17
+    },
+    {
+      "id": "n08",
+      "expectedMidi": 67,
+      "medianHz": 393.6474460349442,
+      "centsError": 7.280713245693882,
+      "voicedFrames": 20,
+      "totalFrames": 20
+    },
+    {
+      "id": "n09",
+      "expectedMidi": 67,
+      "medianHz": 393.05794026383467,
+      "centsError": 4.686164709841483,
+      "voicedFrames": 16,
+      "totalFrames": 16
+    },
+    {
+      "id": "n10",
+      "expectedMidi": 66,
+      "medianHz": 369.4375484988219,
+      "centsError": -2.6076226565038123,
+      "voicedFrames": 15,
+      "totalFrames": 15
+    },
+    {
+      "id": "n11",
+      "expectedMidi": 66,
+      "medianHz": 370.90431045744765,
+      "centsError": 4.252212529940528,
+      "voicedFrames": 18,
+      "totalFrames": 18
+    },
+    {
+      "id": "n12",
+      "expectedMidi": 64,
+      "medianHz": 330.3279352025115,
+      "centsError": 3.6745483958910916,
+      "voicedFrames": 15,
+      "totalFrames": 15
+    },
+    {
+      "id": "n13",
+      "expectedMidi": 64,
+      "medianHz": 330.12884541205756,
+      "centsError": 2.6308130763005444,
+      "voicedFrames": 18,
+      "totalFrames": 18
+    },
+    {
+      "id": "n14",
+      "expectedMidi": 62,
+      "medianHz": 293.513268187715,
+      "centsError": -0.8933627627763558,
+      "voicedFrames": 18,
+      "totalFrames": 18
+    },
+    {
+      "id": "n15",
+      "expectedMidi": 69,
+      "medianHz": 438.58217834314723,
+      "centsError": -5.5876008394347165,
+      "voicedFrames": 15,
+      "totalFrames": 15
+    },
+    {
+      "id": "n16",
+      "expectedMidi": 69,
+      "medianHz": 441.795514354788,
+      "centsError": 7.050296428176874,
+      "voicedFrames": 16,
+      "totalFrames": 16
+    },
+    {
+      "id": "n17",
+      "expectedMidi": 67,
+      "medianHz": 392.05460175489674,
+      "centsError": 0.261283837195733,
+      "voicedFrames": 16,
+      "totalFrames": 16
+    },
+    {
+      "id": "n18",
+      "expectedMidi": 67,
+      "medianHz": 392.77854458467306,
+      "centsError": 3.4551215026759747,
+      "voicedFrames": 17,
+      "totalFrames": 17
+    },
+    {
+      "id": "n19",
+      "expectedMidi": 66,
+      "medianHz": 370.9438805508791,
+      "centsError": 4.436900162716548,
+      "voicedFrames": 15,
+      "totalFrames": 16
+    },
+    {
+      "id": "n20",
+      "expectedMidi": 66,
+      "medianHz": 371.3659456871895,
+      "centsError": 6.405602685082122,
+      "voicedFrames": 15,
+      "totalFrames": 18
+    },
+    {
+      "id": "n21",
+      "expectedMidi": 64,
+      "medianHz": 331.89979420550435,
+      "centsError": 11.893053348046841,
+      "voicedFrames": 13,
+      "totalFrames": 13
+    },
+    {
+      "id": "n22",
+      "expectedMidi": 69,
+      "medianHz": 440.794509461622,
+      "centsError": 3.1232760662187227,
+      "voicedFrames": 14,
+      "totalFrames": 14
+    },
+    {
+      "id": "n23",
+      "expectedMidi": 69,
+      "medianHz": 440.0001789345312,
+      "centsError": 0.0007040397498852325,
+      "voicedFrames": 15,
+      "totalFrames": 15
+    },
+    {
+      "id": "n24",
+      "expectedMidi": 67,
+      "medianHz": 392.3264730637157,
+      "centsError": 1.4613966414185595,
+      "voicedFrames": 16,
+      "totalFrames": 16
+    },
+    {
+      "id": "n25",
+      "expectedMidi": 67,
+      "medianHz": 393.310193037901,
+      "centsError": 5.79686232822262,
+      "voicedFrames": 16,
+      "totalFrames": 16
+    },
+    {
+      "id": "n26",
+      "expectedMidi": 66,
+      "medianHz": 370.0694156483612,
+      "centsError": 0.3508625045997675,
+      "voicedFrames": 16,
+      "totalFrames": 16
+    },
+    {
+      "id": "n27",
+      "expectedMidi": 66,
+      "medianHz": 371.0387172201302,
+      "centsError": 4.879456288142773,
+      "voicedFrames": 12,
+      "totalFrames": 15
+    },
+    {
+      "id": "n28",
+      "expectedMidi": 64,
+      "medianHz": 330.22972607940227,
+      "centsError": 3.1597622112044177,
+      "voicedFrames": 21,
+      "totalFrames": 21
+    },
+    {
+      "id": "n29",
+      "expectedMidi": 62,
+      "medianHz": 288.29901502308763,
+      "centsError": -31.925139071545004,
+      "voicedFrames": 17,
+      "totalFrames": 18
+    },
+    {
+      "id": "n30",
+      "expectedMidi": 62,
+      "medianHz": 293.7257543940099,
+      "centsError": 0.359494616258197,
+      "voicedFrames": 12,
+      "totalFrames": 12
+    },
+    {
+      "id": "n31",
+      "expectedMidi": 69,
+      "medianHz": 440.4172813584044,
+      "centsError": 1.6410667193839483,
+      "voicedFrames": 18,
+      "totalFrames": 18
+    },
+    {
+      "id": "n32",
+      "expectedMidi": 69,
+      "medianHz": 438.92191494643487,
+      "centsError": -4.247063264257119,
+      "voicedFrames": 18,
+      "totalFrames": 18
+    },
+    {
+      "id": "n33",
+      "expectedMidi": 71,
+      "medianHz": 493.39853660948904,
+      "centsError": -1.7001044631735225,
+      "voicedFrames": 16,
+      "totalFrames": 16
+    },
+    {
+      "id": "n34",
+      "expectedMidi": 71,
+      "medianHz": 495.10846385435764,
+      "centsError": 4.289306272374239,
+      "voicedFrames": 11,
+      "totalFrames": 14
+    },
+    {
+      "id": "n35",
+      "expectedMidi": 69,
+      "medianHz": 439.0984400711994,
+      "centsError": -3.5509374651699703,
+      "voicedFrames": 17,
+      "totalFrames": 17
+    },
+    {
+      "id": "n36",
+      "expectedMidi": 67,
+      "medianHz": 390.9105038971865,
+      "centsError": -4.798207479023496,
+      "voicedFrames": 19,
+      "totalFrames": 19
+    },
+    {
+      "id": "n37",
+      "expectedMidi": 67,
+      "medianHz": 391.7494193727693,
+      "centsError": -1.0868647907056777,
+      "voicedFrames": 15,
+      "totalFrames": 15
+    },
+    {
+      "id": "n38",
+      "expectedMidi": 66,
+      "medianHz": 370.2164030409527,
+      "centsError": 1.0383525949341312,
+      "voicedFrames": 13,
+      "totalFrames": 13
+    },
+    {
+      "id": "n39",
+      "expectedMidi": 66,
+      "medianHz": 370.2130504795654,
+      "centsError": 1.0226750218780962,
+      "voicedFrames": 19,
+      "totalFrames": 19
+    },
+    {
+      "id": "n40",
+      "expectedMidi": 64,
+      "medianHz": 329.95493192114776,
+      "centsError": 1.7185501958571205,
+      "voicedFrames": 8,
+      "totalFrames": 17
+    },
+    {
+      "id": "n41",
+      "expectedMidi": 64,
+      "medianHz": 329.50587775326795,
+      "centsError": -0.6391880474533126,
+      "voicedFrames": 19,
+      "totalFrames": 19
+    },
+    {
+      "id": "n42",
+      "expectedMidi": 62,
+      "medianHz": 294.1175425505316,
+      "centsError": 2.667174572965408,
+      "voicedFrames": 51,
+      "totalFrames": 51
+    }
+  ],
+  "performance": {
+    "medianMs": 0.09999999403953552,
+    "p95Ms": 0.10000000149011612,
+    "maxMs": 0.20000000298023224
+  },
+  "listeningVerified": false,
+  "liveMicrophoneVerified": false
+}

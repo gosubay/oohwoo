@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OohWoo judgement review</title>
+<style>body{margin:0;background:#17312c;color:white;text-align:center;font:15px system-ui}button,a{margin:8px;padding:8px;color:#17312c}iframe{display:block;border:0;width:390px;height:844px;max-width:100vw;margin:auto}</style>
+<p>Simulated review · no microphone capture · scores below are demonstration data.</p>
+<button onclick="feedback()">Judgement feedback</button><button onclick="results()">Results example</button>
+<a href="../ooh-woo-game.html" style="color:white">Play the game</a>
+<iframe id="game" title="Game judgement preview" src="../ooh-woo-game.html" onload="feedback()"></iframe>
+<script>
+function execute(source){document.getElementById('game').contentWindow.eval(source)}
+function feedback(){execute(`
+  startGame('twinkle');micEnabled=false;micReady=false;getBackingTrackTime=()=>null;
+  pipeSchedule=[];noteJudgements=[];nextPipeIdx=0;keyRatio=.5;touchHeld=false;
+  const labels=['Perfect','Great','Good','Miss'];
+  function demo(){
+    if(state!=='playing')return;
+    const label=labels[Math.floor(gameTime/1.1)%4];
+    const color=NOTE_GRADES.find(g=>g.name===label)?.color||'#ff9393';
+    judgementFeedback=[{text:label,color,t:gameTime,x:birdX+28,y:birdY-28}];
+    setTimeout(demo,1100);
+  }demo();
+`)}
+function results(){execute(`
+  startGame('twinkle');noteJudgements=Array.from({length:42},()=>makeNoteJudgement({t:0,end:1},null));
+  for(let i=0;i<42;i++){
+    noteJudgements[i].samples=[{a:0,b:1,error:i<30?0:i<38?50:i<40?80:200}];
+    resolveNoteJudgement(noteJudgements[i]);
+  }
+  fallbackJudgementUsed=true;songComplete();
+`)}
+</script>
+</html>

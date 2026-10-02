@@ -1,0 +1,117 @@
+[
+  {
+    "path": "audio/1. Twinkle Twinkle Little Star.mp3",
+    "bytes": 1712927,
+    "sha256": "23b692312c02814b84c97505a60937b7131cc48d3f09de94c87eaf79e629a4a3"
+  },
+  {
+    "path": "audio/10. The More We Get Together.mp3",
+    "bytes": 1518416,
+    "sha256": "952af9e579504b62625c8eb32ada1a6e86710e68236eab5ebb4b929938d70bde"
+  },
+  {
+    "path": "audio/11. Little Bunny.mp3",
+    "bytes": 1740841,
+    "sha256": "d2147c0eb31778ee8decc9fd799c51bc79b37204a28f865afe28cf417fd8eecb"
+  },
+  {
+    "path": "audio/12. Rain Rain Go Away.mp3",
+    "bytes": 3503242,
+    "sha256": "853d7bab1da6338e53ceec32953be048cba326efe1cc49f0b844bd69527d4d76"
+  },
+  {
+    "path": "audio/12a. Rain Rain Go Away.mp3",
+    "bytes": 3597151,
+    "sha256": "d5f877dec94dfe6b29532246c6e59d8312e4335a5e48917b66b8f3bf7736c828"
+  },
+  {
+    "path": "audio/13. Finger Family.mp3",
+    "bytes": 2067808,
+    "sha256": "17f2f2fbc16761cf2f566e5302c05d43fb2a3be6a8dabfea01bc39e49bd112b5"
+  },
+  {
+    "path": "audio/14. Wheels On The Bus.mp3",
+    "bytes": 2646230,
+    "sha256": "335b9e7f818dc33c8765ba6e5379373357096f8e6ba44a8127acdf6000aaa53d"
+  },
+  {
+    "path": "audio/15. Old McDonald Had a Farm.mp3",
+    "bytes": 4426714,
+    "sha256": "c9553a1e015f83bb97a3abba37dd355e7bb90c88a5b7582e21f56b5aae4b0439"
+  },
+  {
+    "path": "audio/16. If you're happy and you know it.mp3",
+    "bytes": 2114574,
+    "sha256": "314e3c5418f223875a511ddf7aad0e4c12f10f4d5b1c3ddfdd4dce56354627fe"
+  },
+  {
+    "path": "audio/17. 5 Little Monkeys.mp3",
+    "bytes": 3157276,
+    "sha256": "eaf6d9f487c970d189e0d528eff8031fe6e5648602a72939d1ba93ed38e91c22"
+  },
+  {
+    "path": "audio/18. Baby Shark.mp3",
+    "bytes": 2655346,
+    "sha256": "33738c1499e3dc07a10feb2975569fada4b9ef2e9e119ca5ca122ee0406e3bc5"
+  },
+  {
+    "path": "audio/19. Ba Luo Bo.mp3",
+    "bytes": 2731465,
+    "sha256": "15e4915ea78bcfb6bc87552c8aba30632de92b06f338eddeb11f622635d30a23"
+  },
+  {
+    "path": "audio/2. Brother John - Two Tigers.mp3",
+    "bytes": 2132142,
+    "sha256": "65377d507f570901bea19a4973c805d484fb254f239c668e8abacad978b5e0ae"
+  },
+  {
+    "path": "audio/20. Xiao Yan Zi - Little Bird.mp3",
+    "bytes": 7821077,
+    "sha256": "952f0caa604e46e122e3e9e2d86161ffa87b1b115c7e0d3bf93bed8c64a86939"
+  },
+  {
+    "path": "audio/21. Rasa Sayang.mp3",
+    "bytes": 1140054,
+    "sha256": "1731782efcf4f76b85f17633e4588c659ac7322b689a9484992b3135dd9f72dd"
+  },
+  {
+    "path": "audio/22. Chan Mali Chan.mp3",
+    "bytes": 2629367,
+    "sha256": "e81ec158d9ba086f5a284315130a9231fcb54b83d4d7eaff603e37ed3d07c0a2"
+  },
+  {
+    "path": "audio/3. Humpty Dumpty.mp3",
+    "bytes": 1592589,
+    "sha256": "a32aadb2f1f2c18bdca3cf9e178d3d52043e9d818920971f63194d05702cac0a"
+  },
+  {
+    "path": "audio/4. Head Shoulders Knees Toes.mp3",
+    "bytes": 1697410,
+    "sha256": "7bd960f369606d9b23a24786930962e6340eb7bd51ad828e56592cd0db9c7d18"
+  },
+  {
+    "path": "audio/5. London Bridge.mp3",
+    "bytes": 1862036,
+    "sha256": "968c0af5dfe4af0ac25ceed17035a9226c9daa87f27ed9c1a40887a2f338d278"
+  },
+  {
+    "path": "audio/6. Itsy Bitsy Spider.mp3",
+    "bytes": 1865460,
+    "sha256": "04c228009b12515086f957fde94ed0cb1f4d0535d26a38e552872b4b2392cf6d"
+  },
+  {
+    "path": "audio/7. Baa Baa Black Sheep.mp3",
+    "bytes": 1923537,
+    "sha256": "fc7ed8603373151c6f68cb9d04c0d52d09ac2237e01dd8a3c58752c00c877c5c"
+  },
+  {
+    "path": "audio/8. Mary Had A Little Lamb.mp3",
+    "bytes": 1954684,
+    "sha256": "9d6a60daa7d9251961bb0b5b5b815566df935b66e3e574e38dca9cd880fdad2d"
+  },
+  {
+    "path": "audio/9. Row Row Row Your Boat.mp3",
+    "bytes": 1052843,
+    "sha256": "fa7aee442b769da86e7b51168e6a1e355176f06d6929743fbf5a544032343c66"
+  }
+]

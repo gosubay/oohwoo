@@ -1,0 +1,11 @@
+# Combo flight speed
+
+The current combo tiers apply to consecutive collected notes. Combos 0–9 give 1× points and 1× visual speed/spacing; 10–19 give 2× points and 1.3× visuals; 20–39 give 2.5× points and 1.6× visuals; 40+ give 3× points and 2× visuals. The note reaching a threshold earns its new point multiplier: the 10th earns 2, the 20th earns 2.5 and the 40th earns 3. Scores retain half-points. The top HUD always shows Score, Combo and Multiplier, including at zero combo.
+
+Scenery accelerates, light wind streaks appear, and upcoming note/lyric positions spread around the fixed singing line. Logical positions, chart onsets, pitch targets, scoring windows, backing/guide playback, vertical bird movement and input handling retain their original values. Every note still crosses the singing line at its authored onset. Speed eases toward the combo tier with a 550 ms time constant and eases down after a miss; pause freezes it and retry resets it. Wind streaks respect reduced-motion preferences. Pipes are currently disabled and their dormant rendering/collision behavior is unchanged.
+
+Wider spacing means fewer upcoming notes fit on the screen at higher speed. The musical duration between them and the scoring window do not change. A missed note resets the streak and point multiplier immediately, while visual speed eases back to 1×. A scheduled rest has no note to miss and preserves the streak. Twinkle's current verse contains 42 notes, so every tier can be reached in one run.
+
+Validation: `node tests/combo-flight.cjs` covers tier boundaries, threshold scoring, half-point formatting, misses, rests, once-only collection, overlapping note windows, pause and retry. It also checks that all 42 Twinkle targets reach the singing line at the original onset at every tier and during visual transitions. Easing checks cover 30, 60, 120 and 144 fps. Timing, flight steadiness and pitch-feedback suites also pass. The HUD was visually checked in Chrome at the game's mobile aspect ratio with all three values visible beside the mic control. Live sung play remains for the owner's review.
+
+Owner check: refresh, play Twinkle and maintain a streak. At 10, 20 and 40 combo, check that scenery/notes feel faster while singing still follows the guide at the same pace. Missing a note should reset Combo and Multiplier while the scenery eases back to normal speed.

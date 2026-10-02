@@ -14,7 +14,7 @@ Prepared 2026-10-01. This file is a dispatch plan, not authorisation to execute 
 | 6 | Movement, scoring, and musical path | Pitch feedback implemented. Owner approved graded pitch/timing/hold judgement and results on 2026-10-02; implemented with Perfect/Great combo, Good/Miss reset, floating grades and ranked report. Path/trail and remaining movement work pending; live grading review pending | Gameplay work |
 | 7 | Combo flight | Owner authorised visual speed at 10/25/50 combo; implemented wider visual spacing, faster scenery, wind and smooth transitions with unchanged musical timing. Live feel review pending | Continue Gameplay task; GPT-6.1 Sol Medium |
 | 8 | Integrated validation | Awaiting approval; not started | Fresh Review task; Astra Medium |
-| 9 | Full songs and catalogue expansion | Awaiting approval; not started | Continue Music and charts task, or fresh catalogue task if needed; Sol Medium |
+| 9 | Full songs and catalogue expansion | Owner asked on 2026-10-02 for all other songs to be fixed like Twinkle: 21 recording-based excerpt charts drafted and in the game; **owner listening pending for every song**; full-length songs and full Twinkle not started. See STEP9-CATALOGUE-REVIEW.md | Continue Music and charts task, or fresh catalogue task if needed; Sol Medium |
 | 10 | Final documentation | Awaiting approval; not started | Implementation task drafts; coordinating chat reviews |
 
 Use the project saved for C:\Claude\Code\OohWoo after resolving it with list_projects. Model IDs proposed for dispatch: gpt-6.1-sol and gpt-6-astra, reasoning medium. Verify availability at creation. Do not silently substitute a model or imply this file changes the coordinating chat's model.

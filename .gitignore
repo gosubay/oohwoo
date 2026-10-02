@@ -11,3 +11,6 @@ songs/
 
 # Stray file from a mistyped path
 C*ClaudeCodeOohWoolyrics_raw.txt
+
+# Python bytecode
+__pycache__/

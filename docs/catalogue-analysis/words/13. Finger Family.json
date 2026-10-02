@@ -1,0 +1,1069 @@
+{
+"language": "en",
+"duration": 105.0,
+"words": [
+{
+"start": 8.588,
+"end": 9.108,
+"word": "Daddy",
+"p": 0.799,
+"segment": -999
+},
+{
+"start": 9.108,
+"end": 9.608,
+"word": "finger,",
+"p": 0.525,
+"segment": -999
+},
+{
+"start": 9.768,
+"end": 10.148,
+"word": "daddy",
+"p": 0.896,
+"segment": -999
+},
+{
+"start": 10.148,
+"end": 10.648,
+"word": "finger,",
+"p": 0.999,
+"segment": -999
+},
+{
+"start": 10.808,
+"end": 11.068,
+"word": "where",
+"p": 0.996,
+"segment": -999
+},
+{
+"start": 11.068,
+"end": 11.568,
+"word": "are",
+"p": 0.999,
+"segment": -999
+},
+{
+"start": 11.568,
+"end": 12.168,
+"word": "you?",
+"p": 1.0,
+"segment": -999
+},
+{
+"start": 12.748,
+"end": 13.128,
+"word": "Here",
+"p": 0.999,
+"segment": -998
+},
+{
+"start": 13.128,
+"end": 13.448,
+"word": "I",
+"p": 0.999,
+"segment": -998
+},
+{
+"start": 13.448,
+"end": 13.888,
+"word": "am,",
+"p": 1.0,
+"segment": -998
+},
+{
+"start": 13.908,
+"end": 14.308,
+"word": "here",
+"p": 0.998,
+"segment": -998
+},
+{
+"start": 14.308,
+"end": 14.528,
+"word": "I",
+"p": 1.0,
+"segment": -998
+},
+{
+"start": 14.528,
+"end": 14.928,
+"word": "am,",
+"p": 1.0,
+"segment": -998
+},
+{
+"start": 14.948,
+"end": 15.328,
+"word": "how",
+"p": 0.999,
+"segment": -998
+},
+{
+"start": 15.328,
+"end": 15.768,
+"word": "do",
+"p": 1.0,
+"segment": -998
+},
+{
+"start": 15.768,
+"end": 16.148,
+"word": "you",
+"p": 1.0,
+"segment": -998
+},
+{
+"start": 16.148,
+"end": 16.408,
+"word": "do?",
+"p": 1.0,
+"segment": -998
+},
+{
+"start": 16.38,
+"end": 17.78,
+"word": "Daddy",
+"p": 0.893,
+"segment": 1
+},
+{
+"start": 17.78,
+"end": 18.06,
+"word": "Finger",
+"p": 0.605,
+"segment": 1
+},
+{
+"start": 30.0,
+"end": 30.38,
+"word": "Here",
+"p": 0.868,
+"segment": 2
+},
+{
+"start": 30.38,
+"end": 30.54,
+"word": "I",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 30.54,
+"end": 31.0,
+"word": "am,",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 31.02,
+"end": 31.42,
+"word": "here",
+"p": 0.88,
+"segment": 2
+},
+{
+"start": 31.42,
+"end": 31.66,
+"word": "I",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 31.66,
+"end": 32.08,
+"word": "am,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 32.1,
+"end": 32.48,
+"word": "how",
+"p": 0.973,
+"segment": 2
+},
+{
+"start": 32.48,
+"end": 32.94,
+"word": "do",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 32.94,
+"end": 33.24,
+"word": "you",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 33.24,
+"end": 33.56,
+"word": "do?",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 34.3,
+"end": 34.68,
+"word": "Sister",
+"p": 0.985,
+"segment": 3
+},
+{
+"start": 34.68,
+"end": 35.18,
+"word": "finger,",
+"p": 0.797,
+"segment": 3
+},
+{
+"start": 35.46,
+"end": 35.7,
+"word": "sister",
+"p": 0.984,
+"segment": 3
+},
+{
+"start": 35.7,
+"end": 36.24,
+"word": "finger,",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 36.52,
+"end": 36.74,
+"word": "where",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 36.74,
+"end": 37.26,
+"word": "are",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 37.26,
+"end": 37.82,
+"word": "you?",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 38.24,
+"end": 38.9,
+"word": "Here",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 38.9,
+"end": 39.12,
+"word": "I",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 39.12,
+"end": 39.52,
+"word": "am,",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 39.54,
+"end": 39.98,
+"word": "here",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 39.98,
+"end": 40.2,
+"word": "I",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 40.2,
+"end": 40.58,
+"word": "am,",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 40.62,
+"end": 41.02,
+"word": "how",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 41.02,
+"end": 41.48,
+"word": "do",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 41.48,
+"end": 41.84,
+"word": "you",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 41.84,
+"end": 42.08,
+"word": "do?",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 50.96,
+"end": 51.72,
+"word": "Baby",
+"p": 0.954,
+"segment": 5
+},
+{
+"start": 51.72,
+"end": 52.3,
+"word": "finger,",
+"p": 0.995,
+"segment": 5
+},
+{
+"start": 52.54,
+"end": 52.84,
+"word": "baby",
+"p": 0.998,
+"segment": 5
+},
+{
+"start": 52.84,
+"end": 53.3,
+"word": "finger,",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 53.58,
+"end": 53.82,
+"word": "where",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 53.82,
+"end": 54.32,
+"word": "are",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 54.32,
+"end": 54.9,
+"word": "you?",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 55.42,
+"end": 56.02,
+"word": "Here",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 56.02,
+"end": 56.22,
+"word": "I",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 56.22,
+"end": 56.66,
+"word": "am,",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 56.66,
+"end": 57.06,
+"word": "here",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 57.06,
+"end": 57.28,
+"word": "I",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 57.28,
+"end": 57.66,
+"word": "am,",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 57.7,
+"end": 58.06,
+"word": "how",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 58.06,
+"end": 58.54,
+"word": "do",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 58.54,
+"end": 58.82,
+"word": "you",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 58.82,
+"end": 59.18,
+"word": "do?",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 60.0,
+"end": 60.2,
+"word": "手",
+"p": 0.927,
+"segment": 7
+},
+{
+"start": 60.2,
+"end": 60.36,
+"word": "指",
+"p": 0.979,
+"segment": 7
+},
+{
+"start": 60.36,
+"end": 60.86,
+"word": "爸爸",
+"p": 0.967,
+"segment": 7
+},
+{
+"start": 61.06,
+"end": 61.18,
+"word": "手",
+"p": 0.999,
+"segment": 7
+},
+{
+"start": 61.18,
+"end": 61.44,
+"word": "指",
+"p": 1.0,
+"segment": 7
+},
+{
+"start": 61.44,
+"end": 61.92,
+"word": "爸爸",
+"p": 0.999,
+"segment": 7
+},
+{
+"start": 61.92,
+"end": 62.3,
+"word": "在",
+"p": 0.676,
+"segment": 7
+},
+{
+"start": 62.3,
+"end": 62.82,
+"word": "哪",
+"p": 0.557,
+"segment": 7
+},
+{
+"start": 62.82,
+"end": 63.36,
+"word": "里",
+"p": 0.985,
+"segment": 7
+},
+{
+"start": 63.36,
+"end": 64.32,
+"word": "在",
+"p": 0.803,
+"segment": 8
+},
+{
+"start": 64.32,
+"end": 64.88,
+"word": "这里",
+"p": 0.941,
+"segment": 8
+},
+{
+"start": 64.88,
+"end": 65.36,
+"word": "在",
+"p": 0.956,
+"segment": 8
+},
+{
+"start": 65.36,
+"end": 65.92,
+"word": "这里",
+"p": 0.999,
+"segment": 8
+},
+{
+"start": 65.92,
+"end": 66.44,
+"word": "快",
+"p": 0.782,
+"segment": 8
+},
+{
+"start": 66.44,
+"end": 67.02,
+"word": "来",
+"p": 0.988,
+"segment": 8
+},
+{
+"start": 67.02,
+"end": 67.44,
+"word": "这里",
+"p": 0.991,
+"segment": 8
+},
+{
+"start": 67.44,
+"end": 68.52,
+"word": "手",
+"p": 0.994,
+"segment": 9
+},
+{
+"start": 68.52,
+"end": 68.8,
+"word": "指",
+"p": 1.0,
+"segment": 9
+},
+{
+"start": 68.8,
+"end": 69.14,
+"word": "妈",
+"p": 0.998,
+"segment": 9
+},
+{
+"start": 69.14,
+"end": 69.42,
+"word": "妈",
+"p": 1.0,
+"segment": 9
+},
+{
+"start": 69.46,
+"end": 69.62,
+"word": "手",
+"p": 1.0,
+"segment": 9
+},
+{
+"start": 69.62,
+"end": 69.86,
+"word": "指",
+"p": 1.0,
+"segment": 9
+},
+{
+"start": 69.86,
+"end": 70.24,
+"word": "妈",
+"p": 1.0,
+"segment": 9
+},
+{
+"start": 70.24,
+"end": 70.5,
+"word": "妈",
+"p": 1.0,
+"segment": 9
+},
+{
+"start": 70.5,
+"end": 70.78,
+"word": "在",
+"p": 0.998,
+"segment": 9
+},
+{
+"start": 70.78,
+"end": 71.26,
+"word": "哪",
+"p": 0.996,
+"segment": 9
+},
+{
+"start": 71.26,
+"end": 71.9,
+"word": "里",
+"p": 1.0,
+"segment": 9
+},
+{
+"start": 71.9,
+"end": 72.86,
+"word": "在",
+"p": 0.997,
+"segment": 10
+},
+{
+"start": 72.86,
+"end": 73.38,
+"word": "这里",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 73.38,
+"end": 73.86,
+"word": "在",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 73.86,
+"end": 74.4,
+"word": "这里",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 74.4,
+"end": 74.9,
+"word": "快",
+"p": 0.986,
+"segment": 10
+},
+{
+"start": 74.9,
+"end": 75.48,
+"word": "来",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 75.48,
+"end": 76.0,
+"word": "这里",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 76.0,
+"end": 77.06,
+"word": "手",
+"p": 0.999,
+"segment": 11
+},
+{
+"start": 77.06,
+"end": 77.32,
+"word": "指",
+"p": 1.0,
+"segment": 11
+},
+{
+"start": 77.32,
+"end": 77.68,
+"word": "哥",
+"p": 0.994,
+"segment": 11
+},
+{
+"start": 77.68,
+"end": 77.92,
+"word": "哥",
+"p": 1.0,
+"segment": 11
+},
+{
+"start": 78.02,
+"end": 78.1,
+"word": "手",
+"p": 1.0,
+"segment": 11
+},
+{
+"start": 78.1,
+"end": 78.36,
+"word": "指",
+"p": 1.0,
+"segment": 11
+},
+{
+"start": 78.36,
+"end": 78.74,
+"word": "哥",
+"p": 1.0,
+"segment": 11
+},
+{
+"start": 78.74,
+"end": 78.96,
+"word": "哥",
+"p": 1.0,
+"segment": 11
+},
+{
+"start": 78.96,
+"end": 79.26,
+"word": "在",
+"p": 0.998,
+"segment": 11
+},
+{
+"start": 79.26,
+"end": 79.78,
+"word": "哪",
+"p": 0.996,
+"segment": 11
+},
+{
+"start": 79.78,
+"end": 80.38,
+"word": "里",
+"p": 1.0,
+"segment": 11
+},
+{
+"start": 80.38,
+"end": 81.34,
+"word": "在",
+"p": 0.999,
+"segment": 12
+},
+{
+"start": 81.34,
+"end": 81.88,
+"word": "这里",
+"p": 1.0,
+"segment": 12
+},
+{
+"start": 81.88,
+"end": 82.34,
+"word": "在",
+"p": 1.0,
+"segment": 12
+},
+{
+"start": 82.34,
+"end": 82.9,
+"word": "这里",
+"p": 1.0,
+"segment": 12
+},
+{
+"start": 82.9,
+"end": 83.4,
+"word": "快",
+"p": 0.989,
+"segment": 12
+},
+{
+"start": 83.4,
+"end": 83.98,
+"word": "来",
+"p": 1.0,
+"segment": 12
+},
+{
+"start": 83.98,
+"end": 84.5,
+"word": "这里",
+"p": 1.0,
+"segment": 12
+},
+{
+"start": 84.5,
+"end": 85.56,
+"word": "手",
+"p": 0.998,
+"segment": 13
+},
+{
+"start": 85.56,
+"end": 85.88,
+"word": "指",
+"p": 1.0,
+"segment": 13
+},
+{
+"start": 85.88,
+"end": 86.18,
+"word": "姐",
+"p": 0.992,
+"segment": 13
+},
+{
+"start": 86.18,
+"end": 86.38,
+"word": "姐",
+"p": 1.0,
+"segment": 13
+},
+{
+"start": 86.46,
+"end": 86.6,
+"word": "手",
+"p": 1.0,
+"segment": 13
+},
+{
+"start": 86.6,
+"end": 86.84,
+"word": "指",
+"p": 1.0,
+"segment": 13
+},
+{
+"start": 86.84,
+"end": 87.2,
+"word": "姐",
+"p": 1.0,
+"segment": 13
+},
+{
+"start": 87.2,
+"end": 87.4,
+"word": "姐",
+"p": 1.0,
+"segment": 13
+},
+{
+"start": 87.4,
+"end": 87.68,
+"word": "在",
+"p": 0.998,
+"segment": 13
+},
+{
+"start": 87.68,
+"end": 88.24,
+"word": "哪",
+"p": 0.996,
+"segment": 13
+},
+{
+"start": 88.24,
+"end": 88.86,
+"word": "里",
+"p": 1.0,
+"segment": 13
+},
+{
+"start": 88.86,
+"end": 89.8,
+"word": "在",
+"p": 0.942,
+"segment": 14
+},
+{
+"start": 89.8,
+"end": 90.24,
+"word": "这里",
+"p": 0.729,
+"segment": 14
+},
+{
+"start": 90.24,
+"end": 90.78,
+"word": "在",
+"p": 0.657,
+"segment": 14
+},
+{
+"start": 90.78,
+"end": 91.32,
+"word": "这里",
+"p": 1.0,
+"segment": 14
+},
+{
+"start": 91.32,
+"end": 91.86,
+"word": "快",
+"p": 0.79,
+"segment": 14
+},
+{
+"start": 91.86,
+"end": 92.48,
+"word": "来",
+"p": 0.993,
+"segment": 14
+},
+{
+"start": 92.48,
+"end": 92.96,
+"word": "这里",
+"p": 0.999,
+"segment": 14
+},
+{
+"start": 92.96,
+"end": 94.02,
+"word": "手",
+"p": 0.958,
+"segment": 15
+},
+{
+"start": 94.02,
+"end": 94.28,
+"word": "指",
+"p": 0.988,
+"segment": 15
+},
+{
+"start": 94.28,
+"end": 94.66,
+"word": "巴",
+"p": 0.309,
+"segment": 15
+},
+{
+"start": 94.66,
+"end": 94.88,
+"word": "巴",
+"p": 0.976,
+"segment": 15
+},
+{
+"start": 94.96,
+"end": 95.1,
+"word": "手",
+"p": 1.0,
+"segment": 15
+},
+{
+"start": 95.1,
+"end": 95.32,
+"word": "指",
+"p": 1.0,
+"segment": 15
+},
+{
+"start": 95.32,
+"end": 95.66,
+"word": "巴",
+"p": 1.0,
+"segment": 15
+},
+{
+"start": 95.66,
+"end": 95.94,
+"word": "巴",
+"p": 1.0,
+"segment": 15
+},
+{
+"start": 95.94,
+"end": 96.18,
+"word": "在",
+"p": 0.565,
+"segment": 15
+},
+{
+"start": 96.18,
+"end": 96.72,
+"word": "哪",
+"p": 0.945,
+"segment": 15
+},
+{
+"start": 96.72,
+"end": 97.34,
+"word": "里",
+"p": 1.0,
+"segment": 15
+},
+{
+"start": 97.34,
+"end": 98.28,
+"word": "在",
+"p": 0.985,
+"segment": 16
+},
+{
+"start": 98.28,
+"end": 98.84,
+"word": "这里",
+"p": 1.0,
+"segment": 16
+},
+{
+"start": 98.84,
+"end": 99.32,
+"word": "在",
+"p": 1.0,
+"segment": 16
+},
+{
+"start": 99.32,
+"end": 99.86,
+"word": "这里",
+"p": 1.0,
+"segment": 16
+},
+{
+"start": 99.86,
+"end": 100.38,
+"word": "快",
+"p": 0.998,
+"segment": 16
+},
+{
+"start": 100.38,
+"end": 100.96,
+"word": "来",
+"p": 1.0,
+"segment": 16
+},
+{
+"start": 100.96,
+"end": 101.44,
+"word": "这里",
+"p": 1.0,
+"segment": 16
+}
+],
+"openingPass": {
+"from": 7.87,
+"to": 16.58,
+"language": "en",
+"words": 17
+}
+}

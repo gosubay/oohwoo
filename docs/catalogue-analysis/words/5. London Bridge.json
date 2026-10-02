@@ -1,0 +1,735 @@
+{
+"language": "en",
+"duration": 94.96,
+"words": [
+{
+"start": 10.88,
+"end": 11.82,
+"word": "London",
+"p": 0.837,
+"segment": 1
+},
+{
+"start": 11.82,
+"end": 12.22,
+"word": "Bridge",
+"p": 0.617,
+"segment": 1
+},
+{
+"start": 12.22,
+"end": 12.58,
+"word": "is",
+"p": 0.875,
+"segment": 1
+},
+{
+"start": 12.58,
+"end": 13.04,
+"word": "falling",
+"p": 0.937,
+"segment": 1
+},
+{
+"start": 13.04,
+"end": 13.84,
+"word": "down,",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 13.88,
+"end": 14.36,
+"word": "falling",
+"p": 0.814,
+"segment": 1
+},
+{
+"start": 14.36,
+"end": 15.14,
+"word": "down,",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 15.22,
+"end": 15.62,
+"word": "falling",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 15.62,
+"end": 16.3,
+"word": "down",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 16.3,
+"end": 16.92,
+"word": "London",
+"p": 0.654,
+"segment": 2
+},
+{
+"start": 16.92,
+"end": 17.6,
+"word": "Bridge",
+"p": 0.954,
+"segment": 2
+},
+{
+"start": 17.6,
+"end": 18.0,
+"word": "is",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 18.0,
+"end": 18.4,
+"word": "falling",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 18.4,
+"end": 19.02,
+"word": "down,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 19.16,
+"end": 19.62,
+"word": "my",
+"p": 0.977,
+"segment": 2
+},
+{
+"start": 19.62,
+"end": 20.34,
+"word": "fair",
+"p": 0.971,
+"segment": 2
+},
+{
+"start": 20.34,
+"end": 21.24,
+"word": "lady",
+"p": 0.971,
+"segment": 2
+},
+{
+"start": 21.24,
+"end": 22.54,
+"word": "Build",
+"p": 0.912,
+"segment": 3
+},
+{
+"start": 22.54,
+"end": 22.9,
+"word": "it",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 22.9,
+"end": 23.18,
+"word": "up",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 23.18,
+"end": 23.44,
+"word": "with",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 23.44,
+"end": 24.02,
+"word": "iron",
+"p": 0.966,
+"segment": 3
+},
+{
+"start": 24.02,
+"end": 24.58,
+"word": "bars,",
+"p": 0.994,
+"segment": 3
+},
+{
+"start": 24.78,
+"end": 25.32,
+"word": "iron",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 25.32,
+"end": 25.94,
+"word": "bars,",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 26.16,
+"end": 26.56,
+"word": "iron",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 26.56,
+"end": 27.1,
+"word": "bars",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 27.1,
+"end": 27.68,
+"word": "Bu",
+"p": 0.023,
+"segment": 4
+},
+{
+"start": 27.68,
+"end": 28.1,
+"word": "ild",
+"p": 0.994,
+"segment": 4
+},
+{
+"start": 28.1,
+"end": 28.26,
+"word": "it",
+"p": 0.937,
+"segment": 4
+},
+{
+"start": 28.26,
+"end": 28.5,
+"word": "up",
+"p": 0.994,
+"segment": 4
+},
+{
+"start": 28.5,
+"end": 28.78,
+"word": "with",
+"p": 0.979,
+"segment": 4
+},
+{
+"start": 28.78,
+"end": 29.34,
+"word": "iron",
+"p": 0.886,
+"segment": 4
+},
+{
+"start": 29.34,
+"end": 29.8,
+"word": "bars",
+"p": 0.978,
+"segment": 4
+},
+{
+"start": 29.8,
+"end": 30.34,
+"word": "My",
+"p": 0.482,
+"segment": 5
+},
+{
+"start": 30.34,
+"end": 31.14,
+"word": "fair",
+"p": 0.87,
+"segment": 5
+},
+{
+"start": 31.14,
+"end": 31.88,
+"word": "lady",
+"p": 0.945,
+"segment": 5
+},
+{
+"start": 32.6,
+"end": 33.12,
+"word": "I",
+"p": 0.925,
+"segment": 6
+},
+{
+"start": 33.12,
+"end": 33.66,
+"word": "ron",
+"p": 0.996,
+"segment": 6
+},
+{
+"start": 33.66,
+"end": 33.9,
+"word": "bars",
+"p": 0.991,
+"segment": 6
+},
+{
+"start": 33.9,
+"end": 34.18,
+"word": "will",
+"p": 0.869,
+"segment": 6
+},
+{
+"start": 34.18,
+"end": 34.6,
+"word": "bend",
+"p": 0.966,
+"segment": 6
+},
+{
+"start": 34.6,
+"end": 34.84,
+"word": "and",
+"p": 0.988,
+"segment": 6
+},
+{
+"start": 34.84,
+"end": 35.28,
+"word": "bow",
+"p": 0.99,
+"segment": 6
+},
+{
+"start": 35.28,
+"end": 35.74,
+"word": "B",
+"p": 0.59,
+"segment": 7
+},
+{
+"start": 35.74,
+"end": 36.0,
+"word": "end",
+"p": 0.98,
+"segment": 7
+},
+{
+"start": 36.0,
+"end": 36.16,
+"word": "and",
+"p": 0.999,
+"segment": 7
+},
+{
+"start": 36.16,
+"end": 36.72,
+"word": "bow,",
+"p": 0.994,
+"segment": 7
+},
+{
+"start": 36.92,
+"end": 37.28,
+"word": "bend",
+"p": 0.881,
+"segment": 7
+},
+{
+"start": 37.28,
+"end": 37.54,
+"word": "and",
+"p": 0.998,
+"segment": 7
+},
+{
+"start": 37.54,
+"end": 37.94,
+"word": "bow",
+"p": 0.999,
+"segment": 7
+},
+{
+"start": 37.94,
+"end": 38.38,
+"word": "I",
+"p": 0.979,
+"segment": 8
+},
+{
+"start": 38.38,
+"end": 38.98,
+"word": "ron",
+"p": 1.0,
+"segment": 8
+},
+{
+"start": 38.98,
+"end": 39.24,
+"word": "bars",
+"p": 0.998,
+"segment": 8
+},
+{
+"start": 39.24,
+"end": 39.52,
+"word": "will",
+"p": 0.998,
+"segment": 8
+},
+{
+"start": 39.52,
+"end": 39.9,
+"word": "bend",
+"p": 0.999,
+"segment": 8
+},
+{
+"start": 39.9,
+"end": 40.16,
+"word": "and",
+"p": 1.0,
+"segment": 8
+},
+{
+"start": 40.16,
+"end": 40.58,
+"word": "bow",
+"p": 0.998,
+"segment": 8
+},
+{
+"start": 40.58,
+"end": 41.3,
+"word": "My",
+"p": 0.958,
+"segment": 9
+},
+{
+"start": 41.3,
+"end": 41.96,
+"word": "fair",
+"p": 0.997,
+"segment": 9
+},
+{
+"start": 41.96,
+"end": 43.0,
+"word": "lady",
+"p": 0.999,
+"segment": 9
+},
+{
+"start": 67.52,
+"end": 68.62,
+"word": "优",
+"p": 0.52,
+"segment": 10
+},
+{
+"start": 68.62,
+"end": 69.72,
+"word": "优",
+"p": 0.999,
+"segment": 10
+},
+{
+"start": 69.72,
+"end": 71.64,
+"word": "独",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 71.64,
+"end": 71.82,
+"word": "播",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 71.82,
+"end": 71.82,
+"word": "剧",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 71.82,
+"end": 71.82,
+"word": "场",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 71.82,
+"end": 71.98,
+"word": "——",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 71.98,
+"end": 72.04,
+"word": "Yo",
+"p": 0.998,
+"segment": 10
+},
+{
+"start": 72.04,
+"end": 72.06,
+"word": "Yo",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 72.06,
+"end": 72.98,
+"word": "Television",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 72.98,
+"end": 72.98,
+"word": "Series",
+"p": 0.999,
+"segment": 10
+},
+{
+"start": 72.98,
+"end": 72.98,
+"word": "Exc",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 72.98,
+"end": 72.98,
+"word": "lusive",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 73.0,
+"end": 73.22,
+"word": "铁",
+"p": 0.631,
+"segment": 11
+},
+{
+"start": 73.22,
+"end": 73.22,
+"word": "栏",
+"p": 0.787,
+"segment": 11
+},
+{
+"start": 73.22,
+"end": 73.24,
+"word": "杆",
+"p": 0.97,
+"segment": 11
+},
+{
+"start": 73.24,
+"end": 73.48,
+"word": "我",
+"p": 0.11,
+"segment": 11
+},
+{
+"start": 73.48,
+"end": 74.52,
+"word": "的",
+"p": 0.98,
+"segment": 11
+},
+{
+"start": 74.52,
+"end": 75.22,
+"word": "淑",
+"p": 0.994,
+"segment": 11
+},
+{
+"start": 75.22,
+"end": 75.7,
+"word": "女",
+"p": 1.0,
+"segment": 11
+},
+{
+"start": 75.7,
+"end": 76.64,
+"word": "铁",
+"p": 0.988,
+"segment": 12
+},
+{
+"start": 76.64,
+"end": 77.14,
+"word": "栏",
+"p": 0.998,
+"segment": 12
+},
+{
+"start": 77.14,
+"end": 77.36,
+"word": "杆",
+"p": 0.999,
+"segment": 12
+},
+{
+"start": 77.4,
+"end": 77.72,
+"word": "会",
+"p": 0.946,
+"segment": 12
+},
+{
+"start": 77.72,
+"end": 78.08,
+"word": "变",
+"p": 0.965,
+"segment": 12
+},
+{
+"start": 78.08,
+"end": 78.32,
+"word": "弯",
+"p": 0.818,
+"segment": 12
+},
+{
+"start": 78.32,
+"end": 78.6,
+"word": "曲",
+"p": 0.993,
+"segment": 12
+},
+{
+"start": 78.6,
+"end": 79.36,
+"word": "变",
+"p": 0.801,
+"segment": 13
+},
+{
+"start": 79.36,
+"end": 79.68,
+"word": "弯",
+"p": 1.0,
+"segment": 13
+},
+{
+"start": 79.68,
+"end": 80.02,
+"word": "曲",
+"p": 1.0,
+"segment": 13
+},
+{
+"start": 80.14,
+"end": 80.68,
+"word": "变",
+"p": 0.999,
+"segment": 13
+},
+{
+"start": 80.68,
+"end": 80.98,
+"word": "弯",
+"p": 1.0,
+"segment": 13
+},
+{
+"start": 80.98,
+"end": 81.32,
+"word": "曲",
+"p": 1.0,
+"segment": 13
+},
+{
+"start": 81.32,
+"end": 81.96,
+"word": "铁",
+"p": 0.998,
+"segment": 14
+},
+{
+"start": 81.96,
+"end": 82.48,
+"word": "栏",
+"p": 0.999,
+"segment": 14
+},
+{
+"start": 82.48,
+"end": 82.68,
+"word": "杆",
+"p": 1.0,
+"segment": 14
+},
+{
+"start": 82.74,
+"end": 82.92,
+"word": "会",
+"p": 0.999,
+"segment": 14
+},
+{
+"start": 82.92,
+"end": 83.4,
+"word": "变",
+"p": 0.999,
+"segment": 14
+},
+{
+"start": 83.4,
+"end": 83.64,
+"word": "弯",
+"p": 1.0,
+"segment": 14
+},
+{
+"start": 83.64,
+"end": 83.98,
+"word": "曲",
+"p": 1.0,
+"segment": 14
+},
+{
+"start": 83.98,
+"end": 84.94,
+"word": "我的",
+"p": 0.866,
+"segment": 15
+},
+{
+"start": 84.94,
+"end": 86.06,
+"word": "淑",
+"p": 0.999,
+"segment": 15
+},
+{
+"start": 86.06,
+"end": 86.46,
+"word": "女",
+"p": 1.0,
+"segment": 15
+}
+],
+"openingPass": "not needed"
+}

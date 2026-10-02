@@ -1286,102 +1286,6 @@ const TWINKLE_NOTES = TWINKLE_CHART.notes.map(n => ({
   ratio: [0, 0.14, 0.29, 0.43, 0.57, 0.71, 0.86, 1][[0, 2, 4, 5, 7, 9, 11, 12].indexOf(n.midi - TWINKLE_CHART.tonicMidi)]
 }));
 
-// ============================================================
-// SONG DATA — Brother John / 两只老虎  (Frère Jacques)
-// Key: D major  D4=Do(0.00) E4=Re(0.14) F#4=Mi(0.29) G4=Fa(0.43)
-//               A4=Sol(0.57) B4=La(0.71) C#5=Ti(0.86) D5=Do(1.00)
-// BPM: 112
-// Structure: Verse 1+2 English → Verse 3+4 Mandarin
-// ============================================================
-const BROTHER_JOHN_NOTES = [
-  // --- Verse 1 English: "Are you sleeping? Are you sleeping?" ---
-  // "Are you slee-ping? Are you slee-ping?"
-  {note:'D4', ratio:0.00, t:0.000, lyric:'Are'},   {note:'E4', ratio:0.14, t:0.536, lyric:'you'},
-  {note:'F#4', ratio:0.29, t:1.071, lyric:'slee-'}, {note:'D4', ratio:0.00, t:1.607, lyric:'ping?'},
-  {note:'D4', ratio:0.00, t:2.143, lyric:'Are'},   {note:'E4', ratio:0.14, t:2.679, lyric:'you'},
-  {note:'F#4', ratio:0.29, t:3.214, lyric:'slee-'}, {note:'D4', ratio:0.00, t:3.750, lyric:'ping?'},
-  // "Brother John, Brother John."
-  {note:'F#4', ratio:0.29, t:4.286, lyric:'Bro-'},  {note:'G4', ratio:0.43, t:4.821, lyric:'ther'},
-  {note:'A4', ratio:0.57, t:5.357, lyric:'John,'},
-  {note:'F#4', ratio:0.29, t:6.429, lyric:'Bro-'},  {note:'G4', ratio:0.43, t:6.964, lyric:'ther'},
-  {note:'A4', ratio:0.57, t:7.500, lyric:'John.'},
-  // "Morning bells are ringing! Morning bells are ringing!"
-  {note:'A4', ratio:0.57, t:8.571, lyric:'Mor-'},  {note:'B4', ratio:0.71, t:8.839, lyric:'ning'},
-  {note:'A4', ratio:0.57, t:9.107, lyric:'bells'}, {note:'G4', ratio:0.43, t:9.375, lyric:'are'},
-  {note:'F#4', ratio:0.29, t:9.643, lyric:'ring-'}, {note:'D4', ratio:0.00, t:9.911, lyric:'ing!'},
-  {note:'A4', ratio:0.57, t:10.179, lyric:'Mor-'},  {note:'B4', ratio:0.71, t:10.446, lyric:'ning'},
-  {note:'A4', ratio:0.57, t:10.714, lyric:'bells'}, {note:'G4', ratio:0.43, t:10.982, lyric:'are'},
-  {note:'F#4', ratio:0.29, t:11.250, lyric:'ring-'}, {note:'D4', ratio:0.00, t:11.518, lyric:'ing!'},
-  // "Ding, dang, dong. Ding, dang, dong."
-  {note:'D4', ratio:0.00, t:11.786, lyric:'Ding,'},  {note:'A4', ratio:0.57, t:12.321, lyric:'dang,'},
-  {note:'D4', ratio:0.00, t:12.857, lyric:'dong.'},
-  {note:'D4', ratio:0.00, t:13.929, lyric:'Ding,'},  {note:'A4', ratio:0.57, t:14.464, lyric:'dang,'},
-  {note:'D4', ratio:0.00, t:15.000, lyric:'dong.'},
-
-  // --- Verse 2 English (repeat) ---
-  {note:'D4', ratio:0.00, t:16.071, lyric:'Are'},   {note:'E4', ratio:0.14, t:16.607, lyric:'you'},
-  {note:'F#4', ratio:0.29, t:17.143, lyric:'slee-'}, {note:'D4', ratio:0.00, t:17.679, lyric:'ping?'},
-  {note:'D4', ratio:0.00, t:18.214, lyric:'Are'},   {note:'E4', ratio:0.14, t:18.750, lyric:'you'},
-  {note:'F#4', ratio:0.29, t:19.286, lyric:'slee-'}, {note:'D4', ratio:0.00, t:19.821, lyric:'ping?'},
-  {note:'F#4', ratio:0.29, t:20.357, lyric:'Bro-'},  {note:'G4', ratio:0.43, t:20.893, lyric:'ther'},
-  {note:'A4', ratio:0.57, t:21.429, lyric:'John,'},
-  {note:'F#4', ratio:0.29, t:22.500, lyric:'Bro-'},  {note:'G4', ratio:0.43, t:23.036, lyric:'ther'},
-  {note:'A4', ratio:0.57, t:23.571, lyric:'John.'},
-  {note:'A4', ratio:0.57, t:24.643, lyric:'Mor-'},  {note:'B4', ratio:0.71, t:24.911, lyric:'ning'},
-  {note:'A4', ratio:0.57, t:25.179, lyric:'bells'}, {note:'G4', ratio:0.43, t:25.446, lyric:'are'},
-  {note:'F#4', ratio:0.29, t:25.714, lyric:'ring-'}, {note:'D4', ratio:0.00, t:25.982, lyric:'ing!'},
-  {note:'A4', ratio:0.57, t:26.250, lyric:'Mor-'},  {note:'B4', ratio:0.71, t:26.518, lyric:'ning'},
-  {note:'A4', ratio:0.57, t:26.786, lyric:'bells'}, {note:'G4', ratio:0.43, t:27.054, lyric:'are'},
-  {note:'F#4', ratio:0.29, t:27.321, lyric:'ring-'}, {note:'D4', ratio:0.00, t:27.589, lyric:'ing!'},
-  {note:'D4', ratio:0.00, t:27.857, lyric:'Ding,'},  {note:'A4', ratio:0.57, t:28.393, lyric:'dang,'},
-  {note:'D4', ratio:0.00, t:28.929, lyric:'dong.'},
-  {note:'D4', ratio:0.00, t:30.000, lyric:'Ding,'},  {note:'A4', ratio:0.57, t:30.536, lyric:'dang,'},
-  {note:'D4', ratio:0.00, t:31.071, lyric:'dong.'},
-
-  // --- Verse 3 Mandarin: "两只老虎，两只老虎，" ---
-  {note:'D4', ratio:0.00, t:32.143, lyric:'两只'},  {note:'E4', ratio:0.14, t:32.679, lyric:'老虎，'},
-  {note:'F#4', ratio:0.29, t:33.214, lyric:'两只'},  {note:'D4', ratio:0.00, t:33.750, lyric:'老虎，'},
-  {note:'D4', ratio:0.00, t:34.286, lyric:'两只'},  {note:'E4', ratio:0.14, t:34.821, lyric:'老虎，'},
-  {note:'F#4', ratio:0.29, t:35.357, lyric:'两只'},  {note:'D4', ratio:0.00, t:35.893, lyric:'老虎，'},
-  // "跑得快，跑得快。"
-  {note:'F#4', ratio:0.29, t:36.429, lyric:'跑得'},  {note:'G4', ratio:0.43, t:36.964, lyric:'快，'},
-  {note:'A4', ratio:0.57, t:37.500, lyric:'——'},
-  {note:'F#4', ratio:0.29, t:38.571, lyric:'跑得'},  {note:'G4', ratio:0.43, t:39.107, lyric:'快。'},
-  {note:'A4', ratio:0.57, t:39.643, lyric:'——'},
-  // "一只没有耳朵，一只没有尾巴，"
-  {note:'A4', ratio:0.57, t:40.714, lyric:'一只'},  {note:'B4', ratio:0.71, t:40.982, lyric:'没有'},
-  {note:'A4', ratio:0.57, t:41.250, lyric:'耳'},    {note:'G4', ratio:0.43, t:41.518, lyric:'朵，'},
-  {note:'F#4', ratio:0.29, t:41.786, lyric:'一只'},  {note:'D4', ratio:0.00, t:42.054, lyric:'没有'},
-  {note:'A4', ratio:0.57, t:42.321, lyric:'尾'},    {note:'B4', ratio:0.71, t:42.589, lyric:'巴，'},
-  {note:'A4', ratio:0.57, t:42.857, lyric:'一只'},  {note:'G4', ratio:0.43, t:43.125, lyric:'没有'},
-  {note:'F#4', ratio:0.29, t:43.393, lyric:'尾'},    {note:'D4', ratio:0.00, t:43.661, lyric:'巴，'},
-  // "真奇怪，真奇怪。"
-  {note:'E4', ratio:0.14, t:43.929, lyric:'真奇'},  {note:'A4', ratio:0.57, t:44.464, lyric:'怪，'},
-  {note:'D4', ratio:0.00, t:45.000, lyric:'——'},
-  {note:'E4', ratio:0.14, t:46.071, lyric:'真奇'},  {note:'A4', ratio:0.57, t:46.607, lyric:'怪。'},
-  {note:'D4', ratio:0.00, t:47.143, lyric:'——'},
-
-  // --- Verse 4 Mandarin (repeat) ---
-  {note:'D4', ratio:0.00, t:48.214, lyric:'两只'},  {note:'E4', ratio:0.14, t:48.750, lyric:'老虎，'},
-  {note:'F#4', ratio:0.29, t:49.286, lyric:'两只'},  {note:'D4', ratio:0.00, t:49.821, lyric:'老虎，'},
-  {note:'D4', ratio:0.00, t:50.357, lyric:'两只'},  {note:'E4', ratio:0.14, t:50.893, lyric:'老虎，'},
-  {note:'F#4', ratio:0.29, t:51.429, lyric:'两只'},  {note:'D4', ratio:0.00, t:51.964, lyric:'老虎，'},
-  {note:'F#4', ratio:0.29, t:52.500, lyric:'跑得'},  {note:'G4', ratio:0.43, t:53.036, lyric:'快，'},
-  {note:'A4', ratio:0.57, t:53.571, lyric:'——'},
-  {note:'F#4', ratio:0.29, t:54.643, lyric:'跑得'},  {note:'G4', ratio:0.43, t:55.179, lyric:'快。'},
-  {note:'A4', ratio:0.57, t:55.714, lyric:'——'},
-  {note:'A4', ratio:0.57, t:56.786, lyric:'一只'},  {note:'B4', ratio:0.71, t:57.054, lyric:'没有'},
-  {note:'A4', ratio:0.57, t:57.321, lyric:'耳'},    {note:'G4', ratio:0.43, t:57.589, lyric:'朵，'},
-  {note:'F#4', ratio:0.29, t:57.857, lyric:'一只'},  {note:'D4', ratio:0.00, t:58.125, lyric:'没有'},
-  {note:'A4', ratio:0.57, t:58.393, lyric:'尾'},    {note:'B4', ratio:0.71, t:58.661, lyric:'巴，'},
-  {note:'A4', ratio:0.57, t:58.929, lyric:'一只'},  {note:'G4', ratio:0.43, t:59.196, lyric:'没有'},
-  {note:'F#4', ratio:0.29, t:59.464, lyric:'尾'},    {note:'D4', ratio:0.00, t:59.732, lyric:'巴，'},
-  {note:'E4', ratio:0.14, t:60.000, lyric:'真奇'},  {note:'A4', ratio:0.57, t:60.536, lyric:'怪，'},
-  {note:'D4', ratio:0.00, t:61.071, lyric:'——'},
-  {note:'E4', ratio:0.14, t:62.143, lyric:'真奇'},  {note:'A4', ratio:0.57, t:62.679, lyric:'怪。'},
-  {note:'D4', ratio:0.00, t:63.214, lyric:'——'},
-];
-
 // Build schedule from notes using absolute timestamps (t = seconds from when singing starts).
 // introOffset shifts all notes forward to align with the MP3's instrumental intro.
 // Each coin spawns early enough to arrive at HIT_ZONE_X exactly at its t.
@@ -1643,20 +1547,14 @@ function freqToRatio(freq) {
 }
 
 // Song-relative musical lanes, independent of the player's range width.
-// Keys come from the saved transcriptions; those automatic estimates can be refined per song.
-const SONG_TONICS = {
-  twinkle: 2, brotherjohn: 2, humptydumpty: 0, headshoulders: 7,
-  londonbridge: 2, itsybitsy: 5, baabaa: 9, marylamb: 1, rowboat: 2,
-  moretogether: 2, littlebunny: 9, rainrain: 5, fingerfamily: 9, wheelsbus: 0,
-  oldmcdonald: 2, ifhappy: 7, fivemonkeys: 3, babyshark: 7, baluobo: 5,
-  xiaoyanzi: 9, rasasayang: 11, chanmalichan: 0,
-};
 const SCALE_STEPS = [0, 2, 4, 5, 7, 9, 11, 12];
 const NOTE_LANES = [0, 0.14, 0.29, 0.43, 0.57, 0.71, 0.86, 1];
 const SOLFEGE = ['Do', 'Re', 'Mi', 'Fa', 'Sol', 'La', 'Ti', 'Do'];
 let assistedLane = null;
 
 function laneIndex(ratio) {
+  // Lanes repeat every octave; melodies wider than one octave keep their Do-Re-Mi names.
+  if (ratio < 0 || ratio > 1) ratio -= Math.floor(ratio);
   return NOTE_LANES.reduce((best, r, i) =>
     Math.abs(r - ratio) < Math.abs(NOTE_LANES[best] - ratio) ? i : best, 0);
 }
@@ -1685,7 +1583,7 @@ function resetRegister() {
   introRegisterLocked = false;
 }
 function songTonicMidi(songKey) {
-  return SONG_DATA[songKey]?.chart?.tonicMidi ?? 60 + (SONG_TONICS[songKey] ?? 0);
+  return SONG_DATA[songKey]?.chart?.tonicMidi ?? SONG_DATA[songKey]?.draft?.baseMidi ?? 60;
 }
 function melodySemitones(ratio) {
   const octave = Math.floor(ratio), local = ratio - octave;
@@ -2354,8 +2252,15 @@ let lastSingMs = -Infinity; // performance.now() timestamp of the last valid mic
 let pendingJumpRatio = null, pendingJumpSince = null; // octave-glitch persistence tracking
 
 // Use reachable centres for both targets and the bird, including Do at each edge.
+function laneWindow() { return SONG_DATA[currentSong]?.laneWindow ?? [0, 1]; }
 function ratioToY(ratio) {
-  return PLAY_TOP + BIRD_R + (1 - ratio) * (PLAY_H - 2 * BIRD_R);
+  // A song wider than one octave is fitted to the play area; geometry only, pitch is unchanged.
+  const [low, high] = laneWindow();
+  return PLAY_TOP + BIRD_R + (1 - (ratio - low) / (high - low)) * (PLAY_H - 2 * BIRD_R);
+}
+function yToRatio(y) {
+  const [low, high] = laneWindow();
+  return low + (1 - (y - PLAY_TOP - BIRD_R) / (PLAY_H - 2 * BIRD_R)) * (high - low);
 }
 
 function followPitch(targetY, dt) {
@@ -2401,7 +2306,8 @@ function updateKeyRatio() {
     const r = KEY_RATIOS[k];
     if (r !== undefined && r > best) best = r;
   }
-  keyRatio = best;
+  // Keys play the octave where the current song's melody starts on screen.
+  keyRatio = best < 0 ? -1 : best + Math.floor(Math.max(0, laneWindow()[0]));
 }
 
 document.addEventListener('keydown', e => {
@@ -2856,8 +2762,8 @@ function gameLoop(ts) {
     const keyActive = keyRatio >= 0;
     const touchActive = touchHeld;
     const judgementMidi = keyActive ? songTonicMidi(currentSong)+melodySemitones(keyRatio)+songShift(currentSong) :
-      touchActive ? songTonicMidi(currentSong)+melodySemitones(Math.max(0,Math.min(1,
-        1-(birdY-PLAY_TOP-BIRD_R)/(PLAY_H-2*BIRD_R))))+songShift(currentSong) :
+      touchActive ? songTonicMidi(currentSong)+melodySemitones(Math.max(laneWindow()[0],Math.min(laneWindow()[1],
+        yToRatio(birdY))))+songShift(currentSong) :
       micEnabled && micReady && rawPitch>0 ? midiOf(rawPitch)-registerOffset : null;
     updateNoteJudgements(gameTime,judgementMidi,keyActive||touchActive);
     const isSinging = micSinging || keyActive || touchActive;
@@ -2899,7 +2805,7 @@ function gameLoop(ts) {
       if (keyActive) flightRatioFiltered = null;
       const targetRatio = keyActive ? keyRatio : rawPitch > 0
         ? steadyFlightRatio(pitchRatioSmooth, dt, freshAttack) : flightRatioFiltered ?? pitchRatioSmooth;
-      const targetY = ratioToY(Math.max(0,Math.min(1,targetRatio))); // Off-range singing goes gently to an edge, not an off-screen target.
+      const targetY = ratioToY(Math.max(laneWindow()[0],Math.min(laneWindow()[1],targetRatio))); // Off-range singing goes gently to an edge, not an off-screen target.
       followPitch(targetY, dt);
       setMicIndicator(micSinging ? 'active' : 'off');
       micStatus.textContent = keyActive ? '🎹 Key ' + [...heldKeys].join('+') : '🎤 ' + SOLFEGE[laneIndex(pitchRatioSmooth)];
@@ -3020,7 +2926,7 @@ function gameLoop(ts) {
     }
 
     // Update pitch meter UI
-    const pct = isSinging ? currentRatio * 100 : 0;
+    const pct = isSinging ? Math.max(0, Math.min(100, (currentRatio - laneWindow()[0]) / (laneWindow()[1] - laneWindow()[0]) * 100)) : 0;
     pitchFill.style.height = pct + '%';
     pitchDot.style.bottom = pct + '%';
 
@@ -3252,7 +3158,7 @@ function renderCarousel(direction) {
       <div class="carousel-emoji">${song.emoji}</div>
       <div class="carousel-title">${mainTitle}</div>
       ${subtitle ? `<div class="carousel-title-cn">${subtitle}</div>` : ''}
-      <div class="carousel-meta">${song.id === 'twinkle' ? 'Reference verse' : 'Playable arrangement'} · ${SONG_DATA[song.id].notes.length} notes · ${Math.ceil((SONG_DATA[song.id].chart?.level ?? SONG_DATA[song.id].playLevel).end)}s${song.id === 'twinkle' ? '' : ' · Timing needs playtest'}</div>
+      <div class="carousel-meta">${song.id === 'twinkle' ? 'Reference verse' : 'Charted from recording'} · ${SONG_DATA[song.id].notes.length} notes · ${Math.ceil((SONG_DATA[song.id].chart?.level ?? SONG_DATA[song.id].playLevel).end)}s${song.id === 'twinkle' ? '' : ' · Listening review pending'}</div>
     `;
     if (direction) {
       card.classList.add(direction === 'next' ? 'slide-in-left' : 'slide-in-right');
@@ -3282,500 +3188,299 @@ function carouselPrev() {
   renderCarousel('prev');
 }
 
-// ============================================================
-// SONG DATA — Songs 3–22  (Do=0.00 Re=0.14 Mi=0.29 Fa=0.43 Sol=0.57 La=0.71 Ti=0.86 Do(hi)=1.00)
-// ============================================================
+// <catalogue-charts>
+// GENERATED by tools/chart-builder/apply_to_game.py from docs/catalogue-analysis/charts.json.
+// Each chart is drafted from that recording's separated vocal: t/end are seconds in the backing
+// file, midi is the sung pitch, ratio is lanes above baseMidi (the key's Do). Do not edit by hand;
+// fix the builder or the JSON and re-run. Listening review by the owner is pending for all of them.
+const CATALOGUE_CHARTS = {
+  brotherjohn: {status:"recording-drafted; owner-listening-pending", keyTonic:"D", baseMidi:50, window:[0.57,1.71], level:{"start":0,"melodyStart":17.32,"melodyEnd":33.72,"fadeStart":34.52,"end":35.12},
+    phrases:[[0,10],[11,13],[14,19],[20,28],[29,31]], notes:[
+      {note:"D4",midi:62,ratio:1.0,t:17.32,end:17.68,lyric:"Are",phrase:1},{note:"E4",midi:64,ratio:1.14,t:17.85,end:18.16,lyric:"you",phrase:1},{note:"F#4",midi:66,ratio:1.29,t:18.34,end:18.62,lyric:"slee-",phrase:1},{note:"D4",midi:62,ratio:1.0,t:18.86,end:19.22,lyric:"ping",phrase:1},{note:"D4",midi:62,ratio:1.0,t:19.42,end:19.79,lyric:"are",phrase:1},{note:"E4",midi:64,ratio:1.14,t:19.95,end:20.25,lyric:"you",phrase:1},{note:"F#4",midi:66,ratio:1.29,t:20.46,end:20.75,lyric:"slee-",phrase:1},{note:"D4",midi:62,ratio:1.0,t:21.02,end:21.23,lyric:"ping",phrase:1},{note:"F#4",midi:66,ratio:1.29,t:21.53,end:22.07,lyric:"Brot-",phrase:1},{note:"G4",midi:67,ratio:1.43,t:22.07,end:22.48,lyric:"her",phrase:1},{note:"A4",midi:69,ratio:1.57,t:22.61,end:23.13,lyric:"John",phrase:1},
+      {note:"F#4",midi:66,ratio:1.29,t:23.68,end:24.25,lyric:"Brot-",phrase:2},{note:"G4",midi:67,ratio:1.43,t:24.25,end:24.67,lyric:"her",phrase:2},{note:"A4",midi:69,ratio:1.57,t:24.78,end:25.36,lyric:"John",phrase:2},
+      {note:"A4",midi:69,ratio:1.57,t:25.87,end:26.13,lyric:"Mor-",phrase:3},{note:"B4",midi:71,ratio:1.71,t:26.13,end:26.39,lyric:"ning",phrase:3},{note:"A4",midi:69,ratio:1.57,t:26.39,end:26.64,lyric:"bells",phrase:3},{note:"G4",midi:67,ratio:1.43,t:26.69,end:26.93,lyric:"are",phrase:3},{note:"F#4",midi:66,ratio:1.29,t:26.93,end:27.41,lyric:"rin-",phrase:3},{note:"D4",midi:62,ratio:1.0,t:27.41,end:27.72,lyric:"ging",phrase:3},
+      {note:"A4",midi:69,ratio:1.57,t:28.0,end:28.25,lyric:"mor-",phrase:4},{note:"B4",midi:71,ratio:1.71,t:28.25,end:28.5,lyric:"ning",phrase:4},{note:"A4",midi:69,ratio:1.57,t:28.5,end:28.77,lyric:"bells",phrase:4},{note:"G4",midi:67,ratio:1.43,t:28.77,end:29.04,lyric:"are",phrase:4},{note:"F#4",midi:66,ratio:1.29,t:29.04,end:29.54,lyric:"rin-",phrase:4},{note:"D4",midi:62,ratio:1.0,t:29.54,end:29.89,lyric:"ging",phrase:4},{note:"D4",midi:62,ratio:1.0,t:30.13,end:30.58,lyric:"Ding",phrase:4},{note:"A3",midi:57,ratio:0.57,t:30.66,end:31.07,lyric:"dang",phrase:4},{note:"D4",midi:62,ratio:1.0,t:31.2,end:31.72,lyric:"dong",phrase:4},
+      {note:"D4",midi:62,ratio:1.0,t:32.3,end:32.68,lyric:"ding",phrase:5},{note:"A3",midi:57,ratio:0.57,t:32.8,end:33.26,lyric:"dang",phrase:5},{note:"D4",midi:62,ratio:1.0,t:33.35,end:33.72,lyric:"dong",phrase:5},
+    ]},
+  humptydumpty: {status:"recording-drafted; owner-listening-pending", keyTonic:"C", baseMidi:60, window:[0.0,1.43], level:{"start":0,"melodyStart":14.19,"melodyEnd":38.4,"fadeStart":38.45,"end":38.91},
+    phrases:[[0,11],[12,21],[22,31],[32,40],[41,48],[49,57],[58,67]], notes:[
+      {note:"D4",midi:62,ratio:0.14,t:14.19,end:14.37,lyric:"Hum-",phrase:1},{note:"E4",midi:64,ratio:0.29,t:14.37,end:14.72,lyric:"pty",phrase:1},{note:"G4",midi:67,ratio:0.57,t:14.8,end:15.07,lyric:"Dum-",phrase:1},{note:"F4",midi:65,ratio:0.43,t:15.07,end:15.32,lyric:"pty",phrase:1},{note:"F4",midi:65,ratio:0.43,t:15.32,end:15.52,lyric:"Hum-",phrase:1},{note:"A4",midi:69,ratio:0.71,t:15.69,end:15.92,lyric:"pty",phrase:1},{note:"G4",midi:67,ratio:0.57,t:15.98,end:16.29,lyric:"Dum-",phrase:1},{note:"A4",midi:69,ratio:0.71,t:16.29,end:16.58,lyric:"pty",phrase:1},{note:"B4",midi:71,ratio:0.86,t:16.58,end:16.73,lyric:"sat",phrase:1},{note:"B4",midi:71,ratio:0.86,t:16.73,end:16.87,lyric:"on",phrase:1},{note:"B4",midi:71,ratio:0.86,t:16.87,end:17.02,lyric:"a",phrase:1},{note:"C5",midi:72,ratio:1.0,t:17.02,end:17.23,lyric:"wall",phrase:1},
+      {note:"D4",midi:62,ratio:0.14,t:17.74,end:17.93,lyric:"Hum-",phrase:2},{note:"E4",midi:64,ratio:0.29,t:17.93,end:18.27,lyric:"pty",phrase:2},{note:"G4",midi:67,ratio:0.57,t:18.36,end:18.61,lyric:"Dum-",phrase:2},{note:"F4",midi:65,ratio:0.43,t:18.61,end:19.05,lyric:"pty",phrase:2},{note:"A4",midi:69,ratio:0.71,t:19.27,end:19.51,lyric:"",phrase:2},{note:"G4",midi:67,ratio:0.57,t:19.56,end:19.87,lyric:"had",phrase:2},{note:"E4",midi:64,ratio:0.29,t:19.87,end:20.03,lyric:"a",phrase:2},{note:"C4",midi:60,ratio:0.0,t:20.12,end:20.32,lyric:"great",phrase:2},{note:"C4",midi:60,ratio:0.0,t:20.46,end:20.59,lyric:"fall",phrase:2},{note:"D4",midi:62,ratio:0.14,t:20.59,end:20.75,lyric:"",phrase:2},
+      {note:"A#4",midi:70,ratio:0.785,t:21.3,end:21.39,lyric:"All",phrase:3},{note:"E4",midi:64,ratio:0.29,t:21.39,end:21.74,lyric:"the",phrase:3},{note:"G4",midi:67,ratio:0.57,t:21.87,end:22.13,lyric:"king's",phrase:3},{note:"F4",midi:65,ratio:0.43,t:22.19,end:22.39,lyric:"hor-",phrase:3},{note:"G4",midi:67,ratio:0.57,t:22.47,end:22.75,lyric:"ses",phrase:3},{note:"G4",midi:67,ratio:0.57,t:22.75,end:23.36,lyric:"and",phrase:3},{note:"A4",midi:69,ratio:0.71,t:23.36,end:23.52,lyric:"all",phrase:3},{note:"B4",midi:71,ratio:0.86,t:23.65,end:23.86,lyric:"the",phrase:3},{note:"B4",midi:71,ratio:0.86,t:23.97,end:24.13,lyric:"king's",phrase:3},{note:"C5",midi:72,ratio:1.0,t:24.13,end:24.31,lyric:"men",phrase:3},
+      {note:"E5",midi:76,ratio:1.29,t:24.87,end:25.46,lyric:"Couldn't",phrase:4},{note:"C5",midi:72,ratio:1.0,t:25.46,end:25.68,lyric:"put",phrase:4},{note:"F5",midi:77,ratio:1.43,t:25.77,end:25.94,lyric:"Hum-",phrase:4},{note:"E5",midi:76,ratio:1.29,t:26.07,end:26.37,lyric:"pty",phrase:4},{note:"D5",midi:74,ratio:1.14,t:26.37,end:26.53,lyric:"to-",phrase:4},{note:"D5",midi:74,ratio:1.14,t:26.65,end:26.96,lyric:"get-",phrase:4},{note:"C5",midi:72,ratio:1.0,t:26.96,end:27.24,lyric:"her",phrase:4},{note:"B4",midi:71,ratio:0.86,t:27.24,end:27.44,lyric:"a-",phrase:4},{note:"C5",midi:72,ratio:1.0,t:27.55,end:27.88,lyric:"gain",phrase:4},
+      {note:"E4",midi:64,ratio:0.29,t:28.41,end:28.96,lyric:"Hum",phrase:5},{note:"G4",midi:67,ratio:0.57,t:29.04,end:29.31,lyric:"pty",phrase:5},{note:"F4",midi:65,ratio:0.43,t:29.31,end:29.71,lyric:"Dum",phrase:5},{note:"A4",midi:69,ratio:0.71,t:29.91,end:30.12,lyric:"pty",phrase:5},{note:"G4",midi:67,ratio:0.57,t:30.2,end:30.52,lyric:"sat",phrase:5},{note:"A4",midi:69,ratio:0.71,t:30.52,end:30.8,lyric:"on",phrase:5},{note:"B4",midi:71,ratio:0.86,t:30.8,end:31.23,lyric:"a",phrase:5},{note:"C5",midi:72,ratio:1.0,t:31.23,end:31.41,lyric:"wall",phrase:5},
+      {note:"D4",midi:62,ratio:0.14,t:31.95,end:32.13,lyric:"Hum",phrase:6},{note:"E4",midi:64,ratio:0.29,t:32.13,end:32.5,lyric:"pty",phrase:6},{note:"G4",midi:67,ratio:0.57,t:32.57,end:32.84,lyric:"",phrase:6},{note:"F4",midi:65,ratio:0.43,t:32.84,end:33.14,lyric:"Dum",phrase:6},{note:"A4",midi:69,ratio:0.71,t:33.45,end:33.67,lyric:"pty",phrase:6},{note:"G4",midi:67,ratio:0.57,t:33.72,end:34.06,lyric:"had",phrase:6},{note:"E4",midi:64,ratio:0.29,t:34.06,end:34.22,lyric:"a",phrase:6},{note:"C4",midi:60,ratio:0.0,t:34.3,end:34.48,lyric:"great",phrase:6},{note:"D4",midi:62,ratio:0.14,t:34.63,end:34.95,lyric:"fall",phrase:6},
+      {note:"E4",midi:64,ratio:0.29,t:35.46,end:35.93,lyric:"All",phrase:7},{note:"G4",midi:67,ratio:0.57,t:36.02,end:36.27,lyric:"the",phrase:7},{note:"F4",midi:65,ratio:0.43,t:36.27,end:36.57,lyric:"king",phrase:7},{note:"G4",midi:67,ratio:0.57,t:36.62,end:36.88,lyric:"'shor-",phrase:7},{note:"G4",midi:67,ratio:0.57,t:36.88,end:37.15,lyric:"ses",phrase:7},{note:"G4",midi:67,ratio:0.57,t:37.19,end:37.49,lyric:"and",phrase:7},{note:"A4",midi:69,ratio:0.71,t:37.49,end:37.65,lyric:"all",phrase:7},{note:"B4",midi:71,ratio:0.86,t:37.77,end:37.99,lyric:"the",phrase:7},{note:"B4",midi:71,ratio:0.86,t:38.07,end:38.22,lyric:"king",phrase:7},{note:"C5",midi:72,ratio:1.0,t:38.22,end:38.4,lyric:"'smen",phrase:7},
+    ]},
+  headshoulders: {status:"recording-drafted; owner-listening-pending", keyTonic:"C", baseMidi:60, window:[0.0,1.14], level:{"start":0,"melodyStart":15.72,"melodyEnd":31.7,"fadeStart":31.75,"end":32.27},
+    phrases:[[0,0],[1,8],[9,9],[10,14],[15,21],[22,29],[30,30],[31,38],[39,39]], notes:[
+      {note:"G4",midi:67,ratio:0.57,t:15.72,end:16.0,lyric:"Head",phrase:1},
+      {note:"A4",midi:69,ratio:0.71,t:16.72,end:16.97,lyric:"shoul-",phrase:2},{note:"G4",midi:67,ratio:0.57,t:16.97,end:17.15,lyric:"ders",phrase:2},{note:"F#4",midi:66,ratio:0.5,t:17.22,end:17.4,lyric:"knees",phrase:2},{note:"G4",midi:67,ratio:0.57,t:17.45,end:17.64,lyric:"and",phrase:2},{note:"E4",midi:64,ratio:0.29,t:17.73,end:18.01,lyric:"toes",phrase:2},{note:"G4",midi:67,ratio:0.57,t:18.16,end:18.37,lyric:"knees",phrase:2},{note:"G4",midi:67,ratio:0.57,t:18.42,end:18.62,lyric:"and",phrase:2},{note:"G4",midi:67,ratio:0.57,t:18.7,end:18.95,lyric:"toes",phrase:2},
+      {note:"G4",midi:67,ratio:0.57,t:19.64,end:19.92,lyric:"Head",phrase:3},
+      {note:"A4",midi:69,ratio:0.71,t:20.57,end:20.81,lyric:"shoul-",phrase:4},{note:"G4",midi:67,ratio:0.57,t:20.81,end:21.0,lyric:"ders",phrase:4},{note:"F#4",midi:66,ratio:0.5,t:21.06,end:21.26,lyric:"knees",phrase:4},{note:"G4",midi:67,ratio:0.57,t:21.26,end:21.49,lyric:"and",phrase:4},{note:"D4",midi:62,ratio:0.14,t:21.58,end:21.83,lyric:"toes",phrase:4},
+      {note:"G4",midi:67,ratio:0.57,t:22.01,end:22.24,lyric:"knees",phrase:5},{note:"G4",midi:67,ratio:0.57,t:22.24,end:22.47,lyric:"and",phrase:5},{note:"G4",midi:67,ratio:0.57,t:22.52,end:22.79,lyric:"toes",phrase:5},{note:"F4",midi:65,ratio:0.43,t:22.79,end:22.96,lyric:"",phrase:5},{note:"E4",midi:64,ratio:0.29,t:23.02,end:23.26,lyric:"And",phrase:5},{note:"C4",midi:60,ratio:0.0,t:23.26,end:23.49,lyric:"",phrase:5},{note:"C4",midi:60,ratio:0.0,t:23.49,end:23.94,lyric:"eyes",phrase:5},
+      {note:"G4",midi:67,ratio:0.57,t:24.03,end:24.46,lyric:"and",phrase:6},{note:"C5",midi:72,ratio:1.0,t:24.52,end:24.94,lyric:"ears",phrase:6},{note:"C5",midi:72,ratio:1.0,t:24.99,end:25.43,lyric:"and",phrase:6},{note:"D5",midi:74,ratio:1.14,t:25.43,end:25.7,lyric:"mouth",phrase:6},{note:"C5",midi:72,ratio:1.0,t:25.7,end:25.9,lyric:"",phrase:6},{note:"B4",midi:71,ratio:0.86,t:25.97,end:26.23,lyric:"and",phrase:6},{note:"C5",midi:72,ratio:1.0,t:26.23,end:26.42,lyric:"",phrase:6},{note:"A4",midi:69,ratio:0.71,t:26.42,end:26.75,lyric:"nose",phrase:6},
+      {note:"B4",midi:71,ratio:0.86,t:27.41,end:27.71,lyric:"Head",phrase:7},
+      {note:"B4",midi:71,ratio:0.86,t:28.33,end:28.6,lyric:"shoul-",phrase:8},{note:"G4",midi:67,ratio:0.57,t:28.6,end:28.76,lyric:"ders",phrase:8},{note:"A4",midi:69,ratio:0.71,t:28.84,end:29.03,lyric:"knees",phrase:8},{note:"B4",midi:71,ratio:0.86,t:29.03,end:29.27,lyric:"and",phrase:8},{note:"C5",midi:72,ratio:1.0,t:29.33,end:29.62,lyric:"toes",phrase:8},{note:"C5",midi:72,ratio:1.0,t:29.77,end:29.99,lyric:"knees",phrase:8},{note:"C5",midi:72,ratio:1.0,t:30.04,end:30.22,lyric:"and",phrase:8},{note:"C5",midi:72,ratio:1.0,t:30.3,end:30.68,lyric:"toes",phrase:8},
+      {note:"G4",midi:67,ratio:0.57,t:31.41,end:31.7,lyric:"",phrase:9},
+    ]},
+  londonbridge: {status:"recording-drafted; owner-listening-pending", keyTonic:"D", baseMidi:62, window:[-0.145,0.855], level:{"start":0,"melodyStart":11.45,"melodyEnd":43.81,"fadeStart":44.61,"end":45.21},
+    phrases:[[0,9],[10,12],[13,19],[20,24],[25,31],[32,37],[38,49],[50,53],[54,62],[63,74]], notes:[
+      {note:"A4",midi:69,ratio:0.57,t:11.45,end:11.99,lyric:"Lon-",phrase:1},{note:"B4",midi:71,ratio:0.71,t:11.99,end:12.15,lyric:"don",phrase:1},{note:"A4",midi:69,ratio:0.57,t:12.15,end:12.38,lyric:"Bridge",phrase:1},{note:"G4",midi:67,ratio:0.43,t:12.51,end:12.68,lyric:"is",phrase:1},{note:"F#4",midi:66,ratio:0.29,t:12.85,end:13.21,lyric:"fal-",phrase:1},{note:"G4",midi:67,ratio:0.43,t:13.21,end:13.7,lyric:"ling",phrase:1},{note:"A4",midi:69,ratio:0.57,t:13.7,end:14.03,lyric:"down",phrase:1},{note:"E4",midi:64,ratio:0.14,t:14.18,end:14.55,lyric:"fal-",phrase:1},{note:"F#4",midi:66,ratio:0.29,t:14.55,end:14.86,lyric:"ling",phrase:1},{note:"G4",midi:67,ratio:0.43,t:14.86,end:15.25,lyric:"down",phrase:1},
+      {note:"F#4",midi:66,ratio:0.29,t:15.53,end:15.88,lyric:"fal-",phrase:2},{note:"G4",midi:67,ratio:0.43,t:15.88,end:16.21,lyric:"ling",phrase:2},{note:"A4",midi:69,ratio:0.57,t:16.21,end:16.5,lyric:"down",phrase:2},
+      {note:"A4",midi:69,ratio:0.57,t:16.88,end:17.39,lyric:"Lon-",phrase:3},{note:"B4",midi:71,ratio:0.71,t:17.39,end:17.53,lyric:"don",phrase:3},{note:"A4",midi:69,ratio:0.57,t:17.53,end:17.76,lyric:"Bridge",phrase:3},{note:"G4",midi:67,ratio:0.43,t:17.86,end:18.05,lyric:"is",phrase:3},{note:"F#4",midi:66,ratio:0.29,t:18.21,end:18.56,lyric:"fal-",phrase:3},{note:"G4",midi:67,ratio:0.43,t:18.56,end:18.87,lyric:"ling",phrase:3},{note:"A4",midi:69,ratio:0.57,t:18.87,end:19.16,lyric:"down",phrase:3},
+      {note:"E4",midi:64,ratio:0.14,t:19.55,end:20.15,lyric:"my",phrase:4},{note:"A4",midi:69,ratio:0.57,t:20.29,end:20.89,lyric:"fair",phrase:4},{note:"F4",midi:65,ratio:0.215,t:20.89,end:21.1,lyric:"la-",phrase:4},{note:"F#4",midi:66,ratio:0.29,t:21.1,end:21.26,lyric:"dy",phrase:4},{note:"D4",midi:62,ratio:0.0,t:21.29,end:21.82,lyric:"",phrase:4},
+      {note:"A4",midi:69,ratio:0.57,t:22.37,end:22.86,lyric:"Build",phrase:5},{note:"B4",midi:71,ratio:0.71,t:22.86,end:23.03,lyric:"it",phrase:5},{note:"A4",midi:69,ratio:0.57,t:23.03,end:23.19,lyric:"up",phrase:5},{note:"G4",midi:67,ratio:0.43,t:23.35,end:23.52,lyric:"with",phrase:5},{note:"F#4",midi:66,ratio:0.29,t:23.68,end:24.04,lyric:"i-",phrase:5},{note:"G4",midi:67,ratio:0.43,t:24.04,end:24.52,lyric:"ron",phrase:5},{note:"A4",midi:69,ratio:0.57,t:24.52,end:24.75,lyric:"bars",phrase:5},
+      {note:"E4",midi:64,ratio:0.14,t:25.02,end:25.38,lyric:"i-",phrase:6},{note:"F#4",midi:66,ratio:0.29,t:25.38,end:25.67,lyric:"ron",phrase:6},{note:"G4",midi:67,ratio:0.43,t:25.67,end:26.3,lyric:"bars",phrase:6},{note:"F#4",midi:66,ratio:0.29,t:26.35,end:26.7,lyric:"i-",phrase:6},{note:"G4",midi:67,ratio:0.43,t:26.7,end:27.0,lyric:"ron",phrase:6},{note:"A4",midi:69,ratio:0.57,t:27.0,end:27.34,lyric:"bars",phrase:6},
+      {note:"A4",midi:69,ratio:0.57,t:27.72,end:28.2,lyric:"Bu",phrase:7},{note:"B4",midi:71,ratio:0.71,t:28.2,end:28.36,lyric:"ild",phrase:7},{note:"A4",midi:69,ratio:0.57,t:28.36,end:28.52,lyric:"it",phrase:7},{note:"G4",midi:67,ratio:0.43,t:28.69,end:28.85,lyric:"up",phrase:7},{note:"F#4",midi:66,ratio:0.29,t:29.01,end:29.37,lyric:"with",phrase:7},{note:"G4",midi:67,ratio:0.43,t:29.37,end:29.64,lyric:"i-",phrase:7},{note:"A4",midi:69,ratio:0.57,t:29.64,end:30.02,lyric:"ron",phrase:7},{note:"E4",midi:64,ratio:0.14,t:30.35,end:30.96,lyric:"bars",phrase:7},{note:"A4",midi:69,ratio:0.57,t:31.08,end:31.71,lyric:"My",phrase:7},{note:"F4",midi:65,ratio:0.215,t:31.71,end:31.91,lyric:"fair",phrase:7},{note:"F#4",midi:66,ratio:0.29,t:31.91,end:32.07,lyric:"la-",phrase:7},{note:"D4",midi:62,ratio:0.0,t:32.12,end:32.68,lyric:"dy",phrase:7},
+      {note:"A4",midi:69,ratio:0.57,t:33.14,end:33.61,lyric:"I",phrase:8},{note:"B4",midi:71,ratio:0.71,t:33.61,end:33.74,lyric:"ron",phrase:8},{note:"A4",midi:69,ratio:0.57,t:33.74,end:34.08,lyric:"bars",phrase:8},{note:"G4",midi:67,ratio:0.43,t:34.08,end:34.31,lyric:"will",phrase:8},
+      {note:"F#4",midi:66,ratio:0.29,t:34.44,end:34.77,lyric:"bend",phrase:9},{note:"G4",midi:67,ratio:0.43,t:34.77,end:35.3,lyric:"and",phrase:9},{note:"A4",midi:69,ratio:0.57,t:35.3,end:35.74,lyric:"bow",phrase:9},{note:"E4",midi:64,ratio:0.14,t:35.79,end:36.13,lyric:"Bend",phrase:9},{note:"F#4",midi:66,ratio:0.29,t:36.13,end:36.47,lyric:"and",phrase:9},{note:"G4",midi:67,ratio:0.43,t:36.47,end:37.09,lyric:"bow",phrase:9},{note:"F#4",midi:66,ratio:0.29,t:37.09,end:37.45,lyric:"bend",phrase:9},{note:"G4",midi:67,ratio:0.43,t:37.45,end:37.78,lyric:"and",phrase:9},{note:"A4",midi:69,ratio:0.57,t:37.78,end:38.12,lyric:"bow",phrase:9},
+      {note:"A4",midi:69,ratio:0.57,t:38.48,end:38.96,lyric:"I",phrase:10},{note:"B4",midi:71,ratio:0.71,t:38.96,end:39.1,lyric:"ron",phrase:10},{note:"A4",midi:69,ratio:0.57,t:39.1,end:39.37,lyric:"bars",phrase:10},{note:"G4",midi:67,ratio:0.43,t:39.43,end:39.66,lyric:"will",phrase:10},{note:"F#4",midi:66,ratio:0.29,t:39.79,end:40.11,lyric:"bend",phrase:10},{note:"G4",midi:67,ratio:0.43,t:40.11,end:40.63,lyric:"and",phrase:10},{note:"A4",midi:69,ratio:0.57,t:40.63,end:40.89,lyric:"bow",phrase:10},{note:"E4",midi:64,ratio:0.14,t:41.14,end:41.81,lyric:"My",phrase:10},{note:"A4",midi:69,ratio:0.57,t:41.88,end:42.51,lyric:"fair",phrase:10},{note:"E4",midi:64,ratio:0.14,t:42.51,end:42.69,lyric:"la-",phrase:10},{note:"F#4",midi:66,ratio:0.29,t:42.69,end:42.85,lyric:"",phrase:10},{note:"D4",midi:62,ratio:0.0,t:42.94,end:43.81,lyric:"dy",phrase:10},
+    ]},
+  itsybitsy: {status:"recording-drafted; owner-listening-pending", keyTonic:"C", baseMidi:48, window:[0.57,1.71], level:{"start":0,"melodyStart":4.5,"melodyEnd":21.82,"fadeStart":22.62,"end":23.22},
+    phrases:[[0,11],[12,21],[22,32],[33,39],[40,45]], notes:[
+      {note:"C4",midi:60,ratio:1.0,t:4.5,end:4.66,lyric:"It-",phrase:1},{note:"C4",midi:60,ratio:1.0,t:4.84,end:5.2,lyric:"sy",phrase:1},{note:"D4",midi:62,ratio:1.14,t:5.38,end:5.54,lyric:"bit-",phrase:1},{note:"E4",midi:64,ratio:1.29,t:5.61,end:5.83,lyric:"sy",phrase:1},{note:"E4",midi:64,ratio:1.29,t:5.87,end:6.1,lyric:"spi-",phrase:1},{note:"E4",midi:64,ratio:1.29,t:6.14,end:6.4,lyric:"der",phrase:1},{note:"E4",midi:64,ratio:1.29,t:6.47,end:6.71,lyric:"climbed",phrase:1},{note:"D4",midi:62,ratio:1.14,t:6.71,end:6.9,lyric:"up",phrase:1},{note:"C4",midi:60,ratio:1.0,t:7.07,end:7.27,lyric:"the",phrase:1},{note:"D4",midi:62,ratio:1.14,t:7.27,end:7.59,lyric:"wa-",phrase:1},{note:"E4",midi:64,ratio:1.29,t:7.59,end:7.75,lyric:"ter",phrase:1},{note:"C4",midi:60,ratio:1.0,t:7.86,end:8.18,lyric:"spout",phrase:1},
+      {note:"E4",midi:64,ratio:1.29,t:8.96,end:9.47,lyric:"Down",phrase:2},{note:"E4",midi:64,ratio:1.29,t:9.53,end:9.87,lyric:"came",phrase:2},{note:"F4",midi:65,ratio:1.43,t:9.87,end:10.24,lyric:"the",phrase:2},{note:"G4",midi:67,ratio:1.57,t:10.24,end:10.66,lyric:"rain",phrase:2},{note:"G4",midi:67,ratio:1.57,t:10.7,end:11.16,lyric:"and",phrase:2},{note:"F4",midi:65,ratio:1.43,t:11.16,end:11.41,lyric:"washed",phrase:2},{note:"E4",midi:64,ratio:1.29,t:11.52,end:11.68,lyric:"the",phrase:2},{note:"F4",midi:65,ratio:1.43,t:11.75,end:12.13,lyric:"spi-",phrase:2},{note:"G4",midi:67,ratio:1.57,t:12.13,end:12.28,lyric:"der",phrase:2},{note:"E4",midi:64,ratio:1.29,t:12.28,end:12.61,lyric:"out",phrase:2},
+      {note:"G4",midi:67,ratio:1.57,t:13.43,end:13.62,lyric:"Out",phrase:3},{note:"A4",midi:69,ratio:1.71,t:13.62,end:13.86,lyric:"came",phrase:3},{note:"A4",midi:69,ratio:1.71,t:13.98,end:14.41,lyric:"the",phrase:3},{note:"G4",midi:67,ratio:1.57,t:14.53,end:14.93,lyric:"sun-",phrase:3},{note:"E4",midi:64,ratio:1.29,t:15.08,end:15.41,lyric:"shine",phrase:3},{note:"E4",midi:64,ratio:1.29,t:15.45,end:15.81,lyric:"and",phrase:3},{note:"F4",midi:65,ratio:1.43,t:15.81,end:16.01,lyric:"dried",phrase:3},{note:"E4",midi:64,ratio:1.29,t:16.01,end:16.17,lyric:"up",phrase:3},{note:"F4",midi:65,ratio:1.43,t:16.21,end:16.55,lyric:"all",phrase:3},{note:"G4",midi:67,ratio:1.57,t:16.55,end:16.77,lyric:"the",phrase:3},{note:"E4",midi:64,ratio:1.29,t:16.77,end:17.29,lyric:"rain",phrase:3},
+      {note:"G3",midi:55,ratio:0.57,t:17.7,end:17.9,lyric:"And",phrase:4},{note:"B3",midi:59,ratio:0.86,t:17.9,end:18.06,lyric:"it-",phrase:4},{note:"C4",midi:60,ratio:1.0,t:18.23,end:18.6,lyric:"sy",phrase:4},{note:"D4",midi:62,ratio:1.14,t:18.74,end:18.9,lyric:"bit-",phrase:4},{note:"D4",midi:62,ratio:1.14,t:18.98,end:19.22,lyric:"sy",phrase:4},{note:"E4",midi:64,ratio:1.29,t:19.22,end:19.52,lyric:"spi-",phrase:4},{note:"E4",midi:64,ratio:1.29,t:19.52,end:19.74,lyric:"der",phrase:4},
+      {note:"E4",midi:64,ratio:1.29,t:19.9,end:20.13,lyric:"climbed",phrase:5},{note:"D4",midi:62,ratio:1.14,t:20.13,end:20.3,lyric:"up",phrase:5},{note:"C4",midi:60,ratio:1.0,t:20.44,end:20.6,lyric:"the",phrase:5},{note:"D4",midi:62,ratio:1.14,t:20.66,end:21.01,lyric:"spout",phrase:5},{note:"E4",midi:64,ratio:1.29,t:21.01,end:21.17,lyric:"a-",phrase:5},{note:"C4",midi:60,ratio:1.0,t:21.21,end:21.82,lyric:"gain",phrase:5},
+    ]},
+  baabaa: {status:"recording-drafted; owner-listening-pending", keyTonic:"A", baseMidi:57, window:[0.0,1.0], level:{"start":0,"melodyStart":12.17,"melodyEnd":27.5,"fadeStart":28.3,"end":28.9},
+    phrases:[[0,9],[10,16],[17,26],[27,36],[37,39]], notes:[
+      {note:"A3",midi:57,ratio:0.0,t:12.17,end:12.42,lyric:"Ba",phrase:1},{note:"A3",midi:57,ratio:0.0,t:12.69,end:12.92,lyric:"ba",phrase:1},{note:"E4",midi:64,ratio:0.57,t:13.2,end:13.43,lyric:"black",phrase:1},{note:"E4",midi:64,ratio:0.57,t:13.71,end:13.94,lyric:"sheep",phrase:1},{note:"F#4",midi:66,ratio:0.71,t:14.17,end:14.4,lyric:"have",phrase:1},{note:"G#4",midi:68,ratio:0.86,t:14.4,end:14.67,lyric:"you",phrase:1},{note:"A4",midi:69,ratio:1.0,t:14.67,end:14.9,lyric:"a-",phrase:1},{note:"G#4",midi:68,ratio:0.86,t:14.9,end:14.99,lyric:"ny",phrase:1},{note:"F#4",midi:66,ratio:0.71,t:14.99,end:15.12,lyric:"",phrase:1},{note:"E4",midi:64,ratio:0.57,t:15.12,end:15.51,lyric:"wool",phrase:1},
+      {note:"A#3",midi:58,ratio:0.07,t:16.16,end:16.33,lyric:"Yes",phrase:2},{note:"D4",midi:62,ratio:0.43,t:16.65,end:17.15,lyric:"sir",phrase:2},{note:"C#4",midi:61,ratio:0.29,t:17.15,end:17.36,lyric:"yes",phrase:2},{note:"C#4",midi:61,ratio:0.29,t:17.66,end:18.05,lyric:"sir",phrase:2},{note:"B3",midi:59,ratio:0.14,t:18.14,end:18.63,lyric:"three",phrase:2},{note:"B3",midi:59,ratio:0.14,t:18.63,end:18.87,lyric:"bags",phrase:2},{note:"A3",midi:57,ratio:0.0,t:19.16,end:19.32,lyric:"full",phrase:2},
+      {note:"D4",midi:62,ratio:0.43,t:20.17,end:20.35,lyric:"One",phrase:3},{note:"E4",midi:64,ratio:0.57,t:20.35,end:20.61,lyric:"for",phrase:3},{note:"E4",midi:64,ratio:0.57,t:20.7,end:20.92,lyric:"the",phrase:3},{note:"E4",midi:64,ratio:0.57,t:20.92,end:21.14,lyric:"mas-",phrase:3},{note:"D4",midi:62,ratio:0.43,t:21.14,end:21.45,lyric:"ter",phrase:3},{note:"D4",midi:62,ratio:0.43,t:21.66,end:22.14,lyric:"and",phrase:3},{note:"C4",midi:60,ratio:0.215,t:22.14,end:22.36,lyric:"one",phrase:3},{note:"C#4",midi:61,ratio:0.29,t:22.36,end:22.59,lyric:"for",phrase:3},{note:"C#4",midi:61,ratio:0.29,t:22.66,end:23.13,lyric:"the",phrase:3},{note:"B3",midi:59,ratio:0.14,t:23.13,end:23.46,lyric:"dame",phrase:3},
+      {note:"A3",midi:57,ratio:0.0,t:23.9,end:24.13,lyric:"And",phrase:4},{note:"E4",midi:64,ratio:0.57,t:24.13,end:24.31,lyric:"one",phrase:4},{note:"E4",midi:64,ratio:0.57,t:24.35,end:24.57,lyric:"for",phrase:4},{note:"E4",midi:64,ratio:0.57,t:24.65,end:24.89,lyric:"the",phrase:4},{note:"E4",midi:64,ratio:0.57,t:24.89,end:25.15,lyric:"lit-",phrase:4},{note:"D4",midi:62,ratio:0.43,t:25.15,end:25.39,lyric:"tle",phrase:4},{note:"E4",midi:64,ratio:0.57,t:25.39,end:25.6,lyric:"boy",phrase:4},{note:"F#4",midi:66,ratio:0.71,t:25.65,end:25.88,lyric:"who",phrase:4},{note:"D4",midi:62,ratio:0.43,t:25.88,end:26.12,lyric:"li-",phrase:4},{note:"C#4",midi:61,ratio:0.29,t:26.12,end:26.36,lyric:"ves",phrase:4},
+      {note:"B3",midi:59,ratio:0.14,t:26.64,end:26.85,lyric:"down",phrase:5},{note:"B3",midi:59,ratio:0.14,t:26.89,end:27.15,lyric:"the",phrase:5},{note:"A3",midi:57,ratio:0.0,t:27.15,end:27.5,lyric:"lane",phrase:5},
+    ]},
+  marylamb: {status:"recording-drafted; owner-listening-pending", keyTonic:"C#", baseMidi:49, window:[0.57,1.57], level:{"start":0,"melodyStart":10.13,"melodyEnd":39.5,"fadeStart":40.3,"end":40.9},
+    phrases:[[0,5],[6,11],[12,18],[19,25],[26,34],[35,40],[41,48],[49,54],[55,62],[63,69],[70,74],[75,83]], notes:[
+      {note:"F4",midi:65,ratio:1.29,t:10.13,end:10.32,lyric:"Ma-",phrase:1},{note:"F4",midi:65,ratio:1.29,t:10.36,end:10.6,lyric:"ry",phrase:1},{note:"C#4",midi:61,ratio:1.0,t:10.6,end:10.8,lyric:"had",phrase:1},{note:"C#4",midi:61,ratio:1.0,t:10.8,end:11.1,lyric:"a",phrase:1},{note:"D#4",midi:63,ratio:1.14,t:11.1,end:11.62,lyric:"lit-",phrase:1},{note:"F4",midi:65,ratio:1.29,t:11.76,end:12.31,lyric:"tle",phrase:1},
+      {note:"C4",midi:60,ratio:0.86,t:12.66,end:12.78,lyric:"lamb",phrase:2},{note:"D4",midi:62,ratio:1.07,t:12.78,end:12.94,lyric:"lit-",phrase:2},{note:"D#4",midi:63,ratio:1.14,t:13.02,end:13.48,lyric:"tle",phrase:2},{note:"D#4",midi:63,ratio:1.14,t:13.52,end:14.03,lyric:"lamb",phrase:2},{note:"F4",midi:65,ratio:1.29,t:14.03,end:14.19,lyric:"lit-",phrase:2},{note:"G#4",midi:68,ratio:1.57,t:14.28,end:14.84,lyric:"tle",phrase:2},
+      {note:"D#4",midi:63,ratio:1.14,t:15.18,end:15.35,lyric:"lamb",phrase:3},{note:"F4",midi:65,ratio:1.29,t:15.35,end:15.62,lyric:"Ma-",phrase:3},{note:"D#4",midi:63,ratio:1.14,t:15.62,end:15.79,lyric:"ry",phrase:3},{note:"C#4",midi:61,ratio:1.0,t:15.84,end:16.12,lyric:"had",phrase:3},{note:"D#4",midi:63,ratio:1.14,t:16.12,end:16.62,lyric:"a",phrase:3},{note:"F4",midi:65,ratio:1.29,t:16.75,end:17.3,lyric:"lit-",phrase:3},{note:"C#4",midi:61,ratio:1.0,t:17.3,end:17.46,lyric:"tle",phrase:3},
+      {note:"B3",midi:59,ratio:0.785,t:17.66,end:17.76,lyric:"lamb",phrase:4},{note:"D4",midi:62,ratio:1.07,t:17.76,end:17.92,lyric:"its",phrase:4},{note:"D#4",midi:63,ratio:1.14,t:17.99,end:18.18,lyric:"fleece",phrase:4},{note:"D#4",midi:63,ratio:1.14,t:18.23,end:18.45,lyric:"was",phrase:4},{note:"F4",midi:65,ratio:1.29,t:18.45,end:18.62,lyric:"white",phrase:4},{note:"D4",midi:62,ratio:1.07,t:18.62,end:18.78,lyric:"as",phrase:4},{note:"C#4",midi:61,ratio:1.0,t:18.94,end:19.23,lyric:"snow",phrase:4},
+      {note:"G#3",midi:56,ratio:0.57,t:19.89,end:20.18,lyric:"And",phrase:5},{note:"F4",midi:65,ratio:1.29,t:20.18,end:20.35,lyric:"e-",phrase:5},{note:"F4",midi:65,ratio:1.29,t:20.39,end:20.6,lyric:"ve-",phrase:5},{note:"C#4",midi:61,ratio:1.0,t:20.6,end:21.09,lyric:"ryw-",phrase:5},{note:"D#4",midi:63,ratio:1.14,t:21.09,end:21.28,lyric:"here",phrase:5},{note:"D#4",midi:63,ratio:1.14,t:21.28,end:21.53,lyric:"that",phrase:5},{note:"F4",midi:65,ratio:1.29,t:21.53,end:21.74,lyric:"Ma-",phrase:5},{note:"F4",midi:65,ratio:1.29,t:21.78,end:21.99,lyric:"ry",phrase:5},{note:"F4",midi:65,ratio:1.29,t:22.03,end:22.28,lyric:"went",phrase:5},
+      {note:"C4",midi:60,ratio:0.86,t:22.64,end:22.79,lyric:"Ma-",phrase:6},{note:"D#4",midi:63,ratio:1.14,t:22.79,end:23.13,lyric:"ry",phrase:6},{note:"D#4",midi:63,ratio:1.14,t:23.17,end:23.54,lyric:"went",phrase:6},{note:"D#4",midi:63,ratio:1.14,t:23.87,end:24.02,lyric:"Ma-",phrase:6},{note:"F4",midi:65,ratio:1.29,t:24.02,end:24.23,lyric:"ry",phrase:6},{note:"G#4",midi:68,ratio:1.57,t:24.23,end:24.84,lyric:"went",phrase:6},
+      {note:"D#4",midi:63,ratio:1.14,t:25.18,end:25.32,lyric:"E-",phrase:7},{note:"F4",midi:65,ratio:1.29,t:25.32,end:25.58,lyric:"ve-",phrase:7},{note:"C#4",midi:61,ratio:1.0,t:25.58,end:26.08,lyric:"ryw-",phrase:7},{note:"D#4",midi:63,ratio:1.14,t:26.08,end:26.53,lyric:"here",phrase:7},{note:"F4",midi:65,ratio:1.29,t:26.53,end:26.69,lyric:"that",phrase:7},{note:"F4",midi:65,ratio:1.29,t:26.7,end:26.86,lyric:"Ma-",phrase:7},{note:"F4",midi:65,ratio:1.29,t:26.88,end:27.04,lyric:"ry",phrase:7},{note:"F4",midi:65,ratio:1.29,t:27.05,end:27.23,lyric:"went",phrase:7},
+      {note:"G#3",midi:56,ratio:0.57,t:27.51,end:27.69,lyric:"the",phrase:8},{note:"D#4",midi:63,ratio:1.14,t:27.69,end:28.14,lyric:"lamb",phrase:8},{note:"D#4",midi:63,ratio:1.14,t:28.27,end:28.43,lyric:"was",phrase:8},{note:"F4",midi:65,ratio:1.29,t:28.43,end:28.59,lyric:"sure",phrase:8},{note:"C#4",midi:61,ratio:1.0,t:28.65,end:28.9,lyric:"to",phrase:8},{note:"C#4",midi:61,ratio:1.0,t:28.96,end:29.22,lyric:"go",phrase:8},
+      {note:"G#4",midi:68,ratio:1.57,t:29.88,end:30.04,lyric:"It",phrase:9},{note:"D#4",midi:63,ratio:1.14,t:30.18,end:30.33,lyric:"fol-",phrase:9},{note:"F4",midi:65,ratio:1.29,t:30.33,end:30.62,lyric:"lowed",phrase:9},{note:"D#4",midi:63,ratio:1.14,t:30.62,end:30.77,lyric:"her",phrase:9},{note:"C#4",midi:61,ratio:1.0,t:30.77,end:31.07,lyric:"to",phrase:9},{note:"D#4",midi:63,ratio:1.14,t:31.07,end:31.23,lyric:"school",phrase:9},{note:"F4",midi:65,ratio:1.29,t:31.41,end:31.83,lyric:"one",phrase:9},{note:"F4",midi:65,ratio:1.29,t:31.87,end:32.33,lyric:"day",phrase:9},
+      {note:"D#4",midi:63,ratio:1.14,t:32.69,end:33.01,lyric:"school",phrase:10},{note:"D#4",midi:63,ratio:1.14,t:33.05,end:33.37,lyric:"one",phrase:10},{note:"D#4",midi:63,ratio:1.14,t:33.41,end:33.76,lyric:"day",phrase:10},{note:"F4",midi:65,ratio:1.29,t:33.95,end:34.24,lyric:"school",phrase:10},{note:"G#4",midi:68,ratio:1.57,t:34.24,end:34.44,lyric:"one",phrase:10},{note:"G#4",midi:68,ratio:1.57,t:34.44,end:34.86,lyric:"day",phrase:10},{note:"D4",midi:62,ratio:1.07,t:34.86,end:35.02,lyric:"It",phrase:10},
+      {note:"D#4",midi:63,ratio:1.14,t:35.19,end:35.33,lyric:"fol-",phrase:11},{note:"F4",midi:65,ratio:1.29,t:35.33,end:35.64,lyric:"lowed",phrase:11},{note:"D#4",midi:63,ratio:1.14,t:35.64,end:35.8,lyric:"her",phrase:11},{note:"C#4",midi:61,ratio:1.0,t:35.82,end:36.1,lyric:"to",phrase:11},{note:"D#4",midi:63,ratio:1.14,t:36.1,end:36.26,lyric:"school",phrase:11},
+      {note:"F4",midi:65,ratio:1.29,t:36.41,end:37.3,lyric:"one",phrase:12},{note:"G#4",midi:68,ratio:1.57,t:37.3,end:37.46,lyric:"day",phrase:12},{note:"D#4",midi:63,ratio:1.14,t:37.62,end:37.94,lyric:"which",phrase:12},{note:"D#4",midi:63,ratio:1.14,t:38.0,end:38.4,lyric:"was",phrase:12},{note:"F4",midi:65,ratio:1.29,t:38.4,end:38.56,lyric:"a-",phrase:12},{note:"C#4",midi:61,ratio:1.0,t:38.65,end:38.82,lyric:"gainst",phrase:12},{note:"C#4",midi:61,ratio:1.0,t:38.86,end:39.03,lyric:"the",phrase:12},{note:"C#4",midi:61,ratio:1.0,t:39.07,end:39.25,lyric:"ru-",phrase:12},{note:"C#4",midi:61,ratio:1.0,t:39.29,end:39.5,lyric:"le",phrase:12},
+    ]},
+  rowboat: {status:"recording-drafted; owner-listening-pending", keyTonic:"D", baseMidi:50, window:[0.785,2.0], level:{"start":0,"melodyStart":0.5,"melodyEnd":20.07,"fadeStart":20.87,"end":21.47},
+    phrases:[[0,9],[10,21],[22,31],[32,38],[39,46]], notes:[
+      {note:"D4",midi:62,ratio:1.0,t:0.5,end:0.68,lyric:"Row",phrase:1},{note:"D4",midi:62,ratio:1.0,t:1.13,end:1.36,lyric:"row",phrase:1},{note:"D4",midi:62,ratio:1.0,t:1.72,end:2.18,lyric:"row",phrase:1},{note:"E4",midi:64,ratio:1.14,t:2.18,end:2.33,lyric:"your",phrase:1},{note:"F#4",midi:66,ratio:1.29,t:2.33,end:2.56,lyric:"boat",phrase:1},{note:"F#4",midi:66,ratio:1.29,t:2.91,end:3.24,lyric:"gen-",phrase:1},{note:"E4",midi:64,ratio:1.14,t:3.37,end:3.51,lyric:"tly",phrase:1},{note:"F#4",midi:66,ratio:1.29,t:3.51,end:3.91,lyric:"down",phrase:1},{note:"G4",midi:67,ratio:1.43,t:3.91,end:4.07,lyric:"the",phrase:1},{note:"A4",midi:69,ratio:1.57,t:4.13,end:4.49,lyric:"stream",phrase:1},
+      {note:"A4",midi:69,ratio:1.57,t:5.31,end:5.42,lyric:"Mer-",phrase:2},{note:"D5",midi:74,ratio:2.0,t:5.42,end:5.63,lyric:"ri-",phrase:2},{note:"D5",midi:74,ratio:2.0,t:5.67,end:5.91,lyric:"ly",phrase:2},{note:"A4",midi:69,ratio:1.57,t:5.91,end:6.17,lyric:"mer-",phrase:2},{note:"A4",midi:69,ratio:1.57,t:6.21,end:6.51,lyric:"ri-",phrase:2},{note:"F#4",midi:66,ratio:1.29,t:6.51,end:7.06,lyric:"ly",phrase:2},{note:"D4",midi:62,ratio:1.0,t:7.06,end:7.78,lyric:"mer-ri-ly mer-ri-ly",phrase:2},{note:"A4",midi:69,ratio:1.57,t:7.86,end:8.03,lyric:"life",phrase:2},{note:"G4",midi:67,ratio:1.43,t:8.17,end:8.33,lyric:"is",phrase:2},{note:"F#4",midi:66,ratio:1.29,t:8.37,end:8.55,lyric:"but",phrase:2},{note:"E4",midi:64,ratio:1.14,t:8.76,end:8.92,lyric:"a",phrase:2},{note:"D4",midi:62,ratio:1.0,t:8.94,end:9.53,lyric:"dream",phrase:2},
+      {note:"C4",midi:60,ratio:0.785,t:10.13,end:10.3,lyric:"Row",phrase:3},{note:"D4",midi:62,ratio:1.0,t:10.3,end:10.46,lyric:"row",phrase:3},{note:"D4",midi:62,ratio:1.0,t:10.75,end:11.03,lyric:"row",phrase:3},{note:"D4",midi:62,ratio:1.0,t:11.35,end:11.79,lyric:"your",phrase:3},{note:"E4",midi:64,ratio:1.14,t:11.79,end:11.94,lyric:"boat",phrase:3},{note:"F#4",midi:66,ratio:1.29,t:11.94,end:12.17,lyric:"gen-",phrase:3},{note:"F4",midi:65,ratio:1.215,t:12.54,end:12.88,lyric:"tly",phrase:3},{note:"F#4",midi:66,ratio:1.29,t:12.94,end:13.24,lyric:"down",phrase:3},{note:"F#4",midi:66,ratio:1.29,t:13.28,end:13.62,lyric:"the",phrase:3},{note:"A4",midi:69,ratio:1.57,t:13.75,end:14.1,lyric:"stream",phrase:3},
+      {note:"D5",midi:74,ratio:2.0,t:14.96,end:15.12,lyric:"If",phrase:4},{note:"D5",midi:74,ratio:2.0,t:15.27,end:15.54,lyric:"you",phrase:4},{note:"A4",midi:69,ratio:1.57,t:15.54,end:15.75,lyric:"see",phrase:4},{note:"A4",midi:69,ratio:1.57,t:15.79,end:16.04,lyric:"a",phrase:4},{note:"F#4",midi:66,ratio:1.29,t:16.15,end:16.33,lyric:"cro-",phrase:4},{note:"F#4",midi:66,ratio:1.29,t:16.57,end:16.7,lyric:"co-",phrase:4},{note:"D4",midi:62,ratio:1.0,t:16.7,end:17.06,lyric:"di-",phrase:4},
+      {note:"A4",midi:69,ratio:1.57,t:17.34,end:17.66,lyric:"le",phrase:5},{note:"G4",midi:67,ratio:1.43,t:17.79,end:17.93,lyric:"don't",phrase:5},{note:"F#4",midi:66,ratio:1.29,t:17.93,end:18.17,lyric:"for-",phrase:5},{note:"E4",midi:64,ratio:1.14,t:18.3,end:18.46,lyric:"get",phrase:5},{note:"D4",midi:62,ratio:1.0,t:18.55,end:19.09,lyric:"to",phrase:5},{note:"A#4",midi:70,ratio:1.64,t:19.26,end:19.6,lyric:"scream",phrase:5},{note:"G4",midi:67,ratio:1.43,t:19.6,end:19.91,lyric:"",phrase:5},{note:"F4",midi:65,ratio:1.215,t:19.91,end:20.07,lyric:"",phrase:5},
+    ]},
+  moretogether: {status:"recording-drafted; owner-listening-pending", keyTonic:"D", baseMidi:50, window:[0.43,1.71], level:{"start":0,"melodyStart":10.59,"melodyEnd":36.72,"fadeStart":37.52,"end":38.12},
+    phrases:[[0,1],[2,4],[5,10],[11,22],[23,31],[32,39],[40,47],[48,56]], notes:[
+      {note:"A3",midi:57,ratio:0.57,t:10.59,end:11.6,lyric:"The",phrase:1},{note:"C4",midi:60,ratio:0.785,t:11.6,end:11.76,lyric:"",phrase:1},
+      {note:"D4",midi:62,ratio:1.0,t:12.73,end:13.02,lyric:"more",phrase:2},{note:"F#4",midi:66,ratio:1.29,t:13.02,end:13.34,lyric:"",phrase:2},{note:"A4",midi:69,ratio:1.57,t:13.34,end:13.62,lyric:"we",phrase:2},
+      {note:"B4",midi:71,ratio:1.71,t:14.04,end:14.21,lyric:"get",phrase:3},{note:"A4",midi:69,ratio:1.57,t:14.29,end:14.45,lyric:"to-",phrase:3},{note:"G4",midi:67,ratio:1.43,t:14.61,end:14.77,lyric:"get-",phrase:3},{note:"F#4",midi:66,ratio:1.29,t:14.78,end:15.07,lyric:"her",phrase:3},{note:"G4",midi:67,ratio:1.43,t:15.07,end:15.23,lyric:"",phrase:3},{note:"D4",midi:62,ratio:1.0,t:15.31,end:15.47,lyric:"to-",phrase:3},
+      {note:"D4",midi:62,ratio:1.0,t:15.8,end:16.25,lyric:"get-",phrase:4},{note:"E4",midi:64,ratio:1.14,t:16.32,end:16.85,lyric:"her",phrase:4},{note:"A3",midi:57,ratio:0.57,t:16.85,end:17.01,lyric:"to-",phrase:4},{note:"A3",midi:57,ratio:0.57,t:17.37,end:17.63,lyric:"get-",phrase:4},{note:"A4",midi:69,ratio:1.57,t:17.63,end:17.79,lyric:"her",phrase:4},{note:"F#4",midi:66,ratio:1.29,t:17.86,end:18.41,lyric:"",phrase:4},{note:"D4",midi:62,ratio:1.0,t:18.41,end:18.57,lyric:"The",phrase:4},{note:"D4",midi:62,ratio:1.0,t:18.87,end:19.14,lyric:"",phrase:4},{note:"F#4",midi:66,ratio:1.29,t:19.14,end:19.34,lyric:"",phrase:4},{note:"F#4",midi:66,ratio:1.29,t:19.34,end:19.54,lyric:"more",phrase:4},{note:"D4",midi:62,ratio:1.0,t:19.54,end:19.67,lyric:"",phrase:4},{note:"F#4",midi:66,ratio:1.29,t:19.67,end:19.83,lyric:"we",phrase:4},
+      {note:"B4",midi:71,ratio:1.71,t:20.19,end:20.42,lyric:"get",phrase:5},{note:"A4",midi:69,ratio:1.57,t:20.42,end:20.62,lyric:"to-",phrase:5},{note:"F#4",midi:66,ratio:1.29,t:20.77,end:21.27,lyric:"get-",phrase:5},{note:"F4",midi:65,ratio:1.215,t:21.27,end:21.44,lyric:"her",phrase:5},{note:"D4",midi:62,ratio:1.0,t:21.49,end:21.88,lyric:"the",phrase:5},{note:"D4",midi:62,ratio:1.0,t:21.96,end:22.42,lyric:"hap-",phrase:5},{note:"E4",midi:64,ratio:1.14,t:22.49,end:22.65,lyric:"pier",phrase:5},{note:"A3",midi:57,ratio:0.57,t:22.93,end:23.92,lyric:"we'll",phrase:5},{note:"C4",midi:60,ratio:0.785,t:24.02,end:24.25,lyric:"be",phrase:5},
+      {note:"D4",midi:62,ratio:1.0,t:25.06,end:25.64,lyric:"For",phrase:6},{note:"E4",midi:64,ratio:1.14,t:25.64,end:25.81,lyric:"your",phrase:6},{note:"G3",midi:55,ratio:0.43,t:26.05,end:26.44,lyric:"friends",phrase:6},{note:"G3",midi:55,ratio:0.43,t:26.44,end:27.09,lyric:"are",phrase:6},{note:"F#4",midi:66,ratio:1.29,t:27.22,end:27.41,lyric:"my",phrase:6},{note:"D4",midi:62,ratio:1.0,t:27.58,end:28.07,lyric:"friends",phrase:6},{note:"D4",midi:62,ratio:1.0,t:28.13,end:28.75,lyric:"And",phrase:6},{note:"E4",midi:64,ratio:1.14,t:28.75,end:28.91,lyric:"my",phrase:6},
+      {note:"A3",midi:57,ratio:0.57,t:29.17,end:29.61,lyric:"friends",phrase:7},{note:"G3",midi:55,ratio:0.43,t:29.61,end:30.16,lyric:"are",phrase:7},{note:"D4",midi:62,ratio:1.0,t:30.16,end:30.27,lyric:"your",phrase:7},{note:"E4",midi:64,ratio:1.14,t:30.27,end:30.43,lyric:"",phrase:7},{note:"D4",midi:62,ratio:1.0,t:30.67,end:31.13,lyric:"friends",phrase:7},{note:"D4",midi:62,ratio:1.0,t:31.18,end:31.45,lyric:"The",phrase:7},{note:"F#4",midi:66,ratio:1.29,t:31.45,end:31.71,lyric:"more",phrase:7},{note:"A4",midi:69,ratio:1.57,t:31.71,end:32.09,lyric:"we",phrase:7},
+      {note:"B4",midi:71,ratio:1.71,t:32.47,end:32.67,lyric:"get",phrase:8},{note:"A4",midi:69,ratio:1.57,t:32.67,end:32.92,lyric:"to-",phrase:8},{note:"G4",midi:67,ratio:1.43,t:33.0,end:33.2,lyric:"get-",phrase:8},{note:"D4",midi:62,ratio:1.0,t:33.2,end:33.58,lyric:"her",phrase:8},{note:"D4",midi:62,ratio:1.0,t:33.66,end:33.9,lyric:"The",phrase:8},{note:"D4",midi:62,ratio:1.0,t:34.26,end:34.66,lyric:"hap-",phrase:8},{note:"E4",midi:64,ratio:1.14,t:34.74,end:34.94,lyric:"pier",phrase:8},{note:"A3",midi:57,ratio:0.57,t:35.1,end:36.28,lyric:"we",phrase:8},{note:"D4",midi:62,ratio:1.0,t:36.28,end:36.72,lyric:"'llbe",phrase:8},
+    ]},
+  littlebunny: {status:"recording-drafted; owner-listening-pending", keyTonic:"D", baseMidi:62, window:[0.0,1.0], level:{"start":0,"melodyStart":12.5,"melodyEnd":41.73,"fadeStart":41.86,"end":42.46},
+    phrases:[[0,11],[12,22],[23,29],[30,33],[34,38],[39,42],[43,50],[51,55],[56,62],[63,70],[71,74]], notes:[
+      {note:"A4",midi:69,ratio:0.57,t:12.5,end:12.82,lyric:"小",phrase:1},{note:"D5",midi:74,ratio:1.0,t:13.0,end:13.26,lyric:"兔",phrase:1},{note:"B4",midi:71,ratio:0.71,t:13.26,end:13.5,lyric:"子",phrase:1},{note:"A4",midi:69,ratio:0.57,t:13.5,end:13.87,lyric:"乖",phrase:1},{note:"A4",midi:69,ratio:0.57,t:14.0,end:14.34,lyric:"乖",phrase:1},{note:"F#4",midi:66,ratio:0.29,t:14.34,end:14.5,lyric:"",phrase:1},{note:"F#4",midi:66,ratio:0.29,t:14.53,end:14.77,lyric:"把",phrase:1},{note:"A4",midi:69,ratio:0.57,t:14.77,end:15.0,lyric:"",phrase:1},{note:"B4",midi:71,ratio:0.71,t:15.0,end:15.26,lyric:"门",phrase:1},{note:"D5",midi:74,ratio:1.0,t:15.26,end:15.48,lyric:"开",phrase:1},{note:"A4",midi:69,ratio:0.57,t:15.55,end:15.76,lyric:"",phrase:1},{note:"A4",midi:69,ratio:0.57,t:16.0,end:16.19,lyric:"开",phrase:1},
+      {note:"B4",midi:71,ratio:0.71,t:16.45,end:16.98,lyric:"快",phrase:2},{note:"A4",midi:69,ratio:0.57,t:16.98,end:17.25,lyric:"点",phrase:2},{note:"F#4",midi:66,ratio:0.29,t:17.25,end:17.48,lyric:"开",phrase:2},{note:"E4",midi:64,ratio:0.14,t:17.53,end:17.93,lyric:"开",phrase:2},{note:"E4",midi:64,ratio:0.14,t:18.02,end:18.54,lyric:"我",phrase:2},{note:"F#4",midi:66,ratio:0.29,t:18.54,end:19.0,lyric:"要",phrase:2},{note:"A4",midi:69,ratio:0.57,t:19.0,end:19.22,lyric:"",phrase:2},{note:"F#4",midi:66,ratio:0.29,t:19.22,end:19.42,lyric:"",phrase:2},{note:"E4",midi:64,ratio:0.14,t:19.49,end:19.76,lyric:"进",phrase:2},{note:"F#4",midi:66,ratio:0.29,t:19.76,end:19.95,lyric:"来",phrase:2},{note:"D4",midi:62,ratio:0.0,t:19.95,end:20.13,lyric:"不",phrase:2},
+      {note:"B4",midi:71,ratio:0.71,t:20.54,end:20.79,lyric:"开",phrase:3},{note:"A4",midi:69,ratio:0.57,t:21.03,end:21.64,lyric:"不",phrase:3},{note:"A#4",midi:70,ratio:0.64,t:21.64,end:21.8,lyric:"开",phrase:3},{note:"A4",midi:69,ratio:0.57,t:22.01,end:22.38,lyric:"我",phrase:3},{note:"F#4",midi:66,ratio:0.29,t:22.38,end:22.96,lyric:"不",phrase:3},{note:"B4",midi:71,ratio:0.71,t:23.01,end:23.28,lyric:"开",phrase:3},{note:"A4",midi:69,ratio:0.57,t:23.52,end:23.96,lyric:"妈",phrase:3},
+      {note:"A4",midi:69,ratio:0.57,t:24.45,end:24.98,lyric:"妈",phrase:4},{note:"F#4",midi:66,ratio:0.29,t:24.98,end:25.18,lyric:"没",phrase:4},{note:"D4",midi:62,ratio:0.0,t:25.25,end:25.49,lyric:"回",phrase:4},{note:"D4",midi:62,ratio:0.0,t:25.53,end:25.81,lyric:"来",phrase:4},
+      {note:"D4",midi:62,ratio:0.0,t:26.52,end:26.74,lyric:"谁",phrase:5},{note:"D4",midi:62,ratio:0.0,t:26.78,end:27.04,lyric:"来",phrase:5},{note:"E4",midi:64,ratio:0.14,t:27.04,end:27.2,lyric:"也",phrase:5},{note:"F#4",midi:66,ratio:0.29,t:27.27,end:27.43,lyric:"不",phrase:5},{note:"D4",midi:62,ratio:0.0,t:27.53,end:27.72,lyric:"开",phrase:5},
+      {note:"A4",midi:69,ratio:0.57,t:28.5,end:28.92,lyric:"小",phrase:6},{note:"D5",midi:74,ratio:1.0,t:28.99,end:29.25,lyric:"兔",phrase:6},{note:"B4",midi:71,ratio:0.71,t:29.25,end:29.49,lyric:"子",phrase:6},{note:"A4",midi:69,ratio:0.57,t:29.49,end:29.8,lyric:"乖",phrase:6},
+      {note:"A4",midi:69,ratio:0.57,t:29.98,end:30.36,lyric:"乖",phrase:7},{note:"F#4",midi:66,ratio:0.29,t:30.36,end:30.78,lyric:"把",phrase:7},{note:"A4",midi:69,ratio:0.57,t:30.78,end:31.01,lyric:"",phrase:7},{note:"B4",midi:71,ratio:0.71,t:31.01,end:31.24,lyric:"门",phrase:7},{note:"D5",midi:74,ratio:1.0,t:31.24,end:31.36,lyric:"",phrase:7},{note:"D5",midi:74,ratio:1.0,t:31.36,end:31.52,lyric:"开",phrase:7},{note:"A4",midi:69,ratio:0.57,t:31.53,end:31.67,lyric:"",phrase:7},{note:"F#4",midi:66,ratio:0.29,t:31.67,end:31.92,lyric:"",phrase:7},
+      {note:"A4",midi:69,ratio:0.57,t:32.0,end:32.49,lyric:"开",phrase:8},{note:"B4",midi:71,ratio:0.71,t:32.49,end:33.0,lyric:"快",phrase:8},{note:"A4",midi:69,ratio:0.57,t:33.0,end:33.25,lyric:"点",phrase:8},{note:"F#4",midi:66,ratio:0.29,t:33.25,end:33.48,lyric:"开",phrase:8},{note:"E4",midi:64,ratio:0.14,t:33.53,end:33.94,lyric:"开",phrase:8},
+      {note:"E4",midi:64,ratio:0.14,t:34.05,end:34.49,lyric:"",phrase:9},{note:"F#4",midi:66,ratio:0.29,t:34.49,end:34.98,lyric:"妈",phrase:9},{note:"A4",midi:69,ratio:0.57,t:34.98,end:35.23,lyric:"妈",phrase:9},{note:"F#4",midi:66,ratio:0.29,t:35.23,end:35.49,lyric:"回",phrase:9},{note:"E4",midi:64,ratio:0.14,t:35.49,end:35.79,lyric:"来",phrase:9},{note:"F#4",midi:66,ratio:0.29,t:35.79,end:35.97,lyric:"",phrase:9},{note:"D4",midi:62,ratio:0.0,t:35.97,end:36.14,lyric:"了",phrase:9},
+      {note:"B4",midi:71,ratio:0.71,t:36.49,end:36.82,lyric:"就",phrase:10},{note:"A4",midi:69,ratio:0.57,t:36.99,end:37.47,lyric:"开",phrase:10},{note:"B4",midi:71,ratio:0.71,t:37.47,end:37.89,lyric:"就",phrase:10},{note:"A4",midi:69,ratio:0.57,t:37.98,end:38.44,lyric:"开",phrase:10},{note:"F#4",midi:66,ratio:0.29,t:38.44,end:38.94,lyric:"我",phrase:10},{note:"B4",midi:71,ratio:0.71,t:38.94,end:39.37,lyric:"就",phrase:10},{note:"A4",midi:69,ratio:0.57,t:39.5,end:39.61,lyric:"开",phrase:10},{note:"G#4",midi:68,ratio:0.5,t:39.61,end:39.92,lyric:"妈",phrase:10},
+      {note:"A4",midi:69,ratio:0.57,t:40.48,end:40.96,lyric:"妈",phrase:11},{note:"E4",midi:64,ratio:0.14,t:41.01,end:41.21,lyric:"回",phrase:11},{note:"E4",midi:64,ratio:0.14,t:41.25,end:41.49,lyric:"来",phrase:11},{note:"D4",midi:62,ratio:0.0,t:41.49,end:41.73,lyric:"了",phrase:11},
+    ]},
+  rainrain: {status:"recording-drafted; owner-listening-pending", keyTonic:"C", baseMidi:60, window:[-0.145,0.855], level:{"start":0,"melodyStart":13.55,"melodyEnd":37.33,"fadeStart":38.13,"end":38.73},
+    phrases:[[0,11],[12,17],[18,23],[24,29],[30,40],[41,46]], notes:[
+      {note:"G4",midi:67,ratio:0.57,t:13.55,end:13.95,lyric:"Rain",phrase:1},{note:"E4",midi:64,ratio:0.29,t:14.24,end:14.71,lyric:"rain",phrase:1},{note:"G4",midi:67,ratio:0.57,t:14.89,end:15.16,lyric:"go",phrase:1},{note:"G4",midi:67,ratio:0.57,t:15.2,end:15.51,lyric:"a-",phrase:1},{note:"E4",midi:64,ratio:0.29,t:15.56,end:15.89,lyric:"way",phrase:1},{note:"G4",midi:67,ratio:0.57,t:16.21,end:16.38,lyric:"Come",phrase:1},{note:"G4",midi:67,ratio:0.57,t:16.42,end:16.59,lyric:"a-",phrase:1},{note:"G4",midi:67,ratio:0.57,t:16.63,end:16.84,lyric:"gain",phrase:1},{note:"E4",midi:64,ratio:0.29,t:16.84,end:17.22,lyric:"a-",phrase:1},{note:"A4",midi:69,ratio:0.71,t:17.22,end:17.5,lyric:"not-",phrase:1},{note:"G4",midi:67,ratio:0.57,t:17.5,end:18.09,lyric:"her",phrase:1},{note:"E4",midi:64,ratio:0.29,t:18.16,end:18.49,lyric:"day",phrase:1},
+      {note:"F4",midi:65,ratio:0.43,t:18.84,end:19.3,lyric:"Dad-",phrase:2},{note:"D4",midi:62,ratio:0.14,t:19.53,end:19.96,lyric:"dy",phrase:2},{note:"D4",midi:62,ratio:0.14,t:19.96,end:20.26,lyric:"wants",phrase:2},{note:"F4",midi:65,ratio:0.43,t:20.26,end:20.42,lyric:"",phrase:2},{note:"F4",midi:65,ratio:0.43,t:20.51,end:20.67,lyric:"to",phrase:2},{note:"D4",midi:62,ratio:0.14,t:20.84,end:21.06,lyric:"play",phrase:2},
+      {note:"G4",midi:67,ratio:0.57,t:21.53,end:21.9,lyric:"Rain",phrase:3},{note:"F4",midi:65,ratio:0.43,t:21.9,end:22.18,lyric:"",phrase:3},{note:"E4",midi:64,ratio:0.29,t:22.18,end:22.52,lyric:"rain",phrase:3},{note:"D4",midi:62,ratio:0.14,t:22.52,end:23.01,lyric:"go",phrase:3},{note:"E4",midi:64,ratio:0.29,t:23.01,end:23.17,lyric:"a-",phrase:3},{note:"C4",midi:60,ratio:0.0,t:23.17,end:24.0,lyric:"way",phrase:3},
+      {note:"G4",midi:67,ratio:0.57,t:26.85,end:27.22,lyric:"Rain",phrase:4},{note:"E4",midi:64,ratio:0.29,t:27.53,end:27.91,lyric:"rain",phrase:4},{note:"G4",midi:67,ratio:0.57,t:28.17,end:28.34,lyric:"go",phrase:4},{note:"G4",midi:67,ratio:0.57,t:28.38,end:28.55,lyric:"a-",phrase:4},{note:"G4",midi:67,ratio:0.57,t:28.59,end:28.79,lyric:"way",phrase:4},{note:"E4",midi:64,ratio:0.29,t:28.86,end:29.19,lyric:"Come",phrase:4},
+      {note:"G4",midi:67,ratio:0.57,t:29.53,end:30.1,lyric:"a-",phrase:5},{note:"E4",midi:64,ratio:0.29,t:30.2,end:30.57,lyric:"gain",phrase:5},{note:"A4",midi:69,ratio:0.71,t:30.57,end:30.87,lyric:"a-",phrase:5},{note:"G4",midi:67,ratio:0.57,t:30.87,end:31.09,lyric:"not-",phrase:5},{note:"G4",midi:67,ratio:0.57,t:31.13,end:31.39,lyric:"her",phrase:5},{note:"E4",midi:64,ratio:0.29,t:31.5,end:31.9,lyric:"day",phrase:5},{note:"F4",midi:65,ratio:0.43,t:32.22,end:32.61,lyric:"Mom-",phrase:5},{note:"D4",midi:62,ratio:0.14,t:32.89,end:33.61,lyric:"my",phrase:5},{note:"F4",midi:65,ratio:0.43,t:33.61,end:33.77,lyric:"wants",phrase:5},{note:"F4",midi:65,ratio:0.43,t:33.83,end:34.03,lyric:"to",phrase:5},{note:"D4",midi:62,ratio:0.14,t:34.18,end:34.44,lyric:"play",phrase:5},
+      {note:"G4",midi:67,ratio:0.57,t:34.86,end:35.21,lyric:"",phrase:6},{note:"F4",midi:65,ratio:0.43,t:35.21,end:35.52,lyric:"Rain",phrase:6},{note:"E4",midi:64,ratio:0.29,t:35.52,end:35.84,lyric:"rain",phrase:6},{note:"D4",midi:62,ratio:0.14,t:35.84,end:36.31,lyric:"go",phrase:6},{note:"E4",midi:64,ratio:0.29,t:36.31,end:36.48,lyric:"a-",phrase:6},{note:"C4",midi:60,ratio:0.0,t:36.48,end:37.33,lyric:"way",phrase:6},
+    ]},
+  fingerfamily: {status:"recording-drafted; owner-listening-pending", keyTonic:"A", baseMidi:57, window:[0.0,1.0], level:{"start":0,"melodyStart":8.87,"melodyEnd":25.18,"fadeStart":25.39,"end":25.99},
+    phrases:[[0,10],[11,16],[17,20],[21,29],[30,37]], notes:[
+      {note:"A3",midi:57,ratio:0.0,t:8.87,end:9.16,lyric:"Dad-",phrase:1},{note:"C#4",midi:61,ratio:0.29,t:9.16,end:9.33,lyric:"dy",phrase:1},{note:"E4",midi:64,ratio:0.57,t:9.43,end:9.87,lyric:"fin-",phrase:1},{note:"A3",midi:57,ratio:0.0,t:9.95,end:10.21,lyric:"ger",phrase:1},{note:"C#4",midi:61,ratio:0.29,t:10.21,end:10.39,lyric:"dad-",phrase:1},{note:"E4",midi:64,ratio:0.57,t:10.49,end:10.74,lyric:"dy",phrase:1},{note:"E4",midi:64,ratio:0.57,t:10.74,end:11.12,lyric:"fin-",phrase:1},{note:"F#4",midi:66,ratio:0.71,t:11.12,end:11.41,lyric:"ger",phrase:1},{note:"F#4",midi:66,ratio:0.71,t:11.51,end:11.66,lyric:"where",phrase:1},{note:"A4",midi:69,ratio:1.0,t:11.66,end:11.94,lyric:"are",phrase:1},{note:"E4",midi:64,ratio:0.57,t:12.06,end:12.46,lyric:"you",phrase:1},
+      {note:"A4",midi:69,ratio:1.0,t:13.13,end:13.37,lyric:"Here",phrase:2},{note:"E4",midi:64,ratio:0.57,t:13.37,end:13.57,lyric:"I",phrase:2},{note:"E4",midi:64,ratio:0.57,t:13.61,end:13.86,lyric:"am",phrase:2},{note:"A4",midi:69,ratio:1.0,t:14.2,end:14.43,lyric:"here",phrase:2},{note:"E4",midi:64,ratio:0.57,t:14.43,end:14.62,lyric:"I",phrase:2},{note:"E4",midi:64,ratio:0.57,t:14.66,end:14.89,lyric:"am",phrase:2},
+      {note:"B3",midi:59,ratio:0.14,t:15.36,end:15.58,lyric:"how",phrase:3},{note:"B3",midi:59,ratio:0.14,t:15.82,end:16.09,lyric:"do",phrase:3},{note:"C#4",midi:61,ratio:0.29,t:16.09,end:16.28,lyric:"you",phrase:3},{note:"A3",midi:57,ratio:0.0,t:16.4,end:16.64,lyric:"do",phrase:3},
+      {note:"A3",midi:57,ratio:0.0,t:17.44,end:17.7,lyric:"Dad-",phrase:4},{note:"C#4",midi:61,ratio:0.29,t:17.7,end:17.9,lyric:"dy",phrase:4},{note:"E4",midi:64,ratio:0.57,t:17.99,end:18.46,lyric:"Fin-",phrase:4},{note:"A3",midi:57,ratio:0.0,t:18.46,end:18.77,lyric:"ger",phrase:4},{note:"C#4",midi:61,ratio:0.29,t:18.77,end:18.97,lyric:"",phrase:4},{note:"E4",midi:64,ratio:0.57,t:19.06,end:19.68,lyric:"",phrase:4},{note:"F#4",midi:66,ratio:0.71,t:19.68,end:19.99,lyric:"",phrase:4},{note:"A4",midi:69,ratio:1.0,t:20.09,end:20.58,lyric:"",phrase:4},{note:"E4",midi:64,ratio:0.57,t:20.58,end:20.96,lyric:"",phrase:4},
+      {note:"A4",midi:69,ratio:1.0,t:21.66,end:21.92,lyric:"",phrase:5},{note:"E4",midi:64,ratio:0.57,t:21.92,end:22.41,lyric:"",phrase:5},{note:"A4",midi:69,ratio:1.0,t:22.75,end:23.0,lyric:"",phrase:5},{note:"E4",midi:64,ratio:0.57,t:23.0,end:23.47,lyric:"",phrase:5},{note:"B3",midi:59,ratio:0.14,t:23.92,end:24.15,lyric:"",phrase:5},{note:"B3",midi:59,ratio:0.14,t:24.37,end:24.64,lyric:"",phrase:5},{note:"C#4",midi:61,ratio:0.29,t:24.64,end:24.84,lyric:"",phrase:5},{note:"A3",midi:57,ratio:0.0,t:24.95,end:25.18,lyric:"",phrase:5},
+    ]},
+  wheelsbus: {status:"recording-drafted; owner-listening-pending", keyTonic:"C", baseMidi:48, window:[0.14,1.57], level:{"start":0,"melodyStart":11.13,"melodyEnd":43.7,"fadeStart":43.95,"end":44.55},
+    phrases:[[0,10],[11,19],[20,24],[25,33],[34,36],[37,48],[49,53],[54,63],[64,66],[67,78]], notes:[
+      {note:"G3",midi:55,ratio:0.57,t:11.13,end:11.32,lyric:"The",phrase:1},{note:"C4",midi:60,ratio:1.0,t:11.32,end:11.65,lyric:"Wheels",phrase:1},{note:"C4",midi:60,ratio:1.0,t:11.65,end:11.98,lyric:"on",phrase:1},{note:"C4",midi:60,ratio:1.0,t:11.98,end:12.19,lyric:"the",phrase:1},{note:"E4",midi:64,ratio:1.29,t:12.36,end:12.83,lyric:"Bus",phrase:1},{note:"G4",midi:67,ratio:1.57,t:12.83,end:13.06,lyric:"Go",phrase:1},{note:"E4",midi:64,ratio:1.29,t:13.06,end:13.4,lyric:"Round",phrase:1},{note:"C4",midi:60,ratio:1.0,t:13.4,end:13.75,lyric:"and",phrase:1},{note:"D4",midi:62,ratio:1.14,t:14.12,end:14.46,lyric:"Round",phrase:1},{note:"B3",midi:59,ratio:0.86,t:14.46,end:14.91,lyric:"",phrase:1},{note:"G3",midi:55,ratio:0.57,t:15.0,end:15.16,lyric:"",phrase:1},
+      {note:"G4",midi:67,ratio:1.57,t:15.52,end:15.85,lyric:"",phrase:2},{note:"E4",midi:64,ratio:1.29,t:15.85,end:16.22,lyric:"",phrase:2},{note:"C4",midi:60,ratio:1.0,t:16.22,end:16.54,lyric:"",phrase:2},{note:"G3",midi:55,ratio:0.57,t:16.81,end:16.95,lyric:"",phrase:2},{note:"C4",midi:60,ratio:1.0,t:16.95,end:17.77,lyric:"",phrase:2},{note:"E4",midi:64,ratio:1.29,t:17.93,end:18.44,lyric:"",phrase:2},{note:"G4",midi:67,ratio:1.57,t:18.44,end:18.64,lyric:"",phrase:2},{note:"E4",midi:64,ratio:1.29,t:18.64,end:19.0,lyric:"",phrase:2},{note:"C4",midi:60,ratio:1.0,t:19.0,end:19.29,lyric:"",phrase:2},
+      {note:"D4",midi:62,ratio:1.14,t:19.68,end:19.9,lyric:"All",phrase:3},{note:"D3",midi:50,ratio:0.14,t:19.9,end:20.1,lyric:"through",phrase:3},{note:"G3",midi:55,ratio:0.57,t:20.38,end:21.04,lyric:"the",phrase:3},{note:"G#3",midi:56,ratio:0.64,t:21.1,end:21.19,lyric:"town",phrase:3},{note:"C4",midi:60,ratio:1.0,t:21.19,end:21.81,lyric:"The",phrase:3},
+      {note:"G3",midi:55,ratio:0.57,t:22.3,end:22.47,lyric:"Wi-",phrase:4},{note:"C4",midi:60,ratio:1.0,t:22.67,end:22.82,lyric:"pers",phrase:4},{note:"C4",midi:60,ratio:1.0,t:22.82,end:22.97,lyric:"on",phrase:4},{note:"C4",midi:60,ratio:1.0,t:22.97,end:23.12,lyric:"the",phrase:4},{note:"C4",midi:60,ratio:1.0,t:23.12,end:23.31,lyric:"Bus",phrase:4},{note:"E4",midi:64,ratio:1.29,t:23.48,end:23.79,lyric:"Go",phrase:4},{note:"G4",midi:67,ratio:1.57,t:23.79,end:23.99,lyric:"Swish",phrase:4},{note:"E4",midi:64,ratio:1.29,t:24.16,end:24.37,lyric:"Swish",phrase:4},{note:"C4",midi:60,ratio:1.0,t:24.53,end:24.84,lyric:"Swish",phrase:4},
+      {note:"C#4",midi:61,ratio:1.07,t:25.21,end:25.43,lyric:"Swish",phrase:5},{note:"B3",midi:59,ratio:0.86,t:25.58,end:25.77,lyric:"Swish",phrase:5},{note:"G3",midi:55,ratio:0.57,t:25.92,end:26.27,lyric:"Swish",phrase:5},
+      {note:"G4",midi:67,ratio:1.57,t:26.62,end:26.82,lyric:"Swish",phrase:6},{note:"E4",midi:64,ratio:1.29,t:26.97,end:27.16,lyric:"Swish",phrase:6},{note:"C4",midi:60,ratio:1.0,t:27.31,end:27.64,lyric:"Swish",phrase:6},{note:"G3",midi:55,ratio:0.57,t:27.88,end:28.07,lyric:"The",phrase:6},{note:"B3",midi:59,ratio:0.86,t:28.07,end:28.23,lyric:"Wi-",phrase:6},{note:"C4",midi:60,ratio:1.0,t:28.23,end:28.39,lyric:"pers",phrase:6},{note:"C4",midi:60,ratio:1.0,t:28.43,end:28.59,lyric:"on",phrase:6},{note:"C4",midi:60,ratio:1.0,t:28.63,end:28.83,lyric:"the",phrase:6},{note:"E4",midi:64,ratio:1.29,t:28.98,end:29.3,lyric:"Bus",phrase:6},{note:"G4",midi:67,ratio:1.57,t:29.35,end:29.53,lyric:"Go",phrase:6},{note:"E4",midi:64,ratio:1.29,t:29.69,end:29.88,lyric:"Swish",phrase:6},{note:"C4",midi:60,ratio:1.0,t:30.04,end:30.36,lyric:"Swish",phrase:6},
+      {note:"D4",midi:62,ratio:1.14,t:30.76,end:30.98,lyric:"all",phrase:7},{note:"D3",midi:50,ratio:0.14,t:30.98,end:31.15,lyric:"through",phrase:7},{note:"G3",midi:55,ratio:0.57,t:31.46,end:32.09,lyric:"the",phrase:7},{note:"A#3",midi:58,ratio:0.785,t:32.16,end:32.28,lyric:"town",phrase:7},{note:"C4",midi:60,ratio:1.0,t:32.28,end:32.54,lyric:"the",phrase:7},
+      {note:"G#3",midi:56,ratio:0.64,t:33.49,end:33.6,lyric:"horn",phrase:8},{note:"C4",midi:60,ratio:1.0,t:33.6,end:34.16,lyric:"on",phrase:8},{note:"C4",midi:60,ratio:1.0,t:34.16,end:34.36,lyric:"the",phrase:8},{note:"E4",midi:64,ratio:1.29,t:34.52,end:34.79,lyric:"bus",phrase:8},{note:"G4",midi:67,ratio:1.57,t:34.88,end:35.06,lyric:"goes",phrase:8},{note:"E4",midi:64,ratio:1.29,t:35.23,end:35.4,lyric:"beep",phrase:8},{note:"C4",midi:60,ratio:1.0,t:35.57,end:35.84,lyric:"beep",phrase:8},{note:"D4",midi:62,ratio:1.14,t:36.27,end:36.46,lyric:"beep",phrase:8},{note:"B3",midi:59,ratio:0.86,t:36.62,end:36.82,lyric:"beep",phrase:8},{note:"G3",midi:55,ratio:0.57,t:36.97,end:37.24,lyric:"beep",phrase:8},
+      {note:"G4",midi:67,ratio:1.57,t:37.68,end:37.88,lyric:"beep",phrase:9},{note:"E4",midi:64,ratio:1.29,t:38.03,end:38.26,lyric:"beep",phrase:9},{note:"C4",midi:60,ratio:1.0,t:38.38,end:38.66,lyric:"the",phrase:9},
+      {note:"A3",midi:57,ratio:0.71,t:39.09,end:39.2,lyric:"horn",phrase:10},{note:"C4",midi:60,ratio:1.0,t:39.2,end:39.52,lyric:"on",phrase:10},{note:"C4",midi:60,ratio:1.0,t:39.56,end:39.92,lyric:"the",phrase:10},{note:"E4",midi:64,ratio:1.29,t:40.11,end:40.36,lyric:"bus",phrase:10},{note:"G4",midi:67,ratio:1.57,t:40.45,end:40.64,lyric:"goes",phrase:10},{note:"E4",midi:64,ratio:1.29,t:40.81,end:40.98,lyric:"beep",phrase:10},{note:"C4",midi:60,ratio:1.0,t:41.11,end:41.49,lyric:"beep",phrase:10},{note:"D4",midi:62,ratio:1.14,t:41.84,end:42.04,lyric:"beep",phrase:10},{note:"D3",midi:50,ratio:0.14,t:42.04,end:42.28,lyric:"all",phrase:10},{note:"G3",midi:55,ratio:0.57,t:42.51,end:43.16,lyric:"through",phrase:10},{note:"A3",midi:57,ratio:0.71,t:43.22,end:43.36,lyric:"the",phrase:10},{note:"C4",midi:60,ratio:1.0,t:43.36,end:43.7,lyric:"town",phrase:10},
+    ]},
+  oldmcdonald: {status:"recording-drafted; owner-listening-pending", keyTonic:"G", baseMidi:55, window:[0.535,1.535], level:{"start":0,"melodyStart":5.58,"melodyEnd":26.61,"fadeStart":27.41,"end":28.01},
+    phrases:[[0,6],[7,11],[12,19],[20,24],[25,34],[35,38],[39,49],[50,54],[55,59]], notes:[
+      {note:"G4",midi:67,ratio:1.0,t:5.58,end:5.77,lyric:"Old",phrase:1},{note:"G4",midi:67,ratio:1.0,t:5.77,end:6.07,lyric:"Mac-",phrase:1},{note:"G4",midi:67,ratio:1.0,t:6.25,end:6.58,lyric:"Do-",phrase:1},{note:"D4",midi:62,ratio:0.57,t:6.58,end:6.78,lyric:"nald",phrase:1},{note:"E4",midi:64,ratio:0.71,t:6.91,end:7.12,lyric:"had",phrase:1},{note:"E4",midi:64,ratio:0.71,t:7.16,end:7.41,lyric:"a",phrase:1},{note:"D4",midi:62,ratio:0.57,t:7.61,end:7.87,lyric:"farm",phrase:1},
+      {note:"B4",midi:71,ratio:1.29,t:8.33,end:8.85,lyric:"E",phrase:2},{note:"A4",midi:69,ratio:1.14,t:8.85,end:9.13,lyric:"I",phrase:2},{note:"A4",midi:69,ratio:1.14,t:9.17,end:9.5,lyric:"E",phrase:2},{note:"G4",midi:67,ratio:1.0,t:9.5,end:9.77,lyric:"I",phrase:2},{note:"G4",midi:67,ratio:1.0,t:9.81,end:10.13,lyric:"O",phrase:2},
+      {note:"D4",midi:62,ratio:0.57,t:10.64,end:10.96,lyric:"And",phrase:3},{note:"E4",midi:64,ratio:0.71,t:10.96,end:11.06,lyric:"on",phrase:3},{note:"C#5",midi:73,ratio:1.5,t:11.06,end:11.21,lyric:"his",phrase:3},{note:"G4",midi:67,ratio:1.0,t:11.21,end:11.47,lyric:"farm",phrase:3},{note:"G4",midi:67,ratio:1.0,t:11.64,end:11.96,lyric:"he",phrase:3},{note:"D4",midi:62,ratio:0.57,t:11.96,end:12.47,lyric:"had",phrase:3},{note:"E4",midi:64,ratio:0.71,t:12.47,end:12.84,lyric:"a",phrase:3},{note:"D4",midi:62,ratio:0.57,t:13.0,end:13.3,lyric:"cow",phrase:3},
+      {note:"B4",midi:71,ratio:1.29,t:13.68,end:14.17,lyric:"E",phrase:4},{note:"A4",midi:69,ratio:1.14,t:14.17,end:14.37,lyric:"I",phrase:4},{note:"A4",midi:69,ratio:1.14,t:14.41,end:14.62,lyric:"E",phrase:4},{note:"A4",midi:69,ratio:1.14,t:14.66,end:14.9,lyric:"I",phrase:4},{note:"G4",midi:67,ratio:1.0,t:14.9,end:15.5,lyric:"O",phrase:4},
+      {note:"D4",midi:62,ratio:0.57,t:15.99,end:16.36,lyric:"With",phrase:5},{note:"G4",midi:67,ratio:1.0,t:16.36,end:16.6,lyric:"a",phrase:5},{note:"G4",midi:67,ratio:1.0,t:16.64,end:16.91,lyric:"moo",phrase:5},{note:"G4",midi:67,ratio:1.0,t:16.99,end:17.26,lyric:"moo",phrase:5},{note:"D4",midi:62,ratio:0.57,t:17.34,end:17.71,lyric:"here",phrase:5},{note:"G4",midi:67,ratio:1.0,t:17.71,end:17.86,lyric:"and",phrase:5},{note:"G4",midi:67,ratio:1.0,t:17.86,end:18.02,lyric:"a",phrase:5},{note:"G4",midi:67,ratio:1.0,t:18.02,end:18.17,lyric:"moo",phrase:5},{note:"G4",midi:67,ratio:1.0,t:18.17,end:18.33,lyric:"moo",phrase:5},{note:"G4",midi:67,ratio:1.0,t:18.33,end:18.67,lyric:"there",phrase:5},
+      {note:"G4",midi:67,ratio:1.0,t:19.07,end:19.36,lyric:"Here",phrase:6},{note:"G4",midi:67,ratio:1.0,t:19.4,end:19.73,lyric:"a",phrase:6},{note:"E4",midi:64,ratio:0.71,t:19.73,end:19.85,lyric:"moo",phrase:6},{note:"G4",midi:67,ratio:1.0,t:19.85,end:20.06,lyric:"there",phrase:6},
+      {note:"G4",midi:67,ratio:1.0,t:20.1,end:20.3,lyric:"a",phrase:7},{note:"G4",midi:67,ratio:1.0,t:20.34,end:20.55,lyric:"moo",phrase:7},{note:"G4",midi:67,ratio:1.0,t:20.59,end:20.79,lyric:"e-",phrase:7},{note:"G4",midi:67,ratio:1.0,t:20.83,end:21.08,lyric:"ve-",phrase:7},{note:"G4",midi:67,ratio:1.0,t:21.08,end:21.22,lyric:"ryw-",phrase:7},{note:"G4",midi:67,ratio:1.0,t:21.22,end:21.37,lyric:"here",phrase:7},{note:"G4",midi:67,ratio:1.0,t:21.37,end:21.51,lyric:"a",phrase:7},{note:"G4",midi:67,ratio:1.0,t:21.51,end:21.65,lyric:"moo",phrase:7},{note:"G4",midi:67,ratio:1.0,t:21.65,end:21.8,lyric:"moo",phrase:7},{note:"F#4",midi:66,ratio:0.86,t:21.8,end:21.97,lyric:"Old",phrase:7},{note:"G4",midi:67,ratio:1.0,t:21.97,end:22.35,lyric:"Mac-",phrase:7},
+      {note:"G4",midi:67,ratio:1.0,t:22.5,end:22.81,lyric:"Do-",phrase:8},{note:"D4",midi:62,ratio:0.57,t:22.81,end:23.11,lyric:"nald",phrase:8},{note:"D4",midi:62,ratio:0.57,t:23.11,end:23.32,lyric:"had",phrase:8},{note:"E4",midi:64,ratio:0.71,t:23.32,end:23.65,lyric:"a",phrase:8},{note:"D4",midi:62,ratio:0.57,t:23.83,end:24.15,lyric:"farm",phrase:8},
+      {note:"B4",midi:71,ratio:1.29,t:24.52,end:25.06,lyric:"E",phrase:9},{note:"A4",midi:69,ratio:1.14,t:25.06,end:25.38,lyric:"I",phrase:9},{note:"A4",midi:69,ratio:1.14,t:25.42,end:25.78,lyric:"E",phrase:9},{note:"G4",midi:67,ratio:1.0,t:25.78,end:26.15,lyric:"I",phrase:9},{note:"G4",midi:67,ratio:1.0,t:26.19,end:26.61,lyric:"O",phrase:9},
+    ]},
+  ifhappy: {status:"recording-drafted; owner-listening-pending", keyTonic:"G", baseMidi:55, window:[0.29,1.71], level:{"start":0,"melodyStart":7.37,"melodyEnd":51.59,"fadeStart":52.39,"end":52.99},
+    phrases:[[0,10],[11,21],[22,24],[25,36],[37,42],[43,53],[54,64],[65,74],[75,79],[80,87],[88,97],[98,100],[101,103],[104,110],[111,114],[115,117],[118,123],[124,130],[131,137],[138,140]], notes:[
+      {note:"D4",midi:62,ratio:0.57,t:7.37,end:7.53,lyric:"If",phrase:1},{note:"D4",midi:62,ratio:0.57,t:7.68,end:7.87,lyric:"you're",phrase:1},{note:"F#4",midi:66,ratio:0.86,t:7.87,end:8.03,lyric:"hap-",phrase:1},{note:"G4",midi:67,ratio:1.0,t:8.16,end:8.32,lyric:"py",phrase:1},{note:"G4",midi:67,ratio:1.0,t:8.36,end:8.52,lyric:"and",phrase:1},{note:"G4",midi:67,ratio:1.0,t:8.56,end:8.72,lyric:"you",phrase:1},{note:"G4",midi:67,ratio:1.0,t:8.76,end:8.93,lyric:"know",phrase:1},{note:"G4",midi:67,ratio:1.0,t:8.97,end:9.17,lyric:"it",phrase:1},{note:"F#4",midi:66,ratio:0.86,t:9.26,end:9.42,lyric:"clap",phrase:1},{note:"G4",midi:67,ratio:1.0,t:9.55,end:9.7,lyric:"your",phrase:1},{note:"A4",midi:69,ratio:1.14,t:9.7,end:10.03,lyric:"hands",phrase:1},
+      {note:"C5",midi:72,ratio:1.43,t:11.16,end:11.32,lyric:"If",phrase:2},{note:"C5",midi:72,ratio:1.43,t:11.46,end:11.62,lyric:"you're",phrase:2},{note:"G#4",midi:68,ratio:1.07,t:11.7,end:11.86,lyric:"hap-",phrase:2},{note:"A4",midi:69,ratio:1.14,t:11.95,end:12.14,lyric:"py",phrase:2},{note:"A4",midi:69,ratio:1.14,t:12.18,end:12.41,lyric:"and",phrase:2},{note:"A4",midi:69,ratio:1.14,t:12.41,end:12.57,lyric:"you",phrase:2},{note:"A4",midi:69,ratio:1.14,t:12.6,end:12.76,lyric:"know",phrase:2},{note:"A4",midi:69,ratio:1.14,t:12.79,end:12.98,lyric:"it",phrase:2},{note:"G4",midi:67,ratio:1.0,t:13.03,end:13.23,lyric:"clap",phrase:2},{note:"A4",midi:69,ratio:1.14,t:13.34,end:13.49,lyric:"your",phrase:2},{note:"B4",midi:71,ratio:1.29,t:13.49,end:13.84,lyric:"hands",phrase:2},
+      {note:"B4",midi:71,ratio:1.29,t:14.93,end:15.09,lyric:"If",phrase:3},{note:"B4",midi:71,ratio:1.29,t:15.23,end:15.38,lyric:"you're",phrase:3},{note:"C5",midi:72,ratio:1.43,t:15.38,end:15.57,lyric:"hap-",phrase:3},
+      {note:"C5",midi:72,ratio:1.43,t:15.7,end:15.94,lyric:"py",phrase:4},{note:"C5",midi:72,ratio:1.43,t:15.98,end:16.26,lyric:"and",phrase:4},{note:"E4",midi:64,ratio:0.71,t:16.26,end:16.45,lyric:"you",phrase:4},{note:"E4",midi:64,ratio:0.71,t:16.49,end:16.72,lyric:"know",phrase:4},{note:"C5",midi:72,ratio:1.43,t:16.77,end:17.18,lyric:"it",phrase:4},{note:"B4",midi:71,ratio:1.29,t:17.23,end:17.43,lyric:"then",phrase:4},{note:"B4",midi:71,ratio:1.29,t:17.54,end:17.7,lyric:"your",phrase:4},{note:"B4",midi:71,ratio:1.29,t:17.71,end:17.99,lyric:"face",phrase:4},{note:"A4",midi:69,ratio:1.14,t:17.99,end:18.15,lyric:"will",phrase:4},{note:"G4",midi:67,ratio:1.0,t:18.18,end:18.81,lyric:"su-re-ly show it",phrase:4},{note:"G4",midi:67,ratio:1.0,t:18.93,end:19.15,lyric:"If",phrase:4},{note:"A4",midi:69,ratio:1.14,t:19.15,end:19.31,lyric:"you're",phrase:4},
+      {note:"G4",midi:67,ratio:1.0,t:19.39,end:19.79,lyric:"hap-",phrase:5},{note:"F#4",midi:66,ratio:0.86,t:19.79,end:20.28,lyric:"py and you know",phrase:5},{note:"D4",midi:62,ratio:0.57,t:20.28,end:20.44,lyric:"it",phrase:5},{note:"E4",midi:64,ratio:0.71,t:20.45,end:20.65,lyric:"clap",phrase:5},{note:"F#4",midi:66,ratio:0.86,t:20.76,end:20.89,lyric:"your",phrase:5},{note:"G4",midi:67,ratio:1.0,t:20.89,end:21.25,lyric:"hands",phrase:5},
+      {note:"B3",midi:59,ratio:0.29,t:22.35,end:22.51,lyric:"If",phrase:6},{note:"B3",midi:59,ratio:0.29,t:22.65,end:22.81,lyric:"you're",phrase:6},{note:"G4",midi:67,ratio:1.0,t:23.09,end:23.24,lyric:"hap-",phrase:6},{note:"G4",midi:67,ratio:1.0,t:23.24,end:23.39,lyric:"py",phrase:6},{note:"G4",midi:67,ratio:1.0,t:23.39,end:23.54,lyric:"and",phrase:6},{note:"G4",midi:67,ratio:1.0,t:23.54,end:23.7,lyric:"you",phrase:6},{note:"G4",midi:67,ratio:1.0,t:23.7,end:23.86,lyric:"know",phrase:6},{note:"G4",midi:67,ratio:1.0,t:23.86,end:24.02,lyric:"it",phrase:6},{note:"F#4",midi:66,ratio:0.86,t:24.15,end:24.38,lyric:"stomp",phrase:6},{note:"G4",midi:67,ratio:1.0,t:24.45,end:24.61,lyric:"your",phrase:6},{note:"A4",midi:69,ratio:1.14,t:24.63,end:24.83,lyric:"feet",phrase:6},
+      {note:"C5",midi:72,ratio:1.43,t:26.06,end:26.22,lyric:"If",phrase:7},{note:"C5",midi:72,ratio:1.43,t:26.35,end:26.51,lyric:"you're",phrase:7},{note:"A4",midi:69,ratio:1.14,t:26.82,end:26.96,lyric:"hap-",phrase:7},{note:"A4",midi:69,ratio:1.14,t:26.96,end:27.1,lyric:"py",phrase:7},{note:"A4",midi:69,ratio:1.14,t:27.1,end:27.25,lyric:"and",phrase:7},{note:"A4",midi:69,ratio:1.14,t:27.25,end:27.41,lyric:"you",phrase:7},{note:"A4",midi:69,ratio:1.14,t:27.41,end:27.57,lyric:"know",phrase:7},{note:"A4",midi:69,ratio:1.14,t:27.58,end:27.75,lyric:"it",phrase:7},{note:"G4",midi:67,ratio:1.0,t:27.86,end:28.1,lyric:"stomp",phrase:7},{note:"A4",midi:69,ratio:1.14,t:28.17,end:28.33,lyric:"your",phrase:7},{note:"B4",midi:71,ratio:1.29,t:28.34,end:28.6,lyric:"feet",phrase:7},
+      {note:"B4",midi:71,ratio:1.29,t:29.8,end:29.96,lyric:"If",phrase:8},{note:"B4",midi:71,ratio:1.29,t:30.09,end:30.25,lyric:"you're",phrase:8},{note:"C5",midi:72,ratio:1.43,t:30.25,end:30.44,lyric:"hap-",phrase:8},{note:"C5",midi:72,ratio:1.43,t:30.57,end:30.73,lyric:"py",phrase:8},{note:"C5",midi:72,ratio:1.43,t:30.75,end:30.91,lyric:"and",phrase:8},{note:"C5",midi:72,ratio:1.43,t:30.93,end:31.11,lyric:"you",phrase:8},{note:"E5",midi:76,ratio:1.71,t:31.11,end:31.43,lyric:"know",phrase:8},{note:"E5",midi:76,ratio:1.71,t:31.43,end:31.59,lyric:"it",phrase:8},{note:"C5",midi:72,ratio:1.43,t:31.71,end:32.02,lyric:"then",phrase:8},{note:"B4",midi:71,ratio:1.29,t:32.08,end:32.27,lyric:"your",phrase:8},
+      {note:"B4",midi:71,ratio:1.29,t:32.54,end:32.81,lyric:"face",phrase:9},{note:"A4",midi:69,ratio:1.14,t:32.81,end:32.97,lyric:"will",phrase:9},{note:"G4",midi:67,ratio:1.0,t:33.01,end:33.63,lyric:"su-re-ly show it If",phrase:9},{note:"G4",midi:67,ratio:1.0,t:33.75,end:33.93,lyric:"you're",phrase:9},{note:"A4",midi:69,ratio:1.14,t:33.93,end:34.09,lyric:"hap-",phrase:9},
+      {note:"A4",midi:69,ratio:1.14,t:34.23,end:34.36,lyric:"py",phrase:10},{note:"G4",midi:67,ratio:1.0,t:34.36,end:34.61,lyric:"and",phrase:10},{note:"F#4",midi:66,ratio:0.86,t:34.61,end:34.71,lyric:"you",phrase:10},{note:"F#4",midi:66,ratio:0.86,t:34.71,end:35.05,lyric:"know",phrase:10},{note:"D4",midi:62,ratio:0.57,t:35.05,end:35.21,lyric:"it",phrase:10},{note:"E4",midi:64,ratio:0.71,t:35.29,end:35.49,lyric:"stomp",phrase:10},{note:"F#4",midi:66,ratio:0.86,t:35.57,end:35.73,lyric:"your",phrase:10},{note:"G4",midi:67,ratio:1.0,t:35.75,end:35.96,lyric:"feet",phrase:10},
+      {note:"B3",midi:59,ratio:0.29,t:37.14,end:37.3,lyric:"If",phrase:11},{note:"C4",midi:60,ratio:0.43,t:37.47,end:37.63,lyric:"you're",phrase:11},{note:"G4",midi:67,ratio:1.0,t:37.91,end:38.06,lyric:"hap-",phrase:11},{note:"G4",midi:67,ratio:1.0,t:38.06,end:38.21,lyric:"py",phrase:11},{note:"G4",midi:67,ratio:1.0,t:38.21,end:38.36,lyric:"and",phrase:11},{note:"G4",midi:67,ratio:1.0,t:38.36,end:38.52,lyric:"you",phrase:11},{note:"G4",midi:67,ratio:1.0,t:38.52,end:38.68,lyric:"know",phrase:11},{note:"G4",midi:67,ratio:1.0,t:38.68,end:38.84,lyric:"it",phrase:11},{note:"F#4",midi:66,ratio:0.86,t:38.96,end:39.2,lyric:"shout",phrase:11},{note:"A4",midi:69,ratio:1.14,t:39.26,end:39.66,lyric:"hoo-",phrase:11},
+      {note:"D5",midi:74,ratio:1.57,t:39.84,end:40.05,lyric:"ray",phrase:12},{note:"A4",midi:69,ratio:1.14,t:40.05,end:40.29,lyric:"hoo-",phrase:12},{note:"D5",midi:74,ratio:1.57,t:40.29,end:40.56,lyric:"ray",phrase:12},
+      {note:"C5",midi:72,ratio:1.43,t:40.83,end:40.99,lyric:"If",phrase:13},{note:"C5",midi:72,ratio:1.43,t:41.13,end:41.29,lyric:"you're",phrase:13},{note:"G#4",midi:68,ratio:1.07,t:41.3,end:41.46,lyric:"hap-",phrase:13},
+      {note:"A4",midi:69,ratio:1.14,t:41.59,end:41.78,lyric:"py",phrase:14},{note:"A4",midi:69,ratio:1.14,t:41.82,end:42.04,lyric:"and",phrase:14},{note:"A4",midi:69,ratio:1.14,t:42.04,end:42.28,lyric:"you",phrase:14},{note:"A4",midi:69,ratio:1.14,t:42.32,end:42.59,lyric:"know",phrase:14},{note:"G4",midi:67,ratio:1.0,t:42.66,end:42.94,lyric:"it",phrase:14},{note:"A4",midi:69,ratio:1.14,t:42.94,end:43.11,lyric:"shout",phrase:14},{note:"B4",midi:71,ratio:1.29,t:43.11,end:43.45,lyric:"hoo-",phrase:14},
+      {note:"D#5",midi:75,ratio:1.64,t:43.58,end:43.8,lyric:"ray",phrase:15},{note:"B4",midi:71,ratio:1.29,t:43.8,end:44.08,lyric:"hoo-",phrase:15},{note:"D5",midi:74,ratio:1.57,t:44.08,end:44.31,lyric:"ray",phrase:15},{note:"G#4",midi:68,ratio:1.07,t:44.31,end:44.47,lyric:"If",phrase:15},
+      {note:"B4",midi:71,ratio:1.29,t:44.56,end:44.75,lyric:"you're",phrase:16},{note:"B4",midi:71,ratio:1.29,t:44.87,end:45.03,lyric:"hap-",phrase:16},{note:"C5",midi:72,ratio:1.43,t:45.03,end:45.21,lyric:"py",phrase:16},
+      {note:"C5",midi:72,ratio:1.43,t:45.33,end:45.86,lyric:"and",phrase:17},{note:"E5",midi:76,ratio:1.71,t:45.86,end:46.02,lyric:"you",phrase:17},{note:"E5",midi:76,ratio:1.71,t:46.02,end:46.18,lyric:"know",phrase:17},{note:"E5",midi:76,ratio:1.71,t:46.18,end:46.34,lyric:"it",phrase:17},{note:"C5",midi:72,ratio:1.43,t:46.38,end:46.78,lyric:"then",phrase:17},{note:"B4",midi:71,ratio:1.29,t:46.83,end:47.02,lyric:"your",phrase:17},
+      {note:"B4",midi:71,ratio:1.29,t:47.13,end:47.28,lyric:"face",phrase:18},{note:"B4",midi:71,ratio:1.29,t:47.28,end:47.57,lyric:"will",phrase:18},{note:"A4",midi:69,ratio:1.14,t:47.57,end:47.73,lyric:"su-",phrase:18},{note:"G4",midi:67,ratio:1.0,t:47.77,end:48.18,lyric:"re-ly show it",phrase:18},{note:"G4",midi:67,ratio:1.0,t:48.23,end:48.41,lyric:"If",phrase:18},{note:"G4",midi:67,ratio:1.0,t:48.52,end:48.72,lyric:"you're",phrase:18},{note:"A4",midi:69,ratio:1.14,t:48.72,end:48.88,lyric:"hap-",phrase:18},
+      {note:"G4",midi:67,ratio:1.0,t:48.98,end:49.15,lyric:"py",phrase:19},{note:"G4",midi:67,ratio:1.0,t:49.19,end:49.41,lyric:"and",phrase:19},{note:"F#4",midi:66,ratio:0.86,t:49.48,end:49.8,lyric:"you",phrase:19},{note:"D#4",midi:63,ratio:0.64,t:49.8,end:49.96,lyric:"know",phrase:19},{note:"E4",midi:64,ratio:0.71,t:50.02,end:50.24,lyric:"it",phrase:19},{note:"F#4",midi:66,ratio:0.86,t:50.31,end:50.44,lyric:"shout",phrase:19},{note:"G4",midi:67,ratio:1.0,t:50.44,end:50.69,lyric:"hoo-",phrase:19},
+      {note:"D5",midi:74,ratio:1.57,t:50.94,end:51.15,lyric:"ray",phrase:20},{note:"B4",midi:71,ratio:1.29,t:51.15,end:51.38,lyric:"hoo-",phrase:20},{note:"D5",midi:74,ratio:1.57,t:51.38,end:51.59,lyric:"ray",phrase:20},
+    ]},
+  fivemonkeys: {status:"recording-drafted; owner-listening-pending", keyTonic:"D#", baseMidi:51, window:[0.57,1.57], level:{"start":0,"melodyStart":20.83,"melodyEnd":61.16,"fadeStart":61.21,"end":61.77},
+    phrases:[[0,8],[9,15],[16,23],[24,32],[33,42],[43,49],[50,56],[57,65],[66,75],[76,82],[83,90],[91,99]], notes:[
+      {note:"A#4",midi:70,ratio:1.57,t:20.83,end:21.13,lyric:"Lit-",phrase:1},{note:"G4",midi:67,ratio:1.29,t:21.29,end:21.6,lyric:"tle",phrase:1},{note:"G4",midi:67,ratio:1.29,t:21.64,end:22.0,lyric:"Mon-",phrase:1},{note:"G4",midi:67,ratio:1.29,t:22.1,end:22.26,lyric:"keys",phrase:1},{note:"G#4",midi:68,ratio:1.43,t:22.26,end:22.47,lyric:"Jum-",phrase:1},{note:"G4",midi:67,ratio:1.29,t:22.54,end:22.79,lyric:"ping",phrase:1},{note:"F4",midi:65,ratio:1.14,t:22.84,end:23.21,lyric:"On",phrase:1},{note:"D#4",midi:63,ratio:1.0,t:23.21,end:23.37,lyric:"The",phrase:1},{note:"F4",midi:65,ratio:1.14,t:23.41,end:23.64,lyric:"Bed",phrase:1},
+      {note:"A#3",midi:58,ratio:0.57,t:24.27,end:24.53,lyric:"One",phrase:2},{note:"F4",midi:65,ratio:1.14,t:24.7,end:25.0,lyric:"fell",phrase:2},{note:"F4",midi:65,ratio:1.14,t:25.04,end:25.37,lyric:"off",phrase:2},{note:"G4",midi:67,ratio:1.29,t:25.54,end:25.94,lyric:"and",phrase:2},{note:"F4",midi:65,ratio:1.14,t:25.94,end:26.2,lyric:"bumped",phrase:2},{note:"D#4",midi:63,ratio:1.0,t:26.37,end:26.61,lyric:"his",phrase:2},{note:"A#3",midi:58,ratio:0.57,t:26.82,end:27.03,lyric:"head",phrase:2},
+      {note:"A#3",midi:58,ratio:0.57,t:27.64,end:28.01,lyric:"Ma-",phrase:3},{note:"E4",midi:64,ratio:1.07,t:28.01,end:28.12,lyric:"ma",phrase:3},{note:"G4",midi:67,ratio:1.29,t:28.12,end:28.31,lyric:"called",phrase:3},{note:"G4",midi:67,ratio:1.29,t:28.31,end:28.64,lyric:"the",phrase:3},{note:"G4",midi:67,ratio:1.29,t:28.75,end:29.27,lyric:"doc-tor and the",phrase:3},{note:"G4",midi:67,ratio:1.29,t:29.27,end:29.55,lyric:"doc-",phrase:3},{note:"F4",midi:65,ratio:1.14,t:29.71,end:29.95,lyric:"tor",phrase:3},{note:"G#4",midi:68,ratio:1.43,t:30.13,end:30.43,lyric:"said",phrase:3},
+      {note:"A#4",midi:70,ratio:1.57,t:30.98,end:31.24,lyric:"No",phrase:4},{note:"A#4",midi:70,ratio:1.57,t:31.24,end:31.52,lyric:"more",phrase:4},{note:"A#4",midi:70,ratio:1.57,t:31.56,end:31.84,lyric:"mon-",phrase:4},{note:"A#4",midi:70,ratio:1.57,t:31.88,end:32.2,lyric:"keys",phrase:4},{note:"A#4",midi:70,ratio:1.57,t:32.2,end:32.57,lyric:"jum-",phrase:4},{note:"A#3",midi:58,ratio:0.57,t:32.75,end:33.17,lyric:"ping",phrase:4},{note:"C4",midi:60,ratio:0.71,t:33.17,end:33.44,lyric:"on",phrase:4},{note:"D#4",midi:63,ratio:1.0,t:33.44,end:33.61,lyric:"the",phrase:4},{note:"D#4",midi:63,ratio:1.0,t:33.65,end:33.85,lyric:"bed",phrase:4},
+      {note:"A#3",midi:58,ratio:0.57,t:34.54,end:34.95,lyric:"Four",phrase:5},{note:"E4",midi:64,ratio:1.07,t:34.95,end:35.11,lyric:"lit-",phrase:5},{note:"G4",midi:67,ratio:1.29,t:35.22,end:35.4,lyric:"tle",phrase:5},{note:"G4",midi:67,ratio:1.29,t:35.44,end:35.63,lyric:"mon-",phrase:5},{note:"G4",midi:67,ratio:1.29,t:35.67,end:35.9,lyric:"keys",phrase:5},{note:"G#4",midi:68,ratio:1.43,t:35.9,end:36.1,lyric:"jum-",phrase:5},{note:"G4",midi:67,ratio:1.29,t:36.21,end:36.46,lyric:"ping",phrase:5},{note:"F4",midi:65,ratio:1.14,t:36.46,end:36.84,lyric:"on",phrase:5},{note:"D#4",midi:63,ratio:1.0,t:36.84,end:37.0,lyric:"the",phrase:5},{note:"F4",midi:65,ratio:1.14,t:37.04,end:37.42,lyric:"bed",phrase:5},
+      {note:"A#3",midi:58,ratio:0.57,t:37.95,end:38.25,lyric:"One",phrase:6},{note:"F4",midi:65,ratio:1.14,t:38.36,end:39.04,lyric:"fell",phrase:6},{note:"F4",midi:65,ratio:1.14,t:39.19,end:39.31,lyric:"off",phrase:6},{note:"G4",midi:67,ratio:1.29,t:39.31,end:39.59,lyric:"and",phrase:6},{note:"F4",midi:65,ratio:1.14,t:39.59,end:39.85,lyric:"bumped",phrase:6},{note:"D#4",midi:63,ratio:1.0,t:40.04,end:40.24,lyric:"his",phrase:6},{note:"A#3",midi:58,ratio:0.57,t:40.45,end:40.71,lyric:"head",phrase:6},
+      {note:"A#3",midi:58,ratio:0.57,t:41.3,end:41.65,lyric:"Ma-",phrase:7},{note:"G4",midi:67,ratio:1.29,t:41.7,end:42.06,lyric:"ma",phrase:7},{note:"G4",midi:67,ratio:1.29,t:42.11,end:42.3,lyric:"called",phrase:7},{note:"G4",midi:67,ratio:1.29,t:42.42,end:42.91,lyric:"the doc-tor and the",phrase:7},{note:"G4",midi:67,ratio:1.29,t:42.91,end:43.19,lyric:"doc-",phrase:7},{note:"F4",midi:65,ratio:1.14,t:43.38,end:43.63,lyric:"tor",phrase:7},{note:"G#4",midi:68,ratio:1.43,t:43.79,end:44.11,lyric:"said",phrase:7},
+      {note:"A#4",midi:70,ratio:1.57,t:44.64,end:45.0,lyric:"No",phrase:8},{note:"A#4",midi:70,ratio:1.57,t:45.04,end:45.4,lyric:"more",phrase:8},{note:"A#4",midi:70,ratio:1.57,t:45.44,end:45.84,lyric:"mon-",phrase:8},{note:"A#4",midi:70,ratio:1.57,t:45.94,end:46.23,lyric:"keys",phrase:8},{note:"A#3",midi:58,ratio:0.57,t:46.4,end:46.58,lyric:"jum-",phrase:8},{note:"A#3",midi:58,ratio:0.57,t:46.62,end:46.83,lyric:"ping",phrase:8},{note:"C4",midi:60,ratio:0.71,t:46.83,end:47.08,lyric:"on",phrase:8},{note:"C#4",midi:61,ratio:0.785,t:47.08,end:47.24,lyric:"the",phrase:8},{note:"D#4",midi:63,ratio:1.0,t:47.27,end:47.57,lyric:"bed",phrase:8},
+      {note:"A#3",midi:58,ratio:0.57,t:48.19,end:48.35,lyric:"Three",phrase:9},{note:"A#3",midi:58,ratio:0.57,t:48.39,end:48.6,lyric:"lit-",phrase:9},{note:"F#4",midi:66,ratio:1.215,t:48.6,end:48.76,lyric:"tle",phrase:9},{note:"G4",midi:67,ratio:1.29,t:48.85,end:49.19,lyric:"mon-",phrase:9},{note:"G4",midi:67,ratio:1.29,t:49.19,end:49.4,lyric:"keys",phrase:9},{note:"G4",midi:67,ratio:1.29,t:49.4,end:49.75,lyric:"jum-",phrase:9},{note:"F4",midi:65,ratio:1.14,t:49.82,end:50.06,lyric:"ping",phrase:9},{note:"F4",midi:65,ratio:1.14,t:50.06,end:50.49,lyric:"on",phrase:9},{note:"D#4",midi:63,ratio:1.0,t:50.49,end:50.65,lyric:"the",phrase:9},{note:"F4",midi:65,ratio:1.14,t:50.67,end:51.05,lyric:"bed",phrase:9},
+      {note:"A#3",midi:58,ratio:0.57,t:51.54,end:51.86,lyric:"One",phrase:10},{note:"F4",midi:65,ratio:1.14,t:51.98,end:52.28,lyric:"fell",phrase:10},{note:"F4",midi:65,ratio:1.14,t:52.32,end:52.67,lyric:"off",phrase:10},{note:"G4",midi:67,ratio:1.29,t:52.82,end:53.22,lyric:"and",phrase:10},{note:"F4",midi:65,ratio:1.14,t:53.22,end:53.49,lyric:"bumped",phrase:10},{note:"D#4",midi:63,ratio:1.0,t:53.62,end:53.89,lyric:"his",phrase:10},{note:"A#3",midi:58,ratio:0.57,t:54.08,end:54.36,lyric:"head",phrase:10},
+      {note:"A#3",midi:58,ratio:0.57,t:54.92,end:55.27,lyric:"Ma-",phrase:11},{note:"E4",midi:64,ratio:1.07,t:55.32,end:55.43,lyric:"ma",phrase:11},{note:"G4",midi:67,ratio:1.29,t:55.43,end:55.69,lyric:"called",phrase:11},{note:"G4",midi:67,ratio:1.29,t:55.69,end:55.93,lyric:"the",phrase:11},{note:"G4",midi:67,ratio:1.29,t:56.02,end:56.53,lyric:"doc-tor and the",phrase:11},{note:"G4",midi:67,ratio:1.29,t:56.53,end:56.83,lyric:"doc-",phrase:11},{note:"F4",midi:65,ratio:1.14,t:56.98,end:57.25,lyric:"tor",phrase:11},{note:"G#4",midi:68,ratio:1.43,t:57.45,end:57.82,lyric:"said",phrase:11},
+      {note:"A#4",midi:70,ratio:1.57,t:58.23,end:58.6,lyric:"No",phrase:12},{note:"A#4",midi:70,ratio:1.57,t:58.64,end:59.01,lyric:"more",phrase:12},{note:"A#4",midi:70,ratio:1.57,t:59.05,end:59.46,lyric:"mon-",phrase:12},{note:"A#4",midi:70,ratio:1.57,t:59.56,end:59.85,lyric:"keys",phrase:12},{note:"A#3",midi:58,ratio:0.57,t:60.01,end:60.18,lyric:"jum-",phrase:12},{note:"A#3",midi:58,ratio:0.57,t:60.22,end:60.43,lyric:"ping",phrase:12},{note:"C4",midi:60,ratio:0.71,t:60.43,end:60.69,lyric:"on",phrase:12},{note:"D#4",midi:63,ratio:1.0,t:60.69,end:60.88,lyric:"the",phrase:12},{note:"D#4",midi:63,ratio:1.0,t:60.92,end:61.16,lyric:"bed",phrase:12},
+    ]},
+  babyshark: {status:"recording-drafted; owner-listening-pending", keyTonic:"G", baseMidi:55, window:[0.25,1.25], level:{"start":0,"melodyStart":15.55,"melodyEnd":54.13,"fadeStart":54.21,"end":54.81},
+    phrases:[[0,2],[3,6],[7,17],[18,23],[24,35],[36,41],[42,53],[54,61],[62,66],[67,73],[74,85],[86,94],[95,105],[106,110],[111,113]], notes:[
+      {note:"C#4",midi:61,ratio:0.5,t:15.55,end:15.74,lyric:"Ba-",phrase:1},{note:"D4",midi:62,ratio:0.57,t:15.74,end:16.01,lyric:"by",phrase:1},{note:"E4",midi:64,ratio:0.71,t:16.01,end:16.38,lyric:"shark",phrase:1},
+      {note:"G4",midi:67,ratio:1.0,t:16.51,end:16.67,lyric:"do",phrase:2},{note:"G4",midi:67,ratio:1.0,t:16.78,end:16.94,lyric:"do",phrase:2},{note:"G4",midi:67,ratio:1.0,t:17.01,end:17.22,lyric:"do",phrase:2},{note:"G4",midi:67,ratio:1.0,t:17.26,end:17.51,lyric:"do",phrase:2},
+      {note:"G4",midi:67,ratio:1.0,t:17.61,end:17.89,lyric:"do",phrase:3},{note:"D4",midi:62,ratio:0.57,t:17.99,end:18.22,lyric:"do",phrase:3},{note:"E4",midi:64,ratio:0.71,t:18.22,end:18.45,lyric:"Ba-",phrase:3},{note:"G4",midi:67,ratio:1.0,t:18.45,end:18.64,lyric:"by",phrase:3},{note:"G4",midi:67,ratio:1.0,t:18.71,end:18.88,lyric:"shark",phrase:3},{note:"G4",midi:67,ratio:1.0,t:18.96,end:19.48,lyric:"do do do do do do",phrase:3},{note:"G4",midi:67,ratio:1.0,t:19.57,end:19.84,lyric:"Ba-",phrase:3},{note:"D4",midi:62,ratio:0.57,t:19.92,end:20.14,lyric:"by",phrase:3},{note:"E4",midi:64,ratio:0.71,t:20.14,end:20.37,lyric:"shark",phrase:3},{note:"G4",midi:67,ratio:1.0,t:20.37,end:20.56,lyric:"do",phrase:3},{note:"G4",midi:67,ratio:1.0,t:20.65,end:20.81,lyric:"do",phrase:3},
+      {note:"G4",midi:67,ratio:1.0,t:20.89,end:21.11,lyric:"do",phrase:4},{note:"G4",midi:67,ratio:1.0,t:21.11,end:21.43,lyric:"do",phrase:4},{note:"G4",midi:67,ratio:1.0,t:21.51,end:21.78,lyric:"do do",phrase:4},{note:"G4",midi:67,ratio:1.0,t:21.87,end:22.1,lyric:"Ba-",phrase:4},{note:"G4",midi:67,ratio:1.0,t:22.1,end:22.3,lyric:"by",phrase:4},{note:"F#4",midi:66,ratio:0.86,t:22.4,end:22.57,lyric:"shark",phrase:4},
+      {note:"D4",midi:62,ratio:0.57,t:23.4,end:23.93,lyric:"Mom-",phrase:5},{note:"E4",midi:64,ratio:0.71,t:23.93,end:24.26,lyric:"my",phrase:5},{note:"G4",midi:67,ratio:1.0,t:24.37,end:24.56,lyric:"Shark",phrase:5},{note:"G4",midi:67,ratio:1.0,t:24.65,end:24.81,lyric:"doo",phrase:5},{note:"G4",midi:67,ratio:1.0,t:24.88,end:25.12,lyric:"doo",phrase:5},{note:"G4",midi:67,ratio:1.0,t:25.12,end:25.41,lyric:"doo",phrase:5},{note:"G4",midi:67,ratio:1.0,t:25.47,end:25.81,lyric:"doo",phrase:5},{note:"D4",midi:62,ratio:0.57,t:25.81,end:26.11,lyric:"doo",phrase:5},{note:"E4",midi:64,ratio:0.71,t:26.11,end:26.27,lyric:"doo",phrase:5},{note:"G4",midi:67,ratio:1.0,t:26.33,end:26.74,lyric:"",phrase:5},{note:"G4",midi:67,ratio:1.0,t:26.81,end:27.34,lyric:"",phrase:5},{note:"G4",midi:67,ratio:1.0,t:27.43,end:27.61,lyric:"",phrase:5},
+      {note:"D4",midi:62,ratio:0.57,t:27.78,end:28.03,lyric:"",phrase:6},{note:"E4",midi:64,ratio:0.71,t:28.03,end:28.2,lyric:"",phrase:6},{note:"G4",midi:67,ratio:1.0,t:28.26,end:28.44,lyric:"",phrase:6},{note:"G4",midi:67,ratio:1.0,t:28.51,end:28.67,lyric:"",phrase:6},{note:"G4",midi:67,ratio:1.0,t:28.74,end:30.15,lyric:"",phrase:6},{note:"F#4",midi:66,ratio:0.86,t:30.21,end:30.43,lyric:"",phrase:6},
+      {note:"D4",midi:62,ratio:0.57,t:31.26,end:31.78,lyric:"Dad-",phrase:7},{note:"E4",midi:64,ratio:0.71,t:31.78,end:32.16,lyric:"dy",phrase:7},{note:"G4",midi:67,ratio:1.0,t:32.23,end:32.42,lyric:"Shark",phrase:7},{note:"G4",midi:67,ratio:1.0,t:32.5,end:32.66,lyric:"doo",phrase:7},{note:"G4",midi:67,ratio:1.0,t:32.72,end:33.28,lyric:"doo",phrase:7},{note:"G4",midi:67,ratio:1.0,t:33.34,end:33.64,lyric:"doo",phrase:7},{note:"D4",midi:62,ratio:0.57,t:33.69,end:33.95,lyric:"doo",phrase:7},{note:"E4",midi:64,ratio:0.71,t:33.95,end:34.12,lyric:"",phrase:7},{note:"G4",midi:67,ratio:1.0,t:34.12,end:34.36,lyric:"",phrase:7},{note:"G4",midi:67,ratio:1.0,t:34.44,end:34.6,lyric:"doo",phrase:7},{note:"G4",midi:67,ratio:1.0,t:34.68,end:35.19,lyric:"doo",phrase:7},{note:"G4",midi:67,ratio:1.0,t:35.27,end:35.52,lyric:"Dad-",phrase:7},
+      {note:"D4",midi:62,ratio:0.57,t:35.63,end:35.88,lyric:"dy",phrase:8},{note:"E4",midi:64,ratio:0.71,t:35.88,end:36.1,lyric:"shark",phrase:8},{note:"G4",midi:67,ratio:1.0,t:36.1,end:36.29,lyric:"do",phrase:8},{note:"G4",midi:67,ratio:1.0,t:36.38,end:36.54,lyric:"do",phrase:8},{note:"G4",midi:67,ratio:1.0,t:36.61,end:37.15,lyric:"do",phrase:8},{note:"G4",midi:67,ratio:1.0,t:37.22,end:37.41,lyric:"do",phrase:8},{note:"G4",midi:67,ratio:1.0,t:37.6,end:38.06,lyric:"do do Dad-dy",phrase:8},{note:"F#4",midi:66,ratio:0.86,t:38.06,end:38.36,lyric:"shark",phrase:8},
+      {note:"D4",midi:62,ratio:0.57,t:39.12,end:39.33,lyric:"Gran-",phrase:9},{note:"D4",midi:62,ratio:0.57,t:39.37,end:39.63,lyric:"dma",phrase:9},{note:"E4",midi:64,ratio:0.71,t:39.63,end:40.03,lyric:"shark",phrase:9},{note:"G4",midi:67,ratio:1.0,t:40.12,end:40.29,lyric:"do",phrase:9},{note:"G4",midi:67,ratio:1.0,t:40.38,end:40.54,lyric:"do",phrase:9},
+      {note:"G4",midi:67,ratio:1.0,t:40.61,end:40.84,lyric:"do",phrase:10},{note:"G4",midi:67,ratio:1.0,t:40.84,end:41.16,lyric:"do",phrase:10},{note:"G4",midi:67,ratio:1.0,t:41.21,end:41.36,lyric:"do",phrase:10},{note:"G4",midi:67,ratio:1.0,t:41.36,end:41.52,lyric:"do",phrase:10},{note:"D4",midi:62,ratio:0.57,t:41.56,end:41.8,lyric:"Gran-",phrase:10},{note:"E4",midi:64,ratio:0.71,t:41.8,end:42.01,lyric:"dma",phrase:10},{note:"G4",midi:67,ratio:1.0,t:42.01,end:42.2,lyric:"shark",phrase:10},
+      {note:"G4",midi:67,ratio:1.0,t:42.3,end:42.46,lyric:"do",phrase:11},{note:"G4",midi:67,ratio:1.0,t:42.52,end:42.75,lyric:"do",phrase:11},{note:"G4",midi:67,ratio:1.0,t:42.75,end:43.06,lyric:"do",phrase:11},{note:"G4",midi:67,ratio:1.0,t:43.15,end:43.42,lyric:"do",phrase:11},{note:"D4",midi:62,ratio:0.57,t:43.47,end:43.71,lyric:"do",phrase:11},{note:"E4",midi:64,ratio:0.71,t:43.71,end:43.92,lyric:"do",phrase:11},{note:"G4",midi:67,ratio:1.0,t:43.92,end:44.11,lyric:"Gran-",phrase:11},{note:"G4",midi:67,ratio:1.0,t:44.21,end:44.37,lyric:"dma",phrase:11},{note:"G4",midi:67,ratio:1.0,t:44.42,end:44.96,lyric:"shark do do do",phrase:11},{note:"G4",midi:67,ratio:1.0,t:45.04,end:45.29,lyric:"do",phrase:11},{note:"G4",midi:67,ratio:1.0,t:45.38,end:45.82,lyric:"do do Gran-dma",phrase:11},{note:"F#4",midi:66,ratio:0.86,t:45.87,end:46.13,lyric:"shark",phrase:11},
+      {note:"D4",midi:62,ratio:0.57,t:46.84,end:47.39,lyric:"Gran-",phrase:12},{note:"E4",midi:64,ratio:0.71,t:47.39,end:47.57,lyric:"dpa",phrase:12},{note:"E4",midi:64,ratio:0.71,t:47.61,end:47.83,lyric:"shark",phrase:12},{note:"G4",midi:67,ratio:1.0,t:47.9,end:48.1,lyric:"do",phrase:12},{note:"G4",midi:67,ratio:1.0,t:48.17,end:48.33,lyric:"do",phrase:12},{note:"G4",midi:67,ratio:1.0,t:48.41,end:48.64,lyric:"do",phrase:12},{note:"G4",midi:67,ratio:1.0,t:48.64,end:48.94,lyric:"do",phrase:12},{note:"G4",midi:67,ratio:1.0,t:48.99,end:49.15,lyric:"do",phrase:12},{note:"G4",midi:67,ratio:1.0,t:49.15,end:49.31,lyric:"do",phrase:12},
+      {note:"D4",midi:62,ratio:0.57,t:49.4,end:49.63,lyric:"Gran-",phrase:13},{note:"E4",midi:64,ratio:0.71,t:49.63,end:49.83,lyric:"dpa",phrase:13},{note:"G4",midi:67,ratio:1.0,t:49.9,end:50.08,lyric:"shark",phrase:13},{note:"G4",midi:67,ratio:1.0,t:50.16,end:50.32,lyric:"do",phrase:13},{note:"G4",midi:67,ratio:1.0,t:50.38,end:50.73,lyric:"do",phrase:13},{note:"G4",midi:67,ratio:1.0,t:50.73,end:50.93,lyric:"do do",phrase:13},{note:"G4",midi:67,ratio:1.0,t:50.99,end:51.15,lyric:"do",phrase:13},{note:"G4",midi:67,ratio:1.0,t:51.15,end:51.31,lyric:"do",phrase:13},{note:"D4",midi:62,ratio:0.57,t:51.38,end:51.61,lyric:"Gran-",phrase:13},{note:"E4",midi:64,ratio:0.71,t:51.61,end:51.82,lyric:"dpa",phrase:13},{note:"G4",midi:67,ratio:1.0,t:51.87,end:52.04,lyric:"shark",phrase:13},
+      {note:"G4",midi:67,ratio:1.0,t:52.14,end:52.3,lyric:"do",phrase:14},{note:"G4",midi:67,ratio:1.0,t:52.37,end:52.59,lyric:"do",phrase:14},{note:"G4",midi:67,ratio:1.0,t:52.59,end:52.73,lyric:"do",phrase:14},{note:"G4",midi:67,ratio:1.0,t:52.73,end:52.89,lyric:"do",phrase:14},{note:"G4",midi:67,ratio:1.0,t:52.96,end:53.12,lyric:"do do",phrase:14},
+      {note:"G4",midi:67,ratio:1.0,t:53.36,end:53.59,lyric:"Gran-",phrase:15},{note:"G4",midi:67,ratio:1.0,t:53.59,end:53.83,lyric:"dpa",phrase:15},{note:"F#4",midi:66,ratio:0.86,t:53.88,end:54.13,lyric:"shark",phrase:15},
+    ]},
+  baluobo: {status:"recording-drafted; owner-listening-pending", keyTonic:"F", baseMidi:53, window:[0.57,1.57], level:{"start":0,"melodyStart":8.36,"melodyEnd":37.83,"fadeStart":38.63,"end":39.23},
+    phrases:[[0,2],[3,12],[13,19],[20,22],[23,25],[26,33],[34,39],[40,46],[47,56],[57,59],[60,67]], notes:[
+      {note:"C4",midi:60,ratio:0.57,t:8.36,end:8.59,lyric:"把",phrase:1},{note:"C4",midi:60,ratio:0.57,t:8.63,end:8.9,lyric:"萝",phrase:1},{note:"F4",midi:65,ratio:1.0,t:9.07,end:9.33,lyric:"卜",phrase:1},
+      {note:"A4",midi:69,ratio:1.29,t:9.75,end:10.09,lyric:"把",phrase:2},{note:"F4",midi:65,ratio:1.0,t:10.09,end:10.39,lyric:"萝",phrase:2},{note:"F4",midi:65,ratio:1.0,t:10.44,end:10.7,lyric:"卜",phrase:2},{note:"C5",midi:72,ratio:1.57,t:11.1,end:11.35,lyric:"嘿",phrase:2},{note:"C5",midi:72,ratio:1.57,t:11.39,end:11.67,lyric:"呦",phrase:2},{note:"C5",midi:72,ratio:1.57,t:11.76,end:12.01,lyric:"嘿",phrase:2},{note:"C5",midi:72,ratio:1.57,t:12.05,end:12.33,lyric:"呦",phrase:2},{note:"F4",midi:65,ratio:1.0,t:12.48,end:12.78,lyric:"把",phrase:2},{note:"G4",midi:67,ratio:1.14,t:12.78,end:13.02,lyric:"萝",phrase:2},{note:"F4",midi:65,ratio:1.0,t:13.19,end:13.42,lyric:"卜",phrase:2},
+      {note:"C5",midi:72,ratio:1.57,t:13.84,end:14.07,lyric:"嘿",phrase:3},{note:"C5",midi:72,ratio:1.57,t:14.11,end:14.38,lyric:"呦",phrase:3},{note:"C5",midi:72,ratio:1.57,t:14.49,end:14.73,lyric:"嘿",phrase:3},{note:"C5",midi:72,ratio:1.57,t:14.77,end:15.06,lyric:"呦",phrase:3},{note:"F4",midi:65,ratio:1.0,t:15.19,end:15.4,lyric:"把",phrase:3},{note:"G4",midi:67,ratio:1.14,t:15.53,end:15.74,lyric:"不",phrase:3},{note:"F4",midi:65,ratio:1.0,t:15.89,end:16.15,lyric:"动",phrase:3},
+      {note:"C5",midi:72,ratio:1.57,t:16.58,end:16.78,lyric:"老",phrase:4},{note:"C5",midi:72,ratio:1.57,t:16.89,end:17.13,lyric:"婆",phrase:4},{note:"F4",midi:65,ratio:1.0,t:17.27,end:17.49,lyric:"婆",phrase:4},
+      {note:"C5",midi:72,ratio:1.57,t:17.94,end:18.1,lyric:"快",phrase:5},{note:"C5",midi:72,ratio:1.57,t:18.33,end:18.57,lyric:"快",phrase:5},{note:"F4",midi:65,ratio:1.0,t:18.57,end:18.79,lyric:"来",phrase:5},
+      {note:"C5",midi:72,ratio:1.57,t:19.28,end:19.6,lyric:"快",phrase:6},{note:"C5",midi:72,ratio:1.57,t:19.6,end:19.84,lyric:"来",phrase:6},{note:"A4",midi:69,ratio:1.29,t:20.02,end:20.18,lyric:"帮",phrase:6},{note:"G4",midi:67,ratio:1.14,t:20.36,end:20.66,lyric:"我",phrase:6},{note:"F4",midi:65,ratio:1.0,t:20.66,end:20.86,lyric:"们",phrase:6},{note:"F4",midi:65,ratio:1.0,t:20.9,end:21.14,lyric:"把",phrase:6},{note:"G4",midi:67,ratio:1.14,t:21.14,end:21.3,lyric:"萝",phrase:6},{note:"F4",midi:65,ratio:1.0,t:21.38,end:21.72,lyric:"卜",phrase:6},
+      {note:"C4",midi:60,ratio:0.57,t:24.68,end:24.92,lyric:"把",phrase:7},{note:"C4",midi:60,ratio:0.57,t:24.96,end:25.23,lyric:"萝",phrase:7},{note:"F4",midi:65,ratio:1.0,t:25.38,end:25.95,lyric:"卜",phrase:7},{note:"A4",midi:69,ratio:1.29,t:26.06,end:26.46,lyric:"把",phrase:7},{note:"F4",midi:65,ratio:1.0,t:26.46,end:26.72,lyric:"萝",phrase:7},{note:"F4",midi:65,ratio:1.0,t:26.72,end:26.99,lyric:"卜",phrase:7},
+      {note:"C5",midi:72,ratio:1.57,t:27.41,end:27.65,lyric:"嘿",phrase:8},{note:"C5",midi:72,ratio:1.57,t:27.69,end:27.96,lyric:"呦",phrase:8},{note:"C5",midi:72,ratio:1.57,t:28.05,end:28.3,lyric:"嘿",phrase:8},{note:"C5",midi:72,ratio:1.57,t:28.34,end:28.63,lyric:"呦",phrase:8},{note:"F4",midi:65,ratio:1.0,t:28.75,end:29.04,lyric:"把",phrase:8},{note:"G4",midi:67,ratio:1.14,t:29.04,end:29.3,lyric:"萝",phrase:8},{note:"F4",midi:65,ratio:1.0,t:29.43,end:29.65,lyric:"卜",phrase:8},
+      {note:"C5",midi:72,ratio:1.57,t:30.06,end:30.31,lyric:"嘿",phrase:9},{note:"C5",midi:72,ratio:1.57,t:30.35,end:30.65,lyric:"呦",phrase:9},{note:"C5",midi:72,ratio:1.57,t:30.74,end:30.98,lyric:"嘿",phrase:9},{note:"C5",midi:72,ratio:1.57,t:31.02,end:31.3,lyric:"呦",phrase:9},{note:"F4",midi:65,ratio:1.0,t:31.44,end:31.65,lyric:"巴",phrase:9},{note:"G4",midi:67,ratio:1.14,t:31.78,end:31.99,lyric:"不",phrase:9},{note:"F4",midi:65,ratio:1.0,t:32.12,end:32.35,lyric:"动",phrase:9},{note:"C5",midi:72,ratio:1.57,t:32.75,end:32.97,lyric:"小",phrase:9},{note:"C5",midi:72,ratio:1.57,t:33.13,end:33.38,lyric:"姑",phrase:9},{note:"F4",midi:65,ratio:1.0,t:33.38,end:33.66,lyric:"娘",phrase:9},
+      {note:"C5",midi:72,ratio:1.57,t:34.13,end:34.3,lyric:"快",phrase:10},{note:"C5",midi:72,ratio:1.57,t:34.48,end:34.77,lyric:"快",phrase:10},{note:"F4",midi:65,ratio:1.0,t:34.77,end:35.02,lyric:"来",phrase:10},
+      {note:"C5",midi:72,ratio:1.57,t:35.49,end:35.74,lyric:"快",phrase:11},{note:"C5",midi:72,ratio:1.57,t:35.78,end:36.08,lyric:"来",phrase:11},{note:"C5",midi:72,ratio:1.57,t:36.22,end:36.49,lyric:"帮",phrase:11},{note:"G4",midi:67,ratio:1.14,t:36.49,end:36.85,lyric:"我",phrase:11},{note:"F4",midi:65,ratio:1.0,t:36.85,end:37.04,lyric:"们",phrase:11},{note:"F4",midi:65,ratio:1.0,t:37.08,end:37.31,lyric:"抱",phrase:11},{note:"G4",midi:67,ratio:1.14,t:37.31,end:37.47,lyric:"萝",phrase:11},{note:"F4",midi:65,ratio:1.0,t:37.57,end:37.83,lyric:"卜",phrase:11},
+    ]},
+  xiaoyanzi: {status:"recording-drafted; owner-listening-pending", keyTonic:"A", baseMidi:57, window:[0.0,1.29], level:{"start":0,"melodyStart":12.82,"melodyEnd":35.14,"fadeStart":35.94,"end":36.54},
+    phrases:[[0,5],[6,10],[11,19],[20,29],[30,33],[34,42]], notes:[
+      {note:"B3",midi:59,ratio:0.14,t:12.82,end:12.95,lyric:"小",phrase:1},{note:"C#4",midi:61,ratio:0.29,t:12.95,end:13.13,lyric:"",phrase:1},{note:"E4",midi:64,ratio:0.57,t:13.13,end:13.41,lyric:"",phrase:1},{note:"A4",midi:69,ratio:1.0,t:13.47,end:13.74,lyric:"燕",phrase:1},{note:"F#4",midi:66,ratio:0.71,t:13.74,end:14.02,lyric:"",phrase:1},{note:"E4",midi:64,ratio:0.57,t:14.13,end:14.42,lyric:"子",phrase:1},
+      {note:"C#4",midi:61,ratio:0.29,t:15.29,end:15.59,lyric:"春",phrase:2},{note:"E4",midi:64,ratio:0.57,t:15.59,end:15.82,lyric:"花",phrase:2},{note:"F#4",midi:66,ratio:0.71,t:15.92,end:16.21,lyric:"",phrase:2},{note:"A4",midi:69,ratio:1.0,t:16.21,end:16.5,lyric:"",phrase:2},{note:"E4",midi:64,ratio:0.57,t:16.5,end:16.88,lyric:"一",phrase:2},
+      {note:"A4",midi:69,ratio:1.0,t:17.66,end:18.7,lyric:"念",phrase:3},{note:"C#5",midi:73,ratio:1.29,t:18.7,end:18.97,lyric:"念",phrase:3},{note:"B4",midi:71,ratio:1.14,t:19.09,end:19.55,lyric:"春",phrase:3},{note:"A4",midi:69,ratio:1.0,t:19.66,end:20.36,lyric:"天",phrase:3},{note:"B4",midi:71,ratio:1.14,t:20.36,end:20.59,lyric:"来",phrase:3},{note:"A4",midi:69,ratio:1.0,t:20.59,end:20.78,lyric:"这",phrase:3},{note:"F#4",midi:66,ratio:0.71,t:20.91,end:21.22,lyric:"里",phrase:3},{note:"A4",midi:69,ratio:1.0,t:21.22,end:21.47,lyric:"",phrase:3},{note:"E4",midi:64,ratio:0.57,t:21.47,end:21.82,lyric:"",phrase:3},
+      {note:"B3",midi:59,ratio:0.14,t:22.82,end:23.05,lyric:"我",phrase:4},{note:"C#4",midi:61,ratio:0.29,t:23.05,end:23.72,lyric:"",phrase:4},{note:"E4",midi:64,ratio:0.57,t:23.72,end:24.03,lyric:"问",phrase:4},{note:"F#4",midi:66,ratio:0.71,t:24.03,end:24.59,lyric:"燕",phrase:4},{note:"E4",midi:64,ratio:0.57,t:24.64,end:24.92,lyric:"子",phrase:4},{note:"F#4",midi:66,ratio:0.71,t:24.92,end:25.23,lyric:"你",phrase:4},{note:"A4",midi:69,ratio:1.0,t:25.23,end:25.74,lyric:"为",phrase:4},{note:"B4",midi:71,ratio:1.14,t:25.87,end:26.18,lyric:"啥",phrase:4},{note:"E4",midi:64,ratio:0.57,t:26.18,end:26.69,lyric:"来",phrase:4},{note:"F#4",midi:66,ratio:0.71,t:26.69,end:26.95,lyric:"",phrase:4},
+      {note:"C#4",midi:61,ratio:0.29,t:27.73,end:28.03,lyric:"燕",phrase:5},{note:"B3",midi:59,ratio:0.14,t:28.03,end:28.32,lyric:"子",phrase:5},{note:"A3",midi:57,ratio:0.0,t:28.38,end:28.8,lyric:"说",phrase:5},{note:"B3",midi:59,ratio:0.14,t:29.01,end:29.41,lyric:"这",phrase:5},
+      {note:"B3",midi:59,ratio:0.14,t:30.29,end:31.18,lyric:"里",phrase:6},{note:"C#4",midi:61,ratio:0.29,t:31.18,end:31.43,lyric:"的",phrase:6},{note:"E4",midi:64,ratio:0.57,t:31.54,end:32.05,lyric:"春",phrase:6},{note:"E4",midi:64,ratio:0.57,t:32.14,end:32.64,lyric:"天",phrase:6},{note:"A4",midi:69,ratio:1.0,t:32.75,end:33.18,lyric:"最",phrase:6},{note:"B3",midi:59,ratio:0.14,t:33.18,end:33.7,lyric:"美",phrase:6},{note:"C#4",midi:61,ratio:0.29,t:33.7,end:34.15,lyric:"",phrase:6},{note:"D#4",midi:63,ratio:0.5,t:34.15,end:34.37,lyric:"",phrase:6},{note:"E4",midi:64,ratio:0.57,t:34.37,end:35.14,lyric:"丽",phrase:6},
+    ]},
+  rasasayang: {status:"recording-drafted; owner-listening-pending", keyTonic:"B", baseMidi:47, window:[0.86,2.0], level:{"start":0,"melodyStart":10.28,"melodyEnd":35.83,"fadeStart":36.63,"end":37.23},
+    phrases:[[0,10],[11,21],[22,26],[27,38],[39,45],[46,52]], notes:[
+      {note:"D#4",midi:63,ratio:1.29,t:10.28,end:10.52,lyric:"Ra-",phrase:1},{note:"E4",midi:64,ratio:1.43,t:10.63,end:10.8,lyric:"sa",phrase:1},{note:"F#4",midi:66,ratio:1.57,t:10.91,end:12.16,lyric:"sayang",phrase:1},{note:"A#4",midi:70,ratio:1.86,t:12.16,end:12.35,lyric:"eh",phrase:1},{note:"B4",midi:71,ratio:2.0,t:12.35,end:12.84,lyric:"ra-",phrase:1},{note:"A#4",midi:70,ratio:1.86,t:12.84,end:13.06,lyric:"sa",phrase:1},{note:"G#4",midi:68,ratio:1.71,t:13.12,end:13.35,lyric:"",phrase:1},{note:"F#4",midi:66,ratio:1.57,t:13.42,end:13.89,lyric:"",phrase:1},{note:"D#4",midi:63,ratio:1.29,t:13.89,end:14.4,lyric:"sayang",phrase:1},{note:"E4",midi:64,ratio:1.43,t:14.4,end:14.84,lyric:"sayang",phrase:1},{note:"F#4",midi:66,ratio:1.57,t:14.84,end:15.0,lyric:"eh",phrase:1},
+      {note:"A4",midi:69,ratio:1.785,t:15.35,end:15.56,lyric:"Hey",phrase:2},{note:"B4",midi:71,ratio:2.0,t:15.56,end:15.91,lyric:"",phrase:2},{note:"G#4",midi:68,ratio:1.71,t:15.91,end:16.24,lyric:"li-",phrase:2},{note:"G#4",midi:68,ratio:1.71,t:16.24,end:16.48,lyric:"hat",phrase:2},{note:"E4",midi:64,ratio:1.43,t:16.57,end:16.69,lyric:"",phrase:2},{note:"F#4",midi:66,ratio:1.57,t:16.69,end:16.89,lyric:"noh",phrase:2},{note:"E4",midi:64,ratio:1.43,t:16.89,end:17.11,lyric:"na",phrase:2},{note:"D#4",midi:63,ratio:1.29,t:17.11,end:17.65,lyric:"jauh",phrase:2},{note:"F#4",midi:66,ratio:1.57,t:17.65,end:17.84,lyric:"ra-",phrase:2},{note:"B3",midi:59,ratio:1.0,t:17.84,end:18.11,lyric:"sa",phrase:2},{note:"D#4",midi:63,ratio:1.29,t:18.19,end:18.37,lyric:"",phrase:2},
+      {note:"C#4",midi:61,ratio:1.14,t:18.47,end:18.94,lyric:"",phrase:3},{note:"E4",midi:64,ratio:1.43,t:18.94,end:19.1,lyric:"sayang",phrase:3},{note:"A#3",midi:58,ratio:0.86,t:19.14,end:19.58,lyric:"",phrase:3},{note:"C#4",midi:61,ratio:1.14,t:19.58,end:19.88,lyric:"sayang",phrase:3},{note:"B3",midi:59,ratio:1.0,t:19.88,end:20.8,lyric:"eh",phrase:3},
+      {note:"D#4",midi:63,ratio:1.29,t:25.45,end:25.66,lyric:"I",phrase:4},{note:"E4",midi:64,ratio:1.43,t:25.8,end:26.24,lyric:"feel",phrase:4},{note:"F#4",midi:66,ratio:1.57,t:26.24,end:26.61,lyric:"love",phrase:4},{note:"F#4",midi:66,ratio:1.57,t:26.73,end:27.0,lyric:"oh",phrase:4},{note:"F#4",midi:66,ratio:1.57,t:27.04,end:27.35,lyric:"yeah",phrase:4},{note:"B4",midi:71,ratio:2.0,t:27.35,end:27.92,lyric:"I",phrase:4},{note:"A#4",midi:70,ratio:1.86,t:28.02,end:28.24,lyric:"feel",phrase:4},{note:"F#4",midi:66,ratio:1.57,t:28.36,end:28.89,lyric:"love",phrase:4},{note:"F#4",midi:66,ratio:1.57,t:28.95,end:29.12,lyric:"right",phrase:4},{note:"D#4",midi:63,ratio:1.29,t:29.12,end:29.62,lyric:"now",phrase:4},{note:"E4",midi:64,ratio:1.43,t:29.62,end:30.07,lyric:"oh",phrase:4},{note:"F#4",midi:66,ratio:1.57,t:30.07,end:30.23,lyric:"yeah",phrase:4},
+      {note:"B4",midi:71,ratio:2.0,t:30.55,end:31.12,lyric:"hey",phrase:5},{note:"G#4",midi:68,ratio:1.71,t:31.12,end:31.71,lyric:"love",phrase:5},{note:"F4",midi:65,ratio:1.5,t:31.77,end:31.94,lyric:"is",phrase:5},{note:"F#4",midi:66,ratio:1.57,t:31.94,end:32.14,lyric:"all",phrase:5},{note:"E4",midi:64,ratio:1.43,t:32.14,end:32.43,lyric:"a-",phrase:5},{note:"D#4",midi:63,ratio:1.29,t:32.43,end:32.74,lyric:"round",phrase:5},{note:"F#4",midi:66,ratio:1.57,t:32.74,end:32.91,lyric:"us",phrase:5},
+      {note:"B3",midi:59,ratio:1.0,t:33.07,end:33.28,lyric:"i",phrase:6},{note:"D#4",midi:63,ratio:1.29,t:33.38,end:33.66,lyric:"feel",phrase:6},{note:"C#4",midi:61,ratio:1.14,t:33.66,end:33.92,lyric:"love",phrase:6},{note:"E4",midi:64,ratio:1.43,t:34.01,end:34.17,lyric:"right",phrase:6},{note:"A#3",midi:58,ratio:0.86,t:34.17,end:34.77,lyric:"now",phrase:6},{note:"C#4",midi:61,ratio:1.14,t:34.77,end:35.11,lyric:"oh",phrase:6},{note:"B3",midi:59,ratio:1.0,t:35.11,end:35.83,lyric:"yeah",phrase:6},
+    ]},
+  chanmalichan: {status:"recording-drafted; owner-listening-pending", keyTonic:"G", baseMidi:55, window:[0.14,1.71], level:{"start":0,"melodyStart":9.35,"melodyEnd":36.63,"fadeStart":36.68,"end":37.24},
+    phrases:[[0,9],[10,20],[21,29],[30,33],[34,43],[44,54],[55,57],[58,63]], notes:[
+      {note:"G4",midi:67,ratio:1.0,t:9.35,end:9.71,lyric:"Di",phrase:1},{note:"G4",midi:67,ratio:1.0,t:9.75,end:10.11,lyric:"ma-",phrase:1},{note:"G4",midi:67,ratio:1.0,t:10.15,end:10.51,lyric:"na",phrase:1},{note:"G4",midi:67,ratio:1.0,t:10.55,end:10.95,lyric:"dia",phrase:1},{note:"F4",midi:65,ratio:0.785,t:11.37,end:11.49,lyric:"a-",phrase:1},{note:"F#4",midi:66,ratio:0.86,t:11.49,end:11.66,lyric:"nak",phrase:1},{note:"E4",midi:64,ratio:0.71,t:11.66,end:11.82,lyric:"",phrase:1},{note:"G4",midi:67,ratio:1.0,t:11.95,end:12.21,lyric:"kam-",phrase:1},{note:"F#4",midi:66,ratio:0.86,t:12.21,end:12.42,lyric:"bing",phrase:1},{note:"D4",midi:62,ratio:0.57,t:12.52,end:13.08,lyric:"saya",phrase:1},
+      {note:"A3",midi:57,ratio:0.14,t:13.67,end:13.95,lyric:"A-",phrase:2},{note:"A#3",midi:58,ratio:0.215,t:13.95,end:14.11,lyric:"nak",phrase:2},{note:"A4",midi:69,ratio:1.14,t:14.25,end:14.73,lyric:"kam-",phrase:2},{note:"A4",midi:69,ratio:1.14,t:14.82,end:15.14,lyric:"bing",phrase:2},{note:"A4",midi:69,ratio:1.14,t:15.18,end:15.54,lyric:"saya",phrase:2},{note:"G4",midi:67,ratio:1.0,t:15.59,end:15.98,lyric:"yang",phrase:2},{note:"A4",midi:69,ratio:1.14,t:15.98,end:16.2,lyric:"ma-",phrase:2},{note:"B4",midi:71,ratio:1.29,t:16.31,end:16.59,lyric:"kan",phrase:2},{note:"C5",midi:72,ratio:1.43,t:16.59,end:16.88,lyric:"daun",phrase:2},{note:"B4",midi:71,ratio:1.29,t:16.88,end:17.12,lyric:"ta-",phrase:2},{note:"G4",midi:67,ratio:1.0,t:17.18,end:17.67,lyric:"las",phrase:2},
+      {note:"D#4",midi:63,ratio:0.64,t:18.68,end:18.77,lyric:"Di",phrase:3},{note:"G4",midi:67,ratio:1.0,t:18.77,end:19.3,lyric:"ma-",phrase:3},{note:"G4",midi:67,ratio:1.0,t:19.34,end:19.88,lyric:"na",phrase:3},{note:"G4",midi:67,ratio:1.0,t:19.92,end:20.5,lyric:"dia",phrase:3},{note:"F#4",midi:66,ratio:0.86,t:20.76,end:21.04,lyric:"buah",phrase:3},{note:"E4",midi:64,ratio:0.71,t:21.04,end:21.2,lyric:"",phrase:3},{note:"G4",midi:67,ratio:1.0,t:21.29,end:21.46,lyric:"ha-",phrase:3},{note:"F#4",midi:66,ratio:0.86,t:21.6,end:21.76,lyric:"ti",phrase:3},{note:"D4",midi:62,ratio:0.57,t:21.88,end:22.5,lyric:"saya",phrase:3},
+      {note:"D4",midi:62,ratio:0.57,t:23.05,end:23.35,lyric:"Buah",phrase:4},{note:"F#4",midi:66,ratio:0.86,t:23.35,end:23.51,lyric:"",phrase:4},{note:"A4",midi:69,ratio:1.14,t:23.61,end:23.77,lyric:"ha-",phrase:4},{note:"A4",midi:69,ratio:1.14,t:23.89,end:24.05,lyric:"ti",phrase:4},
+      {note:"A4",midi:69,ratio:1.14,t:24.19,end:25.05,lyric:"saya",phrase:5},{note:"G4",midi:67,ratio:1.0,t:25.05,end:25.33,lyric:"ba-",phrase:5},{note:"A4",midi:69,ratio:1.14,t:25.33,end:25.62,lyric:"gai",phrase:5},{note:"B4",midi:71,ratio:1.29,t:25.62,end:25.95,lyric:"te-",phrase:5},{note:"C5",midi:72,ratio:1.43,t:25.95,end:26.14,lyric:"lur",phrase:5},{note:"A#4",midi:70,ratio:1.215,t:26.23,end:26.32,lyric:"",phrase:5},{note:"B4",midi:71,ratio:1.29,t:26.32,end:26.48,lyric:"di-",phrase:5},{note:"A4",midi:69,ratio:1.14,t:26.5,end:26.63,lyric:"ku-",phrase:5},{note:"G4",midi:67,ratio:1.0,t:26.63,end:26.79,lyric:"bas",phrase:5},{note:"G4",midi:67,ratio:1.0,t:26.84,end:27.0,lyric:"Chan",phrase:5},
+      {note:"C5",midi:72,ratio:1.43,t:27.98,end:28.9,lyric:"ma-",phrase:6},{note:"C5",midi:72,ratio:1.43,t:28.97,end:29.32,lyric:"li",phrase:6},{note:"E5",midi:76,ratio:1.71,t:29.43,end:29.64,lyric:"chan",phrase:6},{note:"E5",midi:76,ratio:1.71,t:29.7,end:29.85,lyric:"oh",phrase:6},{note:"E5",midi:76,ratio:1.71,t:29.85,end:30.01,lyric:"boy",phrase:6},{note:"B4",midi:71,ratio:1.29,t:30.3,end:30.56,lyric:"Chan",phrase:6},{note:"B4",midi:71,ratio:1.29,t:30.6,end:30.86,lyric:"ma-",phrase:6},{note:"B4",midi:71,ratio:1.29,t:30.9,end:31.21,lyric:"li",phrase:6},{note:"B4",midi:71,ratio:1.29,t:31.31,end:31.49,lyric:"chan",phrase:6},{note:"D5",midi:74,ratio:1.57,t:31.72,end:31.9,lyric:"oi",phrase:6},{note:"D5",midi:74,ratio:1.57,t:32.02,end:32.27,lyric:"oi",phrase:6},
+      {note:"A4",midi:69,ratio:1.14,t:32.59,end:32.92,lyric:"Chan",phrase:7},{note:"A4",midi:69,ratio:1.14,t:32.92,end:33.51,lyric:"ma-",phrase:7},{note:"A4",midi:69,ratio:1.14,t:33.6,end:33.86,lyric:"li",phrase:7},
+      {note:"G4",midi:67,ratio:1.0,t:34.33,end:34.49,lyric:"chan",phrase:8},{note:"A4",midi:69,ratio:1.14,t:34.62,end:34.78,lyric:"ke",phrase:8},{note:"B4",midi:71,ratio:1.29,t:34.92,end:35.22,lyric:"ti-",phrase:8},{note:"C5",midi:72,ratio:1.43,t:35.22,end:35.46,lyric:"pung",phrase:8},{note:"B4",midi:71,ratio:1.29,t:35.46,end:35.73,lyric:"",phrase:8},{note:"G4",midi:67,ratio:1.0,t:35.79,end:36.63,lyric:"peyang",phrase:8},
+    ]},
+};
+// </catalogue-charts>
 
-// 3. Humpty Dumpty (BPM 100)
-const HUMPTY_DUMPTY_NOTES = [
-  {note:'G4', ratio:0.57, t:0.000, lyric:'Hump-'},{note:'G4', ratio:0.57, t:0.600, lyric:'ty'},
-  {note:'C5', ratio:1.00, t:1.200, lyric:'Dump-'},{note:'C5', ratio:1.00, t:1.800, lyric:'ty'},
-  {note:'B4', ratio:0.86, t:2.400, lyric:'sat'}, {note:'A4', ratio:0.71, t:3.000, lyric:'on a'},
-  {note:'G4', ratio:0.57, t:3.600, lyric:'wall'},
-  {note:'F4', ratio:0.43, t:4.800, lyric:'Hump-'},{note:'F4', ratio:0.43, t:5.400, lyric:'ty'},
-  {note:'E4', ratio:0.29, t:6.000, lyric:'Dump-'},{note:'E4', ratio:0.29, t:6.600, lyric:'ty'},
-  {note:'D4', ratio:0.14, t:7.200, lyric:'had a'},{note:'D4', ratio:0.14, t:7.800, lyric:'great'},
-  {note:'C4', ratio:0.00, t:8.400, lyric:'fall'},
-  {note:'G4', ratio:0.57, t:9.600, lyric:'All'}, {note:'G4', ratio:0.57, t:10.200, lyric:'the'},
-  {note:'F4', ratio:0.43, t:10.800, lyric:'king&#39;s'},{note:'F4', ratio:0.43, t:11.400, lyric:'hor-'},
-  {note:'E4', ratio:0.29, t:12.000, lyric:'ses'}, {note:'E4', ratio:0.29, t:12.600, lyric:'and'},
-  {note:'D4', ratio:0.14, t:13.200, lyric:'all'},
-  {note:'G4', ratio:0.57, t:14.400, lyric:'the'}, {note:'G4', ratio:0.57, t:15.000, lyric:'king&#39;s'},
-  {note:'F4', ratio:0.43, t:15.600, lyric:'men'}, {note:'F4', ratio:0.43, t:16.200, lyric:''},
-  {note:'E4', ratio:0.29, t:16.800, lyric:''},    {note:'E4', ratio:0.29, t:17.400, lyric:''},
-  {note:'D4', ratio:0.14, t:18.000, lyric:''},
-  {note:'G4', ratio:0.57, t:19.200, lyric:'Could-'},{note:'G4', ratio:0.57, t:19.800, lyric:'n&#39;t'},
-  {note:'F4', ratio:0.43, t:20.400, lyric:'put'}, {note:'F4', ratio:0.43, t:21.000, lyric:'Hump-'},
-  {note:'E4', ratio:0.29, t:21.600, lyric:'ty'},  {note:'E4', ratio:0.29, t:22.200, lyric:'to-'},
-  {note:'C4', ratio:0.00, t:22.800, lyric:'again'},
-];
-
-// 4. Head Shoulders Knees and Toes (BPM 123)
-const HEAD_SHOULDERS_NOTES = [
-  {note:'C4', ratio:0.00, t:0.000, lyric:'Head'}, {note:'D4', ratio:0.14, t:0.488, lyric:'shoul-'},
-  {note:'E4', ratio:0.29, t:0.976, lyric:'ders'},{note:'C4', ratio:0.00, t:1.463, lyric:'knees'},
-  {note:'E4', ratio:0.29, t:1.951, lyric:'and'}, {note:'F4', ratio:0.43, t:2.439, lyric:'toes'},
-  {note:'G4', ratio:0.57, t:2.927, lyric:'knees'},{note:'G4', ratio:0.57, t:3.415, lyric:'toes'},
-  {note:'G4', ratio:0.57, t:4.390, lyric:'eyes'},{note:'A4', ratio:0.71, t:4.878, lyric:'and'},
-  {note:'G4', ratio:0.57, t:5.366, lyric:'ears'},{note:'F4', ratio:0.43, t:5.854, lyric:'and'},
-  {note:'E4', ratio:0.29, t:6.341, lyric:'mouth'},{note:'D4', ratio:0.14, t:6.829, lyric:'and'},
-  {note:'C4', ratio:0.00, t:7.317, lyric:'nose'},
-  {note:'C4', ratio:0.00, t:8.293, lyric:'Head'},{note:'D4', ratio:0.14, t:8.780, lyric:'shoul-'},
-  {note:'E4', ratio:0.29, t:9.268, lyric:'ders'},{note:'C4', ratio:0.00, t:9.756, lyric:'knees'},
-  {note:'E4', ratio:0.29, t:10.244, lyric:'and'}, {note:'F4', ratio:0.43, t:10.732, lyric:'toes'},
-  {note:'G4', ratio:0.57, t:11.220, lyric:'knees'},{note:'G4', ratio:0.57, t:11.707, lyric:'toes'},
-];
-
-// 5. London Bridge (BPM 108)
-const LONDON_BRIDGE_NOTES = [
-  {note:'G4', ratio:0.57, t:0.000, lyric:'Lon-'}, {note:'A4', ratio:0.71, t:0.556, lyric:'don'},
-  {note:'G4', ratio:0.57, t:1.111, lyric:'Bridge'},{note:'F4', ratio:0.43, t:1.667, lyric:'is'},
-  {note:'E4', ratio:0.29, t:2.222, lyric:'fall-'},{note:'F4', ratio:0.43, t:2.778, lyric:'ing'},
-  {note:'G4', ratio:0.57, t:3.333, lyric:'down'},
-  {note:'D4', ratio:0.14, t:4.444, lyric:'fall-'},{note:'E4', ratio:0.29, t:5.000, lyric:'ing'},
-  {note:'F4', ratio:0.43, t:5.556, lyric:'down'},
-  {note:'E4', ratio:0.29, t:6.667, lyric:'fall-'},{note:'F4', ratio:0.43, t:7.222, lyric:'ing'},
-  {note:'G4', ratio:0.57, t:7.778, lyric:'down'},
-  {note:'G4', ratio:0.57, t:8.889, lyric:'Lon-'}, {note:'A4', ratio:0.71, t:9.444, lyric:'don'},
-  {note:'G4', ratio:0.57, t:10.000, lyric:'Bridge'},{note:'F4', ratio:0.43, t:10.556, lyric:'is'},
-  {note:'E4', ratio:0.29, t:11.111, lyric:'fall-'},{note:'F4', ratio:0.43, t:11.667, lyric:'ing'},
-  {note:'G4', ratio:0.57, t:12.222, lyric:'down'},
-  {note:'D4', ratio:0.14, t:13.333, lyric:'my'},  {note:'G4', ratio:0.57, t:13.889, lyric:'fair'},
-  {note:'E4', ratio:0.29, t:14.444, lyric:'la-'}, {note:'C4', ratio:0.00, t:15.000, lyric:'dy'},
-];
-
-// 6. Itsy Bitsy Spider (BPM 89)
-const ITSY_BITSY_NOTES = [
-  {note:'C4', ratio:0.00, t:0.000, lyric:'The'}, {note:'E4', ratio:0.29, t:0.674, lyric:'it-sy'},
-  {note:'G4', ratio:0.57, t:1.348, lyric:'bit-'},{note:'G4', ratio:0.57, t:2.022, lyric:'sy'},
-  {note:'A4', ratio:0.71, t:2.697, lyric:'spi-'},{note:'G4', ratio:0.57, t:3.371, lyric:'der'},
-  {note:'E4', ratio:0.29, t:4.719, lyric:'went'},{note:'G4', ratio:0.57, t:5.393, lyric:'up'},
-  {note:'E4', ratio:0.29, t:6.067, lyric:'the'},
-  {note:'D4', ratio:0.14, t:7.416, lyric:'wa-'},{note:'E4', ratio:0.29, t:8.090, lyric:'ter'},
-  {note:'F4', ratio:0.43, t:8.764, lyric:'spout'},{note:'G4', ratio:0.57, t:9.438, lyric:''},
-  {note:'G4', ratio:0.57, t:10.787, lyric:'Down'},{note:'A4', ratio:0.71, t:11.461, lyric:'came'},
-  {note:'G4', ratio:0.57, t:12.135, lyric:'the'},{note:'E4', ratio:0.29, t:12.809, lyric:'rain'},
-  {note:'F4', ratio:0.43, t:13.483, lyric:'and'},{note:'E4', ratio:0.29, t:14.157, lyric:'washed'},
-  {note:'D4', ratio:0.14, t:14.831, lyric:'the'},{note:'C4', ratio:0.00, t:15.506, lyric:'out'},
-  {note:'G4', ratio:0.57, t:16.854, lyric:'Out'},{note:'A4', ratio:0.71, t:17.528, lyric:'came'},
-  {note:'G4', ratio:0.57, t:18.202, lyric:'the'},{note:'E4', ratio:0.29, t:18.876, lyric:'sun'},
-  {note:'E4', ratio:0.29, t:19.551, lyric:'and'},{note:'C4', ratio:0.00, t:20.225, lyric:'dried'},
-  {note:'D4', ratio:0.14, t:20.899, lyric:'up'},{note:'C4', ratio:0.00, t:21.573, lyric:'rain'},
-  {note:'C4', ratio:0.00, t:22.921, lyric:'And'},{note:'E4', ratio:0.29, t:23.596, lyric:'the'},
-  {note:'G4', ratio:0.57, t:24.270, lyric:'it-sy'},{note:'A4', ratio:0.71, t:24.944, lyric:'bit-sy'},
-  {note:'G4', ratio:0.57, t:25.618, lyric:'spi-der'},
-  {note:'E4', ratio:0.29, t:26.966, lyric:'went'},{note:'E4', ratio:0.29, t:27.640, lyric:'up'},
-  {note:'D4', ratio:0.14, t:28.315, lyric:'the'},{note:'C4', ratio:0.00, t:28.989, lyric:'again'},
-];
-
-// 7. Baa Baa Black Sheep (BPM 99) — same tune as Twinkle
-const BAA_BAA_NOTES = [
-  {note:'C4', ratio:0.00, t:0.000, lyric:'Baa'}, {note:'C4', ratio:0.00, t:0.606, lyric:'baa'},
-  {note:'G4', ratio:0.57, t:1.212, lyric:'black'},{note:'G4', ratio:0.57, t:1.818, lyric:'sheep'},
-  {note:'A4', ratio:0.71, t:2.424, lyric:'have'},{note:'A4', ratio:0.71, t:3.030, lyric:'you'},
-  {note:'G4', ratio:0.57, t:3.636, lyric:'wool?'},
-  {note:'F4', ratio:0.43, t:4.848, lyric:'Yes'},  {note:'F4', ratio:0.43, t:5.455, lyric:'sir'},
-  {note:'E4', ratio:0.29, t:6.061, lyric:'yes'},  {note:'E4', ratio:0.29, t:6.667, lyric:'sir'},
-  {note:'D4', ratio:0.14, t:7.273, lyric:'three'},{note:'D4', ratio:0.14, t:7.879, lyric:'bags'},
-  {note:'C4', ratio:0.00, t:8.485, lyric:'full'},
-  {note:'G4', ratio:0.57, t:9.697, lyric:'One'},  {note:'G4', ratio:0.57, t:10.303, lyric:'for'},
-  {note:'F4', ratio:0.43, t:10.909, lyric:'mas-'},{note:'F4', ratio:0.43, t:11.515, lyric:'ter'},
-  {note:'E4', ratio:0.29, t:12.121, lyric:'one'},  {note:'E4', ratio:0.29, t:12.727, lyric:'for'},
-  {note:'D4', ratio:0.14, t:13.333, lyric:'dame'},
-  {note:'G4', ratio:0.57, t:14.545, lyric:'one'},  {note:'G4', ratio:0.57, t:15.152, lyric:'for'},
-  {note:'F4', ratio:0.43, t:15.758, lyric:'lit-'},{note:'F4', ratio:0.43, t:16.364, lyric:'tle'},
-  {note:'E4', ratio:0.29, t:16.970, lyric:'boy'}, {note:'E4', ratio:0.29, t:17.576, lyric:'down'},
-  {note:'C4', ratio:0.00, t:18.182, lyric:'lane'},
-];
-
-// 8. Mary Had a Little Lamb (BPM 123)
-const MARY_LAMB_NOTES = [
-  {note:'E4', ratio:0.29, t:0.000, lyric:'Ma-'},{note:'D4', ratio:0.14, t:0.488, lyric:'ry'},
-  {note:'C4', ratio:0.00, t:0.976, lyric:'had'},{note:'D4', ratio:0.14, t:1.463, lyric:'a'},
-  {note:'E4', ratio:0.29, t:1.951, lyric:'lit-'},{note:'E4', ratio:0.29, t:2.439, lyric:'tle'},
-  {note:'E4', ratio:0.29, t:2.927, lyric:'lamb'},
-  {note:'D4', ratio:0.14, t:3.902, lyric:'lit-'},{note:'D4', ratio:0.14, t:4.390, lyric:'tle'},
-  {note:'D4', ratio:0.14, t:4.878, lyric:'lamb'},
-  {note:'E4', ratio:0.29, t:5.854, lyric:'lit-'},{note:'G4', ratio:0.57, t:6.341, lyric:'tle'},
-  {note:'G4', ratio:0.57, t:6.829, lyric:'lamb'},
-  {note:'E4', ratio:0.29, t:7.805, lyric:'Ma-'},{note:'D4', ratio:0.14, t:8.293, lyric:'ry'},
-  {note:'C4', ratio:0.00, t:8.780, lyric:'had'},{note:'D4', ratio:0.14, t:9.268, lyric:'a'},
-  {note:'E4', ratio:0.29, t:9.756, lyric:'lit-'},{note:'E4', ratio:0.29, t:10.244, lyric:'tle'},
-  {note:'E4', ratio:0.29, t:10.732, lyric:'lamb'},{note:'E4', ratio:0.29, t:11.220, lyric:'its'},
-  {note:'D4', ratio:0.14, t:11.707, lyric:'fleece'},{note:'D4', ratio:0.14, t:12.195, lyric:'was'},
-  {note:'E4', ratio:0.29, t:12.683, lyric:'white'},{note:'D4', ratio:0.14, t:13.171, lyric:'as'},
-  {note:'C4', ratio:0.00, t:13.659, lyric:'snow'},
-];
-
-// 9. Row Row Row Your Boat (BPM 96)
-const ROW_BOAT_NOTES = [
-  {note:'C4', ratio:0.00, t:0.000, lyric:'Row'}, {note:'C4', ratio:0.00, t:1.250, lyric:'row'},
-  {note:'C4', ratio:0.00, t:1.875, lyric:'row'},{note:'D4', ratio:0.14, t:2.500, lyric:'your'},
-  {note:'E4', ratio:0.29, t:3.125, lyric:'boat'},
-  {note:'E4', ratio:0.29, t:3.750, lyric:'gent-'},{note:'D4', ratio:0.14, t:4.375, lyric:'ly'},
-  {note:'E4', ratio:0.29, t:5.000, lyric:'down'},{note:'F4', ratio:0.43, t:5.625, lyric:'the'},
-  {note:'G4', ratio:0.57, t:6.250, lyric:'stream'},
-  {note:'C5', ratio:1.00, t:7.500, lyric:'Mer-'},{note:'C5', ratio:1.00, t:7.812, lyric:'ri-'},
-  {note:'C5', ratio:1.00, t:8.125, lyric:'ly'},
-  {note:'G4', ratio:0.57, t:8.438, lyric:'mer-'},{note:'G4', ratio:0.57, t:8.750, lyric:'ri-'},
-  {note:'G4', ratio:0.57, t:9.062, lyric:'ly'},
-  {note:'E4', ratio:0.29, t:9.375, lyric:'mer-'},{note:'E4', ratio:0.29, t:9.688, lyric:'ri-'},
-  {note:'E4', ratio:0.29, t:10.000, lyric:'ly'},
-  {note:'C4', ratio:0.00, t:10.312, lyric:'life'},{note:'D4', ratio:0.14, t:10.938, lyric:'is'},
-  {note:'E4', ratio:0.29, t:11.562, lyric:'but'},{note:'F4', ratio:0.43, t:12.188, lyric:'a'},
-  {note:'G4', ratio:0.57, t:12.812, lyric:'dream'},
-];
-
-// 10. The More We Get Together (BPM 117)
-const MORE_TOGETHER_NOTES = [
-  {note:'E4', ratio:0.29, t:0.000, lyric:'The'},{note:'G4', ratio:0.57, t:0.513, lyric:'more'},
-  {note:'G4', ratio:0.57, t:1.026, lyric:'we'},{note:'G4', ratio:0.57, t:1.538, lyric:'get'},
-  {note:'F4', ratio:0.43, t:2.051, lyric:'to-'},{note:'F4', ratio:0.43, t:2.564, lyric:'ge-'},
-  {note:'F4', ratio:0.43, t:3.077, lyric:'ther'},{note:'E4', ratio:0.29, t:3.590, lyric:'to-'},
-  {note:'G4', ratio:0.57, t:4.103, lyric:'ge-'},{note:'C5', ratio:1.00, t:4.615, lyric:'ther'},
-  {note:'B4', ratio:0.86, t:5.128, lyric:'to-'},{note:'B4', ratio:0.86, t:5.641, lyric:'ge-'},
-  {note:'A4', ratio:0.71, t:6.154, lyric:'ther'},{note:'G4', ratio:0.57, t:6.667, lyric:'the'},
-  {note:'G4', ratio:0.57, t:7.692, lyric:'hap-'},{note:'A4', ratio:0.71, t:8.205, lyric:'pi-'},
-  {note:'G4', ratio:0.57, t:8.718, lyric:'er'},{note:'F4', ratio:0.43, t:9.231, lyric:'we&#39;ll'},
-  {note:'E4', ratio:0.29, t:9.744, lyric:'be'},
-  {note:'G4', ratio:0.57, t:10.769, lyric:'For'},{note:'A4', ratio:0.71, t:11.282, lyric:'your'},
-  {note:'G4', ratio:0.57, t:11.795, lyric:'friends'},{note:'F4', ratio:0.43, t:12.308, lyric:'are'},
-  {note:'E4', ratio:0.29, t:12.821, lyric:'my'},
-  {note:'G4', ratio:0.57, t:13.846, lyric:'friends'},{note:'A4', ratio:0.71, t:14.359, lyric:'and'},
-  {note:'G4', ratio:0.57, t:14.872, lyric:'my'},{note:'F4', ratio:0.43, t:15.385, lyric:'friends'},
-  {note:'E4', ratio:0.29, t:15.897, lyric:'are'},
-  {note:'E4', ratio:0.29, t:16.923, lyric:'your'},{note:'G4', ratio:0.57, t:17.436, lyric:'friends'},
-  {note:'G4', ratio:0.57, t:17.949, lyric:'the'},{note:'G4', ratio:0.57, t:18.462, lyric:'more'},
-  {note:'F4', ratio:0.43, t:18.974, lyric:'we'},{note:'F4', ratio:0.43, t:19.487, lyric:'get'},
-  {note:'F4', ratio:0.43, t:20.000, lyric:'to-'},{note:'E4', ratio:0.29, t:20.513, lyric:'ge-'},
-  {note:'G4', ratio:0.57, t:21.026, lyric:'ther'},{note:'C5', ratio:1.00, t:21.538, lyric:'the'},
-  {note:'B4', ratio:0.86, t:22.051, lyric:'hap-'},{note:'A4', ratio:0.71, t:22.564, lyric:'pi-'},
-  {note:'G4', ratio:0.57, t:23.077, lyric:'er'},
-];
-
-// 11. Little Bunny / 小兔子乖乖 (BPM 123)
-const LITTLE_BUNNY_NOTES = [
-  // --- Verse 1 Chinese: wolf knocks, bunny refuses ---
-  {note:'G4', ratio:0.57, t:0.000, lyric:'小'},{note:'G4', ratio:0.57, t:0.488, lyric:'兔'},
-  {note:'E4', ratio:0.29, t:0.976, lyric:'子'},{note:'G4', ratio:0.57, t:1.463, lyric:'乖'},
-  {note:'A4', ratio:0.71, t:1.951, lyric:'乖'},{note:'G4', ratio:0.57, t:2.439, lyric:'把'},
-  {note:'E4', ratio:0.29, t:2.927, lyric:'门'},
-  {note:'G4', ratio:0.57, t:3.902, lyric:'儿'},{note:'G4', ratio:0.57, t:4.390, lyric:'开'},
-  {note:'E4', ratio:0.29, t:4.878, lyric:'开'},{note:'G4', ratio:0.57, t:5.366, lyric:'快'},
-  {note:'A4', ratio:0.71, t:5.854, lyric:'点'},{note:'G4', ratio:0.57, t:6.341, lyric:'儿'},
-  {note:'E4', ratio:0.29, t:6.829, lyric:'开'},
-  {note:'G4', ratio:0.57, t:7.805, lyric:'不'},{note:'A4', ratio:0.71, t:8.293, lyric:'开'},
-  {note:'G4', ratio:0.57, t:8.780, lyric:'不'},{note:'F4', ratio:0.43, t:9.268, lyric:'开'},
-  {note:'E4', ratio:0.29, t:9.756, lyric:'我'},{note:'E4', ratio:0.29, t:10.244, lyric:'不'},
-  {note:'D4', ratio:0.14, t:10.732, lyric:'开'},
-  {note:'C4', ratio:0.00, t:11.707, lyric:'妈'},{note:'D4', ratio:0.14, t:12.195, lyric:'妈'},
-  {note:'E4', ratio:0.29, t:12.683, lyric:'没'},{note:'D4', ratio:0.14, t:13.171, lyric:'回'},
-  {note:'C4', ratio:0.00, t:13.659, lyric:'来'},
-
-  // --- Verse 2 Chinese: mama returns, bunny opens ---
-  {note:'G4', ratio:0.57, t:14.634, lyric:'小'},{note:'G4', ratio:0.57, t:15.122, lyric:'兔'},
-  {note:'E4', ratio:0.29, t:15.610, lyric:'子'},{note:'G4', ratio:0.57, t:16.098, lyric:'乖'},
-  {note:'A4', ratio:0.71, t:16.585, lyric:'乖'},{note:'G4', ratio:0.57, t:17.073, lyric:'把'},
-  {note:'E4', ratio:0.29, t:17.561, lyric:'门'},
-  {note:'G4', ratio:0.57, t:18.537, lyric:'儿'},{note:'G4', ratio:0.57, t:19.024, lyric:'开'},
-  {note:'E4', ratio:0.29, t:19.512, lyric:'开'},{note:'G4', ratio:0.57, t:20.000, lyric:'妈'},
-  {note:'A4', ratio:0.71, t:20.488, lyric:'妈'},{note:'G4', ratio:0.57, t:20.976, lyric:'回'},
-  {note:'E4', ratio:0.29, t:21.463, lyric:'来'},
-  {note:'G4', ratio:0.57, t:22.439, lyric:'就'},{note:'A4', ratio:0.71, t:22.927, lyric:'开'},
-  {note:'G4', ratio:0.57, t:23.415, lyric:'就'},{note:'F4', ratio:0.43, t:23.902, lyric:'开'},
-  {note:'E4', ratio:0.29, t:24.390, lyric:'我'},{note:'E4', ratio:0.29, t:24.878, lyric:'就'},
-  {note:'D4', ratio:0.14, t:25.366, lyric:'开'},
-  {note:'C4', ratio:0.00, t:26.341, lyric:'妈'},{note:'D4', ratio:0.14, t:26.829, lyric:'妈'},
-  {note:'E4', ratio:0.29, t:27.317, lyric:'回'},{note:'D4', ratio:0.14, t:27.805, lyric:'来'},
-  {note:'C4', ratio:0.00, t:28.293, lyric:'了'},
-
-  // --- Verse 3 English: wolf knocks, bunny refuses ---
-  {note:'G4', ratio:0.57, t:29.268, lyric:'Lit-'},{note:'G4', ratio:0.57, t:29.756, lyric:'tle'},
-  {note:'E4', ratio:0.29, t:30.244, lyric:'Bun-'},{note:'G4', ratio:0.57, t:30.732, lyric:'ny'},
-  {note:'A4', ratio:0.71, t:31.220, lyric:'o-'},{note:'G4', ratio:0.57, t:31.707, lyric:'pen'},
-  {note:'E4', ratio:0.29, t:32.195, lyric:'the'},
-  {note:'G4', ratio:0.57, t:33.171, lyric:'door'},{note:'G4', ratio:0.57, t:33.659, lyric:'o-'},
-  {note:'E4', ratio:0.29, t:34.146, lyric:'pen'},{note:'G4', ratio:0.57, t:34.634, lyric:'it'},
-  {note:'A4', ratio:0.71, t:35.122, lyric:'quick-'},{note:'G4', ratio:0.57, t:35.610, lyric:'ly'},
-  {note:'E4', ratio:0.29, t:36.098, lyric:'please'},
-  {note:'G4', ratio:0.57, t:37.073, lyric:'No'},{note:'A4', ratio:0.71, t:37.561, lyric:'way'},
-  {note:'G4', ratio:0.57, t:38.049, lyric:'no'},{note:'F4', ratio:0.43, t:38.537, lyric:'way'},
-  {note:'E4', ratio:0.29, t:39.024, lyric:'go'},{note:'E4', ratio:0.29, t:39.512, lyric:'a-'},
-  {note:'D4', ratio:0.14, t:40.000, lyric:'way'},
-  {note:'C4', ratio:0.00, t:40.976, lyric:'Ma-'},{note:'D4', ratio:0.14, t:41.463, lyric:'ma'},
-  {note:'E4', ratio:0.29, t:41.951, lyric:'is-'},{note:'D4', ratio:0.14, t:42.439, lyric:'n&#39;t'},
-  {note:'C4', ratio:0.00, t:42.927, lyric:'here'},
-
-  // --- Verse 4 English: mama returns, bunny opens ---
-  {note:'G4', ratio:0.57, t:43.902, lyric:'Lit-'},{note:'G4', ratio:0.57, t:44.390, lyric:'tle'},
-  {note:'E4', ratio:0.29, t:44.878, lyric:'Bun-'},{note:'G4', ratio:0.57, t:45.366, lyric:'ny'},
-  {note:'A4', ratio:0.71, t:45.854, lyric:'o-'},{note:'G4', ratio:0.57, t:46.341, lyric:'pen'},
-  {note:'E4', ratio:0.29, t:46.829, lyric:'the'},
-  {note:'G4', ratio:0.57, t:47.805, lyric:'door'},{note:'G4', ratio:0.57, t:48.293, lyric:'o-'},
-  {note:'E4', ratio:0.29, t:48.780, lyric:'pen'},{note:'G4', ratio:0.57, t:49.268, lyric:'it'},
-  {note:'A4', ratio:0.71, t:49.756, lyric:'Ma-'},{note:'G4', ratio:0.57, t:50.244, lyric:'ma&#39;s'},
-  {note:'E4', ratio:0.29, t:50.732, lyric:'home'},
-  {note:'G4', ratio:0.57, t:51.707, lyric:'Yes'},{note:'A4', ratio:0.71, t:52.195, lyric:'mom'},
-  {note:'G4', ratio:0.57, t:52.683, lyric:'yes'},{note:'F4', ratio:0.43, t:53.171, lyric:'mom'},
-  {note:'E4', ratio:0.29, t:53.659, lyric:'I&#39;m'},{note:'E4', ratio:0.29, t:54.146, lyric:'here'},
-  {note:'D4', ratio:0.14, t:54.634, lyric:'now'},
-  {note:'C4', ratio:0.00, t:55.610, lyric:'I&#39;ll'},{note:'D4', ratio:0.14, t:56.098, lyric:'o-'},
-  {note:'E4', ratio:0.29, t:56.585, lyric:'pen'},{note:'D4', ratio:0.14, t:57.073, lyric:'the'},
-  {note:'C4', ratio:0.00, t:57.561, lyric:'door'},
-];
-
-// 12. Rain Rain Go Away (BPM 89)
-const RAIN_RAIN_NOTES = [
-  {note:'G4', ratio:0.57, t:0.000, lyric:'Rain'},{note:'G4', ratio:0.57, t:0.674, lyric:'rain'},
-  {note:'E4', ratio:0.29, t:1.348, lyric:'go'},{note:'E4', ratio:0.29, t:2.022, lyric:'a-'},
-  {note:'G4', ratio:0.57, t:2.697, lyric:'way'},{note:'G4', ratio:0.57, t:3.371, lyric:'rain'},
-  {note:'E4', ratio:0.29, t:4.045, lyric:'rain'},
-  {note:'G4', ratio:0.57, t:5.393, lyric:'go'},{note:'A4', ratio:0.71, t:6.067, lyric:'a-'},
-  {note:'G4', ratio:0.57, t:6.742, lyric:'way'},{note:'E4', ratio:0.29, t:7.416, lyric:'come'},
-  {note:'D4', ratio:0.14, t:8.090, lyric:'a-'},{note:'D4', ratio:0.14, t:8.764, lyric:'gain'},
-  {note:'C4', ratio:0.00, t:9.438, lyric:'day'},
-  {note:'G4', ratio:0.57, t:10.787, lyric:'Lit-'},{note:'A4', ratio:0.71, t:11.461, lyric:'tle'},
-  {note:'G4', ratio:0.57, t:12.135, lyric:'ones'},{note:'E4', ratio:0.29, t:12.809, lyric:'want'},
-  {note:'D4', ratio:0.14, t:13.483, lyric:'to'},{note:'C4', ratio:0.00, t:14.157, lyric:'play'},
-];
-
-// 13. Finger Family (BPM 112)
-const FINGER_FAMILY_NOTES = [
-  {note:'C4', ratio:0.00, t:0.000, lyric:'Dad-'},{note:'D4', ratio:0.14, t:0.536, lyric:'dy'},
-  {note:'E4', ratio:0.29, t:1.071, lyric:'fin-'},{note:'C4', ratio:0.00, t:1.607, lyric:'ger'},
-  {note:'C4', ratio:0.00, t:2.143, lyric:'Dad-'},{note:'D4', ratio:0.14, t:2.679, lyric:'dy'},
-  {note:'E4', ratio:0.29, t:3.214, lyric:'fin-'},{note:'C4', ratio:0.00, t:3.750, lyric:'ger'},
-  {note:'E4', ratio:0.29, t:4.286, lyric:'where'},{note:'F4', ratio:0.43, t:4.821, lyric:'are'},
-  {note:'G4', ratio:0.57, t:5.357, lyric:'you?'},
-  {note:'G4', ratio:0.57, t:6.429, lyric:'Here'},{note:'A4', ratio:0.71, t:6.964, lyric:'I'},
-  {note:'G4', ratio:0.57, t:7.500, lyric:'am'},{note:'F4', ratio:0.43, t:8.036, lyric:'here'},
-  {note:'E4', ratio:0.29, t:8.571, lyric:'I'},{note:'C4', ratio:0.00, t:9.107, lyric:'am'},
-  {note:'G4', ratio:0.57, t:10.179, lyric:'how'},{note:'A4', ratio:0.71, t:10.714, lyric:'do'},
-  {note:'G4', ratio:0.57, t:11.250, lyric:'you'},{note:'F4', ratio:0.43, t:11.786, lyric:'do?'},
-  {note:'E4', ratio:0.29, t:12.321, lyric:'How'},{note:'C4', ratio:0.00, t:12.857, lyric:'do'},
-  {note:'E4', ratio:0.29, t:13.929, lyric:'you'},{note:'D4', ratio:0.14, t:14.464, lyric:'do?'},
-  {note:'C4', ratio:0.00, t:15.000, lyric:''},
-];
-
-// 14. Wheels on the Bus (BPM 89)
-const WHEELS_BUS_NOTES = [
-  {note:'C4', ratio:0.00, t:0.000, lyric:'The'},{note:'E4', ratio:0.29, t:0.674, lyric:'wheels'},
-  {note:'G4', ratio:0.57, t:1.348, lyric:'on'},{note:'G4', ratio:0.57, t:2.022, lyric:'the'},
-  {note:'A4', ratio:0.71, t:2.697, lyric:'bus'},{note:'G4', ratio:0.57, t:3.371, lyric:'go'},
-  {note:'F4', ratio:0.43, t:4.719, lyric:'round'},{note:'F4', ratio:0.43, t:5.393, lyric:'and'},
-  {note:'F4', ratio:0.43, t:6.067, lyric:'round'},
-  {note:'E4', ratio:0.29, t:7.416, lyric:'round'},{note:'E4', ratio:0.29, t:8.090, lyric:'and'},
-  {note:'E4', ratio:0.29, t:8.764, lyric:'round'},
-  {note:'C4', ratio:0.00, t:10.112, lyric:'The'},{note:'E4', ratio:0.29, t:10.787, lyric:'wheels'},
-  {note:'G4', ratio:0.57, t:11.461, lyric:'on'},{note:'G4', ratio:0.57, t:12.135, lyric:'the'},
-  {note:'A4', ratio:0.71, t:12.809, lyric:'bus'},{note:'G4', ratio:0.57, t:13.483, lyric:'go'},
-  {note:'F4', ratio:0.43, t:14.831, lyric:'all'},{note:'E4', ratio:0.29, t:15.506, lyric:'thru'},
-  {note:'D4', ratio:0.14, t:16.180, lyric:'the'},{note:'C4', ratio:0.00, t:16.854, lyric:'town'},
-];
-
-// 15. Old McDonald Had a Farm (BPM 92)
-const OLD_MCDONALD_NOTES = [
-  {note:'C4', ratio:0.00, t:0.000, lyric:'Old'},{note:'C4', ratio:0.00, t:0.652, lyric:'Mac-'},
-  {note:'C4', ratio:0.00, t:1.304, lyric:'don-'},{note:'G4', ratio:0.57, t:1.957, lyric:'ald'},
-  {note:'A4', ratio:0.71, t:2.609, lyric:'had'},{note:'A4', ratio:0.71, t:3.261, lyric:'a'},
-  {note:'G4', ratio:0.57, t:3.913, lyric:'farm'},
-  {note:'E4', ratio:0.29, t:5.217, lyric:'E'},{note:'E4', ratio:0.29, t:5.870, lyric:'I'},
-  {note:'D4', ratio:0.14, t:6.522, lyric:'E'},{note:'D4', ratio:0.14, t:7.174, lyric:'I'},
-  {note:'C4', ratio:0.00, t:7.826, lyric:'O'},
-  {note:'G4', ratio:0.57, t:9.130, lyric:'And'},{note:'G4', ratio:0.57, t:9.783, lyric:'on'},
-  {note:'G4', ratio:0.57, t:10.435, lyric:'his'},{note:'G4', ratio:0.57, t:11.087, lyric:'farm'},
-  {note:'C5', ratio:1.00, t:11.739, lyric:'he'},{note:'B4', ratio:0.86, t:12.391, lyric:'had'},
-  {note:'A4', ratio:0.71, t:13.043, lyric:'a'},{note:'G4', ratio:0.57, t:13.696, lyric:'cow'},
-  {note:'E4', ratio:0.29, t:15.000, lyric:'E'},{note:'E4', ratio:0.29, t:15.652, lyric:'I'},
-  {note:'D4', ratio:0.14, t:16.304, lyric:'E'},{note:'D4', ratio:0.14, t:16.957, lyric:'I'},
-  {note:'C4', ratio:0.00, t:17.609, lyric:'O'},
-  {note:'C4', ratio:0.00, t:18.913, lyric:'With'},{note:'C4', ratio:0.00, t:19.239, lyric:'a'},
-  {note:'G4', ratio:0.57, t:19.565, lyric:'moo'},{note:'G4', ratio:0.57, t:20.217, lyric:'moo'},
-  {note:'C4', ratio:0.00, t:20.870, lyric:'here'},{note:'C4', ratio:0.00, t:21.522, lyric:'and'},
-  {note:'G4', ratio:0.57, t:21.848, lyric:'a'},{note:'G4', ratio:0.57, t:22.174, lyric:'moo'},
-  {note:'G4', ratio:0.57, t:22.826, lyric:'moo'},{note:'C4', ratio:0.00, t:23.478, lyric:'there'},
-  {note:'E4', ratio:0.29, t:24.783, lyric:'E'},{note:'E4', ratio:0.29, t:25.435, lyric:'I'},
-  {note:'D4', ratio:0.14, t:26.087, lyric:'E'},{note:'D4', ratio:0.14, t:26.739, lyric:'I'},
-  {note:'C4', ratio:0.00, t:27.391, lyric:'O'},
-];
-
-// 16. If You're Happy and You Know It (BPM 129)
-const IF_HAPPY_NOTES = [
-  {note:'C4', ratio:0.00, t:0.000, lyric:'If'},{note:'C4', ratio:0.00, t:0.465, lyric:'you&#39;re'},
-  {note:'F4', ratio:0.43, t:0.930, lyric:'hap-'},{note:'F4', ratio:0.43, t:1.395, lyric:'py'},
-  {note:'F4', ratio:0.43, t:1.860, lyric:'and'},{note:'E4', ratio:0.29, t:2.326, lyric:'you'},
-  {note:'F4', ratio:0.43, t:2.791, lyric:'know'},{note:'G4', ratio:0.57, t:3.256, lyric:'it'},
-  {note:'G4', ratio:0.57, t:3.721, lyric:'clap'},
-  {note:'G4', ratio:0.57, t:4.651, lyric:'your'},{note:'A4', ratio:0.71, t:5.116, lyric:'hands'},
-  {note:'G4', ratio:0.57, t:5.581, lyric:'if'},{note:'F4', ratio:0.43, t:6.047, lyric:'you&#39;re'},
-  {note:'E4', ratio:0.29, t:6.512, lyric:'hap-'},{note:'F4', ratio:0.43, t:6.977, lyric:'py'},
-  {note:'C4', ratio:0.00, t:7.907, lyric:'If'},{note:'C4', ratio:0.00, t:8.372, lyric:'you&#39;re'},
-  {note:'F4', ratio:0.43, t:8.837, lyric:'hap-'},{note:'F4', ratio:0.43, t:9.302, lyric:'py'},
-  {note:'F4', ratio:0.43, t:9.767, lyric:'and'},{note:'E4', ratio:0.29, t:10.233, lyric:'you'},
-  {note:'F4', ratio:0.43, t:10.698, lyric:'know'},{note:'G4', ratio:0.57, t:11.163, lyric:'it'},
-  {note:'G4', ratio:0.57, t:11.628, lyric:'clap'},
-  {note:'G4', ratio:0.57, t:12.558, lyric:'your'},{note:'A4', ratio:0.71, t:13.023, lyric:'hands'},
-  {note:'G4', ratio:0.57, t:13.488, lyric:'if'},{note:'F4', ratio:0.43, t:13.953, lyric:'you&#39;re'},
-  {note:'E4', ratio:0.29, t:14.419, lyric:'hap-'},{note:'F4', ratio:0.43, t:14.884, lyric:'py'},
-];
-
-// 17. Five Little Monkeys (BPM 123)
-const FIVE_MONKEYS_NOTES = [
-  {note:'G4', ratio:0.57, t:0.000, lyric:'Five'},{note:'G4', ratio:0.57, t:0.488, lyric:'lit-'},
-  {note:'G4', ratio:0.57, t:0.976, lyric:'tle'},{note:'A4', ratio:0.71, t:1.463, lyric:'mon-'},
-  {note:'G4', ratio:0.57, t:1.951, lyric:'keys'},{note:'F4', ratio:0.43, t:2.439, lyric:'jump-'},
-  {note:'E4', ratio:0.29, t:2.927, lyric:'ing'},{note:'D4', ratio:0.14, t:3.415, lyric:'on'},
-  {note:'E4', ratio:0.29, t:3.902, lyric:'the'},{note:'F4', ratio:0.43, t:4.390, lyric:'bed'},
-  {note:'G4', ratio:0.57, t:4.878, lyric:''},
-  {note:'G4', ratio:0.57, t:5.854, lyric:'One'},{note:'A4', ratio:0.71, t:6.341, lyric:'fell'},
-  {note:'G4', ratio:0.57, t:6.829, lyric:'off'},{note:'F4', ratio:0.43, t:7.317, lyric:'and'},
-  {note:'E4', ratio:0.29, t:7.805, lyric:'bumped'},
-  {note:'G4', ratio:0.57, t:8.780, lyric:'Ma-'},{note:'A4', ratio:0.71, t:9.268, lyric:'ma'},
-  {note:'G4', ratio:0.57, t:9.756, lyric:'called'},{note:'F4', ratio:0.43, t:10.244, lyric:'the'},
-  {note:'E4', ratio:0.29, t:10.732, lyric:'doc-'},{note:'D4', ratio:0.14, t:11.220, lyric:'tor'},
-  {note:'G4', ratio:0.57, t:12.195, lyric:'No'},{note:'G4', ratio:0.57, t:12.683, lyric:'more'},
-  {note:'A4', ratio:0.71, t:13.171, lyric:'mon-'},{note:'G4', ratio:0.57, t:13.659, lyric:'keys'},
-  {note:'F4', ratio:0.43, t:14.146, lyric:'jump-'},{note:'E4', ratio:0.29, t:14.634, lyric:'ing'},
-  {note:'D4', ratio:0.14, t:15.122, lyric:'on'},{note:'C4', ratio:0.00, t:15.610, lyric:'bed'},
-];
-
-// 18. Baby Shark (BPM 144)
-const BABY_SHARK_NOTES = [
-  {note:'C4', ratio:0.00, t:0.000, lyric:'Ba-'},{note:'E4', ratio:0.29, t:0.417, lyric:'by'},
-  {note:'G4', ratio:0.57, t:0.833, lyric:'shark'},{note:'G4', ratio:0.57, t:1.250, lyric:'doo'},
-  {note:'C4', ratio:0.00, t:2.500, lyric:'Mom-'},{note:'E4', ratio:0.29, t:2.917, lyric:'my'},
-  {note:'G4', ratio:0.57, t:3.333, lyric:'shark'},{note:'B4', ratio:0.86, t:3.750, lyric:'doo'},
-  {note:'C4', ratio:0.00, t:5.000, lyric:'Dad-'},{note:'E4', ratio:0.29, t:5.417, lyric:'dy'},
-  {note:'G4', ratio:0.57, t:5.833, lyric:'shark'},{note:'C5', ratio:1.00, t:6.250, lyric:'doo'},
-  {note:'G4', ratio:0.57, t:7.500, lyric:'Let&#39;s'},{note:'A4', ratio:0.71, t:7.917, lyric:'go'},
-  {note:'G4', ratio:0.57, t:8.333, lyric:'hunt'},{note:'G4', ratio:0.57, t:8.750, lyric:'doo'},
-  {note:'G4', ratio:0.57, t:10.000, lyric:'Run'},{note:'F4', ratio:0.43, t:10.417, lyric:'a-'},
-  {note:'E4', ratio:0.29, t:10.833, lyric:'way'},{note:'D4', ratio:0.14, t:11.250, lyric:'doo'},
-  {note:'C4', ratio:0.00, t:12.500, lyric:'Safe'},{note:'E4', ratio:0.29, t:12.917, lyric:'at'},
-  {note:'G4', ratio:0.57, t:13.333, lyric:'last'},{note:'G4', ratio:0.57, t:13.750, lyric:'doo'},
-  {note:'C4', ratio:0.00, t:15.000, lyric:'end'},
-];
-
-// 19. 拔萝卜 Ba Luo Bo — Pulling Turnips (BPM 96)
-const BA_LUO_BO_NOTES = [
-  {note:'G4', ratio:0.57, t:0.000, lyric:'拔'},{note:'G4', ratio:0.57, t:0.625, lyric:'萝'},
-  {note:'C5', ratio:1.00, t:1.250, lyric:'卜'},{note:'A4', ratio:0.71, t:1.875, lyric:'拔'},
-  {note:'G4', ratio:0.57, t:2.500, lyric:'萝'},{note:'E4', ratio:0.29, t:3.125, lyric:'卜'},
-  {note:'D4', ratio:0.14, t:3.750, lyric:'哎'},
-  {note:'C4', ratio:0.00, t:5.000, lyric:'嗨'},{note:'D4', ratio:0.14, t:5.625, lyric:'哟'},
-  {note:'E4', ratio:0.29, t:6.250, lyric:'拔'},{note:'F4', ratio:0.43, t:6.875, lyric:'不'},
-  {note:'G4', ratio:0.57, t:7.500, lyric:'动'},{note:'A4', ratio:0.71, t:8.125, lyric:'哎'},
-  {note:'G4', ratio:0.57, t:8.750, lyric:'哟'},
-  {note:'G4', ratio:0.57, t:10.000, lyric:'爷'},{note:'G4', ratio:0.57, t:10.625, lyric:'爷'},
-  {note:'C5', ratio:1.00, t:11.250, lyric:'来'},{note:'A4', ratio:0.71, t:11.875, lyric:'帮'},
-  {note:'G4', ratio:0.57, t:12.500, lyric:'忙'},{note:'E4', ratio:0.29, t:13.125, lyric:'快'},
-  {note:'D4', ratio:0.14, t:13.750, lyric:'来'},
-  {note:'C4', ratio:0.00, t:15.000, lyric:'一'},{note:'D4', ratio:0.14, t:15.625, lyric:'起'},
-  {note:'E4', ratio:0.29, t:16.250, lyric:'拔'},{note:'D4', ratio:0.14, t:16.875, lyric:'萝'},
-  {note:'C4', ratio:0.00, t:17.500, lyric:'卜'},
-];
-
-// 20. 小燕子 Xiao Yan Zi — Little Swallow (BPM 103)
-const XIAO_YAN_ZI_NOTES = [
-  {note:'E4', ratio:0.29, t:0.000, lyric:'小'},{note:'E4', ratio:0.29, t:0.583, lyric:'燕'},
-  {note:'G4', ratio:0.57, t:1.165, lyric:'子'},{note:'E4', ratio:0.29, t:1.748, lyric:'穿'},
-  {note:'C5', ratio:1.00, t:2.330, lyric:'花'},{note:'G4', ratio:0.57, t:2.913, lyric:'衣'},
-  {note:'E4', ratio:0.29, t:4.078, lyric:'年'},{note:'G4', ratio:0.57, t:4.660, lyric:'年'},
-  {note:'A4', ratio:0.71, t:5.243, lyric:'春'},{note:'G4', ratio:0.57, t:5.825, lyric:'天'},
-  {note:'E4', ratio:0.29, t:6.408, lyric:'来'},{note:'D4', ratio:0.14, t:7.573, lyric:'这'},
-  {note:'C4', ratio:0.00, t:8.738, lyric:'里'},{note:'D4', ratio:0.14, t:9.320, lyric:'我'},
-  {note:'E4', ratio:0.29, t:9.903, lyric:'问'},{note:'G4', ratio:0.57, t:10.485, lyric:'燕'},
-  {note:'E4', ratio:0.29, t:11.068, lyric:'子'},{note:'D4', ratio:0.14, t:11.650, lyric:'你'},
-  {note:'C4', ratio:0.00, t:12.233, lyric:'为'},{note:'D4', ratio:0.14, t:12.816, lyric:'啥'},
-  {note:'E4', ratio:0.29, t:13.398, lyric:'来'},{note:'G4', ratio:0.57, t:13.981, lyric:'这'},
-  {note:'E4', ratio:0.29, t:14.563, lyric:'里'},{note:'C5', ratio:1.00, t:15.146, lyric:'燕'},
-  {note:'G4', ratio:0.57, t:15.728, lyric:'子'},
-];
-
-// 21. Rasa Sayang (BPM 89)
-const RASA_SAYANG_NOTES = [
-  {note:'G4', ratio:0.57, t:0.000, lyric:'Ra-'},{note:'G4', ratio:0.57, t:0.674, lyric:'sa'},
-  {note:'G4', ratio:0.57, t:1.348, lyric:'sa-'},{note:'A4', ratio:0.71, t:2.022, lyric:'yang'},
-  {note:'G4', ratio:0.57, t:2.697, lyric:'hey'},
-  {note:'E4', ratio:0.29, t:4.045, lyric:'ra-'},{note:'G4', ratio:0.57, t:4.719, lyric:'sa'},
-  {note:'G4', ratio:0.57, t:5.393, lyric:'sa-'},{note:'A4', ratio:0.71, t:6.067, lyric:'yang'},
-  {note:'G4', ratio:0.57, t:6.742, lyric:'sa-'},{note:'F4', ratio:0.43, t:7.416, lyric:'yang'},
-  {note:'E4', ratio:0.29, t:8.090, lyric:'hey'},
-  {note:'C4', ratio:0.00, t:9.438, lyric:'Hey'},{note:'E4', ratio:0.29, t:10.112, lyric:'li-'},
-  {note:'G4', ratio:0.57, t:10.787, lyric:'hat'},{note:'E4', ratio:0.29, t:11.461, lyric:'no-'},
-  {note:'C4', ratio:0.00, t:12.135, lyric:'na'},{note:'D4', ratio:0.14, t:12.809, lyric:'ja-'},
-  {note:'E4', ratio:0.29, t:13.483, lyric:'uh'},
-  {note:'G4', ratio:0.57, t:14.831, lyric:'ra-'},{note:'A4', ratio:0.71, t:15.506, lyric:'sa'},
-  {note:'G4', ratio:0.57, t:16.180, lyric:'sa-'},{note:'F4', ratio:0.43, t:16.854, lyric:'yang'},
-  {note:'E4', ratio:0.29, t:17.528, lyric:'hey'},
-];
-
-// 22. Chan Mali Chan (BPM 92)
-const CHAN_MALI_CHAN_NOTES = [
-  {note:'C4', ratio:0.00, t:0.000, lyric:'Chan'},{note:'E4', ratio:0.29, t:0.652, lyric:'ma-'},
-  {note:'G4', ratio:0.57, t:1.304, lyric:'li'},{note:'G4', ratio:0.57, t:1.957, lyric:'chan'},
-  {note:'A4', ratio:0.71, t:2.609, lyric:'chan'},{note:'G4', ratio:0.57, t:3.261, lyric:'ma-'},
-  {note:'E4', ratio:0.29, t:4.565, lyric:'li'},{note:'G4', ratio:0.57, t:5.217, lyric:'chan'},
-  {note:'E4', ratio:0.29, t:5.870, lyric:'chan'},{note:'D4', ratio:0.14, t:6.522, lyric:'ma-'},
-  {note:'C4', ratio:0.00, t:7.174, lyric:'li'},
-  {note:'C4', ratio:0.00, t:8.478, lyric:'Chan'},{note:'E4', ratio:0.29, t:9.130, lyric:'ma-'},
-  {note:'G4', ratio:0.57, t:9.783, lyric:'li'},{note:'G4', ratio:0.57, t:10.435, lyric:'chan'},
-  {note:'A4', ratio:0.71, t:11.087, lyric:'chan'},{note:'G4', ratio:0.57, t:11.739, lyric:'ma-'},
-  {note:'A4', ratio:0.71, t:13.043, lyric:'li'},{note:'G4', ratio:0.57, t:13.696, lyric:'chan'},
-  {note:'F4', ratio:0.43, t:14.348, lyric:'chan'},{note:'E4', ratio:0.29, t:15.000, lyric:'ma-'},
-  {note:'D4', ratio:0.14, t:15.652, lyric:'li'},
-  {note:'E4', ratio:0.29, t:16.957, lyric:'eh'},{note:'G4', ratio:0.57, t:17.609, lyric:'chan'},
-  {note:'G4', ratio:0.57, t:18.261, lyric:'ma-'},{note:'A4', ratio:0.71, t:18.913, lyric:'li'},
-  {note:'G4', ratio:0.57, t:19.565, lyric:'chan'},
-  {note:'C4', ratio:0.00, t:20.870, lyric:'chan'},{note:'E4', ratio:0.29, t:21.522, lyric:'ma-'},
-  {note:'G4', ratio:0.57, t:22.174, lyric:'li'},{note:'A4', ratio:0.71, t:22.826, lyric:'chan'},
-  {note:'G4', ratio:0.57, t:23.478, lyric:'la'},{note:'C4', ratio:0.00, t:24.130, lyric:'la'},
-];
-
-// introOffset = seconds of instrumental intro before singing starts in the MP3.
-// Measured automatically from Demucs-separated vocal tracks; fine-tune by ear if needed.
+// Chart times are absolute seconds in each backing file, so introOffset is 0 for every song.
 const SONG_DATA = {
   twinkle:     { audio: 'audio/1. Twinkle Twinkle Little Star.mp3', chart: TWINKLE_CHART, introOffset: 0, get notes() { return TWINKLE_NOTES; } },
-  brotherjohn: { audio: 'audio/2. Brother John - Two Tigers.mp3',          introOffset: 17.28, get notes() { return BROTHER_JOHN_NOTES; } },
-  humptydumpty:{ audio: 'audio/3. Humpty Dumpty.mp3',                      introOffset: 14.16, get notes() { return HUMPTY_DUMPTY_NOTES; } },
-  headshoulders:{ audio: 'audio/4. Head Shoulders Knees Toes.mp3',         introOffset: 15.72, get notes() { return HEAD_SHOULDERS_NOTES; } },
-  londonbridge:{ audio: 'audio/5. London Bridge.mp3',                      introOffset: 11.45, get notes() { return LONDON_BRIDGE_NOTES; } },
-  itsybitsy:   { audio: 'audio/6. Itsy Bitsy Spider.mp3',                  introOffset:  4.48, get notes() { return ITSY_BITSY_NOTES; } },
-  baabaa:      { audio: 'audio/7. Baa Baa Black Sheep.mp3',                introOffset: 12.17, get notes() { return BAA_BAA_NOTES; } },
-  marylamb:    { audio: 'audio/8. Mary Had A Little Lamb.mp3',             introOffset: 10.12, get notes() { return MARY_LAMB_NOTES; } },
-  rowboat:     { audio: 'audio/9. Row Row Row Your Boat.mp3',              introOffset:  0.49, get notes() { return ROW_BOAT_NOTES; } },
-  moretogether:{ audio: 'audio/10. The More We Get Together.mp3',          introOffset:  0.35, get notes() { return MORE_TOGETHER_NOTES; } },
-  littlebunny: { audio: 'audio/11. Little Bunny.mp3',                      introOffset:  0.56, get notes() { return LITTLE_BUNNY_NOTES; } },
-  rainrain:    { audio: 'audio/12. Rain Rain Go Away.mp3',                 introOffset: 13.54, get notes() { return RAIN_RAIN_NOTES; } },
-  fingerfamily:{ audio: 'audio/13. Finger Family.mp3',                     introOffset:  8.85, get notes() { return FINGER_FAMILY_NOTES; } },
-  wheelsbus:   { audio: 'audio/14. Wheels On The Bus.mp3',                 introOffset: 11.12, get notes() { return WHEELS_BUS_NOTES; } },
-  oldmcdonald: { audio: 'audio/15. Old McDonald Had a Farm.mp3',           introOffset:  5.57, get notes() { return OLD_MCDONALD_NOTES; } },
-  ifhappy:     { audio: "audio/16. If you're happy and you know it.mp3",   introOffset:  7.36, get notes() { return IF_HAPPY_NOTES; } },
-  fivemonkeys: { audio: 'audio/17. 5 Little Monkeys.mp3',                  introOffset:  7.22, get notes() { return FIVE_MONKEYS_NOTES; } },
-  babyshark:   { audio: 'audio/18. Baby Shark.mp3',                        introOffset: 15.53, get notes() { return BABY_SHARK_NOTES; } },
-  baluobo:     { audio: 'audio/19. Ba Luo Bo.mp3',                         introOffset:  8.36, get notes() { return BA_LUO_BO_NOTES; } },
-  xiaoyanzi:   { audio: 'audio/20. Xiao Yan Zi - Little Bird.mp3',         introOffset: 12.65, get notes() { return XIAO_YAN_ZI_NOTES; } },
-  rasasayang:  { audio: 'audio/21. Rasa Sayang.mp3',                       introOffset: 10.26, get notes() { return RASA_SAYANG_NOTES; } },
-  chanmalichan:{ audio: 'audio/22. Chan Mali Chan.mp3',                    introOffset:  9.31, get notes() { return CHAN_MALI_CHAN_NOTES; } },
+  brotherjohn: { audio: 'audio/2. Brother John - Two Tigers.mp3',          introOffset: 0, draft: CATALOGUE_CHARTS.brotherjohn, get notes() { return CATALOGUE_CHARTS.brotherjohn.notes; } },
+  humptydumpty:{ audio: 'audio/3. Humpty Dumpty.mp3',                      introOffset: 0, draft: CATALOGUE_CHARTS.humptydumpty, get notes() { return CATALOGUE_CHARTS.humptydumpty.notes; } },
+  headshoulders:{ audio: 'audio/4. Head Shoulders Knees Toes.mp3',         introOffset: 0, draft: CATALOGUE_CHARTS.headshoulders, get notes() { return CATALOGUE_CHARTS.headshoulders.notes; } },
+  londonbridge:{ audio: 'audio/5. London Bridge.mp3',                      introOffset: 0, draft: CATALOGUE_CHARTS.londonbridge, get notes() { return CATALOGUE_CHARTS.londonbridge.notes; } },
+  itsybitsy:   { audio: 'audio/6. Itsy Bitsy Spider.mp3',                  introOffset: 0, draft: CATALOGUE_CHARTS.itsybitsy, get notes() { return CATALOGUE_CHARTS.itsybitsy.notes; } },
+  baabaa:      { audio: 'audio/7. Baa Baa Black Sheep.mp3',                introOffset: 0, draft: CATALOGUE_CHARTS.baabaa, get notes() { return CATALOGUE_CHARTS.baabaa.notes; } },
+  marylamb:    { audio: 'audio/8. Mary Had A Little Lamb.mp3',             introOffset: 0, draft: CATALOGUE_CHARTS.marylamb, get notes() { return CATALOGUE_CHARTS.marylamb.notes; } },
+  rowboat:     { audio: 'audio/9. Row Row Row Your Boat.mp3',              introOffset: 0, draft: CATALOGUE_CHARTS.rowboat, get notes() { return CATALOGUE_CHARTS.rowboat.notes; } },
+  moretogether:{ audio: 'audio/10. The More We Get Together.mp3',          introOffset: 0, draft: CATALOGUE_CHARTS.moretogether, get notes() { return CATALOGUE_CHARTS.moretogether.notes; } },
+  littlebunny: { audio: 'audio/11. Little Bunny.mp3',                      introOffset: 0, draft: CATALOGUE_CHARTS.littlebunny, get notes() { return CATALOGUE_CHARTS.littlebunny.notes; } },
+  rainrain:    { audio: 'audio/12. Rain Rain Go Away.mp3',                 introOffset: 0, draft: CATALOGUE_CHARTS.rainrain, get notes() { return CATALOGUE_CHARTS.rainrain.notes; } },
+  fingerfamily:{ audio: 'audio/13. Finger Family.mp3',                     introOffset: 0, draft: CATALOGUE_CHARTS.fingerfamily, get notes() { return CATALOGUE_CHARTS.fingerfamily.notes; } },
+  wheelsbus:   { audio: 'audio/14. Wheels On The Bus.mp3',                 introOffset: 0, draft: CATALOGUE_CHARTS.wheelsbus, get notes() { return CATALOGUE_CHARTS.wheelsbus.notes; } },
+  oldmcdonald: { audio: 'audio/15. Old McDonald Had a Farm.mp3',           introOffset: 0, draft: CATALOGUE_CHARTS.oldmcdonald, get notes() { return CATALOGUE_CHARTS.oldmcdonald.notes; } },
+  ifhappy:     { audio: "audio/16. If you're happy and you know it.mp3",   introOffset: 0, draft: CATALOGUE_CHARTS.ifhappy, get notes() { return CATALOGUE_CHARTS.ifhappy.notes; } },
+  fivemonkeys: { audio: 'audio/17. 5 Little Monkeys.mp3',                  introOffset: 0, draft: CATALOGUE_CHARTS.fivemonkeys, get notes() { return CATALOGUE_CHARTS.fivemonkeys.notes; } },
+  babyshark:   { audio: 'audio/18. Baby Shark.mp3',                        introOffset: 0, draft: CATALOGUE_CHARTS.babyshark, get notes() { return CATALOGUE_CHARTS.babyshark.notes; } },
+  baluobo:     { audio: 'audio/19. Ba Luo Bo.mp3',                         introOffset: 0, draft: CATALOGUE_CHARTS.baluobo, get notes() { return CATALOGUE_CHARTS.baluobo.notes; } },
+  xiaoyanzi:   { audio: 'audio/20. Xiao Yan Zi - Little Bird.mp3',         introOffset: 0, draft: CATALOGUE_CHARTS.xiaoyanzi, get notes() { return CATALOGUE_CHARTS.xiaoyanzi.notes; } },
+  rasasayang:  { audio: 'audio/21. Rasa Sayang.mp3',                       introOffset: 0, draft: CATALOGUE_CHARTS.rasasayang, get notes() { return CATALOGUE_CHARTS.rasasayang.notes; } },
+  chanmalichan:{ audio: 'audio/22. Chan Mali Chan.mp3',                    introOffset: 0, draft: CATALOGUE_CHARTS.chanmalichan, get notes() { return CATALOGUE_CHARTS.chanmalichan.notes; } },
 };
 
-// Adapt existing catalogue arrangements; estimated holds are not a recording audit.
+// Catalogue songs use charts drafted from each recording's separated vocal (tools/chart-builder).
+// They are numerical drafts: the owner's listening review is pending for every one of them.
 Object.entries(SONG_DATA).forEach(([key, song]) => {
-  song.chartStatus = key === 'twinkle' ? TWINKLE_CHART.status : 'legacy-unverified';
+  song.chartStatus = song.chart ? song.chart.status : song.draft.status;
   if (song.chart) return;
-  const original=song.notes;
-  song.prototypeNotes=original;
-  const notes=original.map((n,i) => {
-    const midi=songTonicMidi(key)+Math.round(melodySemitones(n.ratio));
-    const duration=Math.max(.08,Math.min(1.25,((original[i+1]?.t ?? n.t+.8)-n.t)*.85));
-    return {...n,midi,note:freqToNoteName(hzOf(midi)),end:n.end ?? n.t+duration,
-      id:`${key}-${i}`,phrase:`${key}-phrase-${Math.floor(i/7)}`};
-  });
+  const notes=song.draft.notes.map((n,i) => ({...n,id:`${key}-${i}`,phrase:`${key}-phrase-${n.phrase}`}));
   Object.defineProperty(song,'notes',{get:()=>notes,configurable:true});
-  song.lyricPhrases=[];
-  for(let i=0;i<notes.length;i+=7) song.lyricPhrases.push([i,Math.min(i+6,notes.length-1)]);
-  const end=notes.at(-1).end+song.introOffset+.8;
-  song.playLevel={start:0,end,fadeStart:end-.6};
+  song.lyricPhrases=song.draft.phrases;
+  song.laneWindow=song.draft.window;
+  song.playLevel=song.draft.level;
 });
 
 async function loadSongBuffer(songKey, ctx) {

@@ -1,0 +1,376 @@
+[
+ {
+  "key": "twinkle",
+  "N": 42,
+  "exact": 42,
+  "octave": 42,
+  "silent": 0,
+  "dur": 89.0,
+  "chart_start": 10.33,
+  "first_voice": 10.4,
+  "chart_end": 39.9,
+  "best": [
+   42,
+   0.0,
+   0
+  ],
+  "med_err": 0.02
+ },
+ {
+  "key": "brotherjohn",
+  "N": 32,
+  "exact": 32,
+  "octave": 32,
+  "silent": 0,
+  "dur": 106.8,
+  "chart_start": 17.32,
+  "first_voice": 17.27,
+  "chart_end": 33.7,
+  "best": [
+   32,
+   0.0,
+   0
+  ],
+  "med_err": 0.02
+ },
+ {
+  "key": "humptydumpty",
+  "N": 68,
+  "exact": 66,
+  "octave": 67,
+  "silent": 0,
+  "dur": 84.0,
+  "chart_start": 14.19,
+  "first_voice": 14.14,
+  "chart_end": 38.4,
+  "best": [
+   67,
+   0.0,
+   0
+  ],
+  "med_err": 0.04
+ },
+ {
+  "key": "headshoulders",
+  "N": 40,
+  "exact": 39,
+  "octave": 39,
+  "silent": 0,
+  "dur": 86.5,
+  "chart_start": 15.72,
+  "first_voice": 15.68,
+  "chart_end": 31.7,
+  "best": [
+   39,
+   0.0,
+   0
+  ],
+  "med_err": 0.03
+ },
+ {
+  "key": "londonbridge",
+  "N": 75,
+  "exact": 75,
+  "octave": 75,
+  "silent": 0,
+  "dur": 95.0,
+  "chart_start": 11.45,
+  "first_voice": 11.35,
+  "chart_end": 43.8,
+  "best": [
+   75,
+   0.0,
+   0
+  ],
+  "med_err": 0.04
+ },
+ {
+  "key": "itsybitsy",
+  "N": 46,
+  "exact": 45,
+  "octave": 45,
+  "silent": 0,
+  "dur": 94.9,
+  "chart_start": 4.5,
+  "first_voice": 4.4,
+  "chart_end": 21.8,
+  "best": [
+   45,
+   0.0,
+   0
+  ],
+  "med_err": 0.06
+ },
+ {
+  "key": "baabaa",
+  "N": 40,
+  "exact": 37,
+  "octave": 37,
+  "silent": 0,
+  "dur": 97.6,
+  "chart_start": 12.17,
+  "first_voice": 12.1,
+  "chart_end": 27.5,
+  "best": [
+   39,
+   -0.05000000000001048,
+   0
+  ],
+  "med_err": 0.05
+ },
+ {
+  "key": "marylamb",
+  "N": 84,
+  "exact": 76,
+  "octave": 78,
+  "silent": 0,
+  "dur": 97.9,
+  "chart_start": 10.13,
+  "first_voice": 10.02,
+  "chart_end": 39.5,
+  "best": [
+   78,
+   0.0,
+   0
+  ],
+  "med_err": 0.07
+ },
+ {
+  "key": "rowboat",
+  "N": 47,
+  "exact": 45,
+  "octave": 45,
+  "silent": 0,
+  "dur": 53.4,
+  "chart_start": 0.5,
+  "first_voice": 0.39,
+  "chart_end": 20.1,
+  "best": [
+   46,
+   0.049999999999989164,
+   0
+  ],
+  "med_err": 0.08
+ },
+ {
+  "key": "moretogether",
+  "N": 57,
+  "exact": 51,
+  "octave": 54,
+  "silent": 0,
+  "dur": 79.4,
+  "chart_start": 10.59,
+  "first_voice": 0.27,
+  "chart_end": 36.7,
+  "best": [
+   54,
+   0.0,
+   0
+  ],
+  "med_err": 0.08
+ },
+ {
+  "key": "littlebunny",
+  "N": 75,
+  "exact": 70,
+  "octave": 72,
+  "silent": 0,
+  "dur": 88.2,
+  "chart_start": 12.5,
+  "first_voice": 0.48,
+  "chart_end": 41.7,
+  "best": [
+   73,
+   0.049999999999989164,
+   0
+  ],
+  "med_err": 0.05
+ },
+ {
+  "key": "rainrain",
+  "N": 47,
+  "exact": 47,
+  "octave": 47,
+  "silent": 0,
+  "dur": 179.8,
+  "chart_start": 13.55,
+  "first_voice": 13.46,
+  "chart_end": 37.3,
+  "best": [
+   47,
+   0.0,
+   0
+  ],
+  "med_err": 0.06
+ },
+ {
+  "key": "fingerfamily",
+  "N": 38,
+  "exact": 38,
+  "octave": 38,
+  "silent": 0,
+  "dur": 105.0,
+  "chart_start": 8.87,
+  "first_voice": 8.81,
+  "chart_end": 25.2,
+  "best": [
+   38,
+   0.0,
+   0
+  ],
+  "med_err": 0.04
+ },
+ {
+  "key": "wheelsbus",
+  "N": 79,
+  "exact": 74,
+  "octave": 75,
+  "silent": 1,
+  "dur": 134.9,
+  "chart_start": 11.13,
+  "first_voice": 11.06,
+  "chart_end": 43.7,
+  "best": [
+   75,
+   0.0,
+   0
+  ],
+  "med_err": 0.06
+ },
+ {
+  "key": "oldmcdonald",
+  "N": 60,
+  "exact": 55,
+  "octave": 55,
+  "silent": 0,
+  "dur": 234.9,
+  "chart_start": 5.58,
+  "first_voice": 5.48,
+  "chart_end": 26.6,
+  "best": [
+   57,
+   0.049999999999989164,
+   0
+  ],
+  "med_err": 0.04
+ },
+ {
+  "key": "ifhappy",
+  "N": 141,
+  "exact": 126,
+  "octave": 137,
+  "silent": 0,
+  "dur": 106.7,
+  "chart_start": 7.37,
+  "first_voice": 7.61,
+  "chart_end": 51.6,
+  "best": [
+   137,
+   0.0,
+   0
+  ],
+  "med_err": 0.06
+ },
+ {
+  "key": "fivemonkeys",
+  "N": 100,
+  "exact": 94,
+  "octave": 95,
+  "silent": 0,
+  "dur": 166.4,
+  "chart_start": 20.83,
+  "first_voice": 7.99,
+  "chart_end": 61.2,
+  "best": [
+   95,
+   0.0,
+   0
+  ],
+  "med_err": 0.04
+ },
+ {
+  "key": "babyshark",
+  "N": 114,
+  "exact": 113,
+  "octave": 113,
+  "silent": 0,
+  "dur": 137.6,
+  "chart_start": 15.55,
+  "first_voice": 15.45,
+  "chart_end": 54.1,
+  "best": [
+   114,
+   0.049999999999989164,
+   0
+  ],
+  "med_err": 0.05
+ },
+ {
+  "key": "baluobo",
+  "N": 68,
+  "exact": 66,
+  "octave": 66,
+  "silent": 0,
+  "dur": 139.8,
+  "chart_start": 8.36,
+  "first_voice": 8.26,
+  "chart_end": 37.8,
+  "best": [
+   68,
+   0.049999999999989164,
+   0
+  ],
+  "med_err": 0.11
+ },
+ {
+  "key": "xiaoyanzi",
+  "N": 43,
+  "exact": 43,
+  "octave": 43,
+  "silent": 0,
+  "dur": 438.4,
+  "chart_start": 12.82,
+  "first_voice": 12.74,
+  "chart_end": 35.1,
+  "best": [
+   43,
+   0.0,
+   0
+  ],
+  "med_err": 0.01
+ },
+ {
+  "key": "rasasayang",
+  "N": 53,
+  "exact": 53,
+  "octave": 53,
+  "silent": 0,
+  "dur": 58.9,
+  "chart_start": 10.28,
+  "first_voice": 10.21,
+  "chart_end": 35.8,
+  "best": [
+   53,
+   0.0,
+   0
+  ],
+  "med_err": 0.04
+ },
+ {
+  "key": "chanmalichan",
+  "N": 64,
+  "exact": 58,
+  "octave": 60,
+  "silent": 0,
+  "dur": 135.6,
+  "chart_start": 9.35,
+  "first_voice": 9.25,
+  "chart_end": 36.6,
+  "best": [
+   60,
+   0.0,
+   0
+  ],
+  "med_err": 0.04
+ }
+]

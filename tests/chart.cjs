@@ -46,7 +46,9 @@ const sandbox=vm.createContext({console,Math,Date,Float32Array,Uint8Array,perfor
 vm.runInContext(html.match(/<script>([\s\S]*?)<\/script>/)[1],sandbox);
 const run=s=>vm.runInContext(s,sandbox);
 run('drawBackground = drawHitZone = drawBird = drawCoin = () => {};');
-assert.equal(run('Object.values(SONG_DATA).filter(s=>s.chartStatus === "legacy-unverified").length'),21);
+// The other 21 songs are recording-based drafts: never legacy, never claimed as owner-approved.
+assert.equal(run('Object.values(SONG_DATA).filter(s=>s.chartStatus === "legacy-unverified").length'),0);
+assert.equal(run('Object.values(SONG_DATA).filter(s=>s.chartStatus === "recording-drafted; owner-listening-pending").length'),21);
 for (const voice of ['Low','Medium','High']) {
  const tones=[];
  sandbox.fakeCtx={destination:{},createGain:()=>({gain:{setValueAtTime:noop,linearRampToValueAtTime:noop},connect:noop}),createOscillator:()=>{const t={frequency:{},connect:noop,start(t){this.startTime=t},stop(t){this.endTime=t}};tones.push(t);return t}};

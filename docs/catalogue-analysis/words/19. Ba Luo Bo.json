@@ -1,0 +1,1582 @@
+{
+"language": "zh",
+"duration": 139.84,
+"words": [
+{
+"start": 7.64,
+"end": 8.36,
+"word": "把",
+"p": 0.167,
+"segment": 1
+},
+{
+"start": 8.36,
+"end": 8.76,
+"word": "萝",
+"p": 0.798,
+"segment": 1
+},
+{
+"start": 8.76,
+"end": 9.02,
+"word": "卜",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 9.3,
+"end": 9.76,
+"word": "把",
+"p": 0.941,
+"segment": 1
+},
+{
+"start": 9.76,
+"end": 10.12,
+"word": "萝",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 10.12,
+"end": 10.56,
+"word": "卜",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 10.56,
+"end": 11.2,
+"word": "嘿",
+"p": 0.795,
+"segment": 2
+},
+{
+"start": 11.2,
+"end": 11.58,
+"word": "呦",
+"p": 0.84,
+"segment": 2
+},
+{
+"start": 11.64,
+"end": 11.9,
+"word": "嘿",
+"p": 0.987,
+"segment": 2
+},
+{
+"start": 11.9,
+"end": 12.24,
+"word": "呦",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 12.28,
+"end": 12.46,
+"word": "把",
+"p": 0.975,
+"segment": 2
+},
+{
+"start": 12.46,
+"end": 12.82,
+"word": "萝",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 12.82,
+"end": 13.2,
+"word": "卜",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 13.2,
+"end": 13.78,
+"word": "嘿",
+"p": 0.975,
+"segment": 3
+},
+{
+"start": 13.78,
+"end": 14.34,
+"word": "呦",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 14.36,
+"end": 14.6,
+"word": "嘿",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 14.6,
+"end": 14.98,
+"word": "呦",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 15.02,
+"end": 15.24,
+"word": "把",
+"p": 0.877,
+"segment": 3
+},
+{
+"start": 15.24,
+"end": 15.46,
+"word": "不",
+"p": 0.532,
+"segment": 3
+},
+{
+"start": 15.46,
+"end": 16.0,
+"word": "动",
+"p": 0.795,
+"segment": 3
+},
+{
+"start": 16.0,
+"end": 16.56,
+"word": "老",
+"p": 0.65,
+"segment": 3
+},
+{
+"start": 16.56,
+"end": 16.92,
+"word": "婆",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 16.92,
+"end": 17.32,
+"word": "婆",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 17.32,
+"end": 18.06,
+"word": "快",
+"p": 0.704,
+"segment": 4
+},
+{
+"start": 18.06,
+"end": 18.28,
+"word": "快",
+"p": 0.848,
+"segment": 4
+},
+{
+"start": 18.28,
+"end": 18.8,
+"word": "来",
+"p": 0.996,
+"segment": 4
+},
+{
+"start": 18.8,
+"end": 19.3,
+"word": "快",
+"p": 0.515,
+"segment": 4
+},
+{
+"start": 19.3,
+"end": 19.72,
+"word": "来",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 19.72,
+"end": 20.16,
+"word": "帮",
+"p": 0.757,
+"segment": 4
+},
+{
+"start": 20.16,
+"end": 20.52,
+"word": "我们",
+"p": 0.993,
+"segment": 4
+},
+{
+"start": 20.52,
+"end": 20.68,
+"word": "把",
+"p": 0.943,
+"segment": 4
+},
+{
+"start": 20.68,
+"end": 21.04,
+"word": "萝",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 21.04,
+"end": 21.52,
+"word": "卜",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 24.1,
+"end": 24.82,
+"word": "把",
+"p": 0.984,
+"segment": 5
+},
+{
+"start": 24.82,
+"end": 25.06,
+"word": "萝",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 25.06,
+"end": 25.62,
+"word": "卜",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 25.62,
+"end": 26.08,
+"word": "把",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 26.08,
+"end": 26.42,
+"word": "萝",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 26.42,
+"end": 26.96,
+"word": "卜",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 26.96,
+"end": 27.5,
+"word": "嘿",
+"p": 0.996,
+"segment": 6
+},
+{
+"start": 27.5,
+"end": 27.88,
+"word": "呦",
+"p": 0.997,
+"segment": 6
+},
+{
+"start": 27.9,
+"end": 28.14,
+"word": "嘿",
+"p": 0.997,
+"segment": 6
+},
+{
+"start": 28.14,
+"end": 28.54,
+"word": "呦",
+"p": 0.996,
+"segment": 6
+},
+{
+"start": 28.56,
+"end": 28.72,
+"word": "把",
+"p": 0.999,
+"segment": 6
+},
+{
+"start": 28.72,
+"end": 29.06,
+"word": "萝",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 29.06,
+"end": 29.42,
+"word": "卜",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 29.42,
+"end": 30.1,
+"word": "嘿",
+"p": 0.364,
+"segment": 7
+},
+{
+"start": 30.1,
+"end": 30.5,
+"word": "呦",
+"p": 0.803,
+"segment": 7
+},
+{
+"start": 30.56,
+"end": 30.86,
+"word": "嘿",
+"p": 0.958,
+"segment": 7
+},
+{
+"start": 30.86,
+"end": 31.2,
+"word": "呦",
+"p": 0.994,
+"segment": 7
+},
+{
+"start": 31.22,
+"end": 31.5,
+"word": "巴",
+"p": 0.839,
+"segment": 7
+},
+{
+"start": 31.5,
+"end": 31.72,
+"word": "不",
+"p": 0.782,
+"segment": 7
+},
+{
+"start": 31.72,
+"end": 32.2,
+"word": "动",
+"p": 0.697,
+"segment": 7
+},
+{
+"start": 32.2,
+"end": 32.74,
+"word": "小",
+"p": 0.692,
+"segment": 7
+},
+{
+"start": 32.74,
+"end": 33.14,
+"word": "姑",
+"p": 0.993,
+"segment": 7
+},
+{
+"start": 33.14,
+"end": 33.56,
+"word": "娘",
+"p": 1.0,
+"segment": 7
+},
+{
+"start": 33.56,
+"end": 34.22,
+"word": "快",
+"p": 0.393,
+"segment": 8
+},
+{
+"start": 34.22,
+"end": 34.5,
+"word": "快",
+"p": 0.948,
+"segment": 8
+},
+{
+"start": 34.5,
+"end": 34.96,
+"word": "来",
+"p": 0.994,
+"segment": 8
+},
+{
+"start": 34.96,
+"end": 35.54,
+"word": "快",
+"p": 0.442,
+"segment": 8
+},
+{
+"start": 35.54,
+"end": 35.9,
+"word": "来",
+"p": 0.998,
+"segment": 8
+},
+{
+"start": 35.9,
+"end": 36.38,
+"word": "帮",
+"p": 0.949,
+"segment": 8
+},
+{
+"start": 36.38,
+"end": 36.7,
+"word": "我们",
+"p": 0.996,
+"segment": 8
+},
+{
+"start": 36.7,
+"end": 36.92,
+"word": "抱",
+"p": 0.609,
+"segment": 8
+},
+{
+"start": 36.92,
+"end": 37.18,
+"word": "萝",
+"p": 0.979,
+"segment": 8
+},
+{
+"start": 37.18,
+"end": 37.64,
+"word": "卜",
+"p": 0.999,
+"segment": 8
+},
+{
+"start": 40.22,
+"end": 40.94,
+"word": "抱",
+"p": 0.792,
+"segment": 9
+},
+{
+"start": 40.94,
+"end": 41.2,
+"word": "萝",
+"p": 0.999,
+"segment": 9
+},
+{
+"start": 41.2,
+"end": 41.72,
+"word": "卜",
+"p": 1.0,
+"segment": 9
+},
+{
+"start": 41.8,
+"end": 42.32,
+"word": "抱",
+"p": 0.927,
+"segment": 9
+},
+{
+"start": 42.32,
+"end": 42.56,
+"word": "萝",
+"p": 1.0,
+"segment": 9
+},
+{
+"start": 42.56,
+"end": 42.98,
+"word": "卜",
+"p": 1.0,
+"segment": 9
+},
+{
+"start": 42.98,
+"end": 43.64,
+"word": "嘿",
+"p": 0.982,
+"segment": 10
+},
+{
+"start": 43.64,
+"end": 44.0,
+"word": "呦",
+"p": 0.995,
+"segment": 10
+},
+{
+"start": 44.02,
+"end": 44.28,
+"word": "嘿",
+"p": 0.996,
+"segment": 10
+},
+{
+"start": 44.28,
+"end": 44.66,
+"word": "呦",
+"p": 0.994,
+"segment": 10
+},
+{
+"start": 44.66,
+"end": 44.9,
+"word": "抱",
+"p": 0.928,
+"segment": 10
+},
+{
+"start": 44.9,
+"end": 45.22,
+"word": "萝",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 45.22,
+"end": 45.78,
+"word": "卜",
+"p": 1.0,
+"segment": 10
+},
+{
+"start": 45.78,
+"end": 46.3,
+"word": "嘿",
+"p": 0.991,
+"segment": 11
+},
+{
+"start": 46.3,
+"end": 46.66,
+"word": "呦",
+"p": 0.997,
+"segment": 11
+},
+{
+"start": 46.68,
+"end": 46.98,
+"word": "嘿",
+"p": 0.997,
+"segment": 11
+},
+{
+"start": 46.98,
+"end": 47.34,
+"word": "呦",
+"p": 0.995,
+"segment": 11
+},
+{
+"start": 47.38,
+"end": 47.58,
+"word": "巴",
+"p": 0.999,
+"segment": 11
+},
+{
+"start": 47.58,
+"end": 47.82,
+"word": "不",
+"p": 1.0,
+"segment": 11
+},
+{
+"start": 47.82,
+"end": 48.32,
+"word": "动",
+"p": 0.999,
+"segment": 11
+},
+{
+"start": 48.32,
+"end": 48.86,
+"word": "小",
+"p": 0.995,
+"segment": 11
+},
+{
+"start": 48.86,
+"end": 49.28,
+"word": "花",
+"p": 0.985,
+"segment": 11
+},
+{
+"start": 49.28,
+"end": 49.64,
+"word": "猫",
+"p": 0.667,
+"segment": 11
+},
+{
+"start": 49.64,
+"end": 50.38,
+"word": "快",
+"p": 0.979,
+"segment": 12
+},
+{
+"start": 50.38,
+"end": 50.64,
+"word": "快",
+"p": 0.995,
+"segment": 12
+},
+{
+"start": 50.64,
+"end": 51.14,
+"word": "来",
+"p": 1.0,
+"segment": 12
+},
+{
+"start": 51.14,
+"end": 51.62,
+"word": "快",
+"p": 0.99,
+"segment": 12
+},
+{
+"start": 51.62,
+"end": 51.96,
+"word": "来",
+"p": 1.0,
+"segment": 12
+},
+{
+"start": 51.96,
+"end": 52.46,
+"word": "帮",
+"p": 0.997,
+"segment": 12
+},
+{
+"start": 52.46,
+"end": 52.72,
+"word": "我们",
+"p": 0.999,
+"segment": 12
+},
+{
+"start": 52.72,
+"end": 53.0,
+"word": "抱",
+"p": 0.996,
+"segment": 12
+},
+{
+"start": 53.0,
+"end": 53.26,
+"word": "萝",
+"p": 1.0,
+"segment": 12
+},
+{
+"start": 53.26,
+"end": 53.7,
+"word": "卜",
+"p": 1.0,
+"segment": 12
+},
+{
+"start": 67.04,
+"end": 67.76,
+"word": "把",
+"p": 0.167,
+"segment": 13
+},
+{
+"start": 67.76,
+"end": 68.14,
+"word": "萝",
+"p": 0.748,
+"segment": 13
+},
+{
+"start": 68.14,
+"end": 68.5,
+"word": "卜",
+"p": 0.996,
+"segment": 13
+},
+{
+"start": 68.74,
+"end": 69.18,
+"word": "把",
+"p": 0.943,
+"segment": 13
+},
+{
+"start": 69.18,
+"end": 69.54,
+"word": "萝",
+"p": 0.998,
+"segment": 13
+},
+{
+"start": 69.54,
+"end": 70.0,
+"word": "卜",
+"p": 1.0,
+"segment": 13
+},
+{
+"start": 70.0,
+"end": 70.7,
+"word": "嘿",
+"p": 0.763,
+"segment": 14
+},
+{
+"start": 70.7,
+"end": 71.06,
+"word": "哟",
+"p": 0.629,
+"segment": 14
+},
+{
+"start": 71.08,
+"end": 71.4,
+"word": "嘿",
+"p": 0.978,
+"segment": 14
+},
+{
+"start": 71.4,
+"end": 71.74,
+"word": "哟",
+"p": 0.999,
+"segment": 14
+},
+{
+"start": 71.78,
+"end": 72.06,
+"word": "把",
+"p": 0.991,
+"segment": 14
+},
+{
+"start": 72.06,
+"end": 72.3,
+"word": "萝",
+"p": 0.999,
+"segment": 14
+},
+{
+"start": 72.3,
+"end": 72.72,
+"word": "卜",
+"p": 1.0,
+"segment": 14
+},
+{
+"start": 72.72,
+"end": 73.38,
+"word": "嘿",
+"p": 0.973,
+"segment": 15
+},
+{
+"start": 73.38,
+"end": 73.8,
+"word": "哟",
+"p": 0.999,
+"segment": 15
+},
+{
+"start": 73.84,
+"end": 74.14,
+"word": "嘿",
+"p": 0.996,
+"segment": 15
+},
+{
+"start": 74.14,
+"end": 74.5,
+"word": "哟",
+"p": 0.999,
+"segment": 15
+},
+{
+"start": 74.54,
+"end": 74.78,
+"word": "把",
+"p": 0.804,
+"segment": 15
+},
+{
+"start": 74.78,
+"end": 75.04,
+"word": "布",
+"p": 0.439,
+"segment": 15
+},
+{
+"start": 75.04,
+"end": 75.64,
+"word": "冬",
+"p": 0.769,
+"segment": 15
+},
+{
+"start": 75.64,
+"end": 76.08,
+"word": "小",
+"p": 0.537,
+"segment": 16
+},
+{
+"start": 76.08,
+"end": 76.5,
+"word": "娃",
+"p": 0.779,
+"segment": 16
+},
+{
+"start": 76.5,
+"end": 76.9,
+"word": "儿",
+"p": 0.931,
+"segment": 16
+},
+{
+"start": 76.9,
+"end": 77.54,
+"word": "快",
+"p": 0.656,
+"segment": 16
+},
+{
+"start": 77.54,
+"end": 77.84,
+"word": "快",
+"p": 0.944,
+"segment": 16
+},
+{
+"start": 77.84,
+"end": 78.32,
+"word": "来",
+"p": 0.996,
+"segment": 16
+},
+{
+"start": 78.32,
+"end": 78.88,
+"word": "快",
+"p": 0.782,
+"segment": 17
+},
+{
+"start": 78.88,
+"end": 79.26,
+"word": "来",
+"p": 0.998,
+"segment": 17
+},
+{
+"start": 79.26,
+"end": 79.72,
+"word": "帮",
+"p": 0.945,
+"segment": 17
+},
+{
+"start": 79.72,
+"end": 80.02,
+"word": "我们",
+"p": 0.994,
+"segment": 17
+},
+{
+"start": 80.02,
+"end": 80.24,
+"word": "把",
+"p": 0.965,
+"segment": 17
+},
+{
+"start": 80.24,
+"end": 80.56,
+"word": "萝",
+"p": 1.0,
+"segment": 17
+},
+{
+"start": 80.56,
+"end": 81.02,
+"word": "卜",
+"p": 1.0,
+"segment": 17
+},
+{
+"start": 86.14,
+"end": 86.86,
+"word": "嘿",
+"p": 0.38,
+"segment": 18
+},
+{
+"start": 88.82,
+"end": 89.58,
+"word": "Hey,",
+"p": 0.427,
+"segment": 19
+},
+{
+"start": 89.7,
+"end": 89.98,
+"word": "big",
+"p": 0.68,
+"segment": 19
+},
+{
+"start": 89.98,
+"end": 90.64,
+"word": "radish,",
+"p": 0.808,
+"segment": 19
+},
+{
+"start": 90.94,
+"end": 91.38,
+"word": "pull",
+"p": 0.997,
+"segment": 19
+},
+{
+"start": 91.38,
+"end": 91.78,
+"word": "it",
+"p": 1.0,
+"segment": 19
+},
+{
+"start": 91.78,
+"end": 92.24,
+"word": "out",
+"p": 1.0,
+"segment": 19
+},
+{
+"start": 92.24,
+"end": 92.88,
+"word": "Hey",
+"p": 0.22,
+"segment": 20
+},
+{
+"start": 92.88,
+"end": 93.14,
+"word": "-oh,",
+"p": 0.672,
+"segment": 20
+},
+{
+"start": 93.22,
+"end": 93.58,
+"word": "hey",
+"p": 0.991,
+"segment": 20
+},
+{
+"start": 93.58,
+"end": 93.9,
+"word": "-oh,",
+"p": 0.997,
+"segment": 20
+},
+{
+"start": 93.92,
+"end": 94.22,
+"word": "pull",
+"p": 0.999,
+"segment": 20
+},
+{
+"start": 94.22,
+"end": 94.52,
+"word": "it",
+"p": 1.0,
+"segment": 20
+},
+{
+"start": 94.52,
+"end": 94.94,
+"word": "out",
+"p": 1.0,
+"segment": 20
+},
+{
+"start": 94.94,
+"end": 96.14,
+"word": "Grandmother,",
+"p": 0.98,
+"segment": 21
+},
+{
+"start": 96.46,
+"end": 97.0,
+"word": "join",
+"p": 0.999,
+"segment": 21
+},
+{
+"start": 97.0,
+"end": 97.24,
+"word": "the",
+"p": 1.0,
+"segment": 21
+},
+{
+"start": 97.24,
+"end": 97.76,
+"word": "line",
+"p": 1.0,
+"segment": 21
+},
+{
+"start": 97.76,
+"end": 98.42,
+"word": "Help",
+"p": 0.989,
+"segment": 22
+},
+{
+"start": 98.42,
+"end": 98.78,
+"word": "us",
+"p": 1.0,
+"segment": 22
+},
+{
+"start": 98.78,
+"end": 99.08,
+"word": "pull",
+"p": 0.999,
+"segment": 22
+},
+{
+"start": 99.08,
+"end": 99.46,
+"word": "the",
+"p": 1.0,
+"segment": 22
+},
+{
+"start": 99.46,
+"end": 100.06,
+"word": "radish",
+"p": 0.993,
+"segment": 22
+},
+{
+"start": 100.06,
+"end": 100.5,
+"word": "out",
+"p": 1.0,
+"segment": 22
+},
+{
+"start": 100.5,
+"end": 101.1,
+"word": "Big",
+"p": 0.991,
+"segment": 23
+},
+{
+"start": 101.1,
+"end": 101.8,
+"word": "radish,",
+"p": 1.0,
+"segment": 23
+},
+{
+"start": 102.24,
+"end": 102.46,
+"word": "pull",
+"p": 1.0,
+"segment": 23
+},
+{
+"start": 102.46,
+"end": 102.84,
+"word": "it",
+"p": 1.0,
+"segment": 23
+},
+{
+"start": 102.84,
+"end": 103.34,
+"word": "out",
+"p": 1.0,
+"segment": 23
+},
+{
+"start": 103.34,
+"end": 103.94,
+"word": "Hey",
+"p": 0.999,
+"segment": 24
+},
+{
+"start": 103.94,
+"end": 104.24,
+"word": "-oh,",
+"p": 1.0,
+"segment": 24
+},
+{
+"start": 104.28,
+"end": 104.6,
+"word": "hey",
+"p": 1.0,
+"segment": 24
+},
+{
+"start": 104.6,
+"end": 104.94,
+"word": "-oh,",
+"p": 1.0,
+"segment": 24
+},
+{
+"start": 104.96,
+"end": 105.24,
+"word": "pull",
+"p": 1.0,
+"segment": 24
+},
+{
+"start": 105.24,
+"end": 105.6,
+"word": "it",
+"p": 1.0,
+"segment": 24
+},
+{
+"start": 105.6,
+"end": 106.0,
+"word": "out",
+"p": 1.0,
+"segment": 24
+},
+{
+"start": 106.0,
+"end": 106.78,
+"word": "Little",
+"p": 0.998,
+"segment": 25
+},
+{
+"start": 106.78,
+"end": 107.4,
+"word": "girl,",
+"p": 1.0,
+"segment": 25
+},
+{
+"start": 107.56,
+"end": 107.96,
+"word": "join",
+"p": 1.0,
+"segment": 25
+},
+{
+"start": 107.96,
+"end": 108.22,
+"word": "the",
+"p": 1.0,
+"segment": 25
+},
+{
+"start": 108.22,
+"end": 108.72,
+"word": "line",
+"p": 1.0,
+"segment": 25
+},
+{
+"start": 108.72,
+"end": 109.34,
+"word": "Help",
+"p": 0.999,
+"segment": 26
+},
+{
+"start": 109.34,
+"end": 109.68,
+"word": "us",
+"p": 1.0,
+"segment": 26
+},
+{
+"start": 109.68,
+"end": 109.94,
+"word": "pull",
+"p": 1.0,
+"segment": 26
+},
+{
+"start": 109.94,
+"end": 110.3,
+"word": "the",
+"p": 1.0,
+"segment": 26
+},
+{
+"start": 110.3,
+"end": 110.9,
+"word": "radish",
+"p": 1.0,
+"segment": 26
+},
+{
+"start": 110.9,
+"end": 111.38,
+"word": "out",
+"p": 1.0,
+"segment": 26
+},
+{
+"start": 114.0,
+"end": 114.76,
+"word": "Big",
+"p": 0.256,
+"segment": 27
+},
+{
+"start": 114.76,
+"end": 115.52,
+"word": "reddish,",
+"p": 0.7,
+"segment": 27
+},
+{
+"start": 115.52,
+"end": 115.88,
+"word": "pull",
+"p": 0.991,
+"segment": 27
+},
+{
+"start": 115.88,
+"end": 116.28,
+"word": "it",
+"p": 0.999,
+"segment": 27
+},
+{
+"start": 116.28,
+"end": 116.74,
+"word": "out",
+"p": 1.0,
+"segment": 27
+},
+{
+"start": 116.74,
+"end": 117.36,
+"word": "Hey",
+"p": 0.311,
+"segment": 27
+},
+{
+"start": 117.36,
+"end": 117.6,
+"word": "-oh,",
+"p": 0.545,
+"segment": 27
+},
+{
+"start": 117.7,
+"end": 118.02,
+"word": "hey",
+"p": 0.945,
+"segment": 27
+},
+{
+"start": 118.02,
+"end": 118.34,
+"word": "-oh,",
+"p": 0.993,
+"segment": 27
+},
+{
+"start": 118.34,
+"end": 118.56,
+"word": "pull",
+"p": 0.995,
+"segment": 27
+},
+{
+"start": 118.56,
+"end": 118.94,
+"word": "it",
+"p": 0.999,
+"segment": 27
+},
+{
+"start": 118.94,
+"end": 119.34,
+"word": "out",
+"p": 1.0,
+"segment": 27
+},
+{
+"start": 119.34,
+"end": 119.98,
+"word": "Kitty",
+"p": 0.952,
+"segment": 28
+},
+{
+"start": 119.98,
+"end": 120.62,
+"word": "cat,",
+"p": 0.854,
+"segment": 28
+},
+{
+"start": 120.86,
+"end": 121.34,
+"word": "join",
+"p": 0.998,
+"segment": 28
+},
+{
+"start": 121.34,
+"end": 121.56,
+"word": "the",
+"p": 1.0,
+"segment": 28
+},
+{
+"start": 121.56,
+"end": 122.06,
+"word": "line",
+"p": 0.999,
+"segment": 28
+},
+{
+"start": 122.06,
+"end": 122.66,
+"word": "Help",
+"p": 0.987,
+"segment": 28
+},
+{
+"start": 122.66,
+"end": 123.0,
+"word": "us",
+"p": 0.999,
+"segment": 28
+},
+{
+"start": 123.0,
+"end": 123.26,
+"word": "pull",
+"p": 0.994,
+"segment": 28
+},
+{
+"start": 123.26,
+"end": 123.64,
+"word": "the",
+"p": 0.999,
+"segment": 28
+},
+{
+"start": 123.64,
+"end": 124.34,
+"word": "reddish",
+"p": 0.988,
+"segment": 28
+},
+{
+"start": 124.34,
+"end": 124.7,
+"word": "out",
+"p": 1.0,
+"segment": 28
+},
+{
+"start": 124.7,
+"end": 125.24,
+"word": "Big",
+"p": 0.976,
+"segment": 29
+},
+{
+"start": 125.24,
+"end": 126.32,
+"word": "reddish,",
+"p": 1.0,
+"segment": 29
+},
+{
+"start": 126.38,
+"end": 126.58,
+"word": "pull",
+"p": 1.0,
+"segment": 29
+},
+{
+"start": 126.58,
+"end": 126.96,
+"word": "it",
+"p": 1.0,
+"segment": 29
+},
+{
+"start": 126.96,
+"end": 127.44,
+"word": "out",
+"p": 1.0,
+"segment": 29
+},
+{
+"start": 127.44,
+"end": 128.04,
+"word": "Hey",
+"p": 0.999,
+"segment": 29
+},
+{
+"start": 128.04,
+"end": 128.32,
+"word": "-oh,",
+"p": 0.999,
+"segment": 29
+},
+{
+"start": 128.38,
+"end": 128.72,
+"word": "hey",
+"p": 1.0,
+"segment": 29
+},
+{
+"start": 128.72,
+"end": 129.02,
+"word": "-oh,",
+"p": 1.0,
+"segment": 29
+},
+{
+"start": 129.04,
+"end": 129.32,
+"word": "pull",
+"p": 1.0,
+"segment": 29
+},
+{
+"start": 129.32,
+"end": 129.64,
+"word": "it",
+"p": 1.0,
+"segment": 29
+},
+{
+"start": 129.64,
+"end": 130.08,
+"word": "out",
+"p": 1.0,
+"segment": 29
+},
+{
+"start": 130.08,
+"end": 130.86,
+"word": "Little",
+"p": 0.996,
+"segment": 30
+},
+{
+"start": 130.86,
+"end": 131.36,
+"word": "duck,",
+"p": 0.998,
+"segment": 30
+},
+{
+"start": 131.54,
+"end": 132.0,
+"word": "join",
+"p": 1.0,
+"segment": 30
+},
+{
+"start": 132.0,
+"end": 132.22,
+"word": "the",
+"p": 1.0,
+"segment": 30
+},
+{
+"start": 132.22,
+"end": 132.74,
+"word": "line",
+"p": 1.0,
+"segment": 30
+},
+{
+"start": 132.74,
+"end": 133.4,
+"word": "Help",
+"p": 0.998,
+"segment": 30
+},
+{
+"start": 133.4,
+"end": 133.76,
+"word": "us",
+"p": 1.0,
+"segment": 30
+},
+{
+"start": 133.76,
+"end": 134.0,
+"word": "pull",
+"p": 0.999,
+"segment": 30
+},
+{
+"start": 134.0,
+"end": 134.36,
+"word": "the",
+"p": 1.0,
+"segment": 30
+},
+{
+"start": 134.36,
+"end": 135.6,
+"word": "reddish",
+"p": 1.0,
+"segment": 30
+},
+{
+"start": 135.6,
+"end": 136.14,
+"word": "out",
+"p": 1.0,
+"segment": 30
+}
+],
+"openingPass": "not needed"
+}

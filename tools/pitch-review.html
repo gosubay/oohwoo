@@ -7,12 +7,12 @@
 <button id="recording" disabled>Check recorded voice and processing speed</button>
 <p id="status">Loading the game’s actual pitch estimator…</p><details><summary>Technical recording report</summary><pre id="report"></pre></details>
 <p>Reported device latency and estimator window age are separate estimates. This page does not measure end-to-end singing delay or score the game.</p>
-<p><a href="../ooh-woo-game.html">Open OohWoo</a> · <a href="twinkle-review.html">Twinkle listening review</a></p>
+<p><a href="../index.html">Open OohWoo</a> · <a href="twinkle-review.html">Twinkle listening review</a></p>
 <script>
 const $=id=>document.getElementById(id);let estimate,chart,ctx,stream,analyser,buffer,liveTimer,starting=false,source,estimatorHash;
 const median=values=>values.sort((a,b)=>a-b)[Math.floor(values.length/2)];
 const sha=async bytes=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');
-async function init(){const html=await(await fetch('../ooh-woo-game.html')).text(),doc=new DOMParser().parseFromString(html,'text/html');chart=JSON.parse(doc.getElementById('twinkle-chart').textContent);
+async function init(){const html=await(await fetch('../index.html')).text(),doc=new DOMParser().parseFromString(html,'text/html');chart=JSON.parse(doc.getElementById('twinkle-chart').textContent);
  const code=html.slice(html.indexOf('const PITCH_RMS_MIN'),html.indexOf('function detectPitch()'));
  const limits=html.match(/const MIN_FREQ = ([\d.]+), MAX_FREQ = ([\d.]+)/);
  estimate=new Function('MIN_FREQ','MAX_FREQ',code+'\nreturn analysePitchPCM;')(Number(limits[1]),Number(limits[2]));

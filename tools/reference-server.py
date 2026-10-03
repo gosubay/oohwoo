@@ -11,7 +11,7 @@ RATE = 11025
 pcm = {}
 
 def analyse():
-    chart_text = re.search(r'<script id="twinkle-chart" type="application/json">(.*?)</script>', (ROOT/'ooh-woo-game.html').read_text(encoding='utf-8'), re.S)[1]
+    chart_text = re.search(r'<script id="twinkle-chart" type="application/json">(.*?)</script>', (ROOT/'index.html').read_text(encoding='utf-8'), re.S)[1]
     chart = json.loads(chart_text)
     src, backing, vocal = [pcm[k] for k in ('source', 'backing', 'vocal')]
     size = min(map(len, (src, backing, vocal)))

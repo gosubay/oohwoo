@@ -2,7 +2,7 @@
 // unless a test explicitly supplies PCM or capture devices.
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 function gameHarness(){
- const html=fs.readFileSync(path.resolve(__dirname,'../ooh-woo-game.html'),'utf8');
+ const html=fs.readFileSync(path.resolve(__dirname,'../index.html'),'utf8');
  const noop=()=>{},elements=new Map();
  const element=id=>{if(!elements.has(id))elements.set(id,{style:{},dataset:{},classList:{add:noop,remove:noop,toggle:noop},addEventListener:noop,querySelectorAll:()=>[],getContext:()=>new Proxy({},{get:()=>noop}),getBoundingClientRect:()=>({width:390,height:844}),textContent:'',innerHTML:''});return elements.get(id)};
  element('twinkle-chart').textContent=html.match(/<script id="twinkle-chart" type="application\/json">([\s\S]*?)<\/script>/)[1];

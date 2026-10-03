@@ -3,7 +3,7 @@
 <style>body{font:16px system-ui;background:#102c28;color:#eef8ef;margin:24px;max-width:1100px}button,input,select{font:inherit;padding:8px;margin:4px}button{cursor:pointer}table{border-collapse:collapse;width:100%}td,th{padding:5px;text-align:left;border-bottom:1px solid #48665c}input[type=number]{width:90px}canvas{width:100%;background:#091e1a}pre{white-space:pre-wrap}a{color:#a4eac0}.active{background:#416647}</style>
 <h1>Twinkle: one verse listening review</h1>
 <p>42 syllables in D major. Recording accuracy and the ending still need a listener’s approval. Use headphones. This tool never requests a microphone.</p>
-<p><a href="../ooh-woo-game.html">Open game</a></p>
+<p><a href="../index.html">Open game</a></p>
 <button id="load">Load three recordings</button><button id="analyse" disabled>Run numerical analysis</button>
 <p id="status">Loading chart…</p>
 <label>Listen to <select id="mix"><option value="source">Original recording</option><option value="backing">Instrumental backing</option><option value="vocal">Separated vocal</option></select></label>
@@ -20,7 +20,7 @@
 let chart, buffers={}, context, playing=[], loopTimer, origin, bounds;
 const $=id=>document.getElementById(id);
 async function init(){
- const html=await(await fetch('../ooh-woo-game.html')).text();
+ const html=await(await fetch('../index.html')).text();
  chart=JSON.parse(new DOMParser().parseFromString(html,'text/html').getElementById('twinkle-chart').textContent);
  chart.phrases.forEach(p=>{const o=new Option(`Phrase ${p.id}: ${chart.notes.slice(p.firstNote,p.lastNote+1).map(n=>n.lyric).join(' ')}`,p.id);$('section').add(o)});
  $('rows').innerHTML=chart.notes.map((n,i)=>`<tr id="row${i}"><td>${n.id}</td><td>${n.lyric}</td>${['midi','onset','end'].map(k=>`<td><input aria-label="${n.id} ${k}" type="number" step="${k==='midi'?1:.01}" data-index="${i}" data-field="${k}" value="${n[k]}"></td>`).join('')}<td>${n.phrase}</td></tr>`).join('');

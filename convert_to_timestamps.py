@@ -1,11 +1,11 @@
 """
 convert_to_timestamps.py
-Reads ooh-woo-game.html, finds every NOTE_ARRAY + its BPM,
+Reads index.html, finds every NOTE_ARRAY + its BPM,
 converts beats -> t (absolute seconds), writes back.
 """
 import re, sys
 
-with open(r'C:\Claude\Code\OohWoo\ooh-woo-game.html', encoding='utf-8') as f:
+with open(r'C:\Claude\Code\OohWoo\index.html', encoding='utf-8') as f:
     src = f.read()
 
 # Map const-name -> bpm from SONG_DATA block
@@ -74,7 +74,7 @@ for const_name, bpm in CONST_TO_BPM.items():
 # Remove bpm fields from SONG_DATA lines like:   bpm: 120 },
 out = re.sub(r',\s*bpm:\s*\d+', '', out)
 
-with open(r'C:\Claude\Code\OohWoo\ooh-woo-game.html', 'w', encoding='utf-8') as f:
+with open(r'C:\Claude\Code\OohWoo\index.html', 'w', encoding='utf-8') as f:
     f.write(out)
 
 print('Done.')

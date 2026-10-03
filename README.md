@@ -42,7 +42,7 @@ python -m http.server 8080
 
 Then open:
 
-`http://localhost:8080/ooh-woo-game.html`
+`http://localhost:8080/index.html`
 
 Use `localhost`; opening the HTML through `file://` blocks microphone access in
 Chrome.
@@ -58,7 +58,7 @@ Chrome.
 
 ## Project Structure
 
-The complete game is in `ooh-woo-game.html`. MP3 backing tracks are stored in
+The complete game is in `index.html`. MP3 backing tracks are stored in
 `audio/`.
 
 See:

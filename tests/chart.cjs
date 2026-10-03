@@ -2,7 +2,7 @@
 const fs = require('node:fs'), path = require('node:path'), vm = require('node:vm');
 const assert = require('node:assert/strict'), crypto = require('node:crypto');
 const root = path.resolve(__dirname, '..');
-const html = fs.readFileSync(path.join(root, 'ooh-woo-game.html'),'utf8');
+const html = fs.readFileSync(path.join(root, 'index.html'),'utf8');
 const chartText = html.match(/<script id="twinkle-chart" type="application\/json">([\s\S]*?)<\/script>/)[1];
 const chart = JSON.parse(chartText);
 const notes = chart.notes;

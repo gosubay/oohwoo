@@ -23,7 +23,7 @@ const sandbox = vm.createContext({
   window: { innerWidth: 390, innerHeight: 844, addEventListener: noop },
   document: { getElementById: element, addEventListener: noop, querySelectorAll: () => [] },
 });
-const html = fs.readFileSync(require('node:path').join(__dirname, '../ooh-woo-game.html'), 'utf8');
+const html = fs.readFileSync(require('node:path').join(__dirname, '../index.html'), 'utf8');
 element('twinkle-chart').textContent = html.match(/<script id="twinkle-chart" type="application\/json">([\s\S]*?)<\/script>/)[1];
 const script = html.match(/<script>([\s\S]*?)<\/script>/)[1];
 vm.runInContext(script, sandbox);

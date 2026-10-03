@@ -6,7 +6,7 @@ A single-file mobile browser rhythm game where you control a bird by singing int
 
 **OohWoo** is a Flappy-Bird-style game played by singing. High pitch = fly up, low pitch = fly down, silence = glide down. Pipes are timed to melody notes (Twinkle Twinkle Little Star). Tropical rainforest theme.
 
-Everything lives in one file: `ooh-woo-game.html`.
+Everything lives in one file: `index.html`.
 
 ## Running it
 
@@ -17,14 +17,14 @@ start-game.bat          # double-click: starts Python server + opens browser
 Or manually:
 ```bash
 python -m http.server 8080
-# then open http://localhost:8080/ooh-woo-game.html
+# then open http://localhost:8080/index.html
 ```
 
 **Must use `localhost` — `file://` blocks microphone access in Chrome.**
 
 ## Architecture
 
-- Single HTML file (`ooh-woo-game.html`) — all game logic, rendering, and audio
+- Single HTML file (`index.html`) — all game logic, rendering, and audio
 - Web Audio API: `getUserMedia` → `AnalyserNode` → autocorrelation pitch detection
 - Canvas 2D rendering: parallax background, animated bird, vine pipes
 - `requestAnimationFrame` game loop at 60fps

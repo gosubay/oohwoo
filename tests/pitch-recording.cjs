@@ -1,6 +1,6 @@
 // Validate real-recording numerical evidence from tools/pitch-review.html.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
-const root=path.resolve(__dirname,'..'),html=fs.readFileSync(path.join(root,'ooh-woo-game.html'),'utf8');
+const root=path.resolve(__dirname,'..'),html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const code=html.slice(html.indexOf('const PITCH_RMS_MIN'),html.indexOf('function detectPitch()')).replace(/\r\n/g,'\n');
 const chart=JSON.parse(html.match(/<script id="twinkle-chart" type="application\/json">([\s\S]*?)<\/script>/)[1]);
 const report=JSON.parse(fs.readFileSync(path.join(root,'docs/step4-browser.json'),'utf8'));

@@ -1,11 +1,11 @@
-"""Write the drafted catalogue charts into ooh-woo-game.html.
+"""Write the drafted catalogue charts into index.html.
 Usage (repository root): python tools/chart-builder/apply_to_game.py
 Replaces only the block between the catalogue-charts markers; Twinkle's chart is never touched.
 """
 import json, os, re
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-HTML = os.path.join(ROOT, 'ooh-woo-game.html')
+HTML = os.path.join(ROOT, 'index.html')
 START = '// <catalogue-charts>'
 END = '// </catalogue-charts>'
 
@@ -35,7 +35,7 @@ lines += ['};', END]
 html = open(HTML, encoding='utf-8', newline='').read()
 eol = '\r\n' if '\r\n' in html else '\n'                      # keep the file's existing line endings
 pattern = re.compile(re.escape(START) + r'[\s\S]*?' + re.escape(END))
-assert pattern.search(html), 'catalogue-charts markers not found in ooh-woo-game.html'
+assert pattern.search(html), 'catalogue-charts markers not found in index.html'
 html = pattern.sub(lambda _: eol.join(lines), html, count=1)
 open(HTML, 'w', encoding='utf-8', newline='').write(html)
 print('wrote', len(charts), 'charts,', sum(len(c['notes']) for c in charts.values()), 'notes')

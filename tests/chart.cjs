@@ -41,7 +41,7 @@ function el(id){if(!elements.has(id))elements.set(id,{style:{},dataset:{},classL
 el('twinkle-chart').textContent=chartText;
 const sandbox=vm.createContext({console,Math,Date,Float32Array,Uint8Array,performance:{now:()=>1000},
  setTimeout:noop,clearTimeout:noop,setInterval:noop,clearInterval:noop,requestAnimationFrame:()=>1,cancelAnimationFrame:noop,
- localStorage:{getItem:()=>null,setItem:noop},navigator:{userAgent:'iPhone test'},window:{innerWidth:390,innerHeight:844,addEventListener:noop},
+ localStorage:{getItem:k=>k==='oohwoo_play_mode_v1'?'quick':null,setItem:noop},navigator:{userAgent:'iPhone test'},window:{innerWidth:390,innerHeight:844,addEventListener:noop},
  document:{getElementById:el,querySelectorAll:()=>[],addEventListener:(event,fn)=>{if(event==='keydown')handlers.push(fn)}}});
 vm.runInContext(html.match(/<script>([\s\S]*?)<\/script>/)[1],sandbox);
 const run=s=>vm.runInContext(s,sandbox);

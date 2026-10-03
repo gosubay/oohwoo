@@ -19,7 +19,7 @@ const sandbox = vm.createContext({
   navigator: { userAgent: 'iPhone test' },
   setInterval: noop, clearInterval: noop, requestAnimationFrame: () => 1,
   cancelAnimationFrame: noop, performance: { now: () => 1000 },
-  localStorage: { getItem: () => null, setItem: noop },
+  localStorage: { getItem: k => k === 'oohwoo_play_mode_v1' ? 'quick' : null, setItem: noop },
   window: { innerWidth: 390, innerHeight: 844, addEventListener: noop },
   document: { getElementById: element, addEventListener: noop, querySelectorAll: () => [] },
 });

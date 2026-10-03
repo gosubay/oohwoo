@@ -4,7 +4,7 @@
 oohwoo/
 
 # Original source MP3s (duplicates of audio/)
-songs/
+/songs/
 
 # Personal settings
 .claude/settings.local.json

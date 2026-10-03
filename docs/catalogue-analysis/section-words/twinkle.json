@@ -1,0 +1,1044 @@
+{
+"vocalSha256": "2da1c493906a5627cbf1dc8529dc7b2f87f403208cad94b7132a97ac3bd74de8",
+"model": "large-v3",
+"blocks": {
+"en": {
+"settings": "a9cc9af019efa041",
+"language": "en",
+"pieces": [
+{
+"start": 9.0,
+"end": 29.67,
+"hinted": [
+{
+"start": 8.7,
+"end": 11.04,
+"word": "Twinkle,",
+"p": 0.935,
+"segment": 1
+},
+{
+"start": 11.28,
+"end": 12.28,
+"word": "twinkle,",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 12.38,
+"end": 13.22,
+"word": "little",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 13.22,
+"end": 14.26,
+"word": "star,",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 14.68,
+"end": 15.4,
+"word": "How",
+"p": 0.135,
+"segment": 1
+},
+{
+"start": 15.4,
+"end": 16.04,
+"word": "I",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 16.04,
+"end": 16.94,
+"word": "wonder",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 16.94,
+"end": 17.84,
+"word": "what",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 17.84,
+"end": 18.46,
+"word": "you",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 18.46,
+"end": 19.2,
+"word": "are!",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 19.64,
+"end": 20.62,
+"word": "Up",
+"p": 0.959,
+"segment": 2
+},
+{
+"start": 20.62,
+"end": 21.26,
+"word": "above",
+"p": 0.93,
+"segment": 2
+},
+{
+"start": 21.26,
+"end": 22.12,
+"word": "the",
+"p": 0.968,
+"segment": 2
+},
+{
+"start": 22.12,
+"end": 22.96,
+"word": "world",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 22.96,
+"end": 23.26,
+"word": "so",
+"p": 0.951,
+"segment": 2
+},
+{
+"start": 23.26,
+"end": 24.02,
+"word": "high,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 24.44,
+"end": 25.42,
+"word": "Like",
+"p": 0.954,
+"segment": 2
+},
+{
+"start": 25.42,
+"end": 25.74,
+"word": "a",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 25.74,
+"end": 26.78,
+"word": "diamond",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 26.78,
+"end": 27.66,
+"word": "in",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 27.66,
+"end": 28.06,
+"word": "the",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 28.06,
+"end": 28.76,
+"word": "sky.",
+"p": 0.999,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 8.7,
+"end": 11.04,
+"word": "Twinkle,",
+"p": 0.936,
+"segment": 1
+},
+{
+"start": 11.28,
+"end": 12.28,
+"word": "twinkle,",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 12.38,
+"end": 13.22,
+"word": "little",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 13.22,
+"end": 14.26,
+"word": "star",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 14.26,
+"end": 15.4,
+"word": "How",
+"p": 0.746,
+"segment": 1
+},
+{
+"start": 15.4,
+"end": 16.04,
+"word": "I",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 16.04,
+"end": 17.0,
+"word": "wonder",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 17.0,
+"end": 17.84,
+"word": "what",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 17.84,
+"end": 18.46,
+"word": "you",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 18.46,
+"end": 19.24,
+"word": "are",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 19.24,
+"end": 20.6,
+"word": "Up",
+"p": 0.893,
+"segment": 2
+},
+{
+"start": 20.6,
+"end": 21.26,
+"word": "above",
+"p": 0.974,
+"segment": 2
+},
+{
+"start": 21.26,
+"end": 22.12,
+"word": "the",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 22.12,
+"end": 22.96,
+"word": "world",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 22.96,
+"end": 23.28,
+"word": "so",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 23.28,
+"end": 24.02,
+"word": "high",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 24.02,
+"end": 25.54,
+"word": "Like",
+"p": 0.99,
+"segment": 2
+},
+{
+"start": 25.54,
+"end": 25.74,
+"word": "a",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 25.74,
+"end": 26.8,
+"word": "diamond",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 26.8,
+"end": 27.66,
+"word": "in",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 27.66,
+"end": 28.06,
+"word": "the",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 28.06,
+"end": 28.76,
+"word": "sky",
+"p": 1.0,
+"segment": 2
+}
+]
+},
+{
+"start": 29.67,
+"end": 41.0,
+"hinted": [
+{
+"start": 29.37,
+"end": 30.61,
+"word": "Twinkle,",
+"p": 0.938,
+"segment": 1
+},
+{
+"start": 30.75,
+"end": 31.77,
+"word": "twinkle,",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 31.87,
+"end": 32.65,
+"word": "little",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 32.65,
+"end": 33.71,
+"word": "star,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 34.11,
+"end": 34.85,
+"word": "How",
+"p": 0.11,
+"segment": 1
+},
+{
+"start": 34.85,
+"end": 35.53,
+"word": "I",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 35.53,
+"end": 36.41,
+"word": "wonder",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 36.41,
+"end": 37.33,
+"word": "what",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 37.33,
+"end": 37.95,
+"word": "you",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 37.95,
+"end": 38.95,
+"word": "are!",
+"p": 1.0,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 29.37,
+"end": 30.61,
+"word": "Twinkle,",
+"p": 0.938,
+"segment": 1
+},
+{
+"start": 30.75,
+"end": 31.77,
+"word": "twinkle,",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 31.87,
+"end": 32.65,
+"word": "little",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 32.65,
+"end": 33.71,
+"word": "star",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 33.71,
+"end": 34.87,
+"word": "How",
+"p": 0.713,
+"segment": 1
+},
+{
+"start": 34.87,
+"end": 35.53,
+"word": "I",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 35.53,
+"end": 36.43,
+"word": "wonder",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 36.43,
+"end": 37.31,
+"word": "what",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 37.31,
+"end": 37.95,
+"word": "you",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 37.95,
+"end": 38.91,
+"word": "are",
+"p": 1.0,
+"segment": 1
+}
+]
+}
+]
+},
+"zh": {
+"settings": "3da7d6bb12f81076",
+"language": "zh",
+"pieces": [
+{
+"start": 48.5,
+"end": 64.73,
+"hinted": [
+{
+"start": 48.2,
+"end": 50.42,
+"word": "一",
+"p": 0.653,
+"segment": 1
+},
+{
+"start": 50.42,
+"end": 51.34,
+"word": "闪",
+"p": 0.585,
+"segment": 1
+},
+{
+"start": 51.34,
+"end": 51.82,
+"word": "一",
+"p": 0.974,
+"segment": 1
+},
+{
+"start": 51.82,
+"end": 52.52,
+"word": "闪",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 52.52,
+"end": 53.04,
+"word": "亮",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 53.04,
+"end": 53.72,
+"word": "晶",
+"p": 0.945,
+"segment": 1
+},
+{
+"start": 53.72,
+"end": 54.3,
+"word": "晶",
+"p": 0.891,
+"segment": 1
+},
+{
+"start": 54.66,
+"end": 55.58,
+"word": "满",
+"p": 0.903,
+"segment": 1
+},
+{
+"start": 55.58,
+"end": 56.1,
+"word": "天",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 56.1,
+"end": 56.84,
+"word": "都是",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 56.84,
+"end": 57.76,
+"word": "小",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 57.76,
+"end": 58.36,
+"word": "星",
+"p": 0.763,
+"segment": 1
+},
+{
+"start": 58.36,
+"end": 59.1,
+"word": "星",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 59.56,
+"end": 60.44,
+"word": "挂",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 60.44,
+"end": 60.9,
+"word": "在",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 60.9,
+"end": 61.58,
+"word": "天",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 61.58,
+"end": 62.14,
+"word": "空",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 62.14,
+"end": 62.74,
+"word": "放",
+"p": 0.942,
+"segment": 1
+},
+{
+"start": 62.74,
+"end": 63.44,
+"word": "光",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 63.44,
+"end": 64.02,
+"word": "明",
+"p": 0.997,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 49.2,
+"end": 50.42,
+"word": "一",
+"p": 0.652,
+"segment": 1
+},
+{
+"start": 50.42,
+"end": 51.3,
+"word": "閃",
+"p": 0.865,
+"segment": 1
+},
+{
+"start": 51.3,
+"end": 51.76,
+"word": "一",
+"p": 0.936,
+"segment": 1
+},
+{
+"start": 51.76,
+"end": 52.52,
+"word": "閃",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 52.52,
+"end": 52.96,
+"word": "亮",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 52.96,
+"end": 53.72,
+"word": "晶",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 53.72,
+"end": 54.24,
+"word": "星",
+"p": 0.48,
+"segment": 1
+},
+{
+"start": 54.24,
+"end": 55.34,
+"word": "滿",
+"p": 0.792,
+"segment": 2
+},
+{
+"start": 55.34,
+"end": 55.98,
+"word": "天",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 55.98,
+"end": 56.86,
+"word": "都是",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 56.86,
+"end": 57.74,
+"word": "小",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 57.74,
+"end": 58.36,
+"word": "星",
+"p": 0.873,
+"segment": 2
+},
+{
+"start": 58.36,
+"end": 59.1,
+"word": "星",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 59.1,
+"end": 60.42,
+"word": "掛",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 60.42,
+"end": 60.9,
+"word": "在",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 60.9,
+"end": 61.58,
+"word": "天",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 61.58,
+"end": 62.14,
+"word": "空",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 62.14,
+"end": 62.72,
+"word": "放",
+"p": 0.917,
+"segment": 3
+},
+{
+"start": 62.72,
+"end": 63.44,
+"word": "光",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 63.44,
+"end": 64.02,
+"word": "明",
+"p": 0.995,
+"segment": 3
+}
+]
+},
+{
+"start": 64.73,
+"end": 82.0,
+"hinted": [
+{
+"start": 64.43,
+"end": 65.65,
+"word": "好像",
+"p": 0.586,
+"segment": 1
+},
+{
+"start": 65.65,
+"end": 66.41,
+"word": "许",
+"p": 0.613,
+"segment": 1
+},
+{
+"start": 66.41,
+"end": 66.91,
+"word": "多",
+"p": 0.914,
+"segment": 1
+},
+{
+"start": 66.91,
+"end": 67.41,
+"word": "小",
+"p": 0.888,
+"segment": 1
+},
+{
+"start": 67.41,
+"end": 68.07,
+"word": "眼",
+"p": 0.938,
+"segment": 1
+},
+{
+"start": 68.07,
+"end": 69.17,
+"word": "睛",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 69.17,
+"end": 70.19,
+"word": "一",
+"p": 0.044,
+"segment": 1
+},
+{
+"start": 70.19,
+"end": 70.95,
+"word": "闪",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 70.95,
+"end": 71.39,
+"word": "一",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 71.39,
+"end": 72.11,
+"word": "闪",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 72.11,
+"end": 72.59,
+"word": "亮",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 72.59,
+"end": 73.23,
+"word": "晶",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 73.23,
+"end": 73.87,
+"word": "晶",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 73.87,
+"end": 75.11,
+"word": "满",
+"p": 0.931,
+"segment": 1
+},
+{
+"start": 75.11,
+"end": 75.59,
+"word": "天",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 75.59,
+"end": 76.31,
+"word": "都是",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 76.31,
+"end": 77.25,
+"word": "小",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 77.25,
+"end": 77.89,
+"word": "星",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 77.89,
+"end": 78.71,
+"word": "星",
+"p": 0.988,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 64.43,
+"end": 65.65,
+"word": "好像",
+"p": 0.586,
+"segment": 1
+},
+{
+"start": 65.65,
+"end": 66.41,
+"word": "许",
+"p": 0.613,
+"segment": 1
+},
+{
+"start": 66.41,
+"end": 66.91,
+"word": "多",
+"p": 0.914,
+"segment": 1
+},
+{
+"start": 66.91,
+"end": 67.41,
+"word": "小",
+"p": 0.888,
+"segment": 1
+},
+{
+"start": 67.41,
+"end": 68.07,
+"word": "眼",
+"p": 0.938,
+"segment": 1
+},
+{
+"start": 68.07,
+"end": 69.17,
+"word": "睛",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 69.17,
+"end": 70.25,
+"word": "一",
+"p": 0.893,
+"segment": 2
+},
+{
+"start": 70.25,
+"end": 70.97,
+"word": "闪",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 70.97,
+"end": 71.39,
+"word": "一",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 71.39,
+"end": 72.11,
+"word": "闪",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 72.11,
+"end": 72.59,
+"word": "亮",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 72.59,
+"end": 73.23,
+"word": "晶",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 73.23,
+"end": 73.85,
+"word": "晶",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 73.85,
+"end": 75.07,
+"word": "满",
+"p": 0.934,
+"segment": 3
+},
+{
+"start": 75.07,
+"end": 75.61,
+"word": "天",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 75.61,
+"end": 76.31,
+"word": "都是",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 76.31,
+"end": 77.25,
+"word": "小",
+"p": 0.992,
+"segment": 3
+},
+{
+"start": 77.25,
+"end": 77.89,
+"word": "星",
+"p": 0.968,
+"segment": 3
+},
+{
+"start": 77.89,
+"end": 78.71,
+"word": "星",
+"p": 0.988,
+"segment": 3
+}
+]
+}
+]
+}
+}
+}

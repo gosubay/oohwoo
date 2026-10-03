@@ -1,0 +1,159 @@
+{
+ "schema": 1,
+ "key": "oldmcdonald",
+ "recording": "15. Old McDonald Had a Farm",
+ "assets": {
+  "source": {
+   "path": "songs/15. Old McDonald Had a Farm.mp3",
+   "sha256": "792b51167415eef8d70cefc0a273f76de2b274c2f9d96e0385d583231757a782"
+  },
+  "backing": {
+   "path": "audio/15. Old McDonald Had a Farm.mp3",
+   "sha256": "c9553a1e015f83bb97a3abba37dd355e7bb90c88a5b7582e21f56b5aae4b0439"
+  },
+  "vocal": {
+   "path": "separated/vocals/15. Old McDonald Had a Farm.mp3",
+   "sha256": "96893a3e30ca2e42074e25f4cba132326e0be48b7b4a177bdc6ba9529e5744f4"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 4.5,
+   "end": 119.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "Old Mac",
+      "Donald had a farm, E-I-E-I-O!",
+      "And on his farm he had a cow, E-I-E-I-O!",
+      "With a moo-moo here, and a moo-moo there,",
+      "Here moo, there moo, everywhere moo-moo,",
+      "Old Mac",
+      "Donald had a farm, E-I-E-I-O!"
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "Old Mac",
+      "Donald had a farm, E-I-E-I-O!",
+      "And on his farm he had a pig, E-I-E-I-O!",
+      "With an oink-oink here, and an oink-oink there,",
+      "Here oink, there oink, everywhere oink-oink,",
+      "Old Mac",
+      "Donald had a farm, E-I-E-I-O!"
+     ]
+    },
+    {
+     "label": "Verse 3",
+     "lines": [
+      "Old Mac",
+      "Donald had a farm, E-I-E-I-O!",
+      "And on his farm he had a duck, E-I-E-I-O!",
+      "With a quack-quack here, and a quack-quack there,",
+      "Here quack, there quack, everywhere quack-quack,",
+      "Old Mac",
+      "Donald had a farm, E-I-E-I-O!"
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "Old Mac",
+      "Donald had a farm, E-I-E-I-O!",
+      "And on his farm he had a horse, E-I-E-I-O!",
+      "With a neigh-neigh here, and a neigh-neigh there,",
+      "Here neigh, there neigh, everywhere neigh-neigh,",
+      "Old Mac",
+      "Donald had a farm, E-I-E-I-O!"
+     ]
+    },
+    {
+     "label": "Verse 5",
+     "lines": [
+      "Old Mac",
+      "Donald had a farm, E-I-E-I-O!",
+      "And on his farm he had a goat, E-I-E-I-O!",
+      "With a meh-meh here, and a meh-meh there,",
+      "Here meh, there meh, everywhere meh-meh,",
+      "Old Mac",
+      "Donald had a farm, E-I-E-I-O!"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 119.0,
+   "end": 234.0,
+   "verses": [
+    {
+     "label": "Verse 6",
+     "lines": [
+      "王老先生有块地，咿呀咿呀哟！",
+      "他在田边养小牛，咿呀咿呀哟！",
+      "这里哞哞哞，那里哞哞哞",
+      "这里哞，那里哞，到处都在哞哞。",
+      "王老先生有块地，咿呀咿呀哟！"
+     ]
+    },
+    {
+     "label": "Verse 7",
+     "lines": [
+      "王老先生有块地，咿呀咿呀哟！",
+      "他在田边养小猪，咿呀咿呀哟！",
+      "这里哼哼哼，那里哼哼哼",
+      "这里哼，那里哼，到处都在哼哼。",
+      "王老先生有块地，咿呀咿呀哟！"
+     ]
+    },
+    {
+     "label": "Verse 8",
+     "lines": [
+      "王老先生有块地，咿呀咿呀哟！",
+      "他在田边养小鸭，咿呀咿呀哟！",
+      "这里呱呱呱，那里呱呱呱，",
+      "这里呱，那里呱，到处都在呱呱。",
+      "王老先生有块地，咿呀咿呀哟！"
+     ]
+    },
+    {
+     "label": "Verse 9",
+     "lines": [
+      "王老先生有块地，咿呀咿呀哟！",
+      "他在田边养小马，咿呀咿呀哟！",
+      "这里嘶嘶嘶，那里嘶嘶嘶，",
+      "这里嘶，那里嘶，到处都在嘶嘶。",
+      "王老先生有块地，咿呀咿呀哟！"
+     ]
+    },
+    {
+     "label": "Verse 10",
+     "lines": [
+      "王老先生有块地，咿呀咿呀哟！",
+      "他在田边养小羊，咿呀咿呀哟！",
+      "这里咩咩咩，那里咩咩咩，",
+      "这里咩，那里咩，到处都在咩咩。",
+      "王老先生有块地，咿呀咿呀哟！"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

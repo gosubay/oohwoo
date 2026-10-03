@@ -1,0 +1,121 @@
+{
+ "schema": 1,
+ "key": "chanmalichan",
+ "recording": "22. Chan Mali Chan",
+ "assets": {
+  "source": {
+   "path": "songs/22. Chan Mali Chan.mp3",
+   "sha256": "eb3bbd7abacc3c59d148083df07917dd1e1a2c7c9fb60e462994e93f4faf1256"
+  },
+  "backing": {
+   "path": "audio/22. Chan Mali Chan.mp3",
+   "sha256": "e81ec158d9ba086f5a284315130a9231fcb54b83d4d7eaff603e37ed3d07c0a2"
+  },
+  "vocal": {
+   "path": "separated/vocals/22. Chan Mali Chan.mp3",
+   "sha256": "ca2bbadc770ad312862a5ad046e56d62a9343d70d937d2da6c0d577b00d0fc92"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "ms",
+   "language": "ms",
+   "start": 7.5,
+   "end": 45.4,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "Di mana dia",
+      "Anak kambing saya?",
+      "Anak kambing saya",
+      "Yang makan daun talas",
+      "Di mana dia",
+      "Buah hati saya",
+      "Buah hati saya",
+      "Bagai telur dikupas"
+     ]
+    },
+    {
+     "label": "Chorus",
+     "lines": [
+      "Chan mali chan (oi oi), chan mali chan (oi oi)",
+      "Chan mali chan, ketipung payung",
+      "Chan mali chan (oi oi), chan mali chan (oi oi)",
+      "Chan mali chan, ketipung payung"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en",
+   "language": "en",
+   "start": 45.4,
+   "end": 83.5,
+   "verses": [
+    {
+     "label": "Verse 2",
+     "lines": [
+      "Where’s my baby now",
+      "Don’t run away from me",
+      "I’m coming for you now",
+      "By the banyan tree right there",
+      "Where’s my baby now",
+      "The darling of my heart",
+      "The darling of my heart",
+      "We will never be apart"
+     ]
+    },
+    {
+     "label": "Chorus",
+     "lines": [
+      "Chan mali chan (oi oi), chan mali chan (oi oi)",
+      "Chan mali chan, where’s my little baby now",
+      "Chan mali chan (oi oi), chan mali chan (oi oi)",
+      "Chan mali chan, where’s my little baby now"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 90.5,
+   "end": 130.0,
+   "verses": [
+    {
+     "label": "Verse 3",
+     "lines": [
+      "你在哪里呀？别现在逃避我",
+      "我现在找你啦就在那棵大树下",
+      "你在哪里呀？",
+      "我的心肝宝贝",
+      "我的心肝宝贝",
+      "我们永远不分离"
+     ]
+    },
+    {
+     "label": "Chorus",
+     "lines": [
+      "Chan mali chan (oi oi), chan mali chan (oi oi)",
+      "Chan mali chan, 我的宝贝躲哪里",
+      "Chan mali chan (oi oi), chan mali chan (oi oi)",
+      "Chan mali chan, 我的宝贝躲哪里"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

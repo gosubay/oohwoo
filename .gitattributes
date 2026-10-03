@@ -1,0 +1,3 @@
+tools/chart-builder/songs/*.json -text
+lyrics_raw.txt -text
+docs/catalogue-analysis/** -text

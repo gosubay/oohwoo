@@ -1,0 +1,3820 @@
+{
+"vocalSha256": "e0b2d87c28a21b190db9aa72aaf0d34a70b7a44d0965ba385bb4914a113e46f1",
+"model": "large-v3",
+"blocks": {
+"zh": {
+"settings": "38ad327173b64d34",
+"language": "zh",
+"pieces": [
+{
+"start": 11.0,
+"end": 36.47,
+"hinted": [
+{
+"start": 10.7,
+"end": 12.76,
+"word": "小",
+"p": 0.863,
+"segment": 1
+},
+{
+"start": 12.76,
+"end": 13.68,
+"word": "燕",
+"p": 0.959,
+"segment": 1
+},
+{
+"start": 13.68,
+"end": 14.22,
+"word": "子，",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 15.14,
+"end": 15.52,
+"word": "穿",
+"p": 0.48,
+"segment": 1
+},
+{
+"start": 15.52,
+"end": 15.88,
+"word": "花",
+"p": 0.934,
+"segment": 1
+},
+{
+"start": 15.88,
+"end": 16.68,
+"word": "衣，",
+"p": 0.971,
+"segment": 1
+},
+{
+"start": 17.3,
+"end": 17.78,
+"word": "年",
+"p": 0.06,
+"segment": 1
+},
+{
+"start": 17.78,
+"end": 18.76,
+"word": "年",
+"p": 0.964,
+"segment": 1
+},
+{
+"start": 18.76,
+"end": 19.08,
+"word": "春",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 19.08,
+"end": 19.68,
+"word": "天",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 19.68,
+"end": 20.28,
+"word": "来",
+"p": 0.042,
+"segment": 1
+},
+{
+"start": 20.28,
+"end": 21.32,
+"word": "这里。",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 21.76,
+"end": 22.76,
+"word": "我",
+"p": 0.02,
+"segment": 1
+},
+{
+"start": 22.76,
+"end": 23.8,
+"word": "问",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 23.8,
+"end": 24.26,
+"word": "燕",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 24.26,
+"end": 24.74,
+"word": "子",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 24.74,
+"end": 24.98,
+"word": "你",
+"p": 0.541,
+"segment": 1
+},
+{
+"start": 24.98,
+"end": 25.32,
+"word": "为",
+"p": 0.815,
+"segment": 1
+},
+{
+"start": 25.32,
+"end": 25.98,
+"word": "啥",
+"p": 0.706,
+"segment": 1
+},
+{
+"start": 25.98,
+"end": 26.68,
+"word": "来，",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 27.48,
+"end": 28.0,
+"word": "燕",
+"p": 0.975,
+"segment": 1
+},
+{
+"start": 28.0,
+"end": 28.5,
+"word": "子",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 28.5,
+"end": 28.98,
+"word": "说，",
+"p": 0.957,
+"segment": 1
+},
+{
+"start": 30.56,
+"end": 30.82,
+"word": "这里",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 30.82,
+"end": 31.22,
+"word": "的",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 31.22,
+"end": 31.5,
+"word": "春",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 31.5,
+"end": 32.24,
+"word": "天",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 32.24,
+"end": 32.76,
+"word": "最",
+"p": 0.906,
+"segment": 1
+},
+{
+"start": 32.76,
+"end": 33.42,
+"word": "美",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 33.42,
+"end": 34.14,
+"word": "丽。",
+"p": 1.0,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 11.7,
+"end": 12.76,
+"word": "小",
+"p": 0.861,
+"segment": 1
+},
+{
+"start": 12.76,
+"end": 13.68,
+"word": "燕",
+"p": 0.96,
+"segment": 1
+},
+{
+"start": 13.68,
+"end": 14.28,
+"word": "子",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 14.44,
+"end": 15.36,
+"word": "春",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 15.36,
+"end": 15.9,
+"word": "花",
+"p": 0.949,
+"segment": 1
+},
+{
+"start": 15.9,
+"end": 16.54,
+"word": "意",
+"p": 0.364,
+"segment": 1
+},
+{
+"start": 16.54,
+"end": 17.82,
+"word": "念",
+"p": 0.705,
+"segment": 2
+},
+{
+"start": 17.82,
+"end": 18.8,
+"word": "念",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 18.8,
+"end": 19.08,
+"word": "春",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 19.08,
+"end": 19.7,
+"word": "天",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 19.7,
+"end": 20.28,
+"word": "來",
+"p": 0.851,
+"segment": 2
+},
+{
+"start": 20.28,
+"end": 21.06,
+"word": "這裡",
+"p": 0.944,
+"segment": 2
+},
+{
+"start": 21.7,
+"end": 22.78,
+"word": "我",
+"p": 0.987,
+"segment": 3
+},
+{
+"start": 22.78,
+"end": 23.78,
+"word": "問",
+"p": 0.976,
+"segment": 3
+},
+{
+"start": 23.78,
+"end": 24.26,
+"word": "燕",
+"p": 0.993,
+"segment": 3
+},
+{
+"start": 24.26,
+"end": 24.76,
+"word": "子",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 24.76,
+"end": 24.98,
+"word": "你",
+"p": 0.706,
+"segment": 3
+},
+{
+"start": 24.98,
+"end": 25.34,
+"word": "為",
+"p": 0.805,
+"segment": 3
+},
+{
+"start": 25.34,
+"end": 25.62,
+"word": "何",
+"p": 0.408,
+"segment": 3
+},
+{
+"start": 25.62,
+"end": 26.64,
+"word": "來",
+"p": 0.988,
+"segment": 3
+},
+{
+"start": 26.64,
+"end": 27.98,
+"word": "燕",
+"p": 0.986,
+"segment": 4
+},
+{
+"start": 27.98,
+"end": 28.46,
+"word": "子",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 28.46,
+"end": 29.0,
+"word": "說",
+"p": 0.994,
+"segment": 4
+},
+{
+"start": 29.7,
+"end": 30.54,
+"word": "這裡",
+"p": 0.507,
+"segment": 5
+},
+{
+"start": 30.54,
+"end": 31.22,
+"word": "的",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 31.22,
+"end": 31.5,
+"word": "春",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 31.5,
+"end": 32.2,
+"word": "天",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 32.2,
+"end": 32.74,
+"word": "最",
+"p": 0.984,
+"segment": 5
+},
+{
+"start": 32.74,
+"end": 33.5,
+"word": "美",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 33.5,
+"end": 34.16,
+"word": "麗",
+"p": 0.999,
+"segment": 5
+}
+]
+},
+{
+"start": 36.47,
+"end": 57.36,
+"hinted": [
+{
+"start": 36.17,
+"end": 37.73,
+"word": "小",
+"p": 0.667,
+"segment": 1
+},
+{
+"start": 37.73,
+"end": 38.65,
+"word": "燕",
+"p": 0.962,
+"segment": 1
+},
+{
+"start": 38.65,
+"end": 39.19,
+"word": "子，",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 40.05,
+"end": 40.83,
+"word": "告诉",
+"p": 0.432,
+"segment": 1
+},
+{
+"start": 40.83,
+"end": 41.67,
+"word": "你，",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 43.19,
+"end": 43.59,
+"word": "今年",
+"p": 0.891,
+"segment": 1
+},
+{
+"start": 43.59,
+"end": 44.35,
+"word": "这里",
+"p": 0.915,
+"segment": 1
+},
+{
+"start": 44.35,
+"end": 45.37,
+"word": "更",
+"p": 0.92,
+"segment": 1
+},
+{
+"start": 45.37,
+"end": 46.03,
+"word": "美",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 46.03,
+"end": 46.71,
+"word": "丽。",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 47.05,
+"end": 47.75,
+"word": "我",
+"p": 0.026,
+"segment": 1
+},
+{
+"start": 47.75,
+"end": 48.85,
+"word": "们",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 48.85,
+"end": 49.23,
+"word": "盖",
+"p": 0.91,
+"segment": 1
+},
+{
+"start": 49.23,
+"end": 49.73,
+"word": "起",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 49.73,
+"end": 50.05,
+"word": "了",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 50.05,
+"end": 50.33,
+"word": "大",
+"p": 0.972,
+"segment": 1
+},
+{
+"start": 50.33,
+"end": 50.99,
+"word": "工",
+"p": 0.052,
+"segment": 1
+},
+{
+"start": 50.99,
+"end": 51.65,
+"word": "厂，",
+"p": 0.689,
+"segment": 1
+},
+{
+"start": 52.57,
+"end": 53.41,
+"word": "装",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 53.41,
+"end": 54.07,
+"word": "上",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 54.07,
+"end": 54.85,
+"word": "了",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 54.85,
+"end": 55.25,
+"word": "新",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 55.25,
+"end": 55.89,
+"word": "机",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 55.89,
+"end": 56.59,
+"word": "器。",
+"p": 1.0,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 37.03,
+"end": 37.73,
+"word": "小",
+"p": 0.667,
+"segment": 1
+},
+{
+"start": 37.73,
+"end": 38.65,
+"word": "燕",
+"p": 0.962,
+"segment": 1
+},
+{
+"start": 38.65,
+"end": 39.17,
+"word": "子",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 39.17,
+"end": 40.61,
+"word": "告訴",
+"p": 0.477,
+"segment": 1
+},
+{
+"start": 40.61,
+"end": 41.65,
+"word": "你",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 42.17,
+"end": 43.19,
+"word": "今年",
+"p": 0.754,
+"segment": 2
+},
+{
+"start": 43.19,
+"end": 44.25,
+"word": "這裡",
+"p": 0.885,
+"segment": 2
+},
+{
+"start": 44.25,
+"end": 45.31,
+"word": "更",
+"p": 0.989,
+"segment": 2
+},
+{
+"start": 45.31,
+"end": 46.07,
+"word": "美",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 46.07,
+"end": 46.83,
+"word": "麗",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 46.83,
+"end": 48.23,
+"word": "我們",
+"p": 0.991,
+"segment": 3
+},
+{
+"start": 48.23,
+"end": 49.19,
+"word": "蓋",
+"p": 0.963,
+"segment": 3
+},
+{
+"start": 49.19,
+"end": 49.73,
+"word": "起",
+"p": 0.831,
+"segment": 3
+},
+{
+"start": 49.73,
+"end": 49.91,
+"word": "了",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 49.91,
+"end": 50.33,
+"word": "大",
+"p": 0.987,
+"segment": 3
+},
+{
+"start": 50.33,
+"end": 50.97,
+"word": "宮",
+"p": 0.675,
+"segment": 3
+},
+{
+"start": 50.97,
+"end": 51.65,
+"word": "朝",
+"p": 0.923,
+"segment": 3
+},
+{
+"start": 52.17,
+"end": 52.87,
+"word": "裝",
+"p": 0.96,
+"segment": 4
+},
+{
+"start": 52.87,
+"end": 54.17,
+"word": "上",
+"p": 0.99,
+"segment": 4
+},
+{
+"start": 54.17,
+"end": 54.83,
+"word": "了",
+"p": 0.996,
+"segment": 4
+},
+{
+"start": 54.83,
+"end": 55.25,
+"word": "新",
+"p": 0.99,
+"segment": 4
+},
+{
+"start": 55.25,
+"end": 55.89,
+"word": "機",
+"p": 0.773,
+"segment": 4
+},
+{
+"start": 55.89,
+"end": 56.61,
+"word": "器",
+"p": 0.999,
+"segment": 4
+}
+]
+},
+{
+"start": 57.36,
+"end": 67.0,
+"hinted": [
+{
+"start": 57.06,
+"end": 58.04,
+"word": "欢",
+"p": 0.102,
+"segment": 1
+},
+{
+"start": 58.04,
+"end": 58.8,
+"word": "迎",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 58.8,
+"end": 59.14,
+"word": "你，",
+"p": 0.961,
+"segment": 1
+},
+{
+"start": 60.28,
+"end": 61.46,
+"word": "长",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 61.46,
+"end": 61.56,
+"word": "期",
+"p": 0.243,
+"segment": 1
+},
+{
+"start": 61.56,
+"end": 62.76,
+"word": "住",
+"p": 0.859,
+"segment": 1
+},
+{
+"start": 62.76,
+"end": 63.12,
+"word": "在",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 63.12,
+"end": 64.08,
+"word": "这里。",
+"p": 0.983,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 57.06,
+"end": 58.04,
+"word": "欢",
+"p": 0.102,
+"segment": 1
+},
+{
+"start": 58.04,
+"end": 58.8,
+"word": "迎",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 58.8,
+"end": 59.14,
+"word": "你",
+"p": 0.961,
+"segment": 1
+},
+{
+"start": 59.86,
+"end": 60.62,
+"word": "珍",
+"p": 0.525,
+"segment": 2
+},
+{
+"start": 60.62,
+"end": 61.66,
+"word": "惜",
+"p": 0.99,
+"segment": 2
+},
+{
+"start": 61.66,
+"end": 62.78,
+"word": "住",
+"p": 0.895,
+"segment": 2
+},
+{
+"start": 62.78,
+"end": 63.26,
+"word": "在",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 63.26,
+"end": 64.1,
+"word": "这里",
+"p": 0.993,
+"segment": 2
+}
+]
+}
+]
+},
+"en": {
+"settings": "d1053f06fea70b67",
+"language": "en",
+"pieces": [
+{
+"start": 92.5,
+"end": 111.9,
+"hinted": [
+{
+"start": 93.84,
+"end": 95.24,
+"word": "Little",
+"p": 0.614,
+"segment": 1
+},
+{
+"start": 95.24,
+"end": 96.16,
+"word": "bird,",
+"p": 0.854,
+"segment": 1
+},
+{
+"start": 96.64,
+"end": 97.36,
+"word": "coat",
+"p": 0.784,
+"segment": 1
+},
+{
+"start": 97.36,
+"end": 98.16,
+"word": "of",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 98.16,
+"end": 98.76,
+"word": "flowers",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 98.76,
+"end": 100.86,
+"word": "Greeting",
+"p": 0.673,
+"segment": 1
+},
+{
+"start": 100.86,
+"end": 101.06,
+"word": "me",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 101.06,
+"end": 102.2,
+"word": "through",
+"p": 0.96,
+"segment": 1
+},
+{
+"start": 102.2,
+"end": 102.86,
+"word": "spring",
+"p": 0.965,
+"segment": 1
+},
+{
+"start": 102.86,
+"end": 103.66,
+"word": "showers",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 103.66,
+"end": 104.98,
+"word": "Little",
+"p": 0.94,
+"segment": 1
+},
+{
+"start": 104.98,
+"end": 106.26,
+"word": "bird,",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 106.4,
+"end": 106.74,
+"word": "why",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 106.74,
+"end": 107.3,
+"word": "are",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 107.3,
+"end": 108.02,
+"word": "you",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 108.02,
+"end": 108.76,
+"word": "here?",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 109.16,
+"end": 109.74,
+"word": "The",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 109.74,
+"end": 110.36,
+"word": "spring",
+"p": 0.962,
+"segment": 1
+},
+{
+"start": 110.36,
+"end": 111.16,
+"word": "here",
+"p": 0.945,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 93.84,
+"end": 95.24,
+"word": "Little",
+"p": 0.614,
+"segment": 1
+},
+{
+"start": 95.24,
+"end": 96.16,
+"word": "bird,",
+"p": 0.854,
+"segment": 1
+},
+{
+"start": 96.64,
+"end": 97.36,
+"word": "coat",
+"p": 0.784,
+"segment": 1
+},
+{
+"start": 97.36,
+"end": 98.16,
+"word": "of",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 98.16,
+"end": 98.76,
+"word": "flowers",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 98.76,
+"end": 100.86,
+"word": "Greeting",
+"p": 0.673,
+"segment": 1
+},
+{
+"start": 100.86,
+"end": 101.06,
+"word": "me",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 101.06,
+"end": 102.2,
+"word": "through",
+"p": 0.96,
+"segment": 1
+},
+{
+"start": 102.2,
+"end": 102.86,
+"word": "spring",
+"p": 0.965,
+"segment": 1
+},
+{
+"start": 102.86,
+"end": 103.66,
+"word": "showers",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 104.2,
+"end": 104.98,
+"word": "Little",
+"p": 0.94,
+"segment": 2
+},
+{
+"start": 104.98,
+"end": 106.26,
+"word": "bird,",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 106.4,
+"end": 106.74,
+"word": "why",
+"p": 0.987,
+"segment": 2
+},
+{
+"start": 106.74,
+"end": 107.3,
+"word": "are",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 107.3,
+"end": 108.02,
+"word": "you",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 108.02,
+"end": 108.76,
+"word": "here?",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 109.16,
+"end": 109.74,
+"word": "The",
+"p": 0.977,
+"segment": 2
+},
+{
+"start": 109.74,
+"end": 110.36,
+"word": "spring",
+"p": 0.962,
+"segment": 2
+},
+{
+"start": 110.36,
+"end": 111.16,
+"word": "here",
+"p": 0.945,
+"segment": 2
+}
+]
+},
+{
+"start": 111.9,
+"end": 124.58,
+"hinted": [
+{
+"start": 111.6,
+"end": 112.58,
+"word": "is",
+"p": 0.14,
+"segment": 1
+},
+{
+"start": 112.58,
+"end": 113.22,
+"word": "the",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 113.22,
+"end": 114.8,
+"word": "prettiest",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 114.8,
+"end": 117.18,
+"word": "I’ve",
+"p": 0.404,
+"segment": 1
+},
+{
+"start": 117.18,
+"end": 117.44,
+"word": "seen",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 117.44,
+"end": 120.02,
+"word": "Little",
+"p": 0.292,
+"segment": 1
+},
+{
+"start": 120.02,
+"end": 121.3,
+"word": "bird,",
+"p": 0.936,
+"segment": 1
+},
+{
+"start": 121.6,
+"end": 122.92,
+"word": "I’ve",
+"p": 0.753,
+"segment": 1
+},
+{
+"start": 122.92,
+"end": 123.06,
+"word": "news",
+"p": 0.118,
+"segment": 1
+},
+{
+"start": 123.06,
+"end": 123.36,
+"word": "for",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 123.36,
+"end": 123.82,
+"word": "you",
+"p": 0.998,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 111.6,
+"end": 112.24,
+"word": "He",
+"p": 0.242,
+"segment": 1
+},
+{
+"start": 112.24,
+"end": 112.92,
+"word": "is",
+"p": 0.658,
+"segment": 1
+},
+{
+"start": 112.92,
+"end": 113.18,
+"word": "the",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 113.18,
+"end": 114.82,
+"word": "prettiest",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 114.82,
+"end": 116.98,
+"word": "I've",
+"p": 0.911,
+"segment": 1
+},
+{
+"start": 116.98,
+"end": 117.48,
+"word": "seen",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 119.28,
+"end": 120.02,
+"word": "Little",
+"p": 0.379,
+"segment": 2
+},
+{
+"start": 120.02,
+"end": 121.3,
+"word": "bird,",
+"p": 0.973,
+"segment": 2
+},
+{
+"start": 121.58,
+"end": 122.8,
+"word": "I've",
+"p": 0.989,
+"segment": 2
+},
+{
+"start": 122.8,
+"end": 123.14,
+"word": "nosed",
+"p": 0.492,
+"segment": 2
+},
+{
+"start": 123.14,
+"end": 123.38,
+"word": "for",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 123.38,
+"end": 123.78,
+"word": "you",
+"p": 1.0,
+"segment": 2
+}
+]
+},
+{
+"start": 124.58,
+"end": 139.75,
+"hinted": [
+{
+"start": 124.28,
+"end": 125.22,
+"word": "This",
+"p": 0.769,
+"segment": 1
+},
+{
+"start": 125.22,
+"end": 126.28,
+"word": "place",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 126.28,
+"end": 126.9,
+"word": "is",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 126.9,
+"end": 127.16,
+"word": "more",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 127.16,
+"end": 127.8,
+"word": "beautiful",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 127.8,
+"end": 128.74,
+"word": "too",
+"p": 0.784,
+"segment": 1
+},
+{
+"start": 128.74,
+"end": 130.06,
+"word": "We",
+"p": 0.659,
+"segment": 1
+},
+{
+"start": 130.06,
+"end": 131.32,
+"word": "built",
+"p": 0.877,
+"segment": 1
+},
+{
+"start": 131.32,
+"end": 131.9,
+"word": "a",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 131.9,
+"end": 132.3,
+"word": "big",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 132.3,
+"end": 133.08,
+"word": "factory",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 133.08,
+"end": 135.3,
+"word": "Filled",
+"p": 0.775,
+"segment": 1
+},
+{
+"start": 135.3,
+"end": 136.44,
+"word": "with",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 136.44,
+"end": 138.24,
+"word": "machinery",
+"p": 0.921,
+"segment": 1
+},
+{
+"start": 138.24,
+"end": 139.02,
+"word": "Greenery.",
+"p": 0.505,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 124.28,
+"end": 125.22,
+"word": "This",
+"p": 0.769,
+"segment": 1
+},
+{
+"start": 125.22,
+"end": 126.28,
+"word": "place",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 126.28,
+"end": 126.9,
+"word": "is",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 126.9,
+"end": 127.16,
+"word": "more",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 127.16,
+"end": 127.8,
+"word": "beautiful",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 127.8,
+"end": 128.74,
+"word": "too",
+"p": 0.784,
+"segment": 1
+},
+{
+"start": 129.28,
+"end": 130.06,
+"word": "We",
+"p": 0.659,
+"segment": 2
+},
+{
+"start": 130.06,
+"end": 131.32,
+"word": "built",
+"p": 0.877,
+"segment": 2
+},
+{
+"start": 131.32,
+"end": 131.9,
+"word": "a",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 131.9,
+"end": 132.3,
+"word": "big",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 132.3,
+"end": 133.08,
+"word": "factory",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 134.28,
+"end": 135.3,
+"word": "Filled",
+"p": 0.775,
+"segment": 3
+},
+{
+"start": 135.3,
+"end": 136.44,
+"word": "with",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 136.44,
+"end": 138.24,
+"word": "machinery",
+"p": 0.921,
+"segment": 3
+}
+]
+},
+{
+"start": 139.75,
+"end": 152.0,
+"hinted": [
+{
+"start": 139.45,
+"end": 140.31,
+"word": "Feel",
+"p": 0.833,
+"segment": 1
+},
+{
+"start": 140.31,
+"end": 141.49,
+"word": "free",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 141.49,
+"end": 142.61,
+"word": "to",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 142.61,
+"end": 143.93,
+"word": "stay",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 143.93,
+"end": 145.21,
+"word": "here",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 145.21,
+"end": 147.39,
+"word": "indefinitely",
+"p": 0.878,
+"segment": 1
+},
+{
+"start": 147.39,
+"end": 147.75,
+"word": "Definitely",
+"p": 0.112,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 139.45,
+"end": 140.31,
+"word": "Feel",
+"p": 0.833,
+"segment": 1
+},
+{
+"start": 140.31,
+"end": 141.49,
+"word": "free",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 141.49,
+"end": 142.61,
+"word": "to",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 142.61,
+"end": 143.93,
+"word": "stay",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 143.93,
+"end": 145.21,
+"word": "here",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 145.21,
+"end": 147.39,
+"word": "indefinitely",
+"p": 0.878,
+"segment": 1
+}
+]
+}
+]
+},
+"coda": {
+"settings": "d4f3d06bcc451ede",
+"language": "zh",
+"pieces": [
+{
+"start": 175.0,
+"end": 184.11,
+"hinted": [
+{
+"start": 176.84,
+"end": 178.24,
+"word": "小",
+"p": 0.711,
+"segment": 1
+},
+{
+"start": 178.24,
+"end": 179.18,
+"word": "燕",
+"p": 0.96,
+"segment": 1
+},
+{
+"start": 179.18,
+"end": 179.82,
+"word": "子，",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 180.68,
+"end": 181.78,
+"word": "穿",
+"p": 0.567,
+"segment": 1
+},
+{
+"start": 181.78,
+"end": 182.0,
+"word": "花",
+"p": 0.942,
+"segment": 1
+},
+{
+"start": 182.0,
+"end": 182.6,
+"word": "衣，",
+"p": 0.981,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 177.24,
+"end": 178.56,
+"word": "小",
+"p": 0.708,
+"segment": 1
+},
+{
+"start": 178.56,
+"end": 179.22,
+"word": "燕",
+"p": 0.96,
+"segment": 1
+},
+{
+"start": 179.22,
+"end": 179.86,
+"word": "子",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 179.86,
+"end": 181.76,
+"word": "穿",
+"p": 0.862,
+"segment": 1
+},
+{
+"start": 181.76,
+"end": 182.14,
+"word": "花",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 182.14,
+"end": 182.6,
+"word": "衣",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 182.6,
+"end": 184.38,
+"word": "小",
+"p": 0.257,
+"segment": 2
+},
+{
+"start": 184.38,
+"end": 184.38,
+"word": "燕",
+"p": 0.973,
+"segment": 2
+},
+{
+"start": 184.38,
+"end": 184.38,
+"word": "子",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 184.38,
+"end": 184.38,
+"word": "穿",
+"p": 0.97,
+"segment": 2
+},
+{
+"start": 184.38,
+"end": 184.38,
+"word": "花",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 184.38,
+"end": 184.38,
+"word": "衣",
+"p": 1.0,
+"segment": 2
+}
+]
+},
+{
+"start": 184.11,
+"end": 202.06,
+"hinted": [
+{
+"start": 187.41,
+"end": 188.81,
+"word": "小",
+"p": 0.641,
+"segment": 1
+},
+{
+"start": 188.81,
+"end": 189.73,
+"word": "燕",
+"p": 0.904,
+"segment": 1
+},
+{
+"start": 189.73,
+"end": 190.41,
+"word": "子，",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 191.93,
+"end": 194.49,
+"word": "小",
+"p": 0.031,
+"segment": 1
+},
+{
+"start": 194.49,
+"end": 195.89,
+"word": "燕",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 195.89,
+"end": 196.73,
+"word": "子，",
+"p": 0.995,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 187.41,
+"end": 188.81,
+"word": "小",
+"p": 0.641,
+"segment": 1
+},
+{
+"start": 188.81,
+"end": 189.71,
+"word": "燕",
+"p": 0.905,
+"segment": 1
+},
+{
+"start": 189.71,
+"end": 190.41,
+"word": "子",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 193.09,
+"end": 194.49,
+"word": "小",
+"p": 0.583,
+"segment": 2
+},
+{
+"start": 194.49,
+"end": 195.89,
+"word": "燕",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 195.89,
+"end": 196.81,
+"word": "子",
+"p": 1.0,
+"segment": 2
+}
+]
+},
+{
+"start": 202.06,
+"end": 210.29,
+"hinted": [
+{
+"start": 201.76,
+"end": 201.82,
+"word": "请",
+"p": 0.001,
+"segment": 1
+},
+{
+"start": 201.82,
+"end": 203.84,
+"word": "不",
+"p": 0.745,
+"segment": 1
+},
+{
+"start": 203.84,
+"end": 203.84,
+"word": "吝",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 203.84,
+"end": 204.56,
+"word": "点",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 204.56,
+"end": 204.56,
+"word": "赞",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 204.56,
+"end": 204.56,
+"word": "订",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 204.56,
+"end": 204.56,
+"word": "阅",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 204.56,
+"end": 206.56,
+"word": "转",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 206.56,
+"end": 206.56,
+"word": "发",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 206.56,
+"end": 206.56,
+"word": "打",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 206.56,
+"end": 206.56,
+"word": "赏",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 206.56,
+"end": 206.56,
+"word": "支持",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 206.56,
+"end": 206.56,
+"word": "明",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 206.56,
+"end": 206.56,
+"word": "镜",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 206.56,
+"end": 206.56,
+"word": "与",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 206.56,
+"end": 206.56,
+"word": "点",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 206.56,
+"end": 206.56,
+"word": "点",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 206.56,
+"end": 206.56,
+"word": "栏",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 206.56,
+"end": 206.56,
+"word": "目",
+"p": 1.0,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 201.76,
+"end": 201.82,
+"word": "詞",
+"p": 0.493,
+"segment": 1
+},
+{
+"start": 201.82,
+"end": 202.5,
+"word": "曲",
+"p": 0.392,
+"segment": 1
+},
+{
+"start": 202.52,
+"end": 203.4,
+"word": "李",
+"p": 0.572,
+"segment": 1
+},
+{
+"start": 203.4,
+"end": 205.12,
+"word": "宗",
+"p": 0.808,
+"segment": 1
+},
+{
+"start": 205.12,
+"end": 205.4,
+"word": "盛",
+"p": 0.998,
+"segment": 1
+}
+]
+},
+{
+"start": 210.29,
+"end": 218.2,
+"hinted": [
+{
+"start": 211.73,
+"end": 213.13,
+"word": "小",
+"p": 0.809,
+"segment": 1
+},
+{
+"start": 213.13,
+"end": 214.05,
+"word": "燕",
+"p": 0.957,
+"segment": 1
+},
+{
+"start": 214.05,
+"end": 214.67,
+"word": "子，",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 215.33,
+"end": 216.15,
+"word": "穿",
+"p": 0.487,
+"segment": 1
+},
+{
+"start": 216.15,
+"end": 216.37,
+"word": "花",
+"p": 0.954,
+"segment": 1
+},
+{
+"start": 216.37,
+"end": 217.15,
+"word": "衣，",
+"p": 0.967,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 211.75,
+"end": 213.15,
+"word": "小",
+"p": 0.808,
+"segment": 1
+},
+{
+"start": 213.15,
+"end": 214.05,
+"word": "燕",
+"p": 0.957,
+"segment": 1
+},
+{
+"start": 214.05,
+"end": 214.71,
+"word": "子",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 214.71,
+"end": 215.95,
+"word": "穿",
+"p": 0.531,
+"segment": 1
+},
+{
+"start": 215.95,
+"end": 216.53,
+"word": "花",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 216.53,
+"end": 217.15,
+"word": "衣",
+"p": 0.988,
+"segment": 1
+}
+]
+},
+{
+"start": 218.2,
+"end": 243.76,
+"hinted": [
+{
+"start": 217.9,
+"end": 219.0,
+"word": "小",
+"p": 0.844,
+"segment": 1
+},
+{
+"start": 219.0,
+"end": 219.44,
+"word": "燕",
+"p": 0.942,
+"segment": 1
+},
+{
+"start": 219.44,
+"end": 219.88,
+"word": "子，",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 221.1,
+"end": 223.4,
+"word": "小",
+"p": 0.088,
+"segment": 1
+},
+{
+"start": 223.4,
+"end": 224.4,
+"word": "燕",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 224.4,
+"end": 225.02,
+"word": "子，",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 225.84,
+"end": 226.64,
+"word": "穿",
+"p": 0.73,
+"segment": 1
+},
+{
+"start": 226.64,
+"end": 227.2,
+"word": "花",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 227.2,
+"end": 227.7,
+"word": "衣。",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 228.54,
+"end": 229.24,
+"word": "小",
+"p": 0.733,
+"segment": 2
+},
+{
+"start": 229.24,
+"end": 230.0,
+"word": "燕",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 230.0,
+"end": 230.62,
+"word": "子，",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 231.94,
+"end": 233.92,
+"word": "小",
+"p": 0.811,
+"segment": 2
+},
+{
+"start": 233.92,
+"end": 234.82,
+"word": "燕",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 234.82,
+"end": 235.48,
+"word": "子，",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 236.12,
+"end": 236.78,
+"word": "穿",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 236.78,
+"end": 237.94,
+"word": "花",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 237.94,
+"end": 239.46,
+"word": "衣。",
+"p": 1.0,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 217.9,
+"end": 219.0,
+"word": "小",
+"p": 0.845,
+"segment": 1
+},
+{
+"start": 219.0,
+"end": 219.44,
+"word": "燕",
+"p": 0.942,
+"segment": 1
+},
+{
+"start": 219.44,
+"end": 219.88,
+"word": "子",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 219.88,
+"end": 222.7,
+"word": "小",
+"p": 0.551,
+"segment": 1
+},
+{
+"start": 222.7,
+"end": 224.42,
+"word": "燕",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 224.42,
+"end": 225.24,
+"word": "子",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 225.24,
+"end": 226.64,
+"word": "穿",
+"p": 0.797,
+"segment": 1
+},
+{
+"start": 226.64,
+"end": 227.2,
+"word": "花",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 227.2,
+"end": 227.92,
+"word": "衣",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 227.92,
+"end": 229.22,
+"word": "小",
+"p": 0.788,
+"segment": 2
+},
+{
+"start": 229.22,
+"end": 230.1,
+"word": "燕",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 230.1,
+"end": 230.62,
+"word": "子",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 230.62,
+"end": 233.8,
+"word": "小",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 233.8,
+"end": 234.84,
+"word": "燕",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 234.84,
+"end": 235.52,
+"word": "子",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 235.52,
+"end": 236.9,
+"word": "穿",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 236.9,
+"end": 238.04,
+"word": "花",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 238.04,
+"end": 239.56,
+"word": "衣",
+"p": 1.0,
+"segment": 2
+}
+]
+},
+{
+"start": 243.76,
+"end": 269.15,
+"hinted": [
+{
+"start": 243.46,
+"end": 244.4,
+"word": "小",
+"p": 0.602,
+"segment": 1
+},
+{
+"start": 244.4,
+"end": 246.38,
+"word": "燕",
+"p": 0.794,
+"segment": 1
+},
+{
+"start": 246.38,
+"end": 247.44,
+"word": "子",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 253.4,
+"end": 254.1,
+"word": "小",
+"p": 0.737,
+"segment": 2
+},
+{
+"start": 254.1,
+"end": 255.3,
+"word": "燕",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 255.3,
+"end": 256.16,
+"word": "子",
+"p": 1.0,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 243.46,
+"end": 244.4,
+"word": "小",
+"p": 0.602,
+"segment": 1
+},
+{
+"start": 244.4,
+"end": 246.38,
+"word": "燕",
+"p": 0.794,
+"segment": 1
+},
+{
+"start": 246.38,
+"end": 247.44,
+"word": "子",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 253.4,
+"end": 254.1,
+"word": "小",
+"p": 0.737,
+"segment": 2
+},
+{
+"start": 254.1,
+"end": 255.3,
+"word": "燕",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 255.3,
+"end": 256.16,
+"word": "子",
+"p": 1.0,
+"segment": 2
+}
+]
+},
+{
+"start": 269.15,
+"end": 279.05,
+"hinted": [
+{
+"start": 271.59,
+"end": 272.99,
+"word": "”",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 272.99,
+"end": 273.85,
+"word": "小",
+"p": 0.042,
+"segment": 1
+},
+{
+"start": 273.85,
+"end": 274.81,
+"word": "燕",
+"p": 0.934,
+"segment": 1
+},
+{
+"start": 274.81,
+"end": 275.37,
+"word": "子，",
+"p": 0.807,
+"segment": 1
+},
+{
+"start": 276.03,
+"end": 276.93,
+"word": "穿",
+"p": 0.511,
+"segment": 1
+},
+{
+"start": 276.93,
+"end": 277.29,
+"word": "花",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 277.29,
+"end": 278.05,
+"word": "衣，",
+"p": 0.825,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 272.73,
+"end": 274.13,
+"word": "小",
+"p": 0.758,
+"segment": 1
+},
+{
+"start": 274.13,
+"end": 274.83,
+"word": "燕",
+"p": 0.947,
+"segment": 1
+},
+{
+"start": 274.83,
+"end": 275.43,
+"word": "子",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 275.43,
+"end": 276.83,
+"word": "穿",
+"p": 0.632,
+"segment": 1
+},
+{
+"start": 276.83,
+"end": 277.43,
+"word": "花",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 277.43,
+"end": 278.07,
+"word": "衣",
+"p": 0.944,
+"segment": 1
+},
+{
+"start": 278.07,
+"end": 279.33,
+"word": "小",
+"p": 0.358,
+"segment": 2
+},
+{
+"start": 279.33,
+"end": 279.33,
+"word": "燕",
+"p": 0.973,
+"segment": 2
+},
+{
+"start": 279.33,
+"end": 279.33,
+"word": "子",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 279.33,
+"end": 279.33,
+"word": "穿",
+"p": 0.983,
+"segment": 2
+},
+{
+"start": 279.33,
+"end": 279.33,
+"word": "花",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 279.33,
+"end": 279.33,
+"word": "衣",
+"p": 1.0,
+"segment": 2
+}
+]
+},
+{
+"start": 279.05,
+"end": 296.16,
+"hinted": [
+{
+"start": 278.75,
+"end": 280.05,
+"word": "小",
+"p": 0.718,
+"segment": 1
+},
+{
+"start": 280.05,
+"end": 280.51,
+"word": "燕",
+"p": 0.955,
+"segment": 1
+},
+{
+"start": 280.51,
+"end": 280.97,
+"word": "子，",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 282.03,
+"end": 283.37,
+"word": "小",
+"p": 0.091,
+"segment": 1
+},
+{
+"start": 283.37,
+"end": 284.49,
+"word": "燕",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 284.49,
+"end": 285.05,
+"word": "子，",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 285.83,
+"end": 286.81,
+"word": "穿",
+"p": 0.818,
+"segment": 1
+},
+{
+"start": 286.81,
+"end": 287.57,
+"word": "花",
+"p": 0.458,
+"segment": 1
+},
+{
+"start": 287.57,
+"end": 289.09,
+"word": "衣，",
+"p": 0.978,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 278.75,
+"end": 280.05,
+"word": "小",
+"p": 0.718,
+"segment": 1
+},
+{
+"start": 280.05,
+"end": 280.51,
+"word": "燕",
+"p": 0.955,
+"segment": 1
+},
+{
+"start": 280.51,
+"end": 280.97,
+"word": "子",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 280.97,
+"end": 283.41,
+"word": "小",
+"p": 0.495,
+"segment": 1
+},
+{
+"start": 283.41,
+"end": 284.47,
+"word": "燕",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 284.47,
+"end": 285.29,
+"word": "子",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 285.31,
+"end": 286.81,
+"word": "穿",
+"p": 0.862,
+"segment": 1
+},
+{
+"start": 286.81,
+"end": 287.51,
+"word": "花",
+"p": 0.568,
+"segment": 1
+},
+{
+"start": 287.51,
+"end": 289.37,
+"word": "衣",
+"p": 0.989,
+"segment": 1
+}
+]
+},
+{
+"start": 296.16,
+"end": 321.78,
+"hinted": [
+{
+"start": 295.86,
+"end": 296.3,
+"word": "小",
+"p": 0.552,
+"segment": 1
+},
+{
+"start": 296.3,
+"end": 297.34,
+"word": "燕",
+"p": 0.955,
+"segment": 1
+},
+{
+"start": 297.34,
+"end": 298.02,
+"word": "子，",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 298.98,
+"end": 299.46,
+"word": "小",
+"p": 0.061,
+"segment": 1
+},
+{
+"start": 299.46,
+"end": 300.08,
+"word": "燕",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 300.08,
+"end": 300.76,
+"word": "子，",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 301.28,
+"end": 301.64,
+"word": "小",
+"p": 0.285,
+"segment": 1
+},
+{
+"start": 301.64,
+"end": 302.72,
+"word": "燕",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 302.72,
+"end": 303.42,
+"word": "子，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 305.2,
+"end": 308.64,
+"word": "穿",
+"p": 0.556,
+"segment": 1
+},
+{
+"start": 308.64,
+"end": 310.28,
+"word": "花",
+"p": 0.771,
+"segment": 1
+},
+{
+"start": 310.28,
+"end": 313.1,
+"word": "衣。",
+"p": 0.878,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 295.86,
+"end": 296.28,
+"word": "小",
+"p": 0.553,
+"segment": 1
+},
+{
+"start": 296.28,
+"end": 297.34,
+"word": "燕",
+"p": 0.954,
+"segment": 1
+},
+{
+"start": 297.34,
+"end": 298.0,
+"word": "子",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 298.4,
+"end": 299.1,
+"word": "小",
+"p": 0.323,
+"segment": 2
+},
+{
+"start": 299.1,
+"end": 300.04,
+"word": "燕",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 300.04,
+"end": 301.02,
+"word": "子",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 301.02,
+"end": 301.56,
+"word": "小",
+"p": 0.119,
+"segment": 3
+},
+{
+"start": 301.56,
+"end": 302.7,
+"word": "燕",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 302.7,
+"end": 303.52,
+"word": "子",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 307.48,
+"end": 308.88,
+"word": "穿",
+"p": 0.561,
+"segment": 4
+},
+{
+"start": 308.88,
+"end": 310.28,
+"word": "花",
+"p": 0.886,
+"segment": 4
+},
+{
+"start": 310.28,
+"end": 313.3,
+"word": "衣",
+"p": 0.943,
+"segment": 4
+}
+]
+},
+{
+"start": 321.78,
+"end": 335.07,
+"hinted": [
+{
+"start": 328.4,
+"end": 329.66,
+"word": "小",
+"p": 0.732,
+"segment": 1
+},
+{
+"start": 329.66,
+"end": 330.58,
+"word": "燕",
+"p": 0.952,
+"segment": 1
+},
+{
+"start": 330.58,
+"end": 331.2,
+"word": "子，",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 332.1,
+"end": 332.72,
+"word": "穿",
+"p": 0.494,
+"segment": 1
+},
+{
+"start": 332.72,
+"end": 333.32,
+"word": "花",
+"p": 0.942,
+"segment": 1
+},
+{
+"start": 333.32,
+"end": 333.96,
+"word": "衣，",
+"p": 0.991,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 328.52,
+"end": 329.92,
+"word": "小",
+"p": 0.732,
+"segment": 1
+},
+{
+"start": 329.92,
+"end": 330.58,
+"word": "燕",
+"p": 0.953,
+"segment": 1
+},
+{
+"start": 330.58,
+"end": 331.3,
+"word": "子",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 331.34,
+"end": 332.56,
+"word": "春",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 332.56,
+"end": 333.56,
+"word": "花",
+"p": 0.955,
+"segment": 1
+},
+{
+"start": 333.56,
+"end": 334.1,
+"word": "衣",
+"p": 0.534,
+"segment": 1
+},
+{
+"start": 334.1,
+"end": 335.34,
+"word": "小",
+"p": 0.406,
+"segment": 2
+},
+{
+"start": 335.34,
+"end": 335.34,
+"word": "燕",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 335.34,
+"end": 335.34,
+"word": "子",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 335.34,
+"end": 335.34,
+"word": "春",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 335.34,
+"end": 335.34,
+"word": "花",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 335.34,
+"end": 335.34,
+"word": "衣",
+"p": 1.0,
+"segment": 2
+}
+]
+},
+{
+"start": 335.07,
+"end": 341.61,
+"hinted": [
+{
+"start": 334.77,
+"end": 335.61,
+"word": "”",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 335.61,
+"end": 335.87,
+"word": "小",
+"p": 0.021,
+"segment": 1
+},
+{
+"start": 335.87,
+"end": 337.37,
+"word": "燕",
+"p": 0.879,
+"segment": 1
+},
+{
+"start": 337.37,
+"end": 338.17,
+"word": "子，",
+"p": 0.78,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 334.77,
+"end": 336.21,
+"word": "小",
+"p": 0.592,
+"segment": 1
+},
+{
+"start": 336.21,
+"end": 337.71,
+"word": "燕",
+"p": 0.902,
+"segment": 1
+},
+{
+"start": 337.71,
+"end": 338.19,
+"word": "子",
+"p": 0.987,
+"segment": 1
+}
+]
+},
+{
+"start": 341.61,
+"end": 365.16,
+"hinted": [
+{
+"start": 341.31,
+"end": 341.61,
+"word": "小",
+"p": 0.266,
+"segment": 1
+},
+{
+"start": 341.61,
+"end": 342.77,
+"word": "燕",
+"p": 0.801,
+"segment": 1
+},
+{
+"start": 342.77,
+"end": 343.53,
+"word": "子，",
+"p": 0.967,
+"segment": 1
+},
+{
+"start": 344.35,
+"end": 344.79,
+"word": "小",
+"p": 0.066,
+"segment": 1
+},
+{
+"start": 344.79,
+"end": 345.39,
+"word": "燕",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 345.39,
+"end": 346.07,
+"word": "子，",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 346.51,
+"end": 347.57,
+"word": "小",
+"p": 0.359,
+"segment": 1
+},
+{
+"start": 347.57,
+"end": 354.73,
+"word": "燕",
+"p": 0.903,
+"segment": 1
+},
+{
+"start": 354.73,
+"end": 355.45,
+"word": "子，",
+"p": 0.991,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 341.31,
+"end": 341.65,
+"word": "小",
+"p": 0.267,
+"segment": 1
+},
+{
+"start": 341.65,
+"end": 342.77,
+"word": "燕",
+"p": 0.801,
+"segment": 1
+},
+{
+"start": 342.77,
+"end": 343.53,
+"word": "子",
+"p": 0.967,
+"segment": 1
+},
+{
+"start": 343.53,
+"end": 344.49,
+"word": "小",
+"p": 0.462,
+"segment": 2
+},
+{
+"start": 344.49,
+"end": 354.73,
+"word": "燕",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 354.73,
+"end": 355.45,
+"word": "子",
+"p": 0.999,
+"segment": 2
+}
+]
+},
+{
+"start": 365.16,
+"end": 389.84,
+"hinted": [
+{
+"start": 371.36,
+"end": 372.76,
+"word": "小",
+"p": 0.836,
+"segment": 1
+},
+{
+"start": 372.76,
+"end": 373.98,
+"word": "燕",
+"p": 0.954,
+"segment": 1
+},
+{
+"start": 373.98,
+"end": 374.84,
+"word": "子，",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 375.84,
+"end": 377.22,
+"word": "小",
+"p": 0.115,
+"segment": 1
+},
+{
+"start": 377.22,
+"end": 379.16,
+"word": "燕",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 379.16,
+"end": 382.02,
+"word": "子，",
+"p": 0.979,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 371.34,
+"end": 372.74,
+"word": "小",
+"p": 0.836,
+"segment": 1
+},
+{
+"start": 372.74,
+"end": 373.98,
+"word": "燕",
+"p": 0.953,
+"segment": 1
+},
+{
+"start": 373.98,
+"end": 374.82,
+"word": "子",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 374.82,
+"end": 377.3,
+"word": "小",
+"p": 0.343,
+"segment": 2
+},
+{
+"start": 377.3,
+"end": 379.16,
+"word": "燕",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 379.16,
+"end": 382.02,
+"word": "子",
+"p": 0.995,
+"segment": 2
+}
+]
+},
+{
+"start": 389.84,
+"end": 395.97,
+"hinted": [
+{
+"start": 392.38,
+"end": 393.78,
+"word": "小",
+"p": 0.808,
+"segment": 1
+},
+{
+"start": 393.78,
+"end": 394.62,
+"word": "燕",
+"p": 0.969,
+"segment": 1
+},
+{
+"start": 394.62,
+"end": 395.26,
+"word": "子",
+"p": 0.994,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 392.38,
+"end": 393.78,
+"word": "小",
+"p": 0.808,
+"segment": 1
+},
+{
+"start": 393.78,
+"end": 394.62,
+"word": "燕",
+"p": 0.969,
+"segment": 1
+},
+{
+"start": 394.62,
+"end": 395.26,
+"word": "子",
+"p": 0.994,
+"segment": 1
+}
+]
+},
+{
+"start": 395.97,
+"end": 419.69,
+"hinted": [
+{
+"start": 395.67,
+"end": 395.67,
+"word": "”",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 395.67,
+"end": 396.67,
+"word": "穿",
+"p": 0.502,
+"segment": 1
+},
+{
+"start": 396.67,
+"end": 397.41,
+"word": "花",
+"p": 0.832,
+"segment": 1
+},
+{
+"start": 397.41,
+"end": 398.09,
+"word": "衣，",
+"p": 0.835,
+"segment": 1
+},
+{
+"start": 399.69,
+"end": 399.71,
+"word": "年",
+"p": 0.127,
+"segment": 1
+},
+{
+"start": 399.71,
+"end": 400.15,
+"word": "年",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 400.15,
+"end": 400.53,
+"word": "春",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 400.53,
+"end": 401.37,
+"word": "天",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 401.37,
+"end": 402.19,
+"word": "来",
+"p": 0.13,
+"segment": 1
+},
+{
+"start": 402.19,
+"end": 404.23,
+"word": "这里",
+"p": 0.003,
+"segment": 1
+},
+{
+"start": 404.23,
+"end": 408.09,
+"word": "．",
+"p": 0.087,
+"segment": 1
+},
+{
+"start": 408.83,
+"end": 408.87,
+"word": "家",
+"p": 0.001,
+"segment": 1
+},
+{
+"start": 408.87,
+"end": 410.39,
+"word": "燕",
+"p": 0.569,
+"segment": 1
+},
+{
+"start": 410.39,
+"end": 410.73,
+"word": "子",
+"p": 0.886,
+"segment": 1
+},
+{
+"start": 410.73,
+"end": 413.95,
+"word": "穿",
+"p": 0.847,
+"segment": 1
+},
+{
+"start": 413.95,
+"end": 419.51,
+"word": "红",
+"p": 0.899,
+"segment": 1
+},
+{
+"start": 419.51,
+"end": 419.89,
+"word": "红",
+"p": 0.703,
+"segment": 1
+},
+{
+"start": 419.89,
+"end": 419.97,
+"word": "衣",
+"p": 0.579,
+"segment": 1
+},
+{
+"start": 419.97,
+"end": 419.97,
+"word": "．",
+"p": 0.565,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 395.67,
+"end": 396.45,
+"word": "春",
+"p": 0.315,
+"segment": 1
+},
+{
+"start": 396.45,
+"end": 397.39,
+"word": "花",
+"p": 0.91,
+"segment": 1
+},
+{
+"start": 397.39,
+"end": 397.93,
+"word": "一",
+"p": 0.387,
+"segment": 1
+},
+{
+"start": 397.93,
+"end": 399.33,
+"word": "年",
+"p": 0.917,
+"segment": 1
+},
+{
+"start": 399.33,
+"end": 400.15,
+"word": "年",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 400.15,
+"end": 400.57,
+"word": "春",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 400.57,
+"end": 401.35,
+"word": "天",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 401.35,
+"end": 402.21,
+"word": "来",
+"p": 0.292,
+"segment": 1
+},
+{
+"start": 403.29,
+"end": 403.99,
+"word": "这",
+"p": 0.454,
+"segment": 2
+},
+{
+"start": 403.99,
+"end": 405.23,
+"word": "一",
+"p": 0.978,
+"segment": 2
+},
+{
+"start": 405.23,
+"end": 408.21,
+"word": "家",
+"p": 0.854,
+"segment": 2
+},
+{
+"start": 408.21,
+"end": 410.39,
+"word": "燕",
+"p": 0.919,
+"segment": 2
+},
+{
+"start": 410.39,
+"end": 410.73,
+"word": "子",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 410.73,
+"end": 413.93,
+"word": "窗",
+"p": 0.702,
+"segment": 2
+},
+{
+"start": 413.93,
+"end": 419.61,
+"word": "户",
+"p": 0.811,
+"segment": 2
+}
+]
+},
+{
+"start": 419.69,
+"end": 438.4,
+"hinted": [
+{
+"start": 419.39,
+"end": 419.59,
+"word": "请",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 419.59,
+"end": 420.01,
+"word": "不",
+"p": 0.165,
+"segment": 1
+},
+{
+"start": 420.01,
+"end": 420.51,
+"word": "吝",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 420.51,
+"end": 420.51,
+"word": "点",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 420.51,
+"end": 420.51,
+"word": "赞",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 420.51,
+"end": 420.51,
+"word": "订",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 420.51,
+"end": 420.51,
+"word": "阅",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 420.51,
+"end": 420.51,
+"word": "转",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 420.51,
+"end": 420.51,
+"word": "发",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 420.51,
+"end": 422.63,
+"word": "打",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 422.63,
+"end": 422.63,
+"word": "赏",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 422.63,
+"end": 422.65,
+"word": "支持",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 422.65,
+"end": 422.65,
+"word": "明",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 422.65,
+"end": 422.65,
+"word": "镜",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 422.65,
+"end": 431.41,
+"word": "与",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 431.41,
+"end": 431.87,
+"word": "点",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 431.87,
+"end": 431.87,
+"word": "点",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 431.87,
+"end": 435.27,
+"word": "栏",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 435.27,
+"end": 435.27,
+"word": "目",
+"p": 1.0,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 419.39,
+"end": 419.65,
+"word": "花",
+"p": 0.111,
+"segment": 1
+},
+{
+"start": 419.65,
+"end": 420.33,
+"word": "兒",
+"p": 0.126,
+"segment": 1
+},
+{
+"start": 435.31,
+"end": 436.71,
+"word": "笑",
+"p": 0.049,
+"segment": 2
+},
+{
+"start": 436.71,
+"end": 438.11,
+"word": "意",
+"p": 0.04,
+"segment": 2
+}
+]
+}
+]
+}
+}
+}

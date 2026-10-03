@@ -1,0 +1,103 @@
+{
+ "schema": 1,
+ "key": "brotherjohn",
+ "recording": "2. Brother John - Two Tigers",
+ "assets": {
+  "source": {
+   "path": "songs/2. Brother John - Two Tigers.mp3",
+   "sha256": "3c173859fcc3e3205d24edbda614c4c66c4e1ea7185b1aa926d482f35652f1e9"
+  },
+  "backing": {
+   "path": "audio/2. Brother John - Two Tigers.mp3",
+   "sha256": "65377d507f570901bea19a4973c805d484fb254f239c668e8abacad978b5e0ae"
+  },
+  "vocal": {
+   "path": "separated/vocals/2. Brother John - Two Tigers.mp3",
+   "sha256": "a40432dc9f6598d62288622aec3663566341a8b569c72dbe4bb61434fdf89455"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 15.5,
+   "end": 57.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "Are you sleeping? Are you sleeping?",
+      "Brother John, Brother John.",
+      "Morning bells are ringing! Morning bells are ringing!",
+      "Ding, dang, dong. Ding, dang, dong."
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "Are you sleeping? Are you sleeping?",
+      "Brother John, Brother John.",
+      "Morning bells are ringing! Morning bells are ringing!",
+      "Ding, dang, dong. Ding, dang, dong."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 62.0,
+   "end": 100.0,
+   "verses": [
+    {
+     "label": "Verse 3",
+     "lines": [
+      "两只老虎，两只老虎，",
+      "跑得快，跑得快。",
+      "一只没有耳朵，一只没有尾巴，",
+      "真奇怪，真奇怪。"
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "两只老虎，两只老虎，",
+      "跑得快，跑得快。",
+      "一只没有耳朵，一只没有尾巴，",
+      "真奇怪，真奇怪。"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ },
+ "sectionOverrides": {
+  "zh-2": {
+   "start": 81.24,
+   "end": 100.0,
+   "reason": "Verse 3's last 怪 is the note at 80.52 s; the widest silence between the verses is 80.94-81.54 s. The automatic boundary (80.46 s) gave that note to verse 4 and put every word of verse 4 one note late (Galvin heard it, 2026-10-03)."
+  }
+ },
+ "measuredNoteEdits": [
+  {
+   "op": "midi",
+   "onset": 94.94,
+   "old": 58,
+   "new": 57,
+   "confidence": "medium",
+   "review": "owner-listening-pending",
+   "reason": "奇 of verse 4: the voice touches A3 (57.1-57.4) then drifts sharp to 58.8 while sliding up to 怪. The same word is a steady A3 the three other times it is sung (77.82, 80.00, 97.16 s). Charted as A3; needs Galvin's ear."
+  }
+ ]
+}

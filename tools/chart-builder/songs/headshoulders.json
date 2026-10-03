@@ -1,0 +1,104 @@
+{
+ "schema": 1,
+ "key": "headshoulders",
+ "recording": "4. Head Shoulders Knees Toes",
+ "assets": {
+  "source": {
+   "path": "songs/4. Head Shoulders Knees Toes.mp3",
+   "sha256": "41d457dcabf364082699db7d0fc7f62a6ce0b96c56d836fb8a048e68811486a0"
+  },
+  "backing": {
+   "path": "audio/4. Head Shoulders Knees Toes.mp3",
+   "sha256": "7bd960f369606d9b23a24786930962e6340eb7bd51ad828e56592cd0db9c7d18"
+  },
+  "vocal": {
+   "path": "separated/vocals/4. Head Shoulders Knees Toes.mp3",
+   "sha256": "60230bbd7656e01af08d3e9729110624fa0b1c0a4c4202c56876c830a08674fa"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 14.5,
+   "end": 48.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "Head, shoulders, knees and toes, knees and toes",
+      "Head, shoulders, knees and toes, knees and toes",
+      "And eyes and ears and mouth and nose",
+      "Head, shoulders, knees and toes",
+      "Knees and toes"
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "Head, shoulders, knees and toes, knees and toes",
+      "Head, shoulders, knees and toes, knees and toes",
+      "And eyes and ears and mouth and nose",
+      "Head, shoulders, knees and toes",
+      "Knees and toes"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 49.0,
+   "end": 82.5,
+   "verses": [
+    {
+     "label": "Verse 3",
+     "lines": [
+      "头，肩膀，膝盖，脚，膝盖，脚",
+      "头，肩膀，膝盖，脚，膝盖，脚",
+      "眼睛，耳朵，嘴巴，鼻子",
+      "头，肩膀，膝盖，脚, 膝盖，脚"
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "头，肩膀，膝盖，脚，膝盖，脚",
+      "头，肩膀，膝盖，脚，膝盖，脚",
+      "眼睛，耳朵，嘴巴，鼻子",
+      "头，肩膀，膝盖，脚, 膝盖，脚"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ },
+ "sectionOverrides": {
+  "en-2": {
+   "start": 30.9,
+   "end": 48.0,
+   "reason": "Verse 1 ends with \"Head, shoulders, knees and toes / Knees and toes\" sung higher (B4-C5, 27.4-30.3 s); every transcript skipped Verse 2 line 2 (35.3-38.1 s), so the identical lines let Verse 2 slide one line early. Boundary placed in the 1.1 s silence after 30.3 s. Lines 1 and 2 are pinned to the two sung stretches (31.4-34.3 s, 35.3-38.1 s) so the one transcribed copy is matched to line 1.",
+   "lines": {
+    "0": [
+     30.9,
+     35.0
+    ],
+    "1": [
+     35.0,
+     38.3
+    ]
+   }
+  }
+ }
+}

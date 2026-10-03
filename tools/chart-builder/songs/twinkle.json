@@ -1,0 +1,75 @@
+{
+ "schema": 1,
+ "key": "twinkle",
+ "recording": "1. Twinkle Twinkle Little Star",
+ "assets": {
+  "source": {
+   "path": "songs/1. Twinkle Twinkle Little Star.mp3",
+   "sha256": "73e6d5f4e2e521ac146e5dd485a1365c947897effaef5ea774db9b55736120c0"
+  },
+  "backing": {
+   "path": "audio/1. Twinkle Twinkle Little Star.mp3",
+   "sha256": "23b692312c02814b84c97505a60937b7131cc48d3f09de94c87eaf79e629a4a3"
+  },
+  "vocal": {
+   "path": "separated/vocals/1. Twinkle Twinkle Little Star.mp3",
+   "sha256": "2da1c493906a5627cbf1dc8529dc7b2f87f403208cad94b7132a97ac3bd74de8"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 9.0,
+   "end": 41.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "Twinkle, twinkle, little star,",
+      "How I wonder what you are!",
+      "Up above the world so high,",
+      "Like a diamond in the sky.",
+      "Twinkle, twinkle, little star,",
+      "How I wonder what you are!"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 48.5,
+   "end": 82.0,
+   "verses": [
+    {
+     "label": "Verse 2",
+     "lines": [
+      "一闪一闪亮晶晶",
+      "满天都是小星星",
+      "挂在天空放光明",
+      "好像许多小眼睛",
+      "一闪一闪亮晶晶满天都是小星星"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-approved",
+  "sections": {
+   "en-1": "owner-listening-approved",
+   "zh-1": "owner-listening-approved"
+  },
+  "note": "2026-10-03: Galvin listened to both verses on the listening page and said the song seems correct (with the wordless low note after 睛 shown). That note (69.43-70.01 s) is the singer's voice sliding from E4 down to a steady A3 and back up to D4; it was briefly deleted on a misreading of Galvin's remark and restored the same day. Not yet confirmed by playing it in the game."
+ }
+}

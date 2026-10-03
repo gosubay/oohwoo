@@ -1,0 +1,137 @@
+{
+ "schema": 1,
+ "key": "wheelsbus",
+ "recording": "14. Wheels On The Bus",
+ "assets": {
+  "source": {
+   "path": "songs/14. Wheels On The Bus.mp3",
+   "sha256": "492edb2984fddcd45f7ab20775f93f83aee9b40a1118a81e4e2664b27421e266"
+  },
+  "backing": {
+   "path": "audio/14. Wheels On The Bus.mp3",
+   "sha256": "335b9e7f818dc33c8765ba6e5379373357096f8e6ba44a8127acdf6000aaa53d"
+  },
+  "vocal": {
+   "path": "separated/vocals/14. Wheels On The Bus.mp3",
+   "sha256": "db203c624925789ae740f8b7ea3ed7edf3a384ebb42b6327322bd4de736a8b21"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 10.0,
+   "end": 67.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "The wheels on the bus go round and round,",
+      "Round and round, round and round.",
+      "The wheels on the bus go round and round,",
+      "All through the town."
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "The wipers on the bus go swish, swish, swish,",
+      "Swish, swish, swish, swish, swish, swish.",
+      "The wipers on the bus go swish, swish, swish,",
+      "All through the town."
+     ]
+    },
+    {
+     "label": "Verse 3",
+     "lines": [
+      "The horn on the bus goes beep, beep, beep,",
+      "Beep, beep, beep, beep, beep, beep.",
+      "The horn on the bus goes beep, beep, beep,",
+      "All through the town."
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "The people on the bus go up and down,",
+      "Up and down, up and down.",
+      "The people on the bus go up and down,",
+      "All through the town."
+     ]
+    },
+    {
+     "label": "Verse 5",
+     "lines": [
+      "The doors on the bus go open and shut, Open and shut, open and shut.",
+      "The doors on the bus go open and shut, All through the town."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 75.5,
+   "end": 132.0,
+   "verses": [
+    {
+     "label": "Verse 6",
+     "lines": [
+      "巴士的轮子转呀转",
+      "转呀转，转呀转。",
+      "巴士的轮子转呀转，",
+      "穿过街道"
+     ]
+    },
+    {
+     "label": "Verse 7",
+     "lines": [
+      "巴士的雨刷刷刷刷，",
+      "刷刷刷，刷刷刷。",
+      "巴士的雨刷刷刷刷，",
+      "穿过街道"
+     ]
+    },
+    {
+     "label": "Verse 8",
+     "lines": [
+      "巴士的喇叭哔哔哔，",
+      "哔哔哔，哔哔哔。",
+      "巴士的喇叭哔哔哔，",
+      "穿过街道"
+     ]
+    },
+    {
+     "label": "Verse 9",
+     "lines": [
+      "巴士的乘客上上下下",
+      "上上下下，上上下下",
+      "巴士的乘客上上下下",
+      "穿过街道"
+     ]
+    },
+    {
+     "label": "Verse 10",
+     "lines": [
+      "巴士的车门开又关",
+      "开又关，开又关",
+      "巴士的车门开又关",
+      "穿过街道"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

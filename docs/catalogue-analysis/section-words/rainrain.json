@@ -1,0 +1,3705 @@
+{
+"vocalSha256": "c902dbaa0ae89cc4fda9fb32c71dddd5bd7c3052d62ba847c522f27e82587d4c",
+"model": "large-v3",
+"blocks": {
+"en": {
+"settings": "b344341589f36fea",
+"language": "en",
+"pieces": [
+{
+"start": 12.5,
+"end": 25.43,
+"hinted": [
+{
+"start": 12.2,
+"end": 13.78,
+"word": "rain,",
+"p": 0.071,
+"segment": 1
+},
+{
+"start": 13.92,
+"end": 14.7,
+"word": "go",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 14.7,
+"end": 15.5,
+"word": "away,",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 15.8,
+"end": 16.2,
+"word": "Come",
+"p": 0.009,
+"segment": 1
+},
+{
+"start": 16.2,
+"end": 16.88,
+"word": "again",
+"p": 0.965,
+"segment": 1
+},
+{
+"start": 16.88,
+"end": 17.5,
+"word": "another",
+"p": 0.953,
+"segment": 1
+},
+{
+"start": 17.5,
+"end": 18.26,
+"word": "day.",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 18.46,
+"end": 19.28,
+"word": "Daddy",
+"p": 0.647,
+"segment": 1
+},
+{
+"start": 19.28,
+"end": 20.2,
+"word": "wants",
+"p": 0.924,
+"segment": 1
+},
+{
+"start": 20.2,
+"end": 20.5,
+"word": "to",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 20.5,
+"end": 20.88,
+"word": "play.",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 21.06,
+"end": 21.82,
+"word": "Rain,",
+"p": 0.586,
+"segment": 1
+},
+{
+"start": 22.02,
+"end": 22.3,
+"word": "rain,",
+"p": 0.451,
+"segment": 1
+},
+{
+"start": 22.52,
+"end": 22.86,
+"word": "go",
+"p": 0.952,
+"segment": 1
+},
+{
+"start": 22.86,
+"end": 23.52,
+"word": "away.",
+"p": 0.994,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 13.08,
+"end": 13.78,
+"word": "Rain,",
+"p": 0.883,
+"segment": 1
+},
+{
+"start": 13.88,
+"end": 14.4,
+"word": "rain,",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 14.5,
+"end": 14.9,
+"word": "go",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 14.9,
+"end": 15.58,
+"word": "away,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 15.8,
+"end": 16.24,
+"word": "come",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 16.24,
+"end": 16.86,
+"word": "again",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 16.86,
+"end": 17.5,
+"word": "another",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 17.5,
+"end": 18.26,
+"word": "day",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 18.26,
+"end": 19.08,
+"word": "Daddy",
+"p": 0.782,
+"segment": 2
+},
+{
+"start": 19.08,
+"end": 20.2,
+"word": "wants",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 20.2,
+"end": 20.52,
+"word": "to",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 20.52,
+"end": 20.88,
+"word": "play,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 21.06,
+"end": 21.88,
+"word": "rain,",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 21.94,
+"end": 22.44,
+"word": "rain,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 22.54,
+"end": 22.86,
+"word": "go",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 22.86,
+"end": 23.56,
+"word": "away",
+"p": 1.0,
+"segment": 2
+}
+]
+},
+{
+"start": 25.43,
+"end": 38.75,
+"hinted": [
+{
+"start": 26.23,
+"end": 27.11,
+"word": "rain,",
+"p": 0.051,
+"segment": 1
+},
+{
+"start": 27.19,
+"end": 27.95,
+"word": "go",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 27.95,
+"end": 28.83,
+"word": "away,",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 29.13,
+"end": 29.55,
+"word": "Come",
+"p": 0.007,
+"segment": 1
+},
+{
+"start": 29.55,
+"end": 30.21,
+"word": "again",
+"p": 0.959,
+"segment": 1
+},
+{
+"start": 30.21,
+"end": 30.85,
+"word": "another",
+"p": 0.95,
+"segment": 1
+},
+{
+"start": 30.85,
+"end": 31.61,
+"word": "day.",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 31.83,
+"end": 32.65,
+"word": "Mommy",
+"p": 0.622,
+"segment": 1
+},
+{
+"start": 32.65,
+"end": 33.55,
+"word": "wants",
+"p": 0.799,
+"segment": 1
+},
+{
+"start": 33.55,
+"end": 33.85,
+"word": "to",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 33.85,
+"end": 34.23,
+"word": "play.",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 34.43,
+"end": 35.15,
+"word": "Rain,",
+"p": 0.488,
+"segment": 1
+},
+{
+"start": 35.37,
+"end": 35.63,
+"word": "rain,",
+"p": 0.343,
+"segment": 1
+},
+{
+"start": 35.83,
+"end": 36.17,
+"word": "go",
+"p": 0.953,
+"segment": 1
+},
+{
+"start": 36.17,
+"end": 36.85,
+"word": "away.",
+"p": 0.995,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 26.17,
+"end": 27.11,
+"word": "Rain,",
+"p": 0.931,
+"segment": 1
+},
+{
+"start": 27.17,
+"end": 27.73,
+"word": "rain,",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 27.81,
+"end": 28.19,
+"word": "go",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 28.19,
+"end": 28.89,
+"word": "away,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 29.13,
+"end": 29.57,
+"word": "come",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 29.57,
+"end": 30.21,
+"word": "again",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 30.21,
+"end": 30.85,
+"word": "another",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 30.85,
+"end": 31.59,
+"word": "day",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 31.59,
+"end": 32.57,
+"word": "Mommy",
+"p": 0.879,
+"segment": 2
+},
+{
+"start": 32.57,
+"end": 33.55,
+"word": "wants",
+"p": 0.985,
+"segment": 2
+},
+{
+"start": 33.55,
+"end": 33.85,
+"word": "to",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 33.85,
+"end": 34.23,
+"word": "play,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 34.43,
+"end": 35.19,
+"word": "rain,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 35.29,
+"end": 35.79,
+"word": "rain,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 35.89,
+"end": 36.19,
+"word": "go",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 36.19,
+"end": 36.89,
+"word": "away",
+"p": 1.0,
+"segment": 2
+}
+]
+},
+{
+"start": 38.75,
+"end": 52.01,
+"hinted": [
+{
+"start": 38.45,
+"end": 40.43,
+"word": "rain,",
+"p": 0.042,
+"segment": 1
+},
+{
+"start": 40.57,
+"end": 41.29,
+"word": "go",
+"p": 0.001,
+"segment": 1
+},
+{
+"start": 41.29,
+"end": 42.13,
+"word": "away,",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 42.41,
+"end": 42.85,
+"word": "Come",
+"p": 0.017,
+"segment": 1
+},
+{
+"start": 42.85,
+"end": 43.45,
+"word": "again",
+"p": 0.889,
+"segment": 1
+},
+{
+"start": 43.45,
+"end": 44.17,
+"word": "another",
+"p": 0.945,
+"segment": 1
+},
+{
+"start": 44.17,
+"end": 44.91,
+"word": "day.",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 45.09,
+"end": 45.79,
+"word": "Brother",
+"p": 0.794,
+"segment": 1
+},
+{
+"start": 45.79,
+"end": 46.67,
+"word": "wants",
+"p": 0.85,
+"segment": 1
+},
+{
+"start": 46.67,
+"end": 47.19,
+"word": "to",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 47.19,
+"end": 47.55,
+"word": "play.",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 47.75,
+"end": 48.47,
+"word": "Rain,",
+"p": 0.59,
+"segment": 1
+},
+{
+"start": 48.65,
+"end": 48.97,
+"word": "rain,",
+"p": 0.244,
+"segment": 1
+},
+{
+"start": 49.17,
+"end": 49.51,
+"word": "go",
+"p": 0.959,
+"segment": 1
+},
+{
+"start": 49.51,
+"end": 50.17,
+"word": "away.",
+"p": 0.996,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 38.45,
+"end": 40.41,
+"word": "Rain,",
+"p": 0.938,
+"segment": 1
+},
+{
+"start": 40.57,
+"end": 41.01,
+"word": "rain,",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 41.13,
+"end": 41.51,
+"word": "go",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 41.51,
+"end": 42.19,
+"word": "away",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 42.19,
+"end": 42.85,
+"word": "Come",
+"p": 0.695,
+"segment": 1
+},
+{
+"start": 42.85,
+"end": 43.43,
+"word": "again",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 43.43,
+"end": 44.17,
+"word": "another",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 44.17,
+"end": 44.91,
+"word": "day",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 44.91,
+"end": 45.79,
+"word": "Brother",
+"p": 0.989,
+"segment": 2
+},
+{
+"start": 45.79,
+"end": 46.61,
+"word": "wants",
+"p": 0.934,
+"segment": 2
+},
+{
+"start": 46.61,
+"end": 47.21,
+"word": "to",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 47.21,
+"end": 47.57,
+"word": "play",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 47.57,
+"end": 48.39,
+"word": "Rain,",
+"p": 0.99,
+"segment": 2
+},
+{
+"start": 48.57,
+"end": 49.15,
+"word": "rain,",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 49.19,
+"end": 49.65,
+"word": "go",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 49.65,
+"end": 50.21,
+"word": "away",
+"p": 1.0,
+"segment": 2
+}
+]
+},
+{
+"start": 52.01,
+"end": 65.46,
+"hinted": [
+{
+"start": 52.79,
+"end": 53.75,
+"word": "rain,",
+"p": 0.083,
+"segment": 1
+},
+{
+"start": 53.89,
+"end": 54.71,
+"word": "go",
+"p": 0.001,
+"segment": 1
+},
+{
+"start": 54.71,
+"end": 55.41,
+"word": "away,",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 55.75,
+"end": 56.23,
+"word": "Come",
+"p": 0.011,
+"segment": 1
+},
+{
+"start": 56.23,
+"end": 56.87,
+"word": "again",
+"p": 0.794,
+"segment": 1
+},
+{
+"start": 56.87,
+"end": 57.51,
+"word": "another",
+"p": 0.969,
+"segment": 1
+},
+{
+"start": 57.51,
+"end": 58.27,
+"word": "day.",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 58.51,
+"end": 58.97,
+"word": "Sister",
+"p": 0.75,
+"segment": 1
+},
+{
+"start": 58.97,
+"end": 60.03,
+"word": "wants",
+"p": 0.85,
+"segment": 1
+},
+{
+"start": 60.03,
+"end": 60.49,
+"word": "to",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 60.49,
+"end": 60.83,
+"word": "play.",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 61.11,
+"end": 61.83,
+"word": "Rain,",
+"p": 0.518,
+"segment": 1
+},
+{
+"start": 61.97,
+"end": 62.35,
+"word": "rain,",
+"p": 0.422,
+"segment": 1
+},
+{
+"start": 62.35,
+"end": 62.81,
+"word": "go",
+"p": 0.933,
+"segment": 1
+},
+{
+"start": 62.81,
+"end": 63.49,
+"word": "away.",
+"p": 0.996,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 51.71,
+"end": 53.75,
+"word": "Rain,",
+"p": 0.871,
+"segment": 1
+},
+{
+"start": 53.87,
+"end": 54.45,
+"word": "rain,",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 54.47,
+"end": 54.87,
+"word": "go",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 54.87,
+"end": 55.55,
+"word": "away",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 55.55,
+"end": 56.23,
+"word": "Come",
+"p": 0.685,
+"segment": 1
+},
+{
+"start": 56.23,
+"end": 56.81,
+"word": "again",
+"p": 0.928,
+"segment": 1
+},
+{
+"start": 56.81,
+"end": 57.49,
+"word": "another",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 57.49,
+"end": 58.27,
+"word": "day",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 58.27,
+"end": 59.07,
+"word": "Sister",
+"p": 0.971,
+"segment": 2
+},
+{
+"start": 59.07,
+"end": 59.97,
+"word": "wants",
+"p": 0.881,
+"segment": 2
+},
+{
+"start": 59.97,
+"end": 60.51,
+"word": "to",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 60.51,
+"end": 60.85,
+"word": "play",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 60.85,
+"end": 61.65,
+"word": "Rain,",
+"p": 0.985,
+"segment": 2
+},
+{
+"start": 61.83,
+"end": 62.39,
+"word": "rain,",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 62.53,
+"end": 62.83,
+"word": "go",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 62.83,
+"end": 63.53,
+"word": "away",
+"p": 1.0,
+"segment": 2
+}
+]
+},
+{
+"start": 65.46,
+"end": 78.73,
+"hinted": [
+{
+"start": 65.16,
+"end": 67.08,
+"word": "rain,",
+"p": 0.061,
+"segment": 1
+},
+{
+"start": 67.22,
+"end": 68.02,
+"word": "go",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 68.02,
+"end": 68.82,
+"word": "away,",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 69.06,
+"end": 69.52,
+"word": "Come",
+"p": 0.012,
+"segment": 1
+},
+{
+"start": 69.52,
+"end": 70.12,
+"word": "again",
+"p": 0.909,
+"segment": 1
+},
+{
+"start": 70.12,
+"end": 70.82,
+"word": "another",
+"p": 0.94,
+"segment": 1
+},
+{
+"start": 70.82,
+"end": 71.56,
+"word": "day.",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 71.82,
+"end": 72.4,
+"word": "Baby",
+"p": 0.552,
+"segment": 1
+},
+{
+"start": 72.4,
+"end": 73.3,
+"word": "wants",
+"p": 0.853,
+"segment": 1
+},
+{
+"start": 73.3,
+"end": 73.8,
+"word": "to",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 73.8,
+"end": 74.22,
+"word": "play.",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 74.5,
+"end": 75.22,
+"word": "Rain,",
+"p": 0.539,
+"segment": 1
+},
+{
+"start": 75.28,
+"end": 75.6,
+"word": "rain,",
+"p": 0.26,
+"segment": 1
+},
+{
+"start": 75.84,
+"end": 76.16,
+"word": "go",
+"p": 0.943,
+"segment": 1
+},
+{
+"start": 76.16,
+"end": 76.86,
+"word": "away.",
+"p": 0.996,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 65.16,
+"end": 67.06,
+"word": "Rain,",
+"p": 0.917,
+"segment": 1
+},
+{
+"start": 67.2,
+"end": 67.76,
+"word": "rain,",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 67.76,
+"end": 68.16,
+"word": "go",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 68.16,
+"end": 68.88,
+"word": "away,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 69.04,
+"end": 69.56,
+"word": "come",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 69.56,
+"end": 70.08,
+"word": "again",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 70.08,
+"end": 70.82,
+"word": "another",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 70.82,
+"end": 71.56,
+"word": "day",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 71.56,
+"end": 72.34,
+"word": "Baby",
+"p": 0.835,
+"segment": 2
+},
+{
+"start": 72.34,
+"end": 73.28,
+"word": "wants",
+"p": 0.88,
+"segment": 2
+},
+{
+"start": 73.28,
+"end": 73.82,
+"word": "to",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 73.82,
+"end": 74.2,
+"word": "play,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 74.52,
+"end": 75.24,
+"word": "rain,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 75.28,
+"end": 75.78,
+"word": "rain,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 75.84,
+"end": 76.16,
+"word": "go",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 76.16,
+"end": 76.88,
+"word": "away",
+"p": 1.0,
+"segment": 2
+}
+]
+},
+{
+"start": 78.73,
+"end": 92.0,
+"hinted": [
+{
+"start": 79.57,
+"end": 80.41,
+"word": "rain,",
+"p": 0.075,
+"segment": 1
+},
+{
+"start": 80.49,
+"end": 81.15,
+"word": "go",
+"p": 0.001,
+"segment": 1
+},
+{
+"start": 81.15,
+"end": 82.07,
+"word": "away,",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 82.45,
+"end": 82.89,
+"word": "Come",
+"p": 0.009,
+"segment": 1
+},
+{
+"start": 82.89,
+"end": 83.55,
+"word": "again",
+"p": 0.969,
+"segment": 1
+},
+{
+"start": 83.55,
+"end": 84.17,
+"word": "another",
+"p": 0.92,
+"segment": 1
+},
+{
+"start": 84.17,
+"end": 84.97,
+"word": "day.",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 85.19,
+"end": 85.65,
+"word": "All",
+"p": 0.783,
+"segment": 1
+},
+{
+"start": 85.65,
+"end": 85.91,
+"word": "the",
+"p": 0.872,
+"segment": 1
+},
+{
+"start": 85.91,
+"end": 86.53,
+"word": "family",
+"p": 0.974,
+"segment": 1
+},
+{
+"start": 86.53,
+"end": 86.93,
+"word": "wants",
+"p": 0.96,
+"segment": 1
+},
+{
+"start": 86.93,
+"end": 87.19,
+"word": "to",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 87.19,
+"end": 87.55,
+"word": "play.",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 87.77,
+"end": 88.51,
+"word": "Rain,",
+"p": 0.584,
+"segment": 1
+},
+{
+"start": 88.67,
+"end": 88.95,
+"word": "rain,",
+"p": 0.388,
+"segment": 1
+},
+{
+"start": 89.11,
+"end": 89.51,
+"word": "go",
+"p": 0.944,
+"segment": 1
+},
+{
+"start": 89.51,
+"end": 90.17,
+"word": "away.",
+"p": 0.995,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 79.45,
+"end": 80.41,
+"word": "Rain,",
+"p": 0.901,
+"segment": 1
+},
+{
+"start": 80.49,
+"end": 81.05,
+"word": "rain,",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 81.05,
+"end": 81.51,
+"word": "go",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 81.51,
+"end": 82.19,
+"word": "away,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 82.43,
+"end": 82.91,
+"word": "come",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 82.91,
+"end": 83.55,
+"word": "again",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 83.55,
+"end": 84.15,
+"word": "another",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 84.15,
+"end": 84.97,
+"word": "day",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 84.97,
+"end": 85.61,
+"word": "All",
+"p": 0.896,
+"segment": 2
+},
+{
+"start": 85.61,
+"end": 85.91,
+"word": "the",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 85.91,
+"end": 86.49,
+"word": "family",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 86.49,
+"end": 86.91,
+"word": "wants",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 86.91,
+"end": 87.19,
+"word": "to",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 87.19,
+"end": 87.55,
+"word": "play,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 87.77,
+"end": 88.51,
+"word": "rain,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 88.63,
+"end": 89.11,
+"word": "rain,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 89.19,
+"end": 89.59,
+"word": "go",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 89.59,
+"end": 90.19,
+"word": "away",
+"p": 1.0,
+"segment": 2
+}
+]
+}
+]
+},
+"zh": {
+"settings": "ae371b072a5844ac",
+"language": "zh",
+"pieces": [
+{
+"start": 94.5,
+"end": 108.02,
+"hinted": [
+{
+"start": 95.48,
+"end": 96.18,
+"word": "小",
+"p": 0.844,
+"segment": 1
+},
+{
+"start": 96.18,
+"end": 96.4,
+"word": "雨",
+"p": 0.643,
+"segment": 1
+},
+{
+"start": 96.4,
+"end": 96.88,
+"word": "小",
+"p": 0.169,
+"segment": 1
+},
+{
+"start": 96.88,
+"end": 97.2,
+"word": "雨，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 97.48,
+"end": 97.66,
+"word": "快",
+"p": 0.055,
+"segment": 1
+},
+{
+"start": 97.66,
+"end": 97.9,
+"word": "走",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 97.9,
+"end": 98.22,
+"word": "开",
+"p": 0.412,
+"segment": 1
+},
+{
+"start": 98.4,
+"end": 98.88,
+"word": "请",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 98.88,
+"end": 99.22,
+"word": "你",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 99.22,
+"end": 99.58,
+"word": "改",
+"p": 0.943,
+"segment": 1
+},
+{
+"start": 99.58,
+"end": 99.9,
+"word": "天",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 99.9,
+"end": 100.24,
+"word": "再",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 100.24,
+"end": 100.52,
+"word": "过",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 100.52,
+"end": 101.0,
+"word": "来",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 101.12,
+"end": 101.7,
+"word": "爸爸",
+"p": 0.925,
+"segment": 1
+},
+{
+"start": 101.7,
+"end": 102.12,
+"word": "还",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 102.12,
+"end": 102.58,
+"word": "想",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 102.58,
+"end": 102.96,
+"word": "出去",
+"p": 0.231,
+"segment": 1
+},
+{
+"start": 102.96,
+"end": 103.58,
+"word": "玩",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 103.58,
+"end": 104.14,
+"word": "小",
+"p": 0.792,
+"segment": 1
+},
+{
+"start": 104.14,
+"end": 104.56,
+"word": "雨，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 104.82,
+"end": 104.82,
+"word": "小",
+"p": 0.829,
+"segment": 1
+},
+{
+"start": 104.82,
+"end": 105.2,
+"word": "雨，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 105.36,
+"end": 105.48,
+"word": "快",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 105.48,
+"end": 105.86,
+"word": "走",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 105.86,
+"end": 106.24,
+"word": "开",
+"p": 0.999,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 95.38,
+"end": 96.18,
+"word": "小",
+"p": 0.844,
+"segment": 1
+},
+{
+"start": 96.18,
+"end": 96.4,
+"word": "雨",
+"p": 0.643,
+"segment": 1
+},
+{
+"start": 96.4,
+"end": 96.92,
+"word": "小",
+"p": 0.818,
+"segment": 1
+},
+{
+"start": 96.92,
+"end": 97.22,
+"word": "雨",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 97.22,
+"end": 97.48,
+"word": "快",
+"p": 0.847,
+"segment": 1
+},
+{
+"start": 97.48,
+"end": 97.88,
+"word": "走",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 97.88,
+"end": 98.22,
+"word": "开",
+"p": 0.446,
+"segment": 1
+},
+{
+"start": 98.22,
+"end": 98.82,
+"word": "请",
+"p": 0.943,
+"segment": 2
+},
+{
+"start": 98.82,
+"end": 99.22,
+"word": "你",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 99.22,
+"end": 99.56,
+"word": "改",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 99.56,
+"end": 99.82,
+"word": "天",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 99.82,
+"end": 100.24,
+"word": "再",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 100.24,
+"end": 100.52,
+"word": "过",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 100.52,
+"end": 100.96,
+"word": "来",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 100.96,
+"end": 101.72,
+"word": "爸爸",
+"p": 0.987,
+"segment": 3
+},
+{
+"start": 101.72,
+"end": 102.12,
+"word": "还",
+"p": 0.993,
+"segment": 3
+},
+{
+"start": 102.12,
+"end": 102.6,
+"word": "想",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 102.6,
+"end": 102.88,
+"word": "吃",
+"p": 0.535,
+"segment": 3
+},
+{
+"start": 102.88,
+"end": 103.1,
+"word": "吃",
+"p": 0.548,
+"segment": 3
+},
+{
+"start": 103.1,
+"end": 103.58,
+"word": "玩",
+"p": 0.875,
+"segment": 3
+},
+{
+"start": 103.58,
+"end": 104.14,
+"word": "小",
+"p": 0.991,
+"segment": 4
+},
+{
+"start": 104.14,
+"end": 104.52,
+"word": "雨",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 104.52,
+"end": 104.92,
+"word": "小",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 104.92,
+"end": 105.22,
+"word": "雨",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 105.22,
+"end": 105.46,
+"word": "快",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 105.46,
+"end": 105.84,
+"word": "走",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 105.84,
+"end": 106.26,
+"word": "开",
+"p": 1.0,
+"segment": 4
+}
+]
+},
+{
+"start": 108.02,
+"end": 121.49,
+"hinted": [
+{
+"start": 108.86,
+"end": 109.54,
+"word": "小",
+"p": 0.795,
+"segment": 1
+},
+{
+"start": 109.54,
+"end": 109.8,
+"word": "雨，",
+"p": 0.826,
+"segment": 1
+},
+{
+"start": 110.18,
+"end": 110.18,
+"word": "小",
+"p": 0.564,
+"segment": 1
+},
+{
+"start": 110.18,
+"end": 110.56,
+"word": "雨，",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 110.74,
+"end": 110.84,
+"word": "快",
+"p": 0.891,
+"segment": 1
+},
+{
+"start": 110.84,
+"end": 111.24,
+"word": "走",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 111.24,
+"end": 111.6,
+"word": "开",
+"p": 0.535,
+"segment": 1
+},
+{
+"start": 111.88,
+"end": 112.22,
+"word": "请",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 112.22,
+"end": 112.52,
+"word": "你",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 112.52,
+"end": 112.88,
+"word": "改",
+"p": 0.967,
+"segment": 1
+},
+{
+"start": 112.88,
+"end": 113.22,
+"word": "天",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 113.22,
+"end": 113.54,
+"word": "再",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 113.54,
+"end": 113.84,
+"word": "过",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 113.84,
+"end": 114.26,
+"word": "来",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 114.4,
+"end": 114.82,
+"word": "妈",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 114.82,
+"end": 115.24,
+"word": "妈",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 115.24,
+"end": 115.46,
+"word": "还",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 115.46,
+"end": 115.9,
+"word": "想",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 115.9,
+"end": 116.3,
+"word": "出去",
+"p": 0.04,
+"segment": 1
+},
+{
+"start": 116.3,
+"end": 116.92,
+"word": "玩",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 116.92,
+"end": 117.48,
+"word": "小",
+"p": 0.711,
+"segment": 1
+},
+{
+"start": 117.48,
+"end": 117.78,
+"word": "雨，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 118.1,
+"end": 118.18,
+"word": "小",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 118.18,
+"end": 118.48,
+"word": "雨，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 118.7,
+"end": 118.82,
+"word": "快",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 118.82,
+"end": 119.22,
+"word": "走",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 119.22,
+"end": 119.58,
+"word": "开",
+"p": 0.999,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 108.82,
+"end": 109.54,
+"word": "小",
+"p": 0.794,
+"segment": 1
+},
+{
+"start": 109.54,
+"end": 109.78,
+"word": "雨",
+"p": 0.826,
+"segment": 1
+},
+{
+"start": 109.78,
+"end": 110.26,
+"word": "小",
+"p": 0.845,
+"segment": 1
+},
+{
+"start": 110.26,
+"end": 110.58,
+"word": "雨",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 110.58,
+"end": 110.84,
+"word": "快",
+"p": 0.882,
+"segment": 1
+},
+{
+"start": 110.84,
+"end": 111.22,
+"word": "走",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 111.22,
+"end": 111.58,
+"word": "开",
+"p": 0.575,
+"segment": 1
+},
+{
+"start": 111.58,
+"end": 112.14,
+"word": "请",
+"p": 0.872,
+"segment": 2
+},
+{
+"start": 112.14,
+"end": 112.52,
+"word": "你",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 112.52,
+"end": 112.88,
+"word": "改",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 112.88,
+"end": 113.2,
+"word": "天",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 113.2,
+"end": 113.54,
+"word": "再",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 113.54,
+"end": 113.84,
+"word": "过",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 113.84,
+"end": 114.24,
+"word": "来",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 114.24,
+"end": 114.94,
+"word": "妈",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 114.94,
+"end": 115.24,
+"word": "妈",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 115.24,
+"end": 115.46,
+"word": "还",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 115.46,
+"end": 115.9,
+"word": "想",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 115.9,
+"end": 116.22,
+"word": "吃",
+"p": 0.684,
+"segment": 3
+},
+{
+"start": 116.22,
+"end": 116.5,
+"word": "吃",
+"p": 0.155,
+"segment": 3
+},
+{
+"start": 116.5,
+"end": 116.94,
+"word": "玩",
+"p": 0.555,
+"segment": 3
+},
+{
+"start": 116.94,
+"end": 117.46,
+"word": "小",
+"p": 0.203,
+"segment": 4
+},
+{
+"start": 117.46,
+"end": 117.92,
+"word": "雨",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 117.92,
+"end": 118.22,
+"word": "小",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 118.22,
+"end": 118.54,
+"word": "雨",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 118.54,
+"end": 118.78,
+"word": "快",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 118.78,
+"end": 119.2,
+"word": "走",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 119.2,
+"end": 119.62,
+"word": "开",
+"p": 1.0,
+"segment": 4
+}
+]
+},
+{
+"start": 121.49,
+"end": 134.8,
+"hinted": [
+{
+"start": 122.19,
+"end": 122.87,
+"word": "小",
+"p": 0.826,
+"segment": 1
+},
+{
+"start": 122.87,
+"end": 123.11,
+"word": "雨，",
+"p": 0.736,
+"segment": 1
+},
+{
+"start": 123.51,
+"end": 123.51,
+"word": "小",
+"p": 0.584,
+"segment": 1
+},
+{
+"start": 123.51,
+"end": 123.91,
+"word": "雨，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 124.07,
+"end": 124.17,
+"word": "快",
+"p": 0.887,
+"segment": 1
+},
+{
+"start": 124.17,
+"end": 124.55,
+"word": "走",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 124.55,
+"end": 124.91,
+"word": "开",
+"p": 0.6,
+"segment": 1
+},
+{
+"start": 125.17,
+"end": 125.55,
+"word": "请",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 125.55,
+"end": 125.85,
+"word": "你",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 125.85,
+"end": 126.21,
+"word": "改",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 126.21,
+"end": 126.55,
+"word": "天",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 126.55,
+"end": 126.85,
+"word": "再",
+"p": 0.958,
+"segment": 1
+},
+{
+"start": 126.85,
+"end": 127.17,
+"word": "过",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 127.17,
+"end": 127.73,
+"word": "来",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 127.95,
+"end": 128.17,
+"word": "哥",
+"p": 0.917,
+"segment": 1
+},
+{
+"start": 128.17,
+"end": 128.57,
+"word": "哥",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 128.57,
+"end": 128.81,
+"word": "还",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 128.81,
+"end": 129.23,
+"word": "想",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 129.23,
+"end": 129.65,
+"word": "出去",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 129.65,
+"end": 130.19,
+"word": "玩",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 130.19,
+"end": 130.79,
+"word": "小",
+"p": 0.54,
+"segment": 1
+},
+{
+"start": 130.79,
+"end": 131.17,
+"word": "雨，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 131.41,
+"end": 131.49,
+"word": "小",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 131.49,
+"end": 131.83,
+"word": "雨，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 132.01,
+"end": 132.27,
+"word": "快",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 132.27,
+"end": 132.51,
+"word": "走",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 132.51,
+"end": 132.93,
+"word": "开",
+"p": 0.999,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 122.11,
+"end": 122.87,
+"word": "小",
+"p": 0.826,
+"segment": 1
+},
+{
+"start": 122.87,
+"end": 123.11,
+"word": "雨",
+"p": 0.734,
+"segment": 1
+},
+{
+"start": 123.11,
+"end": 123.61,
+"word": "小",
+"p": 0.879,
+"segment": 1
+},
+{
+"start": 123.61,
+"end": 123.93,
+"word": "雨",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 123.93,
+"end": 124.15,
+"word": "快",
+"p": 0.862,
+"segment": 1
+},
+{
+"start": 124.15,
+"end": 124.53,
+"word": "走",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 124.53,
+"end": 124.89,
+"word": "开",
+"p": 0.66,
+"segment": 1
+},
+{
+"start": 124.89,
+"end": 125.45,
+"word": "请",
+"p": 0.878,
+"segment": 2
+},
+{
+"start": 125.45,
+"end": 125.85,
+"word": "你",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 125.85,
+"end": 126.21,
+"word": "改",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 126.21,
+"end": 126.53,
+"word": "天",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 126.53,
+"end": 126.85,
+"word": "再",
+"p": 0.99,
+"segment": 2
+},
+{
+"start": 126.85,
+"end": 127.17,
+"word": "过",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 127.17,
+"end": 127.69,
+"word": "来",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 127.69,
+"end": 128.27,
+"word": "哥",
+"p": 0.942,
+"segment": 3
+},
+{
+"start": 128.27,
+"end": 128.57,
+"word": "哥",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 128.57,
+"end": 128.81,
+"word": "还",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 128.81,
+"end": 129.23,
+"word": "想",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 129.23,
+"end": 129.65,
+"word": "出去",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 129.65,
+"end": 130.19,
+"word": "玩",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 130.19,
+"end": 130.91,
+"word": "小",
+"p": 0.994,
+"segment": 4
+},
+{
+"start": 130.91,
+"end": 131.17,
+"word": "雨",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 131.17,
+"end": 131.59,
+"word": "小",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 131.59,
+"end": 131.85,
+"word": "雨",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 131.85,
+"end": 132.11,
+"word": "快",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 132.11,
+"end": 132.51,
+"word": "走",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 132.51,
+"end": 132.95,
+"word": "开",
+"p": 1.0,
+"segment": 4
+}
+]
+},
+{
+"start": 134.8,
+"end": 148.23,
+"hinted": [
+{
+"start": 135.48,
+"end": 136.16,
+"word": "小",
+"p": 0.578,
+"segment": 1
+},
+{
+"start": 136.16,
+"end": 136.46,
+"word": "雨，",
+"p": 0.795,
+"segment": 1
+},
+{
+"start": 136.82,
+"end": 136.82,
+"word": "小",
+"p": 0.571,
+"segment": 1
+},
+{
+"start": 136.82,
+"end": 137.18,
+"word": "雨，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 137.38,
+"end": 137.5,
+"word": "快",
+"p": 0.885,
+"segment": 1
+},
+{
+"start": 137.5,
+"end": 137.9,
+"word": "走",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 137.9,
+"end": 138.24,
+"word": "开",
+"p": 0.544,
+"segment": 1
+},
+{
+"start": 138.46,
+"end": 138.88,
+"word": "请",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 138.88,
+"end": 139.18,
+"word": "你",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 139.18,
+"end": 139.56,
+"word": "改",
+"p": 0.964,
+"segment": 1
+},
+{
+"start": 139.56,
+"end": 139.9,
+"word": "天",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 139.9,
+"end": 140.22,
+"word": "再",
+"p": 0.915,
+"segment": 1
+},
+{
+"start": 140.22,
+"end": 140.52,
+"word": "过",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 140.52,
+"end": 141.0,
+"word": "来",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 141.1,
+"end": 141.5,
+"word": "姐",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 141.5,
+"end": 141.9,
+"word": "姐",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 141.9,
+"end": 142.16,
+"word": "还",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 142.16,
+"end": 142.56,
+"word": "想",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 142.56,
+"end": 142.96,
+"word": "出去",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 142.96,
+"end": 143.54,
+"word": "玩",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 143.54,
+"end": 144.1,
+"word": "小",
+"p": 0.743,
+"segment": 1
+},
+{
+"start": 144.1,
+"end": 144.48,
+"word": "雨，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 144.76,
+"end": 144.84,
+"word": "小",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 144.84,
+"end": 145.16,
+"word": "雨，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 145.36,
+"end": 145.62,
+"word": "快",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 145.62,
+"end": 145.88,
+"word": "走",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 145.88,
+"end": 146.26,
+"word": "开",
+"p": 0.999,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 135.4,
+"end": 136.16,
+"word": "小",
+"p": 0.578,
+"segment": 1
+},
+{
+"start": 136.16,
+"end": 136.4,
+"word": "雨",
+"p": 0.796,
+"segment": 1
+},
+{
+"start": 136.4,
+"end": 136.9,
+"word": "小",
+"p": 0.786,
+"segment": 1
+},
+{
+"start": 136.9,
+"end": 137.22,
+"word": "雨",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 137.22,
+"end": 137.48,
+"word": "快",
+"p": 0.861,
+"segment": 1
+},
+{
+"start": 137.48,
+"end": 137.86,
+"word": "走",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 137.86,
+"end": 138.22,
+"word": "开",
+"p": 0.56,
+"segment": 1
+},
+{
+"start": 138.22,
+"end": 138.8,
+"word": "请",
+"p": 0.881,
+"segment": 2
+},
+{
+"start": 138.8,
+"end": 139.18,
+"word": "你",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 139.18,
+"end": 139.56,
+"word": "改",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 139.56,
+"end": 139.88,
+"word": "天",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 139.88,
+"end": 140.22,
+"word": "再",
+"p": 0.972,
+"segment": 2
+},
+{
+"start": 140.22,
+"end": 140.52,
+"word": "过",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 140.52,
+"end": 141.0,
+"word": "来",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 141.0,
+"end": 141.58,
+"word": "姐",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 141.58,
+"end": 141.9,
+"word": "姐",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 141.9,
+"end": 142.14,
+"word": "还",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 142.14,
+"end": 142.56,
+"word": "想",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 142.56,
+"end": 142.96,
+"word": "出去",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 142.96,
+"end": 143.56,
+"word": "玩",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 143.56,
+"end": 144.28,
+"word": "小",
+"p": 0.993,
+"segment": 4
+},
+{
+"start": 144.28,
+"end": 144.48,
+"word": "雨",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 144.48,
+"end": 144.92,
+"word": "小",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 144.92,
+"end": 145.24,
+"word": "雨",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 145.24,
+"end": 145.46,
+"word": "快",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 145.46,
+"end": 145.84,
+"word": "走",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 145.84,
+"end": 146.3,
+"word": "开",
+"p": 1.0,
+"segment": 4
+}
+]
+},
+{
+"start": 148.23,
+"end": 161.46,
+"hinted": [
+{
+"start": 148.83,
+"end": 149.51,
+"word": "小",
+"p": 0.725,
+"segment": 1
+},
+{
+"start": 149.51,
+"end": 149.83,
+"word": "雨，",
+"p": 0.745,
+"segment": 1
+},
+{
+"start": 150.13,
+"end": 150.13,
+"word": "小",
+"p": 0.577,
+"segment": 1
+},
+{
+"start": 150.13,
+"end": 150.53,
+"word": "雨，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 150.73,
+"end": 150.83,
+"word": "快",
+"p": 0.89,
+"segment": 1
+},
+{
+"start": 150.83,
+"end": 151.23,
+"word": "走",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 151.23,
+"end": 151.57,
+"word": "开",
+"p": 0.591,
+"segment": 1
+},
+{
+"start": 151.85,
+"end": 152.25,
+"word": "请",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 152.25,
+"end": 152.53,
+"word": "你",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 152.53,
+"end": 152.91,
+"word": "改",
+"p": 0.969,
+"segment": 1
+},
+{
+"start": 152.91,
+"end": 153.25,
+"word": "天",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 153.25,
+"end": 153.57,
+"word": "再",
+"p": 0.945,
+"segment": 1
+},
+{
+"start": 153.57,
+"end": 153.85,
+"word": "过",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 153.85,
+"end": 154.37,
+"word": "来",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 154.45,
+"end": 154.89,
+"word": "爸爸",
+"p": 0.001,
+"segment": 1
+},
+{
+"start": 154.89,
+"end": 155.47,
+"word": "还",
+"p": 0.951,
+"segment": 1
+},
+{
+"start": 155.47,
+"end": 155.89,
+"word": "想",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 155.89,
+"end": 156.27,
+"word": "出去",
+"p": 0.88,
+"segment": 1
+},
+{
+"start": 156.27,
+"end": 156.89,
+"word": "玩",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 156.89,
+"end": 157.45,
+"word": "小",
+"p": 0.618,
+"segment": 1
+},
+{
+"start": 157.45,
+"end": 157.83,
+"word": "雨，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 158.07,
+"end": 158.19,
+"word": "小",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 158.19,
+"end": 158.45,
+"word": "雨，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 158.67,
+"end": 158.79,
+"word": "快",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 158.79,
+"end": 159.21,
+"word": "走",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 159.21,
+"end": 159.59,
+"word": "开",
+"p": 0.999,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 148.75,
+"end": 149.51,
+"word": "小",
+"p": 0.725,
+"segment": 1
+},
+{
+"start": 149.51,
+"end": 149.81,
+"word": "雨",
+"p": 0.747,
+"segment": 1
+},
+{
+"start": 149.81,
+"end": 150.21,
+"word": "小",
+"p": 0.838,
+"segment": 1
+},
+{
+"start": 150.21,
+"end": 150.53,
+"word": "雨",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 150.53,
+"end": 150.81,
+"word": "快",
+"p": 0.835,
+"segment": 1
+},
+{
+"start": 150.81,
+"end": 151.19,
+"word": "走",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 151.19,
+"end": 151.57,
+"word": "开",
+"p": 0.602,
+"segment": 1
+},
+{
+"start": 151.57,
+"end": 152.17,
+"word": "请",
+"p": 0.914,
+"segment": 2
+},
+{
+"start": 152.17,
+"end": 152.53,
+"word": "你",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 152.53,
+"end": 152.89,
+"word": "改",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 152.89,
+"end": 153.21,
+"word": "天",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 153.21,
+"end": 153.57,
+"word": "再",
+"p": 0.984,
+"segment": 2
+},
+{
+"start": 153.57,
+"end": 153.85,
+"word": "过",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 153.85,
+"end": 154.33,
+"word": "来",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 154.33,
+"end": 154.83,
+"word": "报",
+"p": 0.109,
+"segment": 3
+},
+{
+"start": 154.83,
+"end": 155.21,
+"word": "告",
+"p": 0.991,
+"segment": 3
+},
+{
+"start": 155.21,
+"end": 155.47,
+"word": "还",
+"p": 0.948,
+"segment": 3
+},
+{
+"start": 155.47,
+"end": 155.87,
+"word": "想",
+"p": 0.978,
+"segment": 3
+},
+{
+"start": 155.87,
+"end": 156.29,
+"word": "出去",
+"p": 0.9,
+"segment": 3
+},
+{
+"start": 156.29,
+"end": 156.91,
+"word": "玩",
+"p": 0.995,
+"segment": 3
+},
+{
+"start": 156.91,
+"end": 157.43,
+"word": "小",
+"p": 0.982,
+"segment": 4
+},
+{
+"start": 157.43,
+"end": 157.93,
+"word": "雨",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 157.93,
+"end": 158.25,
+"word": "小",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 158.25,
+"end": 158.55,
+"word": "雨",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 158.55,
+"end": 158.77,
+"word": "快",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 158.77,
+"end": 159.17,
+"word": "走",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 159.17,
+"end": 159.61,
+"word": "开",
+"p": 1.0,
+"segment": 4
+}
+]
+},
+{
+"start": 161.46,
+"end": 175.0,
+"hinted": [
+{
+"start": 162.22,
+"end": 162.86,
+"word": "小",
+"p": 0.722,
+"segment": 1
+},
+{
+"start": 162.86,
+"end": 163.16,
+"word": "雨，",
+"p": 0.658,
+"segment": 1
+},
+{
+"start": 163.46,
+"end": 163.46,
+"word": "小",
+"p": 0.537,
+"segment": 1
+},
+{
+"start": 163.46,
+"end": 163.84,
+"word": "雨，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 164.06,
+"end": 164.14,
+"word": "快",
+"p": 0.896,
+"segment": 1
+},
+{
+"start": 164.14,
+"end": 164.58,
+"word": "走",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 164.58,
+"end": 164.9,
+"word": "开",
+"p": 0.506,
+"segment": 1
+},
+{
+"start": 165.1,
+"end": 165.56,
+"word": "请",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 165.56,
+"end": 165.88,
+"word": "你",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 165.88,
+"end": 166.24,
+"word": "改",
+"p": 0.975,
+"segment": 1
+},
+{
+"start": 166.24,
+"end": 166.58,
+"word": "天",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 166.58,
+"end": 166.9,
+"word": "再",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 166.9,
+"end": 167.18,
+"word": "过",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 167.18,
+"end": 167.78,
+"word": "来",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 167.9,
+"end": 168.14,
+"word": "全",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 168.14,
+"end": 168.52,
+"word": "家",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 168.52,
+"end": 168.82,
+"word": "还",
+"p": 0.848,
+"segment": 1
+},
+{
+"start": 168.82,
+"end": 169.2,
+"word": "想",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 169.2,
+"end": 169.62,
+"word": "出去",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 169.62,
+"end": 170.18,
+"word": "玩",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 170.18,
+"end": 170.8,
+"word": "小",
+"p": 0.625,
+"segment": 1
+},
+{
+"start": 170.8,
+"end": 171.16,
+"word": "雨，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 171.4,
+"end": 171.52,
+"word": "小",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 171.52,
+"end": 171.84,
+"word": "雨，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 172.02,
+"end": 172.1,
+"word": "快",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 172.1,
+"end": 172.54,
+"word": "走",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 172.54,
+"end": 172.94,
+"word": "开",
+"p": 1.0,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 162.1,
+"end": 162.86,
+"word": "小",
+"p": 0.719,
+"segment": 1
+},
+{
+"start": 162.86,
+"end": 163.1,
+"word": "雨",
+"p": 0.659,
+"segment": 1
+},
+{
+"start": 163.1,
+"end": 163.58,
+"word": "小",
+"p": 0.811,
+"segment": 1
+},
+{
+"start": 163.58,
+"end": 163.86,
+"word": "雨",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 163.86,
+"end": 164.14,
+"word": "快",
+"p": 0.779,
+"segment": 1
+},
+{
+"start": 164.14,
+"end": 164.54,
+"word": "走",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 164.54,
+"end": 164.88,
+"word": "开",
+"p": 0.418,
+"segment": 1
+},
+{
+"start": 164.88,
+"end": 165.48,
+"word": "请",
+"p": 0.933,
+"segment": 2
+},
+{
+"start": 165.48,
+"end": 165.88,
+"word": "你",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 165.88,
+"end": 166.24,
+"word": "改",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 166.24,
+"end": 166.56,
+"word": "天",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 166.56,
+"end": 166.9,
+"word": "再",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 166.9,
+"end": 167.18,
+"word": "过",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 167.18,
+"end": 167.72,
+"word": "来",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 167.72,
+"end": 168.18,
+"word": "全",
+"p": 0.978,
+"segment": 3
+},
+{
+"start": 168.18,
+"end": 168.52,
+"word": "家",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 168.52,
+"end": 168.82,
+"word": "还",
+"p": 0.862,
+"segment": 3
+},
+{
+"start": 168.82,
+"end": 169.2,
+"word": "想",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 169.2,
+"end": 169.62,
+"word": "出去",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 169.62,
+"end": 170.2,
+"word": "玩",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 170.2,
+"end": 170.94,
+"word": "小",
+"p": 0.992,
+"segment": 4
+},
+{
+"start": 170.94,
+"end": 171.16,
+"word": "雨",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 171.16,
+"end": 171.58,
+"word": "小",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 171.58,
+"end": 171.88,
+"word": "雨",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 171.88,
+"end": 172.1,
+"word": "快",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 172.1,
+"end": 172.52,
+"word": "走",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 172.52,
+"end": 172.96,
+"word": "开",
+"p": 1.0,
+"segment": 4
+}
+]
+}
+]
+}
+}
+}

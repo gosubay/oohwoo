@@ -1,0 +1,119 @@
+{
+ "schema": 1,
+ "key": "xiaoyanzi",
+ "recording": "20. Xiao Yan Zi - Little Bird",
+ "assets": {
+  "source": {
+   "path": "songs/20. Xiao Yan Zi - Little Bird.mp3",
+   "sha256": "e8079012fc4689fb3c636debbe36d67fd0a72e5be06b56472c7996f39ad74c98"
+  },
+  "backing": {
+   "path": "audio/20. Xiao Yan Zi - Little Bird.mp3",
+   "sha256": "952f0caa604e46e122e3e9e2d86161ffa87b1b115c7e0d3bf93bed8c64a86939"
+  },
+  "vocal": {
+   "path": "separated/vocals/20. Xiao Yan Zi - Little Bird.mp3",
+   "sha256": "e0b2d87c28a21b190db9aa72aaf0d34a70b7a44d0965ba385bb4914a113e46f1"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 11.0,
+   "end": 67.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "小燕子，穿花衣，",
+      "年年春天来这里。",
+      "我问燕子你为啥来？",
+      "燕子说：“这里的春天最美丽。”"
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "小燕子，告诉你，",
+      "今年这里更美丽。",
+      "我们盖起了大工厂，",
+      "装上了新机器。",
+      "欢迎你，长期住在这里。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en",
+   "language": "en",
+   "start": 92.5,
+   "end": 152.0,
+   "verses": [
+    {
+     "label": "Verse 3",
+     "lines": [
+      "Little bird, coat of flowers",
+      "Greeting me through spring showers",
+      "Little bird, why are you here?",
+      "The spring here is the prettiest I’ve seen"
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "Little bird, I’ve news for you",
+      "This place is more beautiful too",
+      "We built a big factory",
+      "Filled with machinery",
+      "Feel free to stay here indefinitely"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "coda",
+   "language": "zh",
+   "start": 175.0,
+   "end": 438.4,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "小燕子，穿花衣，",
+      "年年春天来这里。",
+      "我问燕子你为啥来？",
+      "燕子说：“这里的春天最美丽。”"
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "小燕子，告诉你，",
+      "今年这里更美丽。",
+      "我们盖起了大工厂，",
+      "装上了新机器。",
+      "欢迎你，长期住在这里。"
+     ]
+    }
+   ],
+   "unscripted": {
+    "label": "Coda",
+    "partGap": 5.0,
+    "reason": "Unscripted coda after Verse 4 (175-438 s): fragmentary repeated \"小燕子…穿花衣\" chant heard consistently by all three transcription passes; not in lyrics_raw.txt. Charted as sung, lyrics from cross-pass agreement only."
+   }
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

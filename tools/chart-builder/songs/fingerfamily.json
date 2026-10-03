@@ -1,0 +1,125 @@
+{
+ "schema": 1,
+ "key": "fingerfamily",
+ "recording": "13. Finger Family",
+ "assets": {
+  "source": {
+   "path": "songs/13. Finger Family.mp3",
+   "sha256": "e83f8e26c079ea7765171b471fd9e88159ed600a7e51c41c8f6f6eaafe81cb26"
+  },
+  "backing": {
+   "path": "audio/13. Finger Family.mp3",
+   "sha256": "17f2f2fbc16761cf2f566e5302c05d43fb2a3be6a8dabfea01bc39e49bd112b5"
+  },
+  "vocal": {
+   "path": "separated/vocals/13. Finger Family.mp3",
+   "sha256": "91e021fd23b78c6933d1d80efaf16ff0aba51ac24d931fc2e3879a11566d7bfe"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 8.0,
+   "end": 59.6,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "Daddy finger, daddy finger, Where are you?",
+      "Here I am, here I am.",
+      "How do you do?"
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "Mommy finger, Mommy finger, Where are you?",
+      "Here I am, here I am.",
+      "How do you do?"
+     ]
+    },
+    {
+     "label": "Verse 3",
+     "lines": [
+      "Brother finger, Brother finger, Where are you?",
+      "Here I am, here I am.",
+      "How do you do?"
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "Sister finger, Sister finger, Where are you?",
+      "Here I am, here I am.",
+      "How do you do?"
+     ]
+    },
+    {
+     "label": "Verse 5",
+     "lines": [
+      "Baby finger, Baby finger",
+      "Where are you?",
+      "Here I am, here I am.",
+      "How do you do?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 59.6,
+   "end": 103.0,
+   "verses": [
+    {
+     "label": "Verse 6",
+     "lines": [
+      "手指爸爸，手指爸爸，在哪里？",
+      "在这里，在这里，快来这里！"
+     ]
+    },
+    {
+     "label": "Verse 7",
+     "lines": [
+      "手指妈妈，手指妈妈，在哪里？",
+      "在这里，在这里，快来这里！"
+     ]
+    },
+    {
+     "label": "Verse 8",
+     "lines": [
+      "手指哥哥，手指哥哥，在哪里？",
+      "在这里，在这里，快来这里！"
+     ]
+    },
+    {
+     "label": "Verse 9",
+     "lines": [
+      "手指姐姐，手指姐姐，在哪里？",
+      "在这里，在这里，快来这里！"
+     ]
+    },
+    {
+     "label": "Verse 10",
+     "lines": [
+      "手指宝宝，手指宝宝，在哪里？",
+      "在这里，在这里，快来这里！"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

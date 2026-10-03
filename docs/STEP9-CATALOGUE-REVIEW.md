@@ -1,5 +1,8 @@
 # Step 9 (catalogue) — 21 songs re-charted from their recordings, owner listening pending
 
+> **Superseded 2026-10-03.** The excerpt charts described here were replaced by Full song + Quick play charts.
+> Current state: [CATALOGUE-CORRECTION-REVIEW.md](CATALOGUE-CORRECTION-REVIEW.md). Kept for history.
+
 2026-10-02. Galvin asked for all other songs to be fixed the way Twinkle was. Every song except Twinkle now has a chart drafted from its own recording. These are **numerical drafts**: nobody has listened to them yet. Twinkle's approved chart, its audio and the gameplay systems were not changed.
 
 ## What changed, in plain language

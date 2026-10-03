@@ -1,0 +1,139 @@
+{
+ "schema": 1,
+ "key": "fivemonkeys",
+ "recording": "17. 5 Little Monkeys",
+ "assets": {
+  "source": {
+   "path": "songs/17. 5 Little Monkeys.mp3",
+   "sha256": "0cc9ee7b2465da2c05e9441cf30091291d4b0af3fb96a7b9cae19116c5e9421a"
+  },
+  "backing": {
+   "path": "audio/17. 5 Little Monkeys.mp3",
+   "sha256": "eaf6d9f487c970d189e0d528eff8031fe6e5648602a72939d1ba93ed38e91c22"
+  },
+  "vocal": {
+   "path": "separated/vocals/17. 5 Little Monkeys.mp3",
+   "sha256": "6699b0f2b93818b2ae8290e7c43d50c3f5dbbd748acbddd0992649ea64401fd3"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 6.5,
+   "end": 93.5,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "Five little monkeys jumping on the bed,",
+      "One fell off and bumped his head.",
+      "Mama called the doctor and the doctor said,",
+      "\"No more monkeys jumping on the bed!\""
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "Four little monkeys jumping on the bed,",
+      "One fell off and bumped his head.",
+      "Mama called the doctor and the doctor said,",
+      "\"No more monkeys jumping on the bed!\""
+     ]
+    },
+    {
+     "label": "Verse 3",
+     "lines": [
+      "Three little monkeys jumping on the bed,",
+      "One fell off and bumped his head.",
+      "Mama called the doctor and the doctor said,",
+      "\"No more monkeys jumping on the bed!\""
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "Two little monkeys jumping on the bed,",
+      "One fell off and bumped his head.",
+      "Mama called the doctor and the doctor said,",
+      "\"No more monkeys jumping on the bed!\""
+     ]
+    },
+    {
+     "label": "Verse 5",
+     "lines": [
+      "One little monkey jumping on the bed,",
+      "He fell off and bumped his head.",
+      "Mama called the doctor and the doctor said,",
+      "\"No more monkeys jumping on the bed!\""
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 94.5,
+   "end": 163.5,
+   "verses": [
+    {
+     "label": "Verse 6",
+     "lines": [
+      "五只小猴床上跳",
+      "一只跌倒摔伤了",
+      "医生医生怎么办",
+      "别让小猴床上跳"
+     ]
+    },
+    {
+     "label": "Verse 7",
+     "lines": [
+      "四只小猴床上跳",
+      "一只跌倒摔伤了",
+      "医生医生怎么办",
+      "别让小猴床上跳"
+     ]
+    },
+    {
+     "label": "Verse 8",
+     "lines": [
+      "三只小猴床上跳",
+      "一只跌倒摔伤了",
+      "医生医生怎么办",
+      "别让小猴床上跳"
+     ]
+    },
+    {
+     "label": "Verse 9",
+     "lines": [
+      "两只小猴床上跳",
+      "一只跌倒摔伤了",
+      "医生医生怎么办",
+      "别让小猴床上跳"
+     ]
+    },
+    {
+     "label": "Verse 10",
+     "lines": [
+      "一只小猴床上跳",
+      "一只跌倒摔伤了",
+      "医生医生怎么办",
+      "别让小猴床上跳"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

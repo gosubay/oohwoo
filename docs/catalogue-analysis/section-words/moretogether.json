@@ -1,0 +1,1633 @@
+{
+"vocalSha256": "4b0a83bd8b5353fa5abcbe5b0ef16f2e3e7f52fc34c637c627d1fd5043c93c73",
+"model": "large-v3",
+"blocks": {
+"en": {
+"settings": "0007ba4782776520",
+"language": "en",
+"pieces": [
+{
+"start": 0.0,
+"end": 12.24,
+"hinted": [
+{
+"start": 0.0,
+"end": 0.6,
+"word": "Ooh",
+"p": 0.144,
+"segment": 1
+},
+{
+"start": 0.6,
+"end": 0.86,
+"word": "-ooh",
+"p": 0.429,
+"segment": 1
+},
+{
+"start": 0.86,
+"end": 1.08,
+"word": "-ooh,",
+"p": 0.627,
+"segment": 1
+},
+{
+"start": 1.08,
+"end": 1.58,
+"word": "La",
+"p": 0.006,
+"segment": 1
+},
+{
+"start": 1.58,
+"end": 1.96,
+"word": "-da",
+"p": 0.742,
+"segment": 1
+},
+{
+"start": 1.96,
+"end": 2.2,
+"word": "-do",
+"p": 0.53,
+"segment": 1
+},
+{
+"start": 2.2,
+"end": 2.52,
+"word": "-do,",
+"p": 0.863,
+"segment": 1
+},
+{
+"start": 2.52,
+"end": 3.08,
+"word": "Da",
+"p": 0.133,
+"segment": 1
+},
+{
+"start": 3.08,
+"end": 3.84,
+"word": "-da",
+"p": 0.938,
+"segment": 1
+},
+{
+"start": 3.84,
+"end": 4.06,
+"word": "-do",
+"p": 0.965,
+"segment": 1
+},
+{
+"start": 4.06,
+"end": 4.48,
+"word": "-do,",
+"p": 0.653,
+"segment": 1
+},
+{
+"start": 4.48,
+"end": 4.96,
+"word": "Da",
+"p": 0.913,
+"segment": 1
+},
+{
+"start": 4.96,
+"end": 5.42,
+"word": "-da",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 5.42,
+"end": 5.72,
+"word": "-do",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 5.72,
+"end": 6.1,
+"word": "-do,",
+"p": 0.855,
+"segment": 1
+},
+{
+"start": 6.1,
+"end": 6.68,
+"word": "Ooh",
+"p": 0.771,
+"segment": 1
+},
+{
+"start": 6.68,
+"end": 7.04,
+"word": "-ooh",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 7.04,
+"end": 7.72,
+"word": "-ooh",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 7.72,
+"end": 8.6,
+"word": "-ooh,",
+"p": 0.636,
+"segment": 1
+},
+{
+"start": 9.06,
+"end": 9.64,
+"word": "Ooh",
+"p": 0.745,
+"segment": 1
+},
+{
+"start": 9.64,
+"end": 10.38,
+"word": "-ooh",
+"p": 0.838,
+"segment": 1
+},
+{
+"start": 10.38,
+"end": 11.2,
+"word": "-ooh",
+"p": 0.956,
+"segment": 1
+},
+{
+"start": 11.2,
+"end": 11.56,
+"word": "-ooh,",
+"p": 0.862,
+"segment": 1
+},
+{
+"start": 11.56,
+"end": 11.86,
+"word": "Mm",
+"p": 0.045,
+"segment": 2
+},
+{
+"start": 11.86,
+"end": 11.96,
+"word": "-hmm.",
+"p": 0.828,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 0.0,
+"end": 0.6,
+"word": "Ooh",
+"p": 0.144,
+"segment": 1
+},
+{
+"start": 0.6,
+"end": 0.86,
+"word": "-ooh,",
+"p": 0.429,
+"segment": 1
+},
+{
+"start": 0.98,
+"end": 1.6,
+"word": "la",
+"p": 0.365,
+"segment": 1
+},
+{
+"start": 1.6,
+"end": 1.98,
+"word": "-da",
+"p": 0.769,
+"segment": 1
+},
+{
+"start": 1.98,
+"end": 2.22,
+"word": "-da",
+"p": 0.932,
+"segment": 1
+},
+{
+"start": 2.22,
+"end": 2.38,
+"word": "-do,",
+"p": 0.792,
+"segment": 1
+},
+{
+"start": 2.5,
+"end": 3.02,
+"word": "da",
+"p": 0.85,
+"segment": 1
+},
+{
+"start": 3.02,
+"end": 3.8,
+"word": "-da",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 3.8,
+"end": 4.06,
+"word": "-do,",
+"p": 0.669,
+"segment": 1
+},
+{
+"start": 4.06,
+"end": 4.52,
+"word": "da",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 4.52,
+"end": 5.3,
+"word": "-da",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 5.3,
+"end": 5.6,
+"word": "-da",
+"p": 0.971,
+"segment": 1
+},
+{
+"start": 5.6,
+"end": 5.78,
+"word": "-do",
+"p": 0.896,
+"segment": 1
+},
+{
+"start": 5.78,
+"end": 6.58,
+"word": "Ooh",
+"p": 0.778,
+"segment": 2
+},
+{
+"start": 6.58,
+"end": 7.04,
+"word": "-ooh,",
+"p": 0.957,
+"segment": 2
+},
+{
+"start": 8.06,
+"end": 8.06,
+"word": "ooh",
+"p": 0.965,
+"segment": 2
+},
+{
+"start": 8.06,
+"end": 8.08,
+"word": "-ooh,",
+"p": 0.884,
+"segment": 2
+},
+{
+"start": 8.48,
+"end": 9.44,
+"word": "ooh",
+"p": 0.959,
+"segment": 2
+},
+{
+"start": 9.44,
+"end": 10.04,
+"word": "-ooh,",
+"p": 0.869,
+"segment": 2
+},
+{
+"start": 10.04,
+"end": 10.04,
+"word": "ooh",
+"p": 0.948,
+"segment": 2
+},
+{
+"start": 10.04,
+"end": 10.42,
+"word": "-ooh",
+"p": 0.917,
+"segment": 2
+}
+]
+},
+{
+"start": 12.24,
+"end": 37.5,
+"hinted": [
+{
+"start": 11.94,
+"end": 12.8,
+"word": "The",
+"p": 0.856,
+"segment": 1
+},
+{
+"start": 12.8,
+"end": 13.3,
+"word": "more",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 13.3,
+"end": 14.02,
+"word": "we",
+"p": 0.948,
+"segment": 1
+},
+{
+"start": 14.02,
+"end": 14.32,
+"word": "get",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 14.32,
+"end": 15.0,
+"word": "together,",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 15.38,
+"end": 16.24,
+"word": "Together,",
+"p": 0.019,
+"segment": 1
+},
+{
+"start": 16.42,
+"end": 17.42,
+"word": "together,",
+"p": 0.841,
+"segment": 1
+},
+{
+"start": 17.98,
+"end": 18.82,
+"word": "The",
+"p": 0.839,
+"segment": 1
+},
+{
+"start": 18.82,
+"end": 19.48,
+"word": "more",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 19.48,
+"end": 20.26,
+"word": "we",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 20.26,
+"end": 20.52,
+"word": "get",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 20.52,
+"end": 21.16,
+"word": "together,",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 21.5,
+"end": 21.92,
+"word": "The",
+"p": 0.809,
+"segment": 1
+},
+{
+"start": 21.92,
+"end": 22.88,
+"word": "happier",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 22.88,
+"end": 23.64,
+"word": "we’ll",
+"p": 0.48,
+"segment": 1
+},
+{
+"start": 23.64,
+"end": 24.1,
+"word": "be.",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 24.53,
+"end": 25.06,
+"word": "For",
+"p": 0.973,
+"segment": 2
+},
+{
+"start": 25.06,
+"end": 25.6,
+"word": "your",
+"p": 0.941,
+"segment": 2
+},
+{
+"start": 25.6,
+"end": 26.18,
+"word": "friends",
+"p": 0.975,
+"segment": 2
+},
+{
+"start": 26.18,
+"end": 26.7,
+"word": "are",
+"p": 0.948,
+"segment": 2
+},
+{
+"start": 26.7,
+"end": 27.12,
+"word": "my",
+"p": 0.985,
+"segment": 2
+},
+{
+"start": 27.12,
+"end": 27.76,
+"word": "friends,",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 28.04,
+"end": 28.24,
+"word": "And",
+"p": 0.897,
+"segment": 2
+},
+{
+"start": 28.24,
+"end": 28.64,
+"word": "my",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 28.64,
+"end": 29.28,
+"word": "friends",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 29.28,
+"end": 29.76,
+"word": "are",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 29.76,
+"end": 30.18,
+"word": "your",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 30.18,
+"end": 30.8,
+"word": "friends.",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 31.14,
+"end": 31.22,
+"word": "The",
+"p": 0.993,
+"segment": 3
+},
+{
+"start": 31.22,
+"end": 31.8,
+"word": "more",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 31.8,
+"end": 32.52,
+"word": "we",
+"p": 0.994,
+"segment": 3
+},
+{
+"start": 32.52,
+"end": 32.74,
+"word": "get",
+"p": 0.994,
+"segment": 3
+},
+{
+"start": 32.74,
+"end": 33.38,
+"word": "together,",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 33.86,
+"end": 34.24,
+"word": "The",
+"p": 0.976,
+"segment": 3
+},
+{
+"start": 34.24,
+"end": 35.1,
+"word": "happier",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 35.1,
+"end": 35.96,
+"word": "we’ll",
+"p": 0.983,
+"segment": 3
+},
+{
+"start": 35.96,
+"end": 36.4,
+"word": "be.",
+"p": 1.0,
+"segment": 3
+}
+],
+"plain": [
+{
+"start": 11.94,
+"end": 12.8,
+"word": "The",
+"p": 0.856,
+"segment": 1
+},
+{
+"start": 12.8,
+"end": 13.3,
+"word": "more",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 13.3,
+"end": 14.02,
+"word": "we",
+"p": 0.948,
+"segment": 1
+},
+{
+"start": 14.02,
+"end": 14.32,
+"word": "get",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 14.32,
+"end": 15.0,
+"word": "together,",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 15.38,
+"end": 16.26,
+"word": "together,",
+"p": 0.957,
+"segment": 1
+},
+{
+"start": 16.42,
+"end": 17.38,
+"word": "together",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 18.08,
+"end": 18.64,
+"word": "The",
+"p": 0.774,
+"segment": 2
+},
+{
+"start": 18.64,
+"end": 19.48,
+"word": "more",
+"p": 0.954,
+"segment": 2
+},
+{
+"start": 19.48,
+"end": 20.26,
+"word": "we",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 20.26,
+"end": 20.52,
+"word": "get",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 20.52,
+"end": 21.28,
+"word": "together,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 21.5,
+"end": 21.94,
+"word": "the",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 21.94,
+"end": 23.02,
+"word": "happier",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 23.02,
+"end": 23.64,
+"word": "we'll",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 23.64,
+"end": 24.1,
+"word": "be",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 24.1,
+"end": 25.2,
+"word": "For",
+"p": 0.958,
+"segment": 3
+},
+{
+"start": 25.2,
+"end": 25.6,
+"word": "your",
+"p": 0.985,
+"segment": 3
+},
+{
+"start": 25.6,
+"end": 26.18,
+"word": "friends",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 26.18,
+"end": 26.7,
+"word": "are",
+"p": 0.993,
+"segment": 3
+},
+{
+"start": 26.7,
+"end": 27.1,
+"word": "my",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 27.1,
+"end": 27.76,
+"word": "friends",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 27.76,
+"end": 28.32,
+"word": "and",
+"p": 0.316,
+"segment": 3
+},
+{
+"start": 28.32,
+"end": 28.64,
+"word": "my",
+"p": 0.978,
+"segment": 3
+},
+{
+"start": 28.64,
+"end": 29.24,
+"word": "friends",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 29.24,
+"end": 29.76,
+"word": "are",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 29.76,
+"end": 30.18,
+"word": "your",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 30.18,
+"end": 30.8,
+"word": "friends",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 30.8,
+"end": 31.32,
+"word": "The",
+"p": 0.99,
+"segment": 4
+},
+{
+"start": 31.32,
+"end": 31.8,
+"word": "more",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 31.8,
+"end": 32.52,
+"word": "we",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 32.52,
+"end": 32.74,
+"word": "get",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 32.74,
+"end": 33.44,
+"word": "together,",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 33.84,
+"end": 34.26,
+"word": "the",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 34.26,
+"end": 35.24,
+"word": "happier",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 35.24,
+"end": 35.96,
+"word": "we'll",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 35.96,
+"end": 36.44,
+"word": "be",
+"p": 1.0,
+"segment": 4
+}
+]
+}
+]
+},
+"zh": {
+"settings": "f168543cd2a7d037",
+"language": "zh",
+"pieces": [
+{
+"start": 37.5,
+"end": 49.2,
+"hinted": [
+{
+"start": 38.04,
+"end": 38.5,
+"word": "哼",
+"p": 0.406,
+"segment": 1
+},
+{
+"start": 38.6,
+"end": 40.12,
+"word": "哼",
+"p": 0.953,
+"segment": 1
+},
+{
+"start": 40.88,
+"end": 41.56,
+"word": "哼",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 41.56,
+"end": 42.1,
+"word": "哼",
+"p": 0.915,
+"segment": 1
+},
+{
+"start": 42.16,
+"end": 43.46,
+"word": "吶",
+"p": 0.093,
+"segment": 1
+},
+{
+"start": 43.46,
+"end": 43.84,
+"word": "啦",
+"p": 0.557,
+"segment": 1
+},
+{
+"start": 43.84,
+"end": 44.12,
+"word": "啦",
+"p": 0.959,
+"segment": 1
+},
+{
+"start": 44.12,
+"end": 44.58,
+"word": "啦",
+"p": 0.92,
+"segment": 1
+},
+{
+"start": 44.58,
+"end": 45.08,
+"word": "啦",
+"p": 0.909,
+"segment": 1
+},
+{
+"start": 45.08,
+"end": 45.38,
+"word": "啦",
+"p": 0.915,
+"segment": 1
+},
+{
+"start": 45.38,
+"end": 45.66,
+"word": "啦",
+"p": 0.925,
+"segment": 1
+},
+{
+"start": 45.66,
+"end": 45.98,
+"word": "啦",
+"p": 0.93,
+"segment": 1
+},
+{
+"start": 45.98,
+"end": 46.16,
+"word": "啦",
+"p": 0.917,
+"segment": 1
+},
+{
+"start": 46.16,
+"end": 46.58,
+"word": "啦",
+"p": 0.758,
+"segment": 1
+},
+{
+"start": 46.58,
+"end": 46.58,
+"word": "啦",
+"p": 0.24,
+"segment": 1
+},
+{
+"start": 47.2,
+"end": 47.7,
+"word": "哼",
+"p": 0.573,
+"segment": 2
+},
+{
+"start": 47.7,
+"end": 48.28,
+"word": "哼",
+"p": 0.783,
+"segment": 2
+},
+{
+"start": 48.28,
+"end": 48.74,
+"word": "哼",
+"p": 0.967,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 37.2,
+"end": 38.6,
+"word": "詞",
+"p": 0.499,
+"segment": 1
+},
+{
+"start": 38.6,
+"end": 38.6,
+"word": "曲",
+"p": 0.564,
+"segment": 1
+},
+{
+"start": 38.6,
+"end": 40.98,
+"word": "李",
+"p": 0.591,
+"segment": 1
+},
+{
+"start": 40.98,
+"end": 40.98,
+"word": "宗",
+"p": 0.666,
+"segment": 1
+},
+{
+"start": 40.98,
+"end": 40.98,
+"word": "盛",
+"p": 0.998,
+"segment": 1
+}
+]
+},
+{
+"start": 49.2,
+"end": 61.67,
+"hinted": [
+{
+"start": 48.9,
+"end": 49.9,
+"word": "当",
+"p": 0.252,
+"segment": 1
+},
+{
+"start": 49.9,
+"end": 50.54,
+"word": "我们",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 50.54,
+"end": 51.14,
+"word": "同",
+"p": 0.552,
+"segment": 1
+},
+{
+"start": 51.14,
+"end": 51.46,
+"word": "在",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 51.46,
+"end": 52.08,
+"word": "一起",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 52.08,
+"end": 52.8,
+"word": "在",
+"p": 0.241,
+"segment": 1
+},
+{
+"start": 52.8,
+"end": 53.64,
+"word": "一起,",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 53.84,
+"end": 54.22,
+"word": "在",
+"p": 0.069,
+"segment": 1
+},
+{
+"start": 54.22,
+"end": 55.16,
+"word": "一起",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 55.38,
+"end": 55.8,
+"word": "当",
+"p": 0.894,
+"segment": 1
+},
+{
+"start": 55.8,
+"end": 56.48,
+"word": "我们",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 56.48,
+"end": 57.32,
+"word": "同",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 57.32,
+"end": 57.62,
+"word": "在",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 57.62,
+"end": 58.32,
+"word": "一起",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 58.52,
+"end": 58.92,
+"word": "其",
+"p": 0.047,
+"segment": 1
+},
+{
+"start": 58.92,
+"end": 59.38,
+"word": "快",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 59.38,
+"end": 60.12,
+"word": "乐",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 60.12,
+"end": 60.5,
+"word": "无",
+"p": 0.913,
+"segment": 1
+},
+{
+"start": 60.5,
+"end": 61.0,
+"word": "比",
+"p": 0.973,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 48.9,
+"end": 49.9,
+"word": "當",
+"p": 0.566,
+"segment": 1
+},
+{
+"start": 49.9,
+"end": 50.54,
+"word": "我們",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 50.54,
+"end": 51.14,
+"word": "同",
+"p": 0.708,
+"segment": 1
+},
+{
+"start": 51.14,
+"end": 51.46,
+"word": "在",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 51.46,
+"end": 52.1,
+"word": "一起",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 52.1,
+"end": 52.84,
+"word": "在",
+"p": 0.475,
+"segment": 2
+},
+{
+"start": 52.84,
+"end": 53.64,
+"word": "一起",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 53.64,
+"end": 54.28,
+"word": "在",
+"p": 0.408,
+"segment": 2
+},
+{
+"start": 54.28,
+"end": 55.12,
+"word": "一起",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 55.12,
+"end": 55.78,
+"word": "當",
+"p": 0.968,
+"segment": 3
+},
+{
+"start": 55.78,
+"end": 56.48,
+"word": "我們",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 56.48,
+"end": 57.32,
+"word": "同",
+"p": 0.994,
+"segment": 3
+},
+{
+"start": 57.32,
+"end": 57.66,
+"word": "在",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 57.66,
+"end": 58.36,
+"word": "一起",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 58.36,
+"end": 58.96,
+"word": "喜",
+"p": 0.345,
+"segment": 4
+},
+{
+"start": 58.96,
+"end": 59.38,
+"word": "快",
+"p": 0.935,
+"segment": 4
+},
+{
+"start": 59.38,
+"end": 60.02,
+"word": "樂",
+"p": 0.965,
+"segment": 4
+},
+{
+"start": 60.02,
+"end": 60.46,
+"word": "無",
+"p": 0.88,
+"segment": 4
+},
+{
+"start": 60.46,
+"end": 61.02,
+"word": "比",
+"p": 0.972,
+"segment": 4
+}
+]
+},
+{
+"start": 61.67,
+"end": 78.5,
+"hinted": [
+{
+"start": 61.37,
+"end": 62.01,
+"word": "你",
+"p": 0.792,
+"segment": 1
+},
+{
+"start": 62.01,
+"end": 62.45,
+"word": "对",
+"p": 0.276,
+"segment": 1
+},
+{
+"start": 62.45,
+"end": 62.81,
+"word": "着",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 62.81,
+"end": 63.01,
+"word": "我",
+"p": 0.755,
+"segment": 1
+},
+{
+"start": 63.01,
+"end": 63.41,
+"word": "笑",
+"p": 0.007,
+"segment": 1
+},
+{
+"start": 63.41,
+"end": 64.13,
+"word": "嘻",
+"p": 0.547,
+"segment": 1
+},
+{
+"start": 64.13,
+"end": 64.83,
+"word": "嘻",
+"p": 0.856,
+"segment": 1
+},
+{
+"start": 64.83,
+"end": 65.15,
+"word": "我",
+"p": 0.067,
+"segment": 1
+},
+{
+"start": 65.15,
+"end": 65.51,
+"word": "对",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 65.51,
+"end": 65.89,
+"word": "着",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 65.89,
+"end": 66.15,
+"word": "你",
+"p": 0.899,
+"segment": 1
+},
+{
+"start": 66.15,
+"end": 66.69,
+"word": "笑",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 66.69,
+"end": 67.41,
+"word": "哈哈",
+"p": 0.599,
+"segment": 1
+},
+{
+"start": 67.73,
+"end": 68.31,
+"word": "当",
+"p": 0.552,
+"segment": 1
+},
+{
+"start": 68.31,
+"end": 68.77,
+"word": "我们",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 68.77,
+"end": 69.65,
+"word": "同",
+"p": 0.85,
+"segment": 1
+},
+{
+"start": 69.65,
+"end": 69.95,
+"word": "在",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 69.95,
+"end": 70.71,
+"word": "一起",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 70.93,
+"end": 71.21,
+"word": "其",
+"p": 0.021,
+"segment": 1
+},
+{
+"start": 71.21,
+"end": 71.93,
+"word": "快",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 71.93,
+"end": 72.41,
+"word": "乐",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 72.41,
+"end": 72.87,
+"word": "无",
+"p": 0.974,
+"segment": 1
+},
+{
+"start": 72.87,
+"end": 73.37,
+"word": "比",
+"p": 0.989,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 61.37,
+"end": 62.01,
+"word": "你",
+"p": 0.792,
+"segment": 1
+},
+{
+"start": 62.01,
+"end": 62.45,
+"word": "对",
+"p": 0.276,
+"segment": 1
+},
+{
+"start": 62.45,
+"end": 62.79,
+"word": "着",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 62.79,
+"end": 63.15,
+"word": "我的",
+"p": 0.142,
+"segment": 1
+},
+{
+"start": 63.15,
+"end": 63.91,
+"word": "意",
+"p": 0.271,
+"segment": 1
+},
+{
+"start": 63.91,
+"end": 64.51,
+"word": "气",
+"p": 0.593,
+"segment": 1
+},
+{
+"start": 64.51,
+"end": 65.19,
+"word": "我",
+"p": 0.827,
+"segment": 2
+},
+{
+"start": 65.19,
+"end": 65.51,
+"word": "对",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 65.51,
+"end": 65.91,
+"word": "着",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 65.91,
+"end": 66.21,
+"word": "你的",
+"p": 0.758,
+"segment": 2
+},
+{
+"start": 66.21,
+"end": 67.13,
+"word": "好",
+"p": 0.562,
+"segment": 2
+},
+{
+"start": 67.13,
+"end": 67.83,
+"word": "当",
+"p": 0.694,
+"segment": 3
+},
+{
+"start": 67.83,
+"end": 68.75,
+"word": "我们",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 68.75,
+"end": 69.67,
+"word": "同",
+"p": 0.925,
+"segment": 3
+},
+{
+"start": 69.67,
+"end": 69.97,
+"word": "在",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 69.97,
+"end": 70.71,
+"word": "一起",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 70.71,
+"end": 71.35,
+"word": "起",
+"p": 0.245,
+"segment": 4
+},
+{
+"start": 71.35,
+"end": 71.83,
+"word": "快",
+"p": 0.925,
+"segment": 4
+},
+{
+"start": 71.83,
+"end": 72.37,
+"word": "乐",
+"p": 0.995,
+"segment": 4
+},
+{
+"start": 72.37,
+"end": 72.87,
+"word": "无",
+"p": 0.895,
+"segment": 4
+},
+{
+"start": 72.87,
+"end": 73.39,
+"word": "比",
+"p": 0.99,
+"segment": 4
+}
+]
+}
+]
+}
+}
+}

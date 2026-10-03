@@ -1,0 +1,103 @@
+{
+ "schema": 1,
+ "key": "marylamb",
+ "recording": "8. Mary Had A Little Lamb",
+ "assets": {
+  "source": {
+   "path": "songs/8. Mary Had A Little Lamb.mp3",
+   "sha256": "8242149a34e16d558cd0e0373dc92414c328de7335d653b5419bad9c86fef9fc"
+  },
+  "backing": {
+   "path": "audio/8. Mary Had A Little Lamb.mp3",
+   "sha256": "9d6a60daa7d9251961bb0b5b5b815566df935b66e3e574e38dca9cd880fdad2d"
+  },
+  "vocal": {
+   "path": "separated/vocals/8. Mary Had A Little Lamb.mp3",
+   "sha256": "b8b3906523454c27efe3708ea22b80cdaf7f1e12a1f9cea487a81c3b35b7f7c5"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 9.0,
+   "end": 41.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "Mary had a little lamb,",
+      "Little lamb, little lamb,",
+      "Mary had a little lamb,",
+      "Its fleece was white as snow."
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "And everywhere that Mary went,",
+      "Mary went, Mary went,",
+      "Everywhere that Mary went,",
+      "The lamb was sure to go."
+     ]
+    },
+    {
+     "label": "Verse 3",
+     "lines": [
+      "It followed her to school one day,",
+      "School one day, school one day,",
+      "It followed her to school one day,",
+      "Which was against the rule."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 49.5,
+   "end": 92.5,
+   "verses": [
+    {
+     "label": "Verse 4",
+     "lines": [
+      "玛丽有只小绵羊",
+      "小绵羊，小绵羊",
+      "玛丽有只小绵羊",
+      "雪白的羊毛"
+     ]
+    },
+    {
+     "label": "Verse 5",
+     "lines": [
+      "无论玛丽去哪里",
+      "去哪里，去哪里",
+      "无论玛丽去哪里",
+      "小羊不分离"
+     ]
+    },
+    {
+     "label": "Verse 6",
+     "lines": [
+      "小绵羊到学校去",
+      "学校去，学校去",
+      "小绵羊到学校去",
+      "不遵守规矩"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

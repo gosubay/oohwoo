@@ -1,0 +1,7196 @@
+{
+"vocalSha256": "96893a3e30ca2e42074e25f4cba132326e0be48b7b4a177bdc6ba9529e5744f4",
+"model": "large-v3",
+"blocks": {
+"en": {
+"settings": "fe7ec2ac798914c9",
+"language": "en",
+"pieces": [
+{
+"start": 4.5,
+"end": 28.29,
+"hinted": [
+{
+"start": 5.04,
+"end": 5.68,
+"word": "Old",
+"p": 0.965,
+"segment": 1
+},
+{
+"start": 5.68,
+"end": 5.92,
+"word": "Mac",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 5.92,
+"end": 6.46,
+"word": "Donald",
+"p": 0.021,
+"segment": 1
+},
+{
+"start": 6.46,
+"end": 6.92,
+"word": "had",
+"p": 0.968,
+"segment": 1
+},
+{
+"start": 6.92,
+"end": 7.3,
+"word": "a",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 7.3,
+"end": 7.8,
+"word": "farm,",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 7.94,
+"end": 8.32,
+"word": "E",
+"p": 0.573,
+"segment": 1
+},
+{
+"start": 8.32,
+"end": 8.8,
+"word": "-I",
+"p": 0.948,
+"segment": 1
+},
+{
+"start": 8.8,
+"end": 9.1,
+"word": "-E",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 9.1,
+"end": 9.44,
+"word": "-I",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 9.44,
+"end": 9.68,
+"word": "-O!",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 10.02,
+"end": 10.66,
+"word": "And",
+"p": 0.937,
+"segment": 1
+},
+{
+"start": 10.66,
+"end": 11.06,
+"word": "on",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 11.06,
+"end": 11.4,
+"word": "his",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 11.4,
+"end": 11.82,
+"word": "farm",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 11.82,
+"end": 12.0,
+"word": "he",
+"p": 0.88,
+"segment": 1
+},
+{
+"start": 12.0,
+"end": 12.42,
+"word": "had",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 12.42,
+"end": 12.72,
+"word": "a",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 12.72,
+"end": 13.08,
+"word": "cow,",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 13.32,
+"end": 13.84,
+"word": "E",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 13.84,
+"end": 14.16,
+"word": "-I",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 14.16,
+"end": 14.48,
+"word": "-E",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 14.48,
+"end": 14.74,
+"word": "-I",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 14.74,
+"end": 15.04,
+"word": "-O!",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 15.44,
+"end": 16.08,
+"word": "With",
+"p": 0.99,
+"segment": 2
+},
+{
+"start": 16.08,
+"end": 16.2,
+"word": "a",
+"p": 0.972,
+"segment": 2
+},
+{
+"start": 16.2,
+"end": 16.42,
+"word": "moo",
+"p": 0.852,
+"segment": 2
+},
+{
+"start": 16.42,
+"end": 16.78,
+"word": "-moo",
+"p": 0.747,
+"segment": 2
+},
+{
+"start": 16.78,
+"end": 16.98,
+"word": "here,",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 17.2,
+"end": 17.42,
+"word": "and",
+"p": 0.869,
+"segment": 2
+},
+{
+"start": 17.42,
+"end": 17.54,
+"word": "a",
+"p": 0.989,
+"segment": 2
+},
+{
+"start": 17.54,
+"end": 17.76,
+"word": "moo",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 17.76,
+"end": 18.16,
+"word": "-moo",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 18.16,
+"end": 18.42,
+"word": "there,",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 18.64,
+"end": 19.06,
+"word": "Here",
+"p": 0.801,
+"segment": 2
+},
+{
+"start": 19.06,
+"end": 19.42,
+"word": "moo,",
+"p": 0.366,
+"segment": 2
+},
+{
+"start": 19.64,
+"end": 19.82,
+"word": "there",
+"p": 0.983,
+"segment": 2
+},
+{
+"start": 19.82,
+"end": 20.12,
+"word": "moo,",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 20.3,
+"end": 20.68,
+"word": "everywhere",
+"p": 0.938,
+"segment": 2
+},
+{
+"start": 20.68,
+"end": 21.24,
+"word": "moo",
+"p": 0.959,
+"segment": 2
+},
+{
+"start": 21.24,
+"end": 21.64,
+"word": "-moo,",
+"p": 0.975,
+"segment": 2
+},
+{
+"start": 21.64,
+"end": 21.94,
+"word": "Old",
+"p": 0.993,
+"segment": 3
+},
+{
+"start": 21.94,
+"end": 22.18,
+"word": "Mac",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 22.18,
+"end": 22.76,
+"word": "Donald",
+"p": 0.948,
+"segment": 3
+},
+{
+"start": 22.76,
+"end": 23.22,
+"word": "had",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 23.22,
+"end": 23.56,
+"word": "a",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 23.56,
+"end": 24.04,
+"word": "farm,",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 24.2,
+"end": 24.52,
+"word": "E",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 24.52,
+"end": 25.02,
+"word": "-I",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 25.02,
+"end": 25.32,
+"word": "-E",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 25.32,
+"end": 25.64,
+"word": "-I",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 25.64,
+"end": 25.94,
+"word": "-O!",
+"p": 1.0,
+"segment": 3
+}
+],
+"plain": [
+{
+"start": 5.28,
+"end": 5.92,
+"word": "Old",
+"p": 0.965,
+"segment": 1
+},
+{
+"start": 5.92,
+"end": 6.56,
+"word": "MacDonald",
+"p": 0.927,
+"segment": 1
+},
+{
+"start": 6.56,
+"end": 6.96,
+"word": "had",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 6.96,
+"end": 7.3,
+"word": "a",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 7.3,
+"end": 7.8,
+"word": "farm,",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 7.94,
+"end": 8.32,
+"word": "E",
+"p": 0.652,
+"segment": 1
+},
+{
+"start": 8.32,
+"end": 8.8,
+"word": "-I",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 8.8,
+"end": 9.1,
+"word": "-E",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 9.1,
+"end": 9.46,
+"word": "-I",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 9.46,
+"end": 9.66,
+"word": "-O",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 9.66,
+"end": 10.4,
+"word": "And",
+"p": 0.965,
+"segment": 2
+},
+{
+"start": 10.4,
+"end": 11.08,
+"word": "on",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 11.08,
+"end": 11.4,
+"word": "his",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 11.4,
+"end": 11.84,
+"word": "farm",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 11.84,
+"end": 12.0,
+"word": "he",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 12.0,
+"end": 12.44,
+"word": "had",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 12.44,
+"end": 12.74,
+"word": "a",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 12.74,
+"end": 13.08,
+"word": "cow,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 13.34,
+"end": 13.84,
+"word": "E",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 13.84,
+"end": 14.16,
+"word": "-I",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 14.16,
+"end": 14.48,
+"word": "-E",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 14.48,
+"end": 14.74,
+"word": "-I",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 14.74,
+"end": 15.06,
+"word": "-O",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 15.06,
+"end": 16.08,
+"word": "With",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 16.08,
+"end": 16.2,
+"word": "a",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 16.2,
+"end": 16.42,
+"word": "moo",
+"p": 0.978,
+"segment": 3
+},
+{
+"start": 16.42,
+"end": 16.78,
+"word": "-moo",
+"p": 0.866,
+"segment": 3
+},
+{
+"start": 16.78,
+"end": 16.96,
+"word": "here",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 16.96,
+"end": 17.42,
+"word": "and",
+"p": 0.918,
+"segment": 3
+},
+{
+"start": 17.42,
+"end": 17.54,
+"word": "a",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 17.54,
+"end": 17.76,
+"word": "moo",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 17.76,
+"end": 18.16,
+"word": "-moo",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 18.16,
+"end": 18.42,
+"word": "there",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 18.42,
+"end": 19.12,
+"word": "Here",
+"p": 0.996,
+"segment": 4
+},
+{
+"start": 19.12,
+"end": 19.32,
+"word": "a",
+"p": 0.763,
+"segment": 4
+},
+{
+"start": 19.32,
+"end": 19.5,
+"word": "moo,",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 19.62,
+"end": 19.8,
+"word": "there",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 19.8,
+"end": 20.02,
+"word": "a",
+"p": 0.996,
+"segment": 4
+},
+{
+"start": 20.02,
+"end": 20.14,
+"word": "moo,",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 20.3,
+"end": 20.64,
+"word": "everywhere",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 20.64,
+"end": 21.04,
+"word": "a",
+"p": 0.68,
+"segment": 4
+},
+{
+"start": 21.04,
+"end": 21.22,
+"word": "moo",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 21.22,
+"end": 21.58,
+"word": "-moo",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 21.58,
+"end": 21.9,
+"word": "Old",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 21.9,
+"end": 22.72,
+"word": "MacDonald",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 22.72,
+"end": 23.22,
+"word": "had",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 23.22,
+"end": 23.56,
+"word": "a",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 23.56,
+"end": 24.04,
+"word": "farm,",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 24.2,
+"end": 24.52,
+"word": "E",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 24.52,
+"end": 25.02,
+"word": "-I",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 25.02,
+"end": 25.32,
+"word": "-E",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 25.32,
+"end": 25.64,
+"word": "-I",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 25.64,
+"end": 26.0,
+"word": "-O",
+"p": 1.0,
+"segment": 5
+}
+]
+},
+{
+"start": 28.29,
+"end": 50.99,
+"hinted": [
+{
+"start": 30.59,
+"end": 31.21,
+"word": "a",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 31.21,
+"end": 31.83,
+"word": "farm,",
+"p": 0.482,
+"segment": 1
+},
+{
+"start": 32.41,
+"end": 32.69,
+"word": "E",
+"p": 0.285,
+"segment": 1
+},
+{
+"start": 32.69,
+"end": 33.17,
+"word": "-I",
+"p": 0.82,
+"segment": 1
+},
+{
+"start": 33.17,
+"end": 33.37,
+"word": "-E",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 33.37,
+"end": 33.67,
+"word": "-I",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 33.67,
+"end": 33.95,
+"word": "-O!",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 34.33,
+"end": 34.95,
+"word": "And",
+"p": 0.779,
+"segment": 1
+},
+{
+"start": 34.95,
+"end": 35.29,
+"word": "on",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 35.29,
+"end": 35.69,
+"word": "his",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 35.69,
+"end": 36.11,
+"word": "farm",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 36.11,
+"end": 36.25,
+"word": "he",
+"p": 0.826,
+"segment": 1
+},
+{
+"start": 36.25,
+"end": 36.67,
+"word": "had",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 36.67,
+"end": 36.99,
+"word": "a",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 36.99,
+"end": 37.37,
+"word": "pig,",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 37.61,
+"end": 38.11,
+"word": "E",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 38.11,
+"end": 38.43,
+"word": "-I",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 38.43,
+"end": 38.69,
+"word": "-E",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 38.69,
+"end": 38.95,
+"word": "-I",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 38.95,
+"end": 39.25,
+"word": "-O!",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 39.65,
+"end": 40.27,
+"word": "With",
+"p": 0.965,
+"segment": 2
+},
+{
+"start": 40.27,
+"end": 40.45,
+"word": "an",
+"p": 0.977,
+"segment": 2
+},
+{
+"start": 40.45,
+"end": 40.73,
+"word": "oink",
+"p": 0.895,
+"segment": 2
+},
+{
+"start": 40.73,
+"end": 40.99,
+"word": "-oink",
+"p": 0.743,
+"segment": 2
+},
+{
+"start": 40.99,
+"end": 41.25,
+"word": "here,",
+"p": 0.984,
+"segment": 2
+},
+{
+"start": 41.41,
+"end": 41.61,
+"word": "and",
+"p": 0.827,
+"segment": 2
+},
+{
+"start": 41.61,
+"end": 41.71,
+"word": "an",
+"p": 0.973,
+"segment": 2
+},
+{
+"start": 41.71,
+"end": 42.05,
+"word": "oink",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 42.05,
+"end": 42.31,
+"word": "-oink",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 42.31,
+"end": 42.61,
+"word": "there,",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 42.79,
+"end": 43.17,
+"word": "Here",
+"p": 0.387,
+"segment": 2
+},
+{
+"start": 43.17,
+"end": 43.69,
+"word": "oink,",
+"p": 0.599,
+"segment": 2
+},
+{
+"start": 43.75,
+"end": 43.93,
+"word": "there",
+"p": 0.979,
+"segment": 2
+},
+{
+"start": 43.93,
+"end": 44.43,
+"word": "oink,",
+"p": 0.982,
+"segment": 2
+},
+{
+"start": 44.43,
+"end": 44.79,
+"word": "everywhere",
+"p": 0.953,
+"segment": 2
+},
+{
+"start": 44.79,
+"end": 45.39,
+"word": "oink",
+"p": 0.952,
+"segment": 2
+},
+{
+"start": 45.39,
+"end": 45.79,
+"word": "-oink,",
+"p": 0.868,
+"segment": 2
+},
+{
+"start": 45.85,
+"end": 46.05,
+"word": "Old",
+"p": 0.977,
+"segment": 3
+},
+{
+"start": 46.05,
+"end": 46.29,
+"word": "Mac",
+"p": 0.95,
+"segment": 3
+},
+{
+"start": 46.29,
+"end": 46.85,
+"word": "Donald",
+"p": 0.015,
+"segment": 3
+},
+{
+"start": 46.85,
+"end": 47.33,
+"word": "had",
+"p": 0.993,
+"segment": 3
+},
+{
+"start": 47.33,
+"end": 47.67,
+"word": "a",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 47.67,
+"end": 48.15,
+"word": "farm,",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 48.29,
+"end": 48.65,
+"word": "E",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 48.65,
+"end": 49.17,
+"word": "-I",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 49.17,
+"end": 49.45,
+"word": "-E",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 49.45,
+"end": 49.69,
+"word": "-I",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 49.69,
+"end": 49.99,
+"word": "-O!",
+"p": 0.999,
+"segment": 3
+}
+],
+"plain": [
+{
+"start": 29.71,
+"end": 30.33,
+"word": "Old",
+"p": 0.786,
+"segment": 1
+},
+{
+"start": 30.33,
+"end": 30.95,
+"word": "MacDonald",
+"p": 0.867,
+"segment": 1
+},
+{
+"start": 30.95,
+"end": 31.35,
+"word": "had",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 31.35,
+"end": 31.69,
+"word": "a",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 31.69,
+"end": 32.27,
+"word": "farm,",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 32.43,
+"end": 32.69,
+"word": "E",
+"p": 0.635,
+"segment": 1
+},
+{
+"start": 32.69,
+"end": 33.15,
+"word": "-I",
+"p": 0.929,
+"segment": 1
+},
+{
+"start": 33.15,
+"end": 33.37,
+"word": "-E",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 33.37,
+"end": 33.67,
+"word": "-I",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 33.67,
+"end": 33.95,
+"word": "-O",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 33.95,
+"end": 34.75,
+"word": "And",
+"p": 0.744,
+"segment": 2
+},
+{
+"start": 34.75,
+"end": 35.33,
+"word": "on",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 35.33,
+"end": 35.69,
+"word": "his",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 35.69,
+"end": 36.11,
+"word": "farm",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 36.11,
+"end": 36.25,
+"word": "he",
+"p": 0.967,
+"segment": 2
+},
+{
+"start": 36.25,
+"end": 36.67,
+"word": "had",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 36.67,
+"end": 37.03,
+"word": "a",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 37.03,
+"end": 37.37,
+"word": "pig,",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 37.63,
+"end": 38.11,
+"word": "E",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 38.11,
+"end": 38.43,
+"word": "-I",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 38.43,
+"end": 38.69,
+"word": "-E",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 38.69,
+"end": 38.95,
+"word": "-I",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 38.95,
+"end": 39.27,
+"word": "-O",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 39.27,
+"end": 40.31,
+"word": "With",
+"p": 0.995,
+"segment": 3
+},
+{
+"start": 40.31,
+"end": 40.45,
+"word": "an",
+"p": 0.99,
+"segment": 3
+},
+{
+"start": 40.45,
+"end": 40.75,
+"word": "oink,",
+"p": 0.987,
+"segment": 3
+},
+{
+"start": 40.75,
+"end": 41.01,
+"word": "oink",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 41.01,
+"end": 41.25,
+"word": "here,",
+"p": 0.983,
+"segment": 3
+},
+{
+"start": 41.41,
+"end": 41.63,
+"word": "and",
+"p": 0.919,
+"segment": 3
+},
+{
+"start": 41.63,
+"end": 41.73,
+"word": "an",
+"p": 0.995,
+"segment": 3
+},
+{
+"start": 41.73,
+"end": 42.05,
+"word": "oink,",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 42.05,
+"end": 42.31,
+"word": "oink",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 42.31,
+"end": 42.61,
+"word": "there",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 42.61,
+"end": 43.27,
+"word": "Here,",
+"p": 0.946,
+"segment": 4
+},
+{
+"start": 43.41,
+"end": 43.69,
+"word": "oink",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 43.69,
+"end": 43.95,
+"word": "there,",
+"p": 0.763,
+"segment": 4
+},
+{
+"start": 44.09,
+"end": 44.37,
+"word": "oink",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 44.37,
+"end": 44.77,
+"word": "everywhere,",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 45.09,
+"end": 45.37,
+"word": "oink,",
+"p": 0.994,
+"segment": 4
+},
+{
+"start": 45.41,
+"end": 45.77,
+"word": "oink",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 45.77,
+"end": 45.99,
+"word": "Old",
+"p": 0.978,
+"segment": 5
+},
+{
+"start": 45.99,
+"end": 46.89,
+"word": "MacDonald",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 46.89,
+"end": 47.35,
+"word": "had",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 47.35,
+"end": 47.67,
+"word": "a",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 47.67,
+"end": 48.15,
+"word": "farm,",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 48.29,
+"end": 48.65,
+"word": "E",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 48.65,
+"end": 49.17,
+"word": "-I",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 49.17,
+"end": 49.45,
+"word": "-E",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 49.45,
+"end": 49.69,
+"word": "-I",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 49.69,
+"end": 50.07,
+"word": "-O",
+"p": 1.0,
+"segment": 5
+}
+]
+},
+{
+"start": 50.99,
+"end": 73.23,
+"hinted": [
+{
+"start": 50.69,
+"end": 51.29,
+"word": "a",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 51.29,
+"end": 53.19,
+"word": "farm,",
+"p": 0.374,
+"segment": 1
+},
+{
+"start": 53.83,
+"end": 54.03,
+"word": "E",
+"p": 0.217,
+"segment": 1
+},
+{
+"start": 54.03,
+"end": 54.53,
+"word": "-I",
+"p": 0.839,
+"segment": 1
+},
+{
+"start": 54.53,
+"end": 54.81,
+"word": "-E",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 54.81,
+"end": 55.09,
+"word": "-I",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 55.09,
+"end": 55.35,
+"word": "-O!",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 55.71,
+"end": 56.35,
+"word": "And",
+"p": 0.785,
+"segment": 1
+},
+{
+"start": 56.35,
+"end": 56.75,
+"word": "on",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 56.75,
+"end": 57.09,
+"word": "his",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 57.09,
+"end": 57.49,
+"word": "farm",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 57.49,
+"end": 57.65,
+"word": "he",
+"p": 0.818,
+"segment": 1
+},
+{
+"start": 57.65,
+"end": 58.07,
+"word": "had",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 58.07,
+"end": 58.37,
+"word": "a",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 58.37,
+"end": 58.79,
+"word": "duck,",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 58.97,
+"end": 59.31,
+"word": "E",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 59.31,
+"end": 59.79,
+"word": "-I",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 59.79,
+"end": 60.01,
+"word": "-E",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 60.01,
+"end": 60.31,
+"word": "-I",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 60.31,
+"end": 60.65,
+"word": "-O!",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 60.99,
+"end": 61.63,
+"word": "With",
+"p": 0.974,
+"segment": 1
+},
+{
+"start": 61.63,
+"end": 61.79,
+"word": "a",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 61.79,
+"end": 62.09,
+"word": "quack",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 62.09,
+"end": 62.35,
+"word": "-quack",
+"p": 0.707,
+"segment": 1
+},
+{
+"start": 62.35,
+"end": 62.65,
+"word": "here,",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 62.79,
+"end": 62.95,
+"word": "and",
+"p": 0.877,
+"segment": 1
+},
+{
+"start": 62.95,
+"end": 63.07,
+"word": "a",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 63.07,
+"end": 63.41,
+"word": "quack",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 63.41,
+"end": 63.67,
+"word": "-quack",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 63.67,
+"end": 64.01,
+"word": "there,",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 64.15,
+"end": 64.55,
+"word": "Here",
+"p": 0.517,
+"segment": 1
+},
+{
+"start": 64.55,
+"end": 65.15,
+"word": "quack,",
+"p": 0.727,
+"segment": 1
+},
+{
+"start": 65.15,
+"end": 65.27,
+"word": "there",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 65.27,
+"end": 65.83,
+"word": "quack,",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 65.83,
+"end": 66.11,
+"word": "everywhere",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 66.11,
+"end": 66.81,
+"word": "quack",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 66.81,
+"end": 67.23,
+"word": "-quack,",
+"p": 0.887,
+"segment": 1
+},
+{
+"start": 67.23,
+"end": 67.43,
+"word": "Old",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 67.43,
+"end": 67.71,
+"word": "Mac",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 67.71,
+"end": 68.19,
+"word": "Donald",
+"p": 0.013,
+"segment": 1
+},
+{
+"start": 68.19,
+"end": 68.67,
+"word": "had",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 68.67,
+"end": 69.03,
+"word": "a",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 69.03,
+"end": 69.51,
+"word": "farm,",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 69.65,
+"end": 70.15,
+"word": "E",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 70.15,
+"end": 70.53,
+"word": "-I",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 70.53,
+"end": 70.81,
+"word": "-E",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 70.81,
+"end": 71.01,
+"word": "-I",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 71.01,
+"end": 71.31,
+"word": "-O!",
+"p": 0.999,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 51.12,
+"end": 51.45,
+"word": "Old",
+"p": 0.896,
+"segment": 1
+},
+{
+"start": 51.45,
+"end": 52.29,
+"word": "MacDonald",
+"p": 0.902,
+"segment": 1
+},
+{
+"start": 52.29,
+"end": 52.75,
+"word": "had",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 52.75,
+"end": 53.09,
+"word": "a",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 53.09,
+"end": 53.71,
+"word": "farm,",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 53.83,
+"end": 54.05,
+"word": "E",
+"p": 0.547,
+"segment": 1
+},
+{
+"start": 54.05,
+"end": 54.53,
+"word": "-I",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 54.53,
+"end": 54.79,
+"word": "-E",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 54.79,
+"end": 55.07,
+"word": "-I",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 55.07,
+"end": 55.35,
+"word": "-O",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 55.35,
+"end": 56.07,
+"word": "And",
+"p": 0.896,
+"segment": 1
+},
+{
+"start": 56.07,
+"end": 56.75,
+"word": "on",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 56.75,
+"end": 57.09,
+"word": "his",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 57.09,
+"end": 57.49,
+"word": "farm",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 57.49,
+"end": 57.65,
+"word": "he",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 57.65,
+"end": 58.09,
+"word": "had",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 58.09,
+"end": 58.39,
+"word": "a",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 58.39,
+"end": 58.79,
+"word": "duck,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 58.99,
+"end": 59.31,
+"word": "E",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 59.31,
+"end": 59.79,
+"word": "-I",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 59.79,
+"end": 59.99,
+"word": "-E",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 59.99,
+"end": 60.31,
+"word": "-I",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 60.31,
+"end": 60.65,
+"word": "-O",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 60.65,
+"end": 61.65,
+"word": "With",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 61.65,
+"end": 61.77,
+"word": "a",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 61.77,
+"end": 62.09,
+"word": "quack",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 62.09,
+"end": 62.37,
+"word": "quack",
+"p": 0.907,
+"segment": 2
+},
+{
+"start": 62.37,
+"end": 62.65,
+"word": "here",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 62.65,
+"end": 62.91,
+"word": "and",
+"p": 0.718,
+"segment": 2
+},
+{
+"start": 62.91,
+"end": 63.07,
+"word": "a",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 63.07,
+"end": 63.41,
+"word": "quack",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 63.41,
+"end": 63.67,
+"word": "quack",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 63.67,
+"end": 63.99,
+"word": "there",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 63.99,
+"end": 64.67,
+"word": "Here",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 64.67,
+"end": 64.77,
+"word": "a",
+"p": 0.615,
+"segment": 2
+},
+{
+"start": 64.77,
+"end": 65.15,
+"word": "quack,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 65.15,
+"end": 65.27,
+"word": "there",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 65.27,
+"end": 65.45,
+"word": "a",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 65.45,
+"end": 65.83,
+"word": "quack,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 65.83,
+"end": 66.09,
+"word": "everywhere",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 66.09,
+"end": 66.45,
+"word": "a",
+"p": 0.949,
+"segment": 2
+},
+{
+"start": 66.45,
+"end": 66.81,
+"word": "quack",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 66.81,
+"end": 67.09,
+"word": "quack",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 67.09,
+"end": 67.39,
+"word": "Old",
+"p": 0.995,
+"segment": 3
+},
+{
+"start": 67.39,
+"end": 68.27,
+"word": "MacDonald",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 68.27,
+"end": 68.69,
+"word": "had",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 68.69,
+"end": 69.03,
+"word": "a",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 69.03,
+"end": 69.49,
+"word": "farm,",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 69.65,
+"end": 70.15,
+"word": "E",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 70.15,
+"end": 70.53,
+"word": "-I",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 70.53,
+"end": 70.81,
+"word": "-E",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 70.81,
+"end": 71.01,
+"word": "-I",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 71.01,
+"end": 71.45,
+"word": "-O",
+"p": 1.0,
+"segment": 3
+}
+]
+},
+{
+"start": 73.23,
+"end": 96.68,
+"hinted": [
+{
+"start": 72.93,
+"end": 73.79,
+"word": "a",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 73.79,
+"end": 76.19,
+"word": "farm,",
+"p": 0.356,
+"segment": 1
+},
+{
+"start": 76.77,
+"end": 77.19,
+"word": "E",
+"p": 0.188,
+"segment": 1
+},
+{
+"start": 77.19,
+"end": 77.59,
+"word": "-I",
+"p": 0.84,
+"segment": 1
+},
+{
+"start": 77.59,
+"end": 77.87,
+"word": "-E",
+"p": 0.959,
+"segment": 1
+},
+{
+"start": 77.87,
+"end": 78.25,
+"word": "-I",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 78.25,
+"end": 78.39,
+"word": "-O!",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 78.95,
+"end": 79.57,
+"word": "And",
+"p": 0.766,
+"segment": 1
+},
+{
+"start": 79.57,
+"end": 79.93,
+"word": "on",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 79.93,
+"end": 80.19,
+"word": "his",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 80.19,
+"end": 80.61,
+"word": "farm",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 80.61,
+"end": 80.79,
+"word": "he",
+"p": 0.852,
+"segment": 1
+},
+{
+"start": 80.79,
+"end": 81.21,
+"word": "had",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 81.21,
+"end": 81.49,
+"word": "a",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 81.49,
+"end": 81.95,
+"word": "horse,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 82.17,
+"end": 82.45,
+"word": "E",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 82.45,
+"end": 83.01,
+"word": "-I",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 83.01,
+"end": 83.31,
+"word": "-E",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 83.31,
+"end": 83.51,
+"word": "-I",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 83.51,
+"end": 83.79,
+"word": "-O!",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 84.23,
+"end": 84.85,
+"word": "With",
+"p": 0.97,
+"segment": 2
+},
+{
+"start": 84.85,
+"end": 85.03,
+"word": "a",
+"p": 0.952,
+"segment": 2
+},
+{
+"start": 85.03,
+"end": 85.27,
+"word": "neigh",
+"p": 0.508,
+"segment": 2
+},
+{
+"start": 85.27,
+"end": 85.63,
+"word": "-neigh",
+"p": 0.519,
+"segment": 2
+},
+{
+"start": 85.63,
+"end": 85.91,
+"word": "here,",
+"p": 0.978,
+"segment": 2
+},
+{
+"start": 86.13,
+"end": 86.27,
+"word": "and",
+"p": 0.862,
+"segment": 2
+},
+{
+"start": 86.27,
+"end": 86.37,
+"word": "a",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 86.37,
+"end": 86.69,
+"word": "neigh",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 86.69,
+"end": 87.03,
+"word": "-neigh",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 87.03,
+"end": 87.35,
+"word": "there,",
+"p": 0.98,
+"segment": 2
+},
+{
+"start": 87.51,
+"end": 87.87,
+"word": "Here",
+"p": 0.584,
+"segment": 2
+},
+{
+"start": 87.87,
+"end": 88.29,
+"word": "neigh,",
+"p": 0.518,
+"segment": 2
+},
+{
+"start": 88.49,
+"end": 88.69,
+"word": "there",
+"p": 0.971,
+"segment": 2
+},
+{
+"start": 88.69,
+"end": 88.95,
+"word": "neigh,",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 89.17,
+"end": 89.55,
+"word": "everywhere",
+"p": 0.882,
+"segment": 2
+},
+{
+"start": 89.55,
+"end": 90.07,
+"word": "neigh",
+"p": 0.979,
+"segment": 3
+},
+{
+"start": 90.07,
+"end": 90.59,
+"word": "-neigh,",
+"p": 0.968,
+"segment": 3
+},
+{
+"start": 90.59,
+"end": 90.81,
+"word": "Old",
+"p": 0.975,
+"segment": 3
+},
+{
+"start": 90.81,
+"end": 91.05,
+"word": "Mac",
+"p": 0.978,
+"segment": 3
+},
+{
+"start": 91.05,
+"end": 91.51,
+"word": "Donald",
+"p": 0.015,
+"segment": 3
+},
+{
+"start": 91.51,
+"end": 92.03,
+"word": "had",
+"p": 0.988,
+"segment": 3
+},
+{
+"start": 92.03,
+"end": 92.39,
+"word": "a",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 92.39,
+"end": 93.01,
+"word": "farm,",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 93.21,
+"end": 93.39,
+"word": "E",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 93.39,
+"end": 93.87,
+"word": "-I",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 93.87,
+"end": 94.17,
+"word": "-E",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 94.17,
+"end": 94.39,
+"word": "-I",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 94.39,
+"end": 94.73,
+"word": "-O!",
+"p": 0.999,
+"segment": 3
+}
+],
+"plain": [
+{
+"start": 73.89,
+"end": 74.57,
+"word": "Old",
+"p": 0.918,
+"segment": 1
+},
+{
+"start": 74.57,
+"end": 75.25,
+"word": "MacDonald",
+"p": 0.894,
+"segment": 1
+},
+{
+"start": 75.25,
+"end": 75.75,
+"word": "had",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 75.75,
+"end": 76.09,
+"word": "a",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 76.09,
+"end": 76.59,
+"word": "farm,",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 76.77,
+"end": 77.05,
+"word": "E",
+"p": 0.612,
+"segment": 1
+},
+{
+"start": 77.05,
+"end": 77.57,
+"word": "-I",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 77.57,
+"end": 77.87,
+"word": "-E",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 77.87,
+"end": 78.25,
+"word": "-I",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 78.25,
+"end": 78.39,
+"word": "-O",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 78.39,
+"end": 78.99,
+"word": "And",
+"p": 0.861,
+"segment": 2
+},
+{
+"start": 78.99,
+"end": 79.89,
+"word": "on",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 79.89,
+"end": 80.19,
+"word": "his",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 80.19,
+"end": 80.61,
+"word": "farm",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 80.61,
+"end": 80.79,
+"word": "he",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 80.79,
+"end": 81.19,
+"word": "had",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 81.19,
+"end": 81.49,
+"word": "a",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 81.49,
+"end": 81.95,
+"word": "horse,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 82.17,
+"end": 82.61,
+"word": "E",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 82.61,
+"end": 83.01,
+"word": "-I",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 83.01,
+"end": 83.31,
+"word": "-E",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 83.31,
+"end": 83.51,
+"word": "-I",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 83.51,
+"end": 83.97,
+"word": "-O",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 83.97,
+"end": 84.87,
+"word": "With",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 84.87,
+"end": 85.03,
+"word": "a",
+"p": 0.962,
+"segment": 3
+},
+{
+"start": 85.03,
+"end": 85.25,
+"word": "neigh",
+"p": 0.843,
+"segment": 3
+},
+{
+"start": 85.25,
+"end": 85.53,
+"word": "neigh",
+"p": 0.746,
+"segment": 3
+},
+{
+"start": 85.53,
+"end": 85.83,
+"word": "here",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 85.83,
+"end": 86.25,
+"word": "and",
+"p": 0.893,
+"segment": 3
+},
+{
+"start": 86.25,
+"end": 86.39,
+"word": "a",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 86.39,
+"end": 86.65,
+"word": "neigh",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 86.65,
+"end": 86.97,
+"word": "neigh",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 86.97,
+"end": 87.35,
+"word": "there",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 87.35,
+"end": 87.91,
+"word": "Here",
+"p": 0.978,
+"segment": 4
+},
+{
+"start": 87.91,
+"end": 88.27,
+"word": "neigh,",
+"p": 0.903,
+"segment": 4
+},
+{
+"start": 88.49,
+"end": 88.69,
+"word": "there",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 88.69,
+"end": 88.93,
+"word": "neigh,",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 89.19,
+"end": 89.53,
+"word": "everywhere",
+"p": 0.993,
+"segment": 4
+},
+{
+"start": 89.53,
+"end": 90.01,
+"word": "neigh",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 90.01,
+"end": 90.37,
+"word": "neigh",
+"p": 0.993,
+"segment": 4
+},
+{
+"start": 90.37,
+"end": 90.79,
+"word": "Old",
+"p": 0.988,
+"segment": 5
+},
+{
+"start": 90.79,
+"end": 91.59,
+"word": "MacDonald",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 91.59,
+"end": 92.09,
+"word": "had",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 92.09,
+"end": 92.39,
+"word": "a",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 92.39,
+"end": 93.01,
+"word": "farm,",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 93.21,
+"end": 93.39,
+"word": "E",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 93.39,
+"end": 93.87,
+"word": "-I",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 93.87,
+"end": 94.17,
+"word": "-E",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 94.17,
+"end": 94.39,
+"word": "-I",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 94.39,
+"end": 94.83,
+"word": "-O",
+"p": 1.0,
+"segment": 5
+}
+]
+},
+{
+"start": 96.68,
+"end": 119.0,
+"hinted": [
+{
+"start": 98.14,
+"end": 98.74,
+"word": "a",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 98.74,
+"end": 99.34,
+"word": "farm,",
+"p": 0.481,
+"segment": 1
+},
+{
+"start": 100.08,
+"end": 100.44,
+"word": "E",
+"p": 0.292,
+"segment": 1
+},
+{
+"start": 100.44,
+"end": 100.78,
+"word": "-I",
+"p": 0.802,
+"segment": 1
+},
+{
+"start": 100.78,
+"end": 101.12,
+"word": "-E",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 101.12,
+"end": 101.3,
+"word": "-I",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 101.3,
+"end": 101.52,
+"word": "-O!",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 101.82,
+"end": 102.42,
+"word": "And",
+"p": 0.688,
+"segment": 1
+},
+{
+"start": 102.42,
+"end": 102.88,
+"word": "on",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 102.88,
+"end": 103.16,
+"word": "his",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 103.16,
+"end": 103.54,
+"word": "farm",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 103.54,
+"end": 103.7,
+"word": "he",
+"p": 0.833,
+"segment": 1
+},
+{
+"start": 103.7,
+"end": 104.1,
+"word": "had",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 104.1,
+"end": 104.36,
+"word": "a",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 104.36,
+"end": 104.76,
+"word": "goat,",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 104.9,
+"end": 105.26,
+"word": "E",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 105.26,
+"end": 105.74,
+"word": "-I",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 105.74,
+"end": 106.04,
+"word": "-E",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 106.04,
+"end": 106.26,
+"word": "-I",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 106.26,
+"end": 106.5,
+"word": "-O!",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 106.82,
+"end": 107.42,
+"word": "With",
+"p": 0.958,
+"segment": 1
+},
+{
+"start": 107.42,
+"end": 107.54,
+"word": "a",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 107.54,
+"end": 107.74,
+"word": "moo",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 107.74,
+"end": 108.1,
+"word": "-moo",
+"p": 0.709,
+"segment": 1
+},
+{
+"start": 108.1,
+"end": 108.28,
+"word": "here,",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 108.5,
+"end": 108.68,
+"word": "and",
+"p": 0.855,
+"segment": 1
+},
+{
+"start": 108.68,
+"end": 108.78,
+"word": "a",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 108.78,
+"end": 108.98,
+"word": "moo",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 108.98,
+"end": 109.28,
+"word": "-moo",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 109.28,
+"end": 109.62,
+"word": "there,",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 109.8,
+"end": 110.16,
+"word": "Here",
+"p": 0.365,
+"segment": 1
+},
+{
+"start": 110.16,
+"end": 110.54,
+"word": "moo,",
+"p": 0.106,
+"segment": 1
+},
+{
+"start": 110.72,
+"end": 110.92,
+"word": "there",
+"p": 0.958,
+"segment": 1
+},
+{
+"start": 110.92,
+"end": 111.18,
+"word": "moo,",
+"p": 0.703,
+"segment": 1
+},
+{
+"start": 111.32,
+"end": 111.72,
+"word": "everywhere",
+"p": 0.815,
+"segment": 1
+},
+{
+"start": 111.72,
+"end": 112.16,
+"word": "moo",
+"p": 0.937,
+"segment": 1
+},
+{
+"start": 112.16,
+"end": 112.42,
+"word": "-moo,",
+"p": 0.964,
+"segment": 1
+},
+{
+"start": 112.6,
+"end": 112.92,
+"word": "Old",
+"p": 0.918,
+"segment": 1
+},
+{
+"start": 112.92,
+"end": 113.1,
+"word": "Mac",
+"p": 0.922,
+"segment": 1
+},
+{
+"start": 113.1,
+"end": 113.56,
+"word": "Donald",
+"p": 0.025,
+"segment": 1
+},
+{
+"start": 113.56,
+"end": 114.02,
+"word": "had",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 114.02,
+"end": 114.38,
+"word": "a",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 114.38,
+"end": 114.82,
+"word": "farm,",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 115.06,
+"end": 115.26,
+"word": "E",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 115.26,
+"end": 115.78,
+"word": "-I",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 115.78,
+"end": 116.06,
+"word": "-E",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 116.06,
+"end": 116.32,
+"word": "-I",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 116.32,
+"end": 116.52,
+"word": "-O.",
+"p": 0.999,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 97.54,
+"end": 98.12,
+"word": "Old",
+"p": 0.856,
+"segment": 1
+},
+{
+"start": 98.12,
+"end": 98.7,
+"word": "MacDonald",
+"p": 0.821,
+"segment": 1
+},
+{
+"start": 98.7,
+"end": 99.08,
+"word": "had",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 99.08,
+"end": 99.4,
+"word": "a",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 99.4,
+"end": 99.96,
+"word": "farm,",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 100.08,
+"end": 100.32,
+"word": "E",
+"p": 0.683,
+"segment": 1
+},
+{
+"start": 100.32,
+"end": 100.78,
+"word": "-I",
+"p": 0.944,
+"segment": 1
+},
+{
+"start": 100.78,
+"end": 101.08,
+"word": "-E",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 101.08,
+"end": 101.3,
+"word": "-I",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 101.3,
+"end": 101.5,
+"word": "-O",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 101.5,
+"end": 102.4,
+"word": "And",
+"p": 0.882,
+"segment": 2
+},
+{
+"start": 102.4,
+"end": 102.88,
+"word": "on",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 102.88,
+"end": 103.16,
+"word": "his",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 103.16,
+"end": 103.54,
+"word": "farm",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 103.54,
+"end": 103.7,
+"word": "he",
+"p": 0.978,
+"segment": 2
+},
+{
+"start": 103.7,
+"end": 104.1,
+"word": "had",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 104.1,
+"end": 104.36,
+"word": "a",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 104.36,
+"end": 104.74,
+"word": "goat,",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 104.92,
+"end": 105.26,
+"word": "E",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 105.26,
+"end": 105.74,
+"word": "-I",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 105.74,
+"end": 106.04,
+"word": "-E",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 106.04,
+"end": 106.26,
+"word": "-I",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 106.26,
+"end": 106.52,
+"word": "-O",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 106.52,
+"end": 107.44,
+"word": "With",
+"p": 0.996,
+"segment": 3
+},
+{
+"start": 107.44,
+"end": 107.56,
+"word": "a",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 107.56,
+"end": 107.8,
+"word": "meh",
+"p": 0.686,
+"segment": 3
+},
+{
+"start": 107.8,
+"end": 108.16,
+"word": "-meh",
+"p": 0.967,
+"segment": 3
+},
+{
+"start": 108.16,
+"end": 108.3,
+"word": "here",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 108.3,
+"end": 108.68,
+"word": "and",
+"p": 0.96,
+"segment": 3
+},
+{
+"start": 108.68,
+"end": 108.8,
+"word": "a",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 108.8,
+"end": 109.06,
+"word": "meh",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 109.06,
+"end": 109.32,
+"word": "-meh",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 109.32,
+"end": 109.62,
+"word": "there",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 109.62,
+"end": 110.28,
+"word": "Here",
+"p": 0.915,
+"segment": 4
+},
+{
+"start": 110.28,
+"end": 110.44,
+"word": "a",
+"p": 0.398,
+"segment": 4
+},
+{
+"start": 110.44,
+"end": 110.68,
+"word": "meh,",
+"p": 0.997,
+"segment": 4
+},
+{
+"start": 110.68,
+"end": 110.9,
+"word": "there",
+"p": 0.997,
+"segment": 4
+},
+{
+"start": 110.9,
+"end": 111.06,
+"word": "a",
+"p": 0.993,
+"segment": 4
+},
+{
+"start": 111.06,
+"end": 111.34,
+"word": "meh,",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 111.34,
+"end": 111.7,
+"word": "everywhere",
+"p": 0.976,
+"segment": 4
+},
+{
+"start": 111.7,
+"end": 112.0,
+"word": "a",
+"p": 0.921,
+"segment": 4
+},
+{
+"start": 112.0,
+"end": 112.28,
+"word": "meh",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 112.28,
+"end": 112.56,
+"word": "-meh",
+"p": 0.99,
+"segment": 4
+},
+{
+"start": 112.56,
+"end": 112.82,
+"word": "Old",
+"p": 0.931,
+"segment": 5
+},
+{
+"start": 112.82,
+"end": 113.66,
+"word": "MacDonald",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 113.66,
+"end": 114.06,
+"word": "had",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 114.06,
+"end": 114.38,
+"word": "a",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 114.38,
+"end": 114.84,
+"word": "farm,",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 115.08,
+"end": 115.26,
+"word": "E",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 115.26,
+"end": 115.78,
+"word": "-I",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 115.78,
+"end": 116.06,
+"word": "-E",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 116.06,
+"end": 116.28,
+"word": "-I",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 116.28,
+"end": 116.68,
+"word": "-O",
+"p": 1.0,
+"segment": 5
+}
+]
+}
+]
+},
+"zh": {
+"settings": "5a7c79a8e94594a5",
+"language": "zh",
+"pieces": [
+{
+"start": 119.0,
+"end": 142.86,
+"hinted": [
+{
+"start": 119.72,
+"end": 120.32,
+"word": "王",
+"p": 0.175,
+"segment": 1
+},
+{
+"start": 120.32,
+"end": 120.62,
+"word": "老",
+"p": 0.968,
+"segment": 1
+},
+{
+"start": 120.62,
+"end": 121.02,
+"word": "先生",
+"p": 0.974,
+"segment": 1
+},
+{
+"start": 121.02,
+"end": 121.62,
+"word": "有",
+"p": 0.778,
+"segment": 1
+},
+{
+"start": 121.62,
+"end": 121.96,
+"word": "块",
+"p": 0.799,
+"segment": 1
+},
+{
+"start": 121.96,
+"end": 122.3,
+"word": "地，",
+"p": 0.856,
+"segment": 1
+},
+{
+"start": 122.8,
+"end": 123.24,
+"word": "咿",
+"p": 0.401,
+"segment": 1
+},
+{
+"start": 123.24,
+"end": 123.42,
+"word": "呀",
+"p": 0.611,
+"segment": 1
+},
+{
+"start": 123.42,
+"end": 123.6,
+"word": "咿",
+"p": 0.854,
+"segment": 1
+},
+{
+"start": 123.6,
+"end": 123.98,
+"word": "呀",
+"p": 0.908,
+"segment": 1
+},
+{
+"start": 123.98,
+"end": 124.14,
+"word": "哟，",
+"p": 0.828,
+"segment": 1
+},
+{
+"start": 124.52,
+"end": 125.3,
+"word": "他",
+"p": 0.011,
+"segment": 1
+},
+{
+"start": 125.3,
+"end": 125.7,
+"word": "在",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 125.7,
+"end": 126.04,
+"word": "田",
+"p": 0.382,
+"segment": 1
+},
+{
+"start": 126.04,
+"end": 126.3,
+"word": "边",
+"p": 0.802,
+"segment": 1
+},
+{
+"start": 126.3,
+"end": 126.68,
+"word": "养",
+"p": 0.975,
+"segment": 1
+},
+{
+"start": 126.68,
+"end": 126.96,
+"word": "小",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 126.96,
+"end": 127.4,
+"word": "鸟，",
+"p": 0.677,
+"segment": 1
+},
+{
+"start": 127.78,
+"end": 128.22,
+"word": "咿",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 128.22,
+"end": 128.22,
+"word": "呀",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 128.22,
+"end": 128.58,
+"word": "咿",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 128.58,
+"end": 128.92,
+"word": "呀",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 128.92,
+"end": 129.18,
+"word": "哟，",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 129.8,
+"end": 130.1,
+"word": "这里",
+"p": 0.936,
+"segment": 1
+},
+{
+"start": 130.1,
+"end": 130.44,
+"word": "哼",
+"p": 0.227,
+"segment": 1
+},
+{
+"start": 130.44,
+"end": 130.76,
+"word": "哼",
+"p": 0.518,
+"segment": 1
+},
+{
+"start": 130.76,
+"end": 131.02,
+"word": "哼，",
+"p": 0.677,
+"segment": 1
+},
+{
+"start": 131.18,
+"end": 131.28,
+"word": "那",
+"p": 0.343,
+"segment": 1
+},
+{
+"start": 131.28,
+"end": 131.5,
+"word": "里",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 131.5,
+"end": 131.72,
+"word": "哞",
+"p": 0.519,
+"segment": 1
+},
+{
+"start": 131.72,
+"end": 131.96,
+"word": "哼",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 131.96,
+"end": 132.26,
+"word": "哼，",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 132.72,
+"end": 132.96,
+"word": "这里",
+"p": 0.954,
+"segment": 1
+},
+{
+"start": 132.96,
+"end": 133.28,
+"word": "哞，",
+"p": 0.954,
+"segment": 1
+},
+{
+"start": 133.42,
+"end": 133.52,
+"word": "那",
+"p": 0.96,
+"segment": 1
+},
+{
+"start": 133.52,
+"end": 133.72,
+"word": "里",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 133.72,
+"end": 133.9,
+"word": "哞，",
+"p": 0.943,
+"segment": 1
+},
+{
+"start": 134.06,
+"end": 134.12,
+"word": "到",
+"p": 0.338,
+"segment": 1
+},
+{
+"start": 134.12,
+"end": 134.32,
+"word": "处",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 134.32,
+"end": 134.46,
+"word": "都",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 134.46,
+"end": 134.62,
+"word": "在",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 134.62,
+"end": 134.84,
+"word": "哼",
+"p": 0.856,
+"segment": 1
+},
+{
+"start": 134.84,
+"end": 135.16,
+"word": "哼。",
+"p": 0.891,
+"segment": 1
+},
+{
+"start": 135.32,
+"end": 135.38,
+"word": "王",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 135.38,
+"end": 135.7,
+"word": "老",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 135.7,
+"end": 136.1,
+"word": "先生",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 136.1,
+"end": 136.7,
+"word": "有",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 136.7,
+"end": 136.96,
+"word": "块",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 136.96,
+"end": 137.3,
+"word": "地，",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 137.7,
+"end": 138.34,
+"word": "咿",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 138.34,
+"end": 138.48,
+"word": "呀",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 138.48,
+"end": 138.6,
+"word": "咿",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 138.6,
+"end": 138.9,
+"word": "呀",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 138.9,
+"end": 139.2,
+"word": "哟！",
+"p": 0.987,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 119.72,
+"end": 120.32,
+"word": "王",
+"p": 0.175,
+"segment": 1
+},
+{
+"start": 120.32,
+"end": 120.62,
+"word": "老",
+"p": 0.968,
+"segment": 1
+},
+{
+"start": 120.62,
+"end": 121.02,
+"word": "先生",
+"p": 0.974,
+"segment": 1
+},
+{
+"start": 121.02,
+"end": 121.6,
+"word": "有",
+"p": 0.778,
+"segment": 1
+},
+{
+"start": 121.6,
+"end": 121.96,
+"word": "块",
+"p": 0.799,
+"segment": 1
+},
+{
+"start": 121.96,
+"end": 122.3,
+"word": "地",
+"p": 0.856,
+"segment": 1
+},
+{
+"start": 122.48,
+"end": 123.0,
+"word": "咿",
+"p": 0.809,
+"segment": 1
+},
+{
+"start": 123.0,
+"end": 123.24,
+"word": "呀",
+"p": 0.904,
+"segment": 1
+},
+{
+"start": 123.24,
+"end": 123.74,
+"word": "咿",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 123.74,
+"end": 123.94,
+"word": "呀",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 123.94,
+"end": 124.16,
+"word": "哟",
+"p": 0.908,
+"segment": 1
+},
+{
+"start": 124.78,
+"end": 125.38,
+"word": "他",
+"p": 0.859,
+"segment": 2
+},
+{
+"start": 125.38,
+"end": 125.7,
+"word": "在",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 125.7,
+"end": 126.06,
+"word": "天",
+"p": 0.572,
+"segment": 2
+},
+{
+"start": 126.06,
+"end": 126.32,
+"word": "边",
+"p": 0.891,
+"segment": 2
+},
+{
+"start": 126.32,
+"end": 126.68,
+"word": "养",
+"p": 0.979,
+"segment": 2
+},
+{
+"start": 126.68,
+"end": 126.96,
+"word": "小",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 126.96,
+"end": 127.34,
+"word": "牛",
+"p": 0.973,
+"segment": 2
+},
+{
+"start": 127.64,
+"end": 127.94,
+"word": "咿",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 127.94,
+"end": 128.22,
+"word": "呀",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 128.22,
+"end": 128.6,
+"word": "咿",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 128.6,
+"end": 128.9,
+"word": "呀",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 128.9,
+"end": 129.4,
+"word": "哟",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 129.4,
+"end": 130.14,
+"word": "这里",
+"p": 0.991,
+"segment": 3
+},
+{
+"start": 130.14,
+"end": 130.42,
+"word": "糊",
+"p": 0.747,
+"segment": 3
+},
+{
+"start": 130.42,
+"end": 130.76,
+"word": "糊",
+"p": 0.821,
+"segment": 3
+},
+{
+"start": 130.76,
+"end": 131.06,
+"word": "糊",
+"p": 0.988,
+"segment": 3
+},
+{
+"start": 131.06,
+"end": 131.28,
+"word": "那",
+"p": 0.421,
+"segment": 3
+},
+{
+"start": 131.28,
+"end": 131.46,
+"word": "里",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 131.46,
+"end": 131.7,
+"word": "糊",
+"p": 0.848,
+"segment": 3
+},
+{
+"start": 131.7,
+"end": 132.0,
+"word": "糊",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 132.0,
+"end": 132.4,
+"word": "糊",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 132.4,
+"end": 132.94,
+"word": "这里",
+"p": 0.967,
+"segment": 4
+},
+{
+"start": 132.94,
+"end": 133.28,
+"word": "糊",
+"p": 0.996,
+"segment": 4
+},
+{
+"start": 133.28,
+"end": 133.5,
+"word": "那",
+"p": 0.314,
+"segment": 4
+},
+{
+"start": 133.5,
+"end": 133.72,
+"word": "里",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 133.72,
+"end": 133.92,
+"word": "糊",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 133.96,
+"end": 134.1,
+"word": "到",
+"p": 0.994,
+"segment": 4
+},
+{
+"start": 134.1,
+"end": 134.32,
+"word": "处",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 134.32,
+"end": 134.46,
+"word": "都",
+"p": 0.989,
+"segment": 4
+},
+{
+"start": 134.46,
+"end": 134.6,
+"word": "在",
+"p": 0.995,
+"segment": 4
+},
+{
+"start": 134.6,
+"end": 134.84,
+"word": "糊",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 134.84,
+"end": 135.14,
+"word": "糊",
+"p": 0.967,
+"segment": 4
+},
+{
+"start": 135.14,
+"end": 135.38,
+"word": "王",
+"p": 0.989,
+"segment": 5
+},
+{
+"start": 135.38,
+"end": 135.7,
+"word": "老",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 135.7,
+"end": 136.08,
+"word": "先生",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 136.08,
+"end": 136.7,
+"word": "有",
+"p": 0.991,
+"segment": 5
+},
+{
+"start": 136.7,
+"end": 136.98,
+"word": "块",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 136.98,
+"end": 137.3,
+"word": "地",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 137.52,
+"end": 137.96,
+"word": "咿",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 137.96,
+"end": 138.26,
+"word": "呀",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 138.26,
+"end": 138.8,
+"word": "咿",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 138.8,
+"end": 138.88,
+"word": "呀",
+"p": 0.998,
+"segment": 5
+},
+{
+"start": 138.88,
+"end": 139.42,
+"word": "哟",
+"p": 0.998,
+"segment": 5
+}
+]
+},
+{
+"start": 142.86,
+"end": 166.0,
+"hinted": [
+{
+"start": 145.06,
+"end": 145.66,
+"word": "王",
+"p": 0.113,
+"segment": 1
+},
+{
+"start": 145.66,
+"end": 145.92,
+"word": "老",
+"p": 0.783,
+"segment": 1
+},
+{
+"start": 145.92,
+"end": 146.34,
+"word": "先生",
+"p": 0.505,
+"segment": 1
+},
+{
+"start": 146.34,
+"end": 146.92,
+"word": "有",
+"p": 0.925,
+"segment": 1
+},
+{
+"start": 146.92,
+"end": 147.28,
+"word": "块",
+"p": 0.71,
+"segment": 1
+},
+{
+"start": 147.28,
+"end": 147.64,
+"word": "地，",
+"p": 0.916,
+"segment": 1
+},
+{
+"start": 148.14,
+"end": 148.58,
+"word": "咿",
+"p": 0.357,
+"segment": 1
+},
+{
+"start": 148.58,
+"end": 148.8,
+"word": "呀",
+"p": 0.506,
+"segment": 1
+},
+{
+"start": 148.8,
+"end": 148.86,
+"word": "咿",
+"p": 0.633,
+"segment": 1
+},
+{
+"start": 148.86,
+"end": 149.22,
+"word": "呀",
+"p": 0.828,
+"segment": 1
+},
+{
+"start": 149.22,
+"end": 149.42,
+"word": "哟！",
+"p": 0.758,
+"segment": 1
+},
+{
+"start": 149.98,
+"end": 150.58,
+"word": "他",
+"p": 0.018,
+"segment": 1
+},
+{
+"start": 150.58,
+"end": 150.96,
+"word": "在",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 150.96,
+"end": 151.3,
+"word": "田",
+"p": 0.244,
+"segment": 1
+},
+{
+"start": 151.3,
+"end": 151.62,
+"word": "边",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 151.62,
+"end": 151.94,
+"word": "养",
+"p": 0.875,
+"segment": 1
+},
+{
+"start": 151.94,
+"end": 152.18,
+"word": "小",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 152.18,
+"end": 152.62,
+"word": "鸡，",
+"p": 0.974,
+"segment": 1
+},
+{
+"start": 153.14,
+"end": 153.54,
+"word": "咿",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 153.54,
+"end": 153.72,
+"word": "呀",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 153.72,
+"end": 153.74,
+"word": "咿",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 153.74,
+"end": 154.18,
+"word": "呀",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 154.18,
+"end": 154.4,
+"word": "哟！",
+"p": 0.964,
+"segment": 1
+},
+{
+"start": 154.88,
+"end": 155.34,
+"word": "这里",
+"p": 0.914,
+"segment": 1
+},
+{
+"start": 155.34,
+"end": 155.68,
+"word": "哼",
+"p": 0.721,
+"segment": 1
+},
+{
+"start": 155.68,
+"end": 155.98,
+"word": "哼",
+"p": 0.834,
+"segment": 1
+},
+{
+"start": 155.98,
+"end": 156.24,
+"word": "哼，",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 156.4,
+"end": 156.48,
+"word": "那",
+"p": 0.541,
+"segment": 1
+},
+{
+"start": 156.48,
+"end": 156.68,
+"word": "里",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 156.68,
+"end": 156.92,
+"word": "哼",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 156.92,
+"end": 157.22,
+"word": "哼",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 157.22,
+"end": 157.52,
+"word": "哼，",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 157.88,
+"end": 158.16,
+"word": "这里",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 158.16,
+"end": 158.5,
+"word": "哼，",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 158.64,
+"end": 158.76,
+"word": "那",
+"p": 0.884,
+"segment": 1
+},
+{
+"start": 158.76,
+"end": 158.92,
+"word": "里",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 158.92,
+"end": 159.1,
+"word": "哼，",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 159.26,
+"end": 159.34,
+"word": "到",
+"p": 0.135,
+"segment": 1
+},
+{
+"start": 159.34,
+"end": 159.54,
+"word": "处",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 159.54,
+"end": 159.68,
+"word": "都",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 159.68,
+"end": 159.84,
+"word": "在",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 159.84,
+"end": 160.06,
+"word": "哼",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 160.06,
+"end": 160.32,
+"word": "哼。",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 160.56,
+"end": 160.62,
+"word": "王",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 160.62,
+"end": 160.92,
+"word": "老",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 160.92,
+"end": 161.32,
+"word": "先生",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 161.32,
+"end": 161.88,
+"word": "有",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 161.88,
+"end": 162.2,
+"word": "块",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 162.2,
+"end": 162.52,
+"word": "地，",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 162.9,
+"end": 163.56,
+"word": "咿",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 163.56,
+"end": 163.7,
+"word": "呀",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 163.7,
+"end": 163.74,
+"word": "咿",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 163.74,
+"end": 164.18,
+"word": "呀",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 164.18,
+"end": 164.36,
+"word": "哟！",
+"p": 0.961,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 145.02,
+"end": 145.66,
+"word": "王",
+"p": 0.112,
+"segment": 1
+},
+{
+"start": 145.66,
+"end": 145.92,
+"word": "老",
+"p": 0.784,
+"segment": 1
+},
+{
+"start": 145.92,
+"end": 146.32,
+"word": "先生",
+"p": 0.507,
+"segment": 1
+},
+{
+"start": 146.32,
+"end": 146.92,
+"word": "有",
+"p": 0.926,
+"segment": 1
+},
+{
+"start": 146.92,
+"end": 147.26,
+"word": "块",
+"p": 0.711,
+"segment": 1
+},
+{
+"start": 147.26,
+"end": 147.62,
+"word": "地",
+"p": 0.917,
+"segment": 1
+},
+{
+"start": 149.66,
+"end": 150.3,
+"word": "他",
+"p": 0.088,
+"segment": 2
+},
+{
+"start": 150.3,
+"end": 150.94,
+"word": "在",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 150.94,
+"end": 151.32,
+"word": "天",
+"p": 0.722,
+"segment": 2
+},
+{
+"start": 151.32,
+"end": 151.64,
+"word": "边",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 151.64,
+"end": 151.96,
+"word": "养",
+"p": 0.842,
+"segment": 2
+},
+{
+"start": 151.96,
+"end": 152.18,
+"word": "小",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 152.18,
+"end": 152.64,
+"word": "鸡",
+"p": 0.979,
+"segment": 2
+},
+{
+"start": 154.6,
+"end": 155.24,
+"word": "这里",
+"p": 0.974,
+"segment": 3
+},
+{
+"start": 155.24,
+"end": 155.68,
+"word": "横",
+"p": 0.74,
+"segment": 3
+},
+{
+"start": 155.68,
+"end": 155.96,
+"word": "横",
+"p": 0.903,
+"segment": 3
+},
+{
+"start": 155.96,
+"end": 156.3,
+"word": "横",
+"p": 0.986,
+"segment": 3
+},
+{
+"start": 156.3,
+"end": 156.52,
+"word": "哪",
+"p": 0.976,
+"segment": 3
+},
+{
+"start": 156.52,
+"end": 156.68,
+"word": "里",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 156.68,
+"end": 156.92,
+"word": "横",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 156.92,
+"end": 157.24,
+"word": "横",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 157.24,
+"end": 157.66,
+"word": "横",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 157.66,
+"end": 158.16,
+"word": "这里",
+"p": 0.923,
+"segment": 4
+},
+{
+"start": 158.16,
+"end": 158.5,
+"word": "横",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 158.56,
+"end": 158.76,
+"word": "哪",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 158.76,
+"end": 158.92,
+"word": "里",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 158.92,
+"end": 159.1,
+"word": "横",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 159.2,
+"end": 159.32,
+"word": "到",
+"p": 0.993,
+"segment": 4
+},
+{
+"start": 159.32,
+"end": 159.54,
+"word": "处",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 159.54,
+"end": 159.66,
+"word": "都",
+"p": 0.995,
+"segment": 4
+},
+{
+"start": 159.66,
+"end": 159.84,
+"word": "在",
+"p": 0.995,
+"segment": 4
+},
+{
+"start": 159.84,
+"end": 160.06,
+"word": "横",
+"p": 0.996,
+"segment": 4
+},
+{
+"start": 160.06,
+"end": 160.36,
+"word": "横",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 160.36,
+"end": 160.66,
+"word": "王",
+"p": 0.995,
+"segment": 5
+},
+{
+"start": 160.66,
+"end": 160.96,
+"word": "老",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 160.96,
+"end": 161.32,
+"word": "先生",
+"p": 0.989,
+"segment": 5
+},
+{
+"start": 161.32,
+"end": 161.88,
+"word": "有",
+"p": 0.995,
+"segment": 5
+},
+{
+"start": 161.88,
+"end": 162.2,
+"word": "块",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 162.2,
+"end": 162.56,
+"word": "地",
+"p": 0.999,
+"segment": 5
+}
+]
+},
+{
+"start": 166.0,
+"end": 191.56,
+"hinted": [
+{
+"start": 166.38,
+"end": 167.04,
+"word": "ist",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 167.04,
+"end": 167.04,
+"word": "ion",
+"p": 0.001,
+"segment": 1
+},
+{
+"start": 167.04,
+"end": 167.04,
+"word": "王",
+"p": 0.003,
+"segment": 2
+},
+{
+"start": 167.04,
+"end": 167.26,
+"word": "老",
+"p": 0.94,
+"segment": 2
+},
+{
+"start": 167.26,
+"end": 167.66,
+"word": "先生",
+"p": 0.986,
+"segment": 2
+},
+{
+"start": 167.66,
+"end": 168.22,
+"word": "有",
+"p": 0.859,
+"segment": 2
+},
+{
+"start": 168.22,
+"end": 168.56,
+"word": "块",
+"p": 0.06,
+"segment": 2
+},
+{
+"start": 168.56,
+"end": 168.9,
+"word": "地，",
+"p": 0.886,
+"segment": 2
+},
+{
+"start": 169.38,
+"end": 169.82,
+"word": "咿",
+"p": 0.457,
+"segment": 2
+},
+{
+"start": 169.82,
+"end": 170.04,
+"word": "呀",
+"p": 0.693,
+"segment": 2
+},
+{
+"start": 170.04,
+"end": 170.16,
+"word": "咿",
+"p": 0.801,
+"segment": 2
+},
+{
+"start": 170.16,
+"end": 170.5,
+"word": "呀",
+"p": 0.947,
+"segment": 2
+},
+{
+"start": 170.5,
+"end": 170.76,
+"word": "哟，",
+"p": 0.823,
+"segment": 2
+},
+{
+"start": 171.72,
+"end": 171.88,
+"word": "王",
+"p": 0.032,
+"segment": 2
+},
+{
+"start": 171.88,
+"end": 171.88,
+"word": "老",
+"p": 0.985,
+"segment": 2
+},
+{
+"start": 171.88,
+"end": 171.88,
+"word": "先生",
+"p": 0.99,
+"segment": 2
+},
+{
+"start": 171.88,
+"end": 171.88,
+"word": "有",
+"p": 0.914,
+"segment": 2
+},
+{
+"start": 171.88,
+"end": 171.88,
+"word": "块",
+"p": 0.987,
+"segment": 2
+},
+{
+"start": 171.88,
+"end": 171.88,
+"word": "地，",
+"p": 0.971,
+"segment": 2
+},
+{
+"start": 171.88,
+"end": 171.88,
+"word": "咿",
+"p": 0.985,
+"segment": 2
+},
+{
+"start": 171.88,
+"end": 171.88,
+"word": "呀",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 171.88,
+"end": 171.88,
+"word": "咿",
+"p": 0.989,
+"segment": 2
+},
+{
+"start": 171.88,
+"end": 171.88,
+"word": "呀",
+"p": 0.982,
+"segment": 2
+},
+{
+"start": 171.88,
+"end": 171.88,
+"word": "哟，",
+"p": 0.967,
+"segment": 2
+},
+{
+"start": 171.88,
+"end": 171.88,
+"word": "他",
+"p": 0.214,
+"segment": 2
+},
+{
+"start": 171.88,
+"end": 172.24,
+"word": "在",
+"p": 0.979,
+"segment": 2
+},
+{
+"start": 172.24,
+"end": 172.6,
+"word": "田",
+"p": 0.111,
+"segment": 2
+},
+{
+"start": 172.6,
+"end": 172.9,
+"word": "边",
+"p": 0.976,
+"segment": 2
+},
+{
+"start": 172.9,
+"end": 173.26,
+"word": "养",
+"p": 0.938,
+"segment": 2
+},
+{
+"start": 173.26,
+"end": 173.56,
+"word": "小",
+"p": 0.973,
+"segment": 2
+},
+{
+"start": 173.56,
+"end": 173.92,
+"word": "鸭，",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 174.24,
+"end": 174.7,
+"word": "pi",
+"p": 0.0,
+"segment": 2
+},
+{
+"start": 174.7,
+"end": 174.7,
+"word": "ya",
+"p": 0.488,
+"segment": 2
+},
+{
+"start": 174.7,
+"end": 175.18,
+"word": "ya",
+"p": 0.05,
+"segment": 2
+},
+{
+"start": 175.18,
+"end": 175.7,
+"word": "yo",
+"p": 0.46,
+"segment": 2
+},
+{
+"start": 176.23,
+"end": 176.56,
+"word": "这里",
+"p": 0.164,
+"segment": 3
+},
+{
+"start": 176.56,
+"end": 176.94,
+"word": "呱",
+"p": 0.627,
+"segment": 3
+},
+{
+"start": 176.94,
+"end": 177.26,
+"word": "呱",
+"p": 0.983,
+"segment": 3
+},
+{
+"start": 177.26,
+"end": 177.54,
+"word": "呱，",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 177.7,
+"end": 177.82,
+"word": "那",
+"p": 0.033,
+"segment": 3
+},
+{
+"start": 177.82,
+"end": 178.02,
+"word": "里",
+"p": 0.991,
+"segment": 3
+},
+{
+"start": 178.02,
+"end": 178.24,
+"word": "呱",
+"p": 0.988,
+"segment": 3
+},
+{
+"start": 178.24,
+"end": 178.54,
+"word": "呱",
+"p": 0.934,
+"segment": 3
+},
+{
+"start": 178.54,
+"end": 178.92,
+"word": "卦，",
+"p": 0.487,
+"segment": 3
+},
+{
+"start": 179.28,
+"end": 179.42,
+"word": "这里",
+"p": 0.569,
+"segment": 3
+},
+{
+"start": 179.42,
+"end": 179.86,
+"word": "呱",
+"p": 0.983,
+"segment": 3
+},
+{
+"start": 179.86,
+"end": 180.08,
+"word": "那",
+"p": 0.14,
+"segment": 3
+},
+{
+"start": 180.08,
+"end": 180.28,
+"word": "里",
+"p": 0.995,
+"segment": 3
+},
+{
+"start": 180.28,
+"end": 180.48,
+"word": "呱，",
+"p": 0.988,
+"segment": 3
+},
+{
+"start": 180.64,
+"end": 180.72,
+"word": "到",
+"p": 0.136,
+"segment": 3
+},
+{
+"start": 180.72,
+"end": 180.96,
+"word": "处",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 180.96,
+"end": 181.08,
+"word": "都",
+"p": 0.965,
+"segment": 3
+},
+{
+"start": 181.08,
+"end": 181.22,
+"word": "在",
+"p": 0.996,
+"segment": 3
+},
+{
+"start": 181.22,
+"end": 181.44,
+"word": "烂",
+"p": 0.055,
+"segment": 3
+},
+{
+"start": 181.44,
+"end": 181.72,
+"word": "地。",
+"p": 0.006,
+"segment": 3
+},
+{
+"start": 181.82,
+"end": 182.0,
+"word": "王",
+"p": 0.349,
+"segment": 3
+},
+{
+"start": 182.0,
+"end": 182.3,
+"word": "老",
+"p": 0.995,
+"segment": 3
+},
+{
+"start": 182.3,
+"end": 182.76,
+"word": "先生",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 182.76,
+"end": 183.36,
+"word": "有",
+"p": 0.96,
+"segment": 3
+},
+{
+"start": 183.36,
+"end": 183.6,
+"word": "块",
+"p": 0.994,
+"segment": 3
+},
+{
+"start": 183.6,
+"end": 183.96,
+"word": "地，",
+"p": 0.974,
+"segment": 3
+},
+{
+"start": 184.26,
+"end": 184.9,
+"word": "鸣",
+"p": 0.238,
+"segment": 3
+},
+{
+"start": 184.9,
+"end": 185.12,
+"word": "yang",
+"p": 0.0,
+"segment": 3
+},
+{
+"start": 185.12,
+"end": 185.24,
+"word": "ya",
+"p": 0.174,
+"segment": 3
+},
+{
+"start": 185.24,
+"end": 185.7,
+"word": "yo",
+"p": 0.646,
+"segment": 3
+},
+{
+"start": 186.63,
+"end": 186.96,
+"word": "王",
+"p": 0.467,
+"segment": 4
+},
+{
+"start": 186.96,
+"end": 187.32,
+"word": "老",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 187.32,
+"end": 187.74,
+"word": "先生",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 187.74,
+"end": 188.28,
+"word": "有",
+"p": 0.989,
+"segment": 4
+},
+{
+"start": 188.28,
+"end": 188.62,
+"word": "块",
+"p": 0.997,
+"segment": 4
+},
+{
+"start": 188.62,
+"end": 188.96,
+"word": "地，",
+"p": 0.968,
+"segment": 4
+},
+{
+"start": 189.38,
+"end": 189.9,
+"word": "鸣",
+"p": 0.969,
+"segment": 4
+},
+{
+"start": 189.9,
+"end": 189.96,
+"word": "yang",
+"p": 0.489,
+"segment": 4
+},
+{
+"start": 189.96,
+"end": 190.32,
+"word": "ya",
+"p": 0.981,
+"segment": 4
+},
+{
+"start": 190.32,
+"end": 190.74,
+"word": "yo",
+"p": 0.998,
+"segment": 4
+}
+],
+"plain": [
+{
+"start": 166.32,
+"end": 166.92,
+"word": "我",
+"p": 0.296,
+"segment": 1
+},
+{
+"start": 166.92,
+"end": 167.2,
+"word": "老",
+"p": 0.958,
+"segment": 1
+},
+{
+"start": 167.2,
+"end": 167.62,
+"word": "先生",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 167.62,
+"end": 168.22,
+"word": "有",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 168.22,
+"end": 168.56,
+"word": "块",
+"p": 0.17,
+"segment": 1
+},
+{
+"start": 168.56,
+"end": 168.9,
+"word": "地",
+"p": 0.953,
+"segment": 1
+},
+{
+"start": 169.16,
+"end": 169.58,
+"word": "咿",
+"p": 0.867,
+"segment": 1
+},
+{
+"start": 169.58,
+"end": 169.76,
+"word": "呀",
+"p": 0.943,
+"segment": 1
+},
+{
+"start": 169.76,
+"end": 170.34,
+"word": "咿",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 170.34,
+"end": 170.5,
+"word": "呀",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 170.5,
+"end": 170.8,
+"word": "哟",
+"p": 0.933,
+"segment": 1
+},
+{
+"start": 170.8,
+"end": 171.92,
+"word": "他",
+"p": 0.966,
+"segment": 2
+},
+{
+"start": 171.92,
+"end": 172.26,
+"word": "在",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 172.26,
+"end": 172.64,
+"word": "天",
+"p": 0.867,
+"segment": 2
+},
+{
+"start": 172.64,
+"end": 172.94,
+"word": "边",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 172.94,
+"end": 173.26,
+"word": "养",
+"p": 0.854,
+"segment": 2
+},
+{
+"start": 173.26,
+"end": 173.56,
+"word": "小",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 173.56,
+"end": 173.94,
+"word": "鸭",
+"p": 0.987,
+"segment": 2
+},
+{
+"start": 174.12,
+"end": 174.5,
+"word": "咿",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 174.5,
+"end": 174.76,
+"word": "呀",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 174.76,
+"end": 175.16,
+"word": "咿",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 175.16,
+"end": 175.5,
+"word": "呀",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 175.5,
+"end": 175.84,
+"word": "哟",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 175.84,
+"end": 176.72,
+"word": "这里",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 176.72,
+"end": 177.02,
+"word": "挂",
+"p": 0.768,
+"segment": 3
+},
+{
+"start": 177.02,
+"end": 177.32,
+"word": "挂",
+"p": 0.734,
+"segment": 3
+},
+{
+"start": 177.32,
+"end": 177.66,
+"word": "挂",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 177.7,
+"end": 177.86,
+"word": "哪",
+"p": 0.992,
+"segment": 3
+},
+{
+"start": 177.86,
+"end": 178.02,
+"word": "里",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 178.02,
+"end": 178.3,
+"word": "挂",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 178.3,
+"end": 178.58,
+"word": "挂",
+"p": 0.989,
+"segment": 3
+},
+{
+"start": 178.58,
+"end": 178.92,
+"word": "挂",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 178.92,
+"end": 179.46,
+"word": "这里",
+"p": 0.989,
+"segment": 4
+},
+{
+"start": 179.46,
+"end": 179.92,
+"word": "挂",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 179.96,
+"end": 180.12,
+"word": "哪",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 180.12,
+"end": 180.28,
+"word": "里",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 180.28,
+"end": 180.54,
+"word": "挂",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 180.6,
+"end": 180.72,
+"word": "到",
+"p": 0.997,
+"segment": 4
+},
+{
+"start": 180.72,
+"end": 180.96,
+"word": "处",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 180.96,
+"end": 181.06,
+"word": "都",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 181.06,
+"end": 181.22,
+"word": "在",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 181.22,
+"end": 181.46,
+"word": "挂",
+"p": 0.988,
+"segment": 4
+},
+{
+"start": 181.46,
+"end": 181.78,
+"word": "挂",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 181.78,
+"end": 182.04,
+"word": "我",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 182.04,
+"end": 182.24,
+"word": "老",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 182.24,
+"end": 182.74,
+"word": "先生",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 182.74,
+"end": 183.32,
+"word": "有",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 183.32,
+"end": 183.6,
+"word": "块",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 183.6,
+"end": 183.96,
+"word": "地",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 184.1,
+"end": 184.6,
+"word": "咿",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 184.6,
+"end": 184.86,
+"word": "呀",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 184.86,
+"end": 185.38,
+"word": "咿",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 185.38,
+"end": 185.52,
+"word": "呀",
+"p": 0.998,
+"segment": 5
+},
+{
+"start": 185.52,
+"end": 186.18,
+"word": "哟",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 186.18,
+"end": 187.08,
+"word": "我",
+"p": 0.999,
+"segment": 6
+},
+{
+"start": 187.08,
+"end": 187.28,
+"word": "老",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 187.28,
+"end": 187.74,
+"word": "先生",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 187.74,
+"end": 188.28,
+"word": "有",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 188.28,
+"end": 188.6,
+"word": "块",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 188.6,
+"end": 188.92,
+"word": "地",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 189.14,
+"end": 189.84,
+"word": "咿",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 189.84,
+"end": 189.98,
+"word": "呀",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 189.98,
+"end": 190.42,
+"word": "咿",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 190.42,
+"end": 190.56,
+"word": "呀",
+"p": 0.997,
+"segment": 6
+},
+{
+"start": 190.56,
+"end": 190.84,
+"word": "哟",
+"p": 1.0,
+"segment": 6
+}
+]
+},
+{
+"start": 191.56,
+"end": 209.36,
+"hinted": [
+{
+"start": 191.26,
+"end": 191.96,
+"word": "他",
+"p": 0.368,
+"segment": 1
+},
+{
+"start": 191.96,
+"end": 192.26,
+"word": "在",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 192.26,
+"end": 192.62,
+"word": "田",
+"p": 0.104,
+"segment": 1
+},
+{
+"start": 192.62,
+"end": 192.96,
+"word": "边",
+"p": 0.718,
+"segment": 1
+},
+{
+"start": 192.96,
+"end": 193.26,
+"word": "养",
+"p": 0.966,
+"segment": 1
+},
+{
+"start": 193.26,
+"end": 193.54,
+"word": "小",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 193.54,
+"end": 193.88,
+"word": "马，",
+"p": 0.956,
+"segment": 1
+},
+{
+"start": 194.44,
+"end": 194.8,
+"word": "咿",
+"p": 0.341,
+"segment": 1
+},
+{
+"start": 194.8,
+"end": 195.04,
+"word": "呀",
+"p": 0.451,
+"segment": 1
+},
+{
+"start": 195.04,
+"end": 195.08,
+"word": "咿",
+"p": 0.789,
+"segment": 1
+},
+{
+"start": 195.08,
+"end": 195.52,
+"word": "呀",
+"p": 0.898,
+"segment": 1
+},
+{
+"start": 195.52,
+"end": 195.68,
+"word": "哟，",
+"p": 0.781,
+"segment": 1
+},
+{
+"start": 196.02,
+"end": 196.64,
+"word": "这里",
+"p": 0.94,
+"segment": 1
+},
+{
+"start": 196.64,
+"end": 196.96,
+"word": "哼",
+"p": 0.007,
+"segment": 1
+},
+{
+"start": 196.96,
+"end": 197.24,
+"word": "哼",
+"p": 0.546,
+"segment": 1
+},
+{
+"start": 197.24,
+"end": 197.5,
+"word": "哼，",
+"p": 0.852,
+"segment": 1
+},
+{
+"start": 197.68,
+"end": 197.76,
+"word": "那",
+"p": 0.469,
+"segment": 1
+},
+{
+"start": 197.76,
+"end": 197.96,
+"word": "里",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 197.96,
+"end": 198.18,
+"word": "哼",
+"p": 0.893,
+"segment": 1
+},
+{
+"start": 198.18,
+"end": 198.48,
+"word": "哼",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 198.48,
+"end": 198.76,
+"word": "哼，",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 199.14,
+"end": 199.44,
+"word": "这里",
+"p": 0.756,
+"segment": 1
+},
+{
+"start": 199.44,
+"end": 199.74,
+"word": "哼，",
+"p": 0.909,
+"segment": 1
+},
+{
+"start": 199.94,
+"end": 200.02,
+"word": "那",
+"p": 0.945,
+"segment": 1
+},
+{
+"start": 200.02,
+"end": 200.18,
+"word": "里",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 200.18,
+"end": 200.38,
+"word": "哼，",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 200.54,
+"end": 200.62,
+"word": "到",
+"p": 0.856,
+"segment": 1
+},
+{
+"start": 200.62,
+"end": 200.82,
+"word": "处",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 200.82,
+"end": 200.94,
+"word": "都",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 200.94,
+"end": 201.12,
+"word": "在",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 201.12,
+"end": 201.32,
+"word": "哼",
+"p": 0.397,
+"segment": 1
+},
+{
+"start": 201.32,
+"end": 201.58,
+"word": "哼，",
+"p": 0.814,
+"segment": 1
+},
+{
+"start": 201.82,
+"end": 201.9,
+"word": "王",
+"p": 0.078,
+"segment": 1
+},
+{
+"start": 201.9,
+"end": 202.14,
+"word": "老",
+"p": 0.97,
+"segment": 1
+},
+{
+"start": 202.14,
+"end": 202.56,
+"word": "先生",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 202.56,
+"end": 203.14,
+"word": "有",
+"p": 0.614,
+"segment": 1
+},
+{
+"start": 203.14,
+"end": 203.46,
+"word": "块",
+"p": 0.131,
+"segment": 1
+},
+{
+"start": 203.46,
+"end": 203.8,
+"word": "地，",
+"p": 0.595,
+"segment": 1
+},
+{
+"start": 204.3,
+"end": 204.82,
+"word": "咿",
+"p": 0.956,
+"segment": 1
+},
+{
+"start": 204.82,
+"end": 204.96,
+"word": "呀",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 204.96,
+"end": 205.0,
+"word": "咿",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 205.0,
+"end": 205.42,
+"word": "呀",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 205.42,
+"end": 205.64,
+"word": "哟！",
+"p": 0.965,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 191.26,
+"end": 191.96,
+"word": "他",
+"p": 0.368,
+"segment": 1
+},
+{
+"start": 191.96,
+"end": 192.26,
+"word": "在",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 192.26,
+"end": 192.64,
+"word": "天",
+"p": 0.882,
+"segment": 1
+},
+{
+"start": 192.64,
+"end": 192.96,
+"word": "边",
+"p": 0.615,
+"segment": 1
+},
+{
+"start": 192.96,
+"end": 193.28,
+"word": "养",
+"p": 0.93,
+"segment": 1
+},
+{
+"start": 193.28,
+"end": 193.54,
+"word": "小",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 193.54,
+"end": 193.86,
+"word": "马",
+"p": 0.938,
+"segment": 1
+},
+{
+"start": 195.72,
+"end": 196.3,
+"word": "这里",
+"p": 0.48,
+"segment": 2
+},
+{
+"start": 196.3,
+"end": 196.88,
+"word": "深",
+"p": 0.116,
+"segment": 2
+},
+{
+"start": 196.88,
+"end": 197.24,
+"word": "深",
+"p": 0.97,
+"segment": 2
+},
+{
+"start": 197.24,
+"end": 197.56,
+"word": "深",
+"p": 0.983,
+"segment": 2
+},
+{
+"start": 197.64,
+"end": 197.82,
+"word": "哪",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 197.82,
+"end": 197.96,
+"word": "里",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 197.96,
+"end": 198.14,
+"word": "深",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 198.14,
+"end": 198.48,
+"word": "深",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 198.48,
+"end": 198.82,
+"word": "深",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 198.82,
+"end": 199.42,
+"word": "这里",
+"p": 0.977,
+"segment": 3
+},
+{
+"start": 199.42,
+"end": 199.7,
+"word": "深",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 199.86,
+"end": 200.02,
+"word": "哪",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 200.02,
+"end": 200.18,
+"word": "里",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 200.18,
+"end": 200.38,
+"word": "深",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 200.48,
+"end": 200.58,
+"word": "到",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 200.58,
+"end": 200.82,
+"word": "处",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 200.82,
+"end": 200.94,
+"word": "都",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 200.94,
+"end": 201.1,
+"word": "在",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 201.1,
+"end": 201.3,
+"word": "深",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 201.3,
+"end": 201.56,
+"word": "深",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 201.56,
+"end": 201.86,
+"word": "我",
+"p": 0.201,
+"segment": 4
+},
+{
+"start": 201.86,
+"end": 202.08,
+"word": "老",
+"p": 0.816,
+"segment": 4
+},
+{
+"start": 202.08,
+"end": 202.56,
+"word": "先生",
+"p": 0.992,
+"segment": 4
+},
+{
+"start": 202.56,
+"end": 203.14,
+"word": "有",
+"p": 0.883,
+"segment": 4
+},
+{
+"start": 203.14,
+"end": 203.44,
+"word": "快",
+"p": 0.557,
+"segment": 4
+},
+{
+"start": 203.44,
+"end": 204.1,
+"word": "递",
+"p": 0.985,
+"segment": 4
+}
+]
+},
+{
+"start": 209.36,
+"end": 234.0,
+"hinted": [
+{
+"start": 211.76,
+"end": 212.38,
+"word": "我",
+"p": 0.507,
+"segment": 1
+},
+{
+"start": 212.38,
+"end": 212.7,
+"word": "老",
+"p": 0.858,
+"segment": 1
+},
+{
+"start": 212.7,
+"end": 213.08,
+"word": "先生",
+"p": 0.906,
+"segment": 1
+},
+{
+"start": 213.08,
+"end": 213.7,
+"word": "有",
+"p": 0.949,
+"segment": 1
+},
+{
+"start": 213.7,
+"end": 214.04,
+"word": "块",
+"p": 0.029,
+"segment": 1
+},
+{
+"start": 214.04,
+"end": 214.42,
+"word": "地，",
+"p": 0.921,
+"segment": 1
+},
+{
+"start": 214.9,
+"end": 215.38,
+"word": "咿",
+"p": 0.404,
+"segment": 1
+},
+{
+"start": 215.38,
+"end": 215.64,
+"word": "呀",
+"p": 0.5,
+"segment": 1
+},
+{
+"start": 215.64,
+"end": 215.66,
+"word": "咿",
+"p": 0.566,
+"segment": 1
+},
+{
+"start": 215.66,
+"end": 216.06,
+"word": "呀",
+"p": 0.825,
+"segment": 1
+},
+{
+"start": 216.06,
+"end": 216.22,
+"word": "哟！",
+"p": 0.879,
+"segment": 1
+},
+{
+"start": 216.78,
+"end": 217.4,
+"word": "他",
+"p": 0.027,
+"segment": 1
+},
+{
+"start": 217.4,
+"end": 217.8,
+"word": "在",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 217.8,
+"end": 218.14,
+"word": "田",
+"p": 0.09,
+"segment": 1
+},
+{
+"start": 218.14,
+"end": 218.48,
+"word": "边",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 218.48,
+"end": 218.8,
+"word": "养",
+"p": 0.723,
+"segment": 1
+},
+{
+"start": 218.8,
+"end": 219.06,
+"word": "小",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 219.06,
+"end": 219.48,
+"word": "鸭，",
+"p": 0.509,
+"segment": 1
+},
+{
+"start": 220.12,
+"end": 220.36,
+"word": "咿",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 220.36,
+"end": 220.66,
+"word": "呀",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 220.66,
+"end": 220.68,
+"word": "咿",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 220.68,
+"end": 221.12,
+"word": "呀",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 221.12,
+"end": 221.3,
+"word": "哟！",
+"p": 0.965,
+"segment": 1
+},
+{
+"start": 221.82,
+"end": 222.28,
+"word": "这里",
+"p": 0.903,
+"segment": 1
+},
+{
+"start": 222.28,
+"end": 222.6,
+"word": "呱",
+"p": 0.001,
+"segment": 1
+},
+{
+"start": 222.6,
+"end": 222.92,
+"word": "呱",
+"p": 0.971,
+"segment": 1
+},
+{
+"start": 222.92,
+"end": 223.18,
+"word": "呱，",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 223.4,
+"end": 223.46,
+"word": "那",
+"p": 0.405,
+"segment": 1
+},
+{
+"start": 223.46,
+"end": 223.68,
+"word": "里",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 223.68,
+"end": 223.92,
+"word": "呱",
+"p": 0.949,
+"segment": 1
+},
+{
+"start": 223.92,
+"end": 224.24,
+"word": "呱，",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 224.56,
+"end": 224.56,
+"word": "呱，",
+"p": 0.89,
+"segment": 1
+},
+{
+"start": 224.82,
+"end": 225.18,
+"word": "这里",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 225.18,
+"end": 225.54,
+"word": "呱",
+"p": 0.957,
+"segment": 1
+},
+{
+"start": 225.54,
+"end": 225.74,
+"word": "呱，",
+"p": 0.566,
+"segment": 1
+},
+{
+"start": 225.9,
+"end": 225.9,
+"word": "那",
+"p": 0.848,
+"segment": 1
+},
+{
+"start": 225.9,
+"end": 225.9,
+"word": "里",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 225.9,
+"end": 226.1,
+"word": "呱，",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 226.32,
+"end": 226.4,
+"word": "到",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 226.4,
+"end": 226.62,
+"word": "处",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 226.62,
+"end": 226.72,
+"word": "都",
+"p": 0.488,
+"segment": 1
+},
+{
+"start": 226.72,
+"end": 226.92,
+"word": "在",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 226.92,
+"end": 227.12,
+"word": "呱",
+"p": 0.895,
+"segment": 1
+},
+{
+"start": 227.12,
+"end": 227.44,
+"word": "呱，",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 227.58,
+"end": 227.66,
+"word": "我",
+"p": 0.7,
+"segment": 1
+},
+{
+"start": 227.66,
+"end": 227.94,
+"word": "老",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 227.94,
+"end": 228.38,
+"word": "先生",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 228.38,
+"end": 229.0,
+"word": "有",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 229.0,
+"end": 229.3,
+"word": "块",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 229.3,
+"end": 229.7,
+"word": "地，",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 230.1,
+"end": 230.72,
+"word": "咿",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 230.72,
+"end": 230.86,
+"word": "呀",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 230.86,
+"end": 231.14,
+"word": "咿",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 231.14,
+"end": 231.3,
+"word": "呀",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 231.3,
+"end": 231.52,
+"word": "哟！",
+"p": 0.971,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 211.74,
+"end": 212.38,
+"word": "我",
+"p": 0.505,
+"segment": 1
+},
+{
+"start": 212.38,
+"end": 212.7,
+"word": "老",
+"p": 0.858,
+"segment": 1
+},
+{
+"start": 212.7,
+"end": 213.08,
+"word": "先生",
+"p": 0.907,
+"segment": 1
+},
+{
+"start": 213.08,
+"end": 213.7,
+"word": "有",
+"p": 0.949,
+"segment": 1
+},
+{
+"start": 213.7,
+"end": 214.04,
+"word": "快",
+"p": 0.91,
+"segment": 1
+},
+{
+"start": 214.04,
+"end": 214.44,
+"word": "递",
+"p": 0.815,
+"segment": 1
+},
+{
+"start": 216.5,
+"end": 217.14,
+"word": "他",
+"p": 0.154,
+"segment": 2
+},
+{
+"start": 217.14,
+"end": 217.78,
+"word": "在",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 217.78,
+"end": 218.16,
+"word": "天",
+"p": 0.866,
+"segment": 2
+},
+{
+"start": 218.16,
+"end": 218.48,
+"word": "边",
+"p": 0.882,
+"segment": 2
+},
+{
+"start": 218.48,
+"end": 218.8,
+"word": "养",
+"p": 0.594,
+"segment": 2
+},
+{
+"start": 218.8,
+"end": 219.06,
+"word": "小",
+"p": 0.987,
+"segment": 2
+},
+{
+"start": 219.06,
+"end": 219.66,
+"word": "羊",
+"p": 0.963,
+"segment": 2
+},
+{
+"start": 221.54,
+"end": 222.18,
+"word": "这里",
+"p": 0.985,
+"segment": 3
+},
+{
+"start": 222.18,
+"end": 222.58,
+"word": "妹",
+"p": 0.741,
+"segment": 3
+},
+{
+"start": 222.58,
+"end": 222.96,
+"word": "妹",
+"p": 0.987,
+"segment": 3
+},
+{
+"start": 222.96,
+"end": 223.22,
+"word": "妹",
+"p": 0.991,
+"segment": 3
+},
+{
+"start": 223.32,
+"end": 223.5,
+"word": "哪",
+"p": 0.961,
+"segment": 3
+},
+{
+"start": 223.5,
+"end": 223.68,
+"word": "里",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 223.68,
+"end": 223.86,
+"word": "妹",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 223.86,
+"end": 224.24,
+"word": "妹",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 224.24,
+"end": 224.56,
+"word": "妹",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 224.56,
+"end": 225.18,
+"word": "这里",
+"p": 0.95,
+"segment": 4
+},
+{
+"start": 225.18,
+"end": 225.46,
+"word": "妹",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 225.66,
+"end": 225.78,
+"word": "哪",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 225.78,
+"end": 225.94,
+"word": "里",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 225.94,
+"end": 226.16,
+"word": "妹",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 226.24,
+"end": 226.38,
+"word": "到",
+"p": 0.99,
+"segment": 4
+},
+{
+"start": 226.38,
+"end": 226.62,
+"word": "处",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 226.62,
+"end": 226.72,
+"word": "都",
+"p": 0.929,
+"segment": 4
+},
+{
+"start": 226.72,
+"end": 226.92,
+"word": "在",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 226.92,
+"end": 227.12,
+"word": "妹",
+"p": 0.996,
+"segment": 4
+},
+{
+"start": 227.12,
+"end": 227.44,
+"word": "妹",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 227.44,
+"end": 227.7,
+"word": "我",
+"p": 0.998,
+"segment": 5
+},
+{
+"start": 227.7,
+"end": 227.94,
+"word": "老",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 227.94,
+"end": 228.38,
+"word": "先生",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 228.38,
+"end": 228.98,
+"word": "有",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 228.98,
+"end": 229.3,
+"word": "快",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 229.3,
+"end": 229.7,
+"word": "递",
+"p": 1.0,
+"segment": 5
+}
+]
+}
+]
+}
+}
+}

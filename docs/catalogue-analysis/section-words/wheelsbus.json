@@ -1,0 +1,3651 @@
+{
+"vocalSha256": "db203c624925789ae740f8b7ea3ed7edf3a384ebb42b6327322bd4de736a8b21",
+"model": "large-v3",
+"blocks": {
+"en": {
+"settings": "317f63aace6b9545",
+"language": "en",
+"pieces": [
+{
+"start": 10.0,
+"end": 33.02,
+"hinted": [
+{
+"start": 23.46,
+"end": 24.02,
+"word": "swish,",
+"p": 0.49,
+"segment": 1
+},
+{
+"start": 24.16,
+"end": 24.36,
+"word": "swish,",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 24.36,
+"end": 24.98,
+"word": "swish,",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 24.98,
+"end": 25.46,
+"word": "swish,",
+"p": 0.934,
+"segment": 1
+},
+{
+"start": 25.56,
+"end": 26.88,
+"word": "swish,",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 27.0,
+"end": 27.02,
+"word": "swish,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 27.08,
+"end": 27.22,
+"word": "swish,",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 27.22,
+"end": 27.48,
+"word": "swish,",
+"p": 0.853,
+"segment": 1
+},
+{
+"start": 27.48,
+"end": 27.48,
+"word": "swish.",
+"p": 0.658,
+"segment": 1
+},
+{
+"start": 27.52,
+"end": 27.86,
+"word": "The",
+"p": 0.677,
+"segment": 1
+},
+{
+"start": 27.86,
+"end": 28.3,
+"word": "wipers",
+"p": 0.96,
+"segment": 1
+},
+{
+"start": 28.3,
+"end": 28.44,
+"word": "on",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 28.44,
+"end": 28.58,
+"word": "the",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 28.58,
+"end": 28.78,
+"word": "bus",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 28.78,
+"end": 29.06,
+"word": "go",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 29.06,
+"end": 29.58,
+"word": "swish,",
+"p": 0.94,
+"segment": 1
+},
+{
+"start": 29.58,
+"end": 29.9,
+"word": "swish,",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 29.9,
+"end": 30.28,
+"word": "swish,",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 30.28,
+"end": 30.68,
+"word": "all",
+"p": 0.933,
+"segment": 2
+},
+{
+"start": 30.68,
+"end": 31.48,
+"word": "through",
+"p": 0.984,
+"segment": 2
+},
+{
+"start": 31.48,
+"end": 31.94,
+"word": "the",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 31.94,
+"end": 32.36,
+"word": "town.",
+"p": 0.998,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 10.58,
+"end": 11.08,
+"word": "The",
+"p": 0.761,
+"segment": 1
+},
+{
+"start": 11.08,
+"end": 11.4,
+"word": "wheels",
+"p": 0.933,
+"segment": 1
+},
+{
+"start": 11.4,
+"end": 11.72,
+"word": "on",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 11.72,
+"end": 11.86,
+"word": "the",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 11.86,
+"end": 12.12,
+"word": "bus",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 12.12,
+"end": 12.38,
+"word": "go",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 12.38,
+"end": 12.84,
+"word": "round",
+"p": 0.814,
+"segment": 1
+},
+{
+"start": 12.84,
+"end": 13.1,
+"word": "and",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 13.1,
+"end": 13.64,
+"word": "round,",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 13.72,
+"end": 14.22,
+"word": "round",
+"p": 0.938,
+"segment": 1
+},
+{
+"start": 14.22,
+"end": 14.62,
+"word": "and",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 14.62,
+"end": 15.04,
+"word": "round,",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 15.12,
+"end": 15.64,
+"word": "round",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 15.64,
+"end": 16.02,
+"word": "and",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 16.02,
+"end": 16.36,
+"word": "round",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 16.36,
+"end": 16.72,
+"word": "The",
+"p": 0.475,
+"segment": 2
+},
+{
+"start": 16.72,
+"end": 17.04,
+"word": "wheels",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 17.04,
+"end": 17.36,
+"word": "on",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 17.36,
+"end": 17.46,
+"word": "the",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 17.46,
+"end": 17.72,
+"word": "bus",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 17.72,
+"end": 17.98,
+"word": "go",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 17.98,
+"end": 18.4,
+"word": "round",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 18.4,
+"end": 18.7,
+"word": "and",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 18.7,
+"end": 19.18,
+"word": "round,",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 19.26,
+"end": 19.7,
+"word": "all",
+"p": 0.965,
+"segment": 2
+},
+{
+"start": 19.7,
+"end": 20.42,
+"word": "through",
+"p": 0.99,
+"segment": 2
+},
+{
+"start": 20.42,
+"end": 20.9,
+"word": "the",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 20.9,
+"end": 21.34,
+"word": "town",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 21.34,
+"end": 22.34,
+"word": "The",
+"p": 0.953,
+"segment": 3
+},
+{
+"start": 22.34,
+"end": 22.74,
+"word": "wipers",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 22.74,
+"end": 22.9,
+"word": "on",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 22.9,
+"end": 23.0,
+"word": "the",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 23.0,
+"end": 23.24,
+"word": "bus",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 23.24,
+"end": 23.58,
+"word": "go",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 23.58,
+"end": 23.96,
+"word": "swish",
+"p": 0.95,
+"segment": 3
+},
+{
+"start": 23.96,
+"end": 24.38,
+"word": "swish",
+"p": 0.869,
+"segment": 3
+},
+{
+"start": 24.38,
+"end": 24.9,
+"word": "swish,",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 24.98,
+"end": 25.46,
+"word": "swish",
+"p": 0.992,
+"segment": 3
+},
+{
+"start": 25.46,
+"end": 25.82,
+"word": "swish",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 25.82,
+"end": 26.28,
+"word": "swish,",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 26.28,
+"end": 26.86,
+"word": "swish",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 26.86,
+"end": 27.22,
+"word": "swish",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 27.22,
+"end": 27.56,
+"word": "swish",
+"p": 0.993,
+"segment": 3
+},
+{
+"start": 27.56,
+"end": 27.76,
+"word": "The",
+"p": 0.99,
+"segment": 4
+},
+{
+"start": 27.76,
+"end": 28.3,
+"word": "wipers",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 28.3,
+"end": 28.46,
+"word": "on",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 28.46,
+"end": 28.56,
+"word": "the",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 28.56,
+"end": 28.78,
+"word": "bus",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 28.78,
+"end": 29.08,
+"word": "go",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 29.08,
+"end": 29.56,
+"word": "swish",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 29.56,
+"end": 29.9,
+"word": "swish",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 29.9,
+"end": 30.36,
+"word": "swish,",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 30.36,
+"end": 30.72,
+"word": "all",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 30.72,
+"end": 31.48,
+"word": "through",
+"p": 0.997,
+"segment": 4
+},
+{
+"start": 31.48,
+"end": 31.94,
+"word": "the",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 31.94,
+"end": 32.36,
+"word": "town",
+"p": 1.0,
+"segment": 4
+}
+]
+},
+{
+"start": 33.02,
+"end": 44.15,
+"hinted": [
+{
+"start": 32.72,
+"end": 33.34,
+"word": "The",
+"p": 0.707,
+"segment": 1
+},
+{
+"start": 33.34,
+"end": 33.62,
+"word": "horn",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 33.62,
+"end": 33.92,
+"word": "on",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 33.92,
+"end": 34.02,
+"word": "the",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 34.02,
+"end": 34.28,
+"word": "bus",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 34.28,
+"end": 34.64,
+"word": "goes",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 34.64,
+"end": 35.12,
+"word": "peep,",
+"p": 0.515,
+"segment": 1
+},
+{
+"start": 35.12,
+"end": 35.44,
+"word": "peep,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 35.44,
+"end": 35.94,
+"word": "peep,",
+"p": 0.972,
+"segment": 1
+},
+{
+"start": 35.94,
+"end": 36.5,
+"word": "Peep,",
+"p": 0.513,
+"segment": 1
+},
+{
+"start": 36.5,
+"end": 36.96,
+"word": "peep,",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 37.06,
+"end": 37.7,
+"word": "peep,",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 37.78,
+"end": 37.98,
+"word": "peep,",
+"p": 0.964,
+"segment": 1
+},
+{
+"start": 38.16,
+"end": 38.44,
+"word": "peep,",
+"p": 0.958,
+"segment": 1
+},
+{
+"start": 38.58,
+"end": 38.64,
+"word": "peep,",
+"p": 0.81,
+"segment": 1
+},
+{
+"start": 38.64,
+"end": 38.86,
+"word": "The",
+"p": 0.355,
+"segment": 1
+},
+{
+"start": 38.86,
+"end": 39.2,
+"word": "horn",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 39.2,
+"end": 39.54,
+"word": "on",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 39.54,
+"end": 39.6,
+"word": "the",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 39.6,
+"end": 39.86,
+"word": "bus",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 39.86,
+"end": 40.24,
+"word": "goes",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 40.24,
+"end": 40.64,
+"word": "peep,",
+"p": 0.961,
+"segment": 1
+},
+{
+"start": 40.64,
+"end": 41.0,
+"word": "peep,",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 41.0,
+"end": 41.42,
+"word": "peep,",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 41.42,
+"end": 41.78,
+"word": "All",
+"p": 0.817,
+"segment": 1
+},
+{
+"start": 41.78,
+"end": 42.54,
+"word": "through",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 42.54,
+"end": 43.02,
+"word": "the",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 43.02,
+"end": 43.48,
+"word": "town.",
+"p": 0.992,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 32.72,
+"end": 33.36,
+"word": "The",
+"p": 0.706,
+"segment": 1
+},
+{
+"start": 33.36,
+"end": 33.62,
+"word": "horn",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 33.62,
+"end": 33.9,
+"word": "on",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 33.9,
+"end": 34.02,
+"word": "the",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 34.02,
+"end": 34.28,
+"word": "bus",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 34.28,
+"end": 34.64,
+"word": "goes",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 34.64,
+"end": 35.0,
+"word": "beep",
+"p": 0.539,
+"segment": 1
+},
+{
+"start": 35.0,
+"end": 35.34,
+"word": "beep",
+"p": 0.533,
+"segment": 1
+},
+{
+"start": 35.34,
+"end": 35.74,
+"word": "beep,",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 35.78,
+"end": 36.38,
+"word": "beep",
+"p": 0.945,
+"segment": 1
+},
+{
+"start": 36.38,
+"end": 36.74,
+"word": "beep",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 36.74,
+"end": 37.14,
+"word": "beep,",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 37.22,
+"end": 37.8,
+"word": "beep",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 37.8,
+"end": 38.16,
+"word": "beep",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 38.16,
+"end": 38.46,
+"word": "beep",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 38.46,
+"end": 38.86,
+"word": "The",
+"p": 0.4,
+"segment": 2
+},
+{
+"start": 38.86,
+"end": 39.2,
+"word": "horn",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 39.2,
+"end": 39.52,
+"word": "on",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 39.52,
+"end": 39.6,
+"word": "the",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 39.6,
+"end": 39.86,
+"word": "bus",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 39.86,
+"end": 40.24,
+"word": "goes",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 40.24,
+"end": 40.62,
+"word": "beep",
+"p": 0.988,
+"segment": 2
+},
+{
+"start": 40.62,
+"end": 40.9,
+"word": "beep",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 40.9,
+"end": 41.2,
+"word": "beep,",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 41.34,
+"end": 41.84,
+"word": "all",
+"p": 0.977,
+"segment": 2
+},
+{
+"start": 41.84,
+"end": 42.52,
+"word": "through",
+"p": 0.985,
+"segment": 2
+},
+{
+"start": 42.52,
+"end": 43.02,
+"word": "the",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 43.02,
+"end": 43.46,
+"word": "town",
+"p": 0.997,
+"segment": 2
+}
+]
+},
+{
+"start": 44.15,
+"end": 67.0,
+"hinted": [
+{
+"start": 43.85,
+"end": 44.45,
+"word": "The",
+"p": 0.842,
+"segment": 1
+},
+{
+"start": 44.45,
+"end": 44.75,
+"word": "people",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 44.75,
+"end": 45.05,
+"word": "on",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 45.05,
+"end": 45.15,
+"word": "the",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 45.15,
+"end": 45.39,
+"word": "bus",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 45.39,
+"end": 45.67,
+"word": "go",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 45.67,
+"end": 46.09,
+"word": "up",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 46.09,
+"end": 46.41,
+"word": "and",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 46.41,
+"end": 46.95,
+"word": "down,",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 47.09,
+"end": 47.41,
+"word": "Up",
+"p": 0.013,
+"segment": 1
+},
+{
+"start": 47.41,
+"end": 47.83,
+"word": "and",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 47.83,
+"end": 48.31,
+"word": "down,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 48.37,
+"end": 48.87,
+"word": "up",
+"p": 0.818,
+"segment": 1
+},
+{
+"start": 48.87,
+"end": 49.19,
+"word": "and",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 49.19,
+"end": 49.67,
+"word": "down.",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 49.79,
+"end": 49.99,
+"word": "The",
+"p": 0.931,
+"segment": 1
+},
+{
+"start": 49.99,
+"end": 50.27,
+"word": "people",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 50.27,
+"end": 50.61,
+"word": "on",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 50.61,
+"end": 50.71,
+"word": "the",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 50.71,
+"end": 50.93,
+"word": "bus",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 50.93,
+"end": 51.23,
+"word": "go",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 51.23,
+"end": 51.59,
+"word": "up",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 51.59,
+"end": 51.97,
+"word": "and",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 51.97,
+"end": 52.43,
+"word": "down,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 52.49,
+"end": 52.91,
+"word": "All",
+"p": 0.878,
+"segment": 1
+},
+{
+"start": 52.91,
+"end": 53.61,
+"word": "through",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 53.61,
+"end": 54.09,
+"word": "the",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 54.09,
+"end": 54.45,
+"word": "town.",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 54.85,
+"end": 55.49,
+"word": "The",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 55.49,
+"end": 55.81,
+"word": "doors",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 55.81,
+"end": 56.03,
+"word": "on",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 56.03,
+"end": 56.17,
+"word": "the",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 56.17,
+"end": 56.43,
+"word": "bus",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 56.43,
+"end": 56.73,
+"word": "go",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 56.73,
+"end": 57.17,
+"word": "open",
+"p": 0.978,
+"segment": 2
+},
+{
+"start": 57.17,
+"end": 57.43,
+"word": "and",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 57.43,
+"end": 57.75,
+"word": "shut,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 57.95,
+"end": 58.49,
+"word": "Open",
+"p": 0.954,
+"segment": 2
+},
+{
+"start": 58.49,
+"end": 58.83,
+"word": "and",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 58.83,
+"end": 59.15,
+"word": "shut,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 59.33,
+"end": 59.91,
+"word": "open",
+"p": 0.979,
+"segment": 2
+},
+{
+"start": 59.91,
+"end": 60.25,
+"word": "and",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 60.25,
+"end": 60.51,
+"word": "shut.",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 60.71,
+"end": 60.99,
+"word": "The",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 60.99,
+"end": 61.35,
+"word": "doors",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 61.35,
+"end": 61.55,
+"word": "on",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 61.55,
+"end": 61.69,
+"word": "the",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 61.69,
+"end": 61.93,
+"word": "bus",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 61.93,
+"end": 62.21,
+"word": "go",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 62.21,
+"end": 62.65,
+"word": "open",
+"p": 0.981,
+"segment": 2
+},
+{
+"start": 62.65,
+"end": 62.93,
+"word": "and",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 62.93,
+"end": 63.23,
+"word": "shut,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 63.45,
+"end": 63.95,
+"word": "All",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 63.95,
+"end": 64.61,
+"word": "through",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 64.61,
+"end": 65.05,
+"word": "the",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 65.05,
+"end": 65.37,
+"word": "town.",
+"p": 0.999,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 43.85,
+"end": 44.45,
+"word": "The",
+"p": 0.842,
+"segment": 1
+},
+{
+"start": 44.45,
+"end": 44.75,
+"word": "people",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 44.75,
+"end": 45.05,
+"word": "on",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 45.05,
+"end": 45.15,
+"word": "the",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 45.15,
+"end": 45.39,
+"word": "bus",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 45.39,
+"end": 45.67,
+"word": "go",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 45.67,
+"end": 46.09,
+"word": "up",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 46.09,
+"end": 46.41,
+"word": "and",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 46.41,
+"end": 46.95,
+"word": "down,",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 47.09,
+"end": 47.43,
+"word": "up",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 47.43,
+"end": 47.87,
+"word": "and",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 47.87,
+"end": 48.33,
+"word": "down,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 48.37,
+"end": 48.85,
+"word": "up",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 48.85,
+"end": 49.19,
+"word": "and",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 49.19,
+"end": 49.67,
+"word": "down",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 49.67,
+"end": 49.99,
+"word": "The",
+"p": 0.424,
+"segment": 2
+},
+{
+"start": 49.99,
+"end": 50.25,
+"word": "people",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 50.25,
+"end": 50.59,
+"word": "on",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 50.59,
+"end": 50.71,
+"word": "the",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 50.71,
+"end": 50.93,
+"word": "bus",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 50.93,
+"end": 51.23,
+"word": "go",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 51.23,
+"end": 51.59,
+"word": "up",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 51.59,
+"end": 51.97,
+"word": "and",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 51.97,
+"end": 52.47,
+"word": "down,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 52.49,
+"end": 52.95,
+"word": "all",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 52.95,
+"end": 53.61,
+"word": "through",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 53.61,
+"end": 54.09,
+"word": "the",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 54.09,
+"end": 54.47,
+"word": "town",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 54.47,
+"end": 55.23,
+"word": "The",
+"p": 0.973,
+"segment": 3
+},
+{
+"start": 55.23,
+"end": 55.83,
+"word": "doors",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 55.83,
+"end": 56.03,
+"word": "on",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 56.03,
+"end": 56.17,
+"word": "the",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 56.17,
+"end": 56.43,
+"word": "bus",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 56.43,
+"end": 56.73,
+"word": "go",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 56.73,
+"end": 57.17,
+"word": "open",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 57.17,
+"end": 57.43,
+"word": "and",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 57.43,
+"end": 57.75,
+"word": "shut,",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 57.95,
+"end": 58.53,
+"word": "open",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 58.53,
+"end": 58.85,
+"word": "and",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 58.85,
+"end": 59.25,
+"word": "shut,",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 59.35,
+"end": 59.91,
+"word": "open",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 59.91,
+"end": 60.25,
+"word": "and",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 60.25,
+"end": 60.55,
+"word": "shut",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 60.55,
+"end": 60.93,
+"word": "The",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 60.93,
+"end": 61.35,
+"word": "doors",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 61.35,
+"end": 61.55,
+"word": "on",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 61.55,
+"end": 61.69,
+"word": "the",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 61.69,
+"end": 61.93,
+"word": "bus",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 61.93,
+"end": 62.21,
+"word": "go",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 62.21,
+"end": 62.67,
+"word": "open",
+"p": 0.98,
+"segment": 4
+},
+{
+"start": 62.67,
+"end": 62.95,
+"word": "and",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 62.95,
+"end": 63.25,
+"word": "shut,",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 63.45,
+"end": 63.99,
+"word": "all",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 63.99,
+"end": 64.61,
+"word": "through",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 64.61,
+"end": 65.05,
+"word": "the",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 65.05,
+"end": 65.35,
+"word": "town",
+"p": 1.0,
+"segment": 4
+}
+]
+}
+]
+},
+"zh": {
+"settings": "eb231d6d0bb60042",
+"language": "zh",
+"pieces": [
+{
+"start": 75.5,
+"end": 87.95,
+"hinted": [
+{
+"start": 76.84,
+"end": 77.48,
+"word": "巴",
+"p": 0.718,
+"segment": 1
+},
+{
+"start": 77.48,
+"end": 77.7,
+"word": "士",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 77.7,
+"end": 77.98,
+"word": "的",
+"p": 0.953,
+"segment": 1
+},
+{
+"start": 77.98,
+"end": 78.28,
+"word": "轮",
+"p": 0.509,
+"segment": 1
+},
+{
+"start": 78.28,
+"end": 78.6,
+"word": "子",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 78.6,
+"end": 79.0,
+"word": "转",
+"p": 0.97,
+"segment": 1
+},
+{
+"start": 79.0,
+"end": 79.22,
+"word": "呀",
+"p": 0.955,
+"segment": 1
+},
+{
+"start": 79.22,
+"end": 79.76,
+"word": "转",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 79.9,
+"end": 80.36,
+"word": "转",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 80.36,
+"end": 80.64,
+"word": "呀",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 80.64,
+"end": 81.08,
+"word": "转",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 81.14,
+"end": 81.72,
+"word": "转",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 81.72,
+"end": 82.04,
+"word": "呀",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 82.04,
+"end": 82.42,
+"word": "转",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 82.56,
+"end": 82.94,
+"word": "巴",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 82.94,
+"end": 83.3,
+"word": "士",
+"p": 0.965,
+"segment": 1
+},
+{
+"start": 83.3,
+"end": 83.54,
+"word": "的",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 83.54,
+"end": 83.78,
+"word": "轮",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 83.78,
+"end": 84.08,
+"word": "子",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 84.08,
+"end": 84.46,
+"word": "转",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 84.46,
+"end": 84.74,
+"word": "呀",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 84.74,
+"end": 85.16,
+"word": "转",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 85.28,
+"end": 85.82,
+"word": "穿",
+"p": 0.779,
+"segment": 1
+},
+{
+"start": 85.82,
+"end": 86.38,
+"word": "过",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 86.38,
+"end": 86.88,
+"word": "街",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 86.88,
+"end": 87.12,
+"word": "道",
+"p": 0.999,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 76.74,
+"end": 77.46,
+"word": "把",
+"p": 0.085,
+"segment": 1
+},
+{
+"start": 77.46,
+"end": 77.82,
+"word": "戏",
+"p": 0.609,
+"segment": 1
+},
+{
+"start": 77.82,
+"end": 78.04,
+"word": "的",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 78.04,
+"end": 78.28,
+"word": "轮",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 78.28,
+"end": 78.6,
+"word": "子",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 78.6,
+"end": 79.0,
+"word": "转",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 79.0,
+"end": 79.22,
+"word": "呀",
+"p": 0.941,
+"segment": 1
+},
+{
+"start": 79.22,
+"end": 79.76,
+"word": "转",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 79.92,
+"end": 80.36,
+"word": "转",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 80.36,
+"end": 80.64,
+"word": "呀",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 80.64,
+"end": 81.08,
+"word": "转",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 81.14,
+"end": 81.72,
+"word": "转",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 81.72,
+"end": 82.04,
+"word": "呀",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 82.04,
+"end": 82.42,
+"word": "转",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 82.42,
+"end": 82.96,
+"word": "把",
+"p": 0.86,
+"segment": 2
+},
+{
+"start": 82.96,
+"end": 83.36,
+"word": "戏",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 83.36,
+"end": 83.56,
+"word": "的",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 83.56,
+"end": 83.78,
+"word": "轮",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 83.78,
+"end": 84.08,
+"word": "子",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 84.08,
+"end": 84.46,
+"word": "转",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 84.46,
+"end": 84.74,
+"word": "呀",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 84.74,
+"end": 85.16,
+"word": "转",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 85.28,
+"end": 85.82,
+"word": "穿",
+"p": 0.86,
+"segment": 2
+},
+{
+"start": 85.82,
+"end": 86.38,
+"word": "过",
+"p": 0.987,
+"segment": 2
+},
+{
+"start": 86.38,
+"end": 86.88,
+"word": "街",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 86.88,
+"end": 87.12,
+"word": "道",
+"p": 0.999,
+"segment": 2
+}
+]
+},
+{
+"start": 87.95,
+"end": 98.85,
+"hinted": [
+{
+"start": 87.65,
+"end": 88.45,
+"word": "巴",
+"p": 0.803,
+"segment": 1
+},
+{
+"start": 88.45,
+"end": 88.65,
+"word": "士",
+"p": 0.002,
+"segment": 1
+},
+{
+"start": 88.65,
+"end": 88.93,
+"word": "的",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 88.93,
+"end": 89.13,
+"word": "雨",
+"p": 0.934,
+"segment": 1
+},
+{
+"start": 89.13,
+"end": 89.59,
+"word": "刷",
+"p": 0.518,
+"segment": 1
+},
+{
+"start": 89.59,
+"end": 89.95,
+"word": "刷",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 89.95,
+"end": 90.25,
+"word": "刷",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 90.25,
+"end": 90.59,
+"word": "刷，",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 90.77,
+"end": 91.23,
+"word": "刷",
+"p": 0.967,
+"segment": 1
+},
+{
+"start": 91.23,
+"end": 91.65,
+"word": "刷",
+"p": 0.95,
+"segment": 1
+},
+{
+"start": 91.65,
+"end": 92.11,
+"word": "刷，",
+"p": 0.847,
+"segment": 1
+},
+{
+"start": 92.39,
+"end": 92.63,
+"word": "刷",
+"p": 0.533,
+"segment": 1
+},
+{
+"start": 92.63,
+"end": 92.99,
+"word": "刷，",
+"p": 0.846,
+"segment": 1
+},
+{
+"start": 93.45,
+"end": 93.83,
+"word": "巴",
+"p": 0.277,
+"segment": 1
+},
+{
+"start": 93.83,
+"end": 94.23,
+"word": "士",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 94.23,
+"end": 94.43,
+"word": "的",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 94.43,
+"end": 94.61,
+"word": "雨",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 94.61,
+"end": 95.01,
+"word": "刷",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 95.01,
+"end": 95.33,
+"word": "刷",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 95.33,
+"end": 95.65,
+"word": "刷，",
+"p": 0.954,
+"segment": 1
+},
+{
+"start": 96.11,
+"end": 96.69,
+"word": "穿",
+"p": 0.974,
+"segment": 1
+},
+{
+"start": 96.69,
+"end": 97.29,
+"word": "过",
+"p": 0.418,
+"segment": 1
+},
+{
+"start": 97.29,
+"end": 97.81,
+"word": "街",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 97.81,
+"end": 98.03,
+"word": "道",
+"p": 0.994,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 88.11,
+"end": 88.45,
+"word": "巴",
+"p": 0.803,
+"segment": 1
+},
+{
+"start": 88.45,
+"end": 88.65,
+"word": "西",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 88.65,
+"end": 88.91,
+"word": "的",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 88.91,
+"end": 89.13,
+"word": "雨",
+"p": 0.97,
+"segment": 1
+},
+{
+"start": 89.23,
+"end": 89.39,
+"word": "雪",
+"p": 0.494,
+"segment": 1
+},
+{
+"start": 89.39,
+"end": 89.91,
+"word": "雪",
+"p": 0.936,
+"segment": 1
+},
+{
+"start": 89.91,
+"end": 90.45,
+"word": "雪",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 90.45,
+"end": 90.73,
+"word": "雪",
+"p": 0.77,
+"segment": 1
+},
+{
+"start": 90.73,
+"end": 91.25,
+"word": "雪",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 91.25,
+"end": 91.59,
+"word": "雪",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 91.59,
+"end": 92.09,
+"word": "雪",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 92.09,
+"end": 92.61,
+"word": "雪",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 92.61,
+"end": 92.95,
+"word": "雪",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 92.95,
+"end": 93.29,
+"word": "雪",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 93.49,
+"end": 93.83,
+"word": "巴",
+"p": 0.975,
+"segment": 2
+},
+{
+"start": 93.83,
+"end": 94.21,
+"word": "西",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 94.21,
+"end": 94.45,
+"word": "的",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 94.45,
+"end": 94.59,
+"word": "雨",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 94.69,
+"end": 95.01,
+"word": "雪",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 95.01,
+"end": 95.39,
+"word": "雪",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 95.39,
+"end": 95.65,
+"word": "雪",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 95.65,
+"end": 96.05,
+"word": "雪",
+"p": 0.988,
+"segment": 2
+},
+{
+"start": 96.09,
+"end": 96.77,
+"word": "穿",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 96.77,
+"end": 97.25,
+"word": "過",
+"p": 0.447,
+"segment": 2
+},
+{
+"start": 97.25,
+"end": 97.81,
+"word": "街",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 97.81,
+"end": 98.03,
+"word": "道",
+"p": 0.995,
+"segment": 2
+}
+]
+},
+{
+"start": 98.85,
+"end": 120.47,
+"hinted": [
+{
+"start": 98.55,
+"end": 99.33,
+"word": "巴",
+"p": 0.754,
+"segment": 1
+},
+{
+"start": 99.33,
+"end": 99.55,
+"word": "士",
+"p": 0.399,
+"segment": 1
+},
+{
+"start": 99.55,
+"end": 99.83,
+"word": "的",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 99.83,
+"end": 100.09,
+"word": "喇",
+"p": 0.942,
+"segment": 1
+},
+{
+"start": 100.09,
+"end": 100.41,
+"word": "叭",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 100.41,
+"end": 100.75,
+"word": "哔",
+"p": 0.513,
+"segment": 1
+},
+{
+"start": 100.75,
+"end": 101.27,
+"word": "哔",
+"p": 0.965,
+"segment": 1
+},
+{
+"start": 101.27,
+"end": 101.59,
+"word": "哔，",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 101.75,
+"end": 102.09,
+"word": "哔",
+"p": 0.877,
+"segment": 1
+},
+{
+"start": 102.09,
+"end": 102.53,
+"word": "哔",
+"p": 0.913,
+"segment": 1
+},
+{
+"start": 102.53,
+"end": 102.99,
+"word": "哔，",
+"p": 0.923,
+"segment": 1
+},
+{
+"start": 103.15,
+"end": 103.47,
+"word": "哔",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 103.47,
+"end": 103.81,
+"word": "哔",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 103.81,
+"end": 104.17,
+"word": "哔，",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 104.31,
+"end": 104.69,
+"word": "巴",
+"p": 0.939,
+"segment": 1
+},
+{
+"start": 104.69,
+"end": 105.05,
+"word": "士",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 105.05,
+"end": 105.21,
+"word": "的",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 105.21,
+"end": 105.51,
+"word": "喇",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 105.51,
+"end": 105.85,
+"word": "叭",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 105.85,
+"end": 106.21,
+"word": "哔",
+"p": 0.957,
+"segment": 1
+},
+{
+"start": 106.21,
+"end": 106.53,
+"word": "哔，",
+"p": 0.917,
+"segment": 1
+},
+{
+"start": 107.01,
+"end": 107.65,
+"word": "穿",
+"p": 0.503,
+"segment": 1
+},
+{
+"start": 107.65,
+"end": 108.17,
+"word": "过",
+"p": 0.101,
+"segment": 1
+},
+{
+"start": 108.17,
+"end": 108.67,
+"word": "街",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 108.67,
+"end": 108.97,
+"word": "道",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 109.17,
+"end": 110.15,
+"word": "巴",
+"p": 0.967,
+"segment": 1
+},
+{
+"start": 110.15,
+"end": 110.47,
+"word": "士",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 110.47,
+"end": 110.75,
+"word": "的",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 110.75,
+"end": 111.01,
+"word": "乘",
+"p": 0.955,
+"segment": 1
+},
+{
+"start": 111.01,
+"end": 111.29,
+"word": "客",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 111.29,
+"end": 111.55,
+"word": "上",
+"p": 0.355,
+"segment": 1
+},
+{
+"start": 111.55,
+"end": 111.75,
+"word": "上",
+"p": 0.929,
+"segment": 1
+},
+{
+"start": 111.75,
+"end": 111.93,
+"word": "下",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 111.93,
+"end": 112.27,
+"word": "下",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 112.47,
+"end": 112.93,
+"word": "上",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 112.93,
+"end": 113.11,
+"word": "上",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 113.11,
+"end": 113.31,
+"word": "下",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 113.31,
+"end": 113.65,
+"word": "下，",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 114.21,
+"end": 114.23,
+"word": "上",
+"p": 0.105,
+"segment": 1
+},
+{
+"start": 114.23,
+"end": 114.49,
+"word": "上",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 114.49,
+"end": 114.65,
+"word": "下",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 114.65,
+"end": 114.99,
+"word": "下",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 115.17,
+"end": 115.65,
+"word": "巴",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 115.65,
+"end": 115.95,
+"word": "士",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 115.95,
+"end": 116.19,
+"word": "的",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 116.19,
+"end": 116.49,
+"word": "乘",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 116.49,
+"end": 116.73,
+"word": "客",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 116.73,
+"end": 117.01,
+"word": "上",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 117.01,
+"end": 117.17,
+"word": "上",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 117.17,
+"end": 117.37,
+"word": "下",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 117.37,
+"end": 117.69,
+"word": "下",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 117.93,
+"end": 118.43,
+"word": "穿",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 118.43,
+"end": 118.99,
+"word": "过",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 118.99,
+"end": 119.51,
+"word": "街",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 119.51,
+"end": 119.77,
+"word": "道",
+"p": 1.0,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 98.55,
+"end": 99.33,
+"word": "巴",
+"p": 0.754,
+"segment": 1
+},
+{
+"start": 99.33,
+"end": 99.61,
+"word": "西",
+"p": 0.576,
+"segment": 1
+},
+{
+"start": 99.61,
+"end": 99.83,
+"word": "的",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 99.83,
+"end": 100.09,
+"word": "喇",
+"p": 0.937,
+"segment": 1
+},
+{
+"start": 100.09,
+"end": 100.39,
+"word": "叭",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 100.47,
+"end": 100.75,
+"word": "哔",
+"p": 0.56,
+"segment": 1
+},
+{
+"start": 100.75,
+"end": 101.11,
+"word": "哔",
+"p": 0.933,
+"segment": 1
+},
+{
+"start": 101.11,
+"end": 101.63,
+"word": "哔",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 101.67,
+"end": 102.09,
+"word": "哔",
+"p": 0.951,
+"segment": 1
+},
+{
+"start": 102.09,
+"end": 102.47,
+"word": "哔",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 102.47,
+"end": 103.05,
+"word": "哔",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 103.05,
+"end": 103.49,
+"word": "哔",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 103.49,
+"end": 103.83,
+"word": "哔",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 103.83,
+"end": 104.19,
+"word": "哔",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 104.19,
+"end": 104.69,
+"word": "巴",
+"p": 0.958,
+"segment": 2
+},
+{
+"start": 104.69,
+"end": 105.05,
+"word": "西",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 105.05,
+"end": 105.29,
+"word": "的",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 105.29,
+"end": 105.51,
+"word": "喇",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 105.51,
+"end": 105.85,
+"word": "叭",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 105.93,
+"end": 106.23,
+"word": "哔",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 106.23,
+"end": 106.55,
+"word": "哔",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 106.55,
+"end": 106.97,
+"word": "哔",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 107.03,
+"end": 107.63,
+"word": "穿",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 107.63,
+"end": 108.17,
+"word": "过",
+"p": 0.309,
+"segment": 2
+},
+{
+"start": 108.17,
+"end": 108.67,
+"word": "街",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 108.67,
+"end": 108.97,
+"word": "道",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 109.63,
+"end": 110.23,
+"word": "巴",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 110.23,
+"end": 110.47,
+"word": "西",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 110.47,
+"end": 110.75,
+"word": "的",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 110.75,
+"end": 110.99,
+"word": "乘",
+"p": 0.775,
+"segment": 3
+},
+{
+"start": 110.99,
+"end": 111.29,
+"word": "客",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 111.37,
+"end": 111.61,
+"word": "沙",
+"p": 0.657,
+"segment": 3
+},
+{
+"start": 111.61,
+"end": 111.77,
+"word": "沙",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 111.77,
+"end": 111.93,
+"word": "下",
+"p": 0.623,
+"segment": 3
+},
+{
+"start": 111.93,
+"end": 112.25,
+"word": "下",
+"p": 0.99,
+"segment": 3
+},
+{
+"start": 112.51,
+"end": 112.95,
+"word": "沙",
+"p": 0.95,
+"segment": 3
+},
+{
+"start": 112.95,
+"end": 113.15,
+"word": "沙",
+"p": 0.996,
+"segment": 3
+},
+{
+"start": 113.15,
+"end": 113.29,
+"word": "下",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 113.29,
+"end": 113.71,
+"word": "下",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 113.81,
+"end": 114.33,
+"word": "沙",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 114.33,
+"end": 114.51,
+"word": "沙",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 114.51,
+"end": 114.67,
+"word": "下",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 114.67,
+"end": 114.99,
+"word": "下",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 114.99,
+"end": 115.59,
+"word": "巴",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 115.59,
+"end": 115.95,
+"word": "西",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 115.95,
+"end": 116.19,
+"word": "的",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 116.19,
+"end": 116.47,
+"word": "乘",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 116.47,
+"end": 116.73,
+"word": "客",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 116.81,
+"end": 117.03,
+"word": "沙",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 117.03,
+"end": 117.19,
+"word": "沙",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 117.19,
+"end": 117.37,
+"word": "下",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 117.37,
+"end": 117.69,
+"word": "下",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 117.93,
+"end": 118.43,
+"word": "穿",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 118.43,
+"end": 118.99,
+"word": "过",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 118.99,
+"end": 119.51,
+"word": "街",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 119.51,
+"end": 119.77,
+"word": "道",
+"p": 1.0,
+"segment": 4
+}
+]
+},
+{
+"start": 120.47,
+"end": 132.0,
+"hinted": [
+{
+"start": 120.17,
+"end": 121.07,
+"word": "巴",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 121.07,
+"end": 121.29,
+"word": "士",
+"p": 0.797,
+"segment": 1
+},
+{
+"start": 121.29,
+"end": 121.49,
+"word": "的",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 121.49,
+"end": 121.87,
+"word": "车",
+"p": 0.587,
+"segment": 1
+},
+{
+"start": 121.87,
+"end": 122.23,
+"word": "门",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 122.23,
+"end": 122.49,
+"word": "开",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 122.49,
+"end": 122.77,
+"word": "又",
+"p": 0.032,
+"segment": 1
+},
+{
+"start": 122.77,
+"end": 123.23,
+"word": "关",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 123.51,
+"end": 123.87,
+"word": "开",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 123.87,
+"end": 124.21,
+"word": "又",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 124.21,
+"end": 124.61,
+"word": "关",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 124.71,
+"end": 125.23,
+"word": "开",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 125.23,
+"end": 125.59,
+"word": "又",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 125.59,
+"end": 125.97,
+"word": "关",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 126.11,
+"end": 126.49,
+"word": "巴",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 126.49,
+"end": 126.73,
+"word": "士",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 126.73,
+"end": 127.03,
+"word": "的",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 127.03,
+"end": 127.31,
+"word": "车",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 127.31,
+"end": 127.61,
+"word": "门",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 127.61,
+"end": 127.87,
+"word": "开",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 127.87,
+"end": 128.23,
+"word": "又",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 128.23,
+"end": 128.65,
+"word": "关",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 128.79,
+"end": 129.33,
+"word": "穿",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 129.33,
+"end": 129.83,
+"word": "过",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 129.83,
+"end": 130.35,
+"word": "街",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 130.35,
+"end": 130.61,
+"word": "道",
+"p": 1.0,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 120.17,
+"end": 121.07,
+"word": "巴",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 121.07,
+"end": 121.29,
+"word": "士",
+"p": 0.797,
+"segment": 1
+},
+{
+"start": 121.29,
+"end": 121.49,
+"word": "的",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 121.49,
+"end": 121.87,
+"word": "车",
+"p": 0.587,
+"segment": 1
+},
+{
+"start": 121.87,
+"end": 122.23,
+"word": "门",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 122.23,
+"end": 122.49,
+"word": "开",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 122.49,
+"end": 122.77,
+"word": "油",
+"p": 0.507,
+"segment": 1
+},
+{
+"start": 122.77,
+"end": 123.23,
+"word": "管",
+"p": 0.49,
+"segment": 1
+},
+{
+"start": 123.51,
+"end": 123.83,
+"word": "开",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 123.83,
+"end": 124.17,
+"word": "油",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 124.17,
+"end": 124.59,
+"word": "管",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 124.71,
+"end": 125.23,
+"word": "开",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 125.23,
+"end": 125.57,
+"word": "油",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 125.57,
+"end": 125.99,
+"word": "管",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 125.99,
+"end": 126.45,
+"word": "巴",
+"p": 0.952,
+"segment": 2
+},
+{
+"start": 126.45,
+"end": 126.75,
+"word": "士",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 126.75,
+"end": 127.01,
+"word": "的",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 127.01,
+"end": 127.31,
+"word": "车",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 127.31,
+"end": 127.59,
+"word": "门",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 127.59,
+"end": 127.87,
+"word": "开",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 127.87,
+"end": 128.23,
+"word": "油",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 128.23,
+"end": 128.65,
+"word": "管",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 128.81,
+"end": 129.33,
+"word": "穿",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 129.33,
+"end": 129.83,
+"word": "过",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 129.83,
+"end": 130.35,
+"word": "街",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 130.35,
+"end": 130.61,
+"word": "道",
+"p": 1.0,
+"segment": 2
+}
+]
+}
+]
+}
+}
+}

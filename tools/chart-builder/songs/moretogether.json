@@ -1,0 +1,85 @@
+{
+ "schema": 1,
+ "key": "moretogether",
+ "recording": "10. The More We Get Together",
+ "assets": {
+  "source": {
+   "path": "songs/10. The More We Get Together.mp3",
+   "sha256": "b5da9d25fef9af59c74d1a2a227f2aef03550f0fd64cbd83e3309262d07093f0"
+  },
+  "backing": {
+   "path": "audio/10. The More We Get Together.mp3",
+   "sha256": "952af9e579504b62625c8eb32ada1a6e86710e68236eab5ebb4b929938d70bde"
+  },
+  "vocal": {
+   "path": "separated/vocals/10. The More We Get Together.mp3",
+   "sha256": "4b0a83bd8b5353fa5abcbe5b0ef16f2e3e7f52fc34c637c627d1fd5043c93c73"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 0.0,
+   "end": 37.5,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "The more we get together,",
+      "Together, together,",
+      "The more we get together,",
+      "The happier we’ll be."
+     ]
+    },
+    {
+     "label": "Chorus",
+     "lines": [
+      "For your friends are my friends,",
+      "And my friends are your friends.",
+      "The more we get together,",
+      "The happier we’ll be."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 37.5,
+   "end": 78.5,
+   "verses": [
+    {
+     "label": "Verse 2",
+     "lines": [
+      "当我们同在一起",
+      "在一起, 在一起",
+      "当我们同在一起",
+      "其快乐无比"
+     ]
+    },
+    {
+     "label": "Chorus",
+     "lines": [
+      "你对着我笑嘻嘻",
+      "我对着你笑哈哈",
+      "当我们同在一起",
+      "其快乐无比"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "schema": 1,
+ "key": "rowboat",
+ "recording": "9. Row Row Row Your Boat",
+ "assets": {
+  "source": {
+   "path": "songs/9. Row Row Row Your Boat.mp3",
+   "sha256": "02d2a4e834522e01e3b89a864b4cbd57816d87335c40b4984514b173add4639d"
+  },
+  "backing": {
+   "path": "audio/9. Row Row Row Your Boat.mp3",
+   "sha256": "fa7aee442b769da86e7b51168e6a1e355176f06d6929743fbf5a544032343c66"
+  },
+  "vocal": {
+   "path": "separated/vocals/9. Row Row Row Your Boat.mp3",
+   "sha256": "bb61f7ca95a30c6c39b9ebdcf0f6153f424742f3802b7a16397b8480f563f911"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 0.0,
+   "end": 21.5,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "Row, row, row your boat,",
+      "Gently down the stream.",
+      "Merrily, merrily, merrily, merrily,",
+      "Life is but a dream."
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "Row, row, row your boat,",
+      "Gently down the stream.",
+      "If you see a crocodile,",
+      "Don't forget to scream! (Ah!)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 28.0,
+   "end": 50.0,
+   "verses": [
+    {
+     "label": "Verse 3",
+     "lines": [
+      "划，划，划小船",
+      "顺着河流漂大家一起哈哈笑生活真美好"
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "划，划，划小船",
+      "顺着河流漂如果看到鳄鱼",
+      "记得大声叫（啊！）"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

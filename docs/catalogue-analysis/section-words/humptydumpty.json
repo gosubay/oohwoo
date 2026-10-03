@@ -1,0 +1,1772 @@
+{
+"vocalSha256": "67df0f534db9b4757a0cc1436af6eaa30a41815959793baca2d01e5ee00fda3e",
+"model": "large-v3",
+"blocks": {
+"en": {
+"settings": "13654267a2702d55",
+"language": "en",
+"pieces": [
+{
+"start": 13.0,
+"end": 38.68,
+"hinted": [
+{
+"start": 13.96,
+"end": 14.8,
+"word": "Humpty",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 14.8,
+"end": 15.64,
+"word": "Dumpty",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 15.64,
+"end": 16.06,
+"word": "sat",
+"p": 0.938,
+"segment": 1
+},
+{
+"start": 16.06,
+"end": 16.38,
+"word": "on",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 16.38,
+"end": 16.6,
+"word": "a",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 16.6,
+"end": 17.06,
+"word": "wall,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 17.24,
+"end": 18.28,
+"word": "Humpty",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 18.28,
+"end": 19.18,
+"word": "Dumpty",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 19.18,
+"end": 19.68,
+"word": "had",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 19.68,
+"end": 19.94,
+"word": "a",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 19.94,
+"end": 20.2,
+"word": "great",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 20.2,
+"end": 20.54,
+"word": "fall.",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 20.8,
+"end": 21.38,
+"word": "All",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 21.38,
+"end": 21.62,
+"word": "the",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 21.62,
+"end": 22.08,
+"word": "king's",
+"p": 0.884,
+"segment": 1
+},
+{
+"start": 22.08,
+"end": 22.38,
+"word": "horses",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 22.38,
+"end": 22.88,
+"word": "and",
+"p": 0.952,
+"segment": 1
+},
+{
+"start": 22.88,
+"end": 23.14,
+"word": "all",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 23.14,
+"end": 23.42,
+"word": "the",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 23.42,
+"end": 23.84,
+"word": "king's",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 23.84,
+"end": 24.08,
+"word": "men",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 24.08,
+"end": 25.28,
+"word": "Couldn't",
+"p": 0.768,
+"segment": 1
+},
+{
+"start": 25.28,
+"end": 25.48,
+"word": "put",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 25.48,
+"end": 26.08,
+"word": "Humpty",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 26.08,
+"end": 26.52,
+"word": "together",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 26.52,
+"end": 27.56,
+"word": "again.",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 28.12,
+"end": 28.96,
+"word": "Humpty",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 28.96,
+"end": 29.8,
+"word": "Dumpty",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 29.8,
+"end": 30.22,
+"word": "sat",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 30.22,
+"end": 30.6,
+"word": "on",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 30.6,
+"end": 30.82,
+"word": "a",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 30.82,
+"end": 31.24,
+"word": "wall,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 31.5,
+"end": 32.52,
+"word": "Humpty",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 32.52,
+"end": 33.34,
+"word": "Dumpty",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 33.34,
+"end": 33.76,
+"word": "had",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 33.76,
+"end": 34.08,
+"word": "a",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 34.08,
+"end": 34.32,
+"word": "great",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 34.32,
+"end": 34.7,
+"word": "fall.",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 35.02,
+"end": 35.46,
+"word": "All",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 35.46,
+"end": 35.8,
+"word": "the",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 35.8,
+"end": 36.24,
+"word": "king's",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 36.24,
+"end": 36.44,
+"word": "horses",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 36.44,
+"end": 37.02,
+"word": "and",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 37.02,
+"end": 37.26,
+"word": "all",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 37.26,
+"end": 37.52,
+"word": "the",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 37.52,
+"end": 37.96,
+"word": "king's",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 37.96,
+"end": 38.24,
+"word": "men",
+"p": 0.999,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 13.92,
+"end": 14.78,
+"word": "Humpty",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 14.78,
+"end": 15.64,
+"word": "Dumpty",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 15.64,
+"end": 16.06,
+"word": "sat",
+"p": 0.938,
+"segment": 1
+},
+{
+"start": 16.06,
+"end": 16.38,
+"word": "on",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 16.38,
+"end": 16.6,
+"word": "a",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 16.6,
+"end": 17.06,
+"word": "wall",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 17.06,
+"end": 18.28,
+"word": "Humpty",
+"p": 0.921,
+"segment": 1
+},
+{
+"start": 18.28,
+"end": 19.18,
+"word": "Dumpty",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 19.18,
+"end": 19.66,
+"word": "had",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 19.66,
+"end": 19.92,
+"word": "a",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 19.92,
+"end": 20.2,
+"word": "great",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 20.2,
+"end": 20.54,
+"word": "fall",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 20.54,
+"end": 21.42,
+"word": "All",
+"p": 0.938,
+"segment": 2
+},
+{
+"start": 21.42,
+"end": 21.64,
+"word": "the",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 21.64,
+"end": 22.08,
+"word": "king's",
+"p": 0.886,
+"segment": 2
+},
+{
+"start": 22.08,
+"end": 22.38,
+"word": "horses",
+"p": 0.981,
+"segment": 2
+},
+{
+"start": 22.38,
+"end": 22.88,
+"word": "and",
+"p": 0.962,
+"segment": 2
+},
+{
+"start": 22.88,
+"end": 23.14,
+"word": "all",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 23.14,
+"end": 23.4,
+"word": "the",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 23.4,
+"end": 23.84,
+"word": "king's",
+"p": 0.986,
+"segment": 2
+},
+{
+"start": 23.84,
+"end": 24.08,
+"word": "men",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 24.08,
+"end": 25.3,
+"word": "Couldn't",
+"p": 0.983,
+"segment": 2
+},
+{
+"start": 25.3,
+"end": 25.54,
+"word": "put",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 25.54,
+"end": 26.08,
+"word": "Humpty",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 26.08,
+"end": 26.62,
+"word": "together",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 26.62,
+"end": 27.58,
+"word": "again",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 27.58,
+"end": 28.96,
+"word": "Humpty",
+"p": 0.987,
+"segment": 3
+},
+{
+"start": 28.96,
+"end": 29.8,
+"word": "Dumpty",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 29.8,
+"end": 30.22,
+"word": "sat",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 30.22,
+"end": 30.62,
+"word": "on",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 30.62,
+"end": 30.82,
+"word": "a",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 30.82,
+"end": 31.28,
+"word": "wall",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 31.28,
+"end": 32.52,
+"word": "Humpty",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 32.52,
+"end": 33.34,
+"word": "Dumpty",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 33.34,
+"end": 33.8,
+"word": "had",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 33.8,
+"end": 34.08,
+"word": "a",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 34.08,
+"end": 34.34,
+"word": "great",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 34.34,
+"end": 34.7,
+"word": "fall",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 34.7,
+"end": 35.58,
+"word": "All",
+"p": 0.997,
+"segment": 4
+},
+{
+"start": 35.58,
+"end": 35.84,
+"word": "the",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 35.84,
+"end": 36.24,
+"word": "king's",
+"p": 0.996,
+"segment": 4
+},
+{
+"start": 36.24,
+"end": 36.44,
+"word": "horses",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 36.44,
+"end": 37.02,
+"word": "and",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 37.02,
+"end": 37.26,
+"word": "all",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 37.26,
+"end": 37.52,
+"word": "the",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 37.52,
+"end": 37.96,
+"word": "king's",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 37.96,
+"end": 38.2,
+"word": "men",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 38.2,
+"end": 38.96,
+"word": "Couldn't",
+"p": 0.868,
+"segment": 4
+},
+{
+"start": 38.96,
+"end": 38.96,
+"word": "put",
+"p": 0.937,
+"segment": 4
+},
+{
+"start": 38.96,
+"end": 38.96,
+"word": "Humpty",
+"p": 0.887,
+"segment": 4
+},
+{
+"start": 38.96,
+"end": 38.96,
+"word": "together",
+"p": 0.98,
+"segment": 4
+},
+{
+"start": 38.96,
+"end": 38.96,
+"word": "again",
+"p": 0.986,
+"segment": 4
+}
+]
+},
+{
+"start": 38.68,
+"end": 44.0,
+"hinted": [
+{
+"start": 38.38,
+"end": 39.42,
+"word": "Couldn't",
+"p": 0.825,
+"segment": 1
+},
+{
+"start": 39.42,
+"end": 39.58,
+"word": "put",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 39.58,
+"end": 40.14,
+"word": "Humpty",
+"p": 0.858,
+"segment": 1
+},
+{
+"start": 40.14,
+"end": 40.7,
+"word": "together",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 40.7,
+"end": 41.66,
+"word": "again.",
+"p": 0.996,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 38.38,
+"end": 39.42,
+"word": "Couldn't",
+"p": 0.825,
+"segment": 1
+},
+{
+"start": 39.42,
+"end": 39.58,
+"word": "put",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 39.58,
+"end": 40.14,
+"word": "Humpty",
+"p": 0.858,
+"segment": 1
+},
+{
+"start": 40.14,
+"end": 40.7,
+"word": "together",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 40.7,
+"end": 41.66,
+"word": "again",
+"p": 0.996,
+"segment": 1
+}
+]
+}
+]
+},
+"zh": {
+"settings": "c910dec97360b7b7",
+"language": "zh",
+"pieces": [
+{
+"start": 44.5,
+"end": 67.19,
+"hinted": [
+{
+"start": 45.76,
+"end": 46.4,
+"word": "胖",
+"p": 0.672,
+"segment": 1
+},
+{
+"start": 46.4,
+"end": 46.68,
+"word": "蛋",
+"p": 0.604,
+"segment": 1
+},
+{
+"start": 46.68,
+"end": 46.94,
+"word": "儿",
+"p": 0.219,
+"segment": 1
+},
+{
+"start": 46.94,
+"end": 47.24,
+"word": "坐",
+"p": 0.913,
+"segment": 1
+},
+{
+"start": 47.24,
+"end": 47.76,
+"word": "在",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 47.76,
+"end": 48.4,
+"word": "墙",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 48.4,
+"end": 49.1,
+"word": "上，",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 49.52,
+"end": 49.82,
+"word": "突",
+"p": 0.969,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 50.54,
+"word": "然，",
+"p": 0.972,
+"segment": 1
+},
+{
+"start": 50.72,
+"end": 51.02,
+"word": "胖",
+"p": 0.391,
+"segment": 1
+},
+{
+"start": 51.02,
+"end": 51.14,
+"word": "蛋",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 51.14,
+"end": 51.34,
+"word": "儿",
+"p": 0.949,
+"segment": 1
+},
+{
+"start": 51.34,
+"end": 51.7,
+"word": "摔",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 51.7,
+"end": 51.92,
+"word": "在",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 51.92,
+"end": 52.24,
+"word": "地",
+"p": 0.941,
+"segment": 1
+},
+{
+"start": 52.24,
+"end": 52.6,
+"word": "上。",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 53.06,
+"end": 53.42,
+"word": "国",
+"p": 0.023,
+"segment": 1
+},
+{
+"start": 53.42,
+"end": 53.68,
+"word": "王",
+"p": 0.971,
+"segment": 1
+},
+{
+"start": 53.68,
+"end": 54.18,
+"word": "所有",
+"p": 0.734,
+"segment": 1
+},
+{
+"start": 54.18,
+"end": 54.6,
+"word": "的",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 54.6,
+"end": 54.94,
+"word": "随",
+"p": 0.925,
+"segment": 1
+},
+{
+"start": 54.94,
+"end": 55.1,
+"word": "从",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 55.1,
+"end": 55.4,
+"word": "和",
+"p": 0.714,
+"segment": 1
+},
+{
+"start": 55.4,
+"end": 55.74,
+"word": "马",
+"p": 0.063,
+"segment": 1
+},
+{
+"start": 55.74,
+"end": 56.16,
+"word": "儿，",
+"p": 0.479,
+"segment": 1
+},
+{
+"start": 56.64,
+"end": 56.82,
+"word": "无",
+"p": 0.966,
+"segment": 1
+},
+{
+"start": 56.82,
+"end": 57.2,
+"word": "法",
+"p": 0.958,
+"segment": 1
+},
+{
+"start": 57.2,
+"end": 57.5,
+"word": "把",
+"p": 0.939,
+"segment": 1
+},
+{
+"start": 57.5,
+"end": 57.88,
+"word": "胖",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 57.88,
+"end": 58.12,
+"word": "蛋",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 58.12,
+"end": 58.4,
+"word": "儿",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 58.4,
+"end": 58.66,
+"word": "再",
+"p": 0.961,
+"segment": 1
+},
+{
+"start": 58.66,
+"end": 59.08,
+"word": "粘",
+"p": 0.507,
+"segment": 1
+},
+{
+"start": 59.08,
+"end": 59.62,
+"word": "好。",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 60.1,
+"end": 60.54,
+"word": "胖",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 60.54,
+"end": 60.82,
+"word": "蛋",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 60.82,
+"end": 61.02,
+"word": "儿",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 61.02,
+"end": 61.34,
+"word": "坐",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 61.34,
+"end": 61.9,
+"word": "在",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 61.9,
+"end": 62.46,
+"word": "墙",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 62.46,
+"end": 63.16,
+"word": "上，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 63.66,
+"end": 63.96,
+"word": "突",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 63.96,
+"end": 64.66,
+"word": "然，",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 64.82,
+"end": 64.94,
+"word": "胖",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 64.94,
+"end": 65.24,
+"word": "蛋",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 65.24,
+"end": 65.44,
+"word": "儿",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 65.44,
+"end": 65.84,
+"word": "摔",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 65.84,
+"end": 66.04,
+"word": "在",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 66.04,
+"end": 66.36,
+"word": "地",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 66.36,
+"end": 66.68,
+"word": "上。",
+"p": 1.0,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 45.66,
+"end": 46.38,
+"word": "胖",
+"p": 0.672,
+"segment": 1
+},
+{
+"start": 46.38,
+"end": 46.7,
+"word": "胆",
+"p": 0.628,
+"segment": 1
+},
+{
+"start": 46.7,
+"end": 46.94,
+"word": "儿",
+"p": 0.478,
+"segment": 1
+},
+{
+"start": 46.94,
+"end": 47.26,
+"word": "坐",
+"p": 0.938,
+"segment": 1
+},
+{
+"start": 47.26,
+"end": 47.76,
+"word": "在",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 47.76,
+"end": 48.54,
+"word": "墙",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 48.54,
+"end": 49.12,
+"word": "上",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 49.12,
+"end": 49.86,
+"word": "突",
+"p": 0.756,
+"segment": 2
+},
+{
+"start": 49.86,
+"end": 50.5,
+"word": "然",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 50.5,
+"end": 50.88,
+"word": "胖",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 50.88,
+"end": 51.12,
+"word": "胆",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 51.12,
+"end": 51.38,
+"word": "儿",
+"p": 0.988,
+"segment": 2
+},
+{
+"start": 51.38,
+"end": 51.7,
+"word": "摔",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 51.7,
+"end": 51.92,
+"word": "在",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 51.92,
+"end": 52.24,
+"word": "地",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 52.24,
+"end": 52.66,
+"word": "上",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 52.66,
+"end": 53.32,
+"word": "过",
+"p": 0.335,
+"segment": 3
+},
+{
+"start": 53.32,
+"end": 53.66,
+"word": "往",
+"p": 0.965,
+"segment": 3
+},
+{
+"start": 53.66,
+"end": 54.2,
+"word": "所有",
+"p": 0.989,
+"segment": 3
+},
+{
+"start": 54.2,
+"end": 54.6,
+"word": "的",
+"p": 0.991,
+"segment": 3
+},
+{
+"start": 54.6,
+"end": 54.94,
+"word": "随",
+"p": 0.89,
+"segment": 3
+},
+{
+"start": 54.94,
+"end": 55.2,
+"word": "从",
+"p": 0.996,
+"segment": 3
+},
+{
+"start": 55.2,
+"end": 55.4,
+"word": "和",
+"p": 0.908,
+"segment": 3
+},
+{
+"start": 55.4,
+"end": 55.8,
+"word": "默",
+"p": 0.545,
+"segment": 3
+},
+{
+"start": 55.8,
+"end": 56.1,
+"word": "儿",
+"p": 0.277,
+"segment": 3
+},
+{
+"start": 56.1,
+"end": 56.82,
+"word": "无",
+"p": 0.972,
+"segment": 4
+},
+{
+"start": 56.82,
+"end": 57.2,
+"word": "法",
+"p": 0.983,
+"segment": 4
+},
+{
+"start": 57.2,
+"end": 57.52,
+"word": "把",
+"p": 0.993,
+"segment": 4
+},
+{
+"start": 57.52,
+"end": 57.88,
+"word": "胖",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 57.88,
+"end": 58.14,
+"word": "胆",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 58.14,
+"end": 58.44,
+"word": "儿",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 58.44,
+"end": 58.66,
+"word": "再",
+"p": 0.983,
+"segment": 4
+},
+{
+"start": 58.66,
+"end": 59.02,
+"word": "念",
+"p": 0.909,
+"segment": 4
+},
+{
+"start": 59.02,
+"end": 59.6,
+"word": "好",
+"p": 0.88,
+"segment": 4
+},
+{
+"start": 59.6,
+"end": 60.54,
+"word": "胖",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 60.54,
+"end": 60.82,
+"word": "胆",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 60.82,
+"end": 61.08,
+"word": "儿",
+"p": 0.998,
+"segment": 5
+},
+{
+"start": 61.08,
+"end": 61.38,
+"word": "坐",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 61.38,
+"end": 61.9,
+"word": "在",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 61.9,
+"end": 62.52,
+"word": "墙",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 62.52,
+"end": 63.22,
+"word": "上",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 63.22,
+"end": 63.9,
+"word": "突",
+"p": 0.998,
+"segment": 6
+},
+{
+"start": 63.9,
+"end": 64.64,
+"word": "然",
+"p": 0.999,
+"segment": 6
+},
+{
+"start": 64.64,
+"end": 65.0,
+"word": "胖",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 65.0,
+"end": 65.24,
+"word": "胆",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 65.24,
+"end": 65.46,
+"word": "儿",
+"p": 0.998,
+"segment": 6
+},
+{
+"start": 65.46,
+"end": 65.84,
+"word": "摔",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 65.84,
+"end": 66.04,
+"word": "在",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 66.04,
+"end": 66.36,
+"word": "地",
+"p": 0.998,
+"segment": 6
+},
+{
+"start": 66.36,
+"end": 66.72,
+"word": "上",
+"p": 1.0,
+"segment": 6
+}
+]
+},
+{
+"start": 67.19,
+"end": 76.0,
+"hinted": [
+{
+"start": 66.89,
+"end": 67.61,
+"word": "国",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 67.61,
+"end": 67.85,
+"word": "王",
+"p": 0.854,
+"segment": 1
+},
+{
+"start": 67.85,
+"end": 68.35,
+"word": "所有",
+"p": 0.889,
+"segment": 1
+},
+{
+"start": 68.35,
+"end": 68.65,
+"word": "的",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 68.65,
+"end": 69.11,
+"word": "随",
+"p": 0.571,
+"segment": 1
+},
+{
+"start": 69.11,
+"end": 69.27,
+"word": "从",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 69.27,
+"end": 69.55,
+"word": "和",
+"p": 0.687,
+"segment": 1
+},
+{
+"start": 69.55,
+"end": 69.93,
+"word": "马",
+"p": 0.025,
+"segment": 1
+},
+{
+"start": 69.93,
+"end": 70.35,
+"word": "儿，",
+"p": 0.381,
+"segment": 1
+},
+{
+"start": 70.69,
+"end": 71.03,
+"word": "无",
+"p": 0.966,
+"segment": 1
+},
+{
+"start": 71.03,
+"end": 71.43,
+"word": "法",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 71.43,
+"end": 71.69,
+"word": "把",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 71.69,
+"end": 72.11,
+"word": "胖",
+"p": 0.644,
+"segment": 1
+},
+{
+"start": 72.11,
+"end": 72.27,
+"word": "蛋",
+"p": 0.01,
+"segment": 1
+},
+{
+"start": 72.27,
+"end": 72.61,
+"word": "儿",
+"p": 0.432,
+"segment": 1
+},
+{
+"start": 72.61,
+"end": 72.89,
+"word": "再",
+"p": 0.924,
+"segment": 1
+},
+{
+"start": 72.89,
+"end": 73.31,
+"word": "粘",
+"p": 0.509,
+"segment": 1
+},
+{
+"start": 73.31,
+"end": 73.85,
+"word": "好。",
+"p": 0.952,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 66.89,
+"end": 67.61,
+"word": "我",
+"p": 0.186,
+"segment": 1
+},
+{
+"start": 67.61,
+"end": 67.77,
+"word": "望",
+"p": 0.079,
+"segment": 1
+},
+{
+"start": 67.77,
+"end": 68.35,
+"word": "所有",
+"p": 0.946,
+"segment": 1
+},
+{
+"start": 68.35,
+"end": 68.77,
+"word": "的",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 68.77,
+"end": 69.07,
+"word": "水",
+"p": 0.637,
+"segment": 1
+},
+{
+"start": 69.07,
+"end": 69.33,
+"word": "蟲",
+"p": 0.77,
+"segment": 1
+},
+{
+"start": 69.33,
+"end": 69.59,
+"word": "和",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 69.59,
+"end": 70.03,
+"word": "貓",
+"p": 0.875,
+"segment": 1
+},
+{
+"start": 70.03,
+"end": 70.27,
+"word": "兒",
+"p": 0.884,
+"segment": 1
+},
+{
+"start": 70.69,
+"end": 70.99,
+"word": "無",
+"p": 0.892,
+"segment": 2
+},
+{
+"start": 70.99,
+"end": 71.43,
+"word": "法",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 71.43,
+"end": 71.69,
+"word": "把",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 71.69,
+"end": 72.09,
+"word": "胖",
+"p": 0.701,
+"segment": 2
+},
+{
+"start": 72.09,
+"end": 72.33,
+"word": "的",
+"p": 0.723,
+"segment": 2
+},
+{
+"start": 72.33,
+"end": 72.51,
+"word": "女",
+"p": 0.914,
+"segment": 2
+},
+{
+"start": 72.51,
+"end": 72.73,
+"word": "兒",
+"p": 0.959,
+"segment": 2
+},
+{
+"start": 72.73,
+"end": 72.87,
+"word": "再",
+"p": 0.951,
+"segment": 2
+},
+{
+"start": 72.87,
+"end": 73.27,
+"word": "念",
+"p": 0.757,
+"segment": 2
+},
+{
+"start": 73.27,
+"end": 73.81,
+"word": "好",
+"p": 0.915,
+"segment": 2
+}
+]
+}
+]
+}
+}
+}

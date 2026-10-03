@@ -1,0 +1,2158 @@
+{
+"vocalSha256": "6d1c33438605c870f5c9f2ec72de457f42f031451e265c9f288faa1ff49b2496",
+"model": "large-v3",
+"blocks": {
+"en": {
+"settings": "3ac4e3cfc008aa38",
+"language": "en",
+"pieces": [
+{
+"start": 3.5,
+"end": 24.27,
+"hinted": [
+{
+"start": 3.2,
+"end": 4.74,
+"word": "Itsy",
+"p": 0.694,
+"segment": 1
+},
+{
+"start": 4.74,
+"end": 5.32,
+"word": "bitsy",
+"p": 0.674,
+"segment": 1
+},
+{
+"start": 5.32,
+"end": 5.76,
+"word": "spider",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 5.76,
+"end": 6.54,
+"word": "climbed",
+"p": 0.923,
+"segment": 1
+},
+{
+"start": 6.54,
+"end": 6.88,
+"word": "up",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 6.88,
+"end": 7.1,
+"word": "the",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 7.1,
+"end": 7.48,
+"word": "water",
+"p": 0.938,
+"segment": 1
+},
+{
+"start": 7.48,
+"end": 8.0,
+"word": "spout",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 8.0,
+"end": 9.0,
+"word": "Down",
+"p": 0.652,
+"segment": 1
+},
+{
+"start": 9.0,
+"end": 9.5,
+"word": "came",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 9.5,
+"end": 9.9,
+"word": "the",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 9.9,
+"end": 10.24,
+"word": "rain",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 10.24,
+"end": 10.8,
+"word": "and",
+"p": 0.944,
+"segment": 1
+},
+{
+"start": 10.8,
+"end": 11.36,
+"word": "washed",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 11.36,
+"end": 11.58,
+"word": "the",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 11.58,
+"end": 11.98,
+"word": "spider",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 11.98,
+"end": 12.54,
+"word": "out",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 12.54,
+"end": 13.62,
+"word": "Out",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 13.62,
+"end": 14.02,
+"word": "came",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 14.02,
+"end": 14.32,
+"word": "the",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 14.32,
+"end": 14.84,
+"word": "sunshine",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 14.84,
+"end": 15.52,
+"word": "and",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 15.52,
+"end": 15.76,
+"word": "dried",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 15.76,
+"end": 16.08,
+"word": "up",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 16.08,
+"end": 16.34,
+"word": "all",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 16.34,
+"end": 16.58,
+"word": "the",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 16.58,
+"end": 17.0,
+"word": "rain",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 17.0,
+"end": 17.72,
+"word": "And",
+"p": 0.908,
+"segment": 1
+},
+{
+"start": 17.72,
+"end": 18.3,
+"word": "itsy",
+"p": 0.925,
+"segment": 1
+},
+{
+"start": 18.3,
+"end": 18.72,
+"word": "bitsy",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 18.72,
+"end": 19.16,
+"word": "spider",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 19.16,
+"end": 19.94,
+"word": "climbed",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 19.94,
+"end": 20.24,
+"word": "up",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 20.24,
+"end": 20.48,
+"word": "the",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 20.48,
+"end": 20.84,
+"word": "spout",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 20.84,
+"end": 21.26,
+"word": "again",
+"p": 0.999,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 4.16,
+"end": 4.72,
+"word": "Itsy",
+"p": 0.694,
+"segment": 1
+},
+{
+"start": 4.72,
+"end": 5.42,
+"word": "Bitsy",
+"p": 0.825,
+"segment": 1
+},
+{
+"start": 5.42,
+"end": 5.8,
+"word": "Spider",
+"p": 0.888,
+"segment": 1
+},
+{
+"start": 5.8,
+"end": 6.52,
+"word": "climbed",
+"p": 0.851,
+"segment": 1
+},
+{
+"start": 6.52,
+"end": 6.86,
+"word": "up",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 6.86,
+"end": 7.1,
+"word": "the",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 7.1,
+"end": 7.48,
+"word": "water",
+"p": 0.941,
+"segment": 1
+},
+{
+"start": 7.48,
+"end": 8.0,
+"word": "spout",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 8.0,
+"end": 9.0,
+"word": "Down",
+"p": 0.671,
+"segment": 2
+},
+{
+"start": 9.0,
+"end": 9.5,
+"word": "came",
+"p": 0.987,
+"segment": 2
+},
+{
+"start": 9.5,
+"end": 9.9,
+"word": "the",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 9.9,
+"end": 10.24,
+"word": "rain",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 10.24,
+"end": 10.8,
+"word": "and",
+"p": 0.932,
+"segment": 2
+},
+{
+"start": 10.8,
+"end": 11.36,
+"word": "washed",
+"p": 0.99,
+"segment": 2
+},
+{
+"start": 11.36,
+"end": 11.58,
+"word": "the",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 11.58,
+"end": 11.98,
+"word": "spider",
+"p": 0.984,
+"segment": 2
+},
+{
+"start": 11.98,
+"end": 12.54,
+"word": "out",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 12.54,
+"end": 13.62,
+"word": "Out",
+"p": 0.984,
+"segment": 3
+},
+{
+"start": 13.62,
+"end": 14.02,
+"word": "came",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 14.02,
+"end": 14.32,
+"word": "the",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 14.32,
+"end": 14.84,
+"word": "sunshine",
+"p": 0.993,
+"segment": 3
+},
+{
+"start": 14.84,
+"end": 15.52,
+"word": "and",
+"p": 0.971,
+"segment": 3
+},
+{
+"start": 15.52,
+"end": 15.76,
+"word": "dried",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 15.76,
+"end": 16.08,
+"word": "up",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 16.08,
+"end": 16.34,
+"word": "all",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 16.34,
+"end": 16.58,
+"word": "the",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 16.58,
+"end": 17.02,
+"word": "rain",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 17.02,
+"end": 17.76,
+"word": "And",
+"p": 0.933,
+"segment": 4
+},
+{
+"start": 17.76,
+"end": 18.26,
+"word": "Itsy",
+"p": 0.919,
+"segment": 4
+},
+{
+"start": 18.26,
+"end": 18.74,
+"word": "Bitsy",
+"p": 0.997,
+"segment": 4
+},
+{
+"start": 18.74,
+"end": 19.16,
+"word": "Spider",
+"p": 0.972,
+"segment": 4
+},
+{
+"start": 19.16,
+"end": 19.94,
+"word": "climbed",
+"p": 0.993,
+"segment": 4
+},
+{
+"start": 19.94,
+"end": 20.24,
+"word": "up",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 20.24,
+"end": 20.48,
+"word": "the",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 20.48,
+"end": 20.82,
+"word": "spout",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 20.82,
+"end": 21.26,
+"word": "again",
+"p": 0.999,
+"segment": 4
+}
+]
+},
+{
+"start": 24.27,
+"end": 45.0,
+"hinted": [
+{
+"start": 26.31,
+"end": 27.11,
+"word": "Itsy",
+"p": 0.693,
+"segment": 1
+},
+{
+"start": 27.11,
+"end": 27.57,
+"word": "bitsy",
+"p": 0.678,
+"segment": 1
+},
+{
+"start": 27.57,
+"end": 28.03,
+"word": "spider",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 28.03,
+"end": 28.83,
+"word": "climbed",
+"p": 0.885,
+"segment": 1
+},
+{
+"start": 28.83,
+"end": 29.13,
+"word": "up",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 29.13,
+"end": 29.39,
+"word": "the",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 29.39,
+"end": 29.73,
+"word": "water",
+"p": 0.926,
+"segment": 1
+},
+{
+"start": 29.73,
+"end": 30.27,
+"word": "spout",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 30.27,
+"end": 31.21,
+"word": "Down",
+"p": 0.633,
+"segment": 1
+},
+{
+"start": 31.21,
+"end": 31.75,
+"word": "came",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 31.75,
+"end": 32.09,
+"word": "the",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 32.09,
+"end": 32.45,
+"word": "rain",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 32.45,
+"end": 33.01,
+"word": "and",
+"p": 0.948,
+"segment": 1
+},
+{
+"start": 33.01,
+"end": 33.61,
+"word": "washed",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 33.61,
+"end": 33.81,
+"word": "the",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 33.81,
+"end": 34.17,
+"word": "spider",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 34.17,
+"end": 34.75,
+"word": "out",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 34.75,
+"end": 35.83,
+"word": "Out",
+"p": 0.975,
+"segment": 2
+},
+{
+"start": 35.83,
+"end": 36.23,
+"word": "came",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 36.23,
+"end": 36.53,
+"word": "the",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 36.53,
+"end": 37.05,
+"word": "sunshine",
+"p": 0.989,
+"segment": 2
+},
+{
+"start": 37.05,
+"end": 37.73,
+"word": "and",
+"p": 0.981,
+"segment": 2
+},
+{
+"start": 37.73,
+"end": 37.97,
+"word": "dried",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 37.97,
+"end": 38.31,
+"word": "up",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 38.31,
+"end": 38.55,
+"word": "all",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 38.55,
+"end": 38.79,
+"word": "the",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 38.79,
+"end": 39.17,
+"word": "rain",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 39.17,
+"end": 39.95,
+"word": "And",
+"p": 0.919,
+"segment": 2
+},
+{
+"start": 39.95,
+"end": 40.53,
+"word": "itsy",
+"p": 0.906,
+"segment": 2
+},
+{
+"start": 40.53,
+"end": 40.93,
+"word": "bitsy",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 40.93,
+"end": 41.37,
+"word": "spider",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 41.37,
+"end": 42.15,
+"word": "climbed",
+"p": 0.99,
+"segment": 2
+},
+{
+"start": 42.15,
+"end": 42.47,
+"word": "up",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 42.47,
+"end": 42.67,
+"word": "the",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 42.67,
+"end": 43.05,
+"word": "spout",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 43.05,
+"end": 43.45,
+"word": "again",
+"p": 0.998,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 26.19,
+"end": 26.99,
+"word": "Itsy",
+"p": 0.693,
+"segment": 1
+},
+{
+"start": 26.99,
+"end": 27.63,
+"word": "Bitsy",
+"p": 0.815,
+"segment": 1
+},
+{
+"start": 27.63,
+"end": 28.03,
+"word": "Spider",
+"p": 0.884,
+"segment": 1
+},
+{
+"start": 28.03,
+"end": 28.79,
+"word": "climbed",
+"p": 0.829,
+"segment": 1
+},
+{
+"start": 28.79,
+"end": 29.13,
+"word": "up",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 29.13,
+"end": 29.39,
+"word": "the",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 29.39,
+"end": 29.71,
+"word": "water",
+"p": 0.932,
+"segment": 1
+},
+{
+"start": 29.71,
+"end": 30.27,
+"word": "spout",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 30.27,
+"end": 31.19,
+"word": "Down",
+"p": 0.642,
+"segment": 1
+},
+{
+"start": 31.19,
+"end": 31.75,
+"word": "came",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 31.75,
+"end": 32.11,
+"word": "the",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 32.11,
+"end": 32.45,
+"word": "rain",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 32.45,
+"end": 33.01,
+"word": "and",
+"p": 0.933,
+"segment": 1
+},
+{
+"start": 33.01,
+"end": 33.61,
+"word": "washed",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 33.61,
+"end": 33.81,
+"word": "the",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 33.81,
+"end": 34.13,
+"word": "spider",
+"p": 0.974,
+"segment": 1
+},
+{
+"start": 34.13,
+"end": 34.75,
+"word": "out",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 34.75,
+"end": 35.83,
+"word": "Out",
+"p": 0.972,
+"segment": 2
+},
+{
+"start": 35.83,
+"end": 36.23,
+"word": "came",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 36.23,
+"end": 36.53,
+"word": "the",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 36.53,
+"end": 37.05,
+"word": "sunshine",
+"p": 0.988,
+"segment": 2
+},
+{
+"start": 37.05,
+"end": 37.73,
+"word": "and",
+"p": 0.979,
+"segment": 2
+},
+{
+"start": 37.73,
+"end": 37.97,
+"word": "dried",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 37.97,
+"end": 38.31,
+"word": "up",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 38.31,
+"end": 38.55,
+"word": "all",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 38.55,
+"end": 38.79,
+"word": "the",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 38.79,
+"end": 39.17,
+"word": "rain",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 39.17,
+"end": 39.99,
+"word": "And",
+"p": 0.915,
+"segment": 2
+},
+{
+"start": 39.99,
+"end": 40.45,
+"word": "Itsy",
+"p": 0.899,
+"segment": 2
+},
+{
+"start": 40.45,
+"end": 40.95,
+"word": "Bitsy",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 40.95,
+"end": 41.35,
+"word": "Spider",
+"p": 0.97,
+"segment": 2
+},
+{
+"start": 41.35,
+"end": 42.15,
+"word": "climbed",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 42.15,
+"end": 42.47,
+"word": "up",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 42.47,
+"end": 42.67,
+"word": "the",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 42.67,
+"end": 43.03,
+"word": "spout",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 43.03,
+"end": 43.45,
+"word": "again",
+"p": 0.998,
+"segment": 2
+}
+]
+}
+]
+},
+"zh": {
+"settings": "d061103388045c85",
+"language": "zh",
+"pieces": [
+{
+"start": 52.0,
+"end": 61.97,
+"hinted": [
+{
+"start": 52.68,
+"end": 53.4,
+"word": "小",
+"p": 0.532,
+"segment": 1
+},
+{
+"start": 53.4,
+"end": 54.02,
+"word": "小",
+"p": 0.928,
+"segment": 1
+},
+{
+"start": 54.02,
+"end": 54.38,
+"word": "的",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 54.38,
+"end": 54.66,
+"word": "蜘",
+"p": 0.474,
+"segment": 1
+},
+{
+"start": 54.66,
+"end": 55.18,
+"word": "蛛",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 55.18,
+"end": 55.76,
+"word": "往",
+"p": 0.15,
+"segment": 1
+},
+{
+"start": 55.76,
+"end": 55.98,
+"word": "呀",
+"p": 0.049,
+"segment": 1
+},
+{
+"start": 55.98,
+"end": 56.26,
+"word": "往",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 56.26,
+"end": 56.56,
+"word": "上",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 56.56,
+"end": 56.92,
+"word": "爬",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 56.92,
+"end": 57.92,
+"word": "大",
+"p": 0.004,
+"segment": 1
+},
+{
+"start": 57.92,
+"end": 58.44,
+"word": "雨",
+"p": 0.911,
+"segment": 1
+},
+{
+"start": 58.44,
+"end": 58.8,
+"word": "哗",
+"p": 0.657,
+"segment": 1
+},
+{
+"start": 58.8,
+"end": 59.0,
+"word": "啦",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 59.0,
+"end": 59.6,
+"word": "啦，",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 60.1,
+"end": 60.34,
+"word": "把",
+"p": 0.008,
+"segment": 1
+},
+{
+"start": 60.34,
+"end": 60.5,
+"word": "蜘",
+"p": 0.426,
+"segment": 1
+},
+{
+"start": 60.5,
+"end": 60.82,
+"word": "蛛",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 60.82,
+"end": 61.04,
+"word": "冲",
+"p": 0.696,
+"segment": 1
+},
+{
+"start": 61.04,
+"end": 61.36,
+"word": "下",
+"p": 0.982,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 52.66,
+"end": 53.38,
+"word": "小",
+"p": 0.532,
+"segment": 1
+},
+{
+"start": 53.38,
+"end": 54.0,
+"word": "小",
+"p": 0.928,
+"segment": 1
+},
+{
+"start": 54.0,
+"end": 54.38,
+"word": "的",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 54.38,
+"end": 54.62,
+"word": "曲",
+"p": 0.527,
+"segment": 1
+},
+{
+"start": 54.62,
+"end": 55.1,
+"word": "就",
+"p": 0.287,
+"segment": 1
+},
+{
+"start": 55.1,
+"end": 55.74,
+"word": "望",
+"p": 0.225,
+"segment": 1
+},
+{
+"start": 55.74,
+"end": 55.94,
+"word": "呀",
+"p": 0.655,
+"segment": 1
+},
+{
+"start": 55.94,
+"end": 56.28,
+"word": "望",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 56.28,
+"end": 56.58,
+"word": "上",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 56.58,
+"end": 56.88,
+"word": "爬",
+"p": 0.957,
+"segment": 1
+},
+{
+"start": 56.88,
+"end": 57.88,
+"word": "大",
+"p": 0.967,
+"segment": 2
+},
+{
+"start": 57.88,
+"end": 58.42,
+"word": "雨",
+"p": 0.953,
+"segment": 2
+},
+{
+"start": 58.42,
+"end": 58.8,
+"word": "哗",
+"p": 0.626,
+"segment": 2
+},
+{
+"start": 58.8,
+"end": 59.04,
+"word": "啦",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 59.04,
+"end": 59.62,
+"word": "啦",
+"p": 0.986,
+"segment": 2
+},
+{
+"start": 59.72,
+"end": 60.14,
+"word": "把",
+"p": 0.918,
+"segment": 2
+},
+{
+"start": 60.14,
+"end": 60.48,
+"word": "春",
+"p": 0.184,
+"segment": 2
+},
+{
+"start": 60.48,
+"end": 60.68,
+"word": "秋",
+"p": 0.614,
+"segment": 2
+},
+{
+"start": 60.68,
+"end": 61.04,
+"word": "冲",
+"p": 0.885,
+"segment": 2
+},
+{
+"start": 61.04,
+"end": 61.34,
+"word": "下",
+"p": 0.939,
+"segment": 2
+}
+]
+},
+{
+"start": 61.97,
+"end": 75.26,
+"hinted": [
+{
+"start": 61.67,
+"end": 62.29,
+"word": "太",
+"p": 0.633,
+"segment": 1
+},
+{
+"start": 62.29,
+"end": 62.99,
+"word": "阳",
+"p": 0.832,
+"segment": 1
+},
+{
+"start": 62.99,
+"end": 63.17,
+"word": "出",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 63.17,
+"end": 63.75,
+"word": "来了，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 64.45,
+"end": 64.61,
+"word": "晒",
+"p": 0.649,
+"segment": 1
+},
+{
+"start": 64.61,
+"end": 64.93,
+"word": "干",
+"p": 0.961,
+"segment": 1
+},
+{
+"start": 64.93,
+"end": 65.19,
+"word": "了",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 65.19,
+"end": 65.45,
+"word": "雨",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 65.45,
+"end": 65.77,
+"word": "水",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 65.77,
+"end": 66.71,
+"word": "小",
+"p": 0.028,
+"segment": 1
+},
+{
+"start": 66.71,
+"end": 67.29,
+"word": "小",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 67.29,
+"end": 67.71,
+"word": "的",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 67.71,
+"end": 67.97,
+"word": "蜘",
+"p": 0.715,
+"segment": 1
+},
+{
+"start": 67.97,
+"end": 68.53,
+"word": "蛛",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 68.53,
+"end": 69.09,
+"word": "往",
+"p": 0.438,
+"segment": 1
+},
+{
+"start": 69.09,
+"end": 69.27,
+"word": "呀",
+"p": 0.146,
+"segment": 1
+},
+{
+"start": 69.27,
+"end": 69.55,
+"word": "往",
+"p": 0.974,
+"segment": 1
+},
+{
+"start": 69.55,
+"end": 69.91,
+"word": "上",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 69.91,
+"end": 70.17,
+"word": "爬",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 70.17,
+"end": 71.15,
+"word": "小",
+"p": 0.605,
+"segment": 1
+},
+{
+"start": 71.15,
+"end": 71.73,
+"word": "小",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 71.73,
+"end": 72.15,
+"word": "的",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 72.15,
+"end": 72.43,
+"word": "蜘",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 72.43,
+"end": 73.03,
+"word": "蛛",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 73.03,
+"end": 73.53,
+"word": "往",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 73.53,
+"end": 73.77,
+"word": "呀",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 73.77,
+"end": 74.03,
+"word": "往",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 74.03,
+"end": 74.37,
+"word": "上",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 74.37,
+"end": 74.67,
+"word": "爬",
+"p": 1.0,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 61.67,
+"end": 62.27,
+"word": "太",
+"p": 0.633,
+"segment": 1
+},
+{
+"start": 62.27,
+"end": 62.99,
+"word": "阳",
+"p": 0.832,
+"segment": 1
+},
+{
+"start": 62.99,
+"end": 63.17,
+"word": "出",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 63.17,
+"end": 63.79,
+"word": "来了",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 64.17,
+"end": 64.61,
+"word": "晒",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 64.61,
+"end": 64.91,
+"word": "干",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 64.91,
+"end": 65.19,
+"word": "了",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 65.19,
+"end": 65.45,
+"word": "雨",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 65.45,
+"end": 65.77,
+"word": "水",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 65.77,
+"end": 66.89,
+"word": "小",
+"p": 0.963,
+"segment": 2
+},
+{
+"start": 66.89,
+"end": 67.37,
+"word": "小",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 67.37,
+"end": 67.71,
+"word": "的",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 67.71,
+"end": 67.97,
+"word": "蜘",
+"p": 0.768,
+"segment": 2
+},
+{
+"start": 67.97,
+"end": 68.53,
+"word": "蛛",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 68.63,
+"end": 69.11,
+"word": "往",
+"p": 0.732,
+"segment": 2
+},
+{
+"start": 69.11,
+"end": 69.33,
+"word": "下",
+"p": 0.331,
+"segment": 2
+},
+{
+"start": 69.33,
+"end": 69.55,
+"word": "往",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 69.55,
+"end": 69.91,
+"word": "上",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 69.91,
+"end": 70.19,
+"word": "爬",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 70.19,
+"end": 71.19,
+"word": "小",
+"p": 0.995,
+"segment": 3
+},
+{
+"start": 71.19,
+"end": 71.77,
+"word": "小",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 71.77,
+"end": 72.15,
+"word": "的",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 72.15,
+"end": 72.43,
+"word": "蜘",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 72.43,
+"end": 73.01,
+"word": "蛛",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 73.09,
+"end": 73.59,
+"word": "往",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 73.59,
+"end": 73.79,
+"word": "下",
+"p": 0.992,
+"segment": 3
+},
+{
+"start": 73.79,
+"end": 74.03,
+"word": "往",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 74.03,
+"end": 74.37,
+"word": "上",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 74.37,
+"end": 74.75,
+"word": "爬",
+"p": 1.0,
+"segment": 3
+}
+]
+},
+{
+"start": 75.26,
+"end": 89.5,
+"hinted": [
+{
+"start": 74.96,
+"end": 75.66,
+"word": "大",
+"p": 0.921,
+"segment": 1
+},
+{
+"start": 75.66,
+"end": 76.3,
+"word": "雨",
+"p": 0.912,
+"segment": 1
+},
+{
+"start": 76.3,
+"end": 76.58,
+"word": "哗",
+"p": 0.517,
+"segment": 1
+},
+{
+"start": 76.58,
+"end": 76.78,
+"word": "啦",
+"p": 0.951,
+"segment": 1
+},
+{
+"start": 76.78,
+"end": 77.36,
+"word": "啦，",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 77.86,
+"end": 78.18,
+"word": "把",
+"p": 0.107,
+"segment": 1
+},
+{
+"start": 78.18,
+"end": 78.3,
+"word": "蜘",
+"p": 0.583,
+"segment": 1
+},
+{
+"start": 78.3,
+"end": 78.58,
+"word": "蛛",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 78.58,
+"end": 78.82,
+"word": "冲",
+"p": 0.862,
+"segment": 1
+},
+{
+"start": 78.82,
+"end": 79.12,
+"word": "下",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 79.32,
+"end": 80.04,
+"word": "太",
+"p": 0.956,
+"segment": 1
+},
+{
+"start": 80.04,
+"end": 80.78,
+"word": "阳",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 80.78,
+"end": 80.96,
+"word": "出",
+"p": 0.94,
+"segment": 1
+},
+{
+"start": 80.96,
+"end": 81.54,
+"word": "来了，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 82.2,
+"end": 82.38,
+"word": "晒",
+"p": 0.949,
+"segment": 1
+},
+{
+"start": 82.38,
+"end": 82.7,
+"word": "干",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 82.7,
+"end": 82.96,
+"word": "了",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 82.96,
+"end": 83.22,
+"word": "雨",
+"p": 0.968,
+"segment": 1
+},
+{
+"start": 83.22,
+"end": 83.52,
+"word": "水",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 83.52,
+"end": 84.54,
+"word": "小",
+"p": 0.48,
+"segment": 1
+},
+{
+"start": 84.54,
+"end": 85.08,
+"word": "小",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 85.08,
+"end": 85.5,
+"word": "的",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 85.5,
+"end": 85.74,
+"word": "蜘",
+"p": 0.957,
+"segment": 1
+},
+{
+"start": 85.74,
+"end": 86.36,
+"word": "蛛",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 86.36,
+"end": 86.86,
+"word": "往",
+"p": 0.634,
+"segment": 1
+},
+{
+"start": 86.86,
+"end": 87.06,
+"word": "呀",
+"p": 0.115,
+"segment": 1
+},
+{
+"start": 87.06,
+"end": 87.32,
+"word": "往",
+"p": 0.969,
+"segment": 1
+},
+{
+"start": 87.32,
+"end": 87.7,
+"word": "上",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 87.7,
+"end": 87.96,
+"word": "爬",
+"p": 0.999,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 74.96,
+"end": 75.64,
+"word": "大",
+"p": 0.921,
+"segment": 1
+},
+{
+"start": 75.64,
+"end": 76.28,
+"word": "雨",
+"p": 0.912,
+"segment": 1
+},
+{
+"start": 76.28,
+"end": 76.52,
+"word": "花",
+"p": 0.566,
+"segment": 1
+},
+{
+"start": 76.52,
+"end": 77.02,
+"word": "烂",
+"p": 0.624,
+"segment": 1
+},
+{
+"start": 77.02,
+"end": 77.42,
+"word": "了",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 77.48,
+"end": 77.86,
+"word": "把",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 77.86,
+"end": 78.32,
+"word": "珍",
+"p": 0.957,
+"segment": 1
+},
+{
+"start": 78.32,
+"end": 78.58,
+"word": "珠",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 78.58,
+"end": 78.82,
+"word": "冲",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 78.82,
+"end": 79.12,
+"word": "下",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 79.12,
+"end": 80.06,
+"word": "太",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 80.06,
+"end": 80.78,
+"word": "阳",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 80.78,
+"end": 80.96,
+"word": "出",
+"p": 0.989,
+"segment": 2
+},
+{
+"start": 80.96,
+"end": 81.54,
+"word": "来了",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 82.0,
+"end": 82.38,
+"word": "晒",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 82.38,
+"end": 82.66,
+"word": "干",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 82.66,
+"end": 82.98,
+"word": "了",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 82.98,
+"end": 83.22,
+"word": "雨",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 83.22,
+"end": 83.6,
+"word": "水",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 83.6,
+"end": 84.7,
+"word": "小",
+"p": 0.965,
+"segment": 3
+},
+{
+"start": 84.7,
+"end": 85.12,
+"word": "小",
+"p": 0.996,
+"segment": 3
+},
+{
+"start": 85.12,
+"end": 85.5,
+"word": "的",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 85.5,
+"end": 85.74,
+"word": "蜘",
+"p": 0.934,
+"segment": 3
+},
+{
+"start": 85.74,
+"end": 86.28,
+"word": "蛛",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 86.4,
+"end": 86.9,
+"word": "往",
+"p": 0.519,
+"segment": 3
+},
+{
+"start": 86.9,
+"end": 87.14,
+"word": "下",
+"p": 0.505,
+"segment": 3
+},
+{
+"start": 87.14,
+"end": 87.32,
+"word": "往",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 87.32,
+"end": 87.68,
+"word": "上",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 87.68,
+"end": 87.96,
+"word": "爬",
+"p": 1.0,
+"segment": 3
+}
+]
+}
+]
+}
+}
+}

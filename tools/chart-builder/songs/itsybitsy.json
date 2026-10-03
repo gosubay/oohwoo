@@ -1,0 +1,85 @@
+{
+ "schema": 1,
+ "key": "itsybitsy",
+ "recording": "6. Itsy Bitsy Spider",
+ "assets": {
+  "source": {
+   "path": "songs/6. Itsy Bitsy Spider.mp3",
+   "sha256": "d236e1f2020bcfa27246d4defa7796f54825822a52e0a91598bc0635516968dc"
+  },
+  "backing": {
+   "path": "audio/6. Itsy Bitsy Spider.mp3",
+   "sha256": "04c228009b12515086f957fde94ed0cb1f4d0535d26a38e552872b4b2392cf6d"
+  },
+  "vocal": {
+   "path": "separated/vocals/6. Itsy Bitsy Spider.mp3",
+   "sha256": "6d1c33438605c870f5c9f2ec72de457f42f031451e265c9f288faa1ff49b2496"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 3.5,
+   "end": 45.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "Itsy bitsy spider climbed up the water spout",
+      "Down came the rain and washed the spider out",
+      "Out came the sunshine and dried up all the rain",
+      "And itsy bitsy spider climbed up the spout again"
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "Itsy bitsy spider climbed up the water spout",
+      "Down came the rain and washed the spider out",
+      "Out came the sunshine and dried up all the rain",
+      "And itsy bitsy spider climbed up the spout again"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 52.0,
+   "end": 89.5,
+   "verses": [
+    {
+     "label": "Verse 3",
+     "lines": [
+      "小小的蜘蛛往呀往上爬",
+      "大雨哗啦啦，把蜘蛛冲下",
+      "太阳出来了，晒干了雨水",
+      "小小的蜘蛛往呀往上爬"
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "小小的蜘蛛往呀往上爬",
+      "大雨哗啦啦，把蜘蛛冲下",
+      "太阳出来了，晒干了雨水",
+      "小小的蜘蛛往呀往上爬"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

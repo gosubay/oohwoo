@@ -1,100 +1,68 @@
 # HANDOFF — OohWoo
 
-Last updated: 2026-10-03 (SGT)
+Last updated: 2026-10-03 evening (SGT)
 
-## Where things stand (2026-10-03)
+## Where things stand
 
-- **All 22 songs now have a Full song chart and a separate Quick play excerpt**, rebuilt from each
-  recording by the corrected pipeline (brief: `docs/CLAUDE-CATALOGUE-CORRECTION-HANDOFF.md`, plan:
-  `docs/CATALOGUE-CORRECTION-PLAN.md`). 4,613 notes in total (was 1,371 in single-language excerpts).
-- The game has a **Full song / Quick play** choice on the song screen (Full is the default, remembered).
-- **Listening-verified so far: Twinkle only** (both verses, on the listening page, singer only, 2026-10-03;
-  not yet confirmed by playing it in the game). The other 21 songs are `owner-listening-pending`. Per-song
-  before/after table, what was implemented, and the regions to listen to first:
-  `docs/CATALOGUE-CORRECTION-REVIEW.md`. Listening page: <http://localhost:8080/tools/catalogue-listening.html>.
-- **Game published 2026-10-03 (commit `651e2fc`, Galvin's go-ahead)**: `index.html` (Full song / Quick play,
-  scoring lab, full screen, keep screen awake), `manifest.webmanifest`, `assets/icons/`, game tests and
-  `CLAUDE.md`. Live at <https://gosubay.github.io/oohwoo/> (checked: new code, manifest and icons served).
-- **Still uncommitted on purpose**: the chart-builder pipeline, `charts.json`, caches, review docs and
-  `.gitignore`. Another session was rebuilding them during the push (`charts.json` was newer than the
-  game's chart block; `validate_charts.py` said "generated chart block is out of date"). Whoever finishes
-  that rebuild runs `apply_to_game.py`, validates, then commits and pushes.
-- Automatic checks, all passing: `validate_charts.py` OK; `build_charts.py --check` = no differences on
-  re-run; `python tests/chart-builder.py` (57 fixtures); all 14 `tests/*.cjs` including
-  `scoring-lab.cjs`, `catalogue.cjs` (every song, both modes, simulated start to finish) and the new
-  `play-modes.cjs`. Browser check: Five Little Monkeys Quick play started 16.8 s into the recording and
-  completed; Twinkle Full song loads over 1:29 (now 84 notes).
+- Galvin's rule (CLAUDE.md, "Chart review is Claude's job"): he does not audit songs one by one. Claude
+  runs the audio-based review and repair across all 22 songs and brings him only specific unresolved
+  passages. "Not listening-verified" is an honest status, not a blocker.
+- **Second pass done 2026-10-03**: the note-and-word builder was rebuilt around the root causes found
+  (not per-song patches). All 22 songs regenerated: 5,028 notes (was 4,613). Notes that held several
+  syllables fell from 275 to 42; verse-boundary slips fixed in 14 songs; Two Tigers and
+  Twinkle now come out right with no hand corrections.
+- Root causes fixed: (1) a verse's last note was handed to the next verse (transcript times run early);
+  (2) the note reader treated real short notes as slides and merged repeated syllables on one pitch, before
+  it knew the words; (3) words were placed from transcript times alone, which are often a syllable off.
+- **Listening-verified: Twinkle only** (Galvin, listening page, 2026-10-03; its Mandarin verse is unchanged
+  by the second pass apart from one note starting 0.1 s later). Everything else is `owner-listening-pending`.
+- The game (Full song / Quick play, full screen, keep-awake) was committed and pushed by another session
+  as `651e2fc`, with the first-pass charts. The second-pass charts are in `index.html`'s generated block.
+- Automatic checks, all passing: `validate_charts.py` OK; `build_charts.py --check` no differences;
+  `python tests/chart-builder.py` 65 fixtures; all `tests/*.cjs`.
+- Listening page <http://localhost:8080/tools/catalogue-listening.html> now plays **Singer + music** by
+  default (it used to play the game's music-only track, which is why Galvin heard no singer).
 
-## Full screen mode (added and published 2026-10-03)
+## Unresolved passages for Galvin (each with a recommendation)
 
-- Button top-right of every screen except gameplay. Android/iPad: real full screen + portrait lock.
-  iPhone: shows "Add to Home Screen" steps (no full-screen button exists for web pages on iPhone).
-  New files: `manifest.webmanifest`, `assets/icons/`, `tests/fullscreen.cjs`. Spec: `CLAUDE.md` "Full screen".
-- Checked: `tests/fullscreen.cjs` and all other `tests/*.cjs` pass; button, iPhone help panel and layout
-  seen in the preview browser; a refused request shows the help panel and logs `[fullscreen] refused`.
-- **Not checked: actually entering full screen.** The preview pane never answers the request and the
-  Chrome window was in the background (browsers refuse then). Needs one tap on a real Android phone, and
-  the Add to Home Screen route on a real iPhone (including that the mic still works from the icon).
-- Keep screen awake (added 2026-10-03 after Galvin confirmed the dimming): wake lock held on the gameplay
-  screen only. `tests/screen-awake.cjs` passes. Not seen granted for real: the preview pane counts as a
-  hidden page, where the game (correctly) does not ask. Needs a real phone through a full song, which
-  needs the published https site (wake lock, like the mic, does not work over the plain Wi-Fi address).
-- Flagged, not done: no "rotate your phone" hint on iPhone in landscape; no pause
-  button on phones (pause is the Esc key only).
+1. **Xiao Yan Zi, 2:58 to the end (7:18)**: about 4.5 minutes of unscripted, ornamented singing after the
+   English verses (242 notes with no words). Recommend ending Full song at about 2:35.
+2. **Chan Mali Chan choruses (0:27-0:45, 1:04-1:30, 1:50-2:15)**: two voices at once; the melody reading
+   is unreliable. Recommend leaving the choruses out of scoring (music keeps playing, no notes to hit).
+3. **Baby Shark "Let's go hunt" (0:54-1:03) and the Mandarin 爸爸 / 爷爷 verses (1:28-1:36, 1:47-1:59)**:
+   sung in a low growl an octave down, pitch unsteady. Recommend leaving these out of scoring too.
+4. **Baby Shark Mandarin (1:11-2:08)**: the transcriber cannot hear the words, so about 60 syllables are
+   not placed on notes. Notes are charted; the words shown are approximate. Recommend accepting for now.
+5. **If You're Happy**: the lyric sheet's English verse 4 and Mandarin verse 8 are not in the recording.
+   Recommend removing them from the lyric sheet.
+6. **Two Tigers, 1:35**: the first 奇 of verse 4 is sung sharp while sliding up; charted as A3 like the
+   other three. Recommend keeping.
+7. **Twinkle, 1:09**: the low wordless note after 睛 is the singer's voice dipping to A3 (measured, steady
+   for 0.4 s). It was briefly removed on a misreading of Galvin's remark and restored. Recommend keeping
+   it out of scoring if it feels odd to play.
+
+## Still imperfect, no decision needed (leads, not blockers)
+
+- `python tools/chart-builder/selfcheck.py --lines` lists about 200 lyric lines where one or two syllables
+  sit on a pitch no other verse uses there. Many are the singer really varying the tune or a short note
+  read a semitone off; none is corrected automatically (pitch flags are leads, never replacements).
+- Wordless "ooh / da da" hooks at the start of More We Get Together (0:00-0:12, 0:43-0:49) and Little Bunny
+  (0:46-0:55) are charted as wordless notes inside the verse that follows them.
+- Mary Had a Little Lamb is sung fast with a tune that differs from the standard one; words may sit one
+  note off inside a line.
 
 ## Waiting on Galvin
 
-1. **Listen** (listening page, then in the game with "Hear my guide melody" ticked) and say per song or
-   section "good" or what is off. Start with the regions listed in the review doc.
-2. Test full screen and keep-awake on a real phone at <https://gosubay.github.io/oohwoo/> (Android: tap the
-   top-right button; iPhone: Add to Home Screen, then check the mic still works from the icon).
-3. **Xiao Yan Zi**: the recording is 7:18 and about 4.5 minutes of it is an unscripted, ornamented coda.
-   Full song currently includes it (432 notes). Keep it, or end Full song after the English verses (~2:35)?
-4. **Chan Mali Chan**: the English and Mandarin choruses have a second, low voice; the melody notes there
-   are unreliable (flagged, not replaced). Options: leave for listening, or leave those choruses out.
-5. Still open from before: keep/retire the scoring lab; live singing review of Steps 6 and 7; the songs
-   wider than one octave.
-
-## Known weak spots (implemented, not resolved)
-
-- Fixed 2026-10-03 after Galvin's screenshot: Twinkle's Mandarin words sat on the wrong notes in lines 2, 4
-  and 6. Cause was not punctuation (the "·" boxes were notes with no word) but short slides into a note
-  being counted as notes, pushing later words one note late. Rule now in `build_charts.py`
-  (`is_scoop` / `merge_scoops`): inside a line, a note of 0.18 s or less that runs straight into a longer
-  note (rising 1-2 semitones, or passing between its neighbours) joins that note unless the line needs
-  it for a syllable. Twinkle's 42 Mandarin words now sit on the 42 melody notes. The same rule changed
-  9 lines in six other songs (Brother John, More We Get Together, Wheels on the Bus, Five Monkeys,
-  Xiao Yan Zi, Chan Mali Chan). The listening page now shows a no-word note as ♪.
-- Twinkle Mandarin: Galvin heard no voice at the low A3 after 睛 (69.4-70.0 s); removed by a `noteEdits`
-  delete in `songs/twinkle.json`. Galvin then called Twinkle correct -> both sections and the song are
-  `owner-listening-approved`.
-- Two Tigers (Brother John) Mandarin, fixed 2026-10-03 after Galvin said it was buggy; **needs his
-  re-listen**. Causes: verse 3's last 怪 had been given to verse 4 (boundary now set by `sectionOverrides`
-  in `songs/brotherjohn.json`), which put verse 4 one note late; a 1 s held D4 was really 虎 + 两; one
-  note was really B4 then A4; two slides (E4 into F#4 on 跑, C4 into 怪) were counted as notes. These are
-  `measuredNoteEdits` in the song file (new: split / join / midi on a measured note, each with its
-  evidence; a locator that matches no note stops the build). One judgement call to listen for: verse 4's
-  first 奇 (1:34.9) is sung sharp of A3 while sliding up; charted as A3 like the other three times.
-  Both Mandarin verses are now 32 words on 32 notes with the same tune as the English verses.
-- The same "last note of a verse handed to the next verse" slip may exist in other songs; not searched
-  song by song. Signs on the listening page: a verse whose last box holds two words, and the next verse's
-  words running one note late.
-- Head Shoulders: one-note lyric slip in the repeated lines; English verse 2 is placed by hand windows.
-- Baby Shark Mandarin: Whisper could not transcribe it; words are spread from the reference by section
-  (63 reference syllables not placed). 爸爸/爷爷 verses are an octave lower in the recording itself.
-- If You're Happy: English verse 4 and Mandarin verse 8 of the lyric sheet are not in the recording.
-- Sung words that differ from the lyric sheet are shown as sung (Old McDonald 小鸡 for 小猪, Finger Family
-  爸爸 for 宝宝, ...) — listed in the review doc.
-- `CLAUDE.md` calls Twinkle's verse "owner-approved by ear", but the embedded chart's own provenance still
-  says `ownerApproved: false` / `listeningVerified: false` (a test asserts it). Left as found; ask Galvin.
+- Normal playtesting feedback, and the seven decisions above (each has a default if he says nothing).
+- Still open from before: keep/retire the scoring lab; live singing review of Steps 6 and 7.
 
 ## How it is built (2026-10-03 pipeline)
 
 - `tools/chart-builder/songs/<key>.json` — the correction layer per song: recording hashes, language
   blocks and reference verses, section overrides, Quick play choice, note edits, review status. The
   builder refuses a file whose hashes no longer match the audio.
-- `transcribe_sections.py` (Whisper, language-forced, cached) -> `build_charts.py` (notes, lyrics, splits
-  at measured attacks, independent pitch check, sections, both modes) -> `apply_to_game.py` (generated
+- `transcribe_sections.py` (Whisper, language-forced, cached) -> `build_charts.py` (atoms from `atoms.py`,
+  lyric-aware notes, sister-verse evidence, independent pitch check, sections, both modes) -> `apply_to_game.py` (generated
   block) -> `validate_charts.py` -> `report.py` (review doc + listening page). Commands are in `CLAUDE.md`.
 - To record Galvin's approval: set `review.sections.<id>` or `review.song` to
   `owner-listening-approved` in the song file, rebuild, apply.

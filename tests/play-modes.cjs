@@ -14,7 +14,7 @@ const noop=()=>{};
   run(`setPlayMode('quick')`);
   assert.equal(saved.get('oohwoo_play_mode_v1'),'quick');
   assert.match(element('playModeInfo').textContent,/^Quick play: 0:19 · Mandarin \(Full song: 2:20\)$/);
-  assert.match(element('carouselMeta').textContent,/29 notes · 0:19/);
+  assert.match(element('carouselMeta').textContent,new RegExp(run(`songPlay('baluobo','quick').notes.length`)+' notes · 0:19'));
   run(`state='playing';setPlayMode('full');state='select'`);
   assert.equal(run('playMode'),'quick','no switching in the middle of a song');
   assert.equal(gameHarness({mode:'quick'}).run('playMode'),'quick','saved choice is read at start-up');

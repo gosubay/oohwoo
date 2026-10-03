@@ -88,8 +88,23 @@ python tools/chart-builder/apply_to_game.py --dry-run
 python tools/chart-builder/apply_to_game.py          # write the generated block into index.html
 python tools/chart-builder/validate_charts.py        # must print OK
 python tools/chart-builder/report.py                 # refresh the review doc + listening page
+python tools/chart-builder/selfcheck.py              # every verse against its sister verses (add --lines for lyric lines)
+python tools/chart-builder/probe.py <key>            # evidence for one song: lines, raw notes, pitch, dips, transcript
 python tests/chart-builder.py                        # builder fixtures; then run every tests/*.cjs with node
 ```
+
+How notes and words are built (2026-10-03, second pass):
+
+- `atoms.py` cuts the singer stem wherever the recording shows any sign of a new note (silence, lasting
+  pitch change, loudness dip). `align_atoms()` in `build_charts.py` then decides, per section, which atoms
+  start a syllable and which continue one, using the syllable count, transcript times, an even-rhythm
+  preference, and soft evidence from the other verses (`sister_expectations()`: same line position, same
+  syllable count, at least two other verses agreeing). It only chooses among boundaries the recording
+  offers and never changes a measured pitch. Wordless and unscripted sections still use the plain note reader.
+- Verse boundaries are searched up to 1.2 s after the next verse's first transcript time (`BOUNDARY_LATE`),
+  because those times run early and the old search handed a verse's last note to the next verse.
+- Regression anchors: Twinkle's Mandarin verse (42 words on the approved tune) and both Two Tigers Mandarin
+  verses (32 words on the English tune) are asserted in `tests/chart-builder.py`.
 
 ## Full song / Quick play (rule set 2026-10-03, Galvin)
 

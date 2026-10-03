@@ -1,0 +1,157 @@
+{
+ "schema": 1,
+ "key": "rainrain",
+ "recording": "12. Rain Rain Go Away",
+ "assets": {
+  "source": {
+   "path": "songs/12. Rain Rain Go Away.mp3",
+   "sha256": "2648896cd7fdb7ca2f71627af2470fd0661f497deeba96debc1c3b0e362f3f8d"
+  },
+  "backing": {
+   "path": "audio/12. Rain Rain Go Away.mp3",
+   "sha256": "853d7bab1da6338e53ceec32953be048cba326efe1cc49f0b844bd69527d4d76"
+  },
+  "vocal": {
+   "path": "separated/vocals/12. Rain Rain Go Away.mp3",
+   "sha256": "c902dbaa0ae89cc4fda9fb32c71dddd5bd7c3052d62ba847c522f27e82587d4c"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 12.5,
+   "end": 92.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "Rain, rain, go away,",
+      "Come again another day.",
+      "Daddy wants to play.",
+      "Rain, rain, go away."
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "Rain, rain, go away,",
+      "Come again another day.",
+      "Mommy wants to play.",
+      "Rain, rain, go away."
+     ]
+    },
+    {
+     "label": "Verse 3",
+     "lines": [
+      "Rain, rain, go away,",
+      "Come again another day.",
+      "Brother wants to play.",
+      "Rain, rain, go away."
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "Rain, rain, go away,",
+      "Come again another day.",
+      "Sister wants to play.",
+      "Rain, rain, go away."
+     ]
+    },
+    {
+     "label": "Verse 5",
+     "lines": [
+      "Rain, rain, go away,",
+      "Come again another day.",
+      "Baby wants to play.",
+      "Rain, rain, go away."
+     ]
+    },
+    {
+     "label": "Verse 6",
+     "lines": [
+      "Rain, rain, go away,",
+      "Come again another day.",
+      "All the family wants to play.",
+      "Rain, rain, go away."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 94.5,
+   "end": 175.0,
+   "verses": [
+    {
+     "label": "Verse 7",
+     "lines": [
+      "小雨，小雨，快走开",
+      "请你改天再过来",
+      "爸爸还想出去玩",
+      "小雨，小雨，快走开"
+     ]
+    },
+    {
+     "label": "Verse 8",
+     "lines": [
+      "小雨，小雨，快走开",
+      "请你改天再过来",
+      "妈妈还想出去玩",
+      "小雨，小雨，快走开"
+     ]
+    },
+    {
+     "label": "Verse 9",
+     "lines": [
+      "小雨，小雨，快走开",
+      "请你改天再过来",
+      "哥哥还想出去玩",
+      "小雨，小雨，快走开"
+     ]
+    },
+    {
+     "label": "Verse 10",
+     "lines": [
+      "小雨，小雨，快走开",
+      "请你改天再过来",
+      "姐姐还想出去玩",
+      "小雨，小雨，快走开"
+     ]
+    },
+    {
+     "label": "Verse 11",
+     "lines": [
+      "小雨，小雨，快走开",
+      "请你改天再过来",
+      "宝宝还想出去玩",
+      "小雨，小雨，快走开"
+     ]
+    },
+    {
+     "label": "Verse 12",
+     "lines": [
+      "小雨，小雨，快走开",
+      "请你改天再过来",
+      "全家还想出去玩",
+      "小雨，小雨，快走开"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

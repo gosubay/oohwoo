@@ -1,0 +1,1970 @@
+{
+"vocalSha256": "9a18a59da7547eefefdfabdd3fd8a92292a42d3d3769bfb158e5c383e6c64491",
+"model": "large-v3",
+"blocks": {
+"zh": {
+"settings": "fc54d9ce7999e410",
+"language": "zh",
+"pieces": [
+{
+"start": 0.0,
+"end": 10.59,
+"hinted": [
+{
+"start": 0.0,
+"end": 0.64,
+"word": "哦",
+"p": 0.035,
+"segment": 1
+},
+{
+"start": 0.64,
+"end": 1.12,
+"word": "哦",
+"p": 0.615,
+"segment": 1
+},
+{
+"start": 1.12,
+"end": 1.66,
+"word": "哦",
+"p": 0.954,
+"segment": 1
+},
+{
+"start": 1.66,
+"end": 2.62,
+"word": "哦",
+"p": 0.539,
+"segment": 1
+},
+{
+"start": 2.62,
+"end": 3.16,
+"word": "哦",
+"p": 0.903,
+"segment": 1
+},
+{
+"start": 3.16,
+"end": 3.76,
+"word": "哦",
+"p": 0.9,
+"segment": 1
+},
+{
+"start": 3.76,
+"end": 4.6,
+"word": "哦",
+"p": 0.644,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 0.0,
+"end": 0.52,
+"word": "H",
+"p": 0.078,
+"segment": 1
+},
+{
+"start": 0.52,
+"end": 0.84,
+"word": "u",
+"p": 0.344,
+"segment": 1
+},
+{
+"start": 0.84,
+"end": 1.1,
+"word": "hu",
+"p": 0.289,
+"segment": 1
+},
+{
+"start": 1.1,
+"end": 1.64,
+"word": "hu",
+"p": 0.971,
+"segment": 1
+},
+{
+"start": 1.64,
+"end": 2.62,
+"word": "Hu",
+"p": 0.241,
+"segment": 1
+},
+{
+"start": 2.62,
+"end": 3.12,
+"word": "hu",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 3.12,
+"end": 3.62,
+"word": "hu",
+"p": 0.972,
+"segment": 1
+},
+{
+"start": 3.62,
+"end": 4.48,
+"word": "A",
+"p": 0.12,
+"segment": 2
+},
+{
+"start": 4.48,
+"end": 5.16,
+"word": "a",
+"p": 0.375,
+"segment": 2
+},
+{
+"start": 5.16,
+"end": 5.26,
+"word": "a",
+"p": 0.269,
+"segment": 2
+},
+{
+"start": 5.26,
+"end": 5.9,
+"word": "aa",
+"p": 0.363,
+"segment": 2
+},
+{
+"start": 5.9,
+"end": 6.0,
+"word": "a",
+"p": 0.604,
+"segment": 2
+},
+{
+"start": 6.0,
+"end": 6.38,
+"word": "aa",
+"p": 0.913,
+"segment": 2
+},
+{
+"start": 6.38,
+"end": 6.58,
+"word": "a",
+"p": 0.476,
+"segment": 2
+},
+{
+"start": 6.58,
+"end": 6.78,
+"word": "aa",
+"p": 0.952,
+"segment": 2
+},
+{
+"start": 6.78,
+"end": 7.04,
+"word": "a",
+"p": 0.37,
+"segment": 2
+},
+{
+"start": 7.04,
+"end": 7.04,
+"word": "aa",
+"p": 0.972,
+"segment": 2
+},
+{
+"start": 7.04,
+"end": 7.52,
+"word": "a",
+"p": 0.288,
+"segment": 2
+},
+{
+"start": 7.52,
+"end": 7.52,
+"word": "aa",
+"p": 0.979,
+"segment": 2
+}
+]
+},
+{
+"start": 10.59,
+"end": 28.11,
+"hinted": [
+{
+"start": 11.65,
+"end": 12.49,
+"word": "小",
+"p": 0.873,
+"segment": 1
+},
+{
+"start": 12.49,
+"end": 13.07,
+"word": "兔",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 13.07,
+"end": 13.37,
+"word": "子",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 13.37,
+"end": 13.73,
+"word": "乖",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 13.73,
+"end": 14.17,
+"word": "乖",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 14.35,
+"end": 14.55,
+"word": "把",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 14.55,
+"end": 15.19,
+"word": "门",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 15.19,
+"end": 15.23,
+"word": "儿",
+"p": 0.037,
+"segment": 1
+},
+{
+"start": 15.23,
+"end": 15.57,
+"word": "开",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 15.57,
+"end": 16.01,
+"word": "开",
+"p": 0.962,
+"segment": 1
+},
+{
+"start": 16.01,
+"end": 16.49,
+"word": "快",
+"p": 0.33,
+"segment": 1
+},
+{
+"start": 16.49,
+"end": 17.09,
+"word": "点",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 17.09,
+"end": 17.19,
+"word": "儿",
+"p": 0.955,
+"segment": 1
+},
+{
+"start": 17.19,
+"end": 17.55,
+"word": "开",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 17.55,
+"end": 18.01,
+"word": "开",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 18.01,
+"end": 18.51,
+"word": "我",
+"p": 0.4,
+"segment": 1
+},
+{
+"start": 18.51,
+"end": 19.07,
+"word": "要",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 19.07,
+"end": 19.59,
+"word": "进",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 19.59,
+"end": 20.09,
+"word": "来",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 20.09,
+"end": 20.55,
+"word": "不",
+"p": 0.093,
+"segment": 1
+},
+{
+"start": 20.55,
+"end": 21.19,
+"word": "开",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 21.19,
+"end": 21.57,
+"word": "不",
+"p": 0.914,
+"segment": 1
+},
+{
+"start": 21.57,
+"end": 22.09,
+"word": "开",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 22.09,
+"end": 22.51,
+"word": "我",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 22.51,
+"end": 23.03,
+"word": "不",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 23.03,
+"end": 23.61,
+"word": "开",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 23.95,
+"end": 24.51,
+"word": "妈",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 24.51,
+"end": 24.85,
+"word": "妈",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 24.85,
+"end": 25.03,
+"word": "没",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 25.03,
+"end": 25.25,
+"word": "回",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 25.25,
+"end": 25.63,
+"word": "来",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 25.89,
+"end": 26.53,
+"word": "谁",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 26.53,
+"end": 26.81,
+"word": "来",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 26.81,
+"end": 27.05,
+"word": "也",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 27.05,
+"end": 27.27,
+"word": "不",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 27.27,
+"end": 27.59,
+"word": "开",
+"p": 0.615,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 11.53,
+"end": 12.49,
+"word": "小",
+"p": 0.872,
+"segment": 1
+},
+{
+"start": 12.49,
+"end": 13.07,
+"word": "兔",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 13.07,
+"end": 13.37,
+"word": "子",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 13.37,
+"end": 13.73,
+"word": "乖",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 13.73,
+"end": 14.17,
+"word": "乖",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 14.17,
+"end": 14.55,
+"word": "把",
+"p": 0.72,
+"segment": 1
+},
+{
+"start": 14.55,
+"end": 15.15,
+"word": "门",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 15.15,
+"end": 15.51,
+"word": "开",
+"p": 0.967,
+"segment": 1
+},
+{
+"start": 15.51,
+"end": 15.99,
+"word": "开",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 15.99,
+"end": 16.49,
+"word": "快",
+"p": 0.935,
+"segment": 2
+},
+{
+"start": 16.49,
+"end": 17.05,
+"word": "点",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 17.05,
+"end": 17.47,
+"word": "开",
+"p": 0.675,
+"segment": 2
+},
+{
+"start": 17.47,
+"end": 17.95,
+"word": "开",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 17.95,
+"end": 18.61,
+"word": "我要",
+"p": 0.96,
+"segment": 2
+},
+{
+"start": 18.61,
+"end": 19.57,
+"word": "进",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 19.57,
+"end": 20.09,
+"word": "来",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 20.09,
+"end": 20.57,
+"word": "不",
+"p": 0.97,
+"segment": 3
+},
+{
+"start": 20.57,
+"end": 21.19,
+"word": "开",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 21.19,
+"end": 21.57,
+"word": "不",
+"p": 0.976,
+"segment": 3
+},
+{
+"start": 21.57,
+"end": 22.09,
+"word": "开",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 22.09,
+"end": 22.65,
+"word": "我不",
+"p": 0.979,
+"segment": 3
+},
+{
+"start": 22.65,
+"end": 23.61,
+"word": "开",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 23.61,
+"end": 24.61,
+"word": "妈",
+"p": 0.989,
+"segment": 4
+},
+{
+"start": 24.61,
+"end": 24.85,
+"word": "妈",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 24.85,
+"end": 25.03,
+"word": "没",
+"p": 0.995,
+"segment": 4
+},
+{
+"start": 25.03,
+"end": 25.25,
+"word": "回",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 25.25,
+"end": 25.63,
+"word": "来",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 25.63,
+"end": 26.57,
+"word": "谁",
+"p": 0.993,
+"segment": 4
+},
+{
+"start": 26.57,
+"end": 26.81,
+"word": "来",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 26.81,
+"end": 27.05,
+"word": "也",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 27.05,
+"end": 27.27,
+"word": "不",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 27.27,
+"end": 27.59,
+"word": "开",
+"p": 0.801,
+"segment": 4
+}
+]
+},
+{
+"start": 28.11,
+"end": 45.5,
+"hinted": [
+{
+"start": 27.81,
+"end": 28.51,
+"word": "小",
+"p": 0.943,
+"segment": 1
+},
+{
+"start": 28.51,
+"end": 29.07,
+"word": "兔",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 29.07,
+"end": 29.37,
+"word": "子",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 29.37,
+"end": 29.75,
+"word": "乖",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 29.75,
+"end": 30.19,
+"word": "乖",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 30.19,
+"end": 30.55,
+"word": "把",
+"p": 0.892,
+"segment": 1
+},
+{
+"start": 30.55,
+"end": 31.19,
+"word": "门",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 31.19,
+"end": 31.23,
+"word": "儿",
+"p": 0.008,
+"segment": 1
+},
+{
+"start": 31.23,
+"end": 31.57,
+"word": "开",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 31.57,
+"end": 32.03,
+"word": "开",
+"p": 0.939,
+"segment": 1
+},
+{
+"start": 32.03,
+"end": 32.51,
+"word": "快",
+"p": 0.082,
+"segment": 1
+},
+{
+"start": 32.51,
+"end": 33.05,
+"word": "点",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 33.05,
+"end": 33.21,
+"word": "儿",
+"p": 0.932,
+"segment": 1
+},
+{
+"start": 33.21,
+"end": 33.57,
+"word": "开",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 33.57,
+"end": 34.03,
+"word": "开",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 34.31,
+"end": 34.59,
+"word": "妈",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 34.59,
+"end": 35.07,
+"word": "妈",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 35.07,
+"end": 35.25,
+"word": "回",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 35.25,
+"end": 35.97,
+"word": "来了",
+"p": 0.957,
+"segment": 1
+},
+{
+"start": 35.97,
+"end": 36.51,
+"word": "就",
+"p": 0.098,
+"segment": 1
+},
+{
+"start": 36.51,
+"end": 37.07,
+"word": "开",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 37.07,
+"end": 37.53,
+"word": "就",
+"p": 0.75,
+"segment": 1
+},
+{
+"start": 37.53,
+"end": 38.07,
+"word": "开",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 38.07,
+"end": 38.57,
+"word": "我",
+"p": 0.881,
+"segment": 1
+},
+{
+"start": 38.57,
+"end": 39.01,
+"word": "就",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 39.01,
+"end": 39.57,
+"word": "开",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 39.85,
+"end": 40.51,
+"word": "妈",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 40.51,
+"end": 40.83,
+"word": "妈",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 40.83,
+"end": 41.01,
+"word": "回",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 41.01,
+"end": 41.51,
+"word": "来了",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 41.75,
+"end": 42.51,
+"word": "这",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 42.51,
+"end": 42.71,
+"word": "就",
+"p": 0.891,
+"segment": 1
+},
+{
+"start": 42.71,
+"end": 43.03,
+"word": "把",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 43.03,
+"end": 43.33,
+"word": "门",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 43.33,
+"end": 43.55,
+"word": "开",
+"p": 0.973,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 27.81,
+"end": 28.51,
+"word": "小",
+"p": 0.943,
+"segment": 1
+},
+{
+"start": 28.51,
+"end": 29.07,
+"word": "兔",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 29.07,
+"end": 29.37,
+"word": "子",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 29.37,
+"end": 29.75,
+"word": "乖",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 29.75,
+"end": 30.19,
+"word": "乖",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 30.19,
+"end": 30.55,
+"word": "把",
+"p": 0.892,
+"segment": 1
+},
+{
+"start": 30.55,
+"end": 31.17,
+"word": "门",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 31.17,
+"end": 31.53,
+"word": "开",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 31.53,
+"end": 32.01,
+"word": "开",
+"p": 0.958,
+"segment": 1
+},
+{
+"start": 32.01,
+"end": 32.53,
+"word": "快",
+"p": 0.936,
+"segment": 1
+},
+{
+"start": 32.53,
+"end": 33.05,
+"word": "点",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 33.05,
+"end": 33.49,
+"word": "开",
+"p": 0.767,
+"segment": 1
+},
+{
+"start": 33.49,
+"end": 34.01,
+"word": "开",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 34.01,
+"end": 34.53,
+"word": "妈",
+"p": 0.953,
+"segment": 2
+},
+{
+"start": 34.53,
+"end": 35.07,
+"word": "妈",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 35.07,
+"end": 35.25,
+"word": "回",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 35.25,
+"end": 35.97,
+"word": "来了",
+"p": 0.98,
+"segment": 2
+},
+{
+"start": 35.97,
+"end": 36.49,
+"word": "就",
+"p": 0.976,
+"segment": 2
+},
+{
+"start": 36.49,
+"end": 37.09,
+"word": "开",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 37.09,
+"end": 37.59,
+"word": "就",
+"p": 0.986,
+"segment": 2
+},
+{
+"start": 37.59,
+"end": 38.07,
+"word": "开",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 38.07,
+"end": 38.71,
+"word": "我就",
+"p": 0.979,
+"segment": 2
+},
+{
+"start": 38.71,
+"end": 39.53,
+"word": "开",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 39.53,
+"end": 40.55,
+"word": "妈",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 40.55,
+"end": 40.85,
+"word": "妈",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 40.85,
+"end": 41.01,
+"word": "回",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 41.01,
+"end": 41.51,
+"word": "来了",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 41.51,
+"end": 42.51,
+"word": "这",
+"p": 0.969,
+"segment": 3
+},
+{
+"start": 42.51,
+"end": 42.69,
+"word": "就",
+"p": 0.95,
+"segment": 3
+},
+{
+"start": 42.69,
+"end": 43.03,
+"word": "把",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 43.03,
+"end": 43.33,
+"word": "门",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 43.33,
+"end": 43.57,
+"word": "开",
+"p": 1.0,
+"segment": 3
+}
+]
+}
+]
+},
+"en": {
+"settings": "b01ba528371b3d10",
+"language": "en",
+"pieces": [
+{
+"start": 45.5,
+"end": 54.1,
+"hinted": [
+{
+"start": 45.2,
+"end": 46.86,
+"word": "OOPSITIM",
+"p": 0.043,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 48.18,
+"end": 49.58,
+"word": "Atararataratararararara",
+"p": 0.61,
+"segment": 1
+},
+{
+"start": 52.2,
+"end": 53.6,
+"word": "Atararataratarararararara",
+"p": 0.972,
+"segment": 2
+}
+]
+},
+{
+"start": 54.1,
+"end": 70.19,
+"hinted": [
+{
+"start": 53.8,
+"end": 54.7,
+"word": "Little",
+"p": 0.732,
+"segment": 1
+},
+{
+"start": 54.7,
+"end": 55.7,
+"word": "Bunny",
+"p": 0.088,
+"segment": 1
+},
+{
+"start": 55.7,
+"end": 56.72,
+"word": "Open",
+"p": 0.112,
+"segment": 1
+},
+{
+"start": 56.72,
+"end": 57.26,
+"word": "the",
+"p": 0.9,
+"segment": 1
+},
+{
+"start": 57.26,
+"end": 57.72,
+"word": "door",
+"p": 0.905,
+"segment": 1
+},
+{
+"start": 57.72,
+"end": 58.84,
+"word": "Open",
+"p": 0.854,
+"segment": 1
+},
+{
+"start": 58.84,
+"end": 59.34,
+"word": "it",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 59.34,
+"end": 59.88,
+"word": "quickly",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 59.88,
+"end": 60.52,
+"word": "Let",
+"p": 0.636,
+"segment": 1
+},
+{
+"start": 60.52,
+"end": 60.78,
+"word": "me",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 60.78,
+"end": 61.04,
+"word": "in",
+"p": 0.9,
+"segment": 1
+},
+{
+"start": 61.04,
+"end": 61.36,
+"word": "once",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 61.36,
+"end": 61.66,
+"word": "more",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 61.66,
+"end": 62.66,
+"word": "No",
+"p": 0.964,
+"segment": 1
+},
+{
+"start": 62.66,
+"end": 63.14,
+"word": "way",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 63.14,
+"end": 63.62,
+"word": "no",
+"p": 0.075,
+"segment": 1
+},
+{
+"start": 63.62,
+"end": 64.08,
+"word": "way",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 64.08,
+"end": 64.54,
+"word": "go",
+"p": 0.197,
+"segment": 1
+},
+{
+"start": 64.54,
+"end": 65.44,
+"word": "away",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 65.44,
+"end": 66.66,
+"word": "Mama",
+"p": 0.784,
+"segment": 1
+},
+{
+"start": 66.66,
+"end": 67.44,
+"word": "isn’t",
+"p": 0.476,
+"segment": 1
+},
+{
+"start": 67.44,
+"end": 67.64,
+"word": "here",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 67.64,
+"end": 68.48,
+"word": "You",
+"p": 0.744,
+"segment": 1
+},
+{
+"start": 68.48,
+"end": 68.9,
+"word": "cannot",
+"p": 0.664,
+"segment": 1
+},
+{
+"start": 68.9,
+"end": 69.28,
+"word": "come",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 69.28,
+"end": 69.66,
+"word": "near",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 69.66,
+"end": 69.82,
+"word": "Here.",
+"p": 0.059,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 53.8,
+"end": 54.7,
+"word": "Little",
+"p": 0.732,
+"segment": 1
+},
+{
+"start": 54.7,
+"end": 56.04,
+"word": "bunny,",
+"p": 0.894,
+"segment": 1
+},
+{
+"start": 56.18,
+"end": 56.78,
+"word": "open",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 56.78,
+"end": 57.28,
+"word": "the",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 57.28,
+"end": 57.74,
+"word": "door",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 57.74,
+"end": 58.82,
+"word": "Open",
+"p": 0.954,
+"segment": 2
+},
+{
+"start": 58.82,
+"end": 59.34,
+"word": "it",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 59.34,
+"end": 59.88,
+"word": "quickly,",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 60.18,
+"end": 60.52,
+"word": "let",
+"p": 0.791,
+"segment": 2
+},
+{
+"start": 60.52,
+"end": 60.84,
+"word": "me",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 60.84,
+"end": 61.04,
+"word": "in",
+"p": 0.987,
+"segment": 2
+},
+{
+"start": 61.04,
+"end": 61.36,
+"word": "once",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 61.36,
+"end": 61.68,
+"word": "more",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 61.68,
+"end": 62.66,
+"word": "No",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 62.66,
+"end": 63.16,
+"word": "way,",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 63.34,
+"end": 63.54,
+"word": "no",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 63.54,
+"end": 64.12,
+"word": "way,",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 64.3,
+"end": 64.56,
+"word": "go",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 64.56,
+"end": 65.34,
+"word": "away",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 65.96,
+"end": 66.66,
+"word": "Mama",
+"p": 0.997,
+"segment": 4
+},
+{
+"start": 66.66,
+"end": 67.4,
+"word": "isn't",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 67.4,
+"end": 67.68,
+"word": "here,",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 68.18,
+"end": 68.5,
+"word": "you",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 68.5,
+"end": 68.94,
+"word": "cannot",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 68.94,
+"end": 69.28,
+"word": "come",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 69.28,
+"end": 69.66,
+"word": "near",
+"p": 1.0,
+"segment": 4
+}
+]
+},
+{
+"start": 70.19,
+"end": 87.0,
+"hinted": [
+{
+"start": 69.89,
+"end": 70.91,
+"word": "Little",
+"p": 0.893,
+"segment": 1
+},
+{
+"start": 70.91,
+"end": 71.75,
+"word": "Bunny",
+"p": 0.076,
+"segment": 1
+},
+{
+"start": 71.75,
+"end": 72.75,
+"word": "Open",
+"p": 0.025,
+"segment": 1
+},
+{
+"start": 72.75,
+"end": 73.25,
+"word": "the",
+"p": 0.919,
+"segment": 1
+},
+{
+"start": 73.25,
+"end": 73.69,
+"word": "door",
+"p": 0.89,
+"segment": 1
+},
+{
+"start": 73.69,
+"end": 74.93,
+"word": "Open",
+"p": 0.871,
+"segment": 1
+},
+{
+"start": 74.93,
+"end": 75.35,
+"word": "it",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 75.35,
+"end": 75.89,
+"word": "quickly",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 75.89,
+"end": 76.87,
+"word": "Mama’s",
+"p": 0.374,
+"segment": 1
+},
+{
+"start": 76.87,
+"end": 77.05,
+"word": "home",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 77.05,
+"end": 77.33,
+"word": "once",
+"p": 0.957,
+"segment": 1
+},
+{
+"start": 77.33,
+"end": 77.65,
+"word": "more",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 77.65,
+"end": 78.65,
+"word": "Yes",
+"p": 0.925,
+"segment": 1
+},
+{
+"start": 78.65,
+"end": 79.07,
+"word": "mom",
+"p": 0.288,
+"segment": 1
+},
+{
+"start": 79.07,
+"end": 79.61,
+"word": "yes",
+"p": 0.119,
+"segment": 1
+},
+{
+"start": 79.61,
+"end": 80.09,
+"word": "mom",
+"p": 0.935,
+"segment": 1
+},
+{
+"start": 80.09,
+"end": 81.17,
+"word": "I’m",
+"p": 0.373,
+"segment": 1
+},
+{
+"start": 81.17,
+"end": 81.61,
+"word": "here",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 81.61,
+"end": 82.61,
+"word": "No",
+"p": 0.882,
+"segment": 1
+},
+{
+"start": 82.61,
+"end": 82.91,
+"word": "wolf",
+"p": 0.923,
+"segment": 1
+},
+{
+"start": 82.91,
+"end": 83.53,
+"word": "anymore",
+"p": 0.883,
+"segment": 1
+},
+{
+"start": 83.53,
+"end": 84.79,
+"word": "I’ll",
+"p": 0.936,
+"segment": 1
+},
+{
+"start": 84.79,
+"end": 85.03,
+"word": "open",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 85.03,
+"end": 85.27,
+"word": "the",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 85.27,
+"end": 85.63,
+"word": "door",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 85.63,
+"end": 86.23,
+"word": "Thank",
+"p": 0.075,
+"segment": 2
+},
+{
+"start": 86.23,
+"end": 87.27,
+"word": "you",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 87.27,
+"end": 87.27,
+"word": "for",
+"p": 0.212,
+"segment": 2
+},
+{
+"start": 87.27,
+"end": 87.27,
+"word": "watching!",
+"p": 0.781,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 69.89,
+"end": 70.91,
+"word": "Little",
+"p": 0.893,
+"segment": 1
+},
+{
+"start": 70.91,
+"end": 72.05,
+"word": "bunny,",
+"p": 0.909,
+"segment": 1
+},
+{
+"start": 72.19,
+"end": 72.81,
+"word": "open",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 72.81,
+"end": 73.27,
+"word": "the",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 73.27,
+"end": 73.71,
+"word": "door",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 73.71,
+"end": 74.85,
+"word": "Open",
+"p": 0.973,
+"segment": 2
+},
+{
+"start": 74.85,
+"end": 75.33,
+"word": "it",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 75.33,
+"end": 75.85,
+"word": "quickly,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 76.21,
+"end": 76.85,
+"word": "mama's",
+"p": 0.954,
+"segment": 2
+},
+{
+"start": 76.85,
+"end": 77.05,
+"word": "home",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 77.05,
+"end": 77.33,
+"word": "once",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 77.33,
+"end": 77.67,
+"word": "more",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 77.67,
+"end": 78.65,
+"word": "Yes",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 78.65,
+"end": 79.07,
+"word": "mom,",
+"p": 0.729,
+"segment": 3
+},
+{
+"start": 79.37,
+"end": 79.61,
+"word": "yes",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 79.61,
+"end": 80.07,
+"word": "mom,",
+"p": 0.996,
+"segment": 3
+},
+{
+"start": 80.35,
+"end": 80.69,
+"word": "I",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 80.69,
+"end": 81.13,
+"word": "am",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 81.13,
+"end": 81.63,
+"word": "here",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 81.63,
+"end": 82.53,
+"word": "No",
+"p": 0.994,
+"segment": 4
+},
+{
+"start": 82.53,
+"end": 82.85,
+"word": "wolf",
+"p": 0.992,
+"segment": 4
+},
+{
+"start": 82.85,
+"end": 83.39,
+"word": "anymore,",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 83.95,
+"end": 84.63,
+"word": "I'll",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 84.63,
+"end": 85.01,
+"word": "open",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 85.01,
+"end": 85.27,
+"word": "the",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 85.27,
+"end": 85.63,
+"word": "door",
+"p": 1.0,
+"segment": 4
+}
+]
+}
+]
+}
+}
+}

@@ -1,0 +1,1084 @@
+{
+"vocalSha256": "bb61f7ca95a30c6c39b9ebdcf0f6153f424742f3802b7a16397b8480f563f911",
+"model": "large-v3",
+"blocks": {
+"en": {
+"settings": "9ec99d82552b01a6",
+"language": "en",
+"pieces": [
+{
+"start": 0.0,
+"end": 21.5,
+"hinted": [
+{
+"start": 0.0,
+"end": 0.58,
+"word": "Row,",
+"p": 0.71,
+"segment": 1
+},
+{
+"start": 0.66,
+"end": 1.26,
+"word": "row,",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 1.32,
+"end": 1.74,
+"word": "row",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 1.74,
+"end": 2.24,
+"word": "your",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 2.24,
+"end": 2.48,
+"word": "boat,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 2.58,
+"end": 3.24,
+"word": "Gently",
+"p": 0.532,
+"segment": 1
+},
+{
+"start": 3.24,
+"end": 3.62,
+"word": "down",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 3.62,
+"end": 3.94,
+"word": "the",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 3.94,
+"end": 4.24,
+"word": "stream.",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 5.04,
+"end": 5.8,
+"word": "Merrily,",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 5.8,
+"end": 6.4,
+"word": "merrily,",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 6.4,
+"end": 6.98,
+"word": "merrily,",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 6.98,
+"end": 7.56,
+"word": "merrily,",
+"p": 0.952,
+"segment": 2
+},
+{
+"start": 7.56,
+"end": 7.72,
+"word": "Life",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 7.72,
+"end": 8.24,
+"word": "is",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 8.24,
+"end": 8.44,
+"word": "but",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 8.44,
+"end": 8.74,
+"word": "a",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 8.74,
+"end": 9.08,
+"word": "dream.",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 9.82,
+"end": 10.2,
+"word": "Row,",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 10.38,
+"end": 10.94,
+"word": "row,",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 10.96,
+"end": 11.4,
+"word": "row",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 11.4,
+"end": 11.86,
+"word": "your",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 11.86,
+"end": 12.08,
+"word": "boat,",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 12.22,
+"end": 12.9,
+"word": "Gently",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 12.9,
+"end": 13.26,
+"word": "down",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 13.26,
+"end": 13.56,
+"word": "the",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 13.56,
+"end": 13.9,
+"word": "stream.",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 14.68,
+"end": 15.06,
+"word": "If",
+"p": 0.997,
+"segment": 4
+},
+{
+"start": 15.06,
+"end": 15.26,
+"word": "you",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 15.26,
+"end": 15.62,
+"word": "see",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 15.62,
+"end": 15.92,
+"word": "a",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 15.92,
+"end": 16.52,
+"word": "crocodile,",
+"p": 0.979,
+"segment": 4
+},
+{
+"start": 17.02,
+"end": 17.52,
+"word": "Don't",
+"p": 0.984,
+"segment": 4
+},
+{
+"start": 17.52,
+"end": 17.92,
+"word": "forget",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 17.92,
+"end": 18.3,
+"word": "to",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 18.3,
+"end": 18.68,
+"word": "scream.",
+"p": 0.999,
+"segment": 4
+}
+],
+"plain": [
+{
+"start": 0.0,
+"end": 0.56,
+"word": "Row,",
+"p": 0.711,
+"segment": 1
+},
+{
+"start": 0.66,
+"end": 1.26,
+"word": "row,",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 1.32,
+"end": 1.74,
+"word": "row",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 1.74,
+"end": 2.24,
+"word": "your",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 2.24,
+"end": 2.48,
+"word": "boat,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 2.6,
+"end": 3.24,
+"word": "gently",
+"p": 0.935,
+"segment": 1
+},
+{
+"start": 3.24,
+"end": 3.62,
+"word": "down",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 3.62,
+"end": 3.94,
+"word": "the",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 3.94,
+"end": 4.26,
+"word": "stream.",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 5.08,
+"end": 5.8,
+"word": "Merrily,",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 5.8,
+"end": 6.4,
+"word": "merrily,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 6.4,
+"end": 7.0,
+"word": "merrily,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 7.0,
+"end": 7.56,
+"word": "merrily,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 7.56,
+"end": 7.76,
+"word": "life",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 7.76,
+"end": 8.24,
+"word": "is",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 8.24,
+"end": 8.44,
+"word": "but",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 8.44,
+"end": 8.74,
+"word": "a",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 8.74,
+"end": 9.08,
+"word": "dream.",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 9.46,
+"end": 10.18,
+"word": "Row,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 10.38,
+"end": 10.94,
+"word": "row,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 10.96,
+"end": 11.4,
+"word": "row",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 11.4,
+"end": 11.86,
+"word": "your",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 11.86,
+"end": 12.08,
+"word": "boat,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 12.2,
+"end": 12.86,
+"word": "gently",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 12.86,
+"end": 13.26,
+"word": "down",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 13.26,
+"end": 13.56,
+"word": "the",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 13.56,
+"end": 13.9,
+"word": "stream.",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 14.32,
+"end": 15.04,
+"word": "If",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 15.04,
+"end": 15.26,
+"word": "you",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 15.26,
+"end": 15.62,
+"word": "see",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 15.62,
+"end": 15.92,
+"word": "a",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 15.92,
+"end": 16.54,
+"word": "crocodile,",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 17.0,
+"end": 17.64,
+"word": "don't",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 17.64,
+"end": 17.92,
+"word": "forget",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 17.92,
+"end": 18.3,
+"word": "to",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 18.3,
+"end": 18.72,
+"word": "scream.",
+"p": 1.0,
+"segment": 1
+}
+]
+}
+]
+},
+"zh": {
+"settings": "c9fda085dd2a6c1a",
+"language": "zh",
+"pieces": [
+{
+"start": 28.0,
+"end": 50.0,
+"hinted": [
+{
+"start": 28.84,
+"end": 29.52,
+"word": "划，",
+"p": 0.482,
+"segment": 1
+},
+{
+"start": 29.94,
+"end": 30.16,
+"word": "划，",
+"p": 0.534,
+"segment": 1
+},
+{
+"start": 30.48,
+"end": 30.66,
+"word": "划",
+"p": 0.706,
+"segment": 1
+},
+{
+"start": 30.66,
+"end": 30.94,
+"word": "小",
+"p": 0.601,
+"segment": 1
+},
+{
+"start": 30.94,
+"end": 31.3,
+"word": "船",
+"p": 0.952,
+"segment": 1
+},
+{
+"start": 31.34,
+"end": 31.78,
+"word": "顺",
+"p": 0.569,
+"segment": 1
+},
+{
+"start": 31.78,
+"end": 32.22,
+"word": "着",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 32.22,
+"end": 32.44,
+"word": "河",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 32.44,
+"end": 32.76,
+"word": "流",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 32.76,
+"end": 32.98,
+"word": "漂",
+"p": 0.37,
+"segment": 1
+},
+{
+"start": 33.7,
+"end": 34.3,
+"word": "大家",
+"p": 0.525,
+"segment": 2
+},
+{
+"start": 34.3,
+"end": 34.9,
+"word": "一起",
+"p": 0.988,
+"segment": 2
+},
+{
+"start": 34.9,
+"end": 35.54,
+"word": "哈哈",
+"p": 0.875,
+"segment": 2
+},
+{
+"start": 35.54,
+"end": 36.04,
+"word": "笑",
+"p": 0.986,
+"segment": 2
+},
+{
+"start": 36.3,
+"end": 36.94,
+"word": "生活",
+"p": 0.876,
+"segment": 2
+},
+{
+"start": 36.94,
+"end": 37.22,
+"word": "真",
+"p": 0.984,
+"segment": 2
+},
+{
+"start": 37.22,
+"end": 37.62,
+"word": "美",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 37.62,
+"end": 37.92,
+"word": "好",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 38.7,
+"end": 39.1,
+"word": "划，",
+"p": 0.986,
+"segment": 3
+},
+{
+"start": 39.44,
+"end": 39.64,
+"word": "划，",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 39.8,
+"end": 40.26,
+"word": "划",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 40.26,
+"end": 40.56,
+"word": "小",
+"p": 0.906,
+"segment": 3
+},
+{
+"start": 40.56,
+"end": 40.9,
+"word": "船",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 40.98,
+"end": 41.38,
+"word": "顺",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 41.38,
+"end": 41.8,
+"word": "着",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 41.8,
+"end": 42.1,
+"word": "河",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 42.1,
+"end": 42.38,
+"word": "流",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 42.38,
+"end": 42.66,
+"word": "漂",
+"p": 0.966,
+"segment": 3
+},
+{
+"start": 43.84,
+"end": 44.52,
+"word": "如果",
+"p": 0.98,
+"segment": 4
+},
+{
+"start": 44.52,
+"end": 45.2,
+"word": "看到",
+"p": 0.826,
+"segment": 4
+},
+{
+"start": 45.2,
+"end": 45.7,
+"word": "鳄",
+"p": 0.253,
+"segment": 4
+},
+{
+"start": 45.7,
+"end": 46.0,
+"word": "鱼",
+"p": 0.934,
+"segment": 4
+},
+{
+"start": 46.18,
+"end": 46.18,
+"word": "记",
+"p": 0.525,
+"segment": 4
+},
+{
+"start": 46.18,
+"end": 46.58,
+"word": "得",
+"p": 0.992,
+"segment": 4
+},
+{
+"start": 46.58,
+"end": 46.76,
+"word": "大",
+"p": 0.689,
+"segment": 4
+},
+{
+"start": 46.76,
+"end": 47.14,
+"word": "声",
+"p": 0.914,
+"segment": 4
+},
+{
+"start": 47.14,
+"end": 47.44,
+"word": "叫",
+"p": 0.3,
+"segment": 4
+},
+{
+"start": 47.44,
+"end": 47.94,
+"word": "．",
+"p": 0.05,
+"segment": 4
+},
+{
+"start": 47.94,
+"end": 47.94,
+"word": "啊",
+"p": 0.031,
+"segment": 4
+},
+{
+"start": 47.94,
+"end": 48.88,
+"word": "．",
+"p": 0.379,
+"segment": 4
+}
+],
+"plain": [
+{
+"start": 28.64,
+"end": 29.4,
+"word": "花",
+"p": 0.285,
+"segment": 1
+},
+{
+"start": 29.4,
+"end": 30.1,
+"word": "花",
+"p": 0.672,
+"segment": 1
+},
+{
+"start": 30.1,
+"end": 30.58,
+"word": "花",
+"p": 0.941,
+"segment": 1
+},
+{
+"start": 30.58,
+"end": 31.02,
+"word": "小",
+"p": 0.546,
+"segment": 1
+},
+{
+"start": 31.02,
+"end": 31.24,
+"word": "船",
+"p": 0.511,
+"segment": 1
+},
+{
+"start": 31.36,
+"end": 31.78,
+"word": "顺",
+"p": 0.59,
+"segment": 1
+},
+{
+"start": 31.78,
+"end": 32.22,
+"word": "着",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 32.22,
+"end": 32.44,
+"word": "河",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 32.44,
+"end": 32.76,
+"word": "流",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 32.76,
+"end": 33.04,
+"word": "飘",
+"p": 0.917,
+"segment": 1
+},
+{
+"start": 33.7,
+"end": 34.34,
+"word": "大家",
+"p": 0.609,
+"segment": 2
+},
+{
+"start": 34.34,
+"end": 34.88,
+"word": "一起",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 34.88,
+"end": 35.54,
+"word": "哈哈",
+"p": 0.917,
+"segment": 2
+},
+{
+"start": 35.54,
+"end": 36.04,
+"word": "笑",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 36.3,
+"end": 36.92,
+"word": "生活",
+"p": 0.918,
+"segment": 2
+},
+{
+"start": 36.92,
+"end": 37.22,
+"word": "真",
+"p": 0.988,
+"segment": 2
+},
+{
+"start": 37.22,
+"end": 37.62,
+"word": "美",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 37.62,
+"end": 37.88,
+"word": "好",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 38.68,
+"end": 39.06,
+"word": "花",
+"p": 0.991,
+"segment": 3
+},
+{
+"start": 39.06,
+"end": 39.64,
+"word": "花",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 39.64,
+"end": 40.18,
+"word": "花",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 40.18,
+"end": 40.62,
+"word": "小",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 40.62,
+"end": 40.9,
+"word": "船",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 40.98,
+"end": 41.38,
+"word": "顺",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 41.38,
+"end": 41.76,
+"word": "着",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 41.76,
+"end": 42.1,
+"word": "河",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 42.1,
+"end": 42.38,
+"word": "流",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 42.38,
+"end": 42.72,
+"word": "飘",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 43.62,
+"end": 44.0,
+"word": "如果",
+"p": 0.992,
+"segment": 4
+},
+{
+"start": 44.0,
+"end": 45.14,
+"word": "看到",
+"p": 0.939,
+"segment": 4
+},
+{
+"start": 45.14,
+"end": 45.7,
+"word": "了",
+"p": 0.996,
+"segment": 4
+},
+{
+"start": 45.7,
+"end": 45.98,
+"word": "雨",
+"p": 0.938,
+"segment": 4
+},
+{
+"start": 46.06,
+"end": 46.28,
+"word": "记",
+"p": 0.918,
+"segment": 4
+},
+{
+"start": 46.28,
+"end": 46.58,
+"word": "得",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 46.58,
+"end": 46.76,
+"word": "大",
+"p": 0.607,
+"segment": 4
+},
+{
+"start": 46.76,
+"end": 47.14,
+"word": "声",
+"p": 0.959,
+"segment": 4
+},
+{
+"start": 47.14,
+"end": 47.42,
+"word": "叫",
+"p": 0.292,
+"segment": 4
+},
+{
+"start": 47.7,
+"end": 48.06,
+"word": "啊",
+"p": 0.646,
+"segment": 4
+}
+]
+}
+]
+}
+}
+}

@@ -1,0 +1,4832 @@
+{
+"vocalSha256": "191da601f60fb96b25d1b10ea58874ba6465d305ac3dc049f820ed006e4785e9",
+"model": "large-v3",
+"blocks": {
+"en": {
+"settings": "f0e2acca79b8e0c4",
+"language": "en",
+"pieces": [
+{
+"start": 15.0,
+"end": 22.99,
+"hinted": [
+{
+"start": 16.14,
+"end": 16.6,
+"word": "doo",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 16.6,
+"end": 17.06,
+"word": "doo",
+"p": 0.776,
+"segment": 1
+},
+{
+"start": 17.06,
+"end": 17.3,
+"word": "doo",
+"p": 0.918,
+"segment": 1
+},
+{
+"start": 17.3,
+"end": 17.46,
+"word": "doo",
+"p": 0.888,
+"segment": 1
+},
+{
+"start": 17.46,
+"end": 17.68,
+"word": "doo",
+"p": 0.853,
+"segment": 1
+},
+{
+"start": 17.68,
+"end": 17.78,
+"word": "doo,",
+"p": 0.706,
+"segment": 1
+},
+{
+"start": 17.84,
+"end": 18.1,
+"word": "Baby",
+"p": 0.229,
+"segment": 1
+},
+{
+"start": 18.1,
+"end": 18.56,
+"word": "shark!",
+"p": 0.242,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 15.72,
+"end": 16.16,
+"word": "Baby",
+"p": 0.666,
+"segment": 1
+},
+{
+"start": 16.16,
+"end": 16.6,
+"word": "shark",
+"p": 0.655,
+"segment": 1
+},
+{
+"start": 16.6,
+"end": 16.8,
+"word": "do",
+"p": 0.398,
+"segment": 1
+},
+{
+"start": 16.8,
+"end": 17.02,
+"word": "do",
+"p": 0.741,
+"segment": 1
+},
+{
+"start": 17.02,
+"end": 17.3,
+"word": "do",
+"p": 0.914,
+"segment": 1
+},
+{
+"start": 17.3,
+"end": 17.5,
+"word": "do",
+"p": 0.941,
+"segment": 1
+},
+{
+"start": 17.5,
+"end": 17.68,
+"word": "do",
+"p": 0.906,
+"segment": 1
+},
+{
+"start": 17.68,
+"end": 17.78,
+"word": "do",
+"p": 0.766,
+"segment": 1
+},
+{
+"start": 17.78,
+"end": 18.0,
+"word": "Baby",
+"p": 0.385,
+"segment": 2
+},
+{
+"start": 18.0,
+"end": 18.56,
+"word": "shark",
+"p": 0.967,
+"segment": 2
+},
+{
+"start": 18.56,
+"end": 18.74,
+"word": "do",
+"p": 0.956,
+"segment": 2
+},
+{
+"start": 18.74,
+"end": 18.98,
+"word": "do",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 18.98,
+"end": 19.26,
+"word": "do",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 19.26,
+"end": 19.4,
+"word": "do",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 19.4,
+"end": 19.6,
+"word": "do",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 19.6,
+"end": 19.7,
+"word": "do",
+"p": 0.968,
+"segment": 2
+},
+{
+"start": 19.7,
+"end": 20.04,
+"word": "Baby",
+"p": 0.919,
+"segment": 3
+},
+{
+"start": 20.04,
+"end": 20.52,
+"word": "shark",
+"p": 0.993,
+"segment": 3
+},
+{
+"start": 20.52,
+"end": 20.64,
+"word": "do",
+"p": 0.988,
+"segment": 3
+},
+{
+"start": 20.64,
+"end": 20.9,
+"word": "do",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 20.9,
+"end": 21.18,
+"word": "do",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 21.18,
+"end": 21.36,
+"word": "do",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 21.36,
+"end": 21.56,
+"word": "do",
+"p": 0.992,
+"segment": 3
+},
+{
+"start": 21.56,
+"end": 21.66,
+"word": "do",
+"p": 0.721,
+"segment": 3
+},
+{
+"start": 21.66,
+"end": 21.98,
+"word": "Baby",
+"p": 0.949,
+"segment": 4
+},
+{
+"start": 21.98,
+"end": 22.54,
+"word": "shark",
+"p": 0.97,
+"segment": 4
+}
+]
+},
+{
+"start": 22.99,
+"end": 30.84,
+"hinted": [
+{
+"start": 23.77,
+"end": 24.13,
+"word": "Mommy",
+"p": 0.758,
+"segment": 1
+},
+{
+"start": 24.13,
+"end": 24.49,
+"word": "shark,",
+"p": 0.634,
+"segment": 1
+},
+{
+"start": 24.55,
+"end": 24.69,
+"word": "doo",
+"p": 0.455,
+"segment": 1
+},
+{
+"start": 24.69,
+"end": 24.93,
+"word": "doo",
+"p": 0.647,
+"segment": 1
+},
+{
+"start": 24.93,
+"end": 25.17,
+"word": "doo",
+"p": 0.937,
+"segment": 1
+},
+{
+"start": 25.17,
+"end": 25.33,
+"word": "doo",
+"p": 0.958,
+"segment": 1
+},
+{
+"start": 25.33,
+"end": 25.53,
+"word": "doo",
+"p": 0.916,
+"segment": 1
+},
+{
+"start": 25.53,
+"end": 25.65,
+"word": "doo,",
+"p": 0.749,
+"segment": 1
+},
+{
+"start": 25.69,
+"end": 25.97,
+"word": "Mommy",
+"p": 0.593,
+"segment": 1
+},
+{
+"start": 25.97,
+"end": 26.41,
+"word": "shark,",
+"p": 0.948,
+"segment": 1
+},
+{
+"start": 26.47,
+"end": 26.61,
+"word": "doo",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 26.61,
+"end": 26.89,
+"word": "doo",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 26.89,
+"end": 27.11,
+"word": "doo",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 27.11,
+"end": 27.25,
+"word": "doo",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 27.25,
+"end": 27.47,
+"word": "doo",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 27.47,
+"end": 27.53,
+"word": "doo,",
+"p": 0.969,
+"segment": 1
+},
+{
+"start": 27.63,
+"end": 27.95,
+"word": "Mommy",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 27.95,
+"end": 28.39,
+"word": "shark,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 28.41,
+"end": 28.55,
+"word": "doo",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 28.55,
+"end": 28.85,
+"word": "doo",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 28.85,
+"end": 29.07,
+"word": "doo",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 29.07,
+"end": 29.25,
+"word": "doo",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 29.25,
+"end": 29.43,
+"word": "doo",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 29.43,
+"end": 29.51,
+"word": "doo,",
+"p": 0.954,
+"segment": 1
+},
+{
+"start": 29.55,
+"end": 29.89,
+"word": "Mommy",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 29.89,
+"end": 30.41,
+"word": "shark!",
+"p": 0.982,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 23.69,
+"end": 24.09,
+"word": "Mommy",
+"p": 0.758,
+"segment": 1
+},
+{
+"start": 24.09,
+"end": 24.49,
+"word": "shark,",
+"p": 0.632,
+"segment": 1
+},
+{
+"start": 24.55,
+"end": 24.67,
+"word": "do",
+"p": 0.477,
+"segment": 1
+},
+{
+"start": 24.67,
+"end": 24.97,
+"word": "-do",
+"p": 0.787,
+"segment": 1
+},
+{
+"start": 24.97,
+"end": 25.17,
+"word": "-do",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 25.17,
+"end": 25.37,
+"word": "-do",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 25.37,
+"end": 25.55,
+"word": "-do,",
+"p": 0.958,
+"segment": 1
+},
+{
+"start": 25.69,
+"end": 25.89,
+"word": "Mommy",
+"p": 0.635,
+"segment": 1
+},
+{
+"start": 25.89,
+"end": 26.41,
+"word": "shark,",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 26.51,
+"end": 26.59,
+"word": "do",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 26.59,
+"end": 26.89,
+"word": "-do",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 26.89,
+"end": 27.11,
+"word": "-do",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 27.11,
+"end": 27.33,
+"word": "-do",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 27.33,
+"end": 27.49,
+"word": "-do,",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 27.57,
+"end": 27.95,
+"word": "Mommy",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 27.95,
+"end": 28.39,
+"word": "shark,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 28.41,
+"end": 28.53,
+"word": "do",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 28.53,
+"end": 28.91,
+"word": "-do",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 28.91,
+"end": 29.07,
+"word": "-do",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 29.07,
+"end": 29.25,
+"word": "-do",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 29.25,
+"end": 29.45,
+"word": "-do,",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 29.55,
+"end": 29.89,
+"word": "Mommy",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 29.89,
+"end": 30.35,
+"word": "shark",
+"p": 0.998,
+"segment": 1
+}
+]
+},
+{
+"start": 30.84,
+"end": 38.74,
+"hinted": [
+{
+"start": 31.56,
+"end": 31.96,
+"word": "Daddy",
+"p": 0.738,
+"segment": 1
+},
+{
+"start": 31.96,
+"end": 32.36,
+"word": "shark,",
+"p": 0.491,
+"segment": 1
+},
+{
+"start": 32.42,
+"end": 32.54,
+"word": "doo",
+"p": 0.24,
+"segment": 1
+},
+{
+"start": 32.54,
+"end": 32.76,
+"word": "doo",
+"p": 0.525,
+"segment": 1
+},
+{
+"start": 32.76,
+"end": 33.0,
+"word": "doo",
+"p": 0.866,
+"segment": 1
+},
+{
+"start": 33.0,
+"end": 33.2,
+"word": "doo",
+"p": 0.944,
+"segment": 1
+},
+{
+"start": 33.2,
+"end": 33.4,
+"word": "doo",
+"p": 0.896,
+"segment": 1
+},
+{
+"start": 33.4,
+"end": 33.48,
+"word": "doo,",
+"p": 0.81,
+"segment": 1
+},
+{
+"start": 33.56,
+"end": 33.84,
+"word": "Daddy",
+"p": 0.335,
+"segment": 1
+},
+{
+"start": 33.84,
+"end": 34.26,
+"word": "shark,",
+"p": 0.934,
+"segment": 1
+},
+{
+"start": 34.34,
+"end": 34.46,
+"word": "doo",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 34.46,
+"end": 34.74,
+"word": "doo",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 34.74,
+"end": 34.96,
+"word": "doo",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 34.96,
+"end": 35.12,
+"word": "doo",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 35.12,
+"end": 35.32,
+"word": "doo",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 35.32,
+"end": 35.4,
+"word": "doo,",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 35.48,
+"end": 35.84,
+"word": "Daddy",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 35.84,
+"end": 36.24,
+"word": "shark,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 36.26,
+"end": 36.4,
+"word": "doo",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 36.4,
+"end": 36.7,
+"word": "doo",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 36.7,
+"end": 36.92,
+"word": "doo",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 36.92,
+"end": 37.1,
+"word": "doo",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 37.1,
+"end": 37.28,
+"word": "doo",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 37.28,
+"end": 37.32,
+"word": "doo,",
+"p": 0.788,
+"segment": 1
+},
+{
+"start": 37.38,
+"end": 37.82,
+"word": "Daddy",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 37.82,
+"end": 38.32,
+"word": "shark!",
+"p": 0.982,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 31.52,
+"end": 31.94,
+"word": "Daddy",
+"p": 0.739,
+"segment": 1
+},
+{
+"start": 31.94,
+"end": 32.36,
+"word": "shark",
+"p": 0.489,
+"segment": 1
+},
+{
+"start": 32.36,
+"end": 32.52,
+"word": "do",
+"p": 0.521,
+"segment": 1
+},
+{
+"start": 32.52,
+"end": 32.7,
+"word": "do",
+"p": 0.748,
+"segment": 1
+},
+{
+"start": 32.7,
+"end": 33.04,
+"word": "do",
+"p": 0.915,
+"segment": 1
+},
+{
+"start": 33.04,
+"end": 33.24,
+"word": "do",
+"p": 0.973,
+"segment": 1
+},
+{
+"start": 33.24,
+"end": 33.4,
+"word": "do",
+"p": 0.967,
+"segment": 1
+},
+{
+"start": 33.4,
+"end": 33.52,
+"word": "do",
+"p": 0.863,
+"segment": 1
+},
+{
+"start": 33.52,
+"end": 33.88,
+"word": "daddy",
+"p": 0.156,
+"segment": 1
+},
+{
+"start": 33.88,
+"end": 34.26,
+"word": "shark",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 34.26,
+"end": 34.46,
+"word": "do",
+"p": 0.964,
+"segment": 1
+},
+{
+"start": 34.46,
+"end": 34.68,
+"word": "do",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 34.68,
+"end": 34.96,
+"word": "do",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 34.96,
+"end": 35.16,
+"word": "do",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 35.16,
+"end": 35.32,
+"word": "do",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 35.32,
+"end": 35.42,
+"word": "do",
+"p": 0.911,
+"segment": 1
+},
+{
+"start": 35.42,
+"end": 35.82,
+"word": "daddy",
+"p": 0.703,
+"segment": 1
+},
+{
+"start": 35.82,
+"end": 36.2,
+"word": "shark",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 36.2,
+"end": 36.38,
+"word": "do",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 36.38,
+"end": 36.6,
+"word": "do",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 36.6,
+"end": 36.9,
+"word": "do",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 36.9,
+"end": 37.1,
+"word": "do",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 37.1,
+"end": 37.28,
+"word": "do",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 37.28,
+"end": 37.36,
+"word": "do",
+"p": 0.818,
+"segment": 1
+},
+{
+"start": 37.36,
+"end": 37.78,
+"word": "daddy",
+"p": 0.789,
+"segment": 1
+},
+{
+"start": 37.78,
+"end": 38.22,
+"word": "shark",
+"p": 0.997,
+"segment": 1
+}
+]
+},
+{
+"start": 38.74,
+"end": 63.0,
+"hinted": [
+{
+"start": 39.94,
+"end": 40.32,
+"word": "doo,",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 40.46,
+"end": 40.74,
+"word": "doo,",
+"p": 0.941,
+"segment": 1
+},
+{
+"start": 40.84,
+"end": 40.94,
+"word": "doo,",
+"p": 0.941,
+"segment": 1
+},
+{
+"start": 40.96,
+"end": 41.08,
+"word": "doo,",
+"p": 0.955,
+"segment": 1
+},
+{
+"start": 41.08,
+"end": 41.26,
+"word": "doo,",
+"p": 0.917,
+"segment": 1
+},
+{
+"start": 41.38,
+"end": 41.38,
+"word": "doo,",
+"p": 0.829,
+"segment": 1
+},
+{
+"start": 41.4,
+"end": 45.3,
+"word": "Herbert",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 45.3,
+"end": 55.94,
+"word": "shark,",
+"p": 0.001,
+"segment": 1
+},
+{
+"start": 55.94,
+"end": 56.04,
+"word": "doo",
+"p": 0.698,
+"segment": 1
+},
+{
+"start": 56.04,
+"end": 56.36,
+"word": "doo",
+"p": 0.067,
+"segment": 1
+},
+{
+"start": 56.36,
+"end": 56.64,
+"word": "doo",
+"p": 0.68,
+"segment": 1
+},
+{
+"start": 56.64,
+"end": 56.84,
+"word": "doo",
+"p": 0.883,
+"segment": 1
+},
+{
+"start": 56.84,
+"end": 57.04,
+"word": "doo",
+"p": 0.805,
+"segment": 1
+},
+{
+"start": 57.04,
+"end": 57.1,
+"word": "doo,",
+"p": 0.708,
+"segment": 1
+},
+{
+"start": 61.04,
+"end": 61.3,
+"word": "Grandpa",
+"p": 0.164,
+"segment": 1
+},
+{
+"start": 61.3,
+"end": 63.26,
+"word": "shark,",
+"p": 0.938,
+"segment": 1
+},
+{
+"start": 63.26,
+"end": 63.28,
+"word": "Thank",
+"p": 0.222,
+"segment": 2
+},
+{
+"start": 63.28,
+"end": 63.28,
+"word": "you.",
+"p": 0.997,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 39.66,
+"end": 39.92,
+"word": "Grandma",
+"p": 0.372,
+"segment": 1
+},
+{
+"start": 39.92,
+"end": 40.18,
+"word": "shark",
+"p": 0.363,
+"segment": 1
+},
+{
+"start": 40.18,
+"end": 40.4,
+"word": "do",
+"p": 0.332,
+"segment": 1
+},
+{
+"start": 40.4,
+"end": 40.58,
+"word": "do",
+"p": 0.663,
+"segment": 1
+},
+{
+"start": 40.58,
+"end": 40.92,
+"word": "do",
+"p": 0.91,
+"segment": 1
+},
+{
+"start": 40.92,
+"end": 41.12,
+"word": "do",
+"p": 0.931,
+"segment": 1
+},
+{
+"start": 41.12,
+"end": 41.3,
+"word": "do",
+"p": 0.924,
+"segment": 1
+},
+{
+"start": 41.3,
+"end": 41.44,
+"word": "do",
+"p": 0.827,
+"segment": 1
+},
+{
+"start": 41.44,
+"end": 41.46,
+"word": "do",
+"p": 0.353,
+"segment": 1
+},
+{
+"start": 41.46,
+"end": 41.56,
+"word": "do",
+"p": 0.367,
+"segment": 1
+},
+{
+"start": 41.56,
+"end": 41.76,
+"word": "do",
+"p": 0.512,
+"segment": 1
+},
+{
+"start": 41.76,
+"end": 41.92,
+"word": "do",
+"p": 0.604,
+"segment": 1
+},
+{
+"start": 41.92,
+"end": 42.46,
+"word": "do",
+"p": 0.655,
+"segment": 1
+},
+{
+"start": 42.46,
+"end": 42.74,
+"word": "do",
+"p": 0.703,
+"segment": 1
+},
+{
+"start": 42.74,
+"end": 42.92,
+"word": "do",
+"p": 0.747,
+"segment": 1
+},
+{
+"start": 42.92,
+"end": 43.2,
+"word": "do",
+"p": 0.784,
+"segment": 1
+},
+{
+"start": 43.2,
+"end": 43.32,
+"word": "do",
+"p": 0.804,
+"segment": 1
+},
+{
+"start": 43.32,
+"end": 43.36,
+"word": "do",
+"p": 0.824,
+"segment": 1
+},
+{
+"start": 43.36,
+"end": 43.48,
+"word": "do",
+"p": 0.837,
+"segment": 1
+},
+{
+"start": 43.48,
+"end": 43.62,
+"word": "do",
+"p": 0.847,
+"segment": 1
+},
+{
+"start": 43.62,
+"end": 43.66,
+"word": "do",
+"p": 0.854,
+"segment": 1
+},
+{
+"start": 43.66,
+"end": 43.86,
+"word": "do",
+"p": 0.862,
+"segment": 1
+},
+{
+"start": 43.86,
+"end": 43.86,
+"word": "do",
+"p": 0.861,
+"segment": 1
+},
+{
+"start": 43.86,
+"end": 44.14,
+"word": "do",
+"p": 0.862,
+"segment": 1
+},
+{
+"start": 44.14,
+"end": 44.36,
+"word": "do",
+"p": 0.862,
+"segment": 1
+},
+{
+"start": 44.36,
+"end": 44.36,
+"word": "do",
+"p": 0.862,
+"segment": 1
+},
+{
+"start": 44.36,
+"end": 44.36,
+"word": "do",
+"p": 0.862,
+"segment": 1
+},
+{
+"start": 44.36,
+"end": 44.4,
+"word": "do",
+"p": 0.864,
+"segment": 1
+},
+{
+"start": 44.4,
+"end": 44.42,
+"word": "do",
+"p": 0.87,
+"segment": 1
+},
+{
+"start": 44.42,
+"end": 44.62,
+"word": "do",
+"p": 0.87,
+"segment": 1
+},
+{
+"start": 44.62,
+"end": 44.66,
+"word": "do",
+"p": 0.87,
+"segment": 1
+},
+{
+"start": 44.66,
+"end": 44.76,
+"word": "do",
+"p": 0.867,
+"segment": 1
+},
+{
+"start": 44.76,
+"end": 44.86,
+"word": "do",
+"p": 0.867,
+"segment": 1
+},
+{
+"start": 44.86,
+"end": 44.94,
+"word": "do",
+"p": 0.866,
+"segment": 1
+},
+{
+"start": 44.94,
+"end": 44.98,
+"word": "do",
+"p": 0.868,
+"segment": 1
+},
+{
+"start": 44.98,
+"end": 44.98,
+"word": "do",
+"p": 0.869,
+"segment": 1
+},
+{
+"start": 44.98,
+"end": 45.16,
+"word": "do",
+"p": 0.87,
+"segment": 1
+},
+{
+"start": 45.16,
+"end": 45.2,
+"word": "do",
+"p": 0.873,
+"segment": 1
+},
+{
+"start": 45.2,
+"end": 45.2,
+"word": "do",
+"p": 0.877,
+"segment": 1
+},
+{
+"start": 45.2,
+"end": 45.22,
+"word": "do",
+"p": 0.879,
+"segment": 1
+},
+{
+"start": 45.22,
+"end": 45.22,
+"word": "do",
+"p": 0.885,
+"segment": 1
+},
+{
+"start": 45.22,
+"end": 45.22,
+"word": "do",
+"p": 0.884,
+"segment": 1
+},
+{
+"start": 45.22,
+"end": 45.28,
+"word": "do",
+"p": 0.888,
+"segment": 1
+},
+{
+"start": 45.28,
+"end": 45.28,
+"word": "do",
+"p": 0.894,
+"segment": 1
+},
+{
+"start": 45.28,
+"end": 45.3,
+"word": "do",
+"p": 0.896,
+"segment": 1
+},
+{
+"start": 45.3,
+"end": 45.3,
+"word": "do",
+"p": 0.899,
+"segment": 1
+},
+{
+"start": 45.3,
+"end": 45.3,
+"word": "do",
+"p": 0.904,
+"segment": 1
+},
+{
+"start": 45.3,
+"end": 45.3,
+"word": "do",
+"p": 0.907,
+"segment": 1
+},
+{
+"start": 45.3,
+"end": 45.3,
+"word": "do",
+"p": 0.91,
+"segment": 1
+},
+{
+"start": 45.3,
+"end": 45.3,
+"word": "do",
+"p": 0.912,
+"segment": 1
+},
+{
+"start": 45.3,
+"end": 45.34,
+"word": "do",
+"p": 0.914,
+"segment": 1
+},
+{
+"start": 45.34,
+"end": 45.42,
+"word": "do",
+"p": 0.918,
+"segment": 1
+},
+{
+"start": 45.42,
+"end": 45.42,
+"word": "do",
+"p": 0.92,
+"segment": 1
+},
+{
+"start": 45.42,
+"end": 45.52,
+"word": "do",
+"p": 0.92,
+"segment": 1
+},
+{
+"start": 45.52,
+"end": 45.52,
+"word": "do",
+"p": 0.92,
+"segment": 1
+},
+{
+"start": 45.52,
+"end": 45.56,
+"word": "do",
+"p": 0.925,
+"segment": 1
+},
+{
+"start": 45.56,
+"end": 45.62,
+"word": "do",
+"p": 0.925,
+"segment": 1
+},
+{
+"start": 45.62,
+"end": 45.62,
+"word": "do",
+"p": 0.925,
+"segment": 1
+},
+{
+"start": 45.62,
+"end": 45.62,
+"word": "do",
+"p": 0.925,
+"segment": 1
+},
+{
+"start": 45.62,
+"end": 45.62,
+"word": "do",
+"p": 0.927,
+"segment": 1
+},
+{
+"start": 45.62,
+"end": 45.62,
+"word": "do",
+"p": 0.926,
+"segment": 1
+},
+{
+"start": 45.62,
+"end": 45.62,
+"word": "do",
+"p": 0.925,
+"segment": 1
+},
+{
+"start": 45.62,
+"end": 45.62,
+"word": "do",
+"p": 0.926,
+"segment": 1
+},
+{
+"start": 45.62,
+"end": 46.34,
+"word": "do",
+"p": 0.924,
+"segment": 1
+},
+{
+"start": 46.34,
+"end": 46.34,
+"word": "do",
+"p": 0.923,
+"segment": 1
+},
+{
+"start": 46.34,
+"end": 46.34,
+"word": "do",
+"p": 0.923,
+"segment": 1
+},
+{
+"start": 46.34,
+"end": 46.34,
+"word": "do",
+"p": 0.922,
+"segment": 1
+},
+{
+"start": 46.34,
+"end": 46.34,
+"word": "do",
+"p": 0.92,
+"segment": 1
+},
+{
+"start": 46.34,
+"end": 46.64,
+"word": "do",
+"p": 0.921,
+"segment": 1
+},
+{
+"start": 46.64,
+"end": 46.64,
+"word": "do",
+"p": 0.919,
+"segment": 1
+},
+{
+"start": 46.64,
+"end": 46.64,
+"word": "do",
+"p": 0.919,
+"segment": 1
+},
+{
+"start": 46.64,
+"end": 46.64,
+"word": "do",
+"p": 0.917,
+"segment": 1
+},
+{
+"start": 46.64,
+"end": 46.64,
+"word": "do",
+"p": 0.918,
+"segment": 1
+},
+{
+"start": 46.64,
+"end": 46.64,
+"word": "do",
+"p": 0.915,
+"segment": 1
+},
+{
+"start": 46.64,
+"end": 46.64,
+"word": "do",
+"p": 0.915,
+"segment": 1
+},
+{
+"start": 46.64,
+"end": 46.64,
+"word": "do",
+"p": 0.917,
+"segment": 1
+},
+{
+"start": 46.64,
+"end": 46.64,
+"word": "do",
+"p": 0.916,
+"segment": 1
+},
+{
+"start": 46.64,
+"end": 46.64,
+"word": "do",
+"p": 0.915,
+"segment": 1
+},
+{
+"start": 46.64,
+"end": 46.64,
+"word": "do",
+"p": 0.916,
+"segment": 1
+},
+{
+"start": 46.64,
+"end": 46.64,
+"word": "do",
+"p": 0.914,
+"segment": 1
+},
+{
+"start": 46.64,
+"end": 46.68,
+"word": "do",
+"p": 0.912,
+"segment": 1
+},
+{
+"start": 46.68,
+"end": 46.68,
+"word": "do",
+"p": 0.911,
+"segment": 1
+},
+{
+"start": 46.68,
+"end": 46.7,
+"word": "do",
+"p": 0.912,
+"segment": 1
+},
+{
+"start": 46.7,
+"end": 46.7,
+"word": "do",
+"p": 0.912,
+"segment": 1
+},
+{
+"start": 46.7,
+"end": 47.06,
+"word": "do",
+"p": 0.911,
+"segment": 1
+},
+{
+"start": 47.06,
+"end": 47.06,
+"word": "do",
+"p": 0.912,
+"segment": 1
+},
+{
+"start": 47.06,
+"end": 47.06,
+"word": "do",
+"p": 0.91,
+"segment": 1
+},
+{
+"start": 47.06,
+"end": 47.06,
+"word": "do",
+"p": 0.909,
+"segment": 1
+},
+{
+"start": 47.06,
+"end": 47.06,
+"word": "do",
+"p": 0.909,
+"segment": 1
+},
+{
+"start": 47.06,
+"end": 47.06,
+"word": "do",
+"p": 0.909,
+"segment": 1
+},
+{
+"start": 47.06,
+"end": 47.06,
+"word": "do",
+"p": 0.906,
+"segment": 1
+},
+{
+"start": 47.06,
+"end": 47.06,
+"word": "do",
+"p": 0.907,
+"segment": 1
+},
+{
+"start": 47.06,
+"end": 47.06,
+"word": "do",
+"p": 0.907,
+"segment": 1
+},
+{
+"start": 47.06,
+"end": 47.06,
+"word": "do",
+"p": 0.905,
+"segment": 1
+},
+{
+"start": 47.06,
+"end": 47.06,
+"word": "do",
+"p": 0.906,
+"segment": 1
+},
+{
+"start": 47.06,
+"end": 47.06,
+"word": "do",
+"p": 0.904,
+"segment": 1
+},
+{
+"start": 47.06,
+"end": 47.06,
+"word": "do",
+"p": 0.901,
+"segment": 1
+},
+{
+"start": 47.06,
+"end": 48.94,
+"word": "do",
+"p": 0.902,
+"segment": 1
+},
+{
+"start": 48.94,
+"end": 48.94,
+"word": "do",
+"p": 0.899,
+"segment": 1
+},
+{
+"start": 48.94,
+"end": 48.94,
+"word": "do",
+"p": 0.899,
+"segment": 1
+},
+{
+"start": 48.94,
+"end": 48.96,
+"word": "do",
+"p": 0.9,
+"segment": 1
+},
+{
+"start": 48.96,
+"end": 48.96,
+"word": "do",
+"p": 0.898,
+"segment": 1
+},
+{
+"start": 48.96,
+"end": 48.96,
+"word": "do",
+"p": 0.896,
+"segment": 1
+},
+{
+"start": 48.96,
+"end": 48.96,
+"word": "do",
+"p": 0.894,
+"segment": 1
+},
+{
+"start": 48.96,
+"end": 48.96,
+"word": "do",
+"p": 0.895,
+"segment": 1
+},
+{
+"start": 48.96,
+"end": 48.96,
+"word": "do",
+"p": 0.893,
+"segment": 1
+},
+{
+"start": 48.96,
+"end": 48.96,
+"word": "do",
+"p": 0.895,
+"segment": 1
+},
+{
+"start": 48.96,
+"end": 48.96,
+"word": "do",
+"p": 0.893,
+"segment": 1
+},
+{
+"start": 48.96,
+"end": 49.12,
+"word": "do",
+"p": 0.89,
+"segment": 1
+},
+{
+"start": 49.12,
+"end": 49.14,
+"word": "do",
+"p": 0.892,
+"segment": 1
+},
+{
+"start": 49.14,
+"end": 49.14,
+"word": "do",
+"p": 0.889,
+"segment": 1
+},
+{
+"start": 49.14,
+"end": 49.14,
+"word": "do",
+"p": 0.888,
+"segment": 1
+},
+{
+"start": 49.14,
+"end": 49.14,
+"word": "do",
+"p": 0.887,
+"segment": 1
+},
+{
+"start": 49.14,
+"end": 49.14,
+"word": "do",
+"p": 0.887,
+"segment": 1
+},
+{
+"start": 49.14,
+"end": 49.14,
+"word": "do",
+"p": 0.884,
+"segment": 1
+},
+{
+"start": 49.14,
+"end": 49.14,
+"word": "do",
+"p": 0.886,
+"segment": 1
+},
+{
+"start": 49.14,
+"end": 49.2,
+"word": "do",
+"p": 0.884,
+"segment": 1
+},
+{
+"start": 49.2,
+"end": 49.2,
+"word": "do",
+"p": 0.883,
+"segment": 1
+},
+{
+"start": 49.2,
+"end": 49.2,
+"word": "do",
+"p": 0.882,
+"segment": 1
+},
+{
+"start": 49.2,
+"end": 49.2,
+"word": "do",
+"p": 0.878,
+"segment": 1
+},
+{
+"start": 49.2,
+"end": 49.2,
+"word": "do",
+"p": 0.881,
+"segment": 1
+},
+{
+"start": 49.2,
+"end": 49.2,
+"word": "do",
+"p": 0.88,
+"segment": 1
+},
+{
+"start": 49.2,
+"end": 49.2,
+"word": "do",
+"p": 0.881,
+"segment": 1
+},
+{
+"start": 49.2,
+"end": 49.54,
+"word": "do",
+"p": 0.88,
+"segment": 1
+},
+{
+"start": 49.54,
+"end": 49.54,
+"word": "do",
+"p": 0.877,
+"segment": 1
+},
+{
+"start": 49.54,
+"end": 49.54,
+"word": "do",
+"p": 0.875,
+"segment": 1
+},
+{
+"start": 49.54,
+"end": 49.54,
+"word": "do",
+"p": 0.876,
+"segment": 1
+},
+{
+"start": 49.54,
+"end": 49.54,
+"word": "do",
+"p": 0.876,
+"segment": 1
+},
+{
+"start": 49.54,
+"end": 49.54,
+"word": "do",
+"p": 0.875,
+"segment": 1
+},
+{
+"start": 49.54,
+"end": 49.54,
+"word": "do",
+"p": 0.872,
+"segment": 1
+},
+{
+"start": 49.54,
+"end": 49.54,
+"word": "do",
+"p": 0.872,
+"segment": 1
+},
+{
+"start": 49.54,
+"end": 49.54,
+"word": "do",
+"p": 0.872,
+"segment": 1
+},
+{
+"start": 49.54,
+"end": 49.54,
+"word": "do",
+"p": 0.871,
+"segment": 1
+},
+{
+"start": 49.54,
+"end": 49.82,
+"word": "do",
+"p": 0.872,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.872,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.869,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.868,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.87,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.867,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.866,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.867,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.865,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.867,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.864,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.863,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.863,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.866,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.863,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 49.82,
+"word": "do",
+"p": 0.865,
+"segment": 1
+},
+{
+"start": 49.82,
+"end": 50.1,
+"word": "do",
+"p": 0.862,
+"segment": 1
+},
+{
+"start": 50.1,
+"end": 50.1,
+"word": "do",
+"p": 0.862,
+"segment": 1
+},
+{
+"start": 50.1,
+"end": 50.1,
+"word": "do",
+"p": 0.859,
+"segment": 1
+},
+{
+"start": 50.1,
+"end": 50.1,
+"word": "do",
+"p": 0.859,
+"segment": 1
+},
+{
+"start": 50.1,
+"end": 50.1,
+"word": "do",
+"p": 0.859,
+"segment": 1
+},
+{
+"start": 50.1,
+"end": 50.1,
+"word": "do",
+"p": 0.858,
+"segment": 1
+},
+{
+"start": 50.1,
+"end": 50.1,
+"word": "do",
+"p": 0.857,
+"segment": 1
+},
+{
+"start": 50.1,
+"end": 50.1,
+"word": "do",
+"p": 0.858,
+"segment": 1
+},
+{
+"start": 50.1,
+"end": 50.1,
+"word": "do",
+"p": 0.855,
+"segment": 1
+},
+{
+"start": 50.1,
+"end": 50.1,
+"word": "do",
+"p": 0.853,
+"segment": 1
+},
+{
+"start": 50.1,
+"end": 50.1,
+"word": "do",
+"p": 0.849,
+"segment": 1
+},
+{
+"start": 50.1,
+"end": 50.3,
+"word": "do",
+"p": 0.85,
+"segment": 1
+},
+{
+"start": 50.3,
+"end": 50.3,
+"word": "do",
+"p": 0.849,
+"segment": 1
+},
+{
+"start": 50.3,
+"end": 50.3,
+"word": "do",
+"p": 0.847,
+"segment": 1
+},
+{
+"start": 50.3,
+"end": 50.3,
+"word": "do",
+"p": 0.846,
+"segment": 1
+},
+{
+"start": 50.3,
+"end": 50.32,
+"word": "do",
+"p": 0.845,
+"segment": 1
+},
+{
+"start": 50.32,
+"end": 50.32,
+"word": "do",
+"p": 0.844,
+"segment": 1
+},
+{
+"start": 50.32,
+"end": 50.32,
+"word": "do",
+"p": 0.844,
+"segment": 1
+},
+{
+"start": 50.32,
+"end": 50.32,
+"word": "do",
+"p": 0.84,
+"segment": 1
+},
+{
+"start": 50.32,
+"end": 51.26,
+"word": "do",
+"p": 0.842,
+"segment": 1
+},
+{
+"start": 51.26,
+"end": 51.26,
+"word": "do",
+"p": 0.838,
+"segment": 1
+},
+{
+"start": 51.26,
+"end": 51.26,
+"word": "do",
+"p": 0.836,
+"segment": 1
+},
+{
+"start": 51.26,
+"end": 51.26,
+"word": "do",
+"p": 0.828,
+"segment": 1
+},
+{
+"start": 51.26,
+"end": 51.32,
+"word": "do",
+"p": 0.83,
+"segment": 1
+},
+{
+"start": 51.32,
+"end": 51.32,
+"word": "do",
+"p": 0.825,
+"segment": 1
+},
+{
+"start": 51.32,
+"end": 51.32,
+"word": "do",
+"p": 0.821,
+"segment": 1
+},
+{
+"start": 51.32,
+"end": 51.32,
+"word": "do",
+"p": 0.825,
+"segment": 1
+},
+{
+"start": 51.32,
+"end": 51.32,
+"word": "do",
+"p": 0.822,
+"segment": 1
+},
+{
+"start": 51.32,
+"end": 51.32,
+"word": "do",
+"p": 0.812,
+"segment": 1
+},
+{
+"start": 51.32,
+"end": 51.32,
+"word": "do",
+"p": 0.81,
+"segment": 1
+},
+{
+"start": 51.32,
+"end": 51.32,
+"word": "do",
+"p": 0.806,
+"segment": 1
+},
+{
+"start": 51.32,
+"end": 51.32,
+"word": "do",
+"p": 0.804,
+"segment": 1
+},
+{
+"start": 51.32,
+"end": 51.32,
+"word": "do",
+"p": 0.802,
+"segment": 1
+},
+{
+"start": 51.32,
+"end": 51.34,
+"word": "do",
+"p": 0.797,
+"segment": 1
+},
+{
+"start": 51.34,
+"end": 51.34,
+"word": "do",
+"p": 0.79,
+"segment": 1
+},
+{
+"start": 51.34,
+"end": 51.34,
+"word": "do",
+"p": 0.786,
+"segment": 1
+},
+{
+"start": 51.34,
+"end": 51.34,
+"word": "do",
+"p": 0.792,
+"segment": 1
+},
+{
+"start": 51.34,
+"end": 51.34,
+"word": "do",
+"p": 0.779,
+"segment": 1
+},
+{
+"start": 51.34,
+"end": 51.36,
+"word": "do",
+"p": 0.777,
+"segment": 1
+},
+{
+"start": 51.36,
+"end": 51.36,
+"word": "do",
+"p": 0.77,
+"segment": 1
+},
+{
+"start": 51.36,
+"end": 51.36,
+"word": "do",
+"p": 0.767,
+"segment": 1
+},
+{
+"start": 51.36,
+"end": 51.36,
+"word": "do",
+"p": 0.762,
+"segment": 1
+},
+{
+"start": 51.36,
+"end": 51.36,
+"word": "do",
+"p": 0.744,
+"segment": 1
+},
+{
+"start": 51.36,
+"end": 51.36,
+"word": "do",
+"p": 0.747,
+"segment": 1
+},
+{
+"start": 51.36,
+"end": 51.36,
+"word": "do",
+"p": 0.74,
+"segment": 1
+},
+{
+"start": 51.36,
+"end": 51.36,
+"word": "do",
+"p": 0.737,
+"segment": 1
+},
+{
+"start": 51.36,
+"end": 51.36,
+"word": "do",
+"p": 0.74,
+"segment": 1
+},
+{
+"start": 51.36,
+"end": 51.36,
+"word": "do",
+"p": 0.729,
+"segment": 1
+},
+{
+"start": 51.36,
+"end": 51.38,
+"word": "do",
+"p": 0.721,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.73,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.716,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.717,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.724,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.713,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.704,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.698,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.696,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.693,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.699,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.692,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.684,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.677,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.682,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.659,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.663,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.639,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.639,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.648,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.642,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.38,
+"word": "do",
+"p": 0.639,
+"segment": 1
+},
+{
+"start": 51.38,
+"end": 51.58,
+"word": "do",
+"p": 0.639,
+"segment": 1
+},
+{
+"start": 51.58,
+"end": 52.3,
+"word": "do",
+"p": 0.64,
+"segment": 1
+},
+{
+"start": 52.3,
+"end": 52.3,
+"word": "do",
+"p": 0.619,
+"segment": 1
+},
+{
+"start": 52.3,
+"end": 52.3,
+"word": "do",
+"p": 0.6,
+"segment": 1
+},
+{
+"start": 52.96,
+"end": 53.44,
+"word": "grandpa",
+"p": 0.079,
+"segment": 2
+},
+{
+"start": 53.44,
+"end": 53.92,
+"word": "shark",
+"p": 0.988,
+"segment": 2
+},
+{
+"start": 53.92,
+"end": 55.12,
+"word": "let's",
+"p": 0.829,
+"segment": 2
+},
+{
+"start": 55.12,
+"end": 55.36,
+"word": "go",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 55.36,
+"end": 55.9,
+"word": "hunt",
+"p": 0.515,
+"segment": 2
+},
+{
+"start": 55.9,
+"end": 56.12,
+"word": "do",
+"p": 0.209,
+"segment": 2
+},
+{
+"start": 56.12,
+"end": 56.32,
+"word": "do",
+"p": 0.772,
+"segment": 2
+},
+{
+"start": 56.32,
+"end": 56.62,
+"word": "do",
+"p": 0.803,
+"segment": 2
+},
+{
+"start": 56.62,
+"end": 56.82,
+"word": "do",
+"p": 0.835,
+"segment": 2
+},
+{
+"start": 56.82,
+"end": 57.02,
+"word": "do",
+"p": 0.757,
+"segment": 2
+},
+{
+"start": 57.02,
+"end": 57.44,
+"word": "let's",
+"p": 0.782,
+"segment": 2
+},
+{
+"start": 57.44,
+"end": 57.54,
+"word": "go",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 57.54,
+"end": 57.88,
+"word": "hunt",
+"p": 0.832,
+"segment": 2
+},
+{
+"start": 57.88,
+"end": 58.1,
+"word": "do",
+"p": 0.743,
+"segment": 2
+},
+{
+"start": 58.1,
+"end": 58.24,
+"word": "do",
+"p": 0.966,
+"segment": 2
+},
+{
+"start": 58.24,
+"end": 58.54,
+"word": "do",
+"p": 0.915,
+"segment": 2
+},
+{
+"start": 58.54,
+"end": 58.72,
+"word": "do",
+"p": 0.919,
+"segment": 2
+},
+{
+"start": 58.72,
+"end": 58.96,
+"word": "do",
+"p": 0.772,
+"segment": 2
+},
+{
+"start": 58.96,
+"end": 59.38,
+"word": "let's",
+"p": 0.888,
+"segment": 2
+},
+{
+"start": 59.38,
+"end": 59.54,
+"word": "go",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 59.54,
+"end": 59.76,
+"word": "hunt",
+"p": 0.869,
+"segment": 2
+},
+{
+"start": 60.82,
+"end": 61.3,
+"word": "let's",
+"p": 0.563,
+"segment": 3
+},
+{
+"start": 61.3,
+"end": 61.44,
+"word": "go",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 61.44,
+"end": 61.68,
+"word": "hunt",
+"p": 0.774,
+"segment": 3
+}
+]
+}
+]
+},
+"zh": {
+"settings": "d5ea1764c6571d9e",
+"language": "zh",
+"pieces": [
+{
+"start": 71.5,
+"end": 94.05,
+"hinted": [
+{
+"start": 72.3,
+"end": 72.7,
+"word": "鲨",
+"p": 0.207,
+"segment": 1
+},
+{
+"start": 72.7,
+"end": 73.1,
+"word": "鱼",
+"p": 0.812,
+"segment": 1
+},
+{
+"start": 73.1,
+"end": 73.7,
+"word": "爸爸",
+"p": 0.543,
+"segment": 1
+},
+{
+"start": 73.7,
+"end": 74.14,
+"word": "．",
+"p": 0.015,
+"segment": 1
+},
+{
+"start": 74.14,
+"end": 74.3,
+"word": "嘟",
+"p": 0.461,
+"segment": 1
+},
+{
+"start": 74.3,
+"end": 74.48,
+"word": "嘟",
+"p": 0.971,
+"segment": 1
+},
+{
+"start": 74.48,
+"end": 74.74,
+"word": "嘟",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 74.74,
+"end": 74.9,
+"word": "嘟",
+"p": 0.466,
+"segment": 1
+},
+{
+"start": 74.9,
+"end": 75.0,
+"word": "嘟",
+"p": 0.339,
+"segment": 1
+},
+{
+"start": 75.02,
+"end": 75.06,
+"word": "鲨",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 75.06,
+"end": 75.5,
+"word": "鱼",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 75.5,
+"end": 75.76,
+"word": "爸爸",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 75.76,
+"end": 76.08,
+"word": "．",
+"p": 0.771,
+"segment": 1
+},
+{
+"start": 76.08,
+"end": 76.14,
+"word": "嘟",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 76.14,
+"end": 76.3,
+"word": "嘟",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 76.3,
+"end": 76.46,
+"word": "嘟",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 76.46,
+"end": 76.68,
+"word": "嘟",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 76.68,
+"end": 76.82,
+"word": "嘟",
+"p": 0.598,
+"segment": 1
+},
+{
+"start": 76.82,
+"end": 77.06,
+"word": "鲨",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 77.06,
+"end": 77.52,
+"word": "鱼",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 77.52,
+"end": 77.52,
+"word": "爸爸",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 77.52,
+"end": 78.06,
+"word": "．",
+"p": 0.868,
+"segment": 1
+},
+{
+"start": 78.06,
+"end": 78.2,
+"word": "嘟",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 78.2,
+"end": 78.26,
+"word": "嘟",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 78.26,
+"end": 78.44,
+"word": "嘟",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 78.44,
+"end": 78.66,
+"word": "嘟",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 78.66,
+"end": 78.78,
+"word": "嘟",
+"p": 0.582,
+"segment": 1
+},
+{
+"start": 78.78,
+"end": 79.06,
+"word": "鲨",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 79.06,
+"end": 79.42,
+"word": "鱼",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 79.42,
+"end": 79.64,
+"word": "爸爸",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 79.64,
+"end": 79.74,
+"word": "．",
+"p": 0.897,
+"segment": 1
+},
+{
+"start": 79.74,
+"end": 79.74,
+"word": "嘟",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 79.74,
+"end": 79.74,
+"word": "嘟",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 79.74,
+"end": 79.78,
+"word": "嘟",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 79.78,
+"end": 79.82,
+"word": "嘟",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 80.02,
+"end": 80.54,
+"word": "鲨",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 80.54,
+"end": 81.26,
+"word": "鱼",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 81.26,
+"end": 81.78,
+"word": "爸爸",
+"p": 0.284,
+"segment": 1
+},
+{
+"start": 81.78,
+"end": 82.06,
+"word": "．",
+"p": 0.941,
+"segment": 1
+},
+{
+"start": 82.06,
+"end": 82.16,
+"word": "嘟",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 82.16,
+"end": 82.28,
+"word": "嘟",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 82.28,
+"end": 82.46,
+"word": "嘟",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 82.46,
+"end": 82.68,
+"word": "嘟",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 82.72,
+"end": 82.9,
+"word": "鲨",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 82.9,
+"end": 83.4,
+"word": "鱼",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 83.4,
+"end": 83.42,
+"word": "妈",
+"p": 0.665,
+"segment": 1
+},
+{
+"start": 83.42,
+"end": 83.58,
+"word": "妈",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 83.58,
+"end": 83.98,
+"word": "．",
+"p": 0.936,
+"segment": 1
+},
+{
+"start": 83.98,
+"end": 83.98,
+"word": "嘟",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 83.98,
+"end": 84.12,
+"word": "嘟",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 84.12,
+"end": 84.22,
+"word": "嘟",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 84.22,
+"end": 84.4,
+"word": "嘟",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 84.4,
+"end": 84.62,
+"word": "嘟",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 84.74,
+"end": 84.9,
+"word": "鲨",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 84.9,
+"end": 85.36,
+"word": "鱼",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 85.36,
+"end": 85.4,
+"word": "妈",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 85.4,
+"end": 85.68,
+"word": "妈",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 85.68,
+"end": 86.0,
+"word": "．",
+"p": 0.972,
+"segment": 1
+},
+{
+"start": 86.0,
+"end": 86.0,
+"word": "嘟",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 86.0,
+"end": 86.12,
+"word": "嘟",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 86.12,
+"end": 86.2,
+"word": "嘟",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 86.2,
+"end": 86.34,
+"word": "嘟",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 86.34,
+"end": 86.54,
+"word": "嘟",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 86.54,
+"end": 86.68,
+"word": "嘟",
+"p": 0.926,
+"segment": 1
+},
+{
+"start": 86.68,
+"end": 86.86,
+"word": "鲨",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 86.86,
+"end": 87.26,
+"word": "鱼",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 87.26,
+"end": 87.26,
+"word": "妈",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 87.26,
+"end": 87.66,
+"word": "妈",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 87.66,
+"end": 87.92,
+"word": "．",
+"p": 0.919,
+"segment": 1
+},
+{
+"start": 87.92,
+"end": 87.92,
+"word": "嘟",
+"p": 0.599,
+"segment": 1
+},
+{
+"start": 87.92,
+"end": 87.92,
+"word": "嘟",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 87.92,
+"end": 87.92,
+"word": "嘟",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 87.92,
+"end": 87.92,
+"word": "嘟",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 87.92,
+"end": 87.92,
+"word": "嘟",
+"p": 0.932,
+"segment": 1
+},
+{
+"start": 87.92,
+"end": 87.92,
+"word": "嘟",
+"p": 0.57,
+"segment": 1
+},
+{
+"start": 87.92,
+"end": 88.0,
+"word": "鲨",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 88.0,
+"end": 88.0,
+"word": "鱼",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 88.0,
+"end": 88.0,
+"word": "妈",
+"p": 0.109,
+"segment": 1
+},
+{
+"start": 88.0,
+"end": 88.0,
+"word": "妈",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 88.0,
+"end": 88.0,
+"word": "．",
+"p": 0.942,
+"segment": 1
+},
+{
+"start": 88.0,
+"end": 88.0,
+"word": "嘟",
+"p": 0.633,
+"segment": 1
+},
+{
+"start": 88.0,
+"end": 88.0,
+"word": "嘟",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 88.0,
+"end": 88.0,
+"word": "嘟",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 88.0,
+"end": 88.0,
+"word": "嘟",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 88.0,
+"end": 88.0,
+"word": "嘟",
+"p": 0.927,
+"segment": 1
+},
+{
+"start": 88.0,
+"end": 88.0,
+"word": "嘟",
+"p": 0.583,
+"segment": 1
+},
+{
+"start": 88.0,
+"end": 88.4,
+"word": "鲨",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 88.4,
+"end": 89.0,
+"word": "鱼",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 89.0,
+"end": 89.44,
+"word": "爸爸",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 89.44,
+"end": 89.92,
+"word": "．",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 89.92,
+"end": 90.24,
+"word": "嘟",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 90.24,
+"end": 90.24,
+"word": "嘟",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 90.24,
+"end": 90.44,
+"word": "嘟",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 90.44,
+"end": 90.56,
+"word": "嘟",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 90.56,
+"end": 91.68,
+"word": "嘟",
+"p": 0.85,
+"segment": 1
+},
+{
+"start": 92.56,
+"end": 92.8,
+"word": "鲨",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 92.8,
+"end": 92.94,
+"word": "i",
+"p": 0.098,
+"segment": 2
+},
+{
+"start": 92.94,
+"end": 93.06,
+"word": "hear",
+"p": 0.909,
+"segment": 2
+},
+{
+"start": 93.06,
+"end": 93.32,
+"word": "papa",
+"p": 0.678,
+"segment": 2
+},
+{
+"start": 93.32,
+"end": 93.7,
+"word": "do",
+"p": 0.362,
+"segment": 2
+},
+{
+"start": 93.7,
+"end": 93.94,
+"word": "do",
+"p": 0.834,
+"segment": 2
+},
+{
+"start": 93.94,
+"end": 94.06,
+"word": "do",
+"p": 0.957,
+"segment": 2
+},
+{
+"start": 94.06,
+"end": 94.2,
+"word": "do",
+"p": 0.934,
+"segment": 2
+}
+],
+"plain": []
+},
+{
+"start": 94.05,
+"end": 107.57,
+"hinted": [
+{
+"start": 93.75,
+"end": 93.87,
+"word": "嘟",
+"p": 0.497,
+"segment": 1
+},
+{
+"start": 93.87,
+"end": 93.99,
+"word": "嘟",
+"p": 0.817,
+"segment": 1
+},
+{
+"start": 93.99,
+"end": 94.33,
+"word": "嘟",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 94.33,
+"end": 94.59,
+"word": "嘟",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 94.59,
+"end": 94.67,
+"word": "嘟",
+"p": 0.71,
+"segment": 1
+},
+{
+"start": 94.67,
+"end": 94.91,
+"word": "嘟",
+"p": 0.502,
+"segment": 1
+},
+{
+"start": 94.91,
+"end": 94.99,
+"word": "嘟",
+"p": 0.716,
+"segment": 1
+},
+{
+"start": 94.99,
+"end": 95.35,
+"word": "嘟",
+"p": 0.826,
+"segment": 1
+},
+{
+"start": 95.35,
+"end": 95.47,
+"word": "嘟",
+"p": 0.879,
+"segment": 1
+},
+{
+"start": 95.47,
+"end": 96.01,
+"word": "嘟",
+"p": 0.911,
+"segment": 1
+},
+{
+"start": 96.01,
+"end": 96.13,
+"word": "嘟",
+"p": 0.936,
+"segment": 1
+},
+{
+"start": 96.13,
+"end": 96.33,
+"word": "嘟",
+"p": 0.954,
+"segment": 1
+},
+{
+"start": 96.33,
+"end": 96.61,
+"word": "嘟",
+"p": 0.967,
+"segment": 1
+},
+{
+"start": 96.61,
+"end": 96.79,
+"word": "嘟",
+"p": 0.975,
+"segment": 1
+},
+{
+"start": 96.79,
+"end": 97.09,
+"word": "嘟",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 97.09,
+"end": 99.39,
+"word": "嘟",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 99.39,
+"end": 99.51,
+"word": "嘟",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 99.51,
+"end": 99.51,
+"word": "嘟",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 99.51,
+"end": 99.77,
+"word": "嘟",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 99.77,
+"end": 100.07,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 100.07,
+"end": 100.07,
+"word": "嘟",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 100.07,
+"end": 100.07,
+"word": "嘟",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 100.07,
+"end": 100.37,
+"word": "嘟",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 100.37,
+"end": 100.43,
+"word": "嘟",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 100.43,
+"end": 100.43,
+"word": "嘟",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 100.43,
+"end": 100.43,
+"word": "嘟",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 100.43,
+"end": 100.71,
+"word": "嘟",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 100.71,
+"end": 100.97,
+"word": "嘟",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 100.97,
+"end": 100.97,
+"word": "嘟",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 100.97,
+"end": 101.33,
+"word": "嘟",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 101.33,
+"end": 101.33,
+"word": "嘟",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 101.33,
+"end": 101.33,
+"word": "嘟",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 101.33,
+"end": 101.35,
+"word": "嘟",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 101.35,
+"end": 101.35,
+"word": "嘟",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 101.35,
+"end": 101.61,
+"word": "嘟",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 101.61,
+"end": 101.61,
+"word": "嘟",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 101.61,
+"end": 101.63,
+"word": "嘟",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 101.63,
+"end": 101.63,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 101.63,
+"end": 101.99,
+"word": "嘟",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 101.99,
+"end": 101.99,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 101.99,
+"end": 101.99,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 101.99,
+"end": 101.99,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 101.99,
+"end": 101.99,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 101.99,
+"end": 101.99,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 101.99,
+"end": 102.39,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 102.39,
+"end": 102.39,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 102.39,
+"end": 102.39,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 102.39,
+"end": 102.39,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 102.39,
+"end": 102.59,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 102.59,
+"end": 102.59,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 102.59,
+"end": 102.59,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 102.59,
+"end": 102.85,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 102.85,
+"end": 102.85,
+"word": "嘟",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 102.85,
+"end": 102.85,
+"word": "嘟",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 102.85,
+"end": 102.85,
+"word": "嘟",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 102.85,
+"end": 102.85,
+"word": "嘟",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 102.85,
+"end": 103.11,
+"word": "嘟",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 103.11,
+"end": 103.11,
+"word": "嘟",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 103.11,
+"end": 103.11,
+"word": "嘟",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 103.11,
+"end": 103.11,
+"word": "嘟",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 103.11,
+"end": 103.11,
+"word": "嘟",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 103.11,
+"end": 103.11,
+"word": "嘟",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 103.11,
+"end": 103.11,
+"word": "嘟",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 103.11,
+"end": 103.41,
+"word": "嘟",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.41,
+"word": "嘟",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 103.41,
+"end": 103.49,
+"word": "嘟",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 103.49,
+"end": 103.49,
+"word": "嘟",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 103.49,
+"end": 103.49,
+"word": "嘟",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 103.49,
+"end": 103.49,
+"word": "嘟",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 103.49,
+"end": 103.49,
+"word": "嘟",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 103.49,
+"end": 103.49,
+"word": "嘟",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 103.49,
+"end": 103.49,
+"word": "嘟",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 103.49,
+"end": 103.71,
+"word": "嘟",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 103.71,
+"end": 103.71,
+"word": "嘟",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 103.71,
+"end": 103.81,
+"word": "嘟",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 103.81,
+"end": 103.81,
+"word": "嘟",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 103.81,
+"end": 104.09,
+"word": "嘟",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 104.09,
+"end": 104.09,
+"word": "嘟",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 104.09,
+"end": 104.09,
+"word": "嘟",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 104.09,
+"end": 104.13,
+"word": "嘟",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 104.13,
+"end": 104.13,
+"word": "嘟",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 104.13,
+"end": 104.13,
+"word": "嘟",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 104.13,
+"end": 104.13,
+"word": "嘟",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 104.13,
+"end": 104.13,
+"word": "嘟",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 104.13,
+"end": 104.15,
+"word": "嘟",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 104.15,
+"end": 104.51,
+"word": "嘟",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 104.51,
+"end": 104.51,
+"word": "嘟",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 104.51,
+"end": 105.79,
+"word": "嘟",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 105.79,
+"end": 105.79,
+"word": "嘟",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 105.79,
+"end": 105.79,
+"word": "嘟",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 105.79,
+"end": 105.79,
+"word": "嘟",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 105.79,
+"end": 105.79,
+"word": "嘟",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 105.79,
+"end": 105.79,
+"word": "嘟",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 105.79,
+"end": 105.79,
+"word": "嘟",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 105.79,
+"end": 105.79,
+"word": "嘟",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 105.79,
+"end": 106.95,
+"word": "嘟",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 106.95,
+"end": 106.95,
+"word": "�",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 106.95,
+"end": 107.85,
+"word": "字",
+"p": 0.009,
+"segment": 2
+},
+{
+"start": 107.85,
+"end": 107.85,
+"word": "幕",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 107.85,
+"end": 107.85,
+"word": "志",
+"p": 0.676,
+"segment": 2
+},
+{
+"start": 107.85,
+"end": 107.85,
+"word": "愿",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 107.85,
+"end": 107.85,
+"word": "者",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 107.85,
+"end": 107.85,
+"word": "李",
+"p": 0.135,
+"segment": 2
+},
+{
+"start": 107.85,
+"end": 107.85,
+"word": "宗",
+"p": 0.937,
+"segment": 2
+},
+{
+"start": 107.85,
+"end": 107.85,
+"word": "盛",
+"p": 0.998,
+"segment": 2
+}
+],
+"plain": []
+},
+{
+"start": 107.57,
+"end": 128.0,
+"hinted": [
+{
+"start": 111.27,
+"end": 111.91,
+"word": "赛",
+"p": 0.42,
+"segment": 1
+},
+{
+"start": 111.91,
+"end": 112.51,
+"word": "依",
+"p": 0.496,
+"segment": 1
+},
+{
+"start": 112.51,
+"end": 112.83,
+"word": "爷",
+"p": 0.008,
+"segment": 1
+},
+{
+"start": 112.83,
+"end": 113.13,
+"word": "爷",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 113.13,
+"end": 113.37,
+"word": "铎",
+"p": 0.181,
+"segment": 1
+},
+{
+"start": 113.37,
+"end": 113.55,
+"word": "铎",
+"p": 0.745,
+"segment": 1
+},
+{
+"start": 113.55,
+"end": 113.81,
+"word": "铎",
+"p": 0.942,
+"segment": 1
+},
+{
+"start": 113.81,
+"end": 114.03,
+"word": "铇",
+"p": 0.637,
+"segment": 1
+},
+{
+"start": 114.03,
+"end": 114.07,
+"word": "铎",
+"p": 0.854,
+"segment": 1
+},
+{
+"start": 114.07,
+"end": 114.41,
+"word": "铎",
+"p": 0.611,
+"segment": 1
+},
+{
+"start": 114.41,
+"end": 116.27,
+"word": "驱",
+"p": 0.17,
+"segment": 1
+},
+{
+"start": 116.27,
+"end": 116.59,
+"word": "张",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 116.59,
+"end": 116.59,
+"word": "颖",
+"p": 0.09,
+"segment": 1
+},
+{
+"start": 116.59,
+"end": 116.59,
+"word": "月",
+"p": 0.003,
+"segment": 1
+},
+{
+"start": 116.59,
+"end": 116.59,
+"word": "月",
+"p": 0.404,
+"segment": 1
+},
+{
+"start": 116.59,
+"end": 116.81,
+"word": "月",
+"p": 0.037,
+"segment": 1
+},
+{
+"start": 116.81,
+"end": 117.75,
+"word": "只",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 117.75,
+"end": 120.47,
+"word": "梦",
+"p": 0.444,
+"segment": 1
+},
+{
+"start": 120.47,
+"end": 120.49,
+"word": "见",
+"p": 0.056,
+"segment": 1
+},
+{
+"start": 120.49,
+"end": 120.49,
+"word": "我觉得",
+"p": 0.0,
+"segment": 2
+},
+{
+"start": 120.49,
+"end": 120.49,
+"word": "最",
+"p": 0.006,
+"segment": 2
+},
+{
+"start": 120.49,
+"end": 120.53,
+"word": "好",
+"p": 0.102,
+"segment": 2
+},
+{
+"start": 120.53,
+"end": 120.55,
+"word": "是",
+"p": 0.243,
+"segment": 2
+},
+{
+"start": 120.55,
+"end": 120.89,
+"word": "说",
+"p": 0.01,
+"segment": 2
+},
+{
+"start": 120.89,
+"end": 120.89,
+"word": "它",
+"p": 0.002,
+"segment": 2
+},
+{
+"start": 120.89,
+"end": 120.89,
+"word": "AR",
+"p": 0.0,
+"segment": 2
+},
+{
+"start": 120.89,
+"end": 120.89,
+"word": "MY",
+"p": 0.365,
+"segment": 2
+},
+{
+"start": 120.89,
+"end": 121.03,
+"word": "由",
+"p": 0.0,
+"segment": 3
+},
+{
+"start": 121.03,
+"end": 123.75,
+"word": "我",
+"p": 0.04,
+"segment": 3
+},
+{
+"start": 123.75,
+"end": 123.79,
+"word": "朝",
+"p": 0.0,
+"segment": 3
+},
+{
+"start": 123.79,
+"end": 124.35,
+"word": "铭",
+"p": 0.109,
+"segment": 3
+},
+{
+"start": 124.35,
+"end": 124.45,
+"word": "家",
+"p": 0.004,
+"segment": 3
+},
+{
+"start": 124.45,
+"end": 124.85,
+"word": "祖",
+"p": 0.323,
+"segment": 3
+},
+{
+"start": 124.85,
+"end": 126.03,
+"word": "方",
+"p": 0.001,
+"segment": 3
+},
+{
+"start": 126.03,
+"end": 126.57,
+"word": "蔓",
+"p": 0.02,
+"segment": 3
+},
+{
+"start": 126.57,
+"end": 126.57,
+"word": "延",
+"p": 0.756,
+"segment": 3
+},
+{
+"start": 127.03,
+"end": 127.11,
+"word": "中",
+"p": 0.016,
+"segment": 4
+},
+{
+"start": 127.11,
+"end": 127.11,
+"word": "文",
+"p": 0.993,
+"segment": 4
+},
+{
+"start": 127.11,
+"end": 127.13,
+"word": "字",
+"p": 0.995,
+"segment": 4
+},
+{
+"start": 127.13,
+"end": 127.13,
+"word": "幕",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 127.13,
+"end": 127.13,
+"word": "志",
+"p": 0.188,
+"segment": 4
+},
+{
+"start": 127.13,
+"end": 127.17,
+"word": "愿",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 127.17,
+"end": 127.19,
+"word": "者",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 127.19,
+"end": 127.19,
+"word": "李",
+"p": 0.552,
+"segment": 4
+},
+{
+"start": 127.19,
+"end": 127.85,
+"word": "宗",
+"p": 0.966,
+"segment": 4
+},
+{
+"start": 127.85,
+"end": 127.89,
+"word": "盛",
+"p": 0.998,
+"segment": 4
+}
+],
+"plain": [
+{
+"start": 110.45,
+"end": 111.85,
+"word": "上",
+"p": 0.002,
+"segment": 1
+},
+{
+"start": 111.85,
+"end": 112.21,
+"word": "海",
+"p": 0.28,
+"segment": 1
+},
+{
+"start": 112.21,
+"end": 112.83,
+"word": "爺",
+"p": 0.515,
+"segment": 1
+},
+{
+"start": 112.83,
+"end": 113.15,
+"word": "爺",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 113.15,
+"end": 113.89,
+"word": "詞",
+"p": 0.489,
+"segment": 2
+},
+{
+"start": 113.89,
+"end": 118.29,
+"word": "曲",
+"p": 0.49,
+"segment": 2
+},
+{
+"start": 118.29,
+"end": 118.29,
+"word": "李",
+"p": 0.145,
+"segment": 2
+},
+{
+"start": 118.29,
+"end": 119.19,
+"word": "宗",
+"p": 0.636,
+"segment": 2
+},
+{
+"start": 119.19,
+"end": 119.89,
+"word": "盛",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 119.89,
+"end": 120.07,
+"word": "發",
+"p": 0.313,
+"segment": 3
+},
+{
+"start": 120.07,
+"end": 120.51,
+"word": "力",
+"p": 0.188,
+"segment": 3
+},
+{
+"start": 120.51,
+"end": 120.77,
+"word": "氣",
+"p": 0.103,
+"segment": 3
+}
+]
+}
+]
+}
+}
+}

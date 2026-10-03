@@ -1,0 +1,1492 @@
+{
+"vocalSha256": "a40432dc9f6598d62288622aec3663566341a8b569c72dbe4bb61434fdf89455",
+"model": "large-v3",
+"blocks": {
+"en": {
+"settings": "c4d26f9e4c096ea8",
+"language": "en",
+"pieces": [
+{
+"start": 15.5,
+"end": 36.21,
+"hinted": [
+{
+"start": 16.84,
+"end": 18.0,
+"word": "sleeping?",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 19.1,
+"end": 19.4,
+"word": "Are",
+"p": 0.729,
+"segment": 1
+},
+{
+"start": 19.4,
+"end": 19.96,
+"word": "you",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 19.96,
+"end": 20.72,
+"word": "sleeping?",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 20.72,
+"end": 21.54,
+"word": "Brother",
+"p": 0.673,
+"segment": 1
+},
+{
+"start": 21.54,
+"end": 22.76,
+"word": "John,",
+"p": 0.928,
+"segment": 1
+},
+{
+"start": 23.2,
+"end": 23.78,
+"word": "Brother",
+"p": 0.851,
+"segment": 1
+},
+{
+"start": 23.78,
+"end": 25.12,
+"word": "John.",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 25.4,
+"end": 26.04,
+"word": "Morning",
+"p": 0.962,
+"segment": 1
+},
+{
+"start": 26.04,
+"end": 26.44,
+"word": "bells",
+"p": 0.927,
+"segment": 1
+},
+{
+"start": 26.44,
+"end": 26.76,
+"word": "are",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 26.76,
+"end": 27.38,
+"word": "ringing!",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 27.66,
+"end": 28.16,
+"word": "Morning",
+"p": 0.923,
+"segment": 1
+},
+{
+"start": 28.16,
+"end": 28.48,
+"word": "Morning",
+"p": 0.246,
+"segment": 2
+},
+{
+"start": 28.48,
+"end": 28.66,
+"word": "bells",
+"p": 0.929,
+"segment": 2
+},
+{
+"start": 28.66,
+"end": 28.86,
+"word": "are",
+"p": 0.922,
+"segment": 2
+},
+{
+"start": 28.86,
+"end": 29.52,
+"word": "ringing,",
+"p": 0.975,
+"segment": 2
+},
+{
+"start": 29.76,
+"end": 30.26,
+"word": "ding,",
+"p": 0.749,
+"segment": 2
+},
+{
+"start": 30.38,
+"end": 30.78,
+"word": "dang,",
+"p": 0.828,
+"segment": 2
+},
+{
+"start": 30.88,
+"end": 31.38,
+"word": "dong,",
+"p": 0.949,
+"segment": 2
+},
+{
+"start": 31.64,
+"end": 32.3,
+"word": "ding,",
+"p": 0.957,
+"segment": 2
+},
+{
+"start": 32.5,
+"end": 33.06,
+"word": "dang,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 33.06,
+"end": 33.62,
+"word": "dong.",
+"p": 0.994,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 16.6,
+"end": 17.5,
+"word": "Are",
+"p": 0.837,
+"segment": 1
+},
+{
+"start": 17.5,
+"end": 17.88,
+"word": "you",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 17.88,
+"end": 18.78,
+"word": "sleeping,",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 19.14,
+"end": 19.42,
+"word": "are",
+"p": 0.954,
+"segment": 1
+},
+{
+"start": 19.42,
+"end": 19.96,
+"word": "you",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 19.96,
+"end": 20.9,
+"word": "sleeping,",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 21.18,
+"end": 21.64,
+"word": "Brother",
+"p": 0.639,
+"segment": 1
+},
+{
+"start": 21.64,
+"end": 22.66,
+"word": "John,",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 23.22,
+"end": 23.88,
+"word": "Brother",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 23.88,
+"end": 25.12,
+"word": "John?",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 25.42,
+"end": 26.06,
+"word": "Morning",
+"p": 0.983,
+"segment": 2
+},
+{
+"start": 26.06,
+"end": 26.42,
+"word": "bells",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 26.42,
+"end": 26.78,
+"word": "are",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 26.78,
+"end": 27.38,
+"word": "ringing,",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 27.68,
+"end": 28.18,
+"word": "morning",
+"p": 0.914,
+"segment": 2
+},
+{
+"start": 28.18,
+"end": 28.58,
+"word": "bells",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 28.58,
+"end": 28.9,
+"word": "are",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 28.9,
+"end": 29.52,
+"word": "ringing,",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 29.84,
+"end": 30.38,
+"word": "Ding,",
+"p": 0.605,
+"segment": 2
+},
+{
+"start": 30.38,
+"end": 30.76,
+"word": "dang,",
+"p": 0.933,
+"segment": 2
+},
+{
+"start": 30.94,
+"end": 31.38,
+"word": "dong,",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 31.72,
+"end": 32.48,
+"word": "ding,",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 32.5,
+"end": 33.06,
+"word": "dang,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 33.06,
+"end": 33.64,
+"word": "dong.",
+"p": 0.998,
+"segment": 2
+}
+]
+},
+{
+"start": 36.21,
+"end": 57.0,
+"hinted": [
+{
+"start": 38.39,
+"end": 39.55,
+"word": "sleeping?",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 40.49,
+"end": 40.85,
+"word": "Are",
+"p": 0.697,
+"segment": 1
+},
+{
+"start": 40.85,
+"end": 41.39,
+"word": "you",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 41.39,
+"end": 42.13,
+"word": "sleeping?",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 42.13,
+"end": 42.99,
+"word": "Brother",
+"p": 0.735,
+"segment": 1
+},
+{
+"start": 42.99,
+"end": 44.27,
+"word": "John,",
+"p": 0.94,
+"segment": 1
+},
+{
+"start": 44.65,
+"end": 45.19,
+"word": "Brother",
+"p": 0.859,
+"segment": 1
+},
+{
+"start": 45.19,
+"end": 46.47,
+"word": "John.",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 46.83,
+"end": 47.43,
+"word": "Morning",
+"p": 0.967,
+"segment": 1
+},
+{
+"start": 47.43,
+"end": 47.81,
+"word": "bells",
+"p": 0.931,
+"segment": 1
+},
+{
+"start": 47.81,
+"end": 48.13,
+"word": "are",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 48.13,
+"end": 48.77,
+"word": "ringing!",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 48.97,
+"end": 49.55,
+"word": "Morning",
+"p": 0.9,
+"segment": 1
+},
+{
+"start": 49.55,
+"end": 49.89,
+"word": "Morning",
+"p": 0.139,
+"segment": 2
+},
+{
+"start": 49.89,
+"end": 50.05,
+"word": "bells",
+"p": 0.945,
+"segment": 2
+},
+{
+"start": 50.05,
+"end": 50.27,
+"word": "are",
+"p": 0.984,
+"segment": 2
+},
+{
+"start": 50.27,
+"end": 50.81,
+"word": "ringing,",
+"p": 0.987,
+"segment": 2
+},
+{
+"start": 51.17,
+"end": 51.75,
+"word": "ding",
+"p": 0.83,
+"segment": 2
+},
+{
+"start": 51.75,
+"end": 52.37,
+"word": "-dang",
+"p": 0.73,
+"segment": 2
+},
+{
+"start": 52.37,
+"end": 52.69,
+"word": "-dong,",
+"p": 0.976,
+"segment": 2
+},
+{
+"start": 53.17,
+"end": 53.83,
+"word": "ding",
+"p": 0.956,
+"segment": 2
+},
+{
+"start": 53.83,
+"end": 54.59,
+"word": "-dang",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 54.59,
+"end": 55.09,
+"word": "-dong.",
+"p": 0.996,
+"segment": 2
+}
+],
+"plain": [
+{
+"start": 37.45,
+"end": 38.85,
+"word": "are",
+"p": 0.047,
+"segment": 1
+},
+{
+"start": 38.85,
+"end": 39.29,
+"word": "you",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 39.29,
+"end": 40.15,
+"word": "sleeping",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 40.15,
+"end": 40.99,
+"word": "are",
+"p": 0.526,
+"segment": 1
+},
+{
+"start": 40.99,
+"end": 41.35,
+"word": "you",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 41.35,
+"end": 42.19,
+"word": "sleeping",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 42.19,
+"end": 43.05,
+"word": "brother",
+"p": 0.827,
+"segment": 1
+},
+{
+"start": 43.05,
+"end": 44.15,
+"word": "John",
+"p": 0.777,
+"segment": 1
+},
+{
+"start": 44.15,
+"end": 45.19,
+"word": "brother",
+"p": 0.843,
+"segment": 1
+},
+{
+"start": 45.19,
+"end": 46.27,
+"word": "John",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 46.27,
+"end": 47.41,
+"word": "morning",
+"p": 0.917,
+"segment": 1
+},
+{
+"start": 47.41,
+"end": 47.81,
+"word": "bells",
+"p": 0.967,
+"segment": 1
+},
+{
+"start": 47.81,
+"end": 48.15,
+"word": "are",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 48.15,
+"end": 48.69,
+"word": "ringing",
+"p": 0.986,
+"segment": 2
+},
+{
+"start": 48.69,
+"end": 49.61,
+"word": "morning",
+"p": 0.974,
+"segment": 2
+},
+{
+"start": 49.61,
+"end": 50.01,
+"word": "bells",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 50.01,
+"end": 50.31,
+"word": "are",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 50.31,
+"end": 50.79,
+"word": "ringing",
+"p": 0.992,
+"segment": 2
+},
+{
+"start": 50.79,
+"end": 51.71,
+"word": "ding",
+"p": 0.969,
+"segment": 2
+},
+{
+"start": 51.71,
+"end": 52.15,
+"word": "dang",
+"p": 0.468,
+"segment": 2
+},
+{
+"start": 52.15,
+"end": 52.73,
+"word": "dong",
+"p": 0.899,
+"segment": 2
+},
+{
+"start": 52.73,
+"end": 53.85,
+"word": "ding",
+"p": 0.978,
+"segment": 2
+},
+{
+"start": 53.85,
+"end": 54.35,
+"word": "dang",
+"p": 0.966,
+"segment": 2
+},
+{
+"start": 54.35,
+"end": 54.87,
+"word": "dong",
+"p": 0.91,
+"segment": 2
+}
+]
+}
+]
+},
+"zh": {
+"settings": "f3db4064e01c8566",
+"language": "zh",
+"pieces": [
+{
+"start": 62.0,
+"end": 79.08,
+"hinted": [
+{
+"start": 63.64,
+"end": 64.56,
+"word": "两",
+"p": 0.391,
+"segment": 1
+},
+{
+"start": 64.56,
+"end": 65.0,
+"word": "只",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 65.0,
+"end": 65.62,
+"word": "老",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 65.62,
+"end": 66.2,
+"word": "虎，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 66.46,
+"end": 66.84,
+"word": "两",
+"p": 0.282,
+"segment": 1
+},
+{
+"start": 66.84,
+"end": 67.16,
+"word": "只",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 67.16,
+"end": 67.72,
+"word": "老",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 67.72,
+"end": 68.26,
+"word": "虎，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 68.42,
+"end": 68.74,
+"word": "跑",
+"p": 0.93,
+"segment": 1
+},
+{
+"start": 68.74,
+"end": 69.24,
+"word": "得",
+"p": 0.928,
+"segment": 1
+},
+{
+"start": 69.24,
+"end": 69.9,
+"word": "快，",
+"p": 0.611,
+"segment": 1
+},
+{
+"start": 70.56,
+"end": 70.9,
+"word": "跑",
+"p": 0.25,
+"segment": 1
+},
+{
+"start": 70.9,
+"end": 71.44,
+"word": "得",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 71.44,
+"end": 72.04,
+"word": "快。",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 72.48,
+"end": 72.98,
+"word": "一",
+"p": 0.134,
+"segment": 1
+},
+{
+"start": 72.98,
+"end": 73.22,
+"word": "只",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 73.22,
+"end": 73.7,
+"word": "没有",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 73.7,
+"end": 74.32,
+"word": "耳",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 74.32,
+"end": 74.66,
+"word": "朵，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 75.02,
+"end": 75.1,
+"word": "一",
+"p": 0.516,
+"segment": 1
+},
+{
+"start": 75.1,
+"end": 75.38,
+"word": "只",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 75.38,
+"end": 75.88,
+"word": "没有",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 75.88,
+"end": 76.48,
+"word": "尾",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 76.48,
+"end": 76.74,
+"word": "巴，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 77.32,
+"end": 77.42,
+"word": "真",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 77.42,
+"end": 78.26,
+"word": "奇怪。",
+"p": 0.991,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 63.46,
+"end": 64.52,
+"word": "两",
+"p": 0.391,
+"segment": 1
+},
+{
+"start": 64.52,
+"end": 65.0,
+"word": "只",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 65.0,
+"end": 65.6,
+"word": "老",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 65.6,
+"end": 66.2,
+"word": "虎",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 66.2,
+"end": 66.66,
+"word": "两",
+"p": 0.201,
+"segment": 2
+},
+{
+"start": 66.66,
+"end": 67.12,
+"word": "只",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 67.12,
+"end": 67.72,
+"word": "老",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 67.72,
+"end": 68.26,
+"word": "虎",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 68.26,
+"end": 68.82,
+"word": "跑",
+"p": 0.966,
+"segment": 3
+},
+{
+"start": 68.82,
+"end": 69.22,
+"word": "得",
+"p": 0.936,
+"segment": 3
+},
+{
+"start": 69.22,
+"end": 69.9,
+"word": "开",
+"p": 0.556,
+"segment": 3
+},
+{
+"start": 69.9,
+"end": 70.88,
+"word": "跑",
+"p": 0.857,
+"segment": 4
+},
+{
+"start": 70.88,
+"end": 71.4,
+"word": "得",
+"p": 0.994,
+"segment": 4
+},
+{
+"start": 71.4,
+"end": 72.0,
+"word": "开",
+"p": 0.945,
+"segment": 4
+},
+{
+"start": 72.52,
+"end": 73.06,
+"word": "一",
+"p": 0.965,
+"segment": 5
+},
+{
+"start": 73.06,
+"end": 73.2,
+"word": "只",
+"p": 0.997,
+"segment": 5
+},
+{
+"start": 73.2,
+"end": 73.72,
+"word": "没有",
+"p": 0.999,
+"segment": 5
+},
+{
+"start": 73.72,
+"end": 74.32,
+"word": "耳",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 74.32,
+"end": 74.68,
+"word": "朵",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 74.68,
+"end": 75.16,
+"word": "一",
+"p": 0.986,
+"segment": 6
+},
+{
+"start": 75.16,
+"end": 75.34,
+"word": "只",
+"p": 0.998,
+"segment": 6
+},
+{
+"start": 75.34,
+"end": 76.0,
+"word": "没有",
+"p": 0.998,
+"segment": 6
+},
+{
+"start": 76.0,
+"end": 76.48,
+"word": "尾",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 76.48,
+"end": 76.74,
+"word": "巴",
+"p": 1.0,
+"segment": 6
+},
+{
+"start": 76.74,
+"end": 77.26,
+"word": "真",
+"p": 0.979,
+"segment": 7
+},
+{
+"start": 77.26,
+"end": 78.3,
+"word": "奇怪",
+"p": 0.999,
+"segment": 7
+}
+]
+},
+{
+"start": 79.08,
+"end": 100.0,
+"hinted": [
+{
+"start": 78.78,
+"end": 79.54,
+"word": "真",
+"p": 0.912,
+"segment": 1
+},
+{
+"start": 79.54,
+"end": 80.42,
+"word": "奇怪。",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 81.02,
+"end": 81.74,
+"word": "两",
+"p": 0.085,
+"segment": 1
+},
+{
+"start": 81.74,
+"end": 82.16,
+"word": "只",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 82.16,
+"end": 82.72,
+"word": "老",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 82.72,
+"end": 83.32,
+"word": "虎，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 83.62,
+"end": 84.02,
+"word": "两",
+"p": 0.26,
+"segment": 1
+},
+{
+"start": 84.02,
+"end": 84.28,
+"word": "只",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 84.28,
+"end": 84.82,
+"word": "老",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 84.82,
+"end": 85.38,
+"word": "虎，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 85.58,
+"end": 85.84,
+"word": "跑",
+"p": 0.971,
+"segment": 1
+},
+{
+"start": 85.84,
+"end": 86.44,
+"word": "得",
+"p": 0.936,
+"segment": 1
+},
+{
+"start": 86.44,
+"end": 87.02,
+"word": "快，",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 87.66,
+"end": 87.98,
+"word": "跑",
+"p": 0.319,
+"segment": 1
+},
+{
+"start": 87.98,
+"end": 88.56,
+"word": "得",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 88.56,
+"end": 89.1,
+"word": "快。",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 89.56,
+"end": 90.08,
+"word": "一",
+"p": 0.712,
+"segment": 1
+},
+{
+"start": 90.08,
+"end": 90.34,
+"word": "只",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 90.34,
+"end": 90.78,
+"word": "没有",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 90.78,
+"end": 91.48,
+"word": "耳",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 91.48,
+"end": 91.8,
+"word": "朵，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 92.18,
+"end": 92.26,
+"word": "一",
+"p": 0.408,
+"segment": 1
+},
+{
+"start": 92.26,
+"end": 92.5,
+"word": "只",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 92.5,
+"end": 93.02,
+"word": "没有",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 93.02,
+"end": 93.58,
+"word": "尾",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 93.58,
+"end": 93.9,
+"word": "巴，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 94.38,
+"end": 94.64,
+"word": "真",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 94.64,
+"end": 95.36,
+"word": "奇怪，",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 96.26,
+"end": 96.82,
+"word": "真",
+"p": 0.35,
+"segment": 1
+},
+{
+"start": 96.82,
+"end": 97.58,
+"word": "奇怪。",
+"p": 0.996,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 78.78,
+"end": 79.48,
+"word": "真",
+"p": 0.912,
+"segment": 1
+},
+{
+"start": 79.48,
+"end": 80.42,
+"word": "奇怪",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 80.92,
+"end": 81.68,
+"word": "两",
+"p": 0.248,
+"segment": 1
+},
+{
+"start": 81.68,
+"end": 82.16,
+"word": "只",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 82.16,
+"end": 82.72,
+"word": "老",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 82.72,
+"end": 83.34,
+"word": "虎",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 83.46,
+"end": 83.84,
+"word": "两",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 83.84,
+"end": 84.28,
+"word": "只",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 84.28,
+"end": 84.9,
+"word": "老",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 84.9,
+"end": 85.4,
+"word": "虎",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 85.4,
+"end": 86.0,
+"word": "跑",
+"p": 0.86,
+"segment": 2
+},
+{
+"start": 86.0,
+"end": 86.36,
+"word": "得",
+"p": 0.985,
+"segment": 2
+},
+{
+"start": 86.36,
+"end": 87.02,
+"word": "快",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 87.48,
+"end": 88.0,
+"word": "跑",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 88.0,
+"end": 88.62,
+"word": "得",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 88.62,
+"end": 89.14,
+"word": "快",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 89.14,
+"end": 90.14,
+"word": "一",
+"p": 0.489,
+"segment": 3
+},
+{
+"start": 90.14,
+"end": 90.3,
+"word": "只",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 90.3,
+"end": 90.78,
+"word": "没有",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 90.78,
+"end": 91.5,
+"word": "耳",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 91.5,
+"end": 91.8,
+"word": "朵",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 91.8,
+"end": 92.18,
+"word": "一",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 92.18,
+"end": 92.5,
+"word": "只",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 92.5,
+"end": 93.12,
+"word": "没有",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 93.12,
+"end": 93.62,
+"word": "尾",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 93.62,
+"end": 93.9,
+"word": "巴",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 93.9,
+"end": 94.38,
+"word": "真",
+"p": 0.997,
+"segment": 4
+},
+{
+"start": 94.38,
+"end": 95.4,
+"word": "奇怪",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 95.9,
+"end": 96.68,
+"word": "真",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 96.68,
+"end": 97.64,
+"word": "奇怪",
+"p": 1.0,
+"segment": 4
+}
+]
+}
+]
+}
+}
+}

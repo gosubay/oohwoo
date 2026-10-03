@@ -1,0 +1,125 @@
+{
+ "schema": 1,
+ "key": "baluobo",
+ "recording": "19. Ba Luo Bo",
+ "assets": {
+  "source": {
+   "path": "songs/19. Ba Luo Bo.mp3",
+   "sha256": "2c6196b03b6bd327b3a445f3e59b76da243d3af8c38e29d2894c8bd38f519f24"
+  },
+  "backing": {
+   "path": "audio/19. Ba Luo Bo.mp3",
+   "sha256": "15e4915ea78bcfb6bc87552c8aba30632de92b06f338eddeb11f622635d30a23"
+  },
+  "vocal": {
+   "path": "separated/vocals/19. Ba Luo Bo.mp3",
+   "sha256": "49ffa9fdf88e0559e7a8d956657efea284810e89e5402f3e8e3a7fa7519f6a26"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 7.5,
+   "end": 84.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "拔萝卜，拔萝卜。",
+      "嘿呦嘿呦，拔萝卜，",
+      "嘿呦嘿呦，拔不动。",
+      "老婆婆，快快来，",
+      "快来帮我们拔萝卜。"
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "拔萝卜，拔萝卜。",
+      "嘿呦嘿呦，拔萝卜，",
+      "嘿呦嘿呦，拔不动。",
+      "小姑娘，快快来，",
+      "快来帮我们拔萝卜。"
+     ]
+    },
+    {
+     "label": "Verse 3",
+     "lines": [
+      "拔萝卜，拔萝卜。",
+      "嘿呦嘿呦，拔萝卜，",
+      "嘿呦嘿呦，拔不动。",
+      "小花猫，快快来，",
+      "快来帮我们拔萝卜。"
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "拔萝卜，拔萝卜。",
+      "嘿呦嘿呦，拔萝卜，",
+      "嘿呦嘿呦，拔不动。",
+      "小鸭儿，快快来，",
+      "快来帮我们拔萝卜。"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en",
+   "language": "en",
+   "start": 85.5,
+   "end": 137.5,
+   "verses": [
+    {
+     "label": "Verse 5",
+     "lines": [
+      "Big Radish, Pull It Out",
+      "Heyo Heyo, Pull It Out",
+      "Grandmother, Join the line",
+      "Help us pull the Radish Out!"
+     ]
+    },
+    {
+     "label": "Verse 6",
+     "lines": [
+      "Big Radish, Pull It Out",
+      "Heyo Heyo, Pull It Out",
+      "Little Girl, Join the line",
+      "Help us pull the Radish Out!"
+     ]
+    },
+    {
+     "label": "Verse 7",
+     "lines": [
+      "Big Radish, Pull It Out",
+      "Heyo Heyo, Pull It Out",
+      "Kitty Cat, Join the line",
+      "Help us pull the Radish Out!"
+     ]
+    },
+    {
+     "label": "Verse 8",
+     "lines": [
+      "Big Radish, Pull It Out",
+      "Heyo Heyo, Pull It Out",
+      "Little Duck, Join the line",
+      "Help us pull the Radish Out!"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

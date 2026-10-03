@@ -1,0 +1,1940 @@
+{
+"vocalSha256": "f1f2d794607da981ee60c7017ccf908e0eaa476984f96f05b128253bba7e0b5b",
+"model": "large-v3",
+"blocks": {
+"en": {
+"settings": "ead5a953c49ccac9",
+"language": "en",
+"pieces": [
+{
+"start": 11.0,
+"end": 29.83,
+"hinted": [
+{
+"start": 12.34,
+"end": 13.04,
+"word": "black",
+"p": 0.002,
+"segment": 1
+},
+{
+"start": 13.04,
+"end": 13.74,
+"word": "sheep,",
+"p": 0.975,
+"segment": 1
+},
+{
+"start": 13.88,
+"end": 14.2,
+"word": "Have",
+"p": 0.013,
+"segment": 1
+},
+{
+"start": 14.2,
+"end": 14.5,
+"word": "you",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 14.5,
+"end": 14.86,
+"word": "any",
+"p": 0.945,
+"segment": 1
+},
+{
+"start": 14.86,
+"end": 15.24,
+"word": "wool?",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 15.7,
+"end": 16.4,
+"word": "Yes,",
+"p": 0.693,
+"segment": 1
+},
+{
+"start": 16.4,
+"end": 16.74,
+"word": "sir,",
+"p": 0.925,
+"segment": 1
+},
+{
+"start": 16.88,
+"end": 17.4,
+"word": "yes,",
+"p": 0.75,
+"segment": 1
+},
+{
+"start": 17.4,
+"end": 17.76,
+"word": "sir,",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 17.88,
+"end": 18.14,
+"word": "Three",
+"p": 0.329,
+"segment": 1
+},
+{
+"start": 18.14,
+"end": 18.78,
+"word": "bags",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 18.78,
+"end": 19.14,
+"word": "full.",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 19.54,
+"end": 20.24,
+"word": "One",
+"p": 0.969,
+"segment": 1
+},
+{
+"start": 20.24,
+"end": 20.68,
+"word": "for",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 20.68,
+"end": 20.92,
+"word": "the",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 20.92,
+"end": 21.58,
+"word": "master,",
+"p": 0.946,
+"segment": 1
+},
+{
+"start": 21.68,
+"end": 21.98,
+"word": "And",
+"p": 0.631,
+"segment": 1
+},
+{
+"start": 21.98,
+"end": 22.22,
+"word": "one",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 22.22,
+"end": 22.7,
+"word": "for",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 22.7,
+"end": 22.94,
+"word": "the",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 22.94,
+"end": 23.42,
+"word": "dame,",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 23.42,
+"end": 23.92,
+"word": "And",
+"p": 0.974,
+"segment": 1
+},
+{
+"start": 23.92,
+"end": 24.22,
+"word": "one",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 24.22,
+"end": 24.68,
+"word": "for",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 24.68,
+"end": 24.92,
+"word": "the",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 24.92,
+"end": 25.32,
+"word": "little",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 25.32,
+"end": 25.72,
+"word": "boy",
+"p": 0.975,
+"segment": 1
+},
+{
+"start": 25.72,
+"end": 25.94,
+"word": "who",
+"p": 0.073,
+"segment": 1
+},
+{
+"start": 25.94,
+"end": 26.28,
+"word": "lives",
+"p": 0.962,
+"segment": 1
+},
+{
+"start": 26.28,
+"end": 26.72,
+"word": "down",
+"p": 0.956,
+"segment": 1
+},
+{
+"start": 26.72,
+"end": 26.94,
+"word": "the",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 26.94,
+"end": 27.38,
+"word": "lane.",
+"p": 0.991,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 11.64,
+"end": 12.4,
+"word": "Baa,",
+"p": 0.669,
+"segment": 1
+},
+{
+"start": 12.4,
+"end": 12.92,
+"word": "baa,",
+"p": 0.947,
+"segment": 1
+},
+{
+"start": 12.92,
+"end": 13.32,
+"word": "black",
+"p": 0.966,
+"segment": 1
+},
+{
+"start": 13.32,
+"end": 13.76,
+"word": "sheep,",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 13.92,
+"end": 14.26,
+"word": "have",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 14.26,
+"end": 14.46,
+"word": "you",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 14.46,
+"end": 14.86,
+"word": "any",
+"p": 0.947,
+"segment": 1
+},
+{
+"start": 14.86,
+"end": 15.26,
+"word": "wool?",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 15.54,
+"end": 16.28,
+"word": "Yes",
+"p": 0.984,
+"segment": 2
+},
+{
+"start": 16.28,
+"end": 16.7,
+"word": "sir,",
+"p": 0.472,
+"segment": 2
+},
+{
+"start": 16.92,
+"end": 17.36,
+"word": "yes",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 17.36,
+"end": 17.72,
+"word": "sir,",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 17.9,
+"end": 18.16,
+"word": "three",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 18.16,
+"end": 18.78,
+"word": "bags",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 18.78,
+"end": 19.16,
+"word": "full",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 19.7,
+"end": 20.22,
+"word": "One",
+"p": 0.321,
+"segment": 3
+},
+{
+"start": 20.22,
+"end": 20.66,
+"word": "for",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 20.66,
+"end": 20.94,
+"word": "the",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 20.94,
+"end": 21.5,
+"word": "master",
+"p": 0.984,
+"segment": 3
+},
+{
+"start": 21.5,
+"end": 21.96,
+"word": "and",
+"p": 0.871,
+"segment": 3
+},
+{
+"start": 21.96,
+"end": 22.22,
+"word": "one",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 22.22,
+"end": 22.68,
+"word": "for",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 22.68,
+"end": 22.96,
+"word": "the",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 22.96,
+"end": 23.44,
+"word": "dame",
+"p": 0.996,
+"segment": 3
+},
+{
+"start": 23.44,
+"end": 23.82,
+"word": "And",
+"p": 0.953,
+"segment": 4
+},
+{
+"start": 23.82,
+"end": 24.2,
+"word": "one",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 24.2,
+"end": 24.68,
+"word": "for",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 24.68,
+"end": 24.94,
+"word": "the",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 24.94,
+"end": 25.3,
+"word": "little",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 25.3,
+"end": 25.72,
+"word": "boy",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 25.72,
+"end": 25.94,
+"word": "who",
+"p": 0.993,
+"segment": 4
+},
+{
+"start": 25.94,
+"end": 26.28,
+"word": "lives",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 26.28,
+"end": 26.72,
+"word": "down",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 26.72,
+"end": 26.94,
+"word": "the",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 26.94,
+"end": 27.32,
+"word": "lane",
+"p": 0.999,
+"segment": 4
+}
+]
+},
+{
+"start": 29.83,
+"end": 49.0,
+"hinted": [
+{
+"start": 32.37,
+"end": 33.05,
+"word": "black",
+"p": 0.001,
+"segment": 1
+},
+{
+"start": 33.05,
+"end": 33.73,
+"word": "sheep,",
+"p": 0.949,
+"segment": 1
+},
+{
+"start": 33.91,
+"end": 34.19,
+"word": "Have",
+"p": 0.01,
+"segment": 1
+},
+{
+"start": 34.19,
+"end": 34.51,
+"word": "you",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 34.51,
+"end": 34.89,
+"word": "any",
+"p": 0.968,
+"segment": 1
+},
+{
+"start": 34.89,
+"end": 35.27,
+"word": "wool?",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 35.71,
+"end": 36.39,
+"word": "Yes,",
+"p": 0.68,
+"segment": 1
+},
+{
+"start": 36.39,
+"end": 36.73,
+"word": "sir,",
+"p": 0.922,
+"segment": 1
+},
+{
+"start": 36.91,
+"end": 37.43,
+"word": "yes,",
+"p": 0.764,
+"segment": 1
+},
+{
+"start": 37.45,
+"end": 37.75,
+"word": "sir,",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 37.87,
+"end": 38.15,
+"word": "Three",
+"p": 0.291,
+"segment": 1
+},
+{
+"start": 38.15,
+"end": 38.81,
+"word": "bags",
+"p": 0.946,
+"segment": 1
+},
+{
+"start": 38.81,
+"end": 39.21,
+"word": "full.",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 39.59,
+"end": 40.27,
+"word": "One",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 40.27,
+"end": 40.71,
+"word": "for",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 40.71,
+"end": 40.93,
+"word": "the",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 40.93,
+"end": 41.59,
+"word": "master,",
+"p": 0.941,
+"segment": 1
+},
+{
+"start": 41.69,
+"end": 42.01,
+"word": "And",
+"p": 0.644,
+"segment": 1
+},
+{
+"start": 42.01,
+"end": 42.21,
+"word": "one",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 42.21,
+"end": 42.69,
+"word": "for",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 42.69,
+"end": 42.95,
+"word": "the",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 42.95,
+"end": 43.45,
+"word": "dame,",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 43.47,
+"end": 43.89,
+"word": "And",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 43.89,
+"end": 44.23,
+"word": "one",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 44.23,
+"end": 44.69,
+"word": "for",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 44.69,
+"end": 44.91,
+"word": "the",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 44.91,
+"end": 45.37,
+"word": "little",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 45.37,
+"end": 45.71,
+"word": "boy",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 45.71,
+"end": 45.93,
+"word": "who",
+"p": 0.085,
+"segment": 1
+},
+{
+"start": 45.93,
+"end": 46.27,
+"word": "lives",
+"p": 0.966,
+"segment": 1
+},
+{
+"start": 46.27,
+"end": 46.71,
+"word": "down",
+"p": 0.946,
+"segment": 1
+},
+{
+"start": 46.71,
+"end": 46.93,
+"word": "the",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 46.93,
+"end": 47.35,
+"word": "lane.",
+"p": 0.992,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 31.65,
+"end": 32.41,
+"word": "Baa,",
+"p": 0.611,
+"segment": 1
+},
+{
+"start": 32.41,
+"end": 32.93,
+"word": "baa,",
+"p": 0.939,
+"segment": 1
+},
+{
+"start": 32.93,
+"end": 33.33,
+"word": "black",
+"p": 0.924,
+"segment": 1
+},
+{
+"start": 33.33,
+"end": 33.75,
+"word": "sheep,",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 33.93,
+"end": 34.27,
+"word": "have",
+"p": 0.97,
+"segment": 1
+},
+{
+"start": 34.27,
+"end": 34.51,
+"word": "you",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 34.51,
+"end": 34.89,
+"word": "any",
+"p": 0.967,
+"segment": 1
+},
+{
+"start": 34.89,
+"end": 35.27,
+"word": "wool?",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 35.53,
+"end": 36.29,
+"word": "Yes",
+"p": 0.968,
+"segment": 2
+},
+{
+"start": 36.29,
+"end": 36.69,
+"word": "sir,",
+"p": 0.57,
+"segment": 2
+},
+{
+"start": 36.93,
+"end": 37.43,
+"word": "yes",
+"p": 0.989,
+"segment": 2
+},
+{
+"start": 37.43,
+"end": 37.73,
+"word": "sir,",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 37.91,
+"end": 38.17,
+"word": "three",
+"p": 0.985,
+"segment": 2
+},
+{
+"start": 38.17,
+"end": 38.81,
+"word": "bags",
+"p": 0.974,
+"segment": 2
+},
+{
+"start": 38.81,
+"end": 39.21,
+"word": "full",
+"p": 0.991,
+"segment": 2
+},
+{
+"start": 39.21,
+"end": 40.23,
+"word": "One",
+"p": 0.321,
+"segment": 3
+},
+{
+"start": 40.23,
+"end": 40.67,
+"word": "for",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 40.67,
+"end": 40.95,
+"word": "the",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 40.95,
+"end": 41.55,
+"word": "master",
+"p": 0.97,
+"segment": 3
+},
+{
+"start": 41.55,
+"end": 41.97,
+"word": "and",
+"p": 0.821,
+"segment": 3
+},
+{
+"start": 41.97,
+"end": 42.23,
+"word": "one",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 42.23,
+"end": 42.69,
+"word": "for",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 42.69,
+"end": 42.97,
+"word": "the",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 42.97,
+"end": 43.41,
+"word": "dame",
+"p": 0.996,
+"segment": 3
+},
+{
+"start": 43.41,
+"end": 43.85,
+"word": "And",
+"p": 0.929,
+"segment": 4
+},
+{
+"start": 43.85,
+"end": 44.21,
+"word": "one",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 44.21,
+"end": 44.69,
+"word": "for",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 44.69,
+"end": 44.91,
+"word": "the",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 44.91,
+"end": 45.35,
+"word": "little",
+"p": 0.997,
+"segment": 4
+},
+{
+"start": 45.35,
+"end": 45.71,
+"word": "boy",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 45.71,
+"end": 45.97,
+"word": "who",
+"p": 0.987,
+"segment": 4
+},
+{
+"start": 45.97,
+"end": 46.27,
+"word": "lives",
+"p": 0.996,
+"segment": 4
+},
+{
+"start": 46.27,
+"end": 46.71,
+"word": "down",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 46.71,
+"end": 46.95,
+"word": "the",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 46.95,
+"end": 47.33,
+"word": "lane",
+"p": 0.998,
+"segment": 4
+}
+]
+}
+]
+},
+"zh": {
+"settings": "d012175e0a01219a",
+"language": "zh",
+"pieces": [
+{
+"start": 55.0,
+"end": 73.85,
+"hinted": [
+{
+"start": 55.74,
+"end": 56.42,
+"word": "咩",
+"p": 0.464,
+"segment": 1
+},
+{
+"start": 56.42,
+"end": 56.92,
+"word": "咩",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 56.92,
+"end": 57.32,
+"word": "黑",
+"p": 0.283,
+"segment": 1
+},
+{
+"start": 57.32,
+"end": 57.92,
+"word": "羊，",
+"p": 0.648,
+"segment": 1
+},
+{
+"start": 58.18,
+"end": 58.44,
+"word": "你有",
+"p": 0.51,
+"segment": 1
+},
+{
+"start": 58.44,
+"end": 58.82,
+"word": "羊",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 58.82,
+"end": 58.98,
+"word": "毛",
+"p": 0.936,
+"segment": 1
+},
+{
+"start": 58.98,
+"end": 59.3,
+"word": "吗，",
+"p": 0.297,
+"segment": 1
+},
+{
+"start": 59.84,
+"end": 60.42,
+"word": "有",
+"p": 0.018,
+"segment": 1
+},
+{
+"start": 60.42,
+"end": 60.78,
+"word": "啊，",
+"p": 0.918,
+"segment": 1
+},
+{
+"start": 61.16,
+"end": 61.46,
+"word": "有",
+"p": 0.393,
+"segment": 1
+},
+{
+"start": 61.46,
+"end": 61.76,
+"word": "啊，",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 62.0,
+"end": 62.14,
+"word": "三",
+"p": 0.765,
+"segment": 1
+},
+{
+"start": 62.14,
+"end": 62.7,
+"word": "整",
+"p": 0.168,
+"segment": 1
+},
+{
+"start": 62.7,
+"end": 63.36,
+"word": "袋。",
+"p": 0.955,
+"segment": 1
+},
+{
+"start": 63.52,
+"end": 64.18,
+"word": "一",
+"p": 0.067,
+"segment": 1
+},
+{
+"start": 64.18,
+"end": 64.8,
+"word": "袋",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 64.8,
+"end": 64.96,
+"word": "给",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 64.96,
+"end": 65.54,
+"word": "先生，",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 66.1,
+"end": 66.26,
+"word": "一",
+"p": 0.757,
+"segment": 1
+},
+{
+"start": 66.26,
+"end": 66.52,
+"word": "袋",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 66.52,
+"end": 66.68,
+"word": "给",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 66.68,
+"end": 66.9,
+"word": "夫",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 66.9,
+"end": 67.22,
+"word": "人，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 67.8,
+"end": 68.34,
+"word": "一",
+"p": 0.228,
+"segment": 1
+},
+{
+"start": 68.34,
+"end": 68.76,
+"word": "袋",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 68.76,
+"end": 68.96,
+"word": "给",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 68.96,
+"end": 69.3,
+"word": "巷",
+"p": 0.649,
+"segment": 1
+},
+{
+"start": 69.3,
+"end": 69.64,
+"word": "里",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 69.64,
+"end": 69.88,
+"word": "的",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 69.88,
+"end": 70.14,
+"word": "小",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 70.14,
+"end": 70.72,
+"word": "男",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 70.72,
+"end": 71.26,
+"word": "孩。",
+"p": 0.977,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 55.52,
+"end": 56.32,
+"word": "妹",
+"p": 0.757,
+"segment": 1
+},
+{
+"start": 56.32,
+"end": 56.92,
+"word": "妹",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 56.96,
+"end": 57.36,
+"word": "嘿",
+"p": 0.829,
+"segment": 1
+},
+{
+"start": 57.36,
+"end": 57.76,
+"word": "呀",
+"p": 0.931,
+"segment": 1
+},
+{
+"start": 57.76,
+"end": 58.2,
+"word": "你",
+"p": 0.644,
+"segment": 1
+},
+{
+"start": 58.2,
+"end": 58.46,
+"word": "有",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 58.46,
+"end": 58.82,
+"word": "羊",
+"p": 0.848,
+"segment": 1
+},
+{
+"start": 58.82,
+"end": 59.0,
+"word": "毛",
+"p": 0.923,
+"segment": 1
+},
+{
+"start": 59.0,
+"end": 59.3,
+"word": "嗎",
+"p": 0.39,
+"segment": 1
+},
+{
+"start": 59.3,
+"end": 60.24,
+"word": "有",
+"p": 0.81,
+"segment": 2
+},
+{
+"start": 60.24,
+"end": 60.86,
+"word": "啊",
+"p": 0.927,
+"segment": 2
+},
+{
+"start": 60.86,
+"end": 61.26,
+"word": "有",
+"p": 0.653,
+"segment": 2
+},
+{
+"start": 61.26,
+"end": 61.82,
+"word": "啊",
+"p": 0.994,
+"segment": 2
+},
+{
+"start": 61.88,
+"end": 62.14,
+"word": "三",
+"p": 0.989,
+"segment": 2
+},
+{
+"start": 62.14,
+"end": 62.78,
+"word": "針",
+"p": 0.675,
+"segment": 2
+},
+{
+"start": 62.78,
+"end": 63.42,
+"word": "戴",
+"p": 0.767,
+"segment": 2
+},
+{
+"start": 63.42,
+"end": 64.26,
+"word": "一",
+"p": 0.988,
+"segment": 3
+},
+{
+"start": 64.26,
+"end": 64.78,
+"word": "戴",
+"p": 0.915,
+"segment": 3
+},
+{
+"start": 64.78,
+"end": 64.94,
+"word": "給",
+"p": 0.989,
+"segment": 3
+},
+{
+"start": 64.94,
+"end": 65.4,
+"word": "先生",
+"p": 0.992,
+"segment": 3
+},
+{
+"start": 65.4,
+"end": 66.14,
+"word": "一",
+"p": 0.904,
+"segment": 3
+},
+{
+"start": 66.14,
+"end": 66.5,
+"word": "戴",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 66.5,
+"end": 66.68,
+"word": "給",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 66.68,
+"end": 66.9,
+"word": "夫",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 66.9,
+"end": 67.26,
+"word": "人",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 67.26,
+"end": 68.2,
+"word": "一",
+"p": 0.918,
+"segment": 4
+},
+{
+"start": 68.2,
+"end": 68.74,
+"word": "戴",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 68.74,
+"end": 68.96,
+"word": "給",
+"p": 0.997,
+"segment": 4
+},
+{
+"start": 68.96,
+"end": 69.26,
+"word": "鄉",
+"p": 0.634,
+"segment": 4
+},
+{
+"start": 69.26,
+"end": 69.68,
+"word": "里",
+"p": 0.861,
+"segment": 4
+},
+{
+"start": 69.68,
+"end": 69.9,
+"word": "的",
+"p": 0.993,
+"segment": 4
+},
+{
+"start": 69.9,
+"end": 70.14,
+"word": "小",
+"p": 0.989,
+"segment": 4
+},
+{
+"start": 70.14,
+"end": 70.72,
+"word": "男",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 70.72,
+"end": 71.26,
+"word": "孩",
+"p": 0.998,
+"segment": 4
+}
+]
+},
+{
+"start": 73.85,
+"end": 93.0,
+"hinted": [
+{
+"start": 75.71,
+"end": 76.39,
+"word": "咩",
+"p": 0.483,
+"segment": 1
+},
+{
+"start": 76.39,
+"end": 76.87,
+"word": "咩",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 76.87,
+"end": 77.27,
+"word": "黑",
+"p": 0.633,
+"segment": 1
+},
+{
+"start": 77.27,
+"end": 77.87,
+"word": "羊，",
+"p": 0.684,
+"segment": 1
+},
+{
+"start": 78.19,
+"end": 78.45,
+"word": "你有",
+"p": 0.186,
+"segment": 1
+},
+{
+"start": 78.45,
+"end": 78.83,
+"word": "羊",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 78.83,
+"end": 78.99,
+"word": "毛",
+"p": 0.95,
+"segment": 1
+},
+{
+"start": 78.99,
+"end": 79.29,
+"word": "吗，",
+"p": 0.34,
+"segment": 1
+},
+{
+"start": 79.79,
+"end": 80.37,
+"word": "有",
+"p": 0.013,
+"segment": 1
+},
+{
+"start": 80.37,
+"end": 80.81,
+"word": "啊，",
+"p": 0.904,
+"segment": 1
+},
+{
+"start": 81.15,
+"end": 81.43,
+"word": "有",
+"p": 0.464,
+"segment": 1
+},
+{
+"start": 81.43,
+"end": 81.77,
+"word": "啊，",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 81.99,
+"end": 82.11,
+"word": "三",
+"p": 0.772,
+"segment": 1
+},
+{
+"start": 82.11,
+"end": 82.69,
+"word": "整",
+"p": 0.192,
+"segment": 1
+},
+{
+"start": 82.69,
+"end": 83.37,
+"word": "袋。",
+"p": 0.948,
+"segment": 1
+},
+{
+"start": 83.51,
+"end": 84.19,
+"word": "一",
+"p": 0.065,
+"segment": 1
+},
+{
+"start": 84.19,
+"end": 84.79,
+"word": "袋",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 84.79,
+"end": 84.95,
+"word": "给",
+"p": 0.971,
+"segment": 1
+},
+{
+"start": 84.95,
+"end": 85.45,
+"word": "先生，",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 86.09,
+"end": 86.27,
+"word": "一",
+"p": 0.768,
+"segment": 1
+},
+{
+"start": 86.27,
+"end": 86.51,
+"word": "袋",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 86.51,
+"end": 86.69,
+"word": "给",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 86.69,
+"end": 86.89,
+"word": "夫",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 86.89,
+"end": 87.23,
+"word": "人，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 87.77,
+"end": 88.33,
+"word": "一",
+"p": 0.256,
+"segment": 1
+},
+{
+"start": 88.33,
+"end": 88.77,
+"word": "袋",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 88.77,
+"end": 88.95,
+"word": "给",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 88.95,
+"end": 89.27,
+"word": "巷",
+"p": 0.652,
+"segment": 1
+},
+{
+"start": 89.27,
+"end": 89.63,
+"word": "里",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 89.63,
+"end": 89.87,
+"word": "的",
+"p": 0.975,
+"segment": 1
+},
+{
+"start": 89.87,
+"end": 90.13,
+"word": "小",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 90.13,
+"end": 90.71,
+"word": "男",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 90.71,
+"end": 91.27,
+"word": "孩。",
+"p": 0.976,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 75.55,
+"end": 76.35,
+"word": "梅",
+"p": 0.519,
+"segment": 1
+},
+{
+"start": 76.35,
+"end": 76.87,
+"word": "梅",
+"p": 0.967,
+"segment": 1
+},
+{
+"start": 76.89,
+"end": 77.31,
+"word": "黑",
+"p": 0.913,
+"segment": 1
+},
+{
+"start": 77.31,
+"end": 77.91,
+"word": "羊",
+"p": 0.683,
+"segment": 1
+},
+{
+"start": 77.91,
+"end": 78.23,
+"word": "你",
+"p": 0.614,
+"segment": 1
+},
+{
+"start": 78.23,
+"end": 78.49,
+"word": "有",
+"p": 0.965,
+"segment": 1
+},
+{
+"start": 78.49,
+"end": 78.83,
+"word": "羊",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 78.83,
+"end": 78.99,
+"word": "毛",
+"p": 0.935,
+"segment": 1
+},
+{
+"start": 78.99,
+"end": 79.29,
+"word": "吗",
+"p": 0.357,
+"segment": 1
+},
+{
+"start": 79.29,
+"end": 80.23,
+"word": "有",
+"p": 0.807,
+"segment": 2
+},
+{
+"start": 80.23,
+"end": 80.83,
+"word": "啊",
+"p": 0.979,
+"segment": 2
+},
+{
+"start": 80.83,
+"end": 81.27,
+"word": "有",
+"p": 0.551,
+"segment": 2
+},
+{
+"start": 81.27,
+"end": 81.77,
+"word": "啊",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 81.85,
+"end": 82.13,
+"word": "三",
+"p": 0.993,
+"segment": 2
+},
+{
+"start": 82.13,
+"end": 82.69,
+"word": "整",
+"p": 0.215,
+"segment": 2
+},
+{
+"start": 82.69,
+"end": 83.39,
+"word": "袋",
+"p": 0.912,
+"segment": 2
+},
+{
+"start": 83.39,
+"end": 84.35,
+"word": "一",
+"p": 0.994,
+"segment": 3
+},
+{
+"start": 84.35,
+"end": 84.79,
+"word": "袋",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 84.79,
+"end": 84.97,
+"word": "给",
+"p": 0.993,
+"segment": 3
+},
+{
+"start": 84.97,
+"end": 85.39,
+"word": "先生",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 85.39,
+"end": 86.13,
+"word": "一",
+"p": 0.926,
+"segment": 3
+},
+{
+"start": 86.13,
+"end": 86.51,
+"word": "袋",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 86.51,
+"end": 86.67,
+"word": "给",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 86.67,
+"end": 86.89,
+"word": "夫",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 86.89,
+"end": 87.25,
+"word": "人",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 87.25,
+"end": 88.17,
+"word": "一",
+"p": 0.951,
+"segment": 4
+},
+{
+"start": 88.17,
+"end": 88.77,
+"word": "袋",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 88.77,
+"end": 88.93,
+"word": "给",
+"p": 0.995,
+"segment": 4
+},
+{
+"start": 88.93,
+"end": 89.29,
+"word": "巷",
+"p": 0.611,
+"segment": 4
+},
+{
+"start": 89.29,
+"end": 89.63,
+"word": "里",
+"p": 0.997,
+"segment": 4
+},
+{
+"start": 89.63,
+"end": 89.89,
+"word": "的",
+"p": 0.992,
+"segment": 4
+},
+{
+"start": 89.89,
+"end": 90.13,
+"word": "小",
+"p": 0.99,
+"segment": 4
+},
+{
+"start": 90.13,
+"end": 90.71,
+"word": "男",
+"p": 0.998,
+"segment": 4
+},
+{
+"start": 90.71,
+"end": 91.27,
+"word": "孩",
+"p": 0.998,
+"segment": 4
+}
+]
+}
+]
+}
+}
+}

@@ -1,0 +1,85 @@
+{
+ "schema": 1,
+ "key": "baabaa",
+ "recording": "7. Baa Baa Black Sheep",
+ "assets": {
+  "source": {
+   "path": "songs/7. Baa Baa Black Sheep.mp3",
+   "sha256": "4ec0c9027fbae09e7069fa08c1ed77974daa11d14824e671c80e31e6cd247375"
+  },
+  "backing": {
+   "path": "audio/7. Baa Baa Black Sheep.mp3",
+   "sha256": "fc7ed8603373151c6f68cb9d04c0d52d09ac2237e01dd8a3c58752c00c877c5c"
+  },
+  "vocal": {
+   "path": "separated/vocals/7. Baa Baa Black Sheep.mp3",
+   "sha256": "f1f2d794607da981ee60c7017ccf908e0eaa476984f96f05b128253bba7e0b5b"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 11.0,
+   "end": 49.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "Baa, baa, black sheep, Have you any wool?",
+      "Yes, sir, yes, sir, Three bags full.",
+      "One for the master, And one for the dame,",
+      "And one for the little boy who lives down the lane."
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "Baa, baa, black sheep, Have you any wool?",
+      "Yes, sir, yes, sir, Three bags full.",
+      "One for the master, And one for the dame,",
+      "And one for the little boy who lives down the lane."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 55.0,
+   "end": 93.0,
+   "verses": [
+    {
+     "label": "Verse 3",
+     "lines": [
+      "咩咩黑羊，你有羊毛吗？",
+      "有啊，有啊，三整袋。",
+      "一袋给先生，一袋给夫人，",
+      "一袋给巷里的小男孩。"
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "咩咩黑羊，你有羊毛吗？",
+      "有啊，有啊，三整袋。",
+      "一袋给先生，一袋给夫人，",
+      "一袋给巷里的小男孩。"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "schema": 1,
+ "key": "humptydumpty",
+ "recording": "3. Humpty Dumpty",
+ "assets": {
+  "source": {
+   "path": "songs/3. Humpty Dumpty.mp3",
+   "sha256": "d579a65cb5ebd851c5e536fda64087818dcea3c7fe9f840c29485def07b7108a"
+  },
+  "backing": {
+   "path": "audio/3. Humpty Dumpty.mp3",
+   "sha256": "a32aadb2f1f2c18bdca3cf9e178d3d52043e9d818920971f63194d05702cac0a"
+  },
+  "vocal": {
+   "path": "separated/vocals/3. Humpty Dumpty.mp3",
+   "sha256": "67df0f534db9b4757a0cc1436af6eaa30a41815959793baca2d01e5ee00fda3e"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 13.0,
+   "end": 44.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "Humpty Dumpty sat on a wall,",
+      "Humpty Dumpty had a great fall.",
+      "All the king's horses and all the king's men",
+      "Couldn't put Humpty together again."
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "Humpty Dumpty sat on a wall,",
+      "Humpty Dumpty had a great fall.",
+      "All the king's horses and all the king's men",
+      "Couldn't put Humpty together again."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 44.5,
+   "end": 76.0,
+   "verses": [
+    {
+     "label": "Verse 3",
+     "lines": [
+      "胖蛋儿坐在墙上，",
+      "突然，胖蛋儿摔在地上。",
+      "国王所有的随从和马儿，",
+      "无法把胖蛋儿再粘好。"
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "胖蛋儿坐在墙上，",
+      "突然，胖蛋儿摔在地上。",
+      "国王所有的随从和马儿，",
+      "无法把胖蛋儿再粘好。"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

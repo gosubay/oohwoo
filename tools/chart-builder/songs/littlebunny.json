@@ -1,0 +1,93 @@
+{
+ "schema": 1,
+ "key": "littlebunny",
+ "recording": "11. Little Bunny",
+ "assets": {
+  "source": {
+   "path": "songs/11. Little Bunny.mp3",
+   "sha256": "a167e6ddf953c5554bd1252f17a8fad25f9b77b47370e63d551500b0944a86e1"
+  },
+  "backing": {
+   "path": "audio/11. Little Bunny.mp3",
+   "sha256": "d2147c0eb31778ee8decc9fd799c51bc79b37204a28f865afe28cf417fd8eecb"
+  },
+  "vocal": {
+   "path": "separated/vocals/11. Little Bunny.mp3",
+   "sha256": "9a18a59da7547eefefdfabdd3fd8a92292a42d3d3769bfb158e5c383e6c64491"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 0.0,
+   "end": 45.5,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "小兔子乖乖把门儿开开快点儿开开我要进来",
+      "不开不开我不开妈妈没回来",
+      "谁来也不开"
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "小兔子乖乖",
+      "把门儿开开",
+      "快点儿开开",
+      "妈妈回来了",
+      "就开就开我就开",
+      "妈妈回来了",
+      "这就把门开"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "en",
+   "language": "en",
+   "start": 45.5,
+   "end": 87.0,
+   "verses": [
+    {
+     "label": "Verse 3",
+     "lines": [
+      "Little Bunny",
+      "Open the door",
+      "Open it quickly",
+      "Let me in once more",
+      "No way no way go away",
+      "Mama isn’t here",
+      "You cannot come near"
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "Little Bunny",
+      "Open the door",
+      "Open it quickly",
+      "Mama’s home once more",
+      "Yes mom Yes mom I’m here",
+      "No wolf anymore",
+      "I’ll open the door"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

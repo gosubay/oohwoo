@@ -1,0 +1,189 @@
+{
+ "schema": 1,
+ "key": "babyshark",
+ "recording": "18. Baby Shark",
+ "assets": {
+  "source": {
+   "path": "songs/18. Baby Shark.mp3",
+   "sha256": "83521e7430c0822170a87eb8d17b17fd0b767f3414d777ece21f9fe2c96b8082"
+  },
+  "backing": {
+   "path": "audio/18. Baby Shark.mp3",
+   "sha256": "33738c1499e3dc07a10feb2975569fada4b9ef2e9e119ca5ca122ee0406e3bc5"
+  },
+  "vocal": {
+   "path": "separated/vocals/18. Baby Shark.mp3",
+   "sha256": "191da601f60fb96b25d1b10ea58874ba6465d305ac3dc049f820ed006e4785e9"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 15.0,
+   "end": 63.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "Baby shark, doo doo doo doo doo doo,",
+      "Baby shark, doo doo doo doo doo doo,",
+      "Baby shark, doo doo doo doo doo doo,",
+      "Baby shark!"
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "Mommy shark, doo doo doo doo doo doo,",
+      "Mommy shark, doo doo doo doo doo doo,",
+      "Mommy shark, doo doo doo doo doo doo,",
+      "Mommy shark!"
+     ]
+    },
+    {
+     "label": "Verse 3",
+     "lines": [
+      "Daddy shark, doo doo doo doo doo doo,",
+      "Daddy shark, doo doo doo doo doo doo,",
+      "Daddy shark, doo doo doo doo doo doo,",
+      "Daddy shark!"
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "Grandma shark, doo doo doo doo doo doo,",
+      "Grandma shark, doo doo doo doo doo doo,",
+      "Grandma shark, doo doo doo doo doo doo,",
+      "Grandma shark!"
+     ]
+    },
+    {
+     "label": "Verse 5",
+     "lines": [
+      "Grandpa shark, doo doo doo doo doo doo,",
+      "Grandpa shark, doo doo doo doo doo doo,",
+      "Grandpa shark, doo doo doo doo doo doo,",
+      "Grandpa shark!"
+     ]
+    },
+    {
+     "label": "Verse 6",
+     "lines": [
+      "Let’s go hunt, doo doo doo doo doo doo,",
+      "Let’s go hunt, doo doo doo doo doo doo,",
+      "Let’s go hunt, doo doo doo doo doo doo,",
+      "Let’s go hunt!"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 71.5,
+   "end": 128.0,
+   "verses": [
+    {
+     "label": "Verse 7",
+     "lines": [
+      "鲨鱼宝宝，嘟嘟嘟嘟嘟",
+      "鲨鱼宝宝，嘟嘟嘟嘟嘟",
+      "鲨鱼宝宝，嘟嘟嘟嘟嘟",
+      "鲨鱼宝宝！"
+     ]
+    },
+    {
+     "label": "Verse 8",
+     "lines": [
+      "鲨鱼妈妈，嘟嘟嘟嘟嘟",
+      "鲨鱼妈妈，嘟嘟嘟嘟嘟",
+      "鲨鱼妈妈，嘟嘟嘟嘟嘟",
+      "鲨鱼妈妈！"
+     ]
+    },
+    {
+     "label": "Verse 9",
+     "lines": [
+      "鲨鱼爸爸，嘟嘟嘟嘟嘟",
+      "鲨鱼爸爸，嘟嘟嘟嘟嘟",
+      "鲨鱼爸爸，嘟嘟嘟嘟嘟",
+      "鲨鱼爸爸！"
+     ]
+    },
+    {
+     "label": "Verse 10",
+     "lines": [
+      "鲨鱼奶奶，嘟嘟嘟嘟嘟",
+      "鲨鱼奶奶，嘟嘟嘟嘟嘟",
+      "鲨鱼奶奶，嘟嘟嘟嘟嘟",
+      "鲨鱼奶奶！"
+     ]
+    },
+    {
+     "label": "Verse 11",
+     "lines": [
+      "鲨鱼爷爷，嘟嘟嘟嘟嘟",
+      "鲨鱼爷爷，嘟嘟嘟嘟嘟",
+      "鲨鱼爷爷，嘟嘟嘟嘟嘟",
+      "鲨鱼爷爷！"
+     ]
+    },
+    {
+     "label": "Verse 12",
+     "lines": [
+      "出发猎食，嘟嘟嘟嘟嘟",
+      "出发猎食，嘟嘟嘟嘟嘟",
+      "出发猎食，嘟嘟嘟嘟嘟",
+      "出发猎食！"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ },
+ "sectionOverrides": {
+  "zh-1": {
+   "start": 71.5,
+   "end": 80.1,
+   "reason": "Mandarin half defeats Whisper (prompted pass repeats 鲨鱼爸爸, unprompted pass is empty). Placed from the vocal: six verse-length stretches matching the English verse pattern; the 爸爸 and 爷爷 verses are sung an octave lower (D3-G3), the 2026-10-02 whole-file pass anchors 奶奶 at 95.9 s (\"Sayi nay nay\") and 爷爷 at 111.7 s (\"Sayi ye ye\")."
+  },
+  "zh-2": {
+   "start": 80.1,
+   "end": 87.8,
+   "reason": "Mandarin half defeats Whisper (prompted pass repeats 鲨鱼爸爸, unprompted pass is empty). Placed from the vocal: six verse-length stretches matching the English verse pattern; the 爸爸 and 爷爷 verses are sung an octave lower (D3-G3), the 2026-10-02 whole-file pass anchors 奶奶 at 95.9 s (\"Sayi nay nay\") and 爷爷 at 111.7 s (\"Sayi ye ye\")."
+  },
+  "zh-3": {
+   "start": 87.8,
+   "end": 95.75,
+   "reason": "Mandarin half defeats Whisper (prompted pass repeats 鲨鱼爸爸, unprompted pass is empty). Placed from the vocal: six verse-length stretches matching the English verse pattern; the 爸爸 and 爷爷 verses are sung an octave lower (D3-G3), the 2026-10-02 whole-file pass anchors 奶奶 at 95.9 s (\"Sayi nay nay\") and 爷爷 at 111.7 s (\"Sayi ye ye\")."
+  },
+  "zh-4": {
+   "start": 95.75,
+   "end": 107.5,
+   "reason": "Mandarin half defeats Whisper (prompted pass repeats 鲨鱼爸爸, unprompted pass is empty). Placed from the vocal: six verse-length stretches matching the English verse pattern; the 爸爸 and 爷爷 verses are sung an octave lower (D3-G3), the 2026-10-02 whole-file pass anchors 奶奶 at 95.9 s (\"Sayi nay nay\") and 爷爷 at 111.7 s (\"Sayi ye ye\")."
+  },
+  "zh-5": {
+   "start": 107.5,
+   "end": 119.1,
+   "reason": "Mandarin half defeats Whisper (prompted pass repeats 鲨鱼爸爸, unprompted pass is empty). Placed from the vocal: six verse-length stretches matching the English verse pattern; the 爸爸 and 爷爷 verses are sung an octave lower (D3-G3), the 2026-10-02 whole-file pass anchors 奶奶 at 95.9 s (\"Sayi nay nay\") and 爷爷 at 111.7 s (\"Sayi ye ye\")."
+  },
+  "zh-6": {
+   "start": 119.1,
+   "end": 128.0,
+   "reason": "Mandarin half defeats Whisper (prompted pass repeats 鲨鱼爸爸, unprompted pass is empty). Placed from the vocal: six verse-length stretches matching the English verse pattern; the 爸爸 and 爷爷 verses are sung an octave lower (D3-G3), the 2026-10-02 whole-file pass anchors 奶奶 at 95.9 s (\"Sayi nay nay\") and 爷爷 at 111.7 s (\"Sayi ye ye\")."
+  }
+ }
+}

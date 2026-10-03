@@ -1,0 +1,121 @@
+{
+ "schema": 1,
+ "key": "ifhappy",
+ "recording": "16. If you're happy and you know it",
+ "assets": {
+  "source": {
+   "path": "songs/16. If you're happy and you know it.mp3",
+   "sha256": "f19ac26a4dde20f542522c85c939e712ce94120903641a72e5fb828e5a6d1127"
+  },
+  "backing": {
+   "path": "audio/16. If you're happy and you know it.mp3",
+   "sha256": "314e3c5418f223875a511ddf7aad0e4c12f10f4d5b1c3ddfdd4dce56354627fe"
+  },
+  "vocal": {
+   "path": "separated/vocals/16. If you're happy and you know it.mp3",
+   "sha256": "eeaa0af9079d0662a11d3d53087c65c9cb958d4f4d53f3424c3755439d27abe8"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 6.0,
+   "end": 53.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "If you're happy and you know it, clap your hands!",
+      "If you're happy and you know it, clap your hands!",
+      "If you're happy and you know it, then your face will surely show it,",
+      "If you're happy and you know it, clap your hands!"
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "If you're happy and you know it, stomp your feet!",
+      "If you're happy and you know it, stomp your feet!",
+      "If you're happy and you know it, then your face will surely show it,",
+      "If you're happy and you know it, stomp your feet!"
+     ]
+    },
+    {
+     "label": "Verse 3",
+     "lines": [
+      "If you're happy and you know it, shout \"Hooray!\" (Hooray!)",
+      "If you're happy and you know it, shout \"Hooray!\" (Hooray!)",
+      "If you're happy and you know it, then your face will surely show it,",
+      "If you're happy and you know it, shout \"Hooray!\" (Hooray!)"
+     ]
+    },
+    {
+     "label": "Verse 4",
+     "lines": [
+      "If you're happy and you know it, do all three! (Hooray!)",
+      "If you're happy and you know it, do all three! (Hooray!)",
+      "If you're happy and you know it, then your face will surely show it,",
+      "If you're happy and you know it, do all three! (Hooray!)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 58.0,
+   "end": 105.0,
+   "verses": [
+    {
+     "label": "Verse 5",
+     "lines": [
+      "如果开心你就跟我拍拍手",
+      "如果开心你就跟我拍拍手",
+      "如果感到开心你就跟我拍拍手",
+      "如果开心你就跟我拍拍手"
+     ]
+    },
+    {
+     "label": "Verse 6",
+     "lines": [
+      "如果开心你就跟我跺跺脚",
+      "如果开心你就跟我跺跺脚",
+      "如果感到开心你就跟我跺跺脚",
+      "如果开心你就跟我跺跺脚"
+     ]
+    },
+    {
+     "label": "Verse 7",
+     "lines": [
+      "如果开心你就跟我大声喊（真棒!）",
+      "如果开心你就跟我大声喊（真棒!）",
+      "如果感到开心你就跟我大声喊（真棒!）",
+      "如果开心你就跟我大声喊（真棒!）"
+     ]
+    },
+    {
+     "label": "Verse 8",
+     "lines": [
+      "如果开心你就跟我一起做（真棒!）",
+      "如果开心你就跟我一起做（真棒!）",
+      "如果感到开心你就跟我一起做（真棒!）",
+      "如果开心你就跟我一起做（真棒!）"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

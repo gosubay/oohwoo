@@ -1,0 +1,1849 @@
+{
+"vocalSha256": "60230bbd7656e01af08d3e9729110624fa0b1c0a4c4202c56876c830a08674fa",
+"model": "large-v3",
+"blocks": {
+"en": {
+"settings": "cff058e667809d37",
+"language": "en",
+"pieces": [
+{
+"start": 14.5,
+"end": 31.04,
+"hinted": [
+{
+"start": 15.46,
+"end": 16.08,
+"word": "Head,",
+"p": 0.779,
+"segment": 1
+},
+{
+"start": 16.08,
+"end": 16.7,
+"word": "shoulders,",
+"p": 0.945,
+"segment": 1
+},
+{
+"start": 16.96,
+"end": 17.24,
+"word": "knees",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 17.24,
+"end": 17.48,
+"word": "and",
+"p": 0.776,
+"segment": 1
+},
+{
+"start": 17.48,
+"end": 17.86,
+"word": "toes,",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 18.06,
+"end": 18.2,
+"word": "knees",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 18.2,
+"end": 18.46,
+"word": "and",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 18.46,
+"end": 18.84,
+"word": "toes",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 18.84,
+"end": 19.64,
+"word": "Head,",
+"p": 0.631,
+"segment": 1
+},
+{
+"start": 19.96,
+"end": 20.64,
+"word": "shoulders,",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 20.82,
+"end": 21.1,
+"word": "knees",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 21.1,
+"end": 21.4,
+"word": "and",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 21.4,
+"end": 21.74,
+"word": "toes,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 21.8,
+"end": 22.04,
+"word": "knees",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 22.04,
+"end": 22.3,
+"word": "and",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 22.3,
+"end": 22.74,
+"word": "toes",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 22.74,
+"end": 23.14,
+"word": "And",
+"p": 0.767,
+"segment": 1
+},
+{
+"start": 23.14,
+"end": 23.76,
+"word": "eyes",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 23.76,
+"end": 24.16,
+"word": "and",
+"p": 0.82,
+"segment": 1
+},
+{
+"start": 24.16,
+"end": 24.64,
+"word": "ears",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 24.64,
+"end": 25.12,
+"word": "and",
+"p": 0.904,
+"segment": 1
+},
+{
+"start": 25.12,
+"end": 25.58,
+"word": "mouth",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 25.58,
+"end": 26.14,
+"word": "and",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 26.14,
+"end": 26.6,
+"word": "nose",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 26.6,
+"end": 27.46,
+"word": "Head,",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 27.68,
+"end": 28.48,
+"word": "shoulders,",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 28.58,
+"end": 28.88,
+"word": "knees",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 28.88,
+"end": 29.18,
+"word": "and",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 29.18,
+"end": 29.48,
+"word": "toes,",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 29.64,
+"end": 29.82,
+"word": "knees",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 29.82,
+"end": 30.08,
+"word": "and",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 30.08,
+"end": 30.5,
+"word": "toes",
+"p": 1.0,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 15.46,
+"end": 16.08,
+"word": "Head,",
+"p": 0.779,
+"segment": 1
+},
+{
+"start": 16.08,
+"end": 16.7,
+"word": "shoulders,",
+"p": 0.945,
+"segment": 1
+},
+{
+"start": 16.96,
+"end": 17.24,
+"word": "knees",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 17.24,
+"end": 17.48,
+"word": "and",
+"p": 0.776,
+"segment": 1
+},
+{
+"start": 17.48,
+"end": 17.86,
+"word": "toes,",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 18.06,
+"end": 18.2,
+"word": "knees",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 18.2,
+"end": 18.46,
+"word": "and",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 18.46,
+"end": 18.84,
+"word": "toes",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 18.84,
+"end": 19.64,
+"word": "Head,",
+"p": 0.631,
+"segment": 2
+},
+{
+"start": 19.96,
+"end": 20.64,
+"word": "shoulders,",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 20.82,
+"end": 21.1,
+"word": "knees",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 21.1,
+"end": 21.4,
+"word": "and",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 21.4,
+"end": 21.74,
+"word": "toes,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 21.8,
+"end": 22.04,
+"word": "knees",
+"p": 0.995,
+"segment": 2
+},
+{
+"start": 22.04,
+"end": 22.3,
+"word": "and",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 22.3,
+"end": 22.74,
+"word": "toes",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 22.74,
+"end": 23.14,
+"word": "And",
+"p": 0.767,
+"segment": 3
+},
+{
+"start": 23.14,
+"end": 23.76,
+"word": "eyes",
+"p": 0.983,
+"segment": 3
+},
+{
+"start": 23.76,
+"end": 24.16,
+"word": "and",
+"p": 0.82,
+"segment": 3
+},
+{
+"start": 24.16,
+"end": 24.64,
+"word": "ears",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 24.64,
+"end": 25.12,
+"word": "and",
+"p": 0.904,
+"segment": 3
+},
+{
+"start": 25.12,
+"end": 25.58,
+"word": "mouth",
+"p": 0.993,
+"segment": 3
+},
+{
+"start": 25.58,
+"end": 26.14,
+"word": "and",
+"p": 0.997,
+"segment": 3
+},
+{
+"start": 26.14,
+"end": 26.6,
+"word": "nose",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 27.15,
+"end": 27.46,
+"word": "Head,",
+"p": 0.991,
+"segment": 4
+},
+{
+"start": 27.68,
+"end": 28.48,
+"word": "shoulders,",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 28.58,
+"end": 28.88,
+"word": "knees",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 28.88,
+"end": 29.18,
+"word": "and",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 29.18,
+"end": 29.48,
+"word": "toes,",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 29.64,
+"end": 29.82,
+"word": "knees",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 29.82,
+"end": 30.08,
+"word": "and",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 30.08,
+"end": 30.5,
+"word": "toes",
+"p": 1.0,
+"segment": 4
+}
+]
+},
+{
+"start": 31.04,
+"end": 48.0,
+"hinted": [
+{
+"start": 30.74,
+"end": 31.64,
+"word": "Head,",
+"p": 0.825,
+"segment": 1
+},
+{
+"start": 31.74,
+"end": 32.4,
+"word": "shoulders,",
+"p": 0.958,
+"segment": 1
+},
+{
+"start": 32.64,
+"end": 32.82,
+"word": "knees",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 32.82,
+"end": 33.08,
+"word": "and",
+"p": 0.834,
+"segment": 1
+},
+{
+"start": 33.08,
+"end": 33.44,
+"word": "toes,",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 33.64,
+"end": 33.8,
+"word": "knees",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 33.8,
+"end": 34.06,
+"word": "and",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 34.06,
+"end": 34.46,
+"word": "toes",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 34.46,
+"end": 35.56,
+"word": "And",
+"p": 0.307,
+"segment": 2
+},
+{
+"start": 35.56,
+"end": 39.32,
+"word": "eyes",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 39.32,
+"end": 39.78,
+"word": "and",
+"p": 0.888,
+"segment": 2
+},
+{
+"start": 39.78,
+"end": 40.26,
+"word": "ears",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 40.26,
+"end": 40.68,
+"word": "and",
+"p": 0.955,
+"segment": 2
+},
+{
+"start": 40.68,
+"end": 41.18,
+"word": "mouth",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 41.18,
+"end": 41.7,
+"word": "and",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 41.7,
+"end": 42.18,
+"word": "nose",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 42.18,
+"end": 43.0,
+"word": "Head,",
+"p": 0.976,
+"segment": 3
+},
+{
+"start": 43.2,
+"end": 44.0,
+"word": "shoulders,",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 44.12,
+"end": 44.4,
+"word": "knees",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 44.4,
+"end": 44.7,
+"word": "and",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 44.7,
+"end": 45.0,
+"word": "toes,",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 45.18,
+"end": 45.34,
+"word": "knees",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 45.34,
+"end": 45.6,
+"word": "and",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 45.6,
+"end": 46.06,
+"word": "toes",
+"p": 1.0,
+"segment": 3
+}
+],
+"plain": [
+{
+"start": 30.74,
+"end": 31.64,
+"word": "Head,",
+"p": 0.825,
+"segment": 1
+},
+{
+"start": 31.74,
+"end": 32.4,
+"word": "shoulders,",
+"p": 0.958,
+"segment": 1
+},
+{
+"start": 32.64,
+"end": 32.82,
+"word": "knees",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 32.82,
+"end": 33.08,
+"word": "and",
+"p": 0.834,
+"segment": 1
+},
+{
+"start": 33.08,
+"end": 33.44,
+"word": "toes,",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 33.64,
+"end": 33.8,
+"word": "knees",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 33.8,
+"end": 34.06,
+"word": "and",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 34.06,
+"end": 34.46,
+"word": "toes",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 34.46,
+"end": 35.56,
+"word": "And",
+"p": 0.307,
+"segment": 2
+},
+{
+"start": 35.56,
+"end": 39.32,
+"word": "eyes",
+"p": 0.996,
+"segment": 2
+},
+{
+"start": 39.32,
+"end": 39.78,
+"word": "and",
+"p": 0.888,
+"segment": 2
+},
+{
+"start": 39.78,
+"end": 40.26,
+"word": "ears",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 40.26,
+"end": 40.68,
+"word": "and",
+"p": 0.955,
+"segment": 2
+},
+{
+"start": 40.68,
+"end": 41.18,
+"word": "mouth",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 41.18,
+"end": 41.7,
+"word": "and",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 41.7,
+"end": 42.18,
+"word": "nose",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 42.18,
+"end": 43.0,
+"word": "Head,",
+"p": 0.976,
+"segment": 3
+},
+{
+"start": 43.2,
+"end": 44.0,
+"word": "shoulders,",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 44.12,
+"end": 44.4,
+"word": "knees",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 44.4,
+"end": 44.7,
+"word": "and",
+"p": 0.999,
+"segment": 3
+},
+{
+"start": 44.7,
+"end": 45.0,
+"word": "toes,",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 45.18,
+"end": 45.34,
+"word": "knees",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 45.34,
+"end": 45.6,
+"word": "and",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 45.6,
+"end": 46.06,
+"word": "toes",
+"p": 1.0,
+"segment": 3
+}
+]
+}
+]
+},
+"zh": {
+"settings": "41eefa586ee52359",
+"language": "zh",
+"pieces": [
+{
+"start": 49.0,
+"end": 65.99,
+"hinted": [
+{
+"start": 50.56,
+"end": 51.04,
+"word": "头，",
+"p": 0.032,
+"segment": 1
+},
+{
+"start": 51.62,
+"end": 51.94,
+"word": "肩",
+"p": 0.395,
+"segment": 1
+},
+{
+"start": 51.94,
+"end": 52.04,
+"word": "膀，",
+"p": 0.944,
+"segment": 1
+},
+{
+"start": 52.24,
+"end": 52.46,
+"word": "膝",
+"p": 0.336,
+"segment": 1
+},
+{
+"start": 52.46,
+"end": 52.54,
+"word": "盖，",
+"p": 0.874,
+"segment": 1
+},
+{
+"start": 52.84,
+"end": 53.04,
+"word": "脚",
+"p": 0.504,
+"segment": 1
+},
+{
+"start": 53.04,
+"end": 53.24,
+"word": "膝",
+"p": 0.954,
+"segment": 1
+},
+{
+"start": 53.24,
+"end": 53.56,
+"word": "盖，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 53.78,
+"end": 54.08,
+"word": "脚",
+"p": 0.508,
+"segment": 1
+},
+{
+"start": 54.08,
+"end": 54.58,
+"word": "头，",
+"p": 0.934,
+"segment": 1
+},
+{
+"start": 55.56,
+"end": 55.76,
+"word": "肩",
+"p": 0.937,
+"segment": 1
+},
+{
+"start": 55.76,
+"end": 55.92,
+"word": "膀，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 56.16,
+"end": 56.4,
+"word": "膝",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 56.4,
+"end": 56.4,
+"word": "盖，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 56.62,
+"end": 56.84,
+"word": "脚",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 56.84,
+"end": 57.12,
+"word": "膝",
+"p": 0.938,
+"segment": 1
+},
+{
+"start": 57.12,
+"end": 57.4,
+"word": "盖，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 57.62,
+"end": 57.98,
+"word": "脚",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 57.98,
+"end": 58.52,
+"word": "眼",
+"p": 0.933,
+"segment": 1
+},
+{
+"start": 58.52,
+"end": 59.26,
+"word": "睛，",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 59.56,
+"end": 59.96,
+"word": "耳",
+"p": 0.507,
+"segment": 1
+},
+{
+"start": 59.96,
+"end": 60.08,
+"word": "朵，",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 60.48,
+"end": 60.6,
+"word": "嘴",
+"p": 0.879,
+"segment": 1
+},
+{
+"start": 60.6,
+"end": 60.84,
+"word": "巴，",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 60.96,
+"end": 61.3,
+"word": "鼻",
+"p": 0.493,
+"segment": 1
+},
+{
+"start": 61.3,
+"end": 61.5,
+"word": "子",
+"p": 0.878,
+"segment": 1
+},
+{
+"start": 61.64,
+"end": 62.44,
+"word": "头，",
+"p": 0.743,
+"segment": 1
+},
+{
+"start": 63.28,
+"end": 63.44,
+"word": "肩",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 63.44,
+"end": 63.7,
+"word": "膀，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 63.92,
+"end": 64.14,
+"word": "膝",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 64.14,
+"end": 64.14,
+"word": "盖，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 64.56,
+"end": 64.56,
+"word": "脚",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 64.56,
+"end": 64.84,
+"word": "膝",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 64.84,
+"end": 65.14,
+"word": "盖，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 65.32,
+"end": 65.54,
+"word": "脚",
+"p": 0.998,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 50.54,
+"end": 51.06,
+"word": "作",
+"p": 0.006,
+"segment": 1
+},
+{
+"start": 51.06,
+"end": 51.06,
+"word": "词",
+"p": 0.715,
+"segment": 1
+},
+{
+"start": 51.06,
+"end": 51.06,
+"word": "李",
+"p": 0.097,
+"segment": 1
+},
+{
+"start": 51.06,
+"end": 51.06,
+"word": "宗",
+"p": 0.538,
+"segment": 1
+},
+{
+"start": 51.06,
+"end": 51.06,
+"word": "盛",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 51.06,
+"end": 51.06,
+"word": "头",
+"p": 0.032,
+"segment": 2
+},
+{
+"start": 51.1,
+"end": 51.82,
+"word": "肩",
+"p": 0.732,
+"segment": 2
+},
+{
+"start": 51.82,
+"end": 52.02,
+"word": "膀",
+"p": 0.984,
+"segment": 2
+},
+{
+"start": 52.12,
+"end": 52.3,
+"word": "膝",
+"p": 0.979,
+"segment": 2
+},
+{
+"start": 52.3,
+"end": 52.56,
+"word": "盖",
+"p": 0.969,
+"segment": 2
+},
+{
+"start": 52.56,
+"end": 52.8,
+"word": "角",
+"p": 0.309,
+"segment": 2
+},
+{
+"start": 53.0,
+"end": 53.28,
+"word": "膝",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 53.28,
+"end": 53.56,
+"word": "盖",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 53.56,
+"end": 53.84,
+"word": "角",
+"p": 0.997,
+"segment": 2
+},
+{
+"start": 53.84,
+"end": 54.62,
+"word": "头",
+"p": 0.833,
+"segment": 3
+},
+{
+"start": 54.98,
+"end": 55.68,
+"word": "肩",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 55.68,
+"end": 55.92,
+"word": "膀",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 55.98,
+"end": 56.16,
+"word": "膝",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 56.16,
+"end": 56.4,
+"word": "盖",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 56.4,
+"end": 56.74,
+"word": "角",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 56.84,
+"end": 57.12,
+"word": "膝",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 57.12,
+"end": 57.4,
+"word": "盖",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 57.4,
+"end": 57.78,
+"word": "角",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 57.78,
+"end": 58.54,
+"word": "眼",
+"p": 0.982,
+"segment": 4
+},
+{
+"start": 58.54,
+"end": 59.3,
+"word": "睛",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 59.32,
+"end": 59.72,
+"word": "语",
+"p": 0.524,
+"segment": 4
+},
+{
+"start": 59.72,
+"end": 60.04,
+"word": "多",
+"p": 0.28,
+"segment": 4
+},
+{
+"start": 60.24,
+"end": 60.64,
+"word": "嘴",
+"p": 0.996,
+"segment": 4
+},
+{
+"start": 60.64,
+"end": 60.86,
+"word": "巴",
+"p": 0.633,
+"segment": 4
+},
+{
+"start": 60.88,
+"end": 61.2,
+"word": "迷",
+"p": 0.553,
+"segment": 4
+},
+{
+"start": 61.2,
+"end": 61.58,
+"word": "阻",
+"p": 0.466,
+"segment": 4
+},
+{
+"start": 62.42,
+"end": 62.94,
+"word": "头",
+"p": 0.951,
+"segment": 5
+},
+{
+"start": 62.94,
+"end": 63.46,
+"word": "肩",
+"p": 0.987,
+"segment": 5
+},
+{
+"start": 63.46,
+"end": 63.7,
+"word": "膀",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 63.76,
+"end": 63.92,
+"word": "膝",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 63.92,
+"end": 64.16,
+"word": "盖",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 64.16,
+"end": 64.42,
+"word": "角",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 64.56,
+"end": 64.88,
+"word": "膝",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 64.88,
+"end": 65.14,
+"word": "盖",
+"p": 1.0,
+"segment": 5
+},
+{
+"start": 65.14,
+"end": 65.4,
+"word": "角",
+"p": 1.0,
+"segment": 5
+}
+]
+},
+{
+"start": 65.99,
+"end": 82.5,
+"hinted": [
+{
+"start": 65.69,
+"end": 66.55,
+"word": "头，",
+"p": 0.143,
+"segment": 1
+},
+{
+"start": 67.23,
+"end": 67.49,
+"word": "肩",
+"p": 0.511,
+"segment": 1
+},
+{
+"start": 67.49,
+"end": 67.61,
+"word": "膀，",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 67.85,
+"end": 68.07,
+"word": "膝",
+"p": 0.317,
+"segment": 1
+},
+{
+"start": 68.07,
+"end": 68.09,
+"word": "盖，",
+"p": 0.949,
+"segment": 1
+},
+{
+"start": 68.33,
+"end": 68.63,
+"word": "脚",
+"p": 0.499,
+"segment": 1
+},
+{
+"start": 68.63,
+"end": 68.75,
+"word": "膝",
+"p": 0.95,
+"segment": 1
+},
+{
+"start": 68.75,
+"end": 69.07,
+"word": "盖，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 69.27,
+"end": 69.61,
+"word": "脚",
+"p": 0.512,
+"segment": 1
+},
+{
+"start": 69.61,
+"end": 70.15,
+"word": "头，",
+"p": 0.922,
+"segment": 1
+},
+{
+"start": 71.07,
+"end": 71.25,
+"word": "肩",
+"p": 0.96,
+"segment": 1
+},
+{
+"start": 71.25,
+"end": 71.47,
+"word": "膀，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 71.77,
+"end": 71.89,
+"word": "膝",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 71.89,
+"end": 71.95,
+"word": "盖，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 72.33,
+"end": 72.33,
+"word": "脚",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 72.33,
+"end": 72.61,
+"word": "膝",
+"p": 0.839,
+"segment": 1
+},
+{
+"start": 72.61,
+"end": 72.91,
+"word": "盖，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 73.17,
+"end": 73.33,
+"word": "脚",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 73.33,
+"end": 74.01,
+"word": "眼",
+"p": 0.966,
+"segment": 1
+},
+{
+"start": 74.01,
+"end": 74.79,
+"word": "睛，",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 75.05,
+"end": 75.29,
+"word": "耳",
+"p": 0.513,
+"segment": 1
+},
+{
+"start": 75.29,
+"end": 75.55,
+"word": "朵，",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 75.95,
+"end": 76.05,
+"word": "嘴",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 76.05,
+"end": 76.31,
+"word": "巴，",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 76.47,
+"end": 76.71,
+"word": "鼻",
+"p": 0.806,
+"segment": 1
+},
+{
+"start": 76.71,
+"end": 76.99,
+"word": "子",
+"p": 0.901,
+"segment": 1
+},
+{
+"start": 77.07,
+"end": 77.83,
+"word": "头，",
+"p": 0.937,
+"segment": 1
+},
+{
+"start": 78.69,
+"end": 78.87,
+"word": "肩",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 78.87,
+"end": 79.11,
+"word": "膀，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 79.39,
+"end": 79.51,
+"word": "膝",
+"p": 0.997,
+"segment": 1
+},
+{
+"start": 79.51,
+"end": 79.59,
+"word": "盖，",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 79.93,
+"end": 79.93,
+"word": "脚",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 79.95,
+"end": 80.27,
+"word": "膝",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 80.27,
+"end": 80.55,
+"word": "盖，",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 80.75,
+"end": 80.97,
+"word": "脚",
+"p": 0.997,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 65.69,
+"end": 66.53,
+"word": "头",
+"p": 0.143,
+"segment": 1
+},
+{
+"start": 66.63,
+"end": 67.37,
+"word": "肩",
+"p": 0.944,
+"segment": 1
+},
+{
+"start": 67.37,
+"end": 67.63,
+"word": "膀",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 67.63,
+"end": 67.79,
+"word": "膝",
+"p": 0.76,
+"segment": 1
+},
+{
+"start": 67.79,
+"end": 68.11,
+"word": "盖",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 68.11,
+"end": 68.41,
+"word": "脚",
+"p": 0.586,
+"segment": 1
+},
+{
+"start": 68.47,
+"end": 68.73,
+"word": "膝",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 68.73,
+"end": 69.07,
+"word": "盖",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 69.07,
+"end": 69.39,
+"word": "脚",
+"p": 0.961,
+"segment": 1
+},
+{
+"start": 69.39,
+"end": 70.19,
+"word": "头",
+"p": 0.681,
+"segment": 2
+},
+{
+"start": 70.47,
+"end": 71.21,
+"word": "肩",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 71.21,
+"end": 71.47,
+"word": "膀",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 71.47,
+"end": 71.67,
+"word": "膝",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 71.67,
+"end": 71.95,
+"word": "盖",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 71.95,
+"end": 72.31,
+"word": "脚",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 72.31,
+"end": 72.59,
+"word": "膝",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 72.59,
+"end": 72.91,
+"word": "盖",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 72.91,
+"end": 73.31,
+"word": "脚",
+"p": 0.999,
+"segment": 2
+},
+{
+"start": 73.31,
+"end": 74.05,
+"word": "眼",
+"p": 0.986,
+"segment": 3
+},
+{
+"start": 74.05,
+"end": 74.79,
+"word": "睛",
+"p": 0.998,
+"segment": 3
+},
+{
+"start": 74.79,
+"end": 75.13,
+"word": "里",
+"p": 0.374,
+"segment": 3
+},
+{
+"start": 75.13,
+"end": 75.59,
+"word": "多",
+"p": 0.53,
+"segment": 3
+},
+{
+"start": 75.59,
+"end": 76.09,
+"word": "嘴",
+"p": 0.917,
+"segment": 3
+},
+{
+"start": 76.09,
+"end": 76.33,
+"word": "巴",
+"p": 0.993,
+"segment": 3
+},
+{
+"start": 76.33,
+"end": 76.59,
+"word": "蜜",
+"p": 0.816,
+"segment": 3
+},
+{
+"start": 76.59,
+"end": 77.03,
+"word": "字",
+"p": 0.481,
+"segment": 3
+},
+{
+"start": 77.03,
+"end": 78.11,
+"word": "头",
+"p": 0.996,
+"segment": 4
+},
+{
+"start": 78.25,
+"end": 78.89,
+"word": "肩",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 78.89,
+"end": 79.11,
+"word": "膀",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 79.11,
+"end": 79.33,
+"word": "膝",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 79.33,
+"end": 79.59,
+"word": "盖",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 79.59,
+"end": 79.97,
+"word": "脚",
+"p": 0.999,
+"segment": 4
+},
+{
+"start": 79.97,
+"end": 80.25,
+"word": "膝",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 80.25,
+"end": 80.55,
+"word": "盖",
+"p": 1.0,
+"segment": 4
+},
+{
+"start": 80.55,
+"end": 80.97,
+"word": "脚",
+"p": 1.0,
+"segment": 4
+}
+]
+}
+]
+}
+}
+}

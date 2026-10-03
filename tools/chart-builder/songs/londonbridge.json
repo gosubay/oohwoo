@@ -1,0 +1,103 @@
+{
+ "schema": 1,
+ "key": "londonbridge",
+ "recording": "5. London Bridge",
+ "assets": {
+  "source": {
+   "path": "songs/5. London Bridge.mp3",
+   "sha256": "2924e6bb05487a9816a05e77b2ca2c53254594687807af95d10ee2fb024df029"
+  },
+  "backing": {
+   "path": "audio/5. London Bridge.mp3",
+   "sha256": "968c0af5dfe4af0ac25ceed17035a9226c9daa87f27ed9c1a40887a2f338d278"
+  },
+  "vocal": {
+   "path": "separated/vocals/5. London Bridge.mp3",
+   "sha256": "c1fb6a3d1005e1100ecb703e47fb91016d04005ead1062ab8b9abac472228fa3"
+  }
+ },
+ "lyricReference": {
+  "path": "lyrics_raw.txt",
+  "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69"
+ },
+ "blocks": [
+  {
+   "id": "en",
+   "language": "en",
+   "start": 10.0,
+   "end": 45.0,
+   "verses": [
+    {
+     "label": "Verse 1",
+     "lines": [
+      "London Bridge is falling down,",
+      "Falling down, falling down.",
+      "London Bridge is falling down,",
+      "My fair lady."
+     ]
+    },
+    {
+     "label": "Verse 2",
+     "lines": [
+      "Build it up with iron bars,",
+      "Iron bars, iron bars.",
+      "Build it up with iron bars,",
+      "My fair lady."
+     ]
+    },
+    {
+     "label": "Verse 3",
+     "lines": [
+      "Iron bars will bend and bow,",
+      "Bend and bow, bend and bow.",
+      "Iron bars will bend and bow,",
+      "My fair lady."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zh",
+   "language": "zh",
+   "start": 53.5,
+   "end": 89.0,
+   "verses": [
+    {
+     "label": "Verse 4",
+     "lines": [
+      "伦敦大桥塌下来",
+      "塌下来, 塌下来",
+      "伦敦大桥塌下来",
+      "我的淑女"
+     ]
+    },
+    {
+     "label": "Verse 5",
+     "lines": [
+      "建大桥用铁栏杆",
+      "铁栏杆,铁栏杆",
+      "建大桥用铁栏杆",
+      "我的淑女"
+     ]
+    },
+    {
+     "label": "Verse 6",
+     "lines": [
+      "铁栏杆会变弯曲",
+      "变弯曲,变弯曲",
+      "铁栏杆会变弯曲",
+      "我的淑女"
+     ]
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "quick": null,
+ "lyricCorrections": [],
+ "noteEdits": [],
+ "exclusions": [],
+ "review": {
+  "song": "owner-listening-pending"
+ }
+}

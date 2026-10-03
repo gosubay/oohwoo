@@ -1,0 +1,872 @@
+Style Prompt
+Style Prompt
+Resonant Female Chest voice, Bilingual,Standard neutral American English accent, Standard neutral Taiwanese Mandarin accent native diction, Lyrical, solo bright piano, steady rhythm, warm acoustic, Studio Ghibli OST style, nostalgic nursery rhyme, minimalist, high fidelity, melodic, rhythmic, cheerful
+Exclude Stylebreathy, airy, choir, reverb, operatic, child voice, whisper, electronic, autotune, orchestral, cinematic, muddy, background, synthesizer, distorted, drums, bass, whimsical
+1. Twinkle Twinkle Little Star
+[Intro]
+[Verse 1 - English]
+Twinkle, twinkle, little star,
+How I wonder what you are!
+Up above the world so high,
+Like a diamond in the sky.
+Twinkle, twinkle, little star,
+How I wonder what you are!
+[Interlude]
+[Verse 2 - Mandarin]
+一闪一闪亮晶晶
+满天都是小星星
+挂在天空放光明
+好像许多小眼睛
+一闪一闪亮晶晶满天都是小星星
+[Outro]
+[End]
+2. Brother John - 两只老虎
+[Intro]
+[Verse 1 - English]
+Are you sleeping? Are you sleeping?
+Brother John, Brother John.
+Morning bells are ringing! Morning bells are ringing!
+Ding, dang, dong. Ding, dang, dong.
+[Verse 2 - English]
+Are you sleeping? Are you sleeping?
+Brother John, Brother John.
+Morning bells are ringing! Morning bells are ringing!
+Ding, dang, dong. Ding, dang, dong.
+[Short Instrumental Interlude - Solo Piano]
+[Verse 3 - Mandarin]
+两只老虎，两只老虎，
+跑得快，跑得快。
+一只没有耳朵，一只没有尾巴，
+真奇怪，真奇怪。
+[Verse 4 - Mandarin]
+两只老虎，两只老虎，
+跑得快，跑得快。
+一只没有耳朵，一只没有尾巴，
+真奇怪，真奇怪。
+[Outro]
+[End]
+3. Humpty Dumpty
+[Intro]
+[Verse 1 - English]
+Humpty Dumpty sat on a wall,
+Humpty Dumpty had a great fall.
+All the king's horses and all the king's men
+Couldn't put Humpty together again.
+[Verse 2 - English]
+Humpty Dumpty sat on a wall,
+Humpty Dumpty had a great fall.
+All the king's horses and all the king's men
+Couldn't put Humpty together again.
+[Verse 3 - Mandarin]
+胖蛋儿坐在墙上，
+突然，胖蛋儿摔在地上。
+国王所有的随从和马儿，
+无法把胖蛋儿再粘好。
+[Verse 4 - Mandarin]
+胖蛋儿坐在墙上，
+突然，胖蛋儿摔在地上。
+国王所有的随从和马儿，
+无法把胖蛋儿再粘好。
+[Outro]
+[End]
+4. Head, Shoulders, Knees and Toes
+[Intro]
+[Verse 1 - English]
+Head, shoulders, knees and toes, knees and toes
+Head, shoulders, knees and toes, knees and toes
+And eyes and ears and mouth and nose
+Head, shoulders, knees and toes
+Knees and toes
+[Verse 2 - English]
+Head, shoulders, knees and toes, knees and toes
+Head, shoulders, knees and toes, knees and toes
+And eyes and ears and mouth and nose
+Head, shoulders, knees and toes
+Knees and toes
+[Interlude]
+[Verse 3 - Mandarin]
+头，肩膀，膝盖，脚，膝盖，脚
+头，肩膀，膝盖，脚，膝盖，脚
+眼睛，耳朵，嘴巴，鼻子
+头，肩膀，膝盖，脚, 膝盖，脚
+[Verse 4 - Mandarin]
+头，肩膀，膝盖，脚，膝盖，脚
+头，肩膀，膝盖，脚，膝盖，脚
+眼睛，耳朵，嘴巴，鼻子
+头，肩膀，膝盖，脚, 膝盖，脚
+[Outro]
+[End]
+5. London Bridge Is Falling Down
+[Intro]
+[Verse 1 - Standard American English]
+London Bridge is falling down,
+Falling down, falling down.
+London Bridge is falling down,
+My fair lady.
+[Verse 2 - Standard American English]
+Build it up with iron bars,
+Iron bars, iron bars.
+Build it up with iron bars,
+My fair lady.
+[Verse 3 - Standard American English]
+Iron bars will bend and bow,
+Bend and bow, bend and bow.
+Iron bars will bend and bow,
+My fair lady.
+[interlude]
+[Verse 4 - Standard Taiwanese Mandarin Chinese]
+伦敦大桥塌下来
+塌下来, 塌下来
+伦敦大桥塌下来
+我的淑女
+[Verse 5 - Standard Taiwanese Mandarin Chinese]
+建大桥用铁栏杆
+铁栏杆,铁栏杆
+建大桥用铁栏杆
+我的淑女
+[Verse 6 - Standard Taiwanese Mandarin Chinese]
+铁栏杆会变弯曲
+变弯曲,变弯曲
+铁栏杆会变弯曲
+我的淑女
+[Outro][End]
+6. Itsy Bitsy Spider
+[Intro]
+[Verse 1 - Standard American English, Neutral Accent]
+Itsy bitsy spider climbed up the water spout
+Down came the rain and washed the spider out
+Out came the sunshine and dried up all the rain
+And itsy bitsy spider climbed up the spout again
+[Verse 2 - Standard American English, Neutral Accent]
+Itsy bitsy spider climbed up the water spout
+Down came the rain and washed the spider out
+Out came the sunshine and dried up all the rain
+And itsy bitsy spider climbed up the spout again
+[Interlude]
+[Verse 3 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+小小的蜘蛛往呀往上爬
+大雨哗啦啦，把蜘蛛冲下
+太阳出来了，晒干了雨水
+小小的蜘蛛往呀往上爬
+[Verse 4 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+小小的蜘蛛往呀往上爬
+大雨哗啦啦，把蜘蛛冲下
+太阳出来了，晒干了雨水
+小小的蜘蛛往呀往上爬
+[Outro]
+[End]
+7. Baa, Baa, Black Sheep
+[Intro]
+[Verse 1 - Standard American English, Neutral Accent]
+Baa, baa, black sheep, Have you any wool?
+Yes, sir, yes, sir, Three bags full.
+One for the master, And one for the dame,
+And one for the little boy who lives down the lane.
+[Verse 2 - Standard American English, Neutral Accent]
+Baa, baa, black sheep, Have you any wool?
+Yes, sir, yes, sir, Three bags full.
+One for the master, And one for the dame,
+And one for the little boy who lives down the lane.
+[Interlude]
+[Verse 3 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+咩咩黑羊，你有羊毛吗？
+有啊，有啊，三整袋。
+一袋给先生，一袋给夫人，
+一袋给巷里的小男孩。
+[Verse 4 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+咩咩黑羊，你有羊毛吗？
+有啊，有啊，三整袋。
+一袋给先生，一袋给夫人，
+一袋给巷里的小男孩。
+[Outro]
+[End]
+8. Mary Had a Little Lamb
+[Intro]
+[Verse 1 - Standard American English, Neutral Accent]
+Mary had a little lamb,
+Little lamb, little lamb,
+Mary had a little lamb,
+Its fleece was white as snow.
+[Verse 2 - Standard American English, Neutral Accent]
+And everywhere that Mary went,
+Mary went, Mary went,
+Everywhere that Mary went,
+The lamb was sure to go.
+[Verse 3 - Standard American English, Neutral Accent]
+It followed her to school one day,
+School one day, school one day,
+It followed her to school one day,
+Which was against the rule.
+[Interlude]
+[Verse 4 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+玛丽有只小绵羊
+小绵羊，小绵羊
+玛丽有只小绵羊
+雪白的羊毛
+[Verse 5 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+无论玛丽去哪里
+去哪里，去哪里
+无论玛丽去哪里
+小羊不分离
+[Verse 6 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+小绵羊到学校去
+学校去，学校去
+小绵羊到学校去
+不遵守规矩
+[Outro]
+[End]
+9. Row, Row, Row Your Boat
+[Intro]
+[Verse 1 - Standard American English, Neutral Accent]
+Row, row, row your boat,
+Gently down the stream.
+Merrily, merrily, merrily, merrily,
+Life is but a dream.
+[Verse 2 - Standard American English, Neutral Accent]
+Row, row, row your boat,
+Gently down the stream.
+If you see a crocodile,
+Don't forget to scream! (Ah!)
+[Short Musical Interlude - Soft Piano / 8 Seconds]
+[Verse 3 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+划，划，划小船
+顺着河流漂大家一起哈哈笑生活真美好
+[Verse 4 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+划，划，划小船
+顺着河流漂如果看到鳄鱼
+记得大声叫（啊！）
+[Outro]
+[End]
+10. The More We Get Together
+[Intro]
+[Verse 1 - Standard American English, Neutral Accent]
+The more we get together,
+Together, together,
+The more we get together,
+The happier we’ll be.
+[Chorus - Standard American English, Neutral Accent]
+For your friends are my friends,
+And my friends are your friends.
+The more we get together,
+The happier we’ll be.
+[Interlude]
+[Verse 2 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+当我们同在一起
+在一起, 在一起
+当我们同在一起
+其快乐无比
+[Chorus - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+你对着我笑嘻嘻
+我对着你笑哈哈
+当我们同在一起
+其快乐无比
+[Outro]
+[End]
+11. 小兔子乖乖 / Little Bunny
+[Verse 1 - Chinese]
+小兔子乖乖把门儿开开快点儿开开我要进来
+不开不开我不开妈妈没回来
+谁来也不开
+[Verse 2 - Chinese]
+小兔子乖乖
+把门儿开开
+快点儿开开
+妈妈回来了
+就开就开我就开
+妈妈回来了
+这就把门开
+[Verse 3 - English]
+Little BunnyOpen the door
+Open it quicklyLet me in once more
+No way no way go awayMama isn’t here
+You cannot come near
+[Verse 4 -  English]
+Little BunnyOpen the door
+Open it quicklyMama’s home once more
+Yes mom Yes mom I’m hereNo wolf anymoreI’ll open the door
+12. Rain, Rain, Go Away
+[intro]
+[Verse 1 - Standard American English, Neutral Accent]
+Rain, rain, go away,
+Come again another day.
+Daddy wants to play.
+Rain, rain, go away.
+[Verse 2 - Standard American English, Neutral Accent]
+Rain, rain, go away,
+Come again another day.
+Mommy wants to play.
+Rain, rain, go away.
+[Verse 3 - Standard American English, Neutral Accent]
+Rain, rain, go away,
+Come again another day.
+Brother wants to play.
+Rain, rain, go away.
+[Verse 4 - Standard American English, Neutral Accent]
+Rain, rain, go away,
+Come again another day.
+Sister wants to play.
+Rain, rain, go away.
+[Verse 5 - Standard American English, Neutral Accent]
+Rain, rain, go away,
+Come again another day.
+Baby wants to play.
+Rain, rain, go away.
+[Verse 6 - Standard American English, Neutral Accent]
+Rain, rain, go away,
+Come again another day.
+All the family wants to play.
+Rain, rain, go away.
+[interlude]
+[Verse 7 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+小雨，小雨，快走开
+请你改天再过来
+爸爸还想出去玩
+小雨，小雨，快走开
+[Verse 8 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+小雨，小雨，快走开
+请你改天再过来
+妈妈还想出去玩
+小雨，小雨，快走开
+[Verse 9 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+小雨，小雨，快走开
+请你改天再过来
+哥哥还想出去玩
+小雨，小雨，快走开
+[Verse 10 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+小雨，小雨，快走开
+请你改天再过来
+姐姐还想出去玩
+小雨，小雨，快走开
+[Verse 11 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+小雨，小雨，快走开
+请你改天再过来
+宝宝还想出去玩
+小雨，小雨，快走开
+[Verse 12 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+小雨，小雨，快走开
+请你改天再过来
+全家还想出去玩
+小雨，小雨，快走开
+[outro]
+13. The Finger Family
+[Verse 1 - Standard American English, Neutral Accent]Daddy finger, daddy finger, Where are you?
+Here I am, here I am.
+How do you do?
+[Verse 2 - Standard American English, Neutral Accent]Mommy finger, Mommy finger, Where are you?
+Here I am, here I am.
+How do you do?
+[Verse 3 - Standard American English, Neutral Accent]Brother finger, Brother finger, Where are you?
+Here I am, here I am.
+How do you do?
+[Verse 4 - Standard American English, Neutral Accent]Sister finger, Sister finger, Where are you?
+Here I am, here I am.
+How do you do?
+[Verse 5 - Standard American English, Neutral Accent]Baby finger, Baby fingerWhere are you?
+Here I am, here I am.
+How do you do?
+[Verse 6 - Standard Taiwanese Mandarin Chinese, Neutral Accent]手指爸爸，手指爸爸，在哪里？
+在这里，在这里，快来这里！
+[Verse 7 - Standard Taiwanese Mandarin Chinese, Neutral Accent]手指妈妈，手指妈妈，在哪里？
+在这里，在这里，快来这里！
+[Verse 8 - Standard Taiwanese Mandarin Chinese, Neutral Accent]手指哥哥，手指哥哥，在哪里？
+在这里，在这里，快来这里！
+[Verse 9 - Standard Taiwanese Mandarin Chinese, Neutral Accent]手指姐姐，手指姐姐，在哪里？
+在这里，在这里，快来这里！
+[Verse 10 - Standard Taiwanese Mandarin Chinese, Neutral Accent]手指宝宝，手指宝宝，在哪里？
+在这里，在这里，快来这里！
+14. Wheels on the Bus
+[intro]
+[Verse 1 - Standard American English, Neutral Accent]
+The wheels on the bus go round and round,
+Round and round, round and round.
+The wheels on the bus go round and round,
+All through the town.
+[Verse 2 - Standard American English, Neutral Accent]
+The wipers on the bus go swish, swish, swish,
+Swish, swish, swish, swish, swish, swish.
+The wipers on the bus go swish, swish, swish,
+All through the town.
+[Verse 3 - Standard American English, Neutral Accent]
+The horn on the bus goes beep, beep, beep,
+Beep, beep, beep, beep, beep, beep.
+The horn on the bus goes beep, beep, beep,
+All through the town.
+[Verse 4 - Standard American English, Neutral Accent]
+The people on the bus go up and down,
+Up and down, up and down.
+The people on the bus go up and down,
+All through the town.
+[Verse 5 - Standard American English, Neutral Accent]
+The doors on the bus go open and shut, Open and shut, open and shut.
+The doors on the bus go open and shut, All through the town.
+[15-Second Whimsical Piano Interlude, transition to Mandarin]
+[Verse 6 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+巴士的轮子转呀转
+转呀转，转呀转。
+巴士的轮子转呀转，
+穿过街道
+[Verse 7 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+巴士的雨刷刷刷刷，
+刷刷刷，刷刷刷。
+巴士的雨刷刷刷刷，
+穿过街道
+[Verse 8 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+巴士的喇叭哔哔哔，
+哔哔哔，哔哔哔。
+巴士的喇叭哔哔哔，
+穿过街道
+[Verse 9 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+巴士的乘客上上下下
+上上下下，上上下下
+巴士的乘客上上下下
+穿过街道
+[Verse 10 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+巴士的车门开又关
+开又关，开又关
+巴士的车门开又关
+穿过街道
+[outro]
+15. Old MacDonald Had a Farm
+[intro]
+[Verse 1 - Standard American English, Neutral Accent]
+Old MacDonald had a farm, E-I-E-I-O!
+And on his farm he had a cow, E-I-E-I-O!
+With a moo-moo here, and a moo-moo there,
+Here moo, there moo, everywhere moo-moo,
+Old MacDonald had a farm, E-I-E-I-O!
+[Verse 2 - Standard American English, Neutral Accent]
+Old MacDonald had a farm, E-I-E-I-O!
+And on his farm he had a pig, E-I-E-I-O!
+With an oink-oink here, and an oink-oink there,
+Here oink, there oink, everywhere oink-oink,
+Old MacDonald had a farm, E-I-E-I-O!
+[Verse 3 - Standard American English, Neutral Accent]
+Old MacDonald had a farm, E-I-E-I-O!
+And on his farm he had a duck, E-I-E-I-O!
+With a quack-quack here, and a quack-quack there,
+Here quack, there quack, everywhere quack-quack,
+Old MacDonald had a farm, E-I-E-I-O!
+[Verse 4 - Standard American English, Neutral Accent]
+Old MacDonald had a farm, E-I-E-I-O!
+And on his farm he had a horse, E-I-E-I-O!
+With a neigh-neigh here, and a neigh-neigh there,
+Here neigh, there neigh, everywhere neigh-neigh,
+Old MacDonald had a farm, E-I-E-I-O!
+[Verse 5 - Standard American English, Neutral Accent]
+Old MacDonald had a farm, E-I-E-I-O!
+And on his farm he had a goat, E-I-E-I-O!
+With a meh-meh here, and a meh-meh there,
+Here meh, there meh, everywhere meh-meh,
+Old MacDonald had a farm, E-I-E-I-O!
+[interlude]
+[Verse 6 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+王老先生有块地，咿呀咿呀哟！
+他在田边养小牛，咿呀咿呀哟！
+这里哞哞哞，那里哞哞哞
+这里哞，那里哞，到处都在哞哞。
+王老先生有块地，咿呀咿呀哟！
+[Verse 7 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+王老先生有块地，咿呀咿呀哟！
+他在田边养小猪，咿呀咿呀哟！
+这里哼哼哼，那里哼哼哼
+这里哼，那里哼，到处都在哼哼。
+王老先生有块地，咿呀咿呀哟！
+[Verse 8 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+王老先生有块地，咿呀咿呀哟！
+他在田边养小鸭，咿呀咿呀哟！
+这里呱呱呱，那里呱呱呱，
+这里呱，那里呱，到处都在呱呱。
+王老先生有块地，咿呀咿呀哟！
+[Verse 9 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+王老先生有块地，咿呀咿呀哟！
+他在田边养小马，咿呀咿呀哟！
+这里嘶嘶嘶，那里嘶嘶嘶，
+这里嘶，那里嘶，到处都在嘶嘶。
+王老先生有块地，咿呀咿呀哟！
+[Verse 10 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+王老先生有块地，咿呀咿呀哟！
+他在田边养小羊，咿呀咿呀哟！
+这里咩咩咩，那里咩咩咩，
+这里咩，那里咩，到处都在咩咩。
+王老先生有块地，咿呀咿呀哟！
+[Outro]
+16. If You're Happy and You Know It
+[Intro]
+[Verse 1 - Standard American English, Neutral Accent]
+If you're happy and you know it, clap your hands! [clap] [clap]
+If you're happy and you know it, clap your hands! [clap] [clap]
+If you're happy and you know it, then your face will surely show it,
+If you're happy and you know it, clap your hands! [clap] [clap]
+[Verse 2 - Standard American English, Neutral Accent]
+If you're happy and you know it, stomp your feet! [heavy floor stomp] [heavy floor stomp]
+If you're happy and you know it, stomp your feet! [heavy floor stomp] [heavy floor stomp]
+If you're happy and you know it, then your face will surely show it,
+If you're happy and you know it, stomp your feet! [heavy floor stomp] [heavy floor stomp]
+[Verse 3 - Standard American English, Neutral Accent]
+If you're happy and you know it, shout &quot;Hooray!&quot; (Hooray!)
+If you're happy and you know it, shout &quot;Hooray!&quot; (Hooray!)
+If you're happy and you know it, then your face will surely show it,
+If you're happy and you know it, shout &quot;Hooray!&quot; (Hooray!)
+[Verse 4 - Standard American English, Neutral Accent]
+If you're happy and you know it, do all three! [clap] [clap] [heavy floor stomp] [heavy floor stomp] (Hooray!)
+If you're happy and you know it, do all three! [clap] [clap] [heavy floor stomp] [heavy floor stomp] (Hooray!)
+If you're happy and you know it, then your face will surely show it,
+If you're happy and you know it, do all three! [clap] [clap] [heavy floor stomp] [heavy floor stomp] (Hooray!)
+[interlude]
+[Verse 5 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+如果开心你就跟我拍拍手 [clap] [clap]
+如果开心你就跟我拍拍手 [clap] [clap]
+如果感到开心你就跟我拍拍手
+如果开心你就跟我拍拍手 [clap] [clap]
+[Verse 6 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+如果开心你就跟我跺跺脚 [heavy floor stomp] [heavy floor stomp]
+如果开心你就跟我跺跺脚 [heavy floor stomp] [heavy floor stomp]
+如果感到开心你就跟我跺跺脚
+如果开心你就跟我跺跺脚 [heavy floor stomp] [heavy floor stomp]
+[Verse 7 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+如果开心你就跟我大声喊 （真棒!）
+如果开心你就跟我大声喊 （真棒!）
+如果感到开心你就跟我大声喊
+如果开心你就跟我大声喊 （真棒!）
+[Verse 8 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+如果开心你就跟我一起做 [clap] [clap] [heavy floor stomp] [heavy floor stomp] (真棒!)
+如果开心你就跟我一起做 [clap] [clap] [heavy floor stomp] [heavy floor stomp] (真棒!)
+如果感到开心你就跟我一起做
+如果开心你就跟我一起做 [clap] [clap] [heavy floor stomp] [heavy floor stomp] (真棒!)
+[outro]
+17. Five Little Monkeys
+[intro]
+[Verse 1 - Standard American English, Neutral Accent]
+Five little monkeys jumping on the bed,
+One fell off and bumped his head.
+Mama called the doctor and the doctor said,
+&quot;No more monkeys jumping on the bed!&quot;
+[Verse 2 - Standard American English, Neutral Accent]
+Four little monkeys jumping on the bed,
+One fell off and bumped his head.
+Mama called the doctor and the doctor said,
+&quot;No more monkeys jumping on the bed!&quot;
+[Verse 3 - Standard American English, Neutral Accent]
+Three little monkeys jumping on the bed,
+One fell off and bumped his head.
+Mama called the doctor and the doctor said,
+&quot;No more monkeys jumping on the bed!&quot;
+[Verse 4 - Standard American English, Neutral Accent]
+Two little monkeys jumping on the bed,
+One fell off and bumped his head.
+Mama called the doctor and the doctor said,
+&quot;No more monkeys jumping on the bed!&quot;
+[Verse 5 - Standard American English, Neutral Accent]
+One little monkey jumping on the bed,
+He fell off and bumped his head.
+Mama called the doctor and the doctor said,
+&quot;No more monkeys jumping on the bed!&quot;
+[interlude]
+[Verse 6 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+五只小猴床上跳
+一只跌倒摔伤了
+医生医生怎么办
+别让小猴床上跳
+[Verse 7 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+四只小猴床上跳
+一只跌倒摔伤了
+医生医生怎么办
+别让小猴床上跳
+[Verse 8 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+三只小猴床上跳
+一只跌倒摔伤了
+医生医生怎么办
+别让小猴床上跳
+[Verse 9 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+两只小猴床上跳
+一只跌倒摔伤了
+医生医生怎么办
+别让小猴床上跳
+[Verse 10 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+一只小猴床上跳
+一只跌倒摔伤了
+医生医生怎么办
+别让小猴床上跳
+[outro]
+18. Baby Shark
+[intro]
+[Verse 1 - Standard American English, Neutral Accent]
+Baby shark, doo doo doo doo doo doo,
+Baby shark, doo doo doo doo doo doo,
+Baby shark, doo doo doo doo doo doo,
+Baby shark!
+[Verse 2 - Standard American English, Neutral Accent]
+Mommy shark, doo doo doo doo doo doo,
+Mommy shark, doo doo doo doo doo doo,
+Mommy shark, doo doo doo doo doo doo,
+Mommy shark!
+[Verse 3 - Standard American English, Neutral Accent]
+Daddy shark, doo doo doo doo doo doo,
+Daddy shark, doo doo doo doo doo doo,
+Daddy shark, doo doo doo doo doo doo,
+Daddy shark!
+[Verse 4 - Standard American English, Neutral Accent]
+Grandma shark, doo doo doo doo doo doo,
+Grandma shark, doo doo doo doo doo doo,
+Grandma shark, doo doo doo doo doo doo,
+Grandma shark!
+[Verse 5 - Standard American English, Neutral Accent]
+Grandpa shark, doo doo doo doo doo doo,
+Grandpa shark, doo doo doo doo doo doo,
+Grandpa shark, doo doo doo doo doo doo,
+Grandpa shark!
+[Verse 6 - Standard American English, Neutral Accent]
+Let’s go hunt, doo doo doo doo doo doo,
+Let’s go hunt, doo doo doo doo doo doo,
+Let’s go hunt, doo doo doo doo doo doo,
+Let’s go hunt!
+[interlude]
+[Verse 7 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+鲨鱼宝宝，嘟嘟嘟嘟嘟
+鲨鱼宝宝，嘟嘟嘟嘟嘟
+鲨鱼宝宝，嘟嘟嘟嘟嘟
+鲨鱼宝宝！
+[Verse 8 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+鲨鱼妈妈，嘟嘟嘟嘟嘟
+鲨鱼妈妈，嘟嘟嘟嘟嘟
+鲨鱼妈妈，嘟嘟嘟嘟嘟
+鲨鱼妈妈！
+[Verse 9 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+鲨鱼爸爸，嘟嘟嘟嘟嘟
+鲨鱼爸爸，嘟嘟嘟嘟嘟
+鲨鱼爸爸，嘟嘟嘟嘟嘟
+鲨鱼爸爸！
+[Verse 10 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+鲨鱼奶奶，嘟嘟嘟嘟嘟
+鲨鱼奶奶，嘟嘟嘟嘟嘟
+鲨鱼奶奶，嘟嘟嘟嘟嘟
+鲨鱼奶奶！
+[Verse 11 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+鲨鱼爷爷，嘟嘟嘟嘟嘟
+鲨鱼爷爷，嘟嘟嘟嘟嘟
+鲨鱼爷爷，嘟嘟嘟嘟嘟
+鲨鱼爷爷！
+[Verse 12 - Standard Taiwanese Mandarin Chinese, Neutral Accent]
+出发猎食，嘟嘟嘟嘟嘟
+出发猎食，嘟嘟嘟嘟嘟
+出发猎食，嘟嘟嘟嘟嘟
+出发猎食！
+[outro]
+[end]
+19. 拔萝卜
+[intro]
+[Verse 1: Standard Taiwanese Mandarin Chinese, Neutral Accent]
+拔萝卜，拔萝卜。
+嘿呦嘿呦，拔萝卜，
+嘿呦嘿呦，拔不动。
+老婆婆，快快来，
+快来帮我们拔萝卜。
+[Verse 2: Standard Taiwanese Mandarin Chinese, Neutral Accent]
+拔萝卜，拔萝卜。
+嘿呦嘿呦，拔萝卜，
+嘿呦嘿呦，拔不动。
+小姑娘，快快来，
+快来帮我们拔萝卜。
+[Verse 3: Standard Taiwanese Mandarin Chinese, Neutral Accent]
+拔萝卜，拔萝卜。
+嘿呦嘿呦，拔萝卜，
+嘿呦嘿呦，拔不动。
+小花猫，快快来，
+快来帮我们拔萝卜。
+[Verse 4: Standard Taiwanese Mandarin Chinese, Neutral Accent]
+拔萝卜，拔萝卜。
+嘿呦嘿呦，拔萝卜，
+嘿呦嘿呦，拔不动。
+小鸭儿，快快来，
+快来帮我们拔萝卜。
+[interlude]
+[Verse 5: Standard American English, Neutral Accent]
+Big Radish, Pull It Out
+Heyo Heyo, Pull It Out
+Grandmother, Join the line
+Help us pull the Radish Out!
+[Verse 6: Standard American English, Neutral Accent]
+Big Radish, Pull It Out
+Heyo Heyo, Pull It Out
+Little Girl, Join the line
+Help us pull the Radish Out!
+[Verse 7: Standard American English, Neutral Accent]
+Big Radish, Pull It Out
+Heyo Heyo, Pull It Out
+Kitty Cat, Join the line
+Help us pull the Radish Out!
+[Verse 8: Standard American English, Neutral Accent]
+Big Radish, Pull It Out
+Heyo Heyo, Pull It Out
+Little Duck, Join the line
+Help us pull the Radish Out!
+[outro]
+[end]
+20. 小燕子
+[intro]
+[Verse 1 - Standard Taiwanese Mandarin Chinese Accent]
+小燕子，穿花衣，
+年年春天来这里。
+我问燕子你为啥来？
+燕子说：“这里的春天最美丽。”
+[Verse 2 - Standard Taiwanese Mandarin Chinese Accent]
+小燕子，告诉你，
+今年这里更美丽。
+我们盖起了大工厂，
+装上了新机器。
+欢迎你，长期住在这里。
+[interlude]
+[Verse 3 - Standard Neutral American Accent]
+Little bird, coat of flowersGreeting me through spring showers
+Little bird, why are you here?The spring here is the prettiest I’ve seen
+[Verse 4 - Standard Neutral American Accent]
+Little bird, I’ve news for you
+This place is more beautiful too
+We built a big factory
+Filled with machinery
+Feel free to stay here indefinitely
+[outro]
+21. Rasa Sayang / Feeling of Love / 爱的感觉
+[intro]
+[Verse 1 - Standard Malaysian Malay]
+Rasa sayang ehRasa sayang sayang eh
+Hey lihat nona jauhRasa sayang sayang eh
+[10 seconds interlude]
+[Verse 2 - Standard American Accent]
+I feel love, oh yeah!
+I feel love right now, oh yeah!
+Hey, love is all around us,
+I feel love right now, oh yeah!
+[10 seconds interlude]
+[Verse 3 - Standard Taiwanese Mandarin Chinese Accent]
+充满爱，喔耶
+这感觉好美，喔耶
+嘿，充满爱和友情
+这感觉好美，喔耶
+[outro]
+22. Chan Mali Chan
+[intro]
+[Verse 1 - Malaysian Malay Accent]
+Di mana dia
+Anak kambing saya?
+Anak kambing saya
+Yang makan daun talas
+Di mana dia
+Buah hati saya
+Buah hati saya
+Bagai telur dikupas
+[Chorus - Malaysian Malay Accent]
+Chan mali chan (oi oi), chan mali chan (oi oi)
+Chan mali chan, ketipung payung
+Chan mali chan (oi oi), chan mali chan (oi oi)
+Chan mali chan, ketipung payung
+[Verse 2 - Standard American Neutral Accent]
+Where’s my baby now
+Don’t run away from me
+I’m coming for you now
+By the banyan tree right there
+Where’s my baby now
+The darling of my heart
+The darling of my heart
+We will never be apart
+[Chorus - Standard American Neutral Accent]
+Chan mali chan (oi oi), chan mali chan (oi oi)
+Chan mali chan, where’s my little baby now
+Chan mali chan (oi oi), chan mali chan (oi oi)
+Chan mali chan, where’s my little baby now
+[Verse 3 - Standard Taiwanese Mandarin Chinese Accent]
+你在哪里呀？别现在逃避我
+我现在找你啦就在那棵大树下
+你在哪里呀？
+我的心肝宝贝
+我的心肝宝贝
+我们永远不分离
+[Chorus - Standard Taiwanese Mandarin Chinese Accent]
+Chan mali chan (oi oi), chan mali chan (oi oi)
+Chan mali chan, 我的宝贝躲哪里
+Chan mali chan (oi oi), chan mali chan (oi oi)
+Chan mali chan, 我的宝贝躲哪里
+[outro]
+数鸭子
+Asd
+23. Burung Kakak Tua
+Burung kakak tua
+Hinggap di jendela
+Nenek sudah tua
+Giginya tinggal dua
+Letrum, letrum, letrum oooh la la
+Letrum, letrum, letrum oooh la la
+Letrum, letrum, letrum oooh la la
+Burung kakak tua
+There was a cockatoo
+With a window view
+Grandma is old, it’s true
+Her teeth are left with two
+Letrum, letrum, letrum oooh la la
+Letrum, letrum, letrum oooh la la
+Letrum, letrum, letrum oooh la la
+There was a cockatoo
+鹦鹉老哥哥
+飞到窗台边
+奶奶年纪大
+她剩下两颗牙
+哩噜, 哩噜, 哩噜 ooh la la
+哩噜, 哩噜, 哩噜 ooh la la
+哩噜, 哩噜, 哩噜 ooh la la
+鹦鹉老哥哥
+24. Sleeping Bunnies
+See the little bunnies sleeping till it’s nearly noon
+Shall we wake them with a merry tune?
+They’re so still, are they ill?
+Wake up little bunnies!
+Hop little bunnies, hop, hop, hop
+Hop little bunnies, hop, hop, hop
+Hop little bunnies, hop, hop, hop
+Hop little bunnies, hop, hop, hop
+看到小兔子们睡到中午啦
+我们用歌声叫醒它们吗？
+没动静, 生了病?
+快醒醒 小兔子！
+小兔子呀, 蹦蹦跳
+小兔子呀, 蹦蹦跳
+小兔子呀, 蹦蹦跳
+小兔子呀, 蹦蹦跳
+Johny Johny Yes Papa
+asd
+LITTLE BUNNY
+Solo female kindergarten teacher singing and playing piano in a classroom. Simple upright piano accompaniment only. Natural classroom sound. Clear chest voice. Bright and rhythmic preschool action song. Speech-like articulation. Short note endings. Steady moderate tempo (~100 BPM).
+Chinese sections sung with native Mainland Mandarin pronunciation. English sections sung with neutral American accent. Switch accents naturally based on language. Pronunciation is clear and educational.
+[Intro – Light piano, steady tempo ~100 BPM]
+[Verse 1 – Chinese – Native Mainland Mandarin Accent]
+小兔子乖乖
+把门儿开开
+快点儿开开
+我要进来
+不开不开我不开
+妈妈没回来
+谁来也不开
+[Verse 2 – Chinese – Native Mainland Mandarin Accent]
+小兔子乖乖
+把门儿开开
+快点儿开开
+妈妈回来了
+就开就开我就开
+妈妈回来了
+这就把门开
+[Verse 3 – English – American Accent]
+Little Bunny
+Open the door
+Open it quickly
+Let me in once more
+No way no way go away
+Mama isn’t here
+You cannot come near
+[Verse 4 – English – American Accent]
+Little Bunny
+Open the door
+Open it quickly
+Mama’s home once more
+Yes mom yes mom I’m here
+No wolf anymore
+I’ll open the door
+[Outro – Repeat final line softly, single voice only]

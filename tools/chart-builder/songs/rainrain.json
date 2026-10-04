@@ -153,5 +153,247 @@
  "exclusions": [],
  "review": {
   "song": "owner-listening-pending"
- }
+ },
+ "measuredNoteEdits": [
+  {
+   "op": "word",
+   "onset": 28.1741,
+   "text": "go",
+   "reason": "Verse 1 sings \"Rain, rain, go a-way\" G4, E4, then one held G4 for \"go a-\" (14.89-15.51 s, no new attack), then E4. In this verse the second \"rain\" is an E4 with a dip in it and the held G4 follows on the beat; the matcher had put \"go\" on the second half of \"rain\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 41.4838,
+   "text": "go",
+   "reason": "Verse 1 sings \"Rain, rain, go a-way\" G4, E4, then one held G4 for \"go a-\" (14.89-15.51 s, no new attack), then E4. In this verse the second \"rain\" is an E4 with a dip in it and the held G4 follows on the beat; the matcher had put \"go\" on the second half of \"rain\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 42.0326,
+   "text": "way",
+   "reason": "\"way\" is the E4 after the held G4 (42.03 s, with a dip at 42.14 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 54.8434,
+   "text": "go",
+   "reason": "Verse 1 sings \"Rain, rain, go a-way\" G4, E4, then one held G4 for \"go a-\" (14.89-15.51 s, no new attack), then E4. In this verse the second \"rain\" is an E4 with a dip in it and the held G4 follows on the beat; the matcher had put \"go\" on the second half of \"rain\". (Here the G4 is reached through a short F4 at 54.84 s.)",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 68.1432,
+   "text": "go",
+   "reason": "Verse 1 sings \"Rain, rain, go a-way\" G4, E4, then one held G4 for \"go a-\" (14.89-15.51 s, no new attack), then E4. In this verse the second \"rain\" is an E4 with a dip in it and the held G4 follows on the beat; the matcher had put \"go\" on the second half of \"rain\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 81.5029,
+   "text": "go",
+   "reason": "Verse 1 sings \"Rain, rain, go a-way\" G4, E4, then one held G4 for \"go a-\" (14.89-15.51 s, no new attack), then E4. In this verse the second \"rain\" is an E4 with a dip in it and the held G4 follows on the beat; the matcher had put \"go\" on the second half of \"rain\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 29.531,
+   "text": "Come",
+   "reason": "\"Come a-gain\" is G4 G4 E4 (verse 1, 16.21-17.22 s). Here \"Come a-\" are on one held G4; the short E4 before it is the end of \"way\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 69.5001,
+   "text": "Come",
+   "reason": "\"Come a-gain\" is G4 G4 E4 (verse 1, 16.21-17.22 s). Here \"Come a-\" are on one held G4; the short E4 before it is the end of \"way\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 82.8797,
+   "text": "Come",
+   "reason": "\"Come a-gain\" is G4 G4 E4 (verse 1, 16.21-17.22 s). Here \"Come a-\" are on one held G4; the short E4 before it is the end of \"way\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "join",
+   "onset": 57.238,
+   "into": "next",
+   "reason": "A 0.08 s G4 rising into the A4 of \"a-\"; the other verses start \"a-noth-er\" directly on A4 (17.22, 30.57, 43.92 s). A slide.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 57.5772,
+   "text": "noth",
+   "reason": "\"a-noth-er day\" is A4 G4 G4 E4 (verse 1, 17.22-18.49 s). Here \"noth-er\" share the held G4 at 57.58 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 23.0058,
+   "text": "a",
+   "reason": "Verse 4 sings the last line G4 F4 (E4) D4 E4 C4 with \"go\" on D4, \"a-\" on E4 and \"way\" on the long C4 (62.46-64.13 s). Here the same notes are present; the matcher had put \"a-\" one note off.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 36.3056,
+   "text": "a",
+   "reason": "Verse 4 sings the last line G4 F4 (E4) D4 E4 C4 with \"go\" on D4, \"a-\" on E4 and \"way\" on the long C4 (62.46-64.13 s). Here the same notes are present; the matcher had put \"a-\" one note off.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 36.4752,
+   "text": "way",
+   "reason": "Verse 4 sings the last line G4 F4 (E4) D4 E4 C4 with \"go\" on D4, \"a-\" on E4 and \"way\" on the long C4 (62.46-64.13 s). Here the same notes are present; the matcher had put \"a-\" one note off.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 49.6453,
+   "text": "a",
+   "reason": "Verse 4 sings the last line G4 F4 (E4) D4 E4 C4 with \"go\" on D4, \"a-\" on E4 and \"way\" on the long C4 (62.46-64.13 s). Here the same notes are present; the matcher had put \"a-\" one note off.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 49.7949,
+   "text": "way",
+   "reason": "Verse 4 sings the last line G4 F4 (E4) D4 E4 C4 with \"go\" on D4, \"a-\" on E4 and \"way\" on the long C4 (62.46-64.13 s). Here the same notes are present; the matcher had put \"a-\" one note off.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 112.1532,
+   "text": "请",
+   "reason": "请你 are sung on one held G4 here (verse 1 has them on two G4, 98.86 and 99.16 s); the short E4 before it is the end of 开.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 125.4729,
+   "text": "请",
+   "reason": "请你 are sung on one held G4 here (verse 1 has them on two G4, 98.86 and 99.16 s); the short E4 before it is the end of 开.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 138.8126,
+   "text": "请",
+   "reason": "请你 are sung on one held G4 here (verse 1 has them on two G4, 98.86 and 99.16 s); the short E4 before it is the end of 开.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 165.6516,
+   "text": "请",
+   "reason": "请你 are sung on one held G4 here (verse 1 has them on two G4, 98.86 and 99.16 s); the short E4 before it is the end of 开.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 124.126,
+   "text": "快",
+   "reason": "Verse 1 sings 小雨小雨快走开 as G G E E G G E, evenly (96.17-98.43 s). Here the second 小雨 share one held E4 and 快 starts on the short F4 rising into G4; the matcher had put 雨 on that rise.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 124.5051,
+   "text": "走",
+   "reason": "Verse 1 sings 小雨小雨快走开 as G G E E G G E, evenly (96.17-98.43 s). Here the second 小雨 share one held E4 and 快 starts on the short F4 rising into G4; the matcher had put 雨 on that rise.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 137.4856,
+   "text": "快",
+   "reason": "Verse 1 sings 小雨小雨快走开 as G G E E G G E, evenly (96.17-98.43 s). Here the second 小雨 share one held E4 and 快 starts on the short F4 rising into G4; the matcher had put 雨 on that rise.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 137.8348,
+   "text": "走",
+   "reason": "Verse 1 sings 小雨小雨快走开 as G G E E G G E, evenly (96.17-98.43 s). Here the second 小雨 share one held E4 and 快 starts on the short F4 rising into G4; the matcher had put 雨 on that rise.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 28.8625,
+   "text": "way",
+   "reason": "\"way\" is the E4 straight after the held G4 of \"go a-\", as in verse 1 (15.56 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 68.662,
+   "text": "way",
+   "reason": "\"way\" is the E4 straight after the held G4 of \"go a-\", as in verse 1 (15.56 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 166.1505,
+   "text": "改",
+   "reason": "Verse 1 sings 请你改天再过来 G G E A G G E, evenly (98.86-101.12 s). In verse 6 the pitch reading is unreliable (a second voice is present) but the note starts are clear: 请你 on the held note at 165.65 s, then one syllable per note.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 166.4897,
+   "text": "天",
+   "reason": "Verse 1 sings 请你改天再过来 G G E A G G E, evenly (98.86-101.12 s). In verse 6 the pitch reading is unreliable (a second voice is present) but the note starts are clear: 请你 on the held note at 165.65 s, then one syllable per note.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 166.809,
+   "text": "再",
+   "reason": "Verse 1 sings 请你改天再过来 G G E A G G E, evenly (98.86-101.12 s). In verse 6 the pitch reading is unreliable (a second voice is present) but the note starts are clear: 请你 on the held note at 165.65 s, then one syllable per note.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 167.0385,
+   "text": "过",
+   "reason": "Verse 1 sings 请你改天再过来 G G E A G G E, evenly (98.86-101.12 s). In verse 6 the pitch reading is unreliable (a second voice is present) but the note starts are clear: 请你 on the held note at 165.65 s, then one syllable per note.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  }
+ ]
 }

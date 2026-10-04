@@ -42,12 +42,34 @@ Last updated: 2026-10-04 (SGT)
   flagged lines song by song, fixing what the evidence supports.
 - Catalogue total after these changes: 4,668 notes. 69 builder fixtures and every `tests/*.cjs` pass.
 
+## Song-by-song word placement pass, 2026-10-04 (implemented, not listening-verified)
+
+Each song's lines were laid side by side across its verses and checked against the recording. Where a
+word sat one note early or late it was pinned to its note in the song file (`word` edits, each with its
+evidence). No pitch was changed in this pass.
+
+- No edits needed: London Bridge, Head Shoulders, Baa Baa, Rasa Sayang (differences are real variations).
+- Fixed: Itsy Bitsy, Finger Family, More We Get Together, Humpty Dumpty, Little Bunny, Mary Had a Little
+  Lamb, Wheels on the Bus, Pull the Radish (Ba Luo Bo), If You're Happy, Rain Rain Go Away, Five Little
+  Monkeys, Old MacDonald.
+- Pull the Radish: the two shouted "Hey!" between the Mandarin and English halves (1:26, 1:29) are left
+  out of the chart (same reasoning as Chan Mali Chan's "oi oi").
+- Not touched: Baby Shark (English is fine; Mandarin words are approximate, see below).
+- Catalogue total now 4,586 notes. 69 builder fixtures and every `tests/*.cjs` pass.
+
 ## Unresolved passages for Galvin (each with a recommendation)
 
 1. **Baby Shark Mandarin (1:11-2:08)**: the transcriber cannot hear the words, so the words shown in the
    remaining Mandarin verses are approximate. Recommend accepting for now.
 2. **Two Tigers, 1:35**: the first 奇 of verse 4 is sung sharp while sliding up; charted as A3 like the
    other three. Recommend keeping.
+3. **Rain Rain Go Away, Mandarin verses 5 and 6 (2:29-2:34, 2:42-2:48)**: a second voice sings along in
+   the first two lines and the pitch reader cannot follow the lead (it reads notes as low as C3). Words
+   are on the right notes; pitches there are unreliable. Recommend giving those lines the tune of Mandarin
+   verse 1 (`tuneFrom`, as done for Chan Mali Chan). Needs Galvin's yes because it replaces measured pitch.
+4. **If You're Happy, verse 3 in both languages (0:39-0:51, 1:31-1:44)**: the shouted "Hoo-ray!" / 真棒
+   after each line is charted as notes with jumpy pitches (it is a shout). Recommend leaving the shouts
+   out of the chart, like the Baby Shark growl and the "oi oi" shouts.
 
 ## Still imperfect, no decision needed (leads, not blockers)
 
@@ -61,7 +83,8 @@ Last updated: 2026-10-04 (SGT)
 
 ## Waiting on Galvin
 
-- Normal playtesting feedback, and the two passages above (each has a default if he says nothing).
+- Normal playtesting feedback, and the four passages above (1 and 2 have a default if he says nothing;
+  3 and 4 stay as they are until he answers).
 - Still open from before: keep/retire the scoring lab; live singing review of Steps 6 and 7.
 
 ## How it is built (2026-10-03 pipeline)

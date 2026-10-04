@@ -135,5 +135,487 @@
  "exclusions": [],
  "review": {
   "song": "owner-listening-pending"
- }
+ },
+ "measuredNoteEdits": [
+  {
+   "op": "word",
+   "onset": 28.1242,
+   "text": "called",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 28.4325,
+   "text": "the",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 29.1175,
+   "text": "and",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 29.7106,
+   "text": "tor",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 41.7931,
+   "text": "called",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 42.1124,
+   "text": "the",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 42.4217,
+   "text": "doc",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 42.9075,
+   "text": "the",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 43.3795,
+   "text": "tor",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 52.818,
+   "text": "and",
+   "reason": "Verse 1 sings \"and bumped his head\" G4 F4 D#4 A#3 (25.54-27.03 s). Here \"and\" scoops F4 to G4 (52.82-53.22 s) and \"head\" is the A#3 at 54.08 s, 0.8 s before \"Ma-ma\"; the matcher had given that A#3 to \"Ma-\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 53.2171,
+   "text": "bumped",
+   "reason": "Verse 1 sings \"and bumped his head\" G4 F4 D#4 A#3 (25.54-27.03 s). Here \"and\" scoops F4 to G4 (52.82-53.22 s) and \"head\" is the A#3 at 54.08 s, 0.8 s before \"Ma-ma\"; the matcher had given that A#3 to \"Ma-\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 53.6162,
+   "text": "his",
+   "reason": "Verse 1 sings \"and bumped his head\" G4 F4 D#4 A#3 (25.54-27.03 s). Here \"and\" scoops F4 to G4 (52.82-53.22 s) and \"head\" is the A#3 at 54.08 s, 0.8 s before \"Ma-ma\"; the matcher had given that A#3 to \"Ma-\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 54.0752,
+   "text": "head",
+   "reason": "Verse 1 sings \"and bumped his head\" G4 F4 D#4 A#3 (25.54-27.03 s). Here \"and\" scoops F4 to G4 (52.82-53.22 s) and \"head\" is the A#3 at 54.08 s, 0.8 s before \"Ma-ma\"; the matcher had given that A#3 to \"Ma-\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 54.9233,
+   "text": "Ma",
+   "reason": "Verse 1 sings \"and bumped his head\" G4 F4 D#4 A#3 (25.54-27.03 s). Here \"and\" scoops F4 to G4 (52.82-53.22 s) and \"head\" is the A#3 at 54.08 s, 0.8 s before \"Ma-ma\"; the matcher had given that A#3 to \"Ma-\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 55.0575,
+   "text": "ma",
+   "reason": "Verse 1 sings \"and bumped his head\" G4 F4 D#4 A#3 (25.54-27.03 s). Here \"and\" scoops F4 to G4 (52.82-53.22 s) and \"head\" is the A#3 at 54.08 s, 0.8 s before \"Ma-ma\"; the matcher had given that A#3 to \"Ma-\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 55.4321,
+   "text": "called",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 55.7025,
+   "text": "the",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 56.0208,
+   "text": "doc",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 56.3625,
+   "text": "and",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 56.5375,
+   "text": "the",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 56.9786,
+   "text": "tor",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 69.2307,
+   "text": "called",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 69.5275,
+   "text": "the",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 69.8194,
+   "text": "doc",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 69.9775,
+   "text": "tor",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 70.2285,
+   "text": "and",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 70.3582,
+   "text": "the",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 70.8171,
+   "text": "tor",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 86.3119,
+   "text": "called",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 86.5875,
+   "text": "the",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 86.8906,
+   "text": "doc",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 87.2525,
+   "text": "and",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 87.4175,
+   "text": "the",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 87.8385,
+   "text": "tor",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 88.3074,
+   "text": "said",
+   "reason": "\"Ma-ma called the doc-tor and the doc-tor said\" is two A#3, a run of G4, then F4 and G#4. Verse 4 shows the run most clearly (69.23-70.71 s): \"called\" starts with a 0.1 s scoop, \"doc-tor\" and \"the doc-\" are sung quickly. The same note starts appear in every verse; the matcher had put \"called\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 62.3165,
+   "text": "lit",
+   "reason": "Verse 1 sings \"Five lit-tle mon-keys jump-ing on the bed\" A#3 G4 G4 G4 G#4 G4 F4 F4 D#4 F4 (20.83-23.64 s). Verse 4 has the same notes at the same spacing; \"lit-\" starts with a 0.06 s scoop and \"-ing on\" share one F4. The matcher had put \"lit-\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 62.5525,
+   "text": "tle",
+   "reason": "Verse 1 sings \"Five lit-tle mon-keys jump-ing on the bed\" A#3 G4 G4 G4 G#4 G4 F4 F4 D#4 F4 (20.83-23.64 s). Verse 4 has the same notes at the same spacing; \"lit-\" starts with a 0.06 s scoop and \"-ing on\" share one F4. The matcher had put \"lit-\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 63.1246,
+   "text": "mon",
+   "reason": "Verse 1 sings \"Five lit-tle mon-keys jump-ing on the bed\" A#3 G4 G4 G4 G#4 G4 F4 F4 D#4 F4 (20.83-23.64 s). Verse 4 has the same notes at the same spacing; \"lit-\" starts with a 0.06 s scoop and \"-ing on\" share one F4. The matcher had put \"lit-\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 63.2344,
+   "text": "keys",
+   "reason": "Verse 1 sings \"Five lit-tle mon-keys jump-ing on the bed\" A#3 G4 G4 G4 G#4 G4 F4 F4 D#4 F4 (20.83-23.64 s). Verse 4 has the same notes at the same spacing; \"lit-\" starts with a 0.06 s scoop and \"-ing on\" share one F4. The matcher had put \"lit-\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 63.5736,
+   "text": "jump",
+   "reason": "Verse 1 sings \"Five lit-tle mon-keys jump-ing on the bed\" A#3 G4 G4 G4 G#4 G4 F4 F4 D#4 F4 (20.83-23.64 s). Verse 4 has the same notes at the same spacing; \"lit-\" starts with a 0.06 s scoop and \"-ing on\" share one F4. The matcher had put \"lit-\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 63.843,
+   "text": "ing",
+   "reason": "Verse 1 sings \"Five lit-tle mon-keys jump-ing on the bed\" A#3 G4 G4 G4 G#4 G4 F4 F4 D#4 F4 (20.83-23.64 s). Verse 4 has the same notes at the same spacing; \"lit-\" starts with a 0.06 s scoop and \"-ing on\" share one F4. The matcher had put \"lit-\" on the scoop alone and the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 45.9437,
+   "text": "keys",
+   "reason": "Verse 1 sings \"No more mon-keys jump-ing on the bed\" as four A#4, then A#3 A#3 C4 D4 D#4, with \"jump-\" on the first low note (32.75 s). Here the same low note marks \"jump-\"; the matcher had put it one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 46.4026,
+   "text": "jump",
+   "reason": "Verse 1 sings \"No more mon-keys jump-ing on the bed\" as four A#4, then A#3 A#3 C4 D4 D#4, with \"jump-\" on the first low note (32.75 s). Here the same low note marks \"jump-\"; the matcher had put it one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 46.6925,
+   "text": "ing",
+   "reason": "Verse 1 sings \"No more mon-keys jump-ing on the bed\" as four A#4, then A#3 A#3 C4 D4 D#4, with \"jump-\" on the first low note (32.75 s). Here the same low note marks \"jump-\"; the matcher had put it one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 46.8317,
+   "text": "on",
+   "reason": "Verse 1 sings \"No more mon-keys jump-ing on the bed\" as four A#4, then A#3 A#3 C4 D4 D#4, with \"jump-\" on the first low note (32.75 s). Here the same low note marks \"jump-\"; the matcher had put it one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 59.5627,
+   "text": "keys",
+   "reason": "Verse 1 sings \"No more mon-keys jump-ing on the bed\" as four A#4, then A#3 A#3 C4 D4 D#4, with \"jump-\" on the first low note (32.75 s). Here the same low note marks \"jump-\"; the matcher had put it one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 60.0117,
+   "text": "jump",
+   "reason": "Verse 1 sings \"No more mon-keys jump-ing on the bed\" as four A#4, then A#3 A#3 C4 D4 D#4, with \"jump-\" on the first low note (32.75 s). Here the same low note marks \"jump-\"; the matcher had put it one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 60.2675,
+   "text": "ing",
+   "reason": "Verse 1 sings \"No more mon-keys jump-ing on the bed\" as four A#4, then A#3 A#3 C4 D4 D#4, with \"jump-\" on the first low note (32.75 s). Here the same low note marks \"jump-\"; the matcher had put it one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 60.4307,
+   "text": "on",
+   "reason": "Verse 1 sings \"No more mon-keys jump-ing on the bed\" as four A#4, then A#3 A#3 C4 D4 D#4, with \"jump-\" on the first low note (32.75 s). Here the same low note marks \"jump-\"; the matcher had put it one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 60.6902,
+   "text": "the",
+   "reason": "Verse 1 sings \"No more mon-keys jump-ing on the bed\" as four A#4, then A#3 A#3 C4 D4 D#4, with \"jump-\" on the first low note (32.75 s). Here the same low note marks \"jump-\"; the matcher had put it one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 106.7555,
+   "text": "小",
+   "reason": "The other Mandarin verses sing 别让小猴 as A#4 A#4 A#3 D4 with 小 on the low A#3 (160.33 s). In verse 1 别让 share the held A#4 (105.92-106.64 s) and 猴 scoops C4 to D4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 107.1546,
+   "text": "猴",
+   "reason": "The other Mandarin verses sing 别让小猴 as A#4 A#4 A#3 D4 with 小 on the low A#3 (160.33 s). See the pin at 106.76 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 107.7033,
+   "text": "床",
+   "reason": "The other Mandarin verses sing 别让小猴 as A#4 A#4 A#3 D4 with 小 on the low A#3 (160.33 s). See the pin at 106.76 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 119.5065,
+   "text": "别",
+   "reason": "The other Mandarin verses sing 别让小猴 as A#4 A#4 A#3 D4 with 小 on the low A#3 (160.33 s). In verse 2 别让 share the held A#4 at 119.51 s; the short G#4 before it is the end of 办.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 64.2421,
+   "text": "the",
+   "reason": "\"on the bed\" ends F4 D#4 F4 (verse 1, 22.99-23.64 s): \"the\" is the D#4, \"bed\" the F4 after it; \"-ing on\" share the F4 before.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 64.3917,
+   "text": "bed",
+   "reason": "See the pin at 64.24 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 28.7527,
+   "text": "doc",
+   "reason": "\"doc-tor\" and \"the doc-\" are each sung quickly on one G4, with \"and\" on the short G4 between them, as verse 4 shows (69.82-70.71 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 29.2925,
+   "text": "the",
+   "reason": "\"doc-tor\" and \"the doc-\" are each sung quickly on one G4, with \"and\" on the short G4 between them, as verse 4 shows (69.82-70.71 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 120.4244,
+   "text": "小",
+   "reason": "别让小猴 is A#4 A#4 A#3 D4 with 小 on the low A#3 (verse 5, 160.33 s); here 别让 share the held A#4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 120.8335,
+   "text": "猴",
+   "reason": "See the pin at 120.42 s; 猴 scoops C4 to D4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  }
+ ]
 }

@@ -155,5 +155,423 @@
  "exclusions": [],
  "review": {
   "song": "owner-listening-pending"
- }
+ },
+ "measuredNoteEdits": [
+  {
+   "op": "word",
+   "onset": 30.0797,
+   "text": "Old",
+   "reason": "\"Old Mac-\" are on the G4 at 30.08 s; the 0.10 s D#4 before it is the attack, not a note (other verses start directly on G4: 51.33, 74.39 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 40.2067,
+   "text": "With",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4: D4 D4 G4 G4 G4 at 84.79-86.15 s and 86.15-87.55 s). The high note held before this line is still the \"O\" of E-I-E-I-O; the line itself starts on the low note. ",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 41.9328,
+   "text": "oink",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4: D4 D4 G4 G4 G4 at 84.79-86.15 s and 86.15-87.55 s). Here \"and an\" share the low D4 at 41.49 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 42.1523,
+   "text": "oink",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4: D4 D4 G4 G4 G4 at 84.79-86.15 s and 86.15-87.55 s). The second \"oink\" scoops E4 to G4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 42.5215,
+   "text": "there",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4: D4 D4 G4 G4 G4 at 84.79-86.15 s and 86.15-87.55 s). ",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 17.7078,
+   "text": "moo",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4: D4 D4 G4 G4 G4 at 84.79-86.15 s and 86.15-87.55 s). Here \"and a\" share the low D4 at 17.34 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 18.3475,
+   "text": "there",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4: D4 D4 G4 G4 G4 at 84.79-86.15 s and 86.15-87.55 s). ",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 61.5881,
+   "text": "With",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4: D4 D4 G4 G4 G4 at 84.79-86.15 s and 86.15-87.55 s). The high note held before this line is still the \"O\" of E-I-E-I-O; the line itself starts on the low note. ",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 61.8575,
+   "text": "a",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4: D4 D4 G4 G4 G4 at 84.79-86.15 s and 86.15-87.55 s). ",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 62.0271,
+   "text": "quack",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4: D4 D4 G4 G4 G4 at 84.79-86.15 s and 86.15-87.55 s). ",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 63.3242,
+   "text": "quack",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4: D4 D4 G4 G4 G4 at 84.79-86.15 s and 86.15-87.55 s). Here \"and a\" share the low D4 at 62.88 s; the 0.06 s readings at 63.26 and 63.54 s are attacks.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 63.6035,
+   "text": "quack",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4: D4 D4 G4 G4 G4 at 84.79-86.15 s and 86.15-87.55 s). ",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 63.8829,
+   "text": "there",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4: D4 D4 G4 G4 G4 at 84.79-86.15 s and 86.15-87.55 s). ",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 107.3641,
+   "text": "With",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4: D4 D4 G4 G4 G4 at 84.79-86.15 s and 86.15-87.55 s). The high note held before this line is still the \"O\" of E-I-E-I-O; the line itself starts on the low note. ",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 102.4253,
+   "text": "And",
+   "reason": "The high note held before this line is still the \"O\" of E-I-E-I-O; the line itself starts on the low note. \"And\" is the low D#4 at 102.43 s, as in verse 2 (D4 at 34.94 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 115.2162,
+   "text": "E",
+   "reason": "The last E-I-E-I-O slows down: \"farm\" is the D#4 held from 114.62 s (dip at 115.00 s), \"E\" scoops A#4 to C5 at 115.22 s, the second \"E\" is the A#4 at 115.72 s and \"O\" the long G#4 from 116.21 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 115.7151,
+   "text": "E",
+   "reason": "See the pin at 115.22 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 116.2125,
+   "text": "O",
+   "reason": "See the pin at 115.22 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 127.9074,
+   "text": "咿",
+   "reason": "The first 咿 is the C5 at 127.91 s; the 0.07 s G#4 before it is its attack.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 174.4815,
+   "text": "咿",
+   "reason": "The first 咿 is the G#4 at 174.48 s; the 0.06 s D#4 before it is its attack.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 175.6589,
+   "text": "哟",
+   "reason": "咿呀咿呀哟 ends on the low E4 (as 170.50 s in the line before); here that is the E4 at 175.66 s. The 0.14 s G#4 before it is a flick at the end of 呀.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 176.5768,
+   "text": "这",
+   "reason": "这里 are on the low note before the three animal sounds (verse 2: D#4 D#4 at 155.26-155.63 s; verse 5: B3 B3 at 222.21-222.59 s). Here they share the B3 at 176.58 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 130.0126,
+   "text": "这",
+   "reason": "这里 are on the low note before the three animal sounds (verse 2: D#4 D#4 at 155.26-155.63 s). Here they share the D#4 at 130.01 s; the G#4 at 129.30 s is still the held 哟.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 196.5514,
+   "text": "这",
+   "reason": "这里 are on the low note before the animal sounds (verse 5: B3 B3 at 222.21-222.59 s). Here they share the B3 at 196.55 s; the E4 before it is still the held 哟.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 17.3387,
+   "text": "and",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4, 84.79-87.55 s). \"and a\" are on the low note.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 41.4938,
+   "text": "and",
+   "reason": "\"With a moo moo here, and a moo moo there\" is two low notes then three high ones, twice (verse 4, 84.79-87.55 s). \"and a\" are on the low note.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 43.2099,
+   "text": "Here",
+   "reason": "Verse 4 sings \"Here neigh there neigh ev-ery-where neigh neigh\" then \"Old Mac-Don-\" on three G4 and \"-ald\" on D4, evenly (87.93-91.72 s). The same spacing here puts \"Here\" on the G4 after the breath, \"-ery-where\" together on the long G4, and \"Old Mac-Don-\" on the last three G4 before the D4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 44.4625,
+   "text": "ev",
+   "reason": "Verse 4 sings \"Here neigh there neigh ev-ery-where neigh neigh\" then \"Old Mac-Don-\" on three G4 and \"-ald\" on D4, evenly (87.93-91.72 s). The same spacing here puts \"Here\" on the G4 after the breath, \"-ery-where\" together on the long G4, and \"Old Mac-Don-\" on the last three G4 before the D4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 45.2852,
+   "text": "oink",
+   "reason": "Verse 4 sings \"Here neigh there neigh ev-ery-where neigh neigh\" then \"Old Mac-Don-\" on three G4 and \"-ald\" on D4, evenly (87.93-91.72 s). The same spacing here puts \"Here\" on the G4 after the breath, \"-ery-where\" together on the long G4, and \"Old Mac-Don-\" on the last three G4 before the D4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 45.6743,
+   "text": "oink",
+   "reason": "Verse 4 sings \"Here neigh there neigh ev-ery-where neigh neigh\" then \"Old Mac-Don-\" on three G4 and \"-ald\" on D4, evenly (87.93-91.72 s). The same spacing here puts \"Here\" on the G4 after the breath, \"-ery-where\" together on the long G4, and \"Old Mac-Don-\" on the last three G4 before the D4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 46.0135,
+   "text": "Old",
+   "reason": "Verse 4 sings \"Here neigh there neigh ev-ery-where neigh neigh\" then \"Old Mac-Don-\" on three G4 and \"-ald\" on D4, evenly (87.93-91.72 s). The same spacing here puts \"Here\" on the G4 after the breath, \"-ery-where\" together on the long G4, and \"Old Mac-Don-\" on the last three G4 before the D4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 64.5813,
+   "text": "Here",
+   "reason": "Verse 4 sings \"Here neigh there neigh ev-ery-where neigh neigh\" then \"Old Mac-Don-\" on three G4 and \"-ald\" on D4, evenly (87.93-91.72 s). The same spacing here puts \"Here\" on the G4 after the breath, \"-ery-where\" together on the long G4, and \"Old Mac-Don-\" on the last three G4 before the D4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 65.2997,
+   "text": "there",
+   "reason": "Verse 4 sings \"Here neigh there neigh ev-ery-where neigh neigh\" then \"Old Mac-Don-\" on three G4 and \"-ald\" on D4, evenly (87.93-91.72 s). The same spacing here puts \"Here\" on the G4 after the breath, \"-ery-where\" together on the long G4, and \"Old Mac-Don-\" on the last three G4 before the D4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 65.7425,
+   "text": "ev",
+   "reason": "Verse 4 sings \"Here neigh there neigh ev-ery-where neigh neigh\" then \"Old Mac-Don-\" on three G4 and \"-ald\" on D4, evenly (87.93-91.72 s). The same spacing here puts \"Here\" on the G4 after the breath, \"-ery-where\" together on the long G4, and \"Old Mac-Don-\" on the last three G4 before the D4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 66.6865,
+   "text": "quack",
+   "reason": "Verse 4 sings \"Here neigh there neigh ev-ery-where neigh neigh\" then \"Old Mac-Don-\" on three G4 and \"-ald\" on D4, evenly (87.93-91.72 s). The same spacing here puts \"Here\" on the G4 after the breath, \"-ery-where\" together on the long G4, and \"Old Mac-Don-\" on the last three G4 before the D4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 68.7718,
+   "text": "had",
+   "reason": "\"Don-ald had a farm\" is G4 D4 E4 E4 D4 (verse 1, 6.36-7.87 s); \"had\" is the first E4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 33.1428,
+   "text": "E",
+   "reason": "E-I-E-I-O falls B4 B4 A4 A4 G4 (verse 4, 82.47-84.16 s); \"O\" is the G4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 33.941,
+   "text": "O",
+   "reason": "E-I-E-I-O falls B4 B4 A4 A4 G4 (verse 4, 82.47-84.16 s); \"O\" is the G4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 59.8221,
+   "text": "E",
+   "reason": "E-I-E-I-O falls B4 B4 A4 A4 G4 (verse 4, 82.47-84.16 s); \"O\" is the G4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 60.6303,
+   "text": "O",
+   "reason": "E-I-E-I-O falls B4 B4 A4 A4 G4 (verse 4, 82.47-84.16 s); \"O\" is the G4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 101.3577,
+   "text": "O",
+   "reason": "E-I-E-I-O falls B4 B4 A4 A4 G4 (verse 4, 82.47-84.16 s); \"O\" is the G4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 106.4761,
+   "text": "O",
+   "reason": "E-I-E-I-O falls B4 B4 A4 A4 G4 (verse 4, 82.47-84.16 s); \"O\" is the G4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 123.2075,
+   "text": "呀",
+   "reason": "咿呀咿呀哟 falls two high, two middle, then 哟 on the low home note (verse 2, 148.13-149.88 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 123.3478,
+   "text": "咿",
+   "reason": "咿呀咿呀哟 falls two high, two middle, then 哟 on the low home note (verse 2, 148.13-149.88 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 124.0861,
+   "text": "哟",
+   "reason": "咿呀咿呀哟 falls two high, two middle, then 哟 on the low home note (verse 2, 148.13-149.88 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 127.209,
+   "text": "牛",
+   "reason": "养小牛 is F4 F4 D#4 (as 有块地 at 121.69-122.53 s); 牛 is the held D#4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 132.2425,
+   "text": "哞",
+   "reason": "The third 哞 of the line is the G#4 at 132.24 s; the next line starts with its own short pickup at 132.87 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 132.8661,
+   "text": "这",
+   "reason": "Each phrase of this line starts with a short low pickup (verse 5: 225.11, 225.71, 226.36 s); 这 is the pickup at 132.87 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 195.6534,
+   "text": "哟",
+   "reason": "咿呀咿呀哟 falls two high, two middle, then 哟 on the low home note (verse 2, 148.13-149.88 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 100.2802,
+   "text": "E",
+   "reason": "E-I-E-I-O starts on the high C5 after \"farm\" (the D#4 held from 99.66 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 46.9514,
+   "text": "ald",
+   "reason": "\"Don-ald\" is G4 then D4 (verse 1, 6.36/6.58 s); \"-ald\" is the D4 at 46.95 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 68.3328,
+   "text": "ald",
+   "reason": "\"Don-ald\" is G4 then D4 (verse 1, 6.36/6.58 s); \"-ald\" is the D4 at 68.33 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  }
+ ]
 }

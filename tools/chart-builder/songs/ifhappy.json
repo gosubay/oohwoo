@@ -102,5 +102,383 @@
  },
  "lyricSheetNotes": [
   "Galvin, 2026-10-04: Verse 4 (\"do all three\") and Verse 8 (一起做) are in lyrics_raw.txt but are not sung in this recording (4 of 55 and 2 of 54 words found by transcription). Removed from this lyric sheet."
+ ],
+ "measuredNoteEdits": [
+  {
+   "op": "word",
+   "onset": 33.4675,
+   "text": "If",
+   "reason": "Verse 1 sings the last line G G A A G E F# D E F# G (18.63-21.25 s). In verse 2 the same notes start at 33.47 s (G4), straight after the held \"show\"; the matcher had read that G4 as \"it\" and put every word of the last line one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 33.7514,
+   "text": "you're",
+   "reason": "Verse 1 sings the last line G G A A G E F# D E F# G (18.63-21.25 s). In verse 2 the same notes start at 33.47 s (G4), straight after the held \"show\"; the matcher had read that G4 as \"it\" and put every word of the last line one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 33.931,
+   "text": "hap",
+   "reason": "Verse 1 sings the last line G G A A G E F# D E F# G (18.63-21.25 s). In verse 2 the same notes start at 33.47 s (G4), straight after the held \"show\"; the matcher had read that G4 as \"it\" and put every word of the last line one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 34.2303,
+   "text": "py",
+   "reason": "Verse 1 sings the last line G G A A G E F# D E F# G (18.63-21.25 s). In verse 2 the same notes start at 33.47 s (G4), straight after the held \"show\"; the matcher had read that G4 as \"it\" and put every word of the last line one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 34.36,
+   "text": "and",
+   "reason": "Verse 1 sings the last line G G A A G E F# D E F# G (18.63-21.25 s). In verse 2 the same notes start at 33.47 s (G4), straight after the held \"show\"; the matcher had read that G4 as \"it\" and put every word of the last line one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 34.6094,
+   "text": "you",
+   "reason": "Verse 1 sings the last line G G A A G E F# D E F# G (18.63-21.25 s). In verse 2 the same notes start at 33.47 s (G4), straight after the held \"show\"; the matcher had read that G4 as \"it\" and put every word of the last line one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 34.799,
+   "text": "know",
+   "reason": "Verse 1 sings the last line G G A A G E F# D E F# G (18.63-21.25 s). In verse 2 the same notes start at 33.47 s (G4), straight after the held \"show\"; the matcher had read that G4 as \"it\" and put every word of the last line one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "join",
+   "onset": 31.1074,
+   "into": "next",
+   "reason": "A 0.07 s reading (F4) at the attack of \"know\" (E5 at 31.18 s). Not a note; with it counted \"you\" sat on it.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 30.9725,
+   "text": "you",
+   "reason": "\"you\" is the short C5 before \"know\" (E5), as in verse 1 (16.06 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "join",
+   "onset": 16.77,
+   "into": "next",
+   "reason": "A 0.06 s reading (F#4) at the attack of \"then\" (C5 at 16.83 s); verse 2 starts \"then\" directly on C5 (31.71 s). Not a note.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 38.9595,
+   "text": "shout",
+   "reason": "Verses 1 and 2 end each line with three rising notes (\"clap your hands\" F#4 G4 A4, 9.26-10.03 s). Verse 3 sings \"shout Hoo-ray\" on those three notes and then shouts the second \"Hoo-ray\" higher. The matcher had spread the words one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 39.2589,
+   "text": "Hoo",
+   "reason": "Verses 1 and 2 end each line with three rising notes (\"clap your hands\" F#4 G4 A4, 9.26-10.03 s). Verse 3 sings \"shout Hoo-ray\" on those three notes and then shouts the second \"Hoo-ray\" higher. The matcher had spread the words one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 39.8376,
+   "text": "Hoo",
+   "reason": "Verses 1 and 2 end each line with three rising notes (\"clap your hands\" F#4 G4 A4, 9.26-10.03 s). Verse 3 sings \"shout Hoo-ray\" on those three notes and then shouts the second \"Hoo-ray\" higher. The matcher had spread the words one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 40.8253,
+   "text": "If",
+   "reason": "The line starts on the note after the shouted \"Hoo-ray\" (which runs to 40.5 s); the matcher had put \"If\" on the end of the shout.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 42.6611,
+   "text": "shout",
+   "reason": "Verses 1 and 2 end each line with three rising notes (\"clap your hands\" F#4 G4 A4, 9.26-10.03 s). Verse 3 sings \"shout Hoo-ray\" on those three notes and then shouts the second \"Hoo-ray\" higher. The matcher had spread the words one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 42.9405,
+   "text": "Hoo",
+   "reason": "Verses 1 and 2 end each line with three rising notes (\"clap your hands\" F#4 G4 A4, 9.26-10.03 s). Verse 3 sings \"shout Hoo-ray\" on those three notes and then shouts the second \"Hoo-ray\" higher. The matcher had spread the words one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 43.579,
+   "text": "Hoo",
+   "reason": "Verses 1 and 2 end each line with three rising notes (\"clap your hands\" F#4 G4 A4, 9.26-10.03 s). Verse 3 sings \"shout Hoo-ray\" on those three notes and then shouts the second \"Hoo-ray\" higher. The matcher had spread the words one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 49.4756,
+   "text": "you",
+   "reason": "Verse 1 sings \"and you know it clap your hands\" G E F# D E F# G (19.56-21.25 s). Verse 3 has the same notes from 49.15 s with a very short E4 for \"you\"; the matcher had left it without a word. Verses 1 and 2 end each line with three rising notes (\"clap your hands\" F#4 G4 A4, 9.26-10.03 s). Verse 3 sings \"shout Hoo-ray\" on those three notes and then shouts the second \"Hoo-ray\" higher. The matcher had spread the words one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 50.0244,
+   "text": "shout",
+   "reason": "Verses 1 and 2 end each line with three rising notes (\"clap your hands\" F#4 G4 A4, 9.26-10.03 s). Verse 3 sings \"shout Hoo-ray\" on those three notes and then shouts the second \"Hoo-ray\" higher. The matcher had spread the words one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 50.3137,
+   "text": "Hoo",
+   "reason": "Verses 1 and 2 end each line with three rising notes (\"clap your hands\" F#4 G4 A4, 9.26-10.03 s). Verse 3 sings \"shout Hoo-ray\" on those three notes and then shouts the second \"Hoo-ray\" higher. The matcher had spread the words one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 50.9423,
+   "text": "Hoo",
+   "reason": "Verses 1 and 2 end each line with three rising notes (\"clap your hands\" F#4 G4 A4, 9.26-10.03 s). Verse 3 sings \"shout Hoo-ray\" on those three notes and then shouts the second \"Hoo-ray\" higher. The matcher had spread the words one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 90.2825,
+   "text": "就",
+   "reason": "The Mandarin third verse sings 大声喊 on the three rising notes that end each line (as 拍拍手 at 61.32-62.14 s) and then shouts 真棒. The matcher had put the words one or two notes late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 90.9015,
+   "text": "大",
+   "reason": "The Mandarin third verse sings 大声喊 on the three rising notes that end each line (as 拍拍手 at 61.32-62.14 s) and then shouts 真棒. The matcher had put the words one or two notes late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 91.8094,
+   "text": "真",
+   "reason": "The Mandarin third verse sings 大声喊 on the three rising notes that end each line (as 拍拍手 at 61.32-62.14 s) and then shouts 真棒. The matcher had put the words one or two notes late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 92.8072,
+   "text": "如",
+   "reason": "The line starts on the C4 after the shouted 真棒 (as 63.21 s, 77.99 s); the matcher had put 如 on the end of the shout.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 94.5831,
+   "text": "大",
+   "reason": "The Mandarin third verse sings 大声喊 on the three rising notes that end each line (as 拍拍手 at 61.32-62.14 s) and then shouts 真棒. The matcher had put the words one or two notes late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 96.4988,
+   "text": "如",
+   "reason": "The line starts on the B4 after the shouted 真棒 (as 66.91 s, 81.71 s); the matcher had put 如 on the end of the shout.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 97.8357,
+   "text": "你",
+   "reason": "你 is the low note after the run of C5, as in verse 1 (68.26 s) and verse 2 (83.03 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 100.9225,
+   "text": "你",
+   "reason": "Verse 1 sings 如果开心你就跟我 G G A A G E F# D (70.64-72.39 s). Here 你 is the G4 at 100.92 s; 开心 share the A4 before it.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 102.0262,
+   "text": "大",
+   "reason": "The Mandarin third verse sings 大声喊 on the three rising notes that end each line (as 拍拍手 at 61.32-62.14 s) and then shouts 真棒. The matcher had put the words one or two notes late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 102.9741,
+   "text": "真",
+   "reason": "The Mandarin third verse sings 大声喊 on the three rising notes that end each line (as 拍拍手 at 61.32-62.14 s) and then shouts 真棒. The matcher had put the words one or two notes late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 84.9351,
+   "text": "脚",
+   "reason": "跺跺脚 ends on the G4 (as 手 at 70.16 s). Here it is held from 84.94 to 85.60 s with no new attack (loudness steady 0.19-0.25 throughout), so it is one long 脚; the A4 before it is the fall of the second 跺.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 85.6525,
+   "text": "如",
+   "reason": "The last line starts on the G4 after the 0.05 s break at 85.61 s; 如果 are sung quickly on that one G4, then 开 on A4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 85.9428,
+   "text": "开",
+   "reason": "See the pin at 85.65 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 71.4058,
+   "text": "心",
+   "reason": "The last line is sung G G A A G E F# D ... in every verse (English 18.63-20.44 s). Here 开 is the A4 from 71.03 s and 心 the short A4 at 71.41 s, then 你 on G4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 71.5455,
+   "text": "你",
+   "reason": "The last line is sung G G A A G E F# D ... in every verse (English 18.63-20.44 s). See the pin at 71.41 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 83.0294,
+   "text": "你",
+   "reason": "你 is the low note after the run of C5, as in verse 1 (68.26 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 83.9673,
+   "text": "跺",
+   "reason": "The third line ends C5 C5 B4 B4 (A4) G4 in every verse (English \"then your face will surely show\", 16.83-18.63 s). 跺跺 are the two B4 (83.97, 84.45 s; the second falls through A4), 脚 the held G4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 84.4525,
+   "text": "跺",
+   "reason": "The third line ends C5 C5 B4 B4 (A4) G4 in every verse (English \"then your face will surely show\", 16.83-18.63 s). See the pin at 83.97 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 89.3725,
+   "text": "果",
+   "reason": "如果 are the two D4 that open the line, as in verses 1 and 2 (59.46/59.75 s, 74.32/74.59 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 89.6543,
+   "text": "开",
+   "reason": "开 is the first G4, as at 59.95 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 98.3146,
+   "text": "跟",
+   "reason": "The third line ends C5 C5 B4 B4 (A4) G4 in every verse (English \"then your face will surely show\", 16.83-18.63 s). Here 跟我 are the two C5 (98.31 with a scoop, 98.58 s), 大声 the two B4, 喊 A4, 真棒 the two G4 (99.73, 99.96 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 98.5825,
+   "text": "我",
+   "reason": "The third line ends C5 C5 B4 B4 (A4) G4 in every verse (English \"then your face will surely show\", 16.83-18.63 s). See the pin at 98.31 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 99.9575,
+   "text": "棒",
+   "reason": "The third line ends C5 C5 B4 B4 (A4) G4 in every verse (English \"then your face will surely show\", 16.83-18.63 s). See the pin at 98.31 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 100.1775,
+   "text": "如",
+   "reason": "The last line is sung G G A A G E F# D ... in every verse (English 18.63-20.44 s). The line starts on the G4 at 100.18 s, after 棒.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 100.4775,
+   "text": "果",
+   "reason": "The last line is sung G G A A G ... in every verse; 如果 are the two G4 (100.18, 100.48 s) and 开心 share the short A4 before 你.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 100.7092,
+   "text": "开",
+   "reason": "开心 share the short A4 before 你 (G G A A G in the other verses, 70.64-71.79 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  }
  ]
 }

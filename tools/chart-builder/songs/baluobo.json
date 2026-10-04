@@ -118,8 +118,229 @@
  "quick": null,
  "lyricCorrections": [],
  "noteEdits": [],
- "exclusions": [],
+ "exclusions": [
+  {
+   "start": 86.7,
+   "end": 87.1,
+   "reason": "A shouted \"Hey!\" between the Mandarin and English halves (the transcript hears \"Hey\" at 85.2-86.9 s and \"Hey!\" at 86.9-89.6 s). It is a shout, not a note of the tune: 0.16-0.19 s long, at pitches (A#3, A4) that fit neither the line before nor \"Big Ra-dish\" (C4 C4 F4), and it is not in the lyric sheet. Left out of play."
+  },
+  {
+   "start": 89.5,
+   "end": 89.85,
+   "reason": "A shouted \"Hey!\" between the Mandarin and English halves (the transcript hears \"Hey\" at 85.2-86.9 s and \"Hey!\" at 86.9-89.6 s). It is a shout, not a note of the tune: 0.16-0.19 s long, at pitches (A#3, A4) that fit neither the line before nor \"Big Ra-dish\" (C4 C4 F4), and it is not in the lyric sheet. Left out of play."
+  }
+ ],
  "review": {
   "song": "owner-listening-pending"
- }
+ },
+ "measuredNoteEdits": [
+  {
+   "op": "word",
+   "onset": 10.4444,
+   "text": "卜",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 11.1029,
+   "text": "嘿",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 12.4797,
+   "text": "拔",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 13.1881,
+   "text": "卜",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 13.8366,
+   "text": "嘿",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early. The C5 at 13.84 s is held 0.54 s and carries 嘿呦 together.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 14.4852,
+   "text": "嘿",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 42.8675,
+   "text": "卜",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 43.5391,
+   "text": "嘿",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 44.1777,
+   "text": "嘿",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 44.8761,
+   "text": "拔",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 45.5446,
+   "text": "卜",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 46.1732,
+   "text": "嘿",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 46.8516,
+   "text": "嘿",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early. The C5 at 46.85 s is held 0.57 s and carries 嘿呦 together.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 70.9975,
+   "text": "呦",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). In verse 4 the first 嘿 is the C5 from 70.59 s with a dip at 70.71 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 71.2661,
+   "text": "嘿",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). The C5 at 71.27 s is held 0.56 s and carries 嘿呦 together.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 72.3038,
+   "text": "萝",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). 拔 is the F4 from 71.98 s with a dip at 72.19 s; 萝 is the G4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 72.6829,
+   "text": "卜",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 73.3514,
+   "text": "嘿",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 74.0199,
+   "text": "嘿",
+   "reason": "Verse 2 sings this passage cleanly: 拔萝卜 A4 F4 F4 (26.06-26.99 s), 嘿呦嘿呦 on four C5 long-short-long-short (27.41-28.63 s), 拔萝卜 F4 G4 F4 (28.75-29.65 s). Here the same notes are present but the matcher had put 嘿 on the F4 that ends the line before, so the words ran one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 52.2893,
+   "text": "帮",
+   "reason": "Verse 4 sings 快来帮我们拔萝卜 as C5 C5 / C5 A4 G4 / F4(long) G4 F4 (78.85-81.18 s). Verse 3 has the same notes: 帮 C5 52.29 s, 我 A4 52.59 s, 们 G4 52.76 s, 拔 F4 52.92 s (held, dip at 53.21 s), 萝 G4 53.40 s. The matcher had left the A4 without a word and put 我 们 拔 one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 52.5886,
+   "text": "我",
+   "reason": "See the pin at 52.29 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 52.7582,
+   "text": "们",
+   "reason": "See the pin at 52.29 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 52.9178,
+   "text": "拔",
+   "reason": "See the pin at 52.29 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 53.3967,
+   "text": "萝",
+   "reason": "See the pin at 52.29 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 71.9845,
+   "text": "拔",
+   "reason": "拔 is the F4 from 71.98 s (dip at 72.19 s), as in verse 2 (28.75 s); the held C5 before it carries 嘿呦 together.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 89.9736,
+   "text": "Big",
+   "reason": "Every English verse sings \"Big Ra-dish\" C4 C4 F4 (101.07, 114.86, 125.20 s); here that is 89.97, 90.28, 90.66 s. The matcher had put \"Big\" on the shout before it.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  }
+ ]
 }

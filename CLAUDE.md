@@ -122,8 +122,9 @@ How notes and words are built (2026-10-03, second pass):
 - Correction kinds in a song file: `sectionOverrides` (where a verse starts/ends; `exclude` leaves a whole
   verse without notes; `foldInto` keeps pitch classes but puts a verse read in two octaves into one
   register; `tuneFrom` gives named lines the pitches of the same syllables in another verse, owner decision
-  only), `measuredNoteEdits` (split / join / midi / syllable on a note as measured from the recording,
-  before words are placed), `exclusions` (time ranges left out of the chart, e.g. backing shouts),
+  only), `measuredNoteEdits` (split / join / midi / syllable / word on a note as measured from the
+  recording, before words are placed; `word` pins one syllable of the lyric to one note and the rest of
+  the line follows from it, which is the normal fix for "words one note early/late"), `exclusions` (time ranges left out of the chart, e.g. backing shouts),
   `fullEnd` (Full song fades out early when the recording runs on after the last verse), `noteEdits`
   (change or delete a finished chart note by id), `review` (Galvin's listening approvals). Each needs a
   written reason with its evidence.

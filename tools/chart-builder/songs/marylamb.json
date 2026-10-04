@@ -96,8 +96,208 @@
  "quick": null,
  "lyricCorrections": [],
  "noteEdits": [],
- "exclusions": [],
+ "exclusions": [
+  {
+   "start": 17.28,
+   "end": 17.5,
+   "reason": "Fall-off after \"lamb\" (a 0.10 s reading dropping three semitones, then 0.06 s on A#3): the end of the held note, not a sung note."
+  }
+ ],
  "review": {
   "song": "owner-listening-pending"
- }
+ },
+ "measuredNoteEdits": [
+  {
+   "op": "word",
+   "onset": 10.604,
+   "text": "ry",
+   "reason": "Every line of this tune in this recording has the same measured shape: a short D#4 rising into F4, then a short falling D#4, then C#4 (3-2-1 with a lead-in; all twelve lines, e.g. 10.13/10.33/10.60/10.77 s and 30.18/30.33/30.62/30.77 s). The matcher read the lead-in as the first syllable and swallowed the falling D#4 as a passing slide, so the first two syllables of the line sat on the wrong notes. The second syllable is pinned to the falling D#4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 15.6226,
+   "text": "ry",
+   "reason": "Every line of this tune in this recording has the same measured shape: a short D#4 rising into F4, then a short falling D#4, then C#4 (3-2-1 with a lead-in; all twelve lines, e.g. 10.13/10.33/10.60/10.77 s and 30.18/30.33/30.62/30.77 s). The matcher read the lead-in as the first syllable and swallowed the falling D#4 as a passing slide, so the first two syllables of the line sat on the wrong notes. The second syllable is pinned to the falling D#4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 20.6013,
+   "text": "ery",
+   "reason": "Every line of this tune in this recording has the same measured shape: a short D#4 rising into F4, then a short falling D#4, then C#4 (3-2-1 with a lead-in; all twelve lines, e.g. 10.13/10.33/10.60/10.77 s and 30.18/30.33/30.62/30.77 s). The matcher read the lead-in as the first syllable and swallowed the falling D#4 as a passing slide, so the first two syllables of the line sat on the wrong notes. The second syllable is pinned to the falling D#4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 25.58,
+   "text": "ery",
+   "reason": "Every line of this tune in this recording has the same measured shape: a short D#4 rising into F4, then a short falling D#4, then C#4 (3-2-1 with a lead-in; all twelve lines, e.g. 10.13/10.33/10.60/10.77 s and 30.18/30.33/30.62/30.77 s). The matcher read the lead-in as the first syllable and swallowed the falling D#4 as a passing slide, so the first two syllables of the line sat on the wrong notes. The second syllable is pinned to the falling D#4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 30.6185,
+   "text": "lowed",
+   "reason": "Every line of this tune in this recording has the same measured shape: a short D#4 rising into F4, then a short falling D#4, then C#4 (3-2-1 with a lead-in; all twelve lines, e.g. 10.13/10.33/10.60/10.77 s and 30.18/30.33/30.62/30.77 s). The matcher read the lead-in as the first syllable and swallowed the falling D#4 as a passing slide, so the first two syllables of the line sat on the wrong notes. The second syllable is pinned to the falling D#4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 35.6371,
+   "text": "lowed",
+   "reason": "Every line of this tune in this recording has the same measured shape: a short D#4 rising into F4, then a short falling D#4, then C#4 (3-2-1 with a lead-in; all twelve lines, e.g. 10.13/10.33/10.60/10.77 s and 30.18/30.33/30.62/30.77 s). The matcher read the lead-in as the first syllable and swallowed the falling D#4 as a passing slide, so the first two syllables of the line sat on the wrong notes. The second syllable is pinned to the falling D#4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 60.6203,
+   "text": "丽",
+   "reason": "Every line of this tune in this recording has the same measured shape: a short D#4 rising into F4, then a short falling D#4, then C#4 (3-2-1 with a lead-in; all twelve lines, e.g. 10.13/10.33/10.60/10.77 s and 30.18/30.33/30.62/30.77 s). The matcher read the lead-in as the first syllable and swallowed the falling D#4 as a passing slide, so the first two syllables of the line sat on the wrong notes. The second syllable is pinned to the falling D#4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 65.619,
+   "text": "丽",
+   "reason": "Every line of this tune in this recording has the same measured shape: a short D#4 rising into F4, then a short falling D#4, then C#4 (3-2-1 with a lead-in; all twelve lines, e.g. 10.13/10.33/10.60/10.77 s and 30.18/30.33/30.62/30.77 s). The matcher read the lead-in as the first syllable and swallowed the falling D#4 as a passing slide, so the first two syllables of the line sat on the wrong notes. The second syllable is pinned to the falling D#4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 70.6076,
+   "text": "论",
+   "reason": "Every line of this tune in this recording has the same measured shape: a short D#4 rising into F4, then a short falling D#4, then C#4 (3-2-1 with a lead-in; all twelve lines, e.g. 10.13/10.33/10.60/10.77 s and 30.18/30.33/30.62/30.77 s). The matcher read the lead-in as the first syllable and swallowed the falling D#4 as a passing slide, so the first two syllables of the line sat on the wrong notes. The second syllable is pinned to the falling D#4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 75.6162,
+   "text": "论",
+   "reason": "Every line of this tune in this recording has the same measured shape: a short D#4 rising into F4, then a short falling D#4, then C#4 (3-2-1 with a lead-in; all twelve lines, e.g. 10.13/10.33/10.60/10.77 s and 30.18/30.33/30.62/30.77 s). The matcher read the lead-in as the first syllable and swallowed the falling D#4 as a passing slide, so the first two syllables of the line sat on the wrong notes. The second syllable is pinned to the falling D#4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 80.6149,
+   "text": "绵",
+   "reason": "Every line of this tune in this recording has the same measured shape: a short D#4 rising into F4, then a short falling D#4, then C#4 (3-2-1 with a lead-in; all twelve lines, e.g. 10.13/10.33/10.60/10.77 s and 30.18/30.33/30.62/30.77 s). The matcher read the lead-in as the first syllable and swallowed the falling D#4 as a passing slide, so the first two syllables of the line sat on the wrong notes. The second syllable is pinned to the falling D#4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 85.6634,
+   "text": "绵",
+   "reason": "Every line of this tune in this recording has the same measured shape: a short D#4 rising into F4, then a short falling D#4, then C#4 (3-2-1 with a lead-in; all twelve lines, e.g. 10.13/10.33/10.60/10.77 s and 30.18/30.33/30.62/30.77 s). The matcher read the lead-in as the first syllable and swallowed the falling D#4 as a passing slide, so the first two syllables of the line sat on the wrong notes. The second syllable is pinned to the falling D#4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 65.18,
+   "text": "玛",
+   "reason": "The G#4 at 64.46 s is the end of the line before (小绵羊 ends D#-F-G#-G#, as \"little lamb\" ends on a held G#4 at 14.28 s). 玛丽 starts on the lead-in at 65.18 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 85.1845,
+   "text": "小",
+   "reason": "The G#4 at 84.65 s is the held end of the line before (去). 小绵羊 starts on the lead-in at 85.18 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 35.1881,
+   "text": "fol",
+   "reason": "The G#4 at 34.57 s is the held end of \"day\" (a dip in one held note from 34.24 s). \"It\" is the short falling pitch at 34.86 s and \"fol-\" the lead-in at 35.19 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 34.8589,
+   "text": "It",
+   "reason": "See the pin at 35.19 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 17.9872,
+   "text": "fleece",
+   "reason": "\"Its fleece was white as snow\": the other verses sing this line D#4 D#4 F4 D#4 C#4 after a pickup (67.67 s, 77.68 s). Here D#4 17.99, D#4 18.23, F4 18.45, D4 18.62, C#4 18.94; the matcher had started on the breathy pickup at 17.30 s and put every word one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 18.4462,
+   "text": "white",
+   "reason": "See the pin at 17.99 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "join",
+   "onset": 10.1251,
+   "into": "next",
+   "reason": "\"Ma-\": D#4 for 0.21 s rising straight into F4, the lead-in every line of this tune has here (0.14-0.20 s in the other lines); just over the automatic 0.20 s limit.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 11.7614,
+   "text": "tle",
+   "reason": "\"a lit-tle lamb\" ends F4, F4 here (11.76 and 12.02 s), as the same line does in the other verses (小绵羊 ends F4 F4 F4). \"a lit-\" run together on the held D#4 before it. The matcher had pushed \"lamb\" onto the first note of the next line.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 12.0175,
+   "text": "lamb",
+   "reason": "See the pin at 11.76 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 16.75,
+   "text": "tle",
+   "reason": "\"a lit-tle lamb\" ends F4, F4 here (16.75 and 16.98 s), as the same line does in the other verses (小绵羊 ends F4 F4 F4). \"a lit-\" run together on the held D#4 before it. The matcher had pushed \"lamb\" onto the first note of the next line.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 16.9825,
+   "text": "lamb",
+   "reason": "See the pin at 16.75 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 17.658,
+   "text": "Its",
+   "reason": "\"Its\" is the pickup rising B3-D4 into the D#4 of \"fleece\" (17.66-17.92 s); the sound at 17.30 s is the breathy fall-off after \"lamb\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  }
+ ]
 }

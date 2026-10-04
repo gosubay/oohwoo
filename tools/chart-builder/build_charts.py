@@ -440,7 +440,7 @@ def align_atoms(atoms, units, sister_slides=False):
     for i in range(n - 1):                           # the other verses confirm this short pitch is a slide
         if started[i] and not started[i + 1] and own[i] and sister_slide(i, own[i][0]): scoop[i] = True
     for i in range(n - 1):                           # a slide belongs to the syllable of the note it lands on
-        if scoop[i] and not started[i] and started[i + 1]:
+        if scoop[i] and not started[i] and started[i + 1] and not atoms[i + 1].get('starts'):   # a reviewed start stays put
             started[i], own[i], started[i + 1], own[i + 1] = True, own[i + 1], False, []
     for i in range(n - 1):                           # a lone short pitch rising straight into a syllable's first note
         alone = not started[i] and not own[i] and bound[i][0] == 'silence' and bound[i][1] >= JOIN_GAP

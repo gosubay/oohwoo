@@ -133,5 +133,311 @@
  "exclusions": [],
  "review": {
   "song": "owner-listening-pending"
- }
+ },
+ "measuredNoteEdits": [
+  {
+   "op": "word",
+   "onset": 23.4847,
+   "text": "go",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). \"go\" is the E4; the matcher had put \"bus\" there and every later word one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 27.306,
+   "text": "swish",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). The sixth \"swish\" is the C4 that ends D-B-G / G-E-C; the matcher had used a 0.10 s lead-in as the first \"swish\" and given this C4 to the next line.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 28.0743,
+   "text": "wi",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). \"wi-pers\" starts on the lead-in into C4 after \"The\" on G3 (27.88 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 28.9822,
+   "text": "go",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). \"go\" is the E4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 17.9273,
+   "text": "go",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). \"go\" is the E4; the matcher had put \"bus\" there and pushed the last \"round\" onto the D4 that starts the next line.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 19.6834,
+   "text": "All",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). \"All through the town\" starts on the D4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 45.6244,
+   "text": "go",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). In this verse \"go up and down\" is sung E4 E4 C4 C4 (no G4); \"go\" is the first E4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 46.3228,
+   "text": "up",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). See the pin at 45.62 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 49.4357,
+   "text": "down",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). \"up and down, up and down\" ends on the C4 (G-E-C); the matcher had given it to the next line.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 52.9078,
+   "text": "All",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). \"All through the town\" starts on the D4; the matcher had put \"down\" of the line before on it.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 59.0838,
+   "text": "shut",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). \"Open and shut, open and shut\" is D-D-B-G / G-G-E-C: the first \"shut\" is the G3.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 60.4707,
+   "text": "shut",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). The second \"shut\" is the C4 that ends G-G-E-C; the matcher had given it to the next line.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 61.2688,
+   "text": "doors",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). \"The doors\" restarts the first line: the short low pickup at 61.12 s, then C4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 104.0616,
+   "text": "哔",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). The sixth 哔 is the C4 that ends D-B-G / G-E-C; the matcher had given it to the next line.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 104.7301,
+   "text": "巴",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). 巴士 restarts the first line on the low pickup (A3), as at 99.27 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 114.9269,
+   "text": "下",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). 上上下下 twice is D-D-B-G / G-G-E-C: the last 下 is the C4; the matcher had given it to the next line.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 115.6153,
+   "text": "巴",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). 巴士 restarts the first line here.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 124.0861,
+   "text": "又",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). 开又关 twice is D-B-G / G-E-C: 又 is the B3.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 124.4353,
+   "text": "关",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). See the pin at 124.09 s: 关 is the G3.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 125.8321,
+   "text": "关",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). The second 关 is the C4 that ends G-E-C; the matcher had given it to the next line.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 126.4707,
+   "text": "巴",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C (clearest in verse 3: 33.49-35.84 s, 36.27-38.66 s). 巴士 restarts the first line on the low pickup (A3), as at 121.01 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 20.3818,
+   "text": "through",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C. \"through\" is the held G3, as at 31.46 s and 42.51 s; the 0.20 s D3 before it is the tail of \"All\" read an octave low.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 22.2974,
+   "text": "The",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C. Verse 2 starts \"The wi-pers\" G3, B3, C4 exactly as its third line does (27.88, 28.07, 28.23 s); the matcher had dropped \"The\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 22.5169,
+   "text": "wi",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C. See the pin at 22.30 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 61.8275,
+   "text": "bus",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C. \"bus\" is the last short C4 before the E4, as in the first line (56.33 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 62.1568,
+   "text": "go",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C. \"go\" is the E4, as at 56.60 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 63.853,
+   "text": "All",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C. \"All through the town\" starts on the D4 after the breath; the matcher had put \"shut\" on it.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 103.433,
+   "text": "哔",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C. The fourth 哔 is the G4; the 0.06 s G3 before it is its attack.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 125.4829,
+   "text": "又",
+   "reason": "The tune of every line in this recording is G-C-C-C-C-E-G-E-C, then D-B-G / G-E-C, the first line again, then D-G-G-C. 开又关 is G-E-C: 开 scoops E4 to G4 (125.14-125.48 s), 又 is the note that follows.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 11.3922,
+   "text": "wheels",
+   "reason": "The singer scoops into the second word (a 0.06-0.11 s G#3 rising into C4) and sings \"on the\" as two quick syllables inside the next C4, as measured in verse 2 (22.80 s, 28.35 s); \"bus\" is the short C4 before the breath. The matcher had put the word on the scoop and spread the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 12.0025,
+   "text": "bus",
+   "reason": "The singer scoops into the second word (a 0.06-0.11 s G#3 rising into C4) and sings \"on the\" as two quick syllables inside the next C4, as measured in verse 2 (22.80 s, 28.35 s); \"bus\" is the short C4 before the breath. The matcher had put the word on the scoop and spread the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 17.0094,
+   "text": "wheels",
+   "reason": "The singer scoops into the second word (a 0.06-0.11 s G#3 rising into C4) and sings \"on the\" as two quick syllables inside the next C4, as measured in verse 2 (22.80 s, 28.35 s); \"bus\" is the short C4 before the breath. The matcher had put the word on the scoop and spread the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 17.5725,
+   "text": "bus",
+   "reason": "The singer scoops into the second word (a 0.06-0.11 s G#3 rising into C4) and sings \"on the\" as two quick syllables inside the next C4, as measured in verse 2 (22.80 s, 28.35 s); \"bus\" is the short C4 before the breath. The matcher had put the word on the scoop and spread the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 55.7314,
+   "text": "doors",
+   "reason": "The singer scoops into the second word (a 0.06-0.11 s G#3 rising into C4) and sings \"on the\" as two quick syllables inside the next C4, as measured in verse 2 (22.80 s, 28.35 s); \"bus\" is the short C4 before the breath. The matcher had put the word on the scoop and spread the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 56.3275,
+   "text": "bus",
+   "reason": "The singer scoops into the second word (a 0.06-0.11 s G#3 rising into C4) and sings \"on the\" as two quick syllables inside the next C4, as measured in verse 2 (22.80 s, 28.35 s); \"bus\" is the short C4 before the breath. The matcher had put the word on the scoop and spread the rest one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 11.6775,
+   "text": "on",
+   "reason": "\"on the\" is sung as two quick syllables inside this one C4, as measured in verse 2 (22.80 s, 28.35 s); the C4 before it, scoop included, is the whole of the word before.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 17.2875,
+   "text": "on",
+   "reason": "\"on the\" is sung as two quick syllables inside this one C4, as measured in verse 2 (22.80 s, 28.35 s); the C4 before it, scoop included, is the whole of the word before.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 55.9875,
+   "text": "on",
+   "reason": "\"on the\" is sung as two quick syllables inside this one C4, as measured in verse 2 (22.80 s, 28.35 s); the C4 before it, scoop included, is the whole of the word before.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  }
+ ]
 }

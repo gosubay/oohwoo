@@ -4857,8 +4857,8 @@
     "start": 44.5,
     "end": 60.14,
     "firstNote": 76,
-    "lastNote": 115,
-    "noteCount": 40,
+    "lastNote": 114,
+    "noteCount": 39,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
      "heard": 33,
@@ -4869,10 +4869,10 @@
     },
     "variants": [],
     "quality": {
-     "pitchFlaggedShare": 0.1,
+     "pitchFlaggedShare": 0.08,
      "medianStep": 2.0,
      "largeLeapShare": 0.0,
-     "lyricLabelledShare": 0.88,
+     "lyricLabelledShare": 0.9,
      "sharedSyllableNotes": 0
     }
    },
@@ -4895,9 +4895,9 @@
     "located": "35/35 reference words anchored by transcription",
     "start": 60.14,
     "end": 76.0,
-    "firstNote": 116,
-    "lastNote": 155,
-    "noteCount": 40,
+    "firstNote": 115,
+    "lastNote": 153,
+    "noteCount": 39,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
      "heard": 32,
@@ -4908,10 +4908,10 @@
     },
     "variants": [],
     "quality": {
-     "pitchFlaggedShare": 0.03,
+     "pitchFlaggedShare": 0.0,
      "medianStep": 2.0,
      "largeLeapShare": 0.0,
-     "lyricLabelledShare": 0.88,
+     "lyricLabelledShare": 0.9,
      "sharedSyllableNotes": 0
     }
    }
@@ -4921,8 +4921,8 @@
    "full": {
     "label": "Full song",
     "firstNote": 0,
-    "lastNote": 155,
-    "noteCount": 156,
+    "lastNote": 153,
+    "noteCount": 154,
     "level": {
      "start": 0,
      "melodyStart": 14.19,
@@ -4982,35 +4982,35 @@
      ],
      [
       76,
-      85
+      84
      ],
      [
-      86,
-      94
+      85,
+      93
      ],
      [
-      95,
-      105
+      94,
+      104
      ],
      [
-      106,
-      115
+      105,
+      114
      ],
      [
-      116,
-      125
+      115,
+      124
      ],
      [
-      126,
-      134
+      125,
+      133
      ],
      [
-      135,
-      145
+      134,
+      143
      ],
      [
-      146,
-      155
+      144,
+      153
      ]
     ],
     "choice": "every located sung section; see sections"
@@ -5114,49 +5114,49 @@
    {
     "id": 9,
     "firstNote": 76,
-    "lastNote": 85,
+    "lastNote": 84,
     "section": "zh-1"
    },
    {
     "id": 10,
-    "firstNote": 86,
-    "lastNote": 94,
+    "firstNote": 85,
+    "lastNote": 93,
     "section": "zh-1"
    },
    {
     "id": 11,
-    "firstNote": 95,
-    "lastNote": 105,
+    "firstNote": 94,
+    "lastNote": 104,
     "section": "zh-1"
    },
    {
     "id": 12,
-    "firstNote": 106,
-    "lastNote": 115,
+    "firstNote": 105,
+    "lastNote": 114,
     "section": "zh-1"
    },
    {
     "id": 13,
-    "firstNote": 116,
-    "lastNote": 125,
+    "firstNote": 115,
+    "lastNote": 124,
     "section": "zh-2"
    },
    {
     "id": 14,
-    "firstNote": 126,
-    "lastNote": 134,
+    "firstNote": 125,
+    "lastNote": 133,
     "section": "zh-2"
    },
    {
     "id": 15,
-    "firstNote": 135,
-    "lastNote": 145,
+    "firstNote": 134,
+    "lastNote": 143,
     "section": "zh-2"
    },
    {
     "id": 16,
-    "firstNote": 146,
-    "lastNote": 155,
+    "firstNote": 144,
+    "lastNote": 153,
     "section": "zh-2"
    }
   ],
@@ -6170,7 +6170,6 @@
     "line": "en-2-1-2",
     "lineStart": true,
     "lyricStatus": "heard",
-    "sisterVerses": "differ",
     "id": "humptydumpty-en-2-03546",
     "yinMidi": 64.06,
     "phrase": 7,
@@ -6540,37 +6539,26 @@
    },
    {
     "t": 46.26,
-    "end": 46.37,
-    "midi": 63,
-    "median": 62.71,
+    "end": 46.49,
+    "midi": 66,
+    "median": 66.1,
     "lyric": "胖",
     "section": "zh-1",
     "line": "zh-1-0-0",
     "lineStart": true,
     "lyricStatus": "heard",
-    "id": "humptydumpty-zh-1-04626",
-    "measuredEnd": 46.37,
-    "yinMidi": 62.57,
-    "flags": [
-     "weak-independent-voicing"
+    "absorbedGlides": [
+     {
+      "t": 46.26,
+      "midi": 63,
+      "seconds": 0.11,
+      "why": "slide into the note of the same syllable"
+     }
     ],
-    "phrase": 9,
-    "note": "D#4",
-    "ratio": 1.07
-   },
-   {
-    "t": 46.37,
-    "end": 46.53,
-    "midi": 66,
-    "median": 66.1,
-    "lyric": "",
-    "section": "zh-1",
-    "id": "humptydumpty-zh-1-04637",
-    "measuredEnd": 46.49,
-    "yinMidi": 66.21,
+    "id": "humptydumpty-zh-1-04626",
+    "yinMidi": 64.63,
     "flags": [
-     "weak-independent-voicing",
-     "no-lyric"
+     "unstable-pitch"
     ],
     "phrase": 9,
     "note": "F#4",
@@ -6887,6 +6875,7 @@
     "line": "zh-1-0-2",
     "lineStart": true,
     "lyricStatus": "heard",
+    "sisterVerses": "differ",
     "id": "humptydumpty-zh-1-05338",
     "measuredEnd": 53.45,
     "yinMidi": null,
@@ -7600,37 +7589,24 @@
    },
    {
     "t": 67.52,
-    "end": 67.62,
-    "midi": 63,
-    "median": 62.88,
+    "end": 67.76,
+    "midi": 66,
+    "median": 65.91,
     "lyric": "国",
     "section": "zh-2",
     "line": "zh-2-1-2",
     "lineStart": true,
     "lyricStatus": "reference-spelling",
+    "absorbedGlides": [
+     {
+      "t": 67.52,
+      "midi": 63,
+      "seconds": 0.1,
+      "why": "slide into the note of the same syllable"
+     }
+    ],
     "id": "humptydumpty-zh-2-06752",
-    "measuredEnd": 67.62,
-    "yinMidi": 62.75,
-    "flags": [
-     "weak-independent-voicing"
-    ],
-    "phrase": 15,
-    "note": "D#4",
-    "ratio": 1.07
-   },
-   {
-    "t": 67.62,
-    "end": 67.76,
-    "midi": 66,
-    "median": 65.91,
-    "lyric": "",
-    "section": "zh-2",
-    "id": "humptydumpty-zh-2-06762",
-    "measuredEnd": 67.76,
-    "yinMidi": 65.9,
-    "flags": [
-     "no-lyric"
-    ],
+    "yinMidi": 65.51,
     "phrase": 15,
     "note": "F#4",
     "ratio": 1.29
@@ -8120,8 +8096,8 @@
     "start": 49.0,
     "end": 65.99,
     "firstNote": 77,
-    "lastNote": 117,
-    "noteCount": 41,
+    "lastNote": 116,
+    "noteCount": 40,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
      "heard": 32,
@@ -8132,10 +8108,10 @@
     },
     "variants": [],
     "quality": {
-     "pitchFlaggedShare": 0.0,
-     "medianStep": 2.0,
+     "pitchFlaggedShare": 0.03,
+     "medianStep": 1.5,
      "largeLeapShare": 0.0,
-     "lyricLabelledShare": 0.85,
+     "lyricLabelledShare": 0.88,
      "sharedSyllableNotes": 0
     }
    },
@@ -8159,8 +8135,8 @@
     "start": 65.99,
     "end": 82.5,
     "sisterSlides": true,
-    "firstNote": 118,
-    "lastNote": 158,
+    "firstNote": 117,
+    "lastNote": 157,
     "noteCount": 41,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -8185,8 +8161,8 @@
    "full": {
     "label": "Full song",
     "firstNote": 0,
-    "lastNote": 158,
-    "noteCount": 159,
+    "lastNote": 157,
+    "noteCount": 158,
     "level": {
      "start": 0,
      "melodyStart": 15.72,
@@ -8254,39 +8230,39 @@
      ],
      [
       77,
-      86
+      85
      ],
      [
-      87,
-      96
+      86,
+      95
      ],
      [
-      97,
-      107
+      96,
+      106
      ],
      [
-      108,
-      117
+      107,
+      116
      ],
      [
-      118,
-      126
+      117,
+      125
      ],
      [
-      127,
-      136
+      126,
+      135
      ],
      [
-      137,
-      139
+      136,
+      138
      ],
      [
-      140,
-      149
+      139,
+      148
      ],
      [
-      150,
-      158
+      149,
+      157
      ]
     ],
     "choice": "every located sung section; see sections"
@@ -8406,55 +8382,55 @@
    {
     "id": 11,
     "firstNote": 77,
-    "lastNote": 86,
+    "lastNote": 85,
     "section": "zh-1"
    },
    {
     "id": 12,
-    "firstNote": 87,
-    "lastNote": 96,
+    "firstNote": 86,
+    "lastNote": 95,
     "section": "zh-1"
    },
    {
     "id": 13,
-    "firstNote": 97,
-    "lastNote": 107,
+    "firstNote": 96,
+    "lastNote": 106,
     "section": "zh-1"
    },
    {
     "id": 14,
-    "firstNote": 108,
-    "lastNote": 117,
+    "firstNote": 107,
+    "lastNote": 116,
     "section": "zh-1"
    },
    {
     "id": 15,
-    "firstNote": 118,
-    "lastNote": 126,
+    "firstNote": 117,
+    "lastNote": 125,
     "section": "zh-2"
    },
    {
     "id": 16,
-    "firstNote": 127,
-    "lastNote": 136,
+    "firstNote": 126,
+    "lastNote": 135,
     "section": "zh-2"
    },
    {
     "id": 17,
-    "firstNote": 137,
-    "lastNote": 139,
+    "firstNote": 136,
+    "lastNote": 138,
     "section": "zh-2"
    },
    {
     "id": 18,
-    "firstNote": 140,
-    "lastNote": 149,
+    "firstNote": 139,
+    "lastNote": 148,
     "section": "zh-2"
    },
    {
     "id": 19,
-    "firstNote": 150,
-    "lastNote": 158,
+    "firstNote": 149,
+    "lastNote": 157,
     "section": "zh-2"
    }
   ],
@@ -9833,32 +9809,27 @@
    },
    {
     "t": 50.76,
-    "end": 50.95,
-    "midi": 65,
-    "median": 65.27,
+    "end": 51.15,
+    "midi": 67,
+    "median": 66.95,
     "lyric": "头",
     "section": "zh-1",
     "line": "zh-1-0-0",
     "lineStart": true,
     "lyricStatus": "heard",
-    "sisterVerses": "differ",
+    "sisterVerses": "agree",
+    "absorbedGlides": [
+     {
+      "t": 50.76,
+      "midi": 65,
+      "seconds": 0.19,
+      "why": "slide into the note of the same syllable"
+     }
+    ],
     "id": "headshoulders-zh-1-05076",
-    "yinMidi": 65.24,
-    "phrase": 11,
-    "note": "F4",
-    "ratio": 0.43
-   },
-   {
-    "t": 50.95,
-    "end": 51.15,
-    "midi": 67,
-    "median": 66.95,
-    "lyric": "",
-    "section": "zh-1",
-    "id": "headshoulders-zh-1-05095",
-    "yinMidi": 66.97,
+    "yinMidi": 65.93,
     "flags": [
-     "no-lyric"
+     "unstable-pitch"
     ],
     "phrase": 11,
     "note": "G4",
@@ -11458,8 +11429,8 @@
     "start": 22.09,
     "end": 32.91,
     "firstNote": 24,
-    "lastNote": 48,
-    "noteCount": 25,
+    "lastNote": 47,
+    "noteCount": 24,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
      "heard": 24,
@@ -11473,7 +11444,7 @@
      "pitchFlaggedShare": 0.0,
      "medianStep": 2.0,
      "largeLeapShare": 0.0,
-     "lyricLabelledShare": 0.96,
+     "lyricLabelledShare": 1.0,
      "sharedSyllableNotes": 0
     }
    },
@@ -11496,8 +11467,8 @@
     "located": "24/24 reference words anchored by transcription",
     "start": 32.91,
     "end": 45.0,
-    "firstNote": 49,
-    "lastNote": 72,
+    "firstNote": 48,
+    "lastNote": 71,
     "noteCount": 24,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -11535,8 +11506,8 @@
     "located": "24/24 reference words anchored by transcription",
     "start": 53.5,
     "end": 65.45,
-    "firstNote": 73,
-    "lastNote": 97,
+    "firstNote": 72,
+    "lastNote": 96,
     "noteCount": 25,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -11574,8 +11545,8 @@
     "located": "24/24 reference words anchored by transcription",
     "start": 65.45,
     "end": 76.31,
-    "firstNote": 98,
-    "lastNote": 121,
+    "firstNote": 97,
+    "lastNote": 120,
     "noteCount": 24,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -11613,8 +11584,8 @@
     "located": "24/24 reference words anchored by transcription",
     "start": 76.31,
     "end": 89.0,
-    "firstNote": 122,
-    "lastNote": 145,
+    "firstNote": 121,
+    "lastNote": 144,
     "noteCount": 24,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -11639,8 +11610,8 @@
    "full": {
     "label": "Full song",
     "firstNote": 0,
-    "lastNote": 145,
-    "noteCount": 146,
+    "lastNote": 144,
+    "noteCount": 145,
     "level": {
      "start": 0,
      "melodyStart": 11.45,
@@ -11686,83 +11657,83 @@
      ],
      [
       24,
-      31
+      30
      ],
      [
-      32,
-      37
+      31,
+      36
      ],
      [
-      38,
-      44
+      37,
+      43
      ],
      [
-      45,
-      48
+      44,
+      47
      ],
      [
-      49,
-      55
+      48,
+      54
      ],
      [
-      56,
-      61
+      55,
+      60
      ],
      [
-      62,
-      68
+      61,
+      67
      ],
      [
-      69,
-      72
+      68,
+      71
      ],
      [
-      73,
-      79
+      72,
+      78
      ],
      [
-      80,
-      85
+      79,
+      84
      ],
      [
-      86,
-      92
+      85,
+      91
      ],
      [
-      93,
-      97
+      92,
+      96
      ],
      [
-      98,
-      104
+      97,
+      103
      ],
      [
-      105,
-      110
+      104,
+      109
      ],
      [
-      111,
-      117
+      110,
+      116
      ],
      [
-      118,
-      121
+      117,
+      120
      ],
      [
-      122,
-      128
+      121,
+      127
      ],
      [
-      129,
-      134
+      128,
+      133
      ],
      [
-      135,
-      141
+      134,
+      140
      ],
      [
-      142,
-      145
+      141,
+      144
      ]
     ],
     "choice": "every located sung section; see sections"
@@ -11770,8 +11741,8 @@
    "quick": {
     "label": "Quick play",
     "firstNote": 0,
-    "lastNote": 48,
-    "noteCount": 49,
+    "lastNote": 47,
+    "noteCount": 48,
     "level": {
      "start": 7.45,
      "fadeIn": 0.4,
@@ -11813,19 +11784,19 @@
      ],
      [
       24,
-      31
+      30
      ],
      [
-      32,
-      37
+      31,
+      36
      ],
      [
-      38,
-      44
+      37,
+      43
      ],
      [
-      45,
-      48
+      44,
+      47
      ]
     ],
     "choice": "first sung sections (en-1, en-2): automatic rule, singing spanning at least 12 s"
@@ -11859,121 +11830,121 @@
    {
     "id": 5,
     "firstNote": 24,
-    "lastNote": 31,
+    "lastNote": 30,
     "section": "en-2"
    },
    {
     "id": 6,
-    "firstNote": 32,
-    "lastNote": 37,
+    "firstNote": 31,
+    "lastNote": 36,
     "section": "en-2"
    },
    {
     "id": 7,
-    "firstNote": 38,
-    "lastNote": 44,
+    "firstNote": 37,
+    "lastNote": 43,
     "section": "en-2"
    },
    {
     "id": 8,
-    "firstNote": 45,
-    "lastNote": 48,
+    "firstNote": 44,
+    "lastNote": 47,
     "section": "en-2"
    },
    {
     "id": 9,
-    "firstNote": 49,
-    "lastNote": 55,
+    "firstNote": 48,
+    "lastNote": 54,
     "section": "en-3"
    },
    {
     "id": 10,
-    "firstNote": 56,
-    "lastNote": 61,
+    "firstNote": 55,
+    "lastNote": 60,
     "section": "en-3"
    },
    {
     "id": 11,
-    "firstNote": 62,
-    "lastNote": 68,
+    "firstNote": 61,
+    "lastNote": 67,
     "section": "en-3"
    },
    {
     "id": 12,
-    "firstNote": 69,
-    "lastNote": 72,
+    "firstNote": 68,
+    "lastNote": 71,
     "section": "en-3"
    },
    {
     "id": 13,
-    "firstNote": 73,
-    "lastNote": 79,
+    "firstNote": 72,
+    "lastNote": 78,
     "section": "zh-1"
    },
    {
     "id": 14,
-    "firstNote": 80,
-    "lastNote": 85,
+    "firstNote": 79,
+    "lastNote": 84,
     "section": "zh-1"
    },
    {
     "id": 15,
-    "firstNote": 86,
-    "lastNote": 92,
+    "firstNote": 85,
+    "lastNote": 91,
     "section": "zh-1"
    },
    {
     "id": 16,
-    "firstNote": 93,
-    "lastNote": 97,
+    "firstNote": 92,
+    "lastNote": 96,
     "section": "zh-1"
    },
    {
     "id": 17,
-    "firstNote": 98,
-    "lastNote": 104,
+    "firstNote": 97,
+    "lastNote": 103,
     "section": "zh-2"
    },
    {
     "id": 18,
-    "firstNote": 105,
-    "lastNote": 110,
+    "firstNote": 104,
+    "lastNote": 109,
     "section": "zh-2"
    },
    {
     "id": 19,
-    "firstNote": 111,
-    "lastNote": 117,
+    "firstNote": 110,
+    "lastNote": 116,
     "section": "zh-2"
    },
    {
     "id": 20,
-    "firstNote": 118,
-    "lastNote": 121,
+    "firstNote": 117,
+    "lastNote": 120,
     "section": "zh-2"
    },
    {
     "id": 21,
-    "firstNote": 122,
-    "lastNote": 128,
+    "firstNote": 121,
+    "lastNote": 127,
     "section": "zh-3"
    },
    {
     "id": 22,
-    "firstNote": 129,
-    "lastNote": 134,
+    "firstNote": 128,
+    "lastNote": 133,
     "section": "zh-3"
    },
    {
     "id": 23,
-    "firstNote": 135,
-    "lastNote": 141,
+    "firstNote": 134,
+    "lastNote": 140,
     "section": "zh-3"
    },
    {
     "id": 24,
-    "firstNote": 142,
-    "lastNote": 145,
+    "firstNote": 141,
+    "lastNote": 144,
     "section": "zh-3"
    }
   ],
@@ -12581,33 +12552,25 @@
    },
    {
     "t": 24.36,
-    "end": 24.52,
-    "midi": 67,
-    "median": 67.02,
+    "end": 24.75,
+    "midi": 69,
+    "median": 68.94,
     "lyric": "bars",
     "section": "en-2",
     "line": "en-2-1-0",
     "lineStart": false,
     "lyricStatus": "heard",
-    "sisterVerses": "differ",
-    "id": "londonbridge-en-2-02436",
-    "yinMidi": 67.02,
-    "phrase": 5,
-    "note": "G4",
-    "ratio": 0.43
-   },
-   {
-    "t": 24.52,
-    "end": 24.75,
-    "midi": 69,
-    "median": 68.94,
-    "lyric": "",
-    "section": "en-2",
-    "id": "londonbridge-en-2-02452",
-    "yinMidi": 68.95,
-    "flags": [
-     "no-lyric"
+    "sisterVerses": "agree",
+    "absorbedGlides": [
+     {
+      "t": 24.36,
+      "midi": 67,
+      "seconds": 0.16,
+      "why": "slide into the note of the same syllable"
+     }
     ],
+    "id": "londonbridge-en-2-02436",
+    "yinMidi": 68.82,
     "phrase": 5,
     "note": "A4",
     "ratio": 0.57
@@ -14992,8 +14955,8 @@
     "end": 70.88,
     "sisterSlides": true,
     "firstNote": 96,
-    "lastNote": 137,
-    "noteCount": 42,
+    "lastNote": 136,
+    "noteCount": 41,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
      "heard": 39,
@@ -15004,10 +14967,10 @@
     },
     "variants": [],
     "quality": {
-     "pitchFlaggedShare": 0.31,
+     "pitchFlaggedShare": 0.29,
      "medianStep": 2.0,
      "largeLeapShare": 0.0,
-     "lyricLabelledShare": 0.95,
+     "lyricLabelledShare": 0.98,
      "sharedSyllableNotes": 0
     }
    },
@@ -15030,8 +14993,8 @@
     "located": "40/40 reference words anchored by transcription",
     "start": 70.88,
     "end": 89.5,
-    "firstNote": 138,
-    "lastNote": 178,
+    "firstNote": 137,
+    "lastNote": 177,
     "noteCount": 41,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -15056,8 +15019,8 @@
    "full": {
     "label": "Full song",
     "firstNote": 0,
-    "lastNote": 178,
-    "noteCount": 179,
+    "lastNote": 177,
+    "noteCount": 178,
     "level": {
      "start": 0,
      "melodyStart": 4.5,
@@ -15129,35 +15092,35 @@
      ],
      [
       96,
-      106
+      105
      ],
      [
-      107,
-      116
+      106,
+      115
      ],
      [
-      117,
-      126
+      116,
+      125
      ],
      [
-      127,
-      137
+      126,
+      136
      ],
      [
-      138,
-      148
+      137,
+      147
      ],
      [
-      149,
-      158
+      148,
+      157
      ],
      [
-      159,
-      168
+      158,
+      167
      ],
      [
-      169,
-      178
+      168,
+      177
      ]
     ],
     "choice": "every located sung section; see sections"
@@ -15283,49 +15246,49 @@
    {
     "id": 12,
     "firstNote": 96,
-    "lastNote": 106,
+    "lastNote": 105,
     "section": "zh-1"
    },
    {
     "id": 13,
-    "firstNote": 107,
-    "lastNote": 116,
+    "firstNote": 106,
+    "lastNote": 115,
     "section": "zh-1"
    },
    {
     "id": 14,
-    "firstNote": 117,
-    "lastNote": 126,
+    "firstNote": 116,
+    "lastNote": 125,
     "section": "zh-1"
    },
    {
     "id": 15,
-    "firstNote": 127,
-    "lastNote": 137,
+    "firstNote": 126,
+    "lastNote": 136,
     "section": "zh-1"
    },
    {
     "id": 16,
-    "firstNote": 138,
-    "lastNote": 148,
+    "firstNote": 137,
+    "lastNote": 147,
     "section": "zh-2"
    },
    {
     "id": 17,
-    "firstNote": 149,
-    "lastNote": 158,
+    "firstNote": 148,
+    "lastNote": 157,
     "section": "zh-2"
    },
    {
     "id": 18,
-    "firstNote": 159,
-    "lastNote": 168,
+    "firstNote": 158,
+    "lastNote": 167,
     "section": "zh-2"
    },
    {
     "id": 19,
-    "firstNote": 169,
-    "lastNote": 178,
+    "firstNote": 168,
+    "lastNote": 177,
     "section": "zh-2"
    }
   ],
@@ -17089,36 +17052,24 @@
    },
    {
     "t": 53.42,
-    "end": 53.57,
-    "midi": 58,
-    "median": 57.58,
+    "end": 53.85,
+    "midi": 60,
+    "median": 59.94,
     "lyric": "小",
     "section": "zh-1",
     "line": "zh-1-0-0",
     "lineStart": true,
     "lyricStatus": "heard",
+    "absorbedGlides": [
+     {
+      "t": 53.42,
+      "midi": 58,
+      "seconds": 0.15,
+      "why": "slide into the note of the same syllable"
+     }
+    ],
     "id": "itsybitsy-zh-1-05342",
-    "measuredEnd": 53.57,
-    "yinMidi": 57.2,
-    "flags": [
-     "estimators-disagree"
-    ],
-    "phrase": 12,
-    "note": "A#3",
-    "ratio": 0.785
-   },
-   {
-    "t": 53.57,
-    "end": 53.85,
-    "midi": 60,
-    "median": 59.94,
-    "lyric": "",
-    "section": "zh-1",
-    "id": "itsybitsy-zh-1-05357",
-    "yinMidi": 59.95,
-    "flags": [
-     "no-lyric"
-    ],
+    "yinMidi": 59.91,
     "phrase": 12,
     "note": "C4",
     "ratio": 1.0
@@ -22047,8 +21998,8 @@
     "start": 9.0,
     "end": 19.56,
     "firstNote": 0,
-    "lastNote": 27,
-    "noteCount": 28,
+    "lastNote": 26,
+    "noteCount": 27,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
      "heard": 26,
@@ -22059,10 +22010,10 @@
     },
     "variants": [],
     "quality": {
-     "pitchFlaggedShare": 0.14,
+     "pitchFlaggedShare": 0.11,
      "medianStep": 2.0,
      "largeLeapShare": 0.0,
-     "lyricLabelledShare": 0.93,
+     "lyricLabelledShare": 0.96,
      "sharedSyllableNotes": 0
     }
    },
@@ -22085,8 +22036,8 @@
     "located": "27/27 reference words anchored by transcription",
     "start": 19.56,
     "end": 29.55,
-    "firstNote": 28,
-    "lastNote": 54,
+    "firstNote": 27,
+    "lastNote": 53,
     "noteCount": 27,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -22124,8 +22075,8 @@
     "located": "28/28 reference words anchored by transcription",
     "start": 29.55,
     "end": 41.0,
-    "firstNote": 55,
-    "lastNote": 82,
+    "firstNote": 54,
+    "lastNote": 81,
     "noteCount": 28,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -22176,9 +22127,8 @@
     "located": "25/25 reference words anchored by transcription",
     "start": 54.51,
     "end": 69.78,
-    "sisterSlides": true,
-    "firstNote": 83,
-    "lastNote": 114,
+    "firstNote": 82,
+    "lastNote": 113,
     "noteCount": 32,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -22216,8 +22166,8 @@
     "located": "25/25 reference words anchored by transcription",
     "start": 69.78,
     "end": 79.8,
-    "firstNote": 115,
-    "lastNote": 139,
+    "firstNote": 114,
+    "lastNote": 138,
     "noteCount": 25,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -22255,8 +22205,8 @@
     "located": "25/25 reference words anchored by transcription",
     "start": 79.8,
     "end": 92.5,
-    "firstNote": 140,
-    "lastNote": 167,
+    "firstNote": 139,
+    "lastNote": 166,
     "noteCount": 28,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -22281,8 +22231,8 @@
    "full": {
     "label": "Full song",
     "firstNote": 0,
-    "lastNote": 167,
-    "noteCount": 168,
+    "lastNote": 166,
+    "noteCount": 167,
     "level": {
      "start": 0,
      "melodyStart": 10.13,
@@ -22324,91 +22274,91 @@
      ],
      [
       20,
-      27
+      26
      ],
      [
-      28,
-      35
+      27,
+      34
      ],
      [
-      36,
-      41
+      35,
+      40
      ],
      [
-      42,
-      48
+      41,
+      47
      ],
      [
-      49,
-      54
+      48,
+      53
      ],
      [
-      55,
-      62
+      54,
+      61
      ],
      [
-      63,
-      68
+      62,
+      67
      ],
      [
-      69,
-      76
+      68,
+      75
      ],
      [
-      77,
-      82
+      76,
+      81
      ],
      [
-      83,
-      89
+      82,
+      88
      ],
      [
-      90,
-      96
+      89,
+      95
      ],
      [
-      97,
-      102
+      96,
+      101
      ],
      [
-      103,
-      109
+      102,
+      108
      ],
      [
-      110,
-      114
+      109,
+      113
      ],
      [
-      115,
-      121
+      114,
+      120
      ],
      [
-      122,
-      127
+      121,
+      126
      ],
      [
-      128,
-      134
+      127,
+      133
      ],
      [
-      135,
-      139
+      134,
+      138
      ],
      [
-      140,
-      147
+      139,
+      146
      ],
      [
-      148,
-      154
+      147,
+      153
      ],
      [
-      155,
-      161
+      154,
+      160
      ],
      [
-      162,
-      167
+      161,
+      166
      ]
     ],
     "choice": "every located sung section; see sections"
@@ -22416,8 +22366,8 @@
    "quick": {
     "label": "Quick play",
     "firstNote": 0,
-    "lastNote": 54,
-    "noteCount": 55,
+    "lastNote": 53,
+    "noteCount": 54,
     "level": {
      "start": 6.13,
      "fadeIn": 0.4,
@@ -22455,23 +22405,23 @@
      ],
      [
       20,
-      27
+      26
      ],
      [
-      28,
-      35
+      27,
+      34
      ],
      [
-      36,
-      41
+      35,
+      40
      ],
      [
-      42,
-      48
+      41,
+      47
      ],
      [
-      49,
-      54
+      48,
+      53
      ]
     ],
     "choice": "first sung sections (en-1, en-2): automatic rule, singing spanning at least 12 s"
@@ -22499,133 +22449,133 @@
    {
     "id": 4,
     "firstNote": 20,
-    "lastNote": 27,
+    "lastNote": 26,
     "section": "en-1"
    },
    {
     "id": 5,
-    "firstNote": 28,
-    "lastNote": 35,
+    "firstNote": 27,
+    "lastNote": 34,
     "section": "en-2"
    },
    {
     "id": 6,
-    "firstNote": 36,
-    "lastNote": 41,
+    "firstNote": 35,
+    "lastNote": 40,
     "section": "en-2"
    },
    {
     "id": 7,
-    "firstNote": 42,
-    "lastNote": 48,
+    "firstNote": 41,
+    "lastNote": 47,
     "section": "en-2"
    },
    {
     "id": 8,
-    "firstNote": 49,
-    "lastNote": 54,
+    "firstNote": 48,
+    "lastNote": 53,
     "section": "en-2"
    },
    {
     "id": 9,
-    "firstNote": 55,
-    "lastNote": 62,
+    "firstNote": 54,
+    "lastNote": 61,
     "section": "en-3"
    },
    {
     "id": 10,
-    "firstNote": 63,
-    "lastNote": 68,
+    "firstNote": 62,
+    "lastNote": 67,
     "section": "en-3"
    },
    {
     "id": 11,
-    "firstNote": 69,
-    "lastNote": 76,
+    "firstNote": 68,
+    "lastNote": 75,
     "section": "en-3"
    },
    {
     "id": 12,
-    "firstNote": 77,
-    "lastNote": 82,
+    "firstNote": 76,
+    "lastNote": 81,
     "section": "en-3"
    },
    {
     "id": 13,
-    "firstNote": 83,
-    "lastNote": 89,
+    "firstNote": 82,
+    "lastNote": 88,
     "section": "zh-1"
    },
    {
     "id": 14,
-    "firstNote": 90,
-    "lastNote": 96,
+    "firstNote": 89,
+    "lastNote": 95,
     "section": "zh-1"
    },
    {
     "id": 15,
-    "firstNote": 97,
-    "lastNote": 102,
+    "firstNote": 96,
+    "lastNote": 101,
     "section": "zh-1"
    },
    {
     "id": 16,
-    "firstNote": 103,
-    "lastNote": 109,
+    "firstNote": 102,
+    "lastNote": 108,
     "section": "zh-1"
    },
    {
     "id": 17,
-    "firstNote": 110,
-    "lastNote": 114,
+    "firstNote": 109,
+    "lastNote": 113,
     "section": "zh-1"
    },
    {
     "id": 18,
-    "firstNote": 115,
-    "lastNote": 121,
+    "firstNote": 114,
+    "lastNote": 120,
     "section": "zh-2"
    },
    {
     "id": 19,
-    "firstNote": 122,
-    "lastNote": 127,
+    "firstNote": 121,
+    "lastNote": 126,
     "section": "zh-2"
    },
    {
     "id": 20,
-    "firstNote": 128,
-    "lastNote": 134,
+    "firstNote": 127,
+    "lastNote": 133,
     "section": "zh-2"
    },
    {
     "id": 21,
-    "firstNote": 135,
-    "lastNote": 139,
+    "firstNote": 134,
+    "lastNote": 138,
     "section": "zh-2"
    },
    {
     "id": 22,
-    "firstNote": 140,
-    "lastNote": 147,
+    "firstNote": 139,
+    "lastNote": 146,
     "section": "zh-3"
    },
    {
     "id": 23,
-    "firstNote": 148,
-    "lastNote": 154,
+    "firstNote": 147,
+    "lastNote": 153,
     "section": "zh-3"
    },
    {
     "id": 24,
-    "firstNote": 155,
-    "lastNote": 161,
+    "firstNote": 154,
+    "lastNote": 160,
     "section": "zh-3"
    },
    {
     "id": 25,
-    "firstNote": 162,
-    "lastNote": 167,
+    "firstNote": 161,
+    "lastNote": 166,
     "section": "zh-3"
    }
   ],
@@ -23031,37 +22981,26 @@
    },
    {
     "t": 17.66,
-    "end": 17.76,
-    "midi": 59,
-    "median": 58.6,
+    "end": 17.87,
+    "midi": 62,
+    "median": 61.97,
     "lyric": "fleece",
     "section": "en-1",
     "line": "en-1-0-3",
     "lineStart": false,
     "lyricStatus": "heard",
-    "id": "marylamb-en-1-01766",
-    "measuredEnd": 17.76,
-    "yinMidi": 58.51,
-    "flags": [
-     "weak-independent-voicing"
+    "absorbedGlides": [
+     {
+      "t": 17.66,
+      "midi": 59,
+      "seconds": 0.1,
+      "why": "slide into the note of the same syllable"
+     }
     ],
-    "phrase": 4,
-    "note": "B3",
-    "ratio": 0.785
-   },
-   {
-    "t": 17.76,
-    "end": 17.92,
-    "midi": 62,
-    "median": 61.97,
-    "lyric": "",
-    "section": "en-1",
-    "id": "marylamb-en-1-01776",
-    "measuredEnd": 17.87,
-    "yinMidi": 62.49,
+    "id": "marylamb-en-1-01766",
+    "yinMidi": 60.82,
     "flags": [
-     "weak-independent-voicing",
-     "no-lyric"
+     "unstable-pitch"
     ],
     "phrase": 4,
     "note": "D4",
@@ -25263,6 +25202,7 @@
     "line": "zh-2-1-3",
     "lineStart": true,
     "lyricStatus": "heard",
+    "sisterVerses": "agree",
     "absorbedGlides": [
      {
       "t": 77.68,
@@ -25825,6 +25765,7 @@
     "line": "zh-3-2-3",
     "lineStart": true,
     "lyricStatus": "heard",
+    "sisterVerses": "agree",
     "absorbedGlides": [
      {
       "t": 87.76,
@@ -28565,8 +28506,8 @@
     "start": 61.67,
     "end": 78.5,
     "firstNote": 122,
-    "lastNote": 153,
-    "noteCount": 32,
+    "lastNote": 152,
+    "noteCount": 31,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
      "heard": 20,
@@ -28577,10 +28518,10 @@
     },
     "variants": [],
     "quality": {
-     "pitchFlaggedShare": 0.47,
-     "medianStep": 3.0,
+     "pitchFlaggedShare": 0.45,
+     "medianStep": 2.5,
      "largeLeapShare": 0.15,
-     "lyricLabelledShare": 0.81,
+     "lyricLabelledShare": 0.84,
      "sharedSyllableNotes": 0
     },
     "qualityFlag": "pitch-unreliable"
@@ -28591,8 +28532,8 @@
    "full": {
     "label": "Full song",
     "firstNote": 0,
-    "lastNote": 153,
-    "noteCount": 154,
+    "lastNote": 152,
+    "noteCount": 153,
     "level": {
      "start": 0,
      "melodyStart": 0.37,
@@ -28692,23 +28633,23 @@
      ],
      [
       122,
-      129
+      128
      ],
      [
-      130,
-      136
+      129,
+      135
      ],
      [
-      137,
-      144
+      136,
+      143
      ],
      [
-      145,
-      150
+      144,
+      149
      ],
      [
-      151,
-      153
+      150,
+      152
      ]
     ],
     "choice": "every located sung section; see sections"
@@ -28888,31 +28829,31 @@
    {
     "id": 19,
     "firstNote": 122,
-    "lastNote": 129,
+    "lastNote": 128,
     "section": "zh-2"
    },
    {
     "id": 20,
-    "firstNote": 130,
-    "lastNote": 136,
+    "firstNote": 129,
+    "lastNote": 135,
     "section": "zh-2"
    },
    {
     "id": 21,
-    "firstNote": 137,
-    "lastNote": 144,
+    "firstNote": 136,
+    "lastNote": 143,
     "section": "zh-2"
    },
    {
     "id": 22,
-    "firstNote": 145,
-    "lastNote": 150,
+    "firstNote": 144,
+    "lastNote": 149,
     "section": "zh-2"
    },
    {
     "id": 23,
-    "firstNote": 151,
-    "lastNote": 153,
+    "firstNote": 150,
+    "lastNote": 152,
     "section": "zh-2"
    }
   ],
@@ -31538,42 +31479,32 @@
    },
    {
     "t": 64.5,
-    "end": 64.61,
-    "midi": 63,
-    "median": 63.7,
+    "end": 65.0,
+    "midi": 66,
+    "median": 65.8,
     "lyric": "嘻",
     "section": "zh-2",
     "line": "zh-2-1-0",
     "lineStart": false,
     "lyricStatus": "reference-spelling",
-    "id": "moretogether-zh-2-06450",
-    "measuredEnd": 64.61,
-    "yinMidi": null,
-    "flags": [
-     "weak-independent-voicing"
+    "absorbedGlides": [
+     {
+      "t": 64.5,
+      "midi": 63,
+      "seconds": 0.11,
+      "why": "slide into the note of the same syllable"
+     }
     ],
-    "phrase": 19,
-    "note": "D#4",
-    "ratio": 1.07
-   },
-   {
-    "t": 64.61,
-    "end": 65.0,
-    "midi": 66,
-    "median": 65.8,
-    "lyric": "",
-    "section": "zh-2",
     "heldParts": [
      {
       "t": 64.81,
       "end": 65.0
      }
     ],
-    "id": "moretogether-zh-2-06461",
+    "id": "moretogether-zh-2-06450",
     "yinMidi": 42.09,
     "flags": [
-     "estimators-disagree",
-     "no-lyric"
+     "estimators-disagree"
     ],
     "phrase": 19,
     "note": "F#4",
@@ -45171,6 +45102,7 @@
     "line": "en-2-1-0",
     "lineStart": false,
     "lyricStatus": "heard",
+    "sisterVerses": "agree",
     "absorbedGlides": [
      {
       "t": 20.09,
@@ -45564,6 +45496,7 @@
     "line": "en-3-2-0",
     "lineStart": false,
     "lyricStatus": "heard",
+    "sisterVerses": "agree",
     "id": "fingerfamily-en-3-02877",
     "yinMidi": 69.05,
     "phrase": 7,
@@ -46997,6 +46930,7 @@
     "line": "zh-2-1-0",
     "lineStart": false,
     "lyricStatus": "heard",
+    "sisterVerses": "agree",
     "id": "fingerfamily-zh-2-07132",
     "yinMidi": 68.92,
     "phrase": 18,
@@ -47743,6 +47677,7 @@
     "line": "zh-4-3-0",
     "lineStart": false,
     "lyricStatus": "heard",
+    "sisterVerses": "agree",
     "id": "fingerfamily-zh-4-08829",
     "yinMidi": 69.01,
     "phrase": 22,
@@ -48123,6 +48058,7 @@
     "line": "zh-5-4-0",
     "lineStart": false,
     "lyricStatus": "heard",
+    "sisterVerses": "agree",
     "heldParts": [
      {
       "t": 97.04,
@@ -52383,7 +52319,7 @@
     "line": "zh-1-0-2",
     "lineStart": false,
     "lyricStatus": "reference-spelling",
-    "sisterVerses": "agree",
+    "sisterVerses": "differ",
     "absorbedTails": [
      {
       "t": 83.09,
@@ -54542,7 +54478,7 @@
     "line": "zh-5-4-2",
     "lineStart": false,
     "lyricStatus": "heard",
-    "sisterVerses": "agree",
+    "sisterVerses": "differ",
     "absorbedTails": [
      {
       "t": 126.6,
@@ -54879,7 +54815,6 @@
     "located": "56/56 reference words anchored by transcription",
     "start": 28.29,
     "end": 50.99,
-    "sisterSlides": true,
     "firstNote": 56,
     "lastNote": 113,
     "noteCount": 58,
@@ -54999,8 +54934,8 @@
     "start": 96.68,
     "end": 119.0,
     "firstNote": 236,
-    "lastNote": 295,
-    "noteCount": 60,
+    "lastNote": 294,
+    "noteCount": 59,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
      "heard": 56,
@@ -55011,10 +54946,10 @@
     },
     "variants": [],
     "quality": {
-     "pitchFlaggedShare": 0.12,
+     "pitchFlaggedShare": 0.1,
      "medianStep": 0.0,
      "largeLeapShare": 0.02,
-     "lyricLabelledShare": 0.93,
+     "lyricLabelledShare": 0.95,
      "sharedSyllableNotes": 0
     }
    },
@@ -55038,8 +54973,8 @@
     "start": 119.0,
     "end": 142.86,
     "sisterSlides": true,
-    "firstNote": 296,
-    "lastNote": 353,
+    "firstNote": 295,
+    "lastNote": 352,
     "noteCount": 58,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -55077,8 +55012,8 @@
     "located": "57/58 reference words anchored by transcription",
     "start": 142.86,
     "end": 166.0,
-    "firstNote": 354,
-    "lastNote": 413,
+    "firstNote": 353,
+    "lastNote": 412,
     "noteCount": 60,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -55122,8 +55057,8 @@
     "located": "55/58 reference words anchored by transcription",
     "start": 166.0,
     "end": 186.76,
-    "firstNote": 414,
-    "lastNote": 473,
+    "firstNote": 413,
+    "lastNote": 472,
     "noteCount": 60,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -55167,8 +55102,8 @@
     "located": "48/58 reference words anchored by transcription",
     "start": 186.76,
     "end": 209.36,
-    "firstNote": 474,
-    "lastNote": 530,
+    "firstNote": 473,
+    "lastNote": 529,
     "noteCount": 57,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -55206,8 +55141,8 @@
     "located": "58/58 reference words anchored by transcription",
     "start": 209.36,
     "end": 234.0,
-    "firstNote": 531,
-    "lastNote": 588,
+    "firstNote": 530,
+    "lastNote": 587,
     "noteCount": 58,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -55243,8 +55178,8 @@
    "full": {
     "label": "Full song",
     "firstNote": 0,
-    "lastNote": 588,
-    "noteCount": 589,
+    "lastNote": 587,
+    "noteCount": 588,
     "level": {
      "start": 0,
      "melodyStart": 5.58,
@@ -55410,155 +55345,155 @@
      ],
      [
       236,
-      238
+      237
      ],
      [
-      239,
-      248
+      238,
+      247
      ],
      [
-      249,
-      256
+      248,
+      255
      ],
      [
-      257,
-      261
+      256,
+      260
      ],
      [
-      262,
-      271
+      261,
+      270
      ],
      [
-      272,
-      282
+      271,
+      281
      ],
      [
-      283,
-      284
+      282,
+      283
      ],
      [
-      285,
-      295
+      284,
+      294
      ],
      [
-      296,
-      302
+      295,
+      301
      ],
      [
-      303,
-      308
+      302,
+      307
      ],
      [
-      309,
-      320
+      308,
+      319
      ],
      [
-      321,
-      330
+      320,
+      329
      ],
      [
-      331,
-      341
+      330,
+      340
      ],
      [
-      342,
-      353
+      341,
+      352
      ],
      [
-      354,
-      365
+      353,
+      364
      ],
      [
-      366,
-      371
+      365,
+      370
      ],
      [
-      372,
-      378
+      371,
+      377
      ],
      [
-      379,
-      388
+      378,
+      387
      ],
      [
-      389,
-      395
+      388,
+      394
      ],
      [
-      396,
-      401
+      395,
+      400
      ],
      [
-      402,
-      413
+      401,
+      412
      ],
      [
-      414,
-      425
+      413,
+      424
      ],
      [
-      426,
-      433
+      425,
+      432
      ],
      [
-      434,
-      438
+      433,
+      437
      ],
      [
-      439,
-      448
+      438,
+      447
      ],
      [
-      449,
-      460
+      448,
+      459
      ],
      [
-      461,
-      467
+      460,
+      466
      ],
      [
-      468,
-      473
+      467,
+      472
      ],
      [
-      474,
-      485
+      473,
+      484
      ],
      [
-      486,
-      497
+      485,
+      496
      ],
      [
-      498,
-      506
+      497,
+      505
      ],
      [
-      507,
-      518
+      506,
+      517
      ],
      [
-      519,
-      530
+      518,
+      529
      ],
      [
-      531,
-      542
+      530,
+      541
      ],
      [
-      543,
-      554
+      542,
+      553
      ],
      [
-      555,
-      564
+      554,
+      563
      ],
      [
-      565,
-      576
+      564,
+      575
      ],
      [
-      577,
-      588
+      576,
+      587
      ]
     ],
     "choice": "every located sung section; see sections"
@@ -55828,229 +55763,229 @@
    {
     "id": 34,
     "firstNote": 236,
-    "lastNote": 238,
+    "lastNote": 237,
     "section": "en-5"
    },
    {
     "id": 35,
-    "firstNote": 239,
-    "lastNote": 248,
+    "firstNote": 238,
+    "lastNote": 247,
     "section": "en-5"
    },
    {
     "id": 36,
-    "firstNote": 249,
-    "lastNote": 256,
+    "firstNote": 248,
+    "lastNote": 255,
     "section": "en-5"
    },
    {
     "id": 37,
-    "firstNote": 257,
-    "lastNote": 261,
+    "firstNote": 256,
+    "lastNote": 260,
     "section": "en-5"
    },
    {
     "id": 38,
-    "firstNote": 262,
-    "lastNote": 271,
+    "firstNote": 261,
+    "lastNote": 270,
     "section": "en-5"
    },
    {
     "id": 39,
-    "firstNote": 272,
-    "lastNote": 282,
+    "firstNote": 271,
+    "lastNote": 281,
     "section": "en-5"
    },
    {
     "id": 40,
-    "firstNote": 283,
-    "lastNote": 284,
+    "firstNote": 282,
+    "lastNote": 283,
     "section": "en-5"
    },
    {
     "id": 41,
-    "firstNote": 285,
-    "lastNote": 295,
+    "firstNote": 284,
+    "lastNote": 294,
     "section": "en-5"
    },
    {
     "id": 42,
-    "firstNote": 296,
-    "lastNote": 302,
+    "firstNote": 295,
+    "lastNote": 301,
     "section": "zh-1"
    },
    {
     "id": 43,
-    "firstNote": 303,
-    "lastNote": 308,
+    "firstNote": 302,
+    "lastNote": 307,
     "section": "zh-1"
    },
    {
     "id": 44,
-    "firstNote": 309,
-    "lastNote": 320,
+    "firstNote": 308,
+    "lastNote": 319,
     "section": "zh-1"
    },
    {
     "id": 45,
-    "firstNote": 321,
-    "lastNote": 330,
+    "firstNote": 320,
+    "lastNote": 329,
     "section": "zh-1"
    },
    {
     "id": 46,
-    "firstNote": 331,
-    "lastNote": 341,
+    "firstNote": 330,
+    "lastNote": 340,
     "section": "zh-1"
    },
    {
     "id": 47,
-    "firstNote": 342,
-    "lastNote": 353,
+    "firstNote": 341,
+    "lastNote": 352,
     "section": "zh-1"
    },
    {
     "id": 48,
-    "firstNote": 354,
-    "lastNote": 365,
+    "firstNote": 353,
+    "lastNote": 364,
     "section": "zh-2"
    },
    {
     "id": 49,
-    "firstNote": 366,
-    "lastNote": 371,
+    "firstNote": 365,
+    "lastNote": 370,
     "section": "zh-2"
    },
    {
     "id": 50,
-    "firstNote": 372,
-    "lastNote": 378,
+    "firstNote": 371,
+    "lastNote": 377,
     "section": "zh-2"
    },
    {
     "id": 51,
-    "firstNote": 379,
-    "lastNote": 388,
+    "firstNote": 378,
+    "lastNote": 387,
     "section": "zh-2"
    },
    {
     "id": 52,
-    "firstNote": 389,
-    "lastNote": 395,
+    "firstNote": 388,
+    "lastNote": 394,
     "section": "zh-2"
    },
    {
     "id": 53,
-    "firstNote": 396,
-    "lastNote": 401,
+    "firstNote": 395,
+    "lastNote": 400,
     "section": "zh-2"
    },
    {
     "id": 54,
-    "firstNote": 402,
-    "lastNote": 413,
+    "firstNote": 401,
+    "lastNote": 412,
     "section": "zh-2"
    },
    {
     "id": 55,
-    "firstNote": 414,
-    "lastNote": 425,
+    "firstNote": 413,
+    "lastNote": 424,
     "section": "zh-3"
    },
    {
     "id": 56,
-    "firstNote": 426,
-    "lastNote": 433,
+    "firstNote": 425,
+    "lastNote": 432,
     "section": "zh-3"
    },
    {
     "id": 57,
-    "firstNote": 434,
-    "lastNote": 438,
+    "firstNote": 433,
+    "lastNote": 437,
     "section": "zh-3"
    },
    {
     "id": 58,
-    "firstNote": 439,
-    "lastNote": 448,
+    "firstNote": 438,
+    "lastNote": 447,
     "section": "zh-3"
    },
    {
     "id": 59,
-    "firstNote": 449,
-    "lastNote": 460,
+    "firstNote": 448,
+    "lastNote": 459,
     "section": "zh-3"
    },
    {
     "id": 60,
-    "firstNote": 461,
-    "lastNote": 467,
+    "firstNote": 460,
+    "lastNote": 466,
     "section": "zh-3"
    },
    {
     "id": 61,
-    "firstNote": 468,
-    "lastNote": 473,
+    "firstNote": 467,
+    "lastNote": 472,
     "section": "zh-3"
    },
    {
     "id": 62,
-    "firstNote": 474,
-    "lastNote": 485,
+    "firstNote": 473,
+    "lastNote": 484,
     "section": "zh-4"
    },
    {
     "id": 63,
-    "firstNote": 486,
-    "lastNote": 497,
+    "firstNote": 485,
+    "lastNote": 496,
     "section": "zh-4"
    },
    {
     "id": 64,
-    "firstNote": 498,
-    "lastNote": 506,
+    "firstNote": 497,
+    "lastNote": 505,
     "section": "zh-4"
    },
    {
     "id": 65,
-    "firstNote": 507,
-    "lastNote": 518,
+    "firstNote": 506,
+    "lastNote": 517,
     "section": "zh-4"
    },
    {
     "id": 66,
-    "firstNote": 519,
-    "lastNote": 530,
+    "firstNote": 518,
+    "lastNote": 529,
     "section": "zh-4"
    },
    {
     "id": 67,
-    "firstNote": 531,
-    "lastNote": 542,
+    "firstNote": 530,
+    "lastNote": 541,
     "section": "zh-5"
    },
    {
     "id": 68,
-    "firstNote": 543,
-    "lastNote": 554,
+    "firstNote": 542,
+    "lastNote": 553,
     "section": "zh-5"
    },
    {
     "id": 69,
-    "firstNote": 555,
-    "lastNote": 564,
+    "firstNote": 554,
+    "lastNote": 563,
     "section": "zh-5"
    },
    {
     "id": 70,
-    "firstNote": 565,
-    "lastNote": 576,
+    "firstNote": 564,
+    "lastNote": 575,
     "section": "zh-5"
    },
    {
     "id": 71,
-    "firstNote": 577,
-    "lastNote": 588,
+    "firstNote": 576,
+    "lastNote": 587,
     "section": "zh-5"
    }
   ],
@@ -57197,6 +57132,7 @@
     "line": "en-2-1-0",
     "lineStart": true,
     "lyricStatus": "heard",
+    "sisterVerses": "differ",
     "id": "oldmcdonald-en-2-02998",
     "measuredEnd": 30.08,
     "yinMidi": null,
@@ -58442,6 +58378,7 @@
     "line": "en-3-2-0",
     "lineStart": true,
     "lyricStatus": "heard",
+    "sisterVerses": "differ",
     "id": "oldmcdonald-en-3-05133",
     "measuredEnd": 51.43,
     "yinMidi": 63.32,
@@ -60805,37 +60742,26 @@
    },
    {
     "t": 97.81,
-    "end": 97.92,
-    "midi": 64,
-    "median": 64.14,
+    "end": 98.03,
+    "midi": 68,
+    "median": 67.41,
     "lyric": "Old",
     "section": "en-5",
     "line": "en-5-4-0",
     "lineStart": true,
     "lyricStatus": "heard",
-    "id": "oldmcdonald-en-5-09781",
-    "measuredEnd": 97.92,
-    "yinMidi": null,
-    "flags": [
-     "weak-independent-voicing"
+    "absorbedGlides": [
+     {
+      "t": 97.81,
+      "midi": 64,
+      "seconds": 0.11,
+      "why": "slide into the note of the same syllable"
+     }
     ],
-    "phrase": 34,
-    "note": "E4",
-    "ratio": 1.0
-   },
-   {
-    "t": 97.92,
-    "end": 98.03,
-    "midi": 68,
-    "median": 67.41,
-    "lyric": "",
-    "section": "en-5",
-    "id": "oldmcdonald-en-5-09792",
-    "measuredEnd": 98.03,
-    "yinMidi": 67.4,
+    "id": "oldmcdonald-en-5-09781",
+    "yinMidi": 66.38,
     "flags": [
-     "weak-independent-voicing",
-     "no-lyric"
+     "unstable-pitch"
     ],
     "phrase": 34,
     "note": "G#4",
@@ -92683,8 +92609,8 @@
     "start": 119.46,
     "end": 152.0,
     "firstNote": 133,
-    "lastNote": 185,
-    "noteCount": 53,
+    "lastNote": 184,
+    "noteCount": 52,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
      "heard": 37,
@@ -92695,10 +92621,10 @@
     },
     "variants": [],
     "quality": {
-     "pitchFlaggedShare": 0.02,
+     "pitchFlaggedShare": 0.0,
      "medianStep": 2.0,
      "largeLeapShare": 0.0,
-     "lyricLabelledShare": 0.7,
+     "lyricLabelledShare": 0.71,
      "sharedSyllableNotes": 0
     }
    }
@@ -92708,8 +92634,8 @@
    "full": {
     "label": "Full song",
     "firstNote": 0,
-    "lastNote": 185,
-    "noteCount": 186,
+    "lastNote": 184,
+    "noteCount": 185,
     "level": {
      "start": 0,
      "melodyStart": 12.82,
@@ -92809,15 +92735,15 @@
      ],
      [
       163,
-      171
+      170
      ],
      [
-      172,
-      179
+      171,
+      178
      ],
      [
-      180,
-      185
+      179,
+      184
      ]
     ],
     "choice": "every located sung section; see sections"
@@ -92985,19 +92911,19 @@
    {
     "id": 19,
     "firstNote": 163,
-    "lastNote": 171,
+    "lastNote": 170,
     "section": "en-2"
    },
    {
     "id": 20,
-    "firstNote": 172,
-    "lastNote": 179,
+    "firstNote": 171,
+    "lastNote": 178,
     "section": "en-2"
    },
    {
     "id": 21,
-    "firstNote": 180,
-    "lastNote": 185,
+    "firstNote": 179,
+    "lastNote": 184,
     "section": "en-2"
    }
   ],
@@ -96026,31 +95952,22 @@
    },
    {
     "t": 134.96,
-    "end": 135.02,
-    "midi": 59,
-    "median": 59.02,
+    "end": 135.92,
+    "midi": 61,
+    "median": 60.97,
     "lyric": "Filled",
     "section": "en-2",
     "line": "en-2-1-3",
     "lineStart": true,
     "lyricStatus": "heard",
-    "id": "xiaoyanzi-en-2-13496",
-    "measuredEnd": 135.02,
-    "yinMidi": null,
-    "flags": [
-     "weak-independent-voicing"
+    "absorbedGlides": [
+     {
+      "t": 134.96,
+      "midi": 59,
+      "seconds": 0.06,
+      "why": "slide into the note of the same syllable"
+     }
     ],
-    "phrase": 19,
-    "note": "B3",
-    "ratio": 0.14
-   },
-   {
-    "t": 135.02,
-    "end": 135.92,
-    "midi": 61,
-    "median": 60.97,
-    "lyric": "",
-    "section": "en-2",
     "heldParts": [
      {
       "t": 135.18,
@@ -96061,11 +95978,8 @@
       "end": 135.92
      }
     ],
-    "id": "xiaoyanzi-en-2-13502",
+    "id": "xiaoyanzi-en-2-13496",
     "yinMidi": 61.01,
-    "flags": [
-     "no-lyric"
-    ],
     "phrase": 19,
     "note": "C#4",
     "ratio": 0.29
@@ -98319,8 +98233,8 @@
     "start": 39.0,
     "end": 52.5,
     "firstNote": 55,
-    "lastNote": 82,
-    "noteCount": 28,
+    "lastNote": 81,
+    "noteCount": 27,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
      "heard": 19,
@@ -98331,10 +98245,10 @@
     },
     "variants": [],
     "quality": {
-     "pitchFlaggedShare": 0.11,
+     "pitchFlaggedShare": 0.15,
      "medianStep": 2.0,
      "largeLeapShare": 0.0,
-     "lyricLabelledShare": 0.93,
+     "lyricLabelledShare": 0.96,
      "sharedSyllableNotes": 0
     }
    }
@@ -98344,8 +98258,8 @@
    "full": {
     "label": "Full song",
     "firstNote": 0,
-    "lastNote": 82,
-    "noteCount": 83,
+    "lastNote": 81,
+    "noteCount": 82,
     "level": {
      "start": 0,
      "melodyStart": 10.28,
@@ -98413,11 +98327,11 @@
      ],
      [
       67,
-      74
+      73
      ],
      [
-      75,
-      82
+      74,
+      81
      ]
     ],
     "choice": "every located sung section; see sections"
@@ -98551,13 +98465,13 @@
    {
     "id": 11,
     "firstNote": 67,
-    "lastNote": 74,
+    "lastNote": 73,
     "section": "zh-1"
    },
    {
     "id": 12,
-    "firstNote": 75,
-    "lastNote": 82,
+    "firstNote": 74,
+    "lastNote": 81,
     "section": "zh-1"
    }
   ],
@@ -98999,6 +98913,7 @@
     "line": "ms-1-0-2",
     "lineStart": false,
     "lyricStatus": "heard",
+    "sisterVerses": "agree",
     "id": "rasasayang-ms-1-01765",
     "yinMidi": 66.01,
     "phrase": 3,
@@ -100077,33 +99992,26 @@
    },
    {
     "t": 47.94,
-    "end": 48.07,
-    "midi": 64,
-    "median": 63.96,
+    "end": 48.21,
+    "midi": 66,
+    "median": 65.85,
     "lyric": "情",
     "section": "zh-1",
     "line": "zh-1-0-2",
     "lineStart": false,
     "lyricStatus": "heard",
+    "absorbedGlides": [
+     {
+      "t": 47.94,
+      "midi": 64,
+      "seconds": 0.13,
+      "why": "slide into the note of the same syllable"
+     }
+    ],
     "id": "rasasayang-zh-1-04794",
-    "measuredEnd": 48.07,
-    "yinMidi": 63.94,
-    "phrase": 11,
-    "note": "E4",
-    "ratio": 1.43
-   },
-   {
-    "t": 48.07,
-    "end": 48.21,
-    "midi": 66,
-    "median": 65.85,
-    "lyric": "",
-    "section": "zh-1",
-    "id": "rasasayang-zh-1-04807",
-    "measuredEnd": 48.21,
-    "yinMidi": 65.85,
+    "yinMidi": 65.31,
     "flags": [
-     "no-lyric"
+     "unstable-pitch"
     ],
     "phrase": 11,
     "note": "F#4",
@@ -100458,8 +100366,8 @@
      "reason": "In this chorus \"chan mali chan\" is sung an octave below the first chorus (27.5-45.4 s) with a doubled voice, and the reader jumps between octaves (frames alternate C4 / C5 inside one held syllable). A reading limited to the lead register (about F4-E5) finds the same pitch classes as the first chorus wherever it is confident. Pitch classes are kept as measured; the octave is the lead register of the first chorus."
     },
     "firstNote": 136,
-    "lastNote": 175,
-    "noteCount": 40,
+    "lastNote": 174,
+    "noteCount": 39,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
      "heard": 38,
@@ -100470,10 +100378,10 @@
     },
     "variants": [],
     "quality": {
-     "pitchFlaggedShare": 0.88,
+     "pitchFlaggedShare": 0.87,
      "medianStep": 1.0,
      "largeLeapShare": 0.0,
-     "lyricLabelledShare": 0.95,
+     "lyricLabelledShare": 0.97,
      "sharedSyllableNotes": 0
     },
     "qualityFlag": "pitch-unreliable"
@@ -100497,8 +100405,8 @@
     "located": "48/48 reference words anchored by transcription",
     "start": 90.5,
     "end": 110.34,
-    "firstNote": 176,
-    "lastNote": 223,
+    "firstNote": 175,
+    "lastNote": 222,
     "noteCount": 48,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -100543,8 +100451,8 @@
      ],
      "reason": "In this chorus \"chan mali chan\" is sung an octave below the first chorus (27.5-45.4 s) with a doubled voice, and the reader jumps between octaves (frames alternate C4 / C5 inside one held syllable). A reading limited to the lead register (about F4-E5) finds the same pitch classes as the first chorus wherever it is confident. Pitch classes are kept as measured; the octave is the lead register of the first chorus. (This chorus is one semitone higher.)"
     },
-    "firstNote": 224,
-    "lastNote": 262,
+    "firstNote": 223,
+    "lastNote": 261,
     "noteCount": 39,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -100570,8 +100478,8 @@
    "full": {
     "label": "Full song",
     "firstNote": 0,
-    "lastNote": 262,
-    "noteCount": 263,
+    "lastNote": 261,
+    "noteCount": 262,
     "level": {
      "start": 0,
      "melodyStart": 9.35,
@@ -100686,63 +100594,59 @@
      ],
      [
       144,
-      147
+      155
      ],
      [
-      148,
-      156
+      156,
+      163
      ],
      [
-      157,
-      164
+      164,
+      174
      ],
      [
-      165,
-      175
+      175,
+      185
      ],
      [
-      176,
-      186
+      186,
+      191
      ],
      [
-      187,
-      192
+      192,
+      198
      ],
      [
-      193,
-      199
+      199,
+      203
      ],
      [
-      200,
-      204
+      204,
+      209
      ],
      [
-      205,
-      210
+      210,
+      215
      ],
      [
-      211,
-      216
+      216,
+      222
      ],
      [
-      217,
-      223
+      223,
+      230
      ],
      [
-      224,
-      231
+      231,
+      242
      ],
      [
-      232,
-      243
+      243,
+      250
      ],
      [
-      244,
-      251
-     ],
-     [
-      252,
-      262
+      251,
+      261
      ]
     ],
     "choice": "every located sung section; see sections"
@@ -100940,91 +100844,85 @@
    {
     "id": 22,
     "firstNote": 144,
-    "lastNote": 147,
+    "lastNote": 155,
     "section": "en-2"
    },
    {
     "id": 23,
-    "firstNote": 148,
-    "lastNote": 156,
+    "firstNote": 156,
+    "lastNote": 163,
     "section": "en-2"
    },
    {
     "id": 24,
-    "firstNote": 157,
-    "lastNote": 164,
+    "firstNote": 164,
+    "lastNote": 174,
     "section": "en-2"
    },
    {
     "id": 25,
-    "firstNote": 165,
-    "lastNote": 175,
-    "section": "en-2"
+    "firstNote": 175,
+    "lastNote": 185,
+    "section": "zh-1"
    },
    {
     "id": 26,
-    "firstNote": 176,
-    "lastNote": 186,
+    "firstNote": 186,
+    "lastNote": 191,
     "section": "zh-1"
    },
    {
     "id": 27,
-    "firstNote": 187,
-    "lastNote": 192,
+    "firstNote": 192,
+    "lastNote": 198,
     "section": "zh-1"
    },
    {
     "id": 28,
-    "firstNote": 193,
-    "lastNote": 199,
+    "firstNote": 199,
+    "lastNote": 203,
     "section": "zh-1"
    },
    {
     "id": 29,
-    "firstNote": 200,
-    "lastNote": 204,
+    "firstNote": 204,
+    "lastNote": 209,
     "section": "zh-1"
    },
    {
     "id": 30,
-    "firstNote": 205,
-    "lastNote": 210,
+    "firstNote": 210,
+    "lastNote": 215,
     "section": "zh-1"
    },
    {
     "id": 31,
-    "firstNote": 211,
-    "lastNote": 216,
+    "firstNote": 216,
+    "lastNote": 222,
     "section": "zh-1"
    },
    {
     "id": 32,
-    "firstNote": 217,
-    "lastNote": 223,
-    "section": "zh-1"
+    "firstNote": 223,
+    "lastNote": 230,
+    "section": "zh-2"
    },
    {
     "id": 33,
-    "firstNote": 224,
-    "lastNote": 231,
+    "firstNote": 231,
+    "lastNote": 242,
     "section": "zh-2"
    },
    {
     "id": 34,
-    "firstNote": 232,
-    "lastNote": 243,
+    "firstNote": 243,
+    "lastNote": 250,
     "section": "zh-2"
    },
    {
     "id": 35,
-    "firstNote": 244,
-    "lastNote": 251,
-    "section": "zh-2"
-   },
-   {
-    "id": 36,
-    "firstNote": 252,
-    "lastNote": 262,
+    "firstNote": 251,
+    "lastNote": 261,
     "section": "zh-2"
    }
   ],
@@ -104052,7 +103950,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 23,
+    "phrase": 22,
     "note": "G4",
     "ratio": 1.0
    },
@@ -104068,7 +103966,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-07162",
     "yinMidi": 68.96,
-    "phrase": 23,
+    "phrase": 22,
     "note": "A4",
     "ratio": 1.14
    },
@@ -104095,7 +103993,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 23,
+    "phrase": 22,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104114,7 +104012,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 23,
+    "phrase": 22,
     "note": "C5",
     "ratio": 1.43
    },
@@ -104130,7 +104028,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-07254",
     "yinMidi": 69.57,
-    "phrase": 23,
+    "phrase": 22,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -104147,51 +104045,41 @@
     "flags": [
      "no-lyric"
     ],
-    "phrase": 23,
+    "phrase": 22,
     "note": "B4",
     "ratio": 1.29
    },
    {
     "t": 72.86,
-    "end": 72.99,
-    "midi": 69,
-    "median": 68.8,
+    "end": 73.38,
+    "midi": 72,
+    "median": 71.91,
     "lyric": "by",
     "section": "en-2",
     "line": "en-2-1-1",
     "lineStart": false,
     "lyricStatus": "heard",
-    "id": "chanmalichan-en-2-07286",
-    "measuredEnd": 72.99,
-    "yinMidi": 45.32,
-    "flags": [
-     "unstable-pitch"
+    "absorbedGlides": [
+     {
+      "t": 72.86,
+      "midi": 69,
+      "seconds": 0.13,
+      "why": "slide into the note of the same syllable"
+     }
     ],
-    "phrase": 23,
-    "note": "A4",
-    "ratio": 1.14
-   },
-   {
-    "t": 72.99,
-    "end": 73.38,
-    "midi": 72,
-    "median": 71.91,
-    "lyric": "",
-    "section": "en-2",
     "heldParts": [
      {
       "t": 73.2,
       "end": 73.38
      }
     ],
-    "id": "chanmalichan-en-2-07299",
-    "yinMidi": 47.83,
+    "id": "chanmalichan-en-2-07286",
+    "yinMidi": 47.86,
     "octaveCandidate": 48,
     "flags": [
-     "octave-fold-suspect",
-     "no-lyric"
+     "octave-fold-suspect"
     ],
-    "phrase": 23,
+    "phrase": 22,
     "note": "C5",
     "ratio": 1.43
    },
@@ -104210,7 +104098,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 23,
+    "phrase": 22,
     "note": "G4",
     "ratio": 1.0
    },
@@ -104247,7 +104135,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 24,
+    "phrase": 23,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104272,7 +104160,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 24,
+    "phrase": 23,
     "note": "C5",
     "ratio": 1.43
    },
@@ -104302,7 +104190,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 24,
+    "phrase": 23,
     "note": "C5",
     "ratio": 1.43
    },
@@ -104333,7 +104221,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 24,
+    "phrase": 23,
     "note": "C5",
     "ratio": 1.43
    },
@@ -104362,7 +104250,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 24,
+    "phrase": 23,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104391,7 +104279,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 24,
+    "phrase": 23,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104407,7 +104295,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-07708",
     "yinMidi": 70.92,
-    "phrase": 24,
+    "phrase": 23,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104423,7 +104311,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-07728",
     "yinMidi": 70.97,
-    "phrase": 24,
+    "phrase": 23,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104453,7 +104341,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 25,
+    "phrase": 24,
     "note": "A4",
     "ratio": 1.14
    },
@@ -104482,7 +104370,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 25,
+    "phrase": 24,
     "note": "A4",
     "ratio": 1.14
    },
@@ -104511,7 +104399,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 25,
+    "phrase": 24,
     "note": "A4",
     "ratio": 1.14
    },
@@ -104547,7 +104435,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 25,
+    "phrase": 24,
     "note": "A4",
     "ratio": 1.14
    },
@@ -104574,7 +104462,7 @@
     "flags": [
      "octave-fold-suspect"
     ],
-    "phrase": 25,
+    "phrase": 24,
     "note": "C5",
     "ratio": 1.43
    },
@@ -104593,7 +104481,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 25,
+    "phrase": 24,
     "note": "A4",
     "ratio": 1.14
    },
@@ -104612,7 +104500,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 25,
+    "phrase": 24,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104638,7 +104526,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 25,
+    "phrase": 24,
     "note": "C5",
     "ratio": 1.43
    },
@@ -104672,7 +104560,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 25,
+    "phrase": 24,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104706,7 +104594,7 @@
     "flags": [
      "octave-fold-suspect"
     ],
-    "phrase": 25,
+    "phrase": 24,
     "note": "C5",
     "ratio": 1.43
    },
@@ -104727,7 +104615,7 @@
     "flags": [
      "octave-fold-suspect"
     ],
-    "phrase": 25,
+    "phrase": 24,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104747,7 +104635,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 26,
+    "phrase": 25,
     "note": "E4",
     "ratio": 0.71
    },
@@ -104767,7 +104655,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 26,
+    "phrase": 25,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -104783,7 +104671,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09273",
     "yinMidi": 68.01,
-    "phrase": 26,
+    "phrase": 25,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -104799,7 +104687,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09301",
     "yinMidi": 67.99,
-    "phrase": 26,
+    "phrase": 25,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -104815,7 +104703,7 @@
     "lyricStatus": "reference-spelling",
     "id": "chanmalichan-zh-1-09328",
     "yinMidi": 68.03,
-    "phrase": 26,
+    "phrase": 25,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -104839,7 +104727,7 @@
     ],
     "id": "chanmalichan-zh-1-09441",
     "yinMidi": 66.99,
-    "phrase": 26,
+    "phrase": 25,
     "note": "G4",
     "ratio": 1.0
    },
@@ -104855,7 +104743,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09472",
     "yinMidi": 65.04,
-    "phrase": 26,
+    "phrase": 25,
     "note": "F4",
     "ratio": 0.785
    },
@@ -104871,7 +104759,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09499",
     "yinMidi": 68.0,
-    "phrase": 26,
+    "phrase": 25,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -104897,7 +104785,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 26,
+    "phrase": 25,
     "note": "F4",
     "ratio": 0.785
    },
@@ -104921,7 +104809,7 @@
     ],
     "id": "chanmalichan-zh-1-09557",
     "yinMidi": 63.34,
-    "phrase": 26,
+    "phrase": 25,
     "note": "D#4",
     "ratio": 0.64
    },
@@ -104937,7 +104825,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09584",
     "yinMidi": 62.99,
-    "phrase": 26,
+    "phrase": 25,
     "note": "D#4",
     "ratio": 0.64
    },
@@ -104953,7 +104841,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09669",
     "yinMidi": 63.06,
-    "phrase": 27,
+    "phrase": 26,
     "note": "D#4",
     "ratio": 0.64
    },
@@ -104970,7 +104858,7 @@
     "id": "chanmalichan-zh-1-09697",
     "measuredEnd": 97.12,
     "yinMidi": 67.59,
-    "phrase": 27,
+    "phrase": 26,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -104987,7 +104875,7 @@
     "id": "chanmalichan-zh-1-09712",
     "measuredEnd": 97.27,
     "yinMidi": 69.97,
-    "phrase": 27,
+    "phrase": 26,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105003,7 +104891,7 @@
     "lyricStatus": "reference-spelling",
     "id": "chanmalichan-zh-1-09727",
     "yinMidi": 69.99,
-    "phrase": 27,
+    "phrase": 26,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105019,7 +104907,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09753",
     "yinMidi": 69.97,
-    "phrase": 27,
+    "phrase": 26,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105041,7 +104929,7 @@
     ],
     "id": "chanmalichan-zh-1-09782",
     "yinMidi": 70.01,
-    "phrase": 27,
+    "phrase": 26,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105057,7 +104945,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09870",
     "yinMidi": 67.98,
-    "phrase": 28,
+    "phrase": 27,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105079,7 +104967,7 @@
     ],
     "id": "chanmalichan-zh-1-09898",
     "yinMidi": 70.02,
-    "phrase": 28,
+    "phrase": 27,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105096,7 +104984,7 @@
     "id": "chanmalichan-zh-1-09934",
     "measuredEnd": 99.48,
     "yinMidi": 71.98,
-    "phrase": 28,
+    "phrase": 27,
     "note": "C5",
     "ratio": 1.43
    },
@@ -105112,7 +105000,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09958",
     "yinMidi": 72.97,
-    "phrase": 28,
+    "phrase": 27,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -105136,7 +105024,7 @@
     ],
     "id": "chanmalichan-zh-1-09984",
     "yinMidi": 71.59,
-    "phrase": 28,
+    "phrase": 27,
     "note": "C5",
     "ratio": 1.43
    },
@@ -105152,7 +105040,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10015",
     "yinMidi": 69.93,
-    "phrase": 28,
+    "phrase": 27,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105174,7 +105062,7 @@
     ],
     "id": "chanmalichan-zh-1-10044",
     "yinMidi": 67.98,
-    "phrase": 28,
+    "phrase": 27,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105194,7 +105082,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 29,
+    "phrase": 28,
     "note": "F4",
     "ratio": 0.785
    },
@@ -105214,7 +105102,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 29,
+    "phrase": 28,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105230,7 +105118,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10192",
     "yinMidi": 68.0,
-    "phrase": 29,
+    "phrase": 28,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105246,7 +105134,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10213",
     "yinMidi": 67.99,
-    "phrase": 29,
+    "phrase": 28,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105262,7 +105150,7 @@
     "lyricStatus": "reference-spelling",
     "id": "chanmalichan-zh-1-10249",
     "yinMidi": 67.96,
-    "phrase": 29,
+    "phrase": 28,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105286,7 +105174,7 @@
     ],
     "id": "chanmalichan-zh-1-10360",
     "yinMidi": 66.87,
-    "phrase": 30,
+    "phrase": 29,
     "note": "G4",
     "ratio": 1.0
    },
@@ -105303,7 +105191,7 @@
     "id": "chanmalichan-zh-1-10390",
     "measuredEnd": 104.04,
     "yinMidi": 65.02,
-    "phrase": 30,
+    "phrase": 29,
     "note": "F4",
     "ratio": 0.785
    },
@@ -105325,7 +105213,7 @@
     ],
     "id": "chanmalichan-zh-1-10417",
     "yinMidi": 68.06,
-    "phrase": 30,
+    "phrase": 29,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105347,7 +105235,7 @@
     ],
     "id": "chanmalichan-zh-1-10444",
     "yinMidi": 67.0,
-    "phrase": 30,
+    "phrase": 29,
     "note": "G4",
     "ratio": 1.0
    },
@@ -105374,7 +105262,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 30,
+    "phrase": 29,
     "note": "D#4",
     "ratio": 0.64
    },
@@ -105390,7 +105278,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10504",
     "yinMidi": 63.06,
-    "phrase": 30,
+    "phrase": 29,
     "note": "D#4",
     "ratio": 0.64
    },
@@ -105413,7 +105301,7 @@
     ],
     "id": "chanmalichan-zh-1-10593",
     "yinMidi": 63.11,
-    "phrase": 31,
+    "phrase": 30,
     "note": "D#4",
     "ratio": 0.64
    },
@@ -105429,7 +105317,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10649",
     "yinMidi": 69.99,
-    "phrase": 31,
+    "phrase": 30,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105445,7 +105333,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10676",
     "yinMidi": 69.98,
-    "phrase": 31,
+    "phrase": 30,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105461,7 +105349,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10693",
     "yinMidi": 70.01,
-    "phrase": 31,
+    "phrase": 30,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105477,7 +105365,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10735",
     "yinMidi": 69.89,
-    "phrase": 31,
+    "phrase": 30,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105493,7 +105381,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10755",
     "yinMidi": 69.9,
-    "phrase": 31,
+    "phrase": 30,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105517,7 +105405,7 @@
     ],
     "id": "chanmalichan-zh-1-10778",
     "yinMidi": 68.06,
-    "phrase": 32,
+    "phrase": 31,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105533,7 +105421,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10821",
     "yinMidi": 69.96,
-    "phrase": 32,
+    "phrase": 31,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105549,7 +105437,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10854",
     "yinMidi": 71.79,
-    "phrase": 32,
+    "phrase": 31,
     "note": "C5",
     "ratio": 1.43
    },
@@ -105565,7 +105453,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10876",
     "yinMidi": 73.03,
-    "phrase": 32,
+    "phrase": 31,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -105581,7 +105469,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10907",
     "yinMidi": 70.92,
-    "phrase": 32,
+    "phrase": 31,
     "note": "B4",
     "ratio": 1.29
    },
@@ -105608,7 +105496,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 32,
+    "phrase": 31,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105624,7 +105512,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10960",
     "yinMidi": 68.06,
-    "phrase": 32,
+    "phrase": 31,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105667,7 +105555,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 33,
+    "phrase": 32,
     "note": "C5",
     "ratio": 1.43
    },
@@ -105683,7 +105571,7 @@
     "lyricStatus": "not-heard",
     "id": "chanmalichan-zh-2-11127",
     "yinMidi": 72.89,
-    "phrase": 33,
+    "phrase": 32,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -105703,7 +105591,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 33,
+    "phrase": 32,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -105733,7 +105621,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 33,
+    "phrase": 32,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -105752,7 +105640,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 33,
+    "phrase": 32,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105779,7 +105667,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 33,
+    "phrase": 32,
     "note": "C5",
     "ratio": 1.43
    },
@@ -105801,7 +105689,7 @@
     ],
     "id": "chanmalichan-zh-2-11366",
     "yinMidi": 71.87,
-    "phrase": 33,
+    "phrase": 32,
     "note": "C5",
     "ratio": 1.43
    },
@@ -105820,7 +105708,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 33,
+    "phrase": 32,
     "note": "C5",
     "ratio": 1.43
    },
@@ -105850,7 +105738,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 34,
+    "phrase": 33,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105879,7 +105767,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 34,
+    "phrase": 33,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105895,7 +105783,7 @@
     "lyricStatus": "not-heard",
     "id": "chanmalichan-zh-2-11598",
     "yinMidi": 69.97,
-    "phrase": 34,
+    "phrase": 33,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105924,7 +105812,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 34,
+    "phrase": 33,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105940,7 +105828,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-2-11712",
     "yinMidi": 68.04,
-    "phrase": 34,
+    "phrase": 33,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105956,7 +105844,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-2-11740",
     "yinMidi": 69.97,
-    "phrase": 34,
+    "phrase": 33,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105983,7 +105871,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 34,
+    "phrase": 33,
     "note": "C5",
     "ratio": 1.43
    },
@@ -105999,7 +105887,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-2-11800",
     "yinMidi": 72.95,
-    "phrase": 34,
+    "phrase": 33,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -106018,7 +105906,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 34,
+    "phrase": 33,
     "note": "B4",
     "ratio": 1.29
    },
@@ -106038,7 +105926,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 34,
+    "phrase": 33,
     "note": "C5",
     "ratio": 1.43
    },
@@ -106076,7 +105964,7 @@
      "estimators-disagree",
      "no-lyric"
     ],
-    "phrase": 34,
+    "phrase": 33,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -106095,7 +105983,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 34,
+    "phrase": 33,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -106124,7 +106012,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 35,
+    "phrase": 34,
     "note": "C5",
     "ratio": 1.43
    },
@@ -106151,7 +106039,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 35,
+    "phrase": 34,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -106170,7 +106058,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 35,
+    "phrase": 34,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -106207,7 +106095,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 35,
+    "phrase": 34,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -106236,7 +106124,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 35,
+    "phrase": 34,
     "note": "C5",
     "ratio": 1.43
    },
@@ -106265,7 +106153,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 35,
+    "phrase": 34,
     "note": "C5",
     "ratio": 1.43
    },
@@ -106285,7 +106173,7 @@
     "flags": [
      "octave-fold-suspect"
     ],
-    "phrase": 35,
+    "phrase": 34,
     "note": "C5",
     "ratio": 1.43
    },
@@ -106310,7 +106198,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 35,
+    "phrase": 34,
     "note": "C5",
     "ratio": 1.43
    },
@@ -106339,7 +106227,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 36,
+    "phrase": 35,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -106376,7 +106264,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 36,
+    "phrase": 35,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -106395,7 +106283,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 36,
+    "phrase": 35,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -106421,7 +106309,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 36,
+    "phrase": 35,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -106441,7 +106329,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 36,
+    "phrase": 35,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -106460,7 +106348,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 36,
+    "phrase": 35,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -106476,7 +106364,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-2-12654",
     "yinMidi": 70.04,
-    "phrase": 36,
+    "phrase": 35,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -106503,7 +106391,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 36,
+    "phrase": 35,
     "note": "C5",
     "ratio": 1.43
    },
@@ -106528,7 +106416,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 36,
+    "phrase": 35,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -106562,7 +106450,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 36,
+    "phrase": 35,
     "note": "C5",
     "ratio": 1.43
    },
@@ -106582,7 +106470,7 @@
     "flags": [
      "octave-fold-suspect"
     ],
-    "phrase": 36,
+    "phrase": 35,
     "note": "C#5",
     "ratio": 1.5
    }

@@ -449,8 +449,17 @@ def align_atoms(atoms, units, sister_slides=False):
             else: pieces.append(a)
         k = 0
         while k + 1 < len(pieces):                   # a slide joins the note it lands on
-            if pieces[k]['slides'] and pieces[k + 1]['onset'] - pieces[k]['end'] <= 0.05:
-                g = pieces[k]; nxt = pieces[k + 1]
+            g = pieces[k]; nxt = pieces[k + 1]
+            # the first piece of a syllable, short and rising straight into a longer piece of the same
+            # syllable, is the voice reaching its note: no word depends on it, so it is never a note of its own
+            lead_in = k == 0 and group_units and g['end'] - g['onset'] <= SCOOP_MAX and 1 <= nxt['midi'] - g['midi'] <= 4 and \
+                nxt['end'] - nxt['onset'] > g['end'] - g['onset']
+            if lead_in:                              # which of the two pitches is the syllable's note?
+                want = units[group_units[0]].get('expect')
+                if want is not None and (g['midi'] - want) % 12 == 0: lead_in = False        # the other verses sing the short one
+                elif want is None or (nxt['midi'] - want) % 12 != 0:                         # they do not say: the sound decides
+                    lead_in = g.get('glide', 0.0) >= 0.25 or nxt['end'] - nxt['onset'] >= SCOOP_RATIO * (g['end'] - g['onset'])
+            if (g['slides'] or lead_in) and nxt['onset'] - g['end'] <= 0.05:
                 nxt['absorbedGlides'] = g.get('absorbedGlides', []) + [{'t': round(g['onset'], 2), 'midi': g['midi'],
                                          'seconds': round(g['end'] - g['onset'], 2), 'why': 'slide into the note of the same syllable'}] + nxt.get('absorbedGlides', [])
                 nxt['onset'] = g['onset']; del pieces[k]

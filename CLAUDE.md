@@ -121,14 +121,15 @@ How notes and words are built (2026-10-03, second pass):
   `docs/catalogue-analysis/charts.json` or the generated block; edit the song file and rebuild.
 - Correction kinds in a song file: `sectionOverrides` (where a verse starts/ends; `exclude` leaves a whole
   verse without notes; `foldInto` keeps pitch classes but puts a verse read in two octaves into one
-  register), `measuredNoteEdits` (split / join / midi / syllable on a note as measured from the recording,
+  register; `tuneFrom` gives named lines the pitches of the same syllables in another verse, owner decision
+  only), `measuredNoteEdits` (split / join / midi / syllable on a note as measured from the recording,
   before words are placed), `exclusions` (time ranges left out of the chart, e.g. backing shouts),
   `fullEnd` (Full song fades out early when the recording runs on after the last verse), `noteEdits`
   (change or delete a finished chart note by id), `review` (Galvin's listening approvals). Each needs a
   written reason with its evidence.
 - Galvin's decisions, 2026-10-04: Xiao Yan Zi's Full song stops after the last scripted verse (fade
   152-155 s; the 4.5-minute unscripted coda is not charted). Chan Mali Chan's "oi oi" backing shouts are
-  not charted. Baby Shark's three growled verses ("Let's go hunt", Mandarin daddy and grandpa) have no
+  not charted, and its second and third chorus use the first chorus's tune on "chan mali chan". Baby Shark's three growled verses ("Let's go hunt", Mandarin daddy and grandpa) have no
   notes. If You're Happy's two unsung verses are off its lyric sheet. Twinkle's low dip after 睛 is not
   scored. The game has no shown-but-unscored note: "not scored" means the note is left out of the chart.
 - In the game: `playMode` ('full' default, saved as `oohwoo_play_mode_v1`); `songPlay(key, mode)` is the

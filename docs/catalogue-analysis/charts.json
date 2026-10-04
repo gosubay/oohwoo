@@ -100262,7 +100262,7 @@
   "sources": {
    "songFile": {
     "path": "tools/chart-builder/songs/chanmalichan.json",
-    "sha256": "323ba36a1954d036a72526faccb793b1c24deae3d53287076a9d46483f5b141d"
+    "sha256": "a96db91eb226a10e4e4467e5e447f3c4cf95a508c84e6ff75cc203739a8346e2"
    },
    "sectionWords": {
     "path": "docs/catalogue-analysis/section-words/chanmalichan.json",
@@ -100443,8 +100443,8 @@
      "reason": "In this chorus \"chan mali chan\" is sung an octave below the first chorus (27.5-45.4 s) with a doubled voice, and the reader jumps between octaves (frames alternate C4 / C5 inside one held syllable). A reading limited to the lead register (about F4-E5) finds the same pitch classes as the first chorus wherever it is confident. Pitch classes are kept as measured; the octave is the lead register of the first chorus."
     },
     "firstNote": 136,
-    "lastNote": 179,
-    "noteCount": 44,
+    "lastNote": 175,
+    "noteCount": 40,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
      "heard": 38,
@@ -100455,10 +100455,10 @@
     },
     "variants": [],
     "quality": {
-     "pitchFlaggedShare": 0.84,
+     "pitchFlaggedShare": 0.88,
      "medianStep": 1.0,
      "largeLeapShare": 0.0,
-     "lyricLabelledShare": 0.86,
+     "lyricLabelledShare": 0.95,
      "sharedSyllableNotes": 0
     },
     "qualityFlag": "pitch-unreliable"
@@ -100482,8 +100482,8 @@
     "located": "48/48 reference words anchored by transcription",
     "start": 90.5,
     "end": 110.34,
-    "firstNote": 180,
-    "lastNote": 227,
+    "firstNote": 176,
+    "lastNote": 223,
     "noteCount": 48,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
@@ -100528,9 +100528,9 @@
      ],
      "reason": "In this chorus \"chan mali chan\" is sung an octave below the first chorus (27.5-45.4 s) with a doubled voice, and the reader jumps between octaves (frames alternate C4 / C5 inside one held syllable). A reading limited to the lead register (about F4-E5) finds the same pitch classes as the first chorus wherever it is confident. Pitch classes are kept as measured; the octave is the lead register of the first chorus. (This chorus is one semitone higher.)"
     },
-    "firstNote": 228,
-    "lastNote": 268,
-    "noteCount": 41,
+    "firstNote": 224,
+    "lastNote": 262,
+    "noteCount": 39,
     "review": "owner-listening-pending",
     "lyricStatusCounts": {
      "heard": 14,
@@ -100541,10 +100541,10 @@
     },
     "variants": [],
     "quality": {
-     "pitchFlaggedShare": 0.76,
-     "medianStep": 2.0,
+     "pitchFlaggedShare": 0.82,
+     "medianStep": 0.0,
      "largeLeapShare": 0.0,
-     "lyricLabelledShare": 0.93,
+     "lyricLabelledShare": 0.97,
      "sharedSyllableNotes": 0
     },
     "qualityFlag": "pitch-unreliable"
@@ -100555,8 +100555,8 @@
    "full": {
     "label": "Full song",
     "firstNote": 0,
-    "lastNote": 268,
-    "noteCount": 269,
+    "lastNote": 262,
+    "noteCount": 263,
     "level": {
      "start": 0,
      "melodyStart": 9.35,
@@ -100567,9 +100567,9 @@
     },
     "laneWindow": [
      0.14,
-     1.64
+     1.5
     ],
-    "rangeSemitones": 18,
+    "rangeSemitones": 16,
     "languages": [
      "ms",
      "en",
@@ -100667,83 +100667,67 @@
      ],
      [
       136,
-      139
+      143
      ],
      [
-      140,
-      144
+      144,
+      147
      ],
      [
-      145,
-      148
+      148,
+      156
      ],
      [
-      149,
-      157
+      157,
+      164
      ],
      [
-      158,
-      166
+      165,
+      175
      ],
      [
-      167,
-      172
+      176,
+      186
      ],
      [
-      173,
-      179
+      187,
+      192
      ],
      [
-      180,
-      190
+      193,
+      199
      ],
      [
-      191,
-      196
+      200,
+      204
      ],
      [
-      197,
-      203
+      205,
+      210
      ],
      [
-      204,
-      208
+      211,
+      216
      ],
      [
-      209,
-      214
+      217,
+      223
      ],
      [
-      215,
-      220
+      224,
+      231
      ],
      [
-      221,
-      227
+      232,
+      243
      ],
      [
-      228,
-      235
+      244,
+      251
      ],
      [
-      236,
-      240
-     ],
-     [
-      241,
-      248
-     ],
-     [
-      249,
-      252
-     ],
-     [
-      253,
-      257
-     ],
-     [
-      258,
-      268
+      252,
+      262
      ]
     ],
     "choice": "every located sung section; see sections"
@@ -100935,121 +100919,97 @@
    {
     "id": 21,
     "firstNote": 136,
-    "lastNote": 139,
+    "lastNote": 143,
     "section": "en-2"
    },
    {
     "id": 22,
-    "firstNote": 140,
-    "lastNote": 144,
+    "firstNote": 144,
+    "lastNote": 147,
     "section": "en-2"
    },
    {
     "id": 23,
-    "firstNote": 145,
-    "lastNote": 148,
+    "firstNote": 148,
+    "lastNote": 156,
     "section": "en-2"
    },
    {
     "id": 24,
-    "firstNote": 149,
-    "lastNote": 157,
+    "firstNote": 157,
+    "lastNote": 164,
     "section": "en-2"
    },
    {
     "id": 25,
-    "firstNote": 158,
-    "lastNote": 166,
+    "firstNote": 165,
+    "lastNote": 175,
     "section": "en-2"
    },
    {
     "id": 26,
-    "firstNote": 167,
-    "lastNote": 172,
-    "section": "en-2"
+    "firstNote": 176,
+    "lastNote": 186,
+    "section": "zh-1"
    },
    {
     "id": 27,
-    "firstNote": 173,
-    "lastNote": 179,
-    "section": "en-2"
+    "firstNote": 187,
+    "lastNote": 192,
+    "section": "zh-1"
    },
    {
     "id": 28,
-    "firstNote": 180,
-    "lastNote": 190,
+    "firstNote": 193,
+    "lastNote": 199,
     "section": "zh-1"
    },
    {
     "id": 29,
-    "firstNote": 191,
-    "lastNote": 196,
+    "firstNote": 200,
+    "lastNote": 204,
     "section": "zh-1"
    },
    {
     "id": 30,
-    "firstNote": 197,
-    "lastNote": 203,
+    "firstNote": 205,
+    "lastNote": 210,
     "section": "zh-1"
    },
    {
     "id": 31,
-    "firstNote": 204,
-    "lastNote": 208,
+    "firstNote": 211,
+    "lastNote": 216,
     "section": "zh-1"
    },
    {
     "id": 32,
-    "firstNote": 209,
-    "lastNote": 214,
+    "firstNote": 217,
+    "lastNote": 223,
     "section": "zh-1"
    },
    {
     "id": 33,
-    "firstNote": 215,
-    "lastNote": 220,
-    "section": "zh-1"
+    "firstNote": 224,
+    "lastNote": 231,
+    "section": "zh-2"
    },
    {
     "id": 34,
-    "firstNote": 221,
-    "lastNote": 227,
-    "section": "zh-1"
+    "firstNote": 232,
+    "lastNote": 243,
+    "section": "zh-2"
    },
    {
     "id": 35,
-    "firstNote": 228,
-    "lastNote": 235,
+    "firstNote": 244,
+    "lastNote": 251,
     "section": "zh-2"
    },
    {
     "id": 36,
-    "firstNote": 236,
-    "lastNote": 240,
-    "section": "zh-2"
-   },
-   {
-    "id": 37,
-    "firstNote": 241,
-    "lastNote": 248,
-    "section": "zh-2"
-   },
-   {
-    "id": 38,
-    "firstNote": 249,
-    "lastNote": 252,
-    "section": "zh-2"
-   },
-   {
-    "id": 39,
-    "firstNote": 253,
-    "lastNote": 257,
-    "section": "zh-2"
-   },
-   {
-    "id": 40,
-    "firstNote": 258,
-    "lastNote": 268,
+    "firstNote": 252,
+    "lastNote": 262,
     "section": "zh-2"
    }
   ],
@@ -103742,8 +103702,8 @@
    {
     "t": 65.1,
     "end": 65.52,
-    "midi": 72,
-    "median": 71.59,
+    "midi": 71,
+    "median": 71.0,
     "lyric": "Chan",
     "section": "en-2",
     "line": "en-2-1-0",
@@ -103758,13 +103718,23 @@
      }
     ],
     "id": "chanmalichan-en-2-06510",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 72,
+      "new": 71,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable.",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "yinMidi": 43.99,
     "flags": [
      "unstable-pitch"
     ],
     "phrase": 21,
-    "note": "C5",
-    "ratio": 1.43
+    "note": "B4",
+    "ratio": 1.29
    },
    {
     "t": 65.52,
@@ -103808,43 +103778,38 @@
    {
     "t": 66.2,
     "end": 66.36,
-    "midi": 65,
-    "median": 64.49,
+    "midi": 72,
+    "median": 72.0,
     "lyric": "chan",
     "section": "en-2",
     "line": "en-2-1-0",
     "lineStart": false,
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-06620",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 65,
+      "new": 72,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable.",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "measuredEnd": 66.36,
     "yinMidi": 64.55,
+    "flags": [
+     "estimators-disagree"
+    ],
     "phrase": 21,
-    "note": "F4",
-    "ratio": 0.785
+    "note": "C5",
+    "ratio": 1.43
    },
    {
     "t": 67.4,
-    "end": 67.49,
-    "midi": 74,
-    "median": 73.81,
-    "lyric": "",
-    "section": "en-2",
-    "id": "chanmalichan-en-2-06740",
-    "measuredEnd": 67.49,
-    "yinMidi": null,
-    "flags": [
-     "weak-independent-voicing",
-     "no-lyric"
-    ],
-    "phrase": 22,
-    "note": "D5",
-    "ratio": 1.57
-   },
-   {
-    "t": 67.49,
     "end": 67.72,
-    "midi": 71,
-    "median": 71.05,
+    "midi": 69,
+    "median": 69.0,
     "lyric": "chan",
     "section": "en-2",
     "line": "en-2-1-0",
@@ -103859,13 +103824,23 @@
      }
     ],
     "id": "chanmalichan-en-2-06749",
-    "yinMidi": 42.46,
-    "flags": [
-     "estimators-disagree"
+    "edits": [
+     {
+      "field": "midi",
+      "old": 71,
+      "new": 69,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable.",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
     ],
-    "phrase": 22,
-    "note": "B4",
-    "ratio": 1.29
+    "yinMidi": 42.38,
+    "flags": [
+     "unstable-pitch"
+    ],
+    "phrase": 21,
+    "note": "A4",
+    "ratio": 1.14
    },
    {
     "t": 67.72,
@@ -103890,7 +103865,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 22,
+    "phrase": 21,
     "note": "B4",
     "ratio": 1.29
    },
@@ -103909,7 +103884,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 22,
+    "phrase": 21,
     "note": "B4",
     "ratio": 1.29
    },
@@ -103928,34 +103903,44 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 22,
+    "phrase": 21,
     "note": "B4",
     "ratio": 1.29
    },
    {
     "t": 69.67,
     "end": 69.88,
-    "midi": 72,
-    "median": 72.18,
+    "midi": 69,
+    "median": 69.0,
     "lyric": "Chan",
     "section": "en-2",
     "line": "en-2-1-1",
     "lineStart": true,
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-06967",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 72,
+      "new": 69,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable.",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "yinMidi": 39.94,
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 23,
-    "note": "C5",
-    "ratio": 1.43
+    "phrase": 22,
+    "note": "A4",
+    "ratio": 1.14
    },
    {
     "t": 69.88,
     "end": 70.2,
-    "midi": 71,
-    "median": 71.08,
+    "midi": 69,
+    "median": 69.0,
     "lyric": "ma-",
     "section": "en-2",
     "line": "en-2-1-1",
@@ -103968,13 +103953,23 @@
      }
     ],
     "id": "chanmalichan-en-2-06988",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 71,
+      "new": 69,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable.",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "yinMidi": 41.13,
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 23,
-    "note": "B4",
-    "ratio": 1.29
+    "phrase": 22,
+    "note": "A4",
+    "ratio": 1.14
    },
    {
     "t": 70.2,
@@ -104004,7 +103999,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 23,
+    "phrase": 22,
     "note": "A4",
     "ratio": 1.14
    },
@@ -104023,7 +104018,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 23,
+    "phrase": 22,
     "note": "A4",
     "ratio": 1.14
    },
@@ -104042,7 +104037,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 24,
+    "phrase": 23,
     "note": "G4",
     "ratio": 1.0
    },
@@ -104058,7 +104053,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-07162",
     "yinMidi": 68.96,
-    "phrase": 24,
+    "phrase": 23,
     "note": "A4",
     "ratio": 1.14
    },
@@ -104085,7 +104080,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 24,
+    "phrase": 23,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104104,7 +104099,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 24,
+    "phrase": 23,
     "note": "C5",
     "ratio": 1.43
    },
@@ -104120,7 +104115,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-07254",
     "yinMidi": 69.57,
-    "phrase": 24,
+    "phrase": 23,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -104137,7 +104132,7 @@
     "flags": [
      "no-lyric"
     ],
-    "phrase": 24,
+    "phrase": 23,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104157,7 +104152,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 24,
+    "phrase": 23,
     "note": "A4",
     "ratio": 1.14
    },
@@ -104181,7 +104176,7 @@
      "octave-fold-suspect",
      "no-lyric"
     ],
-    "phrase": 24,
+    "phrase": 23,
     "note": "C5",
     "ratio": 1.43
    },
@@ -104200,15 +104195,15 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 24,
+    "phrase": 23,
     "note": "G4",
     "ratio": 1.0
    },
    {
     "t": 74.28,
     "end": 74.98,
-    "midi": 72,
-    "median": 71.98,
+    "midi": 71,
+    "median": 71.0,
     "lyric": "Chan",
     "section": "en-2",
     "line": "en-2-1-2",
@@ -104223,13 +104218,23 @@
      }
     ],
     "id": "chanmalichan-en-2-07428",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 72,
+      "new": 71,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable.",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "yinMidi": 52.69,
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 25,
-    "note": "C5",
-    "ratio": 1.43
+    "phrase": 24,
+    "note": "B4",
+    "ratio": 1.29
    },
    {
     "t": 74.98,
@@ -104252,35 +104257,45 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 25,
+    "phrase": 24,
     "note": "C5",
     "ratio": 1.43
    },
    {
     "t": 75.37,
     "end": 75.49,
-    "midi": 64,
-    "median": 64.68,
+    "midi": 72,
+    "median": 72.0,
     "lyric": "li",
     "section": "en-2",
     "line": "en-2-1-2",
     "lineStart": false,
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-07537",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 64,
+      "new": 72,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable.",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "measuredEnd": 75.49,
     "yinMidi": null,
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 25,
-    "note": "E4",
-    "ratio": 0.71
+    "phrase": 24,
+    "note": "C5",
+    "ratio": 1.43
    },
    {
     "t": 75.49,
     "end": 75.65,
-    "midi": 64,
-    "median": 64.1,
+    "midi": 72,
+    "median": 72.0,
     "lyric": "chan",
     "section": "en-2",
     "line": "en-2-1-2",
@@ -104288,67 +104303,82 @@
     "lyricStatus": "heard",
     "sisterVerses": "differ",
     "id": "chanmalichan-en-2-07549",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 64,
+      "new": 72,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable.",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "measuredEnd": 75.6,
     "yinMidi": 64.11,
-    "phrase": 25,
-    "note": "E4",
-    "ratio": 0.71
+    "flags": [
+     "estimators-disagree"
+    ],
+    "phrase": 24,
+    "note": "C5",
+    "ratio": 1.43
    },
    {
     "t": 76.55,
     "end": 76.74,
-    "midi": 69,
-    "median": 69.13,
+    "midi": 71,
+    "median": 71.0,
     "lyric": "chan",
     "section": "en-2",
     "line": "en-2-1-2",
     "lineStart": false,
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-07655",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 69,
+      "new": 71,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable.",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "yinMidi": 41.53,
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 25,
-    "note": "A4",
-    "ratio": 1.14
-   },
-   {
-    "t": 76.74,
-    "end": 76.87,
-    "midi": 71,
-    "median": 70.83,
-    "lyric": "",
-    "section": "en-2",
-    "id": "chanmalichan-en-2-07674",
-    "measuredEnd": 76.87,
-    "yinMidi": 42.67,
-    "flags": [
-     "estimators-disagree",
-     "no-lyric"
-    ],
-    "phrase": 25,
+    "phrase": 24,
     "note": "B4",
     "ratio": 1.29
    },
    {
-    "t": 76.87,
+    "t": 76.74,
     "end": 77.08,
-    "midi": 72,
-    "median": 71.75,
+    "midi": 71,
+    "median": 71.0,
     "lyric": "ma-",
     "section": "en-2",
     "line": "en-2-1-2",
     "lineStart": false,
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-07687",
-    "yinMidi": 43.15,
+    "edits": [
+     {
+      "field": "midi",
+      "old": 72,
+      "new": 71,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable.",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
+    "yinMidi": 43.13,
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 25,
-    "note": "C5",
-    "ratio": 1.43
+    "phrase": 24,
+    "note": "B4",
+    "ratio": 1.29
    },
    {
     "t": 77.08,
@@ -104362,7 +104392,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-07708",
     "yinMidi": 70.92,
-    "phrase": 25,
+    "phrase": 24,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104378,124 +104408,103 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-07728",
     "yinMidi": 70.97,
-    "phrase": 25,
+    "phrase": 24,
     "note": "B4",
     "ratio": 1.29
    },
    {
     "t": 78.82,
     "end": 78.9,
-    "midi": 72,
-    "median": 71.81,
+    "midi": 69,
+    "median": 69.0,
     "lyric": "Chan",
     "section": "en-2",
     "line": "en-2-1-3",
     "lineStart": true,
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-07882",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 72,
+      "new": 69,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable.",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "measuredEnd": 78.9,
     "yinMidi": null,
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 26,
-    "note": "C5",
-    "ratio": 1.43
-   },
-   {
-    "t": 78.9,
-    "end": 79.08,
-    "midi": 69,
-    "median": 69.12,
-    "lyric": "",
-    "section": "en-2",
-    "absorbedGlides": [
-     {
-      "t": 78.9,
-      "midi": 68,
-      "seconds": 0.07,
-      "why": "slide into the note of the same syllable"
-     }
-    ],
-    "id": "chanmalichan-en-2-07890",
-    "yinMidi": null,
-    "flags": [
-     "weak-independent-voicing",
-     "no-lyric"
-    ],
-    "phrase": 26,
+    "phrase": 25,
     "note": "A4",
     "ratio": 1.14
    },
    {
-    "t": 79.08,
+    "t": 78.9,
     "end": 79.28,
-    "midi": 72,
-    "median": 71.74,
+    "midi": 69,
+    "median": 69.0,
     "lyric": "ma-",
     "section": "en-2",
     "line": "en-2-1-3",
     "lineStart": false,
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-07908",
-    "yinMidi": 59.8,
-    "octaveCandidate": 60,
-    "flags": [
-     "octave-fold-suspect"
-    ],
-    "phrase": 26,
-    "note": "C5",
-    "ratio": 1.43
-   },
-   {
-    "t": 79.28,
-    "end": 79.64,
-    "midi": 69,
-    "median": 69.1,
-    "lyric": "",
-    "section": "en-2",
-    "absorbedGlides": [
+    "edits": [
      {
-      "t": 79.28,
-      "midi": 71,
-      "seconds": 0.08,
-      "why": "slide into the note of the same syllable"
+      "field": "midi",
+      "old": 72,
+      "new": 69,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable.",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
      }
     ],
-    "id": "chanmalichan-en-2-07928",
-    "yinMidi": 41.07,
+    "yinMidi": 59.79,
     "flags": [
-     "estimators-disagree",
-     "no-lyric"
+     "estimators-disagree"
     ],
-    "phrase": 26,
+    "phrase": 25,
     "note": "A4",
     "ratio": 1.14
    },
    {
-    "t": 79.64,
+    "t": 79.28,
     "end": 79.81,
-    "midi": 73,
-    "median": 73.15,
+    "midi": 69,
+    "median": 69.0,
     "lyric": "li",
     "section": "en-2",
     "line": "en-2-1-3",
     "lineStart": false,
     "lyricStatus": "heard",
     "id": "chanmalichan-en-2-07964",
-    "yinMidi": 61.05,
-    "flags": [
-     "weak-independent-voicing"
+    "edits": [
+     {
+      "field": "midi",
+      "old": 73,
+      "new": 69,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable.",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
     ],
-    "phrase": 26,
-    "note": "C#5",
-    "ratio": 1.5
+    "yinMidi": 41.09,
+    "flags": [
+     "estimators-disagree"
+    ],
+    "phrase": 25,
+    "note": "A4",
+    "ratio": 1.14
    },
    {
     "t": 79.81,
     "end": 80.08,
-    "midi": 72,
-    "median": 72.14,
+    "midi": 69,
+    "median": 69.0,
     "lyric": "chan",
     "section": "en-2",
     "line": "en-2-1-3",
@@ -104509,13 +104518,23 @@
      }
     ],
     "id": "chanmalichan-en-2-07981",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 72,
+      "new": 69,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable.",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "yinMidi": 41.03,
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 26,
-    "note": "C5",
-    "ratio": 1.43
+    "phrase": 25,
+    "note": "A4",
+    "ratio": 1.14
    },
    {
     "t": 80.52,
@@ -104540,7 +104559,7 @@
     "flags": [
      "octave-fold-suspect"
     ],
-    "phrase": 27,
+    "phrase": 25,
     "note": "C5",
     "ratio": 1.43
    },
@@ -104559,7 +104578,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 27,
+    "phrase": 25,
     "note": "A4",
     "ratio": 1.14
    },
@@ -104578,7 +104597,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 27,
+    "phrase": 25,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104604,7 +104623,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 27,
+    "phrase": 25,
     "note": "C5",
     "ratio": 1.43
    },
@@ -104638,7 +104657,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 27,
+    "phrase": 25,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104672,7 +104691,7 @@
     "flags": [
      "octave-fold-suspect"
     ],
-    "phrase": 27,
+    "phrase": 25,
     "note": "C5",
     "ratio": 1.43
    },
@@ -104693,7 +104712,7 @@
     "flags": [
      "octave-fold-suspect"
     ],
-    "phrase": 27,
+    "phrase": 25,
     "note": "B4",
     "ratio": 1.29
    },
@@ -104713,7 +104732,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 28,
+    "phrase": 26,
     "note": "E4",
     "ratio": 0.71
    },
@@ -104733,7 +104752,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 28,
+    "phrase": 26,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -104749,7 +104768,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09273",
     "yinMidi": 68.01,
-    "phrase": 28,
+    "phrase": 26,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -104765,7 +104784,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09301",
     "yinMidi": 67.99,
-    "phrase": 28,
+    "phrase": 26,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -104781,7 +104800,7 @@
     "lyricStatus": "reference-spelling",
     "id": "chanmalichan-zh-1-09328",
     "yinMidi": 68.03,
-    "phrase": 28,
+    "phrase": 26,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -104805,7 +104824,7 @@
     ],
     "id": "chanmalichan-zh-1-09441",
     "yinMidi": 66.99,
-    "phrase": 28,
+    "phrase": 26,
     "note": "G4",
     "ratio": 1.0
    },
@@ -104821,7 +104840,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09472",
     "yinMidi": 65.04,
-    "phrase": 28,
+    "phrase": 26,
     "note": "F4",
     "ratio": 0.785
    },
@@ -104837,7 +104856,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09499",
     "yinMidi": 68.0,
-    "phrase": 28,
+    "phrase": 26,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -104863,7 +104882,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 28,
+    "phrase": 26,
     "note": "F4",
     "ratio": 0.785
    },
@@ -104887,7 +104906,7 @@
     ],
     "id": "chanmalichan-zh-1-09557",
     "yinMidi": 63.34,
-    "phrase": 28,
+    "phrase": 26,
     "note": "D#4",
     "ratio": 0.64
    },
@@ -104903,7 +104922,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09584",
     "yinMidi": 62.99,
-    "phrase": 28,
+    "phrase": 26,
     "note": "D#4",
     "ratio": 0.64
    },
@@ -104919,7 +104938,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09669",
     "yinMidi": 63.06,
-    "phrase": 29,
+    "phrase": 27,
     "note": "D#4",
     "ratio": 0.64
    },
@@ -104936,7 +104955,7 @@
     "id": "chanmalichan-zh-1-09697",
     "measuredEnd": 97.12,
     "yinMidi": 67.59,
-    "phrase": 29,
+    "phrase": 27,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -104953,7 +104972,7 @@
     "id": "chanmalichan-zh-1-09712",
     "measuredEnd": 97.27,
     "yinMidi": 69.97,
-    "phrase": 29,
+    "phrase": 27,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -104969,7 +104988,7 @@
     "lyricStatus": "reference-spelling",
     "id": "chanmalichan-zh-1-09727",
     "yinMidi": 69.99,
-    "phrase": 29,
+    "phrase": 27,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -104985,7 +105004,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09753",
     "yinMidi": 69.97,
-    "phrase": 29,
+    "phrase": 27,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105007,7 +105026,7 @@
     ],
     "id": "chanmalichan-zh-1-09782",
     "yinMidi": 70.01,
-    "phrase": 29,
+    "phrase": 27,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105023,7 +105042,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09870",
     "yinMidi": 67.98,
-    "phrase": 30,
+    "phrase": 28,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105045,7 +105064,7 @@
     ],
     "id": "chanmalichan-zh-1-09898",
     "yinMidi": 70.02,
-    "phrase": 30,
+    "phrase": 28,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105062,7 +105081,7 @@
     "id": "chanmalichan-zh-1-09934",
     "measuredEnd": 99.48,
     "yinMidi": 71.98,
-    "phrase": 30,
+    "phrase": 28,
     "note": "C5",
     "ratio": 1.43
    },
@@ -105078,7 +105097,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-09958",
     "yinMidi": 72.97,
-    "phrase": 30,
+    "phrase": 28,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -105102,7 +105121,7 @@
     ],
     "id": "chanmalichan-zh-1-09984",
     "yinMidi": 71.59,
-    "phrase": 30,
+    "phrase": 28,
     "note": "C5",
     "ratio": 1.43
    },
@@ -105118,7 +105137,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10015",
     "yinMidi": 69.93,
-    "phrase": 30,
+    "phrase": 28,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105140,7 +105159,7 @@
     ],
     "id": "chanmalichan-zh-1-10044",
     "yinMidi": 67.98,
-    "phrase": 30,
+    "phrase": 28,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105160,7 +105179,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 31,
+    "phrase": 29,
     "note": "F4",
     "ratio": 0.785
    },
@@ -105180,7 +105199,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 31,
+    "phrase": 29,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105196,7 +105215,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10192",
     "yinMidi": 68.0,
-    "phrase": 31,
+    "phrase": 29,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105212,7 +105231,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10213",
     "yinMidi": 67.99,
-    "phrase": 31,
+    "phrase": 29,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105228,7 +105247,7 @@
     "lyricStatus": "reference-spelling",
     "id": "chanmalichan-zh-1-10249",
     "yinMidi": 67.96,
-    "phrase": 31,
+    "phrase": 29,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105252,7 +105271,7 @@
     ],
     "id": "chanmalichan-zh-1-10360",
     "yinMidi": 66.87,
-    "phrase": 32,
+    "phrase": 30,
     "note": "G4",
     "ratio": 1.0
    },
@@ -105269,7 +105288,7 @@
     "id": "chanmalichan-zh-1-10390",
     "measuredEnd": 104.04,
     "yinMidi": 65.02,
-    "phrase": 32,
+    "phrase": 30,
     "note": "F4",
     "ratio": 0.785
    },
@@ -105291,7 +105310,7 @@
     ],
     "id": "chanmalichan-zh-1-10417",
     "yinMidi": 68.06,
-    "phrase": 32,
+    "phrase": 30,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105313,7 +105332,7 @@
     ],
     "id": "chanmalichan-zh-1-10444",
     "yinMidi": 67.0,
-    "phrase": 32,
+    "phrase": 30,
     "note": "G4",
     "ratio": 1.0
    },
@@ -105340,7 +105359,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 32,
+    "phrase": 30,
     "note": "D#4",
     "ratio": 0.64
    },
@@ -105356,7 +105375,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10504",
     "yinMidi": 63.06,
-    "phrase": 32,
+    "phrase": 30,
     "note": "D#4",
     "ratio": 0.64
    },
@@ -105379,7 +105398,7 @@
     ],
     "id": "chanmalichan-zh-1-10593",
     "yinMidi": 63.11,
-    "phrase": 33,
+    "phrase": 31,
     "note": "D#4",
     "ratio": 0.64
    },
@@ -105395,7 +105414,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10649",
     "yinMidi": 69.99,
-    "phrase": 33,
+    "phrase": 31,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105411,7 +105430,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10676",
     "yinMidi": 69.98,
-    "phrase": 33,
+    "phrase": 31,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105427,7 +105446,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10693",
     "yinMidi": 70.01,
-    "phrase": 33,
+    "phrase": 31,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105443,7 +105462,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10735",
     "yinMidi": 69.89,
-    "phrase": 33,
+    "phrase": 31,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105459,7 +105478,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10755",
     "yinMidi": 69.9,
-    "phrase": 33,
+    "phrase": 31,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105483,7 +105502,7 @@
     ],
     "id": "chanmalichan-zh-1-10778",
     "yinMidi": 68.06,
-    "phrase": 34,
+    "phrase": 32,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105499,7 +105518,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10821",
     "yinMidi": 69.96,
-    "phrase": 34,
+    "phrase": 32,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105515,7 +105534,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10854",
     "yinMidi": 71.79,
-    "phrase": 34,
+    "phrase": 32,
     "note": "C5",
     "ratio": 1.43
    },
@@ -105531,7 +105550,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10876",
     "yinMidi": 73.03,
-    "phrase": 34,
+    "phrase": 32,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -105547,7 +105566,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10907",
     "yinMidi": 70.92,
-    "phrase": 34,
+    "phrase": 32,
     "note": "B4",
     "ratio": 1.29
    },
@@ -105574,7 +105593,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 34,
+    "phrase": 32,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105590,15 +105609,15 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-1-10960",
     "yinMidi": 68.06,
-    "phrase": 34,
+    "phrase": 32,
     "note": "G#4",
     "ratio": 1.07
    },
    {
     "t": 110.82,
     "end": 111.27,
-    "midi": 73,
-    "median": 72.95,
+    "midi": 72,
+    "median": 72.0,
     "lyric": "Chan",
     "section": "zh-2",
     "line": "zh-2-1-0",
@@ -105619,13 +105638,23 @@
      }
     ],
     "id": "chanmalichan-zh-2-11082",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 73,
+      "new": 72,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable, one semitone up (the Mandarin verse and chorus are measured one semitone above the Malay ones).",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "yinMidi": 53.92,
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 35,
-    "note": "C#5",
-    "ratio": 1.5
+    "phrase": 33,
+    "note": "C5",
+    "ratio": 1.43
    },
    {
     "t": 111.27,
@@ -105639,7 +105668,7 @@
     "lyricStatus": "not-heard",
     "id": "chanmalichan-zh-2-11127",
     "yinMidi": 72.89,
-    "phrase": 35,
+    "phrase": 33,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -105659,15 +105688,15 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 35,
+    "phrase": 33,
     "note": "C#5",
     "ratio": 1.5
    },
    {
     "t": 111.92,
     "end": 112.11,
-    "midi": 65,
-    "median": 65.49,
+    "midi": 73,
+    "median": 73.0,
     "lyric": "chan",
     "section": "zh-2",
     "line": "zh-2-1-0",
@@ -105675,14 +105704,23 @@
     "lyricStatus": "reference-spelling",
     "sisterVerses": "differ",
     "id": "chanmalichan-zh-2-11192",
-    "yinMidi": 53.36,
-    "octaveCandidate": 53,
-    "flags": [
-     "octave-fold-suspect"
+    "edits": [
+     {
+      "field": "midi",
+      "old": 65,
+      "new": 73,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable, one semitone up (the Mandarin verse and chorus are measured one semitone above the Malay ones).",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
     ],
-    "phrase": 35,
-    "note": "F4",
-    "ratio": 0.785
+    "yinMidi": 53.36,
+    "flags": [
+     "estimators-disagree"
+    ],
+    "phrase": 33,
+    "note": "C#5",
+    "ratio": 1.5
    },
    {
     "t": 113.08,
@@ -105699,7 +105737,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 35,
+    "phrase": 33,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105726,7 +105764,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 35,
+    "phrase": 33,
     "note": "C5",
     "ratio": 1.43
    },
@@ -105748,7 +105786,7 @@
     ],
     "id": "chanmalichan-zh-2-11366",
     "yinMidi": 71.87,
-    "phrase": 35,
+    "phrase": 33,
     "note": "C5",
     "ratio": 1.43
    },
@@ -105767,63 +105805,68 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 35,
+    "phrase": 33,
     "note": "C5",
     "ratio": 1.43
    },
    {
     "t": 115.4,
     "end": 115.55,
-    "midi": 68,
-    "median": 67.64,
+    "midi": 70,
+    "median": 70.0,
     "lyric": "Chan",
     "section": "zh-2",
     "line": "zh-2-1-1",
     "lineStart": true,
     "lyricStatus": "reference-spelling",
     "id": "chanmalichan-zh-2-11540",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 68,
+      "new": 70,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable, one semitone up (the Mandarin verse and chorus are measured one semitone above the Malay ones).",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "measuredEnd": 115.55,
     "yinMidi": 67.61,
-    "phrase": 36,
-    "note": "G#4",
-    "ratio": 1.07
+    "flags": [
+     "estimators-disagree"
+    ],
+    "phrase": 34,
+    "note": "A#4",
+    "ratio": 1.215
    },
    {
     "t": 115.55,
-    "end": 115.7,
-    "midi": 69,
-    "median": 69.28,
-    "lyric": "",
-    "section": "zh-2",
-    "id": "chanmalichan-zh-2-11555",
-    "measuredEnd": 115.7,
-    "yinMidi": 69.16,
-    "flags": [
-     "no-lyric"
-    ],
-    "phrase": 36,
-    "note": "A4",
-    "ratio": 1.14
-   },
-   {
-    "t": 115.7,
     "end": 115.98,
-    "midi": 75,
-    "median": 75.0,
+    "midi": 70,
+    "median": 70.0,
     "lyric": "ma-",
     "section": "zh-2",
     "line": "zh-2-1-1",
     "lineStart": false,
     "lyricStatus": "not-heard",
     "id": "chanmalichan-zh-2-11570",
-    "yinMidi": 51.0,
-    "octaveCandidate": 51,
-    "flags": [
-     "octave-fold-suspect"
+    "edits": [
+     {
+      "field": "midi",
+      "old": 75,
+      "new": 70,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable, one semitone up (the Mandarin verse and chorus are measured one semitone above the Malay ones).",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
     ],
-    "phrase": 36,
-    "note": "D#5",
-    "ratio": 1.64
+    "yinMidi": 50.98,
+    "flags": [
+     "estimators-disagree"
+    ],
+    "phrase": 34,
+    "note": "A#4",
+    "ratio": 1.215
    },
    {
     "t": 115.98,
@@ -105837,29 +105880,38 @@
     "lyricStatus": "not-heard",
     "id": "chanmalichan-zh-2-11598",
     "yinMidi": 69.97,
-    "phrase": 36,
+    "phrase": 34,
     "note": "A#4",
     "ratio": 1.215
    },
    {
     "t": 116.35,
     "end": 116.64,
-    "midi": 75,
-    "median": 75.06,
+    "midi": 70,
+    "median": 70.0,
     "lyric": "chan",
     "section": "zh-2",
     "line": "zh-2-1-1",
     "lineStart": false,
     "lyricStatus": "reference-spelling",
     "id": "chanmalichan-zh-2-11635",
-    "yinMidi": 51.03,
-    "octaveCandidate": 51,
-    "flags": [
-     "octave-fold-suspect"
+    "edits": [
+     {
+      "field": "midi",
+      "old": 75,
+      "new": 70,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable, one semitone up (the Mandarin verse and chorus are measured one semitone above the Malay ones).",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
     ],
-    "phrase": 36,
-    "note": "D#5",
-    "ratio": 1.64
+    "yinMidi": 51.03,
+    "flags": [
+     "estimators-disagree"
+    ],
+    "phrase": 34,
+    "note": "A#4",
+    "ratio": 1.215
    },
    {
     "t": 117.12,
@@ -105873,7 +105925,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-2-11712",
     "yinMidi": 68.04,
-    "phrase": 37,
+    "phrase": 34,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -105889,7 +105941,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-2-11740",
     "yinMidi": 69.97,
-    "phrase": 37,
+    "phrase": 34,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -105916,7 +105968,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 37,
+    "phrase": 34,
     "note": "C5",
     "ratio": 1.43
    },
@@ -105932,7 +105984,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-2-11800",
     "yinMidi": 72.95,
-    "phrase": 37,
+    "phrase": 34,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -105951,7 +106003,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 37,
+    "phrase": 34,
     "note": "B4",
     "ratio": 1.29
    },
@@ -105971,7 +106023,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 37,
+    "phrase": 34,
     "note": "C5",
     "ratio": 1.43
    },
@@ -106009,7 +106061,7 @@
      "estimators-disagree",
      "no-lyric"
     ],
-    "phrase": 37,
+    "phrase": 34,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -106028,28 +106080,38 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 37,
+    "phrase": 34,
     "note": "G#4",
     "ratio": 1.07
    },
    {
     "t": 119.99,
     "end": 120.16,
-    "midi": 71,
-    "median": 70.91,
+    "midi": 72,
+    "median": 72.0,
     "lyric": "Chan",
     "section": "zh-2",
     "line": "zh-2-1-2",
     "lineStart": true,
     "lyricStatus": "reference-spelling",
     "id": "chanmalichan-zh-2-11999",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 71,
+      "new": 72,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable, one semitone up (the Mandarin verse and chorus are measured one semitone above the Malay ones).",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "yinMidi": 51.77,
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 38,
-    "note": "B4",
-    "ratio": 1.29
+    "phrase": 35,
+    "note": "C5",
+    "ratio": 1.43
    },
    {
     "t": 120.16,
@@ -106074,7 +106136,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 38,
+    "phrase": 35,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -106093,15 +106155,15 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 38,
+    "phrase": 35,
     "note": "C#5",
     "ratio": 1.5
    },
    {
     "t": 121.13,
     "end": 121.29,
-    "midi": 66,
-    "median": 65.71,
+    "midi": 73,
+    "median": 73.0,
     "lyric": "chan",
     "section": "zh-2",
     "line": "zh-2-1-2",
@@ -106115,69 +106177,82 @@
      }
     ],
     "id": "chanmalichan-zh-2-12113",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 66,
+      "new": 73,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable, one semitone up (the Mandarin verse and chorus are measured one semitone above the Malay ones).",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "measuredEnd": 121.28,
     "yinMidi": 53.72,
-    "octaveCandidate": 54,
     "flags": [
-     "octave-fold-suspect"
+     "estimators-disagree"
     ],
-    "phrase": 38,
-    "note": "F#4",
-    "ratio": 0.86
+    "phrase": 35,
+    "note": "C#5",
+    "ratio": 1.5
    },
    {
     "t": 122.19,
-    "end": 122.26,
-    "midi": 66,
-    "median": 77.14,
-    "lyric": "",
-    "section": "zh-2",
-    "id": "chanmalichan-zh-2-12219",
-    "measuredEnd": 122.26,
-    "yinMidi": null,
-    "flags": [
-     "weak-independent-voicing",
-     "no-lyric"
-    ],
-    "phrase": 39,
-    "note": "F#4",
-    "ratio": 0.86
-   },
-   {
-    "t": 122.26,
     "end": 122.49,
-    "midi": 70,
-    "median": 69.81,
+    "midi": 72,
+    "median": 72.0,
     "lyric": "chan",
     "section": "zh-2",
     "line": "zh-2-1-2",
     "lineStart": false,
     "lyricStatus": "reference-spelling",
     "id": "chanmalichan-zh-2-12226",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 70,
+      "new": 72,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable, one semitone up (the Mandarin verse and chorus are measured one semitone above the Malay ones).",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "yinMidi": 69.8,
-    "phrase": 39,
-    "note": "A#4",
-    "ratio": 1.215
+    "flags": [
+     "estimators-disagree"
+    ],
+    "phrase": 35,
+    "note": "C5",
+    "ratio": 1.43
    },
    {
     "t": 122.49,
     "end": 122.69,
-    "midi": 75,
-    "median": 75.44,
+    "midi": 72,
+    "median": 72.0,
     "lyric": "ma-",
     "section": "zh-2",
     "line": "zh-2-1-2",
     "lineStart": false,
     "lyricStatus": "not-heard",
     "id": "chanmalichan-zh-2-12249",
-    "yinMidi": 51.62,
-    "octaveCandidate": 51,
-    "flags": [
-     "octave-fold-suspect"
+    "edits": [
+     {
+      "field": "midi",
+      "old": 75,
+      "new": 72,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable, one semitone up (the Mandarin verse and chorus are measured one semitone above the Malay ones).",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
     ],
-    "phrase": 39,
-    "note": "D#5",
-    "ratio": 1.64
+    "yinMidi": 51.62,
+    "flags": [
+     "estimators-disagree"
+    ],
+    "phrase": 35,
+    "note": "C5",
+    "ratio": 1.43
    },
    {
     "t": 122.69,
@@ -106195,7 +106270,7 @@
     "flags": [
      "octave-fold-suspect"
     ],
-    "phrase": 39,
+    "phrase": 35,
     "note": "C5",
     "ratio": 1.43
    },
@@ -106220,34 +106295,44 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 39,
+    "phrase": 35,
     "note": "C5",
     "ratio": 1.43
    },
    {
     "t": 124.56,
     "end": 124.74,
-    "midi": 68,
-    "median": 68.07,
+    "midi": 70,
+    "median": 70.0,
     "lyric": "Chan",
     "section": "zh-2",
     "line": "zh-2-1-3",
     "lineStart": true,
     "lyricStatus": "reference-spelling",
     "id": "chanmalichan-zh-2-12456",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 68,
+      "new": 70,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable, one semitone up (the Mandarin verse and chorus are measured one semitone above the Malay ones).",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "yinMidi": 40.1,
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 40,
-    "note": "G#4",
-    "ratio": 1.07
+    "phrase": 36,
+    "note": "A#4",
+    "ratio": 1.215
    },
    {
     "t": 124.74,
     "end": 125.05,
-    "midi": 71,
-    "median": 70.56,
+    "midi": 70,
+    "median": 70.0,
     "lyric": "ma-",
     "section": "zh-2",
     "line": "zh-2-1-3",
@@ -106262,13 +106347,23 @@
      }
     ],
     "id": "chanmalichan-zh-2-12474",
+    "edits": [
+     {
+      "field": "midi",
+      "old": 71,
+      "new": 70,
+      "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable, one semitone up (the Mandarin verse and chorus are measured one semitone above the Malay ones).",
+      "confidence": "owner-decision",
+      "review": "owner-listening-pending"
+     }
+    ],
     "yinMidi": 41.97,
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 40,
-    "note": "B4",
-    "ratio": 1.29
+    "phrase": 36,
+    "note": "A#4",
+    "ratio": 1.215
    },
    {
     "t": 125.05,
@@ -106285,7 +106380,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 40,
+    "phrase": 36,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -106311,7 +106406,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 40,
+    "phrase": 36,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -106331,7 +106426,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 40,
+    "phrase": 36,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -106350,7 +106445,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 40,
+    "phrase": 36,
     "note": "G#4",
     "ratio": 1.07
    },
@@ -106366,7 +106461,7 @@
     "lyricStatus": "heard",
     "id": "chanmalichan-zh-2-12654",
     "yinMidi": 70.04,
-    "phrase": 40,
+    "phrase": 36,
     "note": "A#4",
     "ratio": 1.215
    },
@@ -106393,7 +106488,7 @@
     "flags": [
      "weak-independent-voicing"
     ],
-    "phrase": 40,
+    "phrase": 36,
     "note": "C5",
     "ratio": 1.43
    },
@@ -106418,7 +106513,7 @@
     "flags": [
      "estimators-disagree"
     ],
-    "phrase": 40,
+    "phrase": 36,
     "note": "C#5",
     "ratio": 1.5
    },
@@ -106452,7 +106547,7 @@
     "flags": [
      "unstable-pitch"
     ],
-    "phrase": 40,
+    "phrase": 36,
     "note": "C5",
     "ratio": 1.43
    },
@@ -106472,7 +106567,7 @@
     "flags": [
      "octave-fold-suspect"
     ],
-    "phrase": 40,
+    "phrase": 36,
     "note": "C#5",
     "ratio": 1.5
    }

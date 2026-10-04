@@ -150,6 +150,12 @@ ok(all(s.get('excluded') and not s['noteCount'] for s in CHARTS['babyshark']['se
 ok(not any('oi' == n['lyric'].lower() for n in CHARTS['chanmalichan']['notes']) and
    [n['lyric'] for n in CHARTS['chanmalichan']['notes'] if 32.5 < n['t'] < 34.0] == ['Chan', 'ma-', 'li', 'chan'],
    'Chan Mali Chan: the backing "oi oi" shouts are not charted and "chan ma-li chan" keeps its four syllables')
+cm = CHARTS['chanmalichan']
+def tune(sec, n): return [e['midi'] for e in cm['notes'] if e['section'] == sec and e['lyric']][:n]
+ok(tune('en-2', 8) == tune('ms-2', 8) and tune('zh-2', 8) == [m + 1 for m in tune('ms-2', 8)],
+   'Chan Mali Chan: choruses 2 and 3 take the first chorus tune on "chan mali chan" (Galvin, 2026-10-04), Mandarin one semitone up')
+ok(all(s['firstNote'] is None or cm['notes'][s['firstNote']]['section'] == s['id'] == cm['notes'][s['lastNote']]['section'] for s in cm['sections']),
+   'section note indices follow the final note list after edits remove notes')
 from build_charts import fold_register
 folded = fold_register([{'onset': 0, 'end': .3, 'midi': 60, 'median': 60.1}, {'onset': .3, 'end': .5, 'midi': 72, 'median': 72.0},
                         {'onset': .5, 'end': .8, 'midi': 59, 'median': 59.0}, {'onset': 2, 'end': 2.3, 'midi': 48, 'median': 48.0}], 0, 1, [64, 75])

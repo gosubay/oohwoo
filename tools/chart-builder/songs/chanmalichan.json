@@ -185,14 +185,36 @@
     64,
     75
    ],
-   "foldReason": "In this chorus \"chan mali chan\" is sung an octave below the first chorus (27.5-45.4 s) with a doubled voice, and the reader jumps between octaves (frames alternate C4 / C5 inside one held syllable). A reading limited to the lead register (about F4-E5) finds the same pitch classes as the first chorus wherever it is confident. Pitch classes are kept as measured; the octave is the lead register of the first chorus."
+   "foldReason": "In this chorus \"chan mali chan\" is sung an octave below the first chorus (27.5-45.4 s) with a doubled voice, and the reader jumps between octaves (frames alternate C4 / C5 inside one held syllable). A reading limited to the lead register (about F4-E5) finds the same pitch classes as the first chorus wherever it is confident. Pitch classes are kept as measured; the octave is the lead register of the first chorus.",
+   "tuneFrom": {
+    "section": "ms-2",
+    "syllables": {
+     "0": 8,
+     "1": 4,
+     "2": 8,
+     "3": 4
+    },
+    "transpose": 0,
+    "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable."
+   }
   },
   "zh-2": {
    "foldInto": [
     65,
     76
    ],
-   "foldReason": "In this chorus \"chan mali chan\" is sung an octave below the first chorus (27.5-45.4 s) with a doubled voice, and the reader jumps between octaves (frames alternate C4 / C5 inside one held syllable). A reading limited to the lead register (about F4-E5) finds the same pitch classes as the first chorus wherever it is confident. Pitch classes are kept as measured; the octave is the lead register of the first chorus. (This chorus is one semitone higher.)"
+   "foldReason": "In this chorus \"chan mali chan\" is sung an octave below the first chorus (27.5-45.4 s) with a doubled voice, and the reader jumps between octaves (frames alternate C4 / C5 inside one held syllable). A reading limited to the lead register (about F4-E5) finds the same pitch classes as the first chorus wherever it is confident. Pitch classes are kept as measured; the octave is the lead register of the first chorus. (This chorus is one semitone higher.)",
+   "tuneFrom": {
+    "section": "ms-2",
+    "syllables": {
+     "0": 8,
+     "1": 4,
+     "2": 8,
+     "3": 4
+    },
+    "transpose": 1,
+    "reason": "Galvin, 2026-10-04: use the first chorus tune for the \"chan mali chan\" lines of this chorus. Here they are sung an octave lower with a doubled voice and the reader cannot follow them; a reading limited to the lead register matches the first chorus (27.5-45.4 s) wherever it is confident. Times are this chorus own; pitches are the first chorus pitches for the same syllable, one semitone up (the Mandarin verse and chorus are measured one semitone above the Malay ones)."
+   }
   }
  },
  "measuredNoteEdits": [

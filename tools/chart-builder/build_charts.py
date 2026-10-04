@@ -846,6 +846,7 @@ def build(key):
             excluded.append({'t': round(n['onset'], 2), 'end': round(n['end'], 2), 'midi': n['midi'], 'section': None,
                              'reason': 'outside every charted section (interlude, ad-lib or stem bleed); not scored'})
     events.sort(key=lambda e: e['t'])
+    apply_tune_from(key, spec, events)
     # ids must be unique and stable; a repeated id means two notes start in the same centisecond
     seen = {}
     for e in events:
@@ -859,6 +860,9 @@ def build(key):
             a['measuredEnd'] = a['end']; a['end'] = a['playedEnd']; del a['playedEnd']
         if a['end'] > limit: a['end'] = round(limit, 2)
     apply_note_edits(key, spec, events)
+    for s in section_out:                            # edits may have removed notes: section indices follow the final list
+        idx = [i for i, e in enumerate(events) if e['section'] == s['id']]
+        if s.get('noteCount'): s.update(firstNote=idx[0] if idx else None, lastNote=idx[-1] if idx else None, noteCount=len(idx))
     check_pitch(events, yin, raw, tune)
     phrases = make_phrases(events)
     # key and lanes from the whole chart
@@ -890,6 +894,48 @@ def build(key):
             {k: v for k, v in s.items() if k not in ('tokens',)} for s in absent],
         'modes': modes, 'phrases': phrases, 'notes': events, 'excludedNotes': excluded, 'droppedLyricUnits': dropped_units,
     }
+
+def apply_tune_from(key, spec, events):
+    """Owner decision in the song file: named lines of a section take their pitches from the same
+    syllables of another section of this recording (transposed), because this section cannot be read
+    reliably. Note times stay this section's own; only pitches are taken. Wordless pieces inside those
+    lines follow the syllable they belong to and are joined to it."""
+    for sid, ov in spec.get('sectionOverrides', {}).items():
+        rule = ov.get('tuneFrom')
+        if not rule: continue
+        def by_line(section):
+            lines = {}
+            for e in events:
+                if e['section'] == section and e.get('line'):
+                    lines.setdefault(int(e['line'].rsplit('-', 1)[1]), []).extend([e['midi']] * e.get('sharedUnits', 1))
+            return lines
+        ref = by_line(rule['section'])
+        mine = [e for e in events if e['section'] == sid]
+        if not ref or not mine: raise StaleSource(f"{key}: tuneFrom {sid} <- {rule['section']} has no notes to work with")
+        count = {}; target = {}                      # event index -> new midi
+        for k, e in enumerate(mine):
+            if not e.get('line'): continue
+            line = int(e['line'].rsplit('-', 1)[1]); q = count.get(line, 0); count[line] = q + e.get('sharedUnits', 1)
+            if q < rule['syllables'].get(str(line), 0):
+                if q >= len(ref.get(line, [])):
+                    raise StaleSource(f"{key}: tuneFrom {sid} line {line} syllable {q} has no counterpart in {rule['section']}")
+                target[k] = ref[line][q] + rule.get('transpose', 0)
+        for k, e in enumerate(mine):                 # wordless pieces follow the syllable they touch
+            if e.get('line'): continue
+            if k and k - 1 in target and e['t'] - mine[k - 1]['end'] <= 0.05: target[k] = target[k - 1]
+        for k in range(len(mine) - 2, -1, -1):
+            e = mine[k]
+            if not e.get('line') and k not in target and k + 1 in target and mine[k + 1]['t'] - e['end'] <= 0.05: target[k] = target[k + 1]
+        for k, e in enumerate(mine):
+            if k in target and target[k] != e['midi']:
+                e.setdefault('edits', []).append({'field': 'midi', 'old': e['midi'], 'new': target[k], 'reason': rule['reason'],
+                                                  'confidence': 'owner-decision', 'review': rule.get('review', 'owner-listening-pending')})
+                e['midi'] = target[k]; e['median'] = float(target[k])
+        for k in range(len(mine) - 1, 0, -1):        # join a wordless piece to the same pitch it touches
+            e, prev = mine[k], mine[k - 1]
+            if k in target and k - 1 in target and e['midi'] == prev['midi'] and e['t'] - prev['end'] <= 0.05:
+                if not e.get('line'): prev['end'] = e['end']; events.remove(e); del mine[k]
+                elif not prev.get('line'): e['t'] = prev['t']; events.remove(prev); del mine[k - 1]
 
 def apply_note_edits(key, spec, events):
     """Reviewed corrections from the song file. A stale locator is an error, never a guess."""

@@ -35,18 +35,18 @@ Last updated: 2026-10-04 (SGT)
   (`lyrics_raw.txt`, the original Suno sheet, is unchanged because every song file is hash-bound to it).
 - **Twinkle**: the low dip after 睛 (1:09) is left out of the chart. Galvin chose "show but don't score";
   the game has no such note type, so it is simply not charted.
-- Catalogue total after these changes: 4,674 notes. 67 builder fixtures and every `tests/*.cjs` pass.
+- **Chan Mali Chan choruses 2 and 3 (1:05, 1:50)**: Galvin chose "use chorus 1's tune". The "chan mali
+  chan" lines there take the first chorus's pitches (Mandarin chorus one semitone up); note times are
+  their own (`tuneFrom` in the song file).
+- Galvin also confirmed: Twinkle's dip stays removed, and Claude should work through the remaining
+  flagged lines song by song, fixing what the evidence supports.
+- Catalogue total after these changes: 4,668 notes. 69 builder fixtures and every `tests/*.cjs` pass.
 
 ## Unresolved passages for Galvin (each with a recommendation)
 
-1. **Chan Mali Chan, second and third chorus (1:05-1:23 and 1:50-2:10)**: "chan mali chan" is sung an
-   octave lower with a doubled voice, so the reader is unsure. The notes are now placed in the same register
-   as the first chorus (pitch classes as measured), but several notes and word positions there are still
-   approximate. Where the reading is confident it matches the first chorus exactly. Recommend: let Claude
-   use the first chorus's tune for the "chan mali chan" lines of these two choruses.
-2. **Baby Shark Mandarin (1:11-2:08)**: the transcriber cannot hear the words, so the words shown in the
+1. **Baby Shark Mandarin (1:11-2:08)**: the transcriber cannot hear the words, so the words shown in the
    remaining Mandarin verses are approximate. Recommend accepting for now.
-3. **Two Tigers, 1:35**: the first 奇 of verse 4 is sung sharp while sliding up; charted as A3 like the
+2. **Two Tigers, 1:35**: the first 奇 of verse 4 is sung sharp while sliding up; charted as A3 like the
    other three. Recommend keeping.
 
 ## Still imperfect, no decision needed (leads, not blockers)
@@ -61,7 +61,7 @@ Last updated: 2026-10-04 (SGT)
 
 ## Waiting on Galvin
 
-- Normal playtesting feedback, and the three passages above (each has a default if he says nothing).
+- Normal playtesting feedback, and the two passages above (each has a default if he says nothing).
 - Still open from before: keep/retire the scoring lab; live singing review of Steps 6 and 7.
 
 ## How it is built (2026-10-03 pipeline)

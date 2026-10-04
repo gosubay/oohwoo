@@ -133,6 +133,7 @@ def apply_measured_note_edits(key, spec, notes):
       join   the note is part of a neighbour ('into': 'next' or 'previous'), e.g. a slide
       midi   the note's pitch, 'old' -> 'new'
       syllable  a syllable starts on this note (the matcher may not make it the continuation of the one before)
+      word   the syllable 'text' starts on this note (pins one word; the rest of the line follows from it)
     A locator that matches no note is an error, never a guess."""
     for edit in spec.get('measuredNoteEdits', []):
         hits = [i for i, n in enumerate(notes) if abs(n['onset'] - edit['onset']) < 0.006]
@@ -165,6 +166,9 @@ def apply_measured_note_edits(key, spec, notes):
             k = i + 1                                # the same held pitch, cut at loudness dips, changes with it
             while k < len(notes) and notes[k].get('cut') and notes[k]['midi'] == edit['old']:
                 notes[k]['midi'] = edit['new']; notes[k]['median'] = float(edit['new']); k += 1
+        elif edit['op'] == 'word':
+            n['starts'] = True; n['word'] = edit['text']
+            n.setdefault('measuredEdits', []).append({**record, 'text': edit['text']})
         elif edit['op'] == 'syllable':
             n['starts'] = True
             n.setdefault('measuredEdits', []).append(record)
@@ -314,6 +318,9 @@ def fold_register(atoms, start, end, into):
         out.append(a)
     return out
 
+def plain(text):
+    return re.sub(r"[\W_]+", '', text).lower()
+
 def atom_boundary(atoms, i):
     """What the recording shows between atom i-1 and atom i: a silence, a pitch change, or a loudness dip."""
     if i == 0: return 'silence', 9.0
@@ -366,7 +373,7 @@ def align_atoms(atoms, units, sister_slides=False):
     typical = min(0.7, max(0.2, sum(dur) / max(1, m)))    # a usual syllable length in this section
     def cont(i):                                     # atom i continues the syllable before it (or is wordless)
         kind, v = bound[i]
-        if atoms[i].get('starts'): return 6.0        # reviewed in the song file: a syllable starts here
+        if atoms[i].get('starts'): return 50.0 if atoms[i].get('word') else 6.0   # reviewed: a syllable starts here
         if kind == 'silence': return 2.5 if v >= BREATH else 1.6 if v >= 0.10 else 0.8
         if kind == 'dip': return 0.15 + 1.1 * (1 - v['depth']) + (0.3 if v['colour'] >= SOFT_COLOUR else 0)
         if scoop[i - 1]: return 0.15                 # the atom before slid into this one
@@ -380,7 +387,9 @@ def align_atoms(atoms, units, sister_slides=False):
         return c * (0.15 if s['weak'] else 1.0)
     def take(i, j, c):                               # atom i starts syllable j; the syllable before it began c atoms back
         line = units[j]['lineStart']; kind, v = bound[i]
-        k = tcost(i, j) + (1.5 if breath[i] and not line else 0.8 if line and not breath[i] else 0)
+        pinned = atoms[i].get('word')                # reviewed in the song file: this note carries this word
+        if pinned and plain(pinned) != plain(units[j]['text']): return 50.0
+        k = (0.0 if pinned else tcost(i, j)) + (1.5 if breath[i] and not line else 0.8 if line and not breath[i] else 0)
         if kind == 'dip': k += max(0.0, 0.5 * v['depth'] - (0.2 if v['colour'] >= SOFT_COLOUR else 0))
         if dur[i] < 0.10 and not scoop[i]: k += 1.0  # too short to be a syllable of its own
         want = units[j].get('expect')                # the other verses sing this syllable of the line on another pitch
@@ -433,6 +442,10 @@ def align_atoms(atoms, units, sister_slides=False):
     for i in range(n - 1):                           # a slide belongs to the syllable of the note it lands on
         if scoop[i] and not started[i] and started[i + 1]:
             started[i], own[i], started[i + 1], own[i + 1] = True, own[i + 1], False, []
+    for i in range(n - 1):                           # a lone short pitch rising straight into a syllable's first note
+        alone = not started[i] and not own[i] and bound[i][0] == 'silence' and bound[i][1] >= JOIN_GAP
+        if alone and started[i + 1] and dur[i] <= SCOOP_MAX and bound[i + 1][0] == 'pitch' and                 1 <= atoms[i + 1]['midi'] - atoms[i]['midi'] <= 4:
+            started[i], own[i], started[i + 1], own[i + 1] = True, own[i + 1], False, []
     # syllable groups -> notes
     groups = []
     for i, a in enumerate(atoms):
@@ -462,7 +475,7 @@ def align_atoms(atoms, units, sister_slides=False):
             if (g['slides'] or lead_in) and nxt['onset'] - g['end'] <= 0.05:
                 nxt['absorbedGlides'] = g.get('absorbedGlides', []) + [{'t': round(g['onset'], 2), 'midi': g['midi'],
                                          'seconds': round(g['end'] - g['onset'], 2), 'why': 'slide into the note of the same syllable'}] + nxt.get('absorbedGlides', [])
-                nxt['onset'] = g['onset']; del pieces[k]
+                nxt['onset'] = g['onset']; del pieces[k]; k = max(0, k - 1)   # the piece before may now lead into it
             else: k += 1
         k = 1
         while k < len(pieces):                       # a very short piece after a longer one is its release
@@ -472,7 +485,7 @@ def align_atoms(atoms, units, sister_slides=False):
                 prev['end'] = p['end']; del pieces[k]
             else: k += 1
         for k, p in enumerate(pieces):
-            for field in ('cut', 'edge', 'glide', 'slides', 'starts'): p.pop(field, None)
+            for field in ('cut', 'edge', 'glide', 'slides', 'starts', 'word'): p.pop(field, None)
             notes.append(p); owned.append(group_units if k == 0 else [])
     return notes, owned, sorted(dropped)
 

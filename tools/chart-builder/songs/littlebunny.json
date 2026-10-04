@@ -89,5 +89,31 @@
  "exclusions": [],
  "review": {
   "song": "owner-listening-pending"
- }
+ },
+ "measuredNoteEdits": [
+  {
+   "op": "word",
+   "onset": 55.2824,
+   "text": "Bun",
+   "reason": "English verse 2 sings \"Lit-tle Bun-ny\" as A4, D5, B4, A4 (70.48-71.51 s), the tune of 小兔子乖乖 (A4 D5 B4 A4 A4, 12.50 s). Here the notes are A4 54.49, D5 55.06, B4 55.28, A4 55.52; the matcher had left one of them without a word.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 56.4797,
+   "text": "O",
+   "reason": "English verse 2 starts \"Open the door\" on F#4 rising to A4 (72.31, 72.76 s). Here the F#4 is at 56.48 s; the matcher had given it to \"-ny\" of the line before.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 55.0629,
+   "text": "tle",
+   "reason": "See the pin at 55.28 s: \"-tle\" is the D5.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  }
+ ]
 }

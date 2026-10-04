@@ -81,5 +81,71 @@
  "exclusions": [],
  "review": {
   "song": "owner-listening-pending"
- }
+ },
+ "measuredNoteEdits": [
+  {
+   "op": "word",
+   "onset": 54.5042,
+   "text": "一",
+   "reason": "\"在一起\" repeats the line before it (52.31 D4, 52.77 D4, 53.21 E4) a fourth lower: 在 54.31, 一 54.50, 起 on the F#4 at 54.78. English verse 1 has the same shape (to-geth-er: A3 A3 F#4). The matcher had left the second note without a word.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 69.6498,
+   "text": "在",
+   "reason": "English verse 2 sings \"get to-geth-er\" on B4 A4 G4 D4 (32.47-33.20). Here 同在一起 has B4 69.38, A4 69.65, G4 69.90, then E4-D4; the matcher had left the A4 without a word and put 在 and 一 one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 71.9945,
+   "text": "乐",
+   "reason": "Mandarin verse 1 sings 其快乐无比 as two notes, then three on A3 and D4 (59.64 A3 乐, 60.45 A3 无, 60.91 D4 比). Here the A3 starts at 71.99; the matcher had left its first 0.28 s without a word.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 55.7614,
+   "text": "当",
+   "reason": "The line 当我们同在一起 starts on the D4 after the 0.4 s breath, as in the same line at 49.66 s and 68.08 s (D4 F#4 A4). The short D4 at 55.23 s is the falling end of 起 before the breath.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 58.8743,
+   "text": "其",
+   "reason": "其快乐无比 starts on the D4 after the breath (58.87 s), matching English \"The happier we'll be\" (21.55 D4, 33.74 D4).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 31.1772,
+   "text": "The",
+   "reason": "\"The more we get together\" starts D4 F#4 A4 at 31.18 s, the same as 49.66 s and 68.08 s. The D4 at 30.67 s is the last \"friends\" of the line before.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 30.6684,
+   "text": "friends",
+   "reason": "See the pin at 31.18 s: \"And my friends are your friends\" ends on this D4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 54.7137,
+   "text": "起",
+   "reason": "起 of the second 在一起 is the jump up to F#4 (54.71-54.94 s), as English \"to-geth-er\" ends on F#4 (17.86 s). The D4 at 55.23 s is its falling end.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  }
+ ]
 }

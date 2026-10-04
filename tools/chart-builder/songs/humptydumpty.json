@@ -81,5 +81,87 @@
  "exclusions": [],
  "review": {
   "song": "owner-listening-pending"
- }
+ },
+ "measuredNoteEdits": [
+  {
+   "op": "word",
+   "onset": 14.8044,
+   "text": "ty",
+   "reason": "Verse 2 sings \"Hump-ty Dump-ty\" as E4, G4, F4, A4 (28.41-29.91 s). Verse 1 has the same notes (14.19 E4, 14.80 G4, 15.07 F4 held with a dip, 15.69 A4); the matcher had left the G4 without a word and split the F4 between \"ty\" and \"Dump-\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "join",
+   "onset": 17.7378,
+   "into": "next",
+   "reason": "\"Hump-\": D4 for 0.19 s rising straight into E4 (0.34 s); verse 2 starts this line on E4 held 0.55 s (31.95 s). A slide into the note. With it counted as a note of its own every word of the line sat one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "join",
+   "onset": 21.2997,
+   "into": "next",
+   "reason": "A 0.09 s reading a tritone above the E4 that follows; verse 2 starts this line directly on E4 (35.46 s). The attack of \"All\", not a note.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "join",
+   "onset": 53.3768,
+   "into": "next",
+   "reason": "国: D#4 for 0.07 s rising into F#4; verse 2 of the Mandarin half starts this line on F#4 (67.52 s). A slide.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 54.7936,
+   "text": "随",
+   "reason": "The second Mandarin verse sings 的随从和马儿 on A4 B4 A4 B4 C#5 D5 (68.68-70.33 s). The first has the same notes (54.53 A4, 54.79 B4, 55.06 A4, 55.35 B4, 55.65 C#5, 56.12 D5); the matcher had left the B4 at 54.79 without a word, so 随 从 和 马 sat one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 15.0738,
+   "text": "Dump",
+   "reason": "See the pin at 14.80 s: \"Dump-\" is the F4 held from 15.07 s (verse 2: F4 for 0.40 s at 29.31 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 22.7464,
+   "text": "and",
+   "reason": "\"...hor-ses and all the king's men\" is G4 (held), A4, B4, B4, C5 in both English verses, one note per word (22.75-24.13 s and 36.88-38.22 s). The Mandarin verses sing a different shape there (A B A B C# D), which had pulled the English words one note early.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 23.355,
+   "text": "all",
+   "reason": "See the pin at 22.75 s.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 36.8843,
+   "text": "and",
+   "reason": "See the pin at 22.75 s (same line, verse 2).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 37.4929,
+   "text": "all",
+   "reason": "See the pin at 22.75 s (same line, verse 2).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  }
+ ]
 }

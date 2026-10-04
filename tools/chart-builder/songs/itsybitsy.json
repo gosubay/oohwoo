@@ -81,5 +81,38 @@
  "exclusions": [],
  "review": {
   "song": "owner-listening-pending"
+ },
+ "measuredNoteEdits": [
+  {
+   "op": "join",
+   "onset": 31.1473,
+   "into": "next",
+   "reason": "\"Down\": D4 for 0.21 s rising straight into E4; the other three verses start this line on E. A slide into the note, just over the automatic 0.20 s limit.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 42.3518,
+   "text": "the",
+   "reason": "Verse 1 sings \"climbed up the spout a-gain\" as E E D C D E(+C). In verse 2 the same notes are at 41.74 E, 42.09 E, 42.35 D, 42.62 C, 42.85 D, 43.23 E, 43.39 C; the matcher had left the D at 42.35 without a word and put every later word one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 73.4911,
+   "text": "往",
+   "reason": "Verse 3 (first Mandarin verse) sings 蛛 on E4 then 往 on D4 (55.05, 55.73). Here the E4 is held 72.85-73.49 with a dip at 73.35 and the D4 starts at 73.49; the matcher had put 往 on the last 0.14 s of the E4.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  }
+ ],
+ "sectionOverrides": {
+  "en-2": {
+   "start": 22.0,
+   "end": 45.0,
+   "reason": "Verse 1 ends with \"again\" sung E4 then down to a held C4 (21.21-21.82 s), the same shape as the end of verse 2 (43.23 E4, 43.39 C4). The automatic boundary (21.17 s) gave that C4 to verse 2 as its first word, 5 s before the rest of the verse. Boundary moved into the silence after it."
+  }
  }
 }

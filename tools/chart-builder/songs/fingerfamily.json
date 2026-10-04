@@ -121,5 +121,39 @@
  "exclusions": [],
  "review": {
   "song": "owner-listening-pending"
- }
+ },
+ "measuredNoteEdits": [
+  {
+   "op": "split",
+   "onset": 21.9183,
+   "at": 22.18,
+   "reason": "\"I am\" is sung on one held E4 with no break (as in verses 1 and 3); the loudness steps down from 0.46 to 0.30 at 22.17-22.19 s where the vowel changes. Without this the matcher put \"am\" on the next A4 and \"here\" on a 0.10 s piece.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 22.18,
+   "text": "am",
+   "reason": "See the split above.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 22.7464,
+   "text": "here",
+   "reason": "Every verse sings \"here\" on the A4 that follows \"I am\" (14.20, 31.31, 39.86 s).",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "word",
+   "onset": 58.0462,
+   "text": "How",
+   "reason": "\"How do you do\" starts on the B3 after the breath in every verse (15.36, 23.92, 32.45, 40.95 s). Here that B3 is at 58.05 s; the last \"do\" (A3) is too quiet to be measured, so the matcher had pulled \"How\" back onto the E4 of \"I am\".",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  }
+ ]
 }

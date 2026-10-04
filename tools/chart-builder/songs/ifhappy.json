@@ -53,15 +53,6 @@
       "If you're happy and you know it, then your face will surely show it,",
       "If you're happy and you know it, shout \"Hooray!\" (Hooray!)"
      ]
-    },
-    {
-     "label": "Verse 4",
-     "lines": [
-      "If you're happy and you know it, do all three! (Hooray!)",
-      "If you're happy and you know it, do all three! (Hooray!)",
-      "If you're happy and you know it, then your face will surely show it,",
-      "If you're happy and you know it, do all three! (Hooray!)"
-     ]
     }
    ]
   },
@@ -97,15 +88,6 @@
       "如果感到开心你就跟我大声喊（真棒!）",
       "如果开心你就跟我大声喊（真棒!）"
      ]
-    },
-    {
-     "label": "Verse 8",
-     "lines": [
-      "如果开心你就跟我一起做（真棒!）",
-      "如果开心你就跟我一起做（真棒!）",
-      "如果感到开心你就跟我一起做（真棒!）",
-      "如果开心你就跟我一起做（真棒!）"
-     ]
     }
    ]
   }
@@ -117,5 +99,8 @@
  "exclusions": [],
  "review": {
   "song": "owner-listening-pending"
- }
+ },
+ "lyricSheetNotes": [
+  "Galvin, 2026-10-04: Verse 4 (\"do all three\") and Verse 8 (一起做) are in lyrics_raw.txt but are not sung in this recording (4 of 55 and 2 of 54 words found by transcription). Removed from this lyric sheet."
+ ]
 }

@@ -63,13 +63,19 @@
  "quick": null,
  "lyricCorrections": [],
  "noteEdits": [],
- "exclusions": [],
+ "exclusions": [
+  {
+   "start": 69.42,
+   "end": 70.005,
+   "reason": "Galvin, 2026-10-04: the low dip after 睛 (voice slides E4 down to a steady A3, 69.43-70.01 s, then back up to D4) is not part of the tune; the player is not judged on it. The game has no shown-but-unscored note, so the dip is left out of the chart."
+  }
+ ],
  "review": {
   "song": "owner-listening-approved",
   "sections": {
    "en-1": "owner-listening-approved",
    "zh-1": "owner-listening-approved"
   },
-  "note": "2026-10-03: Galvin listened to both verses on the listening page and said the song seems correct (with the wordless low note after 睛 shown). That note (69.43-70.01 s) is the singer's voice sliding from E4 down to a steady A3 and back up to D4; it was briefly deleted on a misreading of Galvin's remark and restored the same day. Not yet confirmed by playing it in the game."
+  "note": "2026-10-03: Galvin listened to both verses on the listening page and said the song seems correct (with the wordless low note after 睛 shown). That note (69.43-70.01 s) is the singer's voice sliding from E4 down to a steady A3 and back up to D4; it was briefly deleted on a misreading of Galvin's remark and restored the same day. Not yet confirmed by playing it in the game. 2026-10-04: Galvin chose not to score the low dip; it is now an exclusion."
  }
 }

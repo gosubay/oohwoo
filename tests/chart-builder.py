@@ -40,7 +40,7 @@ def joined(key):
     return ''.join(re.sub(r'[-\s]', '', n['lyric'] or '') for n in CHARTS[key]['notes']).lower()
 for key, good, bad in [('baluobo', '拔萝卜', ['把萝卜', '巴萝卜', '抱萝卜']), ('xiaoyanzi', '穿花衣', ['春花一']),
                        ('xiaoyanzi', '年年', ['念念']), ('chanmalichan', 'dikupas', ['dikubas']),
-                       ('chanmalichan', 'payung', ['peyang']), ('chanmalichan', 'oioi', ['ohboy'])]:
+                       ('chanmalichan', 'payung', ['peyang', 'ohboy', 'hoi'])]:
     text = joined(key)
     ok(good in text and not any(b in text for b in bad), f'{key} shows {good}')
 
@@ -140,11 +140,26 @@ for sec in ('zh-1', 'zh-2'):
     ok(''.join(n['lyric'] for n in ns) == '两只老虎两只老虎跑得快跑得快一只没有耳朵一只没有尾巴真奇怪真奇怪' and len(ns) == 32,
        f'Two Tigers {sec}: one note per Mandarin syllable')
     ok([n['midi'] for n in ns] == [62, 64, 66, 62] * 2 + [66, 67, 69] * 2 + [69, 71, 69, 67, 66, 62] * 2 + [62, 57, 62] * 2, f'Two Tigers {sec}: the tune')
-ok([(n['midi'], n['lyric']) for n in CHARTS['twinkle']['notes'] if 69.2 < n['t'] < 70.0] == [(57, '')], 'Twinkle: the low voiced dip after 睛 stays as a wordless note')
+ok(not [n for n in CHARTS['twinkle']['notes'] if 69.2 < n['t'] < 70.0] and
+   [x['midi'] for x in CHARTS['twinkle']['excludedNotes'] if 69.2 < x['t'] < 70.0] == [59, 57],
+   'Twinkle: the low dip after 睛 is left out of the chart by the song file and listed as excluded (Galvin, 2026-10-04)')
+ok(CHARTS['xiaoyanzi']['modes']['full']['level']['end'] == 155.0 and CHARTS['xiaoyanzi']['notes'][-1]['end'] < 152,
+   'Xiao Yan Zi: Full song ends with a fade after the last scripted verse, not after the 7-minute recording')
+ok(all(s.get('excluded') and not s['noteCount'] for s in CHARTS['babyshark']['sections'] if s['id'] in ('en-6', 'zh-3', 'zh-5')),
+   'Baby Shark: the three growled verses have no notes')
+ok(not any('oi' == n['lyric'].lower() for n in CHARTS['chanmalichan']['notes']) and
+   [n['lyric'] for n in CHARTS['chanmalichan']['notes'] if 32.5 < n['t'] < 34.0] == ['Chan', 'ma-', 'li', 'chan'],
+   'Chan Mali Chan: the backing "oi oi" shouts are not charted and "chan ma-li chan" keeps its four syllables')
+from build_charts import fold_register
+folded = fold_register([{'onset': 0, 'end': .3, 'midi': 60, 'median': 60.1}, {'onset': .3, 'end': .5, 'midi': 72, 'median': 72.0},
+                        {'onset': .5, 'end': .8, 'midi': 59, 'median': 59.0}, {'onset': 2, 'end': 2.3, 'midi': 48, 'median': 48.0}], 0, 1, [64, 75])
+ok([(a['onset'], a['end'], a['midi']) for a in folded] == [(0, .5, 72), (.5, .8, 71), (2, 2.3, 48)],
+   'octave fold: pitch classes kept, one held note read in two octaves is one piece, other sections untouched')
+
 
 def med(sec, field): return statistics.median(n[field] for n in bs['notes'] if n['section'] == sec and n.get(field) is not None)
-ok(med('zh-1', 'midi') - med('zh-3', 'midi') == 12, 'Baby Shark 爸爸 verse is an octave below 宝宝')
-ok(abs(med('zh-3', 'yinMidi') - med('zh-3', 'midi')) < 1, 'that octave is confirmed by the independent estimator, not by neighbours')
+low = statistics.median(x['midi'] for x in bs['excludedNotes'] if x['section'] == 'zh-3')
+ok(11 <= med('zh-1', 'midi') - low <= 13, 'Baby Shark 爸爸 verse is measured an octave below 宝宝 (growled; left out of the chart)')
 
 print(f'PASS: {len(passed)} chart-builder fixtures (Malay syllables, homophones/spellings, attack-based splits, '
       f'unheard words, melisma, lyric-aware atoms, sister verses, {checked} real dips re-measured, language and register switches). Not listening-verified.')

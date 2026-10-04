@@ -43,9 +43,9 @@
     {
      "label": "Chorus",
      "lines": [
-      "Chan mali chan (oi oi), chan mali chan (oi oi)",
+      "Chan mali chan, chan mali chan",
       "Chan mali chan, ketipung payung",
-      "Chan mali chan (oi oi), chan mali chan (oi oi)",
+      "Chan mali chan, chan mali chan",
       "Chan mali chan, ketipung payung"
      ]
     }
@@ -73,9 +73,9 @@
     {
      "label": "Chorus",
      "lines": [
-      "Chan mali chan (oi oi), chan mali chan (oi oi)",
+      "Chan mali chan, chan mali chan",
       "Chan mali chan, where’s my little baby now",
-      "Chan mali chan (oi oi), chan mali chan (oi oi)",
+      "Chan mali chan, chan mali chan",
       "Chan mali chan, where’s my little baby now"
      ]
     }
@@ -101,9 +101,9 @@
     {
      "label": "Chorus",
      "lines": [
-      "Chan mali chan (oi oi), chan mali chan (oi oi)",
+      "Chan mali chan, chan mali chan",
       "Chan mali chan, 我的宝贝躲哪里",
-      "Chan mali chan (oi oi), chan mali chan (oi oi)",
+      "Chan mali chan, chan mali chan",
       "Chan mali chan, 我的宝贝躲哪里"
      ]
     }
@@ -114,8 +114,209 @@
  "quick": null,
  "lyricCorrections": [],
  "noteEdits": [],
- "exclusions": [],
+ "exclusions": [
+  {
+   "start": 29.38,
+   "end": 30.06,
+   "reason": "Backing shout \"oi oi\" (Galvin, 2026-10-04: skip it, it is the backup voice). Not part of the lead line; left out of the chart."
+  },
+  {
+   "start": 31.67,
+   "end": 32.32,
+   "reason": "Backing shout \"oi oi\" (Galvin, 2026-10-04: skip it, it is the backup voice). Not part of the lead line; left out of the chart."
+  },
+  {
+   "start": 38.68,
+   "end": 39.54,
+   "reason": "Backing shout \"oi oi\" (Galvin, 2026-10-04: skip it, it is the backup voice). Not part of the lead line; left out of the chart."
+  },
+  {
+   "start": 40.97,
+   "end": 41.67,
+   "reason": "Backing shout \"oi oi\" (Galvin, 2026-10-04: skip it, it is the backup voice). Not part of the lead line; left out of the chart."
+  },
+  {
+   "start": 66.45,
+   "end": 67.33,
+   "reason": "Backing shout \"oi oi\" (Galvin, 2026-10-04: skip it, it is the backup voice). Not part of the lead line; left out of the chart."
+  },
+  {
+   "start": 68.75,
+   "end": 69.6,
+   "reason": "Backing shout \"oi oi\" (Galvin, 2026-10-04: skip it, it is the backup voice). Not part of the lead line; left out of the chart."
+  },
+  {
+   "start": 75.62,
+   "end": 76.45,
+   "reason": "Backing shout \"oi oi\" (Galvin, 2026-10-04: skip it, it is the backup voice). Not part of the lead line; left out of the chart."
+  },
+  {
+   "start": 77.9,
+   "end": 78.74,
+   "reason": "Backing shout \"oi oi\" (Galvin, 2026-10-04: skip it, it is the backup voice). Not part of the lead line; left out of the chart."
+  },
+  {
+   "start": 112.22,
+   "end": 113.02,
+   "reason": "Backing shout \"oi oi\" (Galvin, 2026-10-04: skip it, it is the backup voice). Not part of the lead line; left out of the chart."
+  },
+  {
+   "start": 114.48,
+   "end": 115.37,
+   "reason": "Backing shout \"oi oi\" (Galvin, 2026-10-04: skip it, it is the backup voice). Not part of the lead line; left out of the chart."
+  },
+  {
+   "start": 121.4,
+   "end": 122.14,
+   "reason": "Backing shout \"oi oi\" (Galvin, 2026-10-04: skip it, it is the backup voice). Not part of the lead line; left out of the chart."
+  },
+  {
+   "start": 123.66,
+   "end": 124.45,
+   "reason": "Backing shout \"oi oi\" (Galvin, 2026-10-04: skip it, it is the backup voice). Not part of the lead line; left out of the chart."
+  }
+ ],
  "review": {
   "song": "owner-listening-pending"
- }
+ },
+ "sectionOverrides": {
+  "en-2": {
+   "foldInto": [
+    64,
+    75
+   ],
+   "foldReason": "In this chorus \"chan mali chan\" is sung an octave below the first chorus (27.5-45.4 s) with a doubled voice, and the reader jumps between octaves (frames alternate C4 / C5 inside one held syllable). A reading limited to the lead register (about F4-E5) finds the same pitch classes as the first chorus wherever it is confident. Pitch classes are kept as measured; the octave is the lead register of the first chorus."
+  },
+  "zh-2": {
+   "foldInto": [
+    65,
+    76
+   ],
+   "foldReason": "In this chorus \"chan mali chan\" is sung an octave below the first chorus (27.5-45.4 s) with a doubled voice, and the reader jumps between octaves (frames alternate C4 / C5 inside one held syllable). A reading limited to the lead register (about F4-E5) finds the same pitch classes as the first chorus wherever it is confident. Pitch classes are kept as measured; the octave is the lead register of the first chorus. (This chorus is one semitone higher.)"
+  }
+ },
+ "measuredNoteEdits": [
+  {
+   "op": "split",
+   "onset": 30.4888,
+   "at": 30.84,
+   "reason": "\"chan-ma-li\" is sung without a break on one pitch, so there is no loudness dip before \"li\"; the loudness steps up where the vowel of \"li\" opens (0.26 to 0.48 at 30.82-30.88 s). The first chorus line (28.23 / 28.56 s) shows the same three even syllables with a dip.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "split",
+   "onset": 32.9275,
+   "at": 33.18,
+   "reason": "\"chan-ma-li\" is sung without a break on one pitch, so there is no loudness dip before \"li\"; the loudness steps up where the vowel of \"li\" opens (0.31 to 0.41 at 33.17-33.21 s). The first chorus line (28.23 / 28.56 s) shows the same three even syllables with a dip.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "split",
+   "onset": 37.5927,
+   "at": 37.88,
+   "reason": "\"chan-ma-li\" is sung without a break on one pitch, so there is no loudness dip before \"li\"; the loudness steps up where the vowel of \"li\" opens (0.31 to 0.55 at 37.87-37.91 s). The first chorus line (28.23 / 28.56 s) shows the same three even syllables with a dip.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "midi",
+   "onset": 65.3895,
+   "old": 53,
+   "new": 60,
+   "reason": "Third-subharmonic misreading: inside this held syllable the frames alternate between F3 (one-third Hz-class reading), the octave below the lead and the lead octave of C; F3 is exactly a twelfth below C5. Pitch class C, as in the first chorus.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "midi",
+   "onset": 65.8784,
+   "old": 53,
+   "new": 60,
+   "reason": "Third-subharmonic misreading: inside this held syllable the frames alternate between F3 (one-third Hz-class reading), the octave below the lead and the lead octave of C; F3 is exactly a twelfth below C5. Pitch class C, as in the first chorus.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "midi",
+   "onset": 74.6285,
+   "old": 53,
+   "new": 60,
+   "reason": "Third-subharmonic misreading: inside this held syllable the frames alternate between F3 (one-third Hz-class reading), the octave below the lead and the lead octave of C; F3 is exactly a twelfth below C5. Pitch class C, as in the first chorus.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "midi",
+   "onset": 75.1473,
+   "old": 53,
+   "new": 60,
+   "reason": "Third-subharmonic misreading: inside this held syllable the frames alternate between F3 (one-third Hz-class reading), the octave below the lead and the lead octave of C; F3 is exactly a twelfth below C5. Pitch class C, as in the first chorus.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "midi",
+   "onset": 120.4344,
+   "old": 54,
+   "new": 61,
+   "reason": "Third-subharmonic misreading: inside this held syllable the frames alternate between F#3 (one-third Hz-class reading), the octave below the lead and the lead octave of C#; F#3 is exactly a twelfth below C#5. Pitch class C#, as in the first chorus.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "midi",
+   "onset": 120.6339,
+   "old": 54,
+   "new": 61,
+   "reason": "Third-subharmonic misreading: inside this held syllable the frames alternate between F#3 (one-third Hz-class reading), the octave below the lead and the lead octave of C#; F#3 is exactly a twelfth below C#5. Pitch class C#, as in the first chorus.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "syllable",
+   "onset": 32.9275,
+   "reason": "\"ma\": loudness dip (depth 0.49) at 32.93 s. \"chan ma-li chan\" has four syllables here as in the first chorus line; transcript times: ma 32.90, li 33.22, chan 33.54, ke 33.94. Without this the matcher holds \"chan\" through \"ma\" and puts every later word of the line one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "syllable",
+   "onset": 33.18,
+   "reason": "\"li\": loudness step at 33.18 s (see the split above). \"chan ma-li chan\" has four syllables here as in the first chorus line; transcript times: ma 32.90, li 33.22, chan 33.54, ke 33.94. Without this the matcher holds \"chan\" through \"ma\" and puts every later word of the line one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "split",
+   "onset": 42.0525,
+   "at": 42.15,
+   "reason": "\"ma\" starts at the loudness dip at 42.15 s (depth 0.69), too close to the scoop into the note for the automatic cut. Same three even syllables as the first chorus line.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "split",
+   "onset": 42.15,
+   "at": 42.49,
+   "reason": "\"chan-ma-li\" is sung without a break on one pitch, so there is no loudness dip before \"li\"; the loudness steps up where the vowel of \"li\" opens (0.38 to 0.44 at 42.48-42.52 s). The first chorus line (28.23 / 28.56 s) shows the same three even syllables with a dip.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "syllable",
+   "onset": 42.15,
+   "reason": "\"ma\": see the split above. \"chan ma-li chan\" has four syllables here as in the first chorus line; transcript times: ma 42.14, li 42.41, chan 42.80, ke 43.14. Without this the matcher holds \"chan\" through \"ma\" and puts every later word of the line one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  },
+  {
+   "op": "syllable",
+   "onset": 42.49,
+   "reason": "\"li\": loudness step at 42.49 s (see the split above). \"chan ma-li chan\" has four syllables here as in the first chorus line; transcript times: ma 42.14, li 42.41, chan 42.80, ke 43.14. Without this the matcher holds \"chan\" through \"ma\" and puts every later word of the line one note late.",
+   "confidence": "medium",
+   "review": "owner-listening-pending"
+  }
+ ]
 }

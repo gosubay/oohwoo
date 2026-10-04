@@ -168,7 +168,8 @@
   "zh-3": {
    "start": 87.8,
    "end": 95.75,
-   "reason": "Mandarin half defeats Whisper (prompted pass repeats 鲨鱼爸爸, unprompted pass is empty). Placed from the vocal: six verse-length stretches matching the English verse pattern; the 爸爸 and 爷爷 verses are sung an octave lower (D3-G3), the 2026-10-02 whole-file pass anchors 奶奶 at 95.9 s (\"Sayi nay nay\") and 爷爷 at 111.7 s (\"Sayi ye ye\")."
+   "reason": "Mandarin half defeats Whisper (prompted pass repeats 鲨鱼爸爸, unprompted pass is empty). Placed from the vocal: six verse-length stretches matching the English verse pattern; the 爸爸 and 爷爷 verses are sung an octave lower (D3-G3), the 2026-10-02 whole-file pass anchors 奶奶 at 95.9 s (\"Sayi nay nay\") and 爷爷 at 111.7 s (\"Sayi ye ye\").",
+   "exclude": "Mandarin daddy verse (87.8-95.75 s) is sung in a low growl an octave down with unsteady pitch. Galvin, 2026-10-04: no notes in the growled parts (the player rests; the music keeps playing)."
   },
   "zh-4": {
    "start": 95.75,
@@ -178,12 +179,16 @@
   "zh-5": {
    "start": 107.5,
    "end": 119.1,
-   "reason": "Mandarin half defeats Whisper (prompted pass repeats 鲨鱼爸爸, unprompted pass is empty). Placed from the vocal: six verse-length stretches matching the English verse pattern; the 爸爸 and 爷爷 verses are sung an octave lower (D3-G3), the 2026-10-02 whole-file pass anchors 奶奶 at 95.9 s (\"Sayi nay nay\") and 爷爷 at 111.7 s (\"Sayi ye ye\")."
+   "reason": "Mandarin half defeats Whisper (prompted pass repeats 鲨鱼爸爸, unprompted pass is empty). Placed from the vocal: six verse-length stretches matching the English verse pattern; the 爸爸 and 爷爷 verses are sung an octave lower (D3-G3), the 2026-10-02 whole-file pass anchors 奶奶 at 95.9 s (\"Sayi nay nay\") and 爷爷 at 111.7 s (\"Sayi ye ye\").",
+   "exclude": "Mandarin grandpa verse (107.5-119.1 s) is sung in a low growl an octave down with unsteady pitch. Galvin, 2026-10-04: no notes in the growled parts (the player rests; the music keeps playing)."
   },
   "zh-6": {
    "start": 119.1,
    "end": 128.0,
    "reason": "Mandarin half defeats Whisper (prompted pass repeats 鲨鱼爸爸, unprompted pass is empty). Placed from the vocal: six verse-length stretches matching the English verse pattern; the 爸爸 and 爷爷 verses are sung an octave lower (D3-G3), the 2026-10-02 whole-file pass anchors 奶奶 at 95.9 s (\"Sayi nay nay\") and 爷爷 at 111.7 s (\"Sayi ye ye\")."
+  },
+  "en-6": {
+   "exclude": "\"Let's go hunt\" verse (54.5-63.0 s) is sung in a low growl with unsteady pitch. Galvin, 2026-10-04: no notes in the growled parts (the player rests; the music keeps playing)."
   }
  }
 }

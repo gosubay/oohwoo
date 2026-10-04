@@ -3,7 +3,7 @@
 "model": "large-v3",
 "blocks": {
 "ms": {
-"settings": "b0d7c6b1a53aa20a",
+"settings": "ceae7c7e44762886",
 "language": "ms",
 "pieces": [
 {
@@ -11,95 +11,137 @@
 "end": 18.17,
 "hinted": [
 {
-"start": 7.2,
-"end": 9.3,
+"start": 8.46,
+"end": 9.54,
+"word": "Chan",
+"p": 0.0,
+"segment": 1
+},
+{
+"start": 9.54,
+"end": 9.9,
+"word": "mali",
+"p": 0.01,
+"segment": 1
+},
+{
+"start": 9.9,
+"end": 10.72,
+"word": "chan,",
+"p": 0.434,
+"segment": 1
+},
+{
+"start": 10.72,
+"end": 11.32,
+"word": "chan",
+"p": 0.499,
+"segment": 1
+},
+{
+"start": 11.32,
+"end": 11.32,
+"word": "mali",
+"p": 0.848,
+"segment": 1
+},
+{
+"start": 11.32,
+"end": 11.32,
+"word": "chan",
+"p": 0.8,
+"segment": 1
+},
+{
+"start": 11.32,
+"end": 11.32,
 "word": "Di",
-"p": 0.148,
-"segment": 1
+"p": 0.002,
+"segment": 2
 },
 {
-"start": 9.3,
-"end": 9.82,
+"start": 11.32,
+"end": 11.32,
 "word": "mana",
-"p": 0.973,
-"segment": 1
+"p": 0.978,
+"segment": 2
 },
 {
-"start": 9.82,
-"end": 10.38,
+"start": 11.32,
+"end": 11.32,
 "word": "dia",
-"p": 0.982,
-"segment": 1
+"p": 0.947,
+"segment": 2
 },
 {
-"start": 10.38,
+"start": 11.32,
 "end": 11.86,
 "word": "Anak",
-"p": 0.548,
-"segment": 1
+"p": 0.582,
+"segment": 2
 },
 {
 "start": 11.86,
 "end": 12.3,
 "word": "kambing",
-"p": 0.873,
-"segment": 1
+"p": 0.866,
+"segment": 2
 },
 {
 "start": 12.3,
 "end": 12.6,
 "word": "saya?",
-"p": 0.975,
-"segment": 1
+"p": 0.949,
+"segment": 2
 },
 {
-"start": 13.06,
-"end": 14.14,
+"start": 13.04,
+"end": 14.12,
 "word": "Anak",
-"p": 0.997,
-"segment": 1
+"p": 0.989,
+"segment": 2
 },
 {
-"start": 14.14,
+"start": 14.12,
 "end": 14.64,
 "word": "kambing",
-"p": 0.996,
-"segment": 1
+"p": 0.993,
+"segment": 2
 },
 {
 "start": 14.64,
-"end": 14.94,
+"end": 14.96,
 "word": "saya",
-"p": 0.996,
-"segment": 1
+"p": 0.993,
+"segment": 2
 },
 {
-"start": 14.94,
-"end": 15.8,
+"start": 14.96,
+"end": 15.78,
 "word": "Yang",
-"p": 0.967,
-"segment": 1
+"p": 0.947,
+"segment": 3
 },
 {
-"start": 15.8,
+"start": 15.78,
 "end": 16.26,
 "word": "makan",
-"p": 0.96,
-"segment": 1
+"p": 0.934,
+"segment": 3
 },
 {
 "start": 16.26,
 "end": 16.96,
 "word": "daun",
-"p": 0.777,
-"segment": 1
+"p": 0.762,
+"segment": 3
 },
 {
 "start": 16.96,
 "end": 17.76,
 "word": "talas",
-"p": 0.966,
-"segment": 1
+"p": 0.957,
+"segment": 3
 }
 ],
 "plain": [
@@ -201,7 +243,7 @@
 "segment": 1
 },
 {
-"start": 24.31,
+"start": 24.87,
 "end": 25.53,
 "word": "Bagai",
 "p": 0.938,
@@ -317,191 +359,920 @@
 "start": 27.19,
 "end": 28.15,
 "word": "Chan",
-"p": 0.062,
+"p": 0.063,
 "segment": 1
 },
 {
 "start": 28.15,
-"end": 28.79,
+"end": 28.85,
 "word": "mali",
 "p": 0.532,
 "segment": 1
 },
 {
-"start": 28.79,
+"start": 28.85,
 "end": 29.27,
-"word": "chan",
+"word": "chan,",
 "p": 0.937,
 "segment": 1
 },
 {
 "start": 29.27,
-"end": 29.77,
-"word": "eyebroi",
-"p": 0.002,
-"segment": 1
-},
-{
-"start": 29.77,
-"end": 30.15,
-"word": "oi),",
-"p": 0.32,
-"segment": 1
-},
-{
-"start": 30.15,
-"end": 30.67,
+"end": 30.57,
 "word": "chan",
-"p": 0.52,
+"p": 0.51,
 "segment": 1
 },
 {
-"start": 30.67,
+"start": 30.57,
 "end": 31.23,
 "word": "mali",
-"p": 0.99,
+"p": 0.999,
 "segment": 1
 },
 {
 "start": 31.23,
-"end": 31.85,
-"word": "chanoice",
-"p": 0.665,
-"segment": 1
-},
-{
-"start": 31.85,
-"end": 32.87,
+"end": 31.55,
 "word": "chan",
-"p": 0.561,
+"p": 1.0,
 "segment": 1
 },
 {
-"start": 32.87,
-"end": 33.53,
+"start": 31.55,
+"end": 31.55,
+"word": "Chan",
+"p": 0.337,
+"segment": 1
+},
+{
+"start": 31.55,
+"end": 31.55,
 "word": "mali",
-"p": 0.801,
+"p": 0.999,
 "segment": 1
 },
 {
-"start": 33.53,
+"start": 31.55,
+"end": 31.55,
+"word": "chan,",
+"p": 0.999,
+"segment": 1
+},
+{
+"start": 31.55,
+"end": 31.83,
+"word": "oi",
+"p": 0.512,
+"segment": 1
+},
+{
+"start": 31.83,
+"end": 32.25,
+"word": "oi",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 32.25,
+"end": 32.65,
+"word": "Chan",
+"p": 0.891,
+"segment": 1
+},
+{
+"start": 32.65,
+"end": 33.51,
+"word": "mali",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 33.51,
 "end": 33.91,
-"word": "chan",
-"p": 0.99,
+"word": "chan,",
+"p": 1.0,
 "segment": 1
 },
 {
 "start": 33.91,
 "end": 34.63,
 "word": "keti",
-"p": 0.461,
+"p": 0.59,
 "segment": 1
 },
 {
 "start": 34.63,
 "end": 35.55,
 "word": "buang",
-"p": 0.365,
+"p": 0.424,
 "segment": 1
 },
 {
 "start": 35.55,
-"end": 36.19,
+"end": 36.31,
 "word": "peyang",
-"p": 0.648,
+"p": 0.712,
+"segment": 1
+}
+],
+"plain": [
+{
+"start": 27.19,
+"end": 28.01,
+"word": "Ia,",
+"p": 0.106,
 "segment": 1
 },
 {
-"start": 36.19,
-"end": 37.31,
-"word": "Chan",
-"p": 0.134,
-"segment": 2
+"start": 28.27,
+"end": 28.85,
+"word": "saya,",
+"p": 0.164,
+"segment": 1
 },
 {
-"start": 37.31,
-"end": 38.23,
-"word": "mali",
-"p": 0.997,
-"segment": 2
+"start": 29.21,
+"end": 29.21,
+"word": "saya,",
+"p": 0.572,
+"segment": 1
 },
 {
-"start": 38.23,
-"end": 38.87,
-"word": "chanoice",
-"p": 0.669,
-"segment": 2
+"start": 29.21,
+"end": 29.63,
+"word": "saya,",
+"p": 0.572,
+"segment": 1
 },
 {
-"start": 38.87,
-"end": 39.95,
-"word": "chan",
-"p": 0.909,
-"segment": 2
+"start": 29.79,
+"end": 30.23,
+"word": "saya,",
+"p": 0.967,
+"segment": 1
 },
 {
-"start": 39.95,
-"end": 40.53,
-"word": "mali",
-"p": 0.5,
-"segment": 2
+"start": 30.97,
+"end": 31.25,
+"word": "saya,",
+"p": 0.986,
+"segment": 1
 },
 {
-"start": 40.53,
-"end": 41.13,
-"word": "chanoice",
-"p": 0.672,
-"segment": 2
+"start": 31.45,
+"end": 32.11,
+"word": "saya,",
+"p": 0.979,
+"segment": 1
 },
 {
-"start": 41.13,
-"end": 41.89,
-"word": "chan",
+"start": 32.11,
+"end": 32.21,
+"word": "saya,",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 32.21,
+"end": 32.39,
+"word": "saya,",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 32.85,
+"end": 33.07,
+"word": "saya,",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 33.19,
+"end": 34.03,
+"word": "saya,",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 34.03,
+"end": 34.21,
+"word": "saya,",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 34.57,
+"end": 34.57,
+"word": "saya,",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 34.61,
+"end": 34.61,
+"word": "saya,",
 "p": 0.993,
-"segment": 2
+"segment": 1
 },
 {
-"start": 41.89,
-"end": 42.81,
-"word": "mali",
-"p": 0.55,
-"segment": 2
-},
-{
-"start": 42.81,
-"end": 43.19,
-"word": "chan",
-"p": 0.997,
-"segment": 2
-},
-{
-"start": 43.19,
-"end": 43.97,
-"word": "keti",
-"p": 0.989,
-"segment": 2
-},
-{
-"start": 43.97,
-"end": 44.73,
-"word": "buang",
+"start": 34.89,
+"end": 34.89,
+"word": "saya,",
 "p": 0.995,
+"segment": 1
+},
+{
+"start": 34.89,
+"end": 34.89,
+"word": "saya,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 34.89,
+"end": 34.89,
+"word": "saya,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 34.89,
+"end": 34.89,
+"word": "saya,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 34.99,
+"end": 34.99,
+"word": "saya,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 35.05,
+"end": 35.75,
+"word": "saya,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 36.05,
+"end": 36.05,
+"word": "saya,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 36.09,
+"end": 36.09,
+"word": "saya,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 36.17,
+"end": 36.61,
+"word": "saya,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 36.61,
+"end": 36.61,
+"word": "saya,",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 36.61,
+"end": 36.85,
+"word": "saya,",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.995,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.994,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.992,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.991,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.989,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.988,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.987,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.986,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.985,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.984,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.983,
+"segment": 1
+},
+{
+"start": 36.93,
+"end": 36.93,
+"word": "saya,",
+"p": 0.982,
+"segment": 1
+},
+{
+"start": 36.95,
+"end": 36.95,
+"word": "saya,",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 36.95,
+"end": 36.95,
+"word": "saya,",
+"p": 0.981,
+"segment": 1
+},
+{
+"start": 36.95,
+"end": 36.95,
+"word": "saya,",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 36.95,
+"end": 36.95,
+"word": "saya,",
+"p": 0.98,
+"segment": 1
+},
+{
+"start": 36.95,
+"end": 36.95,
+"word": "saya,",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 36.95,
+"end": 36.95,
+"word": "saya,",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 36.95,
+"end": 36.95,
+"word": "saya,",
+"p": 0.979,
+"segment": 1
+},
+{
+"start": 37.23,
+"end": 37.23,
+"word": "saya,",
+"p": 0.978,
+"segment": 1
+},
+{
+"start": 37.23,
+"end": 37.23,
+"word": "saya,",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 37.23,
+"end": 37.23,
+"word": "saya,",
+"p": 0.977,
+"segment": 1
+},
+{
+"start": 37.23,
+"end": 37.23,
+"word": "saya,",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 37.23,
+"end": 37.23,
+"word": "saya,",
+"p": 0.976,
+"segment": 1
+},
+{
+"start": 37.23,
+"end": 37.23,
+"word": "saya,",
+"p": 0.975,
+"segment": 1
+},
+{
+"start": 37.23,
+"end": 37.23,
+"word": "saya,",
+"p": 0.974,
+"segment": 1
+},
+{
+"start": 37.49,
+"end": 37.55,
+"word": "saya,",
+"p": 0.974,
+"segment": 1
+},
+{
+"start": 37.55,
+"end": 37.77,
+"word": "saya,",
+"p": 0.972,
+"segment": 1
+},
+{
+"start": 37.77,
+"end": 37.77,
+"word": "saya,",
+"p": 0.972,
+"segment": 1
+},
+{
+"start": 37.77,
+"end": 37.77,
+"word": "saya,",
+"p": 0.972,
+"segment": 1
+},
+{
+"start": 37.77,
+"end": 37.77,
+"word": "saya,",
+"p": 0.971,
+"segment": 1
+},
+{
+"start": 37.77,
+"end": 37.77,
+"word": "saya,",
+"p": 0.971,
+"segment": 1
+},
+{
+"start": 37.77,
+"end": 37.77,
+"word": "saya,",
+"p": 0.971,
+"segment": 1
+},
+{
+"start": 37.77,
+"end": 37.77,
+"word": "saya,",
+"p": 0.97,
+"segment": 1
+},
+{
+"start": 37.77,
+"end": 37.77,
+"word": "saya,",
+"p": 0.969,
+"segment": 1
+},
+{
+"start": 37.77,
+"end": 37.77,
+"word": "saya,",
+"p": 0.969,
+"segment": 1
+},
+{
+"start": 37.77,
+"end": 37.77,
+"word": "saya,",
+"p": 0.968,
+"segment": 1
+},
+{
+"start": 37.77,
+"end": 38.25,
+"word": "saya,",
+"p": 0.967,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.967,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.966,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.966,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.966,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.966,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.965,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.965,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.965,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.964,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.964,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.964,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.963,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.962,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.962,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.25,
+"word": "saya,",
+"p": 0.962,
+"segment": 1
+},
+{
+"start": 38.25,
+"end": 38.67,
+"word": "saya,",
+"p": 0.962,
+"segment": 1
+},
+{
+"start": 38.81,
+"end": 38.97,
+"word": "saya,",
+"p": 0.961,
+"segment": 1
+},
+{
+"start": 38.97,
+"end": 39.45,
+"word": "saya,",
+"p": 0.961,
+"segment": 1
+},
+{
+"start": 39.75,
+"end": 40.93,
+"word": "saya,",
+"p": 0.961,
+"segment": 1
+},
+{
+"start": 42.11,
+"end": 42.35,
+"word": "saya,",
+"p": 0.962,
+"segment": 1
+},
+{
+"start": 42.57,
+"end": 43.31,
+"word": "saya,",
+"p": 0.96,
+"segment": 1
+},
+{
+"start": 43.31,
+"end": 44.53,
+"word": "Ketipu",
+"p": 0.649,
 "segment": 2
 },
 {
-"start": 44.73,
-"end": 45.41,
-"word": "peyang",
-"p": 0.994,
+"start": 44.53,
+"end": 44.99,
+"word": "peng",
+"p": 0.359,
 "segment": 2
 }
-],
-"plain": []
+]
 }
 ]
 },
 "en": {
-"settings": "72cfdd26e02063b3",
+"settings": "029cef96696b2de0",
 "language": "en",
 "pieces": [
 {
@@ -1086,1552 +1857,334 @@
 "hinted": [
 {
 "start": 64.44,
-"end": 65.34,
-"word": "Chan,",
-"p": 0.445,
+"end": 65.28,
+"word": "John",
+"p": 0.016,
 "segment": 1
 },
 {
-"start": 65.34,
-"end": 65.72,
-"word": "my",
-"p": 0.007,
-"segment": 1
-},
-{
-"start": 65.72,
+"start": 65.28,
 "end": 65.98,
-"word": "little",
-"p": 0.329,
+"word": "Marley",
+"p": 0.78,
 "segment": 1
 },
 {
 "start": 65.98,
-"end": 66.28,
-"word": "Chan",
-"p": 0.368,
+"end": 66.14,
+"word": "John,",
+"p": 0.501,
 "segment": 1
 },
 {
-"start": 66.28,
+"start": 66.34,
 "end": 66.72,
-"word": "Chan,",
-"p": 0.561,
+"word": "oi",
+"p": 0.71,
 "segment": 1
 },
 {
-"start": 67.72,
-"end": 68.08,
-"word": "my",
-"p": 0.914,
+"start": 66.72,
+"end": 67.1,
+"word": "oi",
+"p": 0.976,
 "segment": 1
 },
 {
-"start": 68.08,
+"start": 67.1,
+"end": 67.44,
+"word": "John",
+"p": 0.582,
+"segment": 1
+},
+{
+"start": 67.44,
 "end": 68.26,
-"word": "little",
-"p": 0.987,
+"word": "Marley",
+"p": 0.988,
 "segment": 1
 },
 {
 "start": 68.26,
-"end": 68.64,
-"word": "Chan",
-"p": 0.979,
-"segment": 1
-},
-{
-"start": 68.64,
-"end": 69.78,
-"word": "Chan,",
-"p": 0.805,
-"segment": 1
-},
-{
-"start": 70.26,
-"end": 70.32,
-"word": "my",
-"p": 0.874,
-"segment": 1
-},
-{
-"start": 70.32,
-"end": 70.54,
-"word": "little",
-"p": 0.995,
-"segment": 1
-},
-{
-"start": 70.54,
-"end": 70.92,
-"word": "Chan",
-"p": 0.967,
-"segment": 1
-},
-{
-"start": 70.92,
-"end": 70.92,
-"word": "Chan,",
-"p": 0.353,
-"segment": 1
-},
-{
-"start": 70.92,
-"end": 71.52,
-"word": "my",
-"p": 0.707,
-"segment": 1
-},
-{
-"start": 71.52,
-"end": 72.04,
-"word": "little",
-"p": 0.993,
-"segment": 1
-},
-{
-"start": 72.04,
-"end": 73.06,
-"word": "Chan",
-"p": 0.948,
-"segment": 1
-},
-{
-"start": 73.06,
-"end": 73.72,
-"word": "Chan,",
-"p": 0.537,
-"segment": 1
-},
-{
-"start": 74.46,
-"end": 75.64,
-"word": "my",
-"p": 0.789,
-"segment": 1
-},
-{
-"start": 75.64,
-"end": 75.9,
-"word": "little",
-"p": 0.994,
-"segment": 1
-},
-{
-"start": 75.9,
-"end": 76.44,
-"word": "Chan",
-"p": 0.946,
-"segment": 1
-},
-{
-"start": 76.44,
-"end": 76.48,
-"word": "Chan,",
-"p": 0.801,
-"segment": 1
-},
-{
-"start": 76.74,
-"end": 77.1,
-"word": "my",
-"p": 0.905,
-"segment": 1
-},
-{
-"start": 77.1,
-"end": 77.38,
-"word": "little",
-"p": 0.996,
-"segment": 1
-},
-{
-"start": 77.38,
-"end": 77.54,
-"word": "Chan",
-"p": 0.96,
-"segment": 1
-},
-{
-"start": 77.54,
-"end": 78.18,
-"word": "Chan,",
-"p": 0.817,
-"segment": 1
-},
-{
-"start": 78.18,
-"end": 78.18,
-"word": "my",
-"p": 0.919,
-"segment": 1
-},
-{
-"start": 78.18,
-"end": 78.18,
-"word": "little",
-"p": 0.997,
-"segment": 1
-},
-{
-"start": 78.18,
-"end": 78.58,
-"word": "Chan",
-"p": 0.966,
-"segment": 1
-},
-{
-"start": 78.58,
-"end": 78.8,
-"word": "Chan,",
-"p": 0.775,
-"segment": 1
-},
-{
-"start": 79.38,
-"end": 79.38,
-"word": "my",
-"p": 0.892,
-"segment": 1
-},
-{
-"start": 79.38,
-"end": 79.64,
-"word": "little",
-"p": 0.997,
-"segment": 1
-},
-{
-"start": 79.64,
-"end": 79.82,
-"word": "Chan",
-"p": 0.962,
-"segment": 1
-},
-{
-"start": 79.82,
-"end": 79.98,
-"word": "Chan,",
-"p": 0.791,
-"segment": 1
-},
-{
-"start": 79.98,
-"end": 80.14,
-"word": "my",
-"p": 0.866,
-"segment": 1
-},
-{
-"start": 80.14,
-"end": 80.14,
-"word": "little",
-"p": 0.997,
-"segment": 1
-},
-{
-"start": 80.14,
-"end": 80.14,
-"word": "Chan",
-"p": 0.956,
-"segment": 1
-},
-{
-"start": 80.14,
-"end": 80.14,
-"word": "Chan,",
-"p": 0.838,
-"segment": 1
-},
-{
-"start": 80.14,
-"end": 80.56,
-"word": "my",
-"p": 0.859,
-"segment": 1
-},
-{
-"start": 80.56,
-"end": 80.7,
-"word": "little",
-"p": 0.996,
-"segment": 1
-},
-{
-"start": 80.7,
-"end": 80.8,
-"word": "Chan",
-"p": 0.953,
-"segment": 1
-},
-{
-"start": 80.8,
-"end": 80.8,
-"word": "Chan,",
-"p": 0.879,
-"segment": 1
-},
-{
-"start": 80.8,
-"end": 80.8,
-"word": "my",
-"p": 0.864,
-"segment": 1
-},
-{
-"start": 80.8,
-"end": 81.08,
-"word": "little",
-"p": 0.995,
-"segment": 1
-},
-{
-"start": 81.08,
-"end": 81.66,
-"word": "Chan",
-"p": 0.953,
-"segment": 1
-},
-{
-"start": 81.66,
-"end": 82.28,
-"word": "Chan,",
-"p": 0.904,
-"segment": 1
-},
-{
-"start": 82.28,
-"end": 82.28,
-"word": "my",
-"p": 0.874,
-"segment": 1
-},
-{
-"start": 82.28,
-"end": 82.28,
-"word": "little",
-"p": 0.995,
-"segment": 1
-},
-{
-"start": 82.28,
-"end": 82.28,
-"word": "Chan",
-"p": 0.955,
-"segment": 1
-},
-{
-"start": 82.28,
-"end": 82.3,
-"word": "Chan,",
-"p": 0.921,
-"segment": 1
-},
-{
-"start": 82.3,
-"end": 82.3,
-"word": "my",
-"p": 0.882,
-"segment": 1
-},
-{
-"start": 82.3,
-"end": 82.3,
-"word": "little",
-"p": 0.994,
-"segment": 1
-},
-{
-"start": 82.3,
-"end": 82.3,
-"word": "Chan",
-"p": 0.957,
-"segment": 1
-},
-{
-"start": 82.3,
-"end": 82.8,
-"word": "Chan,",
-"p": 0.934,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "my",
-"p": 0.889,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "little",
-"p": 0.994,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan",
-"p": 0.96,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan,",
-"p": 0.943,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "my",
-"p": 0.894,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "little",
-"p": 0.993,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan",
-"p": 0.963,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan,",
-"p": 0.95,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "my",
-"p": 0.897,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "little",
-"p": 0.993,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan",
-"p": 0.966,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan,",
-"p": 0.955,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "my",
-"p": 0.9,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "little",
-"p": 0.993,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan",
-"p": 0.967,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan,",
-"p": 0.959,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "my",
-"p": 0.901,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "little",
-"p": 0.993,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan",
-"p": 0.969,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan,",
-"p": 0.962,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "my",
-"p": 0.902,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "little",
-"p": 0.993,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan",
-"p": 0.971,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan,",
-"p": 0.965,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "my",
-"p": 0.901,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "little",
-"p": 0.993,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan",
-"p": 0.972,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan,",
-"p": 0.968,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "my",
-"p": 0.9,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "little",
-"p": 0.993,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.8,
-"word": "Chan",
-"p": 0.973,
-"segment": 1
-},
-{
-"start": 82.8,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.97,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.899,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.993,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.974,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.972,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.896,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.993,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.975,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.974,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.893,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.993,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.976,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.976,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.89,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.993,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.976,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.977,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.885,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.993,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.978,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.978,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.882,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.993,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.979,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.979,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.877,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.979,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.979,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.873,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.979,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.98,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.87,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.98,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.98,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.864,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.981,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.981,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.86,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.982,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.981,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.856,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.982,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.983,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.853,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.982,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.983,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.848,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.983,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.985,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.845,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.984,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.985,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.841,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.984,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.986,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.839,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.985,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.987,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.835,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.985,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.987,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.833,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.986,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.988,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.829,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.986,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan,",
-"p": 0.989,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "my",
-"p": 0.827,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 82.94,
-"word": "Chan",
-"p": 0.987,
-"segment": 1
-},
-{
-"start": 82.94,
-"end": 83.76,
-"word": "Chan,",
-"p": 0.989,
-"segment": 1
-},
-{
-"start": 83.76,
-"end": 83.76,
-"word": "my",
-"p": 0.829,
-"segment": 1
-},
-{
-"start": 83.76,
-"end": 83.76,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 83.76,
-"end": 83.76,
-"word": "Chan",
-"p": 0.987,
-"segment": 1
-},
-{
-"start": 83.76,
-"end": 83.76,
-"word": "Chan,",
-"p": 0.99,
-"segment": 1
-},
-{
-"start": 83.76,
-"end": 83.76,
-"word": "my",
-"p": 0.826,
-"segment": 1
-},
-{
-"start": 83.76,
-"end": 83.76,
-"word": "little",
-"p": 0.992,
-"segment": 1
-},
-{
-"start": 83.76,
-"end": 83.76,
-"word": "Chan",
-"p": 0.988,
-"segment": 1
-},
-{
-"start": 83.76,
-"end": 83.78,
-"word": "Chan,",
+"end": 68.48,
+"word": "John,",
 "p": 0.991,
 "segment": 1
 },
 {
-"start": 83.78,
-"end": 83.78,
-"word": "my",
-"p": 0.825,
-"segment": 1
-}
-],
-"plain": [
-{
-"start": 64.44,
-"end": 65.3,
-"word": "Chan",
-"p": 0.446,
+"start": 68.6,
+"end": 69.02,
+"word": "oi",
+"p": 0.999,
 "segment": 1
 },
 {
-"start": 65.3,
-"end": 65.68,
-"word": "-Ma",
-"p": 0.282,
-"segment": 1
-},
-{
-"start": 65.68,
-"end": 65.94,
-"word": "-Li",
-"p": 0.937,
-"segment": 1
-},
-{
-"start": 65.94,
-"end": 66.22,
-"word": "-Chan,",
-"p": 0.957,
-"segment": 1
-},
-{
-"start": 66.32,
-"end": 66.6,
-"word": "hoi",
-"p": 0.617,
-"segment": 1
-},
-{
-"start": 66.6,
-"end": 67.12,
-"word": "hoi,",
-"p": 0.784,
-"segment": 1
-},
-{
-"start": 67.12,
-"end": 67.4,
-"word": "Chan",
-"p": 0.99,
-"segment": 1
-},
-{
-"start": 67.4,
-"end": 68.04,
-"word": "-Ma",
-"p": 0.995,
-"segment": 1
-},
-{
-"start": 68.04,
-"end": 68.24,
-"word": "-Li",
-"p": 1.0,
-"segment": 1
-},
-{
-"start": 68.24,
-"end": 68.58,
-"word": "-Chan,",
-"p": 1.0,
-"segment": 1
-},
-{
-"start": 68.58,
-"end": 69.06,
-"word": "hoi",
-"p": 0.996,
-"segment": 1
-},
-{
-"start": 69.06,
+"start": 69.02,
 "end": 69.44,
-"word": "hoi,",
+"word": "oi",
 "p": 1.0,
 "segment": 1
 },
 {
 "start": 69.44,
-"end": 69.78,
-"word": "Chan",
+"end": 69.8,
+"word": "John",
+"p": 0.99,
+"segment": 1
+},
+{
+"start": 69.8,
+"end": 70.54,
+"word": "Marley",
+"p": 1.0,
+"segment": 1
+},
+{
+"start": 70.54,
+"end": 70.74,
+"word": "John",
 "p": 0.999,
 "segment": 1
 },
 {
-"start": 69.78,
-"end": 70.32,
-"word": "-Ma",
-"p": 0.998,
-"segment": 1
-},
-{
-"start": 70.32,
-"end": 70.52,
-"word": "-Li",
-"p": 1.0,
-"segment": 1
-},
-{
-"start": 70.52,
-"end": 70.8,
-"word": "-Chan,",
-"p": 1.0,
-"segment": 1
-},
-{
-"start": 70.88,
-"end": 71.58,
-"word": "where's",
-"p": 0.982,
-"segment": 1
-},
-{
-"start": 71.58,
+"start": 70.74,
 "end": 71.68,
-"word": "my",
-"p": 1.0,
-"segment": 1
+"word": "Where’s",
+"p": 0.266,
+"segment": 2
 },
 {
 "start": 71.68,
+"end": 71.72,
+"word": "my",
+"p": 0.945,
+"segment": 2
+},
+{
+"start": 71.72,
 "end": 72.18,
 "word": "little",
-"p": 0.998,
-"segment": 1
+"p": 0.964,
+"segment": 2
 },
 {
 "start": 72.18,
 "end": 72.74,
 "word": "baby",
-"p": 1.0,
-"segment": 1
+"p": 0.982,
+"segment": 2
 },
 {
 "start": 72.74,
-"end": 73.28,
+"end": 73.26,
 "word": "now?",
+"p": 0.961,
+"segment": 2
+},
+{
+"start": 73.6,
+"end": 74.28,
+"word": "John",
+"p": 0.975,
+"segment": 3
+},
+{
+"start": 74.28,
+"end": 75.12,
+"word": "Marley",
 "p": 0.999,
-"segment": 1
+"segment": 3
 },
 {
-"start": 73.66,
-"end": 74.26,
-"word": "Chan",
-"p": 0.991,
-"segment": 2
-},
-{
-"start": 74.26,
-"end": 74.94,
-"word": "-Ma",
-"p": 0.993,
-"segment": 2
-},
-{
-"start": 74.94,
-"end": 75.1,
-"word": "-Li",
-"p": 1.0,
-"segment": 2
-},
-{
-"start": 75.1,
-"end": 75.38,
-"word": "-Chan,",
-"p": 1.0,
-"segment": 2
+"start": 75.12,
+"end": 75.36,
+"word": "John,",
+"p": 0.995,
+"segment": 3
 },
 {
 "start": 75.48,
-"end": 75.78,
-"word": "hoi",
-"p": 0.999,
-"segment": 2
-},
-{
-"start": 75.78,
-"end": 76.3,
-"word": "hoi,",
+"end": 75.8,
+"word": "oi",
 "p": 1.0,
-"segment": 2
+"segment": 3
 },
 {
-"start": 76.3,
-"end": 76.72,
-"word": "Chan",
+"start": 75.8,
+"end": 76.34,
+"word": "oi",
 "p": 1.0,
-"segment": 2
+"segment": 3
 },
 {
-"start": 76.72,
-"end": 77.24,
-"word": "-Ma",
+"start": 76.34,
+"end": 76.62,
+"word": "John",
+"p": 0.993,
+"segment": 3
+},
+{
+"start": 76.62,
+"end": 77.42,
+"word": "Marley",
+"p": 1.0,
+"segment": 3
+},
+{
+"start": 77.42,
+"end": 77.72,
+"word": "John,",
 "p": 0.998,
-"segment": 2
-},
-{
-"start": 77.24,
-"end": 77.46,
-"word": "-Li",
-"p": 1.0,
-"segment": 2
-},
-{
-"start": 77.46,
-"end": 77.66,
-"word": "-Chan,",
-"p": 1.0,
-"segment": 2
+"segment": 3
 },
 {
 "start": 77.76,
-"end": 78.04,
-"word": "hoi",
+"end": 78.06,
+"word": "oi",
 "p": 1.0,
-"segment": 2
+"segment": 3
 },
 {
-"start": 78.04,
-"end": 78.54,
-"word": "hoi,",
+"start": 78.06,
+"end": 78.56,
+"word": "oi",
 "p": 1.0,
-"segment": 2
+"segment": 3
 },
 {
-"start": 78.54,
-"end": 78.98,
-"word": "Chan",
+"start": 78.56,
+"end": 78.94,
+"word": "John",
+"p": 0.996,
+"segment": 3
+},
+{
+"start": 78.94,
+"end": 79.66,
+"word": "Marley",
 "p": 1.0,
-"segment": 2
+"segment": 3
 },
 {
-"start": 78.98,
-"end": 79.5,
-"word": "-Ma",
-"p": 0.998,
-"segment": 2
+"start": 79.66,
+"end": 79.86,
+"word": "John",
+"p": 0.994,
+"segment": 3
 },
 {
-"start": 79.5,
-"end": 79.72,
-"word": "-Li",
-"p": 1.0,
-"segment": 2
+"start": 79.86,
+"end": 80.78,
+"word": "Where’s",
+"p": 0.969,
+"segment": 4
 },
 {
-"start": 79.72,
-"end": 79.92,
-"word": "-Chan,",
-"p": 1.0,
-"segment": 2
-},
-{
-"start": 80.02,
-"end": 80.7,
-"word": "where's",
-"p": 1.0,
-"segment": 2
-},
-{
-"start": 80.7,
-"end": 80.8,
+"start": 80.78,
+"end": 80.84,
 "word": "my",
-"p": 1.0,
-"segment": 2
+"p": 0.999,
+"segment": 4
 },
 {
-"start": 80.8,
-"end": 81.32,
+"start": 80.84,
+"end": 81.36,
 "word": "little",
-"p": 1.0,
-"segment": 2
+"p": 0.997,
+"segment": 4
 },
 {
-"start": 81.32,
-"end": 81.86,
+"start": 81.36,
+"end": 81.88,
 "word": "baby",
-"p": 1.0,
-"segment": 2
+"p": 0.999,
+"segment": 4
 },
 {
-"start": 81.86,
+"start": 81.88,
 "end": 82.36,
 "word": "now?",
-"p": 1.0,
-"segment": 2
+"p": 0.999,
+"segment": 4
+}
+],
+"plain": [
+{
+"start": 64.44,
+"end": 65.26,
+"word": "Chan,",
+"p": 0.445,
+"segment": 1
+},
+{
+"start": 65.32,
+"end": 65.98,
+"word": "Malie,",
+"p": 0.151,
+"segment": 1
+},
+{
+"start": 65.98,
+"end": 66.14,
+"word": "Chan,",
+"p": 0.965,
+"segment": 1
+},
+{
+"start": 66.32,
+"end": 66.6,
+"word": "hoi,",
+"p": 0.615,
+"segment": 1
+},
+{
+"start": 66.66,
+"end": 67.14,
+"word": "hoi",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 67.14,
+"end": 71.58,
+"word": "Where's",
+"p": 0.603,
+"segment": 1
+},
+{
+"start": 71.58,
+"end": 71.7,
+"word": "my",
+"p": 0.996,
+"segment": 1
+},
+{
+"start": 71.7,
+"end": 72.12,
+"word": "little",
+"p": 0.993,
+"segment": 1
+},
+{
+"start": 72.12,
+"end": 72.72,
+"word": "baby",
+"p": 0.998,
+"segment": 1
+},
+{
+"start": 72.72,
+"end": 73.26,
+"word": "now?",
+"p": 0.993,
+"segment": 1
 }
 ]
 }
 ]
 },
 "zh": {
-"settings": "0438699de6522a64",
+"settings": "97853360193da2f5",
 "language": "zh",
 "pieces": [
 {
@@ -3250,13 +2803,13 @@
 },
 {
 "start": 110.72,
-"end": 111.06,
+"end": 111.04,
 "word": "han",
-"p": 0.354,
+"p": 0.353,
 "segment": 1
 },
 {
-"start": 111.06,
+"start": 111.04,
 "end": 111.52,
 "word": "mal",
 "p": 0.009,
@@ -3278,174 +2831,104 @@
 },
 {
 "start": 111.76,
-"end": 112.02,
-"word": "an",
-"p": 0.91,
+"end": 112.04,
+"word": "an,",
+"p": 0.911,
 "segment": 1
 },
 {
-"start": 112.02,
+"start": 112.06,
 "end": 112.4,
-"word": "oice",
-"p": 0.0,
+"word": "ch",
+"p": 0.009,
 "segment": 1
 },
 {
 "start": 112.4,
-"end": 112.48,
-"word": "oi",
-"p": 0.0,
-"segment": 1
-},
-{
-"start": 112.48,
-"end": 112.48,
-"word": "o",
-"p": 0.037,
-"segment": 1
-},
-{
-"start": 112.48,
-"end": 112.98,
-"word": "i",
-"p": 0.937,
-"segment": 1
-},
-{
-"start": 112.98,
-"end": 113.08,
-"word": "),",
-"p": 0.0,
-"segment": 1
-},
-{
-"start": 113.08,
-"end": 113.22,
-"word": "ch",
-"p": 0.337,
-"segment": 1
-},
-{
-"start": 113.22,
-"end": 113.5,
+"end": 113.3,
 "word": "an",
-"p": 0.963,
+"p": 0.988,
 "segment": 1
 },
 {
-"start": 113.5,
-"end": 113.82,
+"start": 113.3,
+"end": 113.74,
 "word": "mal",
-"p": 0.851,
+"p": 0.986,
 "segment": 1
 },
 {
-"start": 113.82,
-"end": 114.02,
+"start": 113.74,
+"end": 113.98,
 "word": "i",
-"p": 0.999,
+"p": 1.0,
 "segment": 1
 },
 {
-"start": 114.02,
-"end": 114.16,
+"start": 113.98,
+"end": 114.12,
 "word": "ch",
-"p": 0.999,
+"p": 1.0,
 "segment": 1
 },
 {
-"start": 114.16,
-"end": 114.34,
+"start": 114.12,
+"end": 114.36,
 "word": "an",
 "p": 1.0,
 "segment": 1
 },
 {
-"start": 114.34,
-"end": 114.68,
-"word": "unemploy",
-"p": 0.003,
+"start": 114.36,
+"end": 115.06,
+"word": "Chan",
+"p": 0.0,
 "segment": 1
 },
 {
-"start": 114.68,
-"end": 115.18,
-"word": "ch",
-"p": 0.161,
-"segment": 1
-},
-{
-"start": 115.18,
-"end": 115.38,
-"word": "an",
-"p": 0.995,
-"segment": 1
-},
-{
-"start": 115.38,
-"end": 115.96,
+"start": 115.06,
+"end": 116.02,
 "word": "mal",
-"p": 0.575,
+"p": 0.987,
 "segment": 1
 },
 {
-"start": 115.96,
+"start": 116.02,
 "end": 116.2,
 "word": "i",
-"p": 0.997,
+"p": 1.0,
 "segment": 1
 },
 {
 "start": 116.2,
-"end": 116.32,
+"end": 116.3,
 "word": "ch",
-"p": 0.995,
+"p": 0.998,
 "segment": 1
 },
 {
-"start": 116.32,
-"end": 116.6,
-"word": "an",
-"p": 0.999,
+"start": 116.3,
+"end": 116.62,
+"word": "an,",
+"p": 1.0,
 "segment": 1
 },
 {
-"start": 116.6,
-"end": 117.1,
-"word": "unemploy",
-"p": 0.001,
-"segment": 1
-},
-{
-"start": 117.1,
-"end": 117.18,
-"word": "ch",
-"p": 0.684,
-"segment": 1
-},
-{
-"start": 117.18,
-"end": 117.18,
-"word": "an",
-"p": 0.999,
-"segment": 1
-},
-{
-"start": 117.18,
-"end": 117.18,
+"start": 116.62,
+"end": 117.12,
 "word": "我的",
-"p": 0.864,
+"p": 0.691,
 "segment": 1
 },
 {
-"start": 117.18,
-"end": 117.8,
+"start": 117.12,
+"end": 117.82,
 "word": "宝",
-"p": 0.586,
+"p": 0.593,
 "segment": 1
 },
 {
-"start": 117.8,
+"start": 117.82,
 "end": 118.14,
 "word": "贝",
 "p": 1.0,
@@ -3455,28 +2938,28 @@
 "start": 118.14,
 "end": 118.42,
 "word": "躲",
-"p": 0.906,
+"p": 0.887,
 "segment": 1
 },
 {
 "start": 118.42,
 "end": 118.6,
 "word": "哪",
-"p": 0.81,
+"p": 0.848,
 "segment": 1
 },
 {
 "start": 118.6,
 "end": 119.04,
 "word": "里",
-"p": 0.998,
+"p": 0.999,
 "segment": 1
 },
 {
 "start": 119.04,
 "end": 119.46,
 "word": "C",
-"p": 0.469,
+"p": 0.912,
 "segment": 2
 },
 {
@@ -3488,13 +2971,13 @@
 },
 {
 "start": 120.18,
-"end": 120.7,
+"end": 120.62,
 "word": "mal",
-"p": 0.999,
+"p": 1.0,
 "segment": 2
 },
 {
-"start": 120.7,
+"start": 120.62,
 "end": 120.8,
 "word": "i",
 "p": 1.0,
@@ -3509,132 +2992,104 @@
 },
 {
 "start": 120.92,
-"end": 121.2,
+"end": 121.26,
+"word": "an,",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 121.5,
+"end": 121.5,
+"word": "ch",
+"p": 0.919,
+"segment": 2
+},
+{
+"start": 121.5,
+"end": 122.52,
 "word": "an",
 "p": 1.0,
 "segment": 2
 },
 {
-"start": 121.2,
-"end": 121.58,
-"word": "eyebr",
-"p": 0.006,
+"start": 122.52,
+"end": 122.9,
+"word": "mal",
+"p": 1.0,
 "segment": 2
 },
 {
-"start": 121.58,
-"end": 121.7,
-"word": "oi",
-"p": 0.0,
-"segment": 2
-},
-{
-"start": 121.7,
-"end": 121.94,
-"word": "o",
-"p": 0.287,
-"segment": 2
-},
-{
-"start": 121.94,
-"end": 122.18,
+"start": 122.9,
+"end": 123.14,
 "word": "i",
-"p": 0.985,
+"p": 1.0,
 "segment": 2
 },
 {
-"start": 122.18,
-"end": 122.2,
-"word": "),",
-"p": 0.005,
-"segment": 2
-},
-{
-"start": 122.2,
-"end": 122.46,
+"start": 123.14,
+"end": 123.18,
 "word": "ch",
-"p": 0.996,
+"p": 1.0,
 "segment": 2
 },
 {
-"start": 122.46,
-"end": 122.58,
-"word": "an",
-"p": 0.996,
-"segment": 2
-},
-{
-"start": 122.58,
-"end": 123.02,
-"word": "adequ",
-"p": 0.003,
-"segment": 2
-},
-{
-"start": 123.02,
-"end": 123.3,
-"word": "ch",
-"p": 0.999,
-"segment": 2
-},
-{
-"start": 123.3,
+"start": 123.18,
 "end": 123.52,
 "word": "an",
-"p": 0.996,
+"p": 1.0,
 "segment": 2
 },
 {
 "start": 123.52,
-"end": 123.9,
-"word": "unemploy",
-"p": 0.132,
+"end": 124.48,
+"word": "Chan",
+"p": 0.806,
 "segment": 2
 },
 {
-"start": 123.9,
-"end": 124.54,
+"start": 124.48,
+"end": 125.2,
+"word": "mal",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 125.2,
+"end": 125.44,
+"word": "i",
+"p": 1.0,
+"segment": 2
+},
+{
+"start": 125.44,
+"end": 125.46,
 "word": "ch",
-"p": 0.984,
+"p": 1.0,
 "segment": 2
 },
 {
-"start": 124.54,
-"end": 124.54,
-"word": "an",
-"p": 0.997,
+"start": 125.46,
+"end": 125.74,
+"word": "an,",
+"p": 1.0,
 "segment": 2
 },
 {
-"start": 124.54,
-"end": 124.96,
-"word": "unemploy",
-"p": 0.032,
+"start": 125.74,
+"end": 126.22,
+"word": "我",
+"p": 0.001,
 "segment": 2
 },
 {
-"start": 124.96,
-"end": 125.52,
-"word": "ch",
-"p": 0.991,
+"start": 126.22,
+"end": 126.62,
+"word": "的",
+"p": 0.999,
 "segment": 2
 },
 {
-"start": 125.52,
-"end": 125.76,
-"word": "an",
-"p": 0.995,
-"segment": 2
-},
-{
-"start": 125.76,
-"end": 126.3,
-"word": "我的",
-"p": 0.666,
-"segment": 2
-},
-{
-"start": 126.3,
+"start": 126.62,
 "end": 127.0,
 "word": "宝",
 "p": 1.0,
@@ -3658,7 +3113,7 @@
 "start": 127.54,
 "end": 127.78,
 "word": "哪",
-"p": 0.991,
+"p": 0.982,
 "segment": 2
 },
 {

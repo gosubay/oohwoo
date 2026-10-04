@@ -1,6 +1,6 @@
 # HANDOFF — OohWoo
 
-Last updated: 2026-10-03 evening (SGT)
+Last updated: 2026-10-04 (SGT)
 
 ## Where things stand
 
@@ -19,27 +19,35 @@ Last updated: 2026-10-03 evening (SGT)
 - The game (Full song / Quick play, full screen, keep-awake) was committed and pushed by another session
   as `651e2fc`, with the first-pass charts. The second-pass charts are in `index.html`'s generated block.
 - Automatic checks, all passing: `validate_charts.py` OK; `build_charts.py --check` no differences;
-  `python tests/chart-builder.py` 65 fixtures; all `tests/*.cjs`.
+  `python tests/chart-builder.py` 67 fixtures; all `tests/*.cjs`.
 - Listening page <http://localhost:8080/tools/catalogue-listening.html> now plays **Singer + music** by
   default (it used to play the game's music-only track, which is why Galvin heard no singer).
 
+## Decided by Galvin on 2026-10-04 and implemented (not listening-verified)
+
+- **Xiao Yan Zi**: Full song now ends at 2:35 (fade 2:32-2:35) after the last scripted verse; the long
+  unscripted coda is not charted (186 notes, was 428).
+- **Chan Mali Chan**: the twelve "oi oi" backing shouts are left out of the chart and the lyric lines. The
+  first chorus (0:27-0:45) now has every "chan ma-li chan" word on its own note.
+- **Baby Shark**: "Let's go hunt" (0:54-1:03) and the Mandarin daddy / grandpa verses (1:28-1:36,
+  1:47-1:59) have no notes; the music keeps playing (226 notes, was 298).
+- **If You're Happy**: the two verses that are not sung were removed from its lyric sheet in the song file
+  (`lyrics_raw.txt`, the original Suno sheet, is unchanged because every song file is hash-bound to it).
+- **Twinkle**: the low dip after 睛 (1:09) is left out of the chart. Galvin chose "show but don't score";
+  the game has no such note type, so it is simply not charted.
+- Catalogue total after these changes: 4,674 notes. 67 builder fixtures and every `tests/*.cjs` pass.
+
 ## Unresolved passages for Galvin (each with a recommendation)
 
-1. **Xiao Yan Zi, 2:58 to the end (7:18)**: about 4.5 minutes of unscripted, ornamented singing after the
-   English verses (242 notes with no words). Recommend ending Full song at about 2:35.
-2. **Chan Mali Chan choruses (0:27-0:45, 1:04-1:30, 1:50-2:15)**: two voices at once; the melody reading
-   is unreliable. Recommend leaving the choruses out of scoring (music keeps playing, no notes to hit).
-3. **Baby Shark "Let's go hunt" (0:54-1:03) and the Mandarin 爸爸 / 爷爷 verses (1:28-1:36, 1:47-1:59)**:
-   sung in a low growl an octave down, pitch unsteady. Recommend leaving these out of scoring too.
-4. **Baby Shark Mandarin (1:11-2:08)**: the transcriber cannot hear the words, so about 60 syllables are
-   not placed on notes. Notes are charted; the words shown are approximate. Recommend accepting for now.
-5. **If You're Happy**: the lyric sheet's English verse 4 and Mandarin verse 8 are not in the recording.
-   Recommend removing them from the lyric sheet.
-6. **Two Tigers, 1:35**: the first 奇 of verse 4 is sung sharp while sliding up; charted as A3 like the
+1. **Chan Mali Chan, second and third chorus (1:05-1:23 and 1:50-2:10)**: "chan mali chan" is sung an
+   octave lower with a doubled voice, so the reader is unsure. The notes are now placed in the same register
+   as the first chorus (pitch classes as measured), but several notes and word positions there are still
+   approximate. Where the reading is confident it matches the first chorus exactly. Recommend: let Claude
+   use the first chorus's tune for the "chan mali chan" lines of these two choruses.
+2. **Baby Shark Mandarin (1:11-2:08)**: the transcriber cannot hear the words, so the words shown in the
+   remaining Mandarin verses are approximate. Recommend accepting for now.
+3. **Two Tigers, 1:35**: the first 奇 of verse 4 is sung sharp while sliding up; charted as A3 like the
    other three. Recommend keeping.
-7. **Twinkle, 1:09**: the low wordless note after 睛 is the singer's voice dipping to A3 (measured, steady
-   for 0.4 s). It was briefly removed on a misreading of Galvin's remark and restored. Recommend keeping
-   it out of scoring if it feels odd to play.
 
 ## Still imperfect, no decision needed (leads, not blockers)
 
@@ -53,7 +61,7 @@ Last updated: 2026-10-03 evening (SGT)
 
 ## Waiting on Galvin
 
-- Normal playtesting feedback, and the seven decisions above (each has a default if he says nothing).
+- Normal playtesting feedback, and the three passages above (each has a default if he says nothing).
 - Still open from before: keep/retire the scoring lab; live singing review of Steps 6 and 7.
 
 ## How it is built (2026-10-03 pipeline)

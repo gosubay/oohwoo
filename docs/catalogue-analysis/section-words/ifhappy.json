@@ -3,7 +3,7 @@
 "model": "large-v3",
 "blocks": {
 "en": {
-"settings": "c73f88764f932264",
+"settings": "f37f4dd6620c5dd6",
 "language": "en",
 "pieces": [
 {
@@ -713,7 +713,7 @@
 "end": 53.0,
 "hinted": [
 {
-"start": 36.81,
+"start": 36.25,
 "end": 37.25,
 "word": "If",
 "p": 0.878,
@@ -770,86 +770,86 @@
 },
 {
 "start": 39.03,
-"end": 39.55,
-"word": "hurray,",
-"p": 0.507,
-"segment": 1
-},
-{
-"start": 39.61,
-"end": 40.11,
-"word": "if",
-"p": 0.042,
+"end": 39.61,
+"word": "hooray!",
+"p": 0.874,
 "segment": 1
 },
 {
 "start": 40.11,
+"end": 40.65,
+"word": "If",
+"p": 0.146,
+"segment": 1
+},
+{
+"start": 40.65,
 "end": 41.21,
 "word": "you're",
-"p": 0.998,
+"p": 1.0,
 "segment": 1
 },
 {
 "start": 41.21,
-"end": 41.55,
+"end": 41.53,
 "word": "happy",
 "p": 1.0,
 "segment": 1
 },
 {
-"start": 41.55,
+"start": 41.53,
 "end": 41.87,
 "word": "and",
-"p": 0.998,
+"p": 1.0,
 "segment": 1
 },
 {
 "start": 41.87,
-"end": 42.11,
+"end": 42.09,
 "word": "you",
-"p": 0.999,
+"p": 1.0,
 "segment": 1
 },
 {
-"start": 42.11,
-"end": 42.31,
+"start": 42.09,
+"end": 42.27,
 "word": "know",
 "p": 1.0,
 "segment": 1
 },
 {
-"start": 42.31,
+"start": 42.27,
 "end": 42.51,
-"word": "it,",
-"p": 0.997,
+"word": "it",
+"p": 1.0,
 "segment": 1
 },
 {
-"start": 42.55,
-"end": 42.73,
+"start": 42.51,
+"end": 42.67,
 "word": "shout",
-"p": 0.975,
+"p": 0.004,
 "segment": 1
 },
 {
-"start": 42.73,
-"end": 43.23,
-"word": "hurray",
-"p": 0.998,
+"start": 42.67,
+"end": 43.35,
+"word": "hooray!",
+"p": 0.989,
 "segment": 1
 },
 {
-"start": 43.89,
-"end": 44.41,
+"start": 44.19,
+"end": 44.53,
 "word": "If",
-"p": 0.248,
+"p": 0.966,
 "segment": 2
 },
 {
-"start": 44.41,
+"start": 44.53,
 "end": 44.93,
 "word": "you're",
-"p": 1.0,
+"p": 0.997,
 "segment": 2
 },
 {
@@ -863,91 +863,91 @@
 "start": 45.29,
 "end": 45.59,
 "word": "and",
-"p": 0.999,
+"p": 0.997,
 "segment": 2
 },
 {
 "start": 45.59,
 "end": 45.81,
 "word": "you",
-"p": 1.0,
+"p": 0.999,
 "segment": 2
 },
 {
 "start": 45.81,
-"end": 46.07,
+"end": 46.09,
 "word": "know",
-"p": 1.0,
+"p": 0.999,
 "segment": 2
 },
 {
-"start": 46.07,
-"end": 46.33,
+"start": 46.09,
+"end": 46.31,
 "word": "it,",
-"p": 0.999,
+"p": 0.994,
 "segment": 2
 },
 {
 "start": 46.33,
 "end": 46.49,
 "word": "then",
-"p": 0.992,
+"p": 0.951,
 "segment": 2
 },
 {
 "start": 46.49,
 "end": 46.69,
 "word": "your",
-"p": 0.993,
+"p": 0.984,
 "segment": 2
 },
 {
 "start": 46.69,
 "end": 46.95,
 "word": "face",
-"p": 0.999,
-"segment": 2
-},
-{
-"start": 46.95,
-"end": 47.15,
-"word": "will",
 "p": 0.997,
 "segment": 2
 },
 {
-"start": 47.15,
-"end": 47.45,
-"word": "surely",
-"p": 1.0,
+"start": 46.95,
+"end": 47.13,
+"word": "will",
+"p": 0.985,
 "segment": 2
 },
 {
-"start": 47.45,
+"start": 47.13,
+"end": 47.43,
+"word": "surely",
+"p": 0.998,
+"segment": 2
+},
+{
+"start": 47.43,
 "end": 47.83,
 "word": "show",
-"p": 1.0,
+"p": 0.998,
 "segment": 2
 },
 {
 "start": 47.83,
-"end": 48.13,
-"word": "it",
-"p": 0.984,
+"end": 48.17,
+"word": "it,",
+"p": 0.96,
 "segment": 2
 },
 {
-"start": 48.13,
-"end": 48.37,
+"start": 48.19,
+"end": 48.33,
 "word": "If",
-"p": 0.641,
+"p": 0.598,
 "segment": 2
 },
 {
-"start": 48.37,
+"start": 48.33,
 "end": 48.63,
 "word": "you're",
-"p": 1.0,
+"p": 0.996,
 "segment": 2
 },
 {
@@ -961,48 +961,48 @@
 "start": 48.95,
 "end": 49.25,
 "word": "and",
-"p": 1.0,
+"p": 0.996,
 "segment": 2
 },
 {
 "start": 49.25,
 "end": 49.45,
 "word": "you",
-"p": 1.0,
+"p": 0.998,
 "segment": 2
 },
 {
 "start": 49.45,
-"end": 49.71,
+"end": 49.69,
 "word": "know",
-"p": 1.0,
+"p": 0.999,
 "segment": 2
 },
 {
-"start": 49.71,
-"end": 49.89,
-"word": "it,",
-"p": 1.0,
+"start": 49.69,
+"end": 49.87,
+"word": "it",
+"p": 0.996,
 "segment": 2
 },
 {
-"start": 49.95,
-"end": 50.07,
+"start": 49.87,
+"end": 50.05,
 "word": "shout",
-"p": 0.999,
+"p": 0.471,
 "segment": 2
 },
 {
-"start": 50.07,
-"end": 50.63,
-"word": "hurray",
-"p": 0.999,
+"start": 50.05,
+"end": 50.65,
+"word": "hooray!",
+"p": 0.995,
 "segment": 2
 }
 ],
 "plain": [
 {
-"start": 36.25,
+"start": 36.85,
 "end": 37.25,
 "word": "If",
 "p": 0.879,
@@ -1069,252 +1069,252 @@
 "end": 40.45,
 "word": "Hooray!",
 "p": 0.925,
-"segment": 1
+"segment": 2
 },
 {
 "start": 40.49,
 "end": 40.93,
 "word": "If",
 "p": 0.994,
-"segment": 2
+"segment": 3
 },
 {
 "start": 40.93,
 "end": 41.23,
 "word": "you're",
 "p": 1.0,
-"segment": 2
+"segment": 3
 },
 {
 "start": 41.23,
 "end": 41.53,
 "word": "happy",
 "p": 1.0,
-"segment": 2
+"segment": 3
 },
 {
 "start": 41.53,
 "end": 41.87,
 "word": "and",
 "p": 1.0,
-"segment": 2
+"segment": 3
 },
 {
 "start": 41.87,
 "end": 42.09,
 "word": "you",
 "p": 1.0,
-"segment": 2
+"segment": 3
 },
 {
 "start": 42.09,
 "end": 42.29,
 "word": "know",
 "p": 1.0,
-"segment": 2
+"segment": 3
 },
 {
 "start": 42.29,
 "end": 42.51,
 "word": "it,",
 "p": 1.0,
-"segment": 2
+"segment": 3
 },
 {
 "start": 42.55,
 "end": 42.73,
 "word": "shout",
 "p": 0.988,
-"segment": 2
+"segment": 3
 },
 {
 "start": 42.73,
 "end": 43.35,
 "word": "hooray!",
 "p": 0.999,
-"segment": 2
+"segment": 3
 },
 {
 "start": 43.61,
 "end": 44.13,
 "word": "Hooray!",
 "p": 1.0,
-"segment": 2
+"segment": 4
 },
 {
 "start": 44.33,
 "end": 44.71,
 "word": "If",
 "p": 0.999,
-"segment": 3
+"segment": 5
 },
 {
 "start": 44.71,
 "end": 44.97,
 "word": "you're",
 "p": 1.0,
-"segment": 3
+"segment": 5
 },
 {
 "start": 44.97,
 "end": 45.31,
 "word": "happy",
 "p": 1.0,
-"segment": 3
+"segment": 5
 },
 {
 "start": 45.31,
 "end": 45.59,
 "word": "and",
 "p": 1.0,
-"segment": 3
+"segment": 5
 },
 {
 "start": 45.59,
 "end": 45.81,
 "word": "you",
 "p": 1.0,
-"segment": 3
+"segment": 5
 },
 {
 "start": 45.81,
 "end": 46.09,
 "word": "know",
 "p": 1.0,
-"segment": 3
+"segment": 5
 },
 {
 "start": 46.09,
 "end": 46.31,
 "word": "it,",
 "p": 1.0,
-"segment": 3
+"segment": 5
 },
 {
 "start": 46.33,
 "end": 46.51,
 "word": "then",
 "p": 0.988,
-"segment": 3
+"segment": 5
 },
 {
 "start": 46.51,
 "end": 46.69,
 "word": "your",
 "p": 0.997,
-"segment": 3
+"segment": 5
 },
 {
 "start": 46.69,
 "end": 46.95,
 "word": "face",
 "p": 1.0,
-"segment": 3
+"segment": 5
 },
 {
 "start": 46.95,
 "end": 47.15,
 "word": "will",
 "p": 0.999,
-"segment": 3
+"segment": 5
 },
 {
 "start": 47.15,
 "end": 47.43,
 "word": "surely",
 "p": 1.0,
-"segment": 3
+"segment": 5
 },
 {
 "start": 47.43,
 "end": 47.83,
 "word": "show",
 "p": 1.0,
-"segment": 3
+"segment": 5
 },
 {
 "start": 47.83,
 "end": 48.13,
 "word": "it",
 "p": 0.991,
-"segment": 3
+"segment": 5
 },
 {
 "start": 48.13,
 "end": 48.37,
 "word": "If",
 "p": 0.611,
-"segment": 4
+"segment": 6
 },
 {
 "start": 48.37,
 "end": 48.63,
 "word": "you're",
 "p": 1.0,
-"segment": 4
+"segment": 6
 },
 {
 "start": 48.63,
 "end": 48.95,
 "word": "happy",
 "p": 1.0,
-"segment": 4
+"segment": 6
 },
 {
 "start": 48.95,
 "end": 49.25,
 "word": "and",
 "p": 1.0,
-"segment": 4
+"segment": 6
 },
 {
 "start": 49.25,
 "end": 49.45,
 "word": "you",
 "p": 1.0,
-"segment": 4
+"segment": 6
 },
 {
 "start": 49.45,
 "end": 49.71,
 "word": "know",
 "p": 1.0,
-"segment": 4
+"segment": 6
 },
 {
 "start": 49.71,
 "end": 49.89,
 "word": "it,",
 "p": 1.0,
-"segment": 4
+"segment": 6
 },
 {
 "start": 49.95,
 "end": 50.07,
 "word": "shout",
 "p": 1.0,
-"segment": 4
+"segment": 6
 },
 {
 "start": 50.07,
 "end": 50.65,
 "word": "hooray!",
 "p": 1.0,
-"segment": 4
+"segment": 6
 },
 {
 "start": 50.95,
 "end": 51.47,
 "word": "Hooray!",
 "p": 0.999,
-"segment": 4
+"segment": 7
 }
 ]
 }
 ]
 },
 "zh": {
-"settings": "2119f96ea109292b",
+"settings": "cf725ad97c155c2c",
 "language": "zh",
 "pieces": [
 {
@@ -2297,66 +2297,66 @@
 "segment": 1
 },
 {
-"start": 91.77,
-"end": 92.09,
+"start": 92.05,
+"end": 92.29,
 "word": "真",
-"p": 0.44,
+"p": 0.38,
 "segment": 1
 },
 {
-"start": 92.09,
+"start": 92.29,
 "end": 92.39,
 "word": "棒!",
-"p": 0.825,
+"p": 0.541,
 "segment": 1
 },
 {
-"start": 92.55,
+"start": 92.57,
 "end": 92.79,
-"word": "）",
-"p": 0.315,
+"word": "（",
+"p": 0.627,
 "segment": 1
 },
 {
-"start": 92.81,
+"start": 93.01,
 "end": 93.03,
 "word": "如果",
-"p": 0.866,
+"p": 0.594,
 "segment": 1
 },
 {
 "start": 93.03,
 "end": 93.27,
 "word": "开",
-"p": 0.621,
+"p": 0.328,
 "segment": 1
 },
 {
 "start": 93.27,
 "end": 93.57,
 "word": "心",
-"p": 0.999,
+"p": 0.998,
 "segment": 1
 },
 {
 "start": 93.57,
 "end": 93.87,
 "word": "你就",
-"p": 0.989,
+"p": 0.986,
 "segment": 1
 },
 {
 "start": 93.87,
-"end": 94.29,
+"end": 94.25,
 "word": "跟我",
-"p": 0.998,
+"p": 0.997,
 "segment": 1
 },
 {
-"start": 94.29,
+"start": 94.25,
 "end": 94.61,
 "word": "大",
-"p": 0.995,
+"p": 0.992,
 "segment": 1
 },
 {
@@ -2370,39 +2370,39 @@
 "start": 94.93,
 "end": 95.21,
 "word": "喊",
-"p": 0.997,
+"p": 0.996,
 "segment": 1
 },
 {
 "start": 95.21,
-"end": 95.51,
+"end": 95.49,
 "word": "（",
-"p": 0.96,
+"p": 0.969,
 "segment": 1
 },
 {
-"start": 95.51,
+"start": 95.73,
 "end": 95.77,
 "word": "真",
-"p": 0.74,
+"p": 0.995,
 "segment": 1
 },
 {
 "start": 95.77,
-"end": 96.09,
+"end": 96.11,
 "word": "棒!",
 "p": 0.998,
 "segment": 1
 },
 {
-"start": 96.23,
-"end": 96.47,
-"word": "）",
-"p": 0.743,
+"start": 96.27,
+"end": 96.45,
+"word": "（",
+"p": 0.979,
 "segment": 1
 },
 {
-"start": 96.69,
+"start": 96.75,
 "end": 96.75,
 "word": "如果",
 "p": 0.991,
@@ -2412,21 +2412,21 @@
 "start": 96.75,
 "end": 97.05,
 "word": "感",
-"p": 0.995,
+"p": 0.993,
 "segment": 1
 },
 {
 "start": 97.05,
 "end": 97.31,
 "word": "到",
-"p": 0.986,
+"p": 0.987,
 "segment": 1
 },
 {
 "start": 97.31,
 "end": 97.47,
 "word": "开",
-"p": 0.988,
+"p": 0.987,
 "segment": 1
 },
 {
@@ -2440,7 +2440,7 @@
 "start": 97.79,
 "end": 98.09,
 "word": "你就",
-"p": 0.973,
+"p": 0.972,
 "segment": 1
 },
 {
@@ -2452,13 +2452,13 @@
 },
 {
 "start": 98.49,
-"end": 98.85,
+"end": 98.83,
 "word": "大",
 "p": 0.993,
 "segment": 1
 },
 {
-"start": 98.85,
+"start": 98.83,
 "end": 99.31,
 "word": "声",
 "p": 0.997,
@@ -2473,20 +2473,20 @@
 },
 {
 "start": 99.85,
-"end": 100.09,
+"end": 100.11,
 "word": "（",
-"p": 0.961,
+"p": 0.984,
 "segment": 1
 },
 {
-"start": 100.09,
-"end": 100.21,
+"start": 100.23,
+"end": 100.23,
 "word": "如果",
-"p": 0.987,
+"p": 0.97,
 "segment": 1
 },
 {
-"start": 100.21,
+"start": 100.23,
 "end": 100.67,
 "word": "开",
 "p": 0.997,
@@ -2536,30 +2536,30 @@
 },
 {
 "start": 102.67,
-"end": 102.93,
+"end": 102.91,
 "word": "（",
-"p": 0.972,
+"p": 0.988,
 "segment": 1
 },
 {
-"start": 103.19,
+"start": 103.17,
 "end": 103.19,
 "word": "真",
-"p": 0.962,
+"p": 0.997,
 "segment": 1
 },
 {
 "start": 103.19,
 "end": 103.51,
 "word": "棒!",
-"p": 0.992,
+"p": 0.998,
 "segment": 1
 },
 {
 "start": 103.69,
 "end": 103.99,
 "word": "（",
-"p": 0.843,
+"p": 0.961,
 "segment": 1
 }
 ],

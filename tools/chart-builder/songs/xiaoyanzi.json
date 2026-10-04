@@ -74,38 +74,6 @@
      ]
     }
    ]
-  },
-  {
-   "id": "coda",
-   "language": "zh",
-   "start": 175.0,
-   "end": 438.4,
-   "verses": [
-    {
-     "label": "Verse 1",
-     "lines": [
-      "小燕子，穿花衣，",
-      "年年春天来这里。",
-      "我问燕子你为啥来？",
-      "燕子说：“这里的春天最美丽。”"
-     ]
-    },
-    {
-     "label": "Verse 2",
-     "lines": [
-      "小燕子，告诉你，",
-      "今年这里更美丽。",
-      "我们盖起了大工厂，",
-      "装上了新机器。",
-      "欢迎你，长期住在这里。"
-     ]
-    }
-   ],
-   "unscripted": {
-    "label": "Coda",
-    "partGap": 5.0,
-    "reason": "Unscripted coda after Verse 4 (175-438 s): fragmentary repeated \"小燕子…穿花衣\" chant heard consistently by all three transcription passes; not in lyrics_raw.txt. Charted as sung, lyrics from cross-pass agreement only."
-   }
   }
  ],
  "sections": [],
@@ -115,5 +83,10 @@
  "exclusions": [],
  "review": {
   "song": "owner-listening-pending"
+ },
+ "fullEnd": {
+  "end": 155.0,
+  "fade": 3.0,
+  "reason": "Galvin, 2026-10-04: the vocal part is about 2:30; cut the song short. The last scripted verse (Verse 4) ends at 150.7 s; from 178 s to 438 s the recording is an unscripted, ornamented chant that is not in the lyric sheet. That coda is no longer charted and the music fades out 152-155 s."
  }
 }

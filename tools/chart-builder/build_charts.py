@@ -132,6 +132,7 @@ def apply_measured_note_edits(key, spec, notes):
       split  the note is two sung notes; cut it at 'at' (optionally 'midi': [first, second])
       join   the note is part of a neighbour ('into': 'next' or 'previous'), e.g. a slide
       midi   the note's pitch, 'old' -> 'new'
+      syllable  a syllable starts on this note (the matcher may not make it the continuation of the one before)
     A locator that matches no note is an error, never a guess."""
     for edit in spec.get('measuredNoteEdits', []):
         hits = [i for i, n in enumerate(notes) if abs(n['onset'] - edit['onset']) < 0.006]
@@ -164,6 +165,9 @@ def apply_measured_note_edits(key, spec, notes):
             k = i + 1                                # the same held pitch, cut at loudness dips, changes with it
             while k < len(notes) and notes[k].get('cut') and notes[k]['midi'] == edit['old']:
                 notes[k]['midi'] = edit['new']; notes[k]['median'] = float(edit['new']); k += 1
+        elif edit['op'] == 'syllable':
+            n['starts'] = True
+            n.setdefault('measuredEdits', []).append(record)
         else:
             raise StaleSource(f"{key}: unknown measured-note edit {edit['op']!r}")
     return notes
@@ -289,6 +293,25 @@ PASSING_MAX = 0.12       # a pitch this short between two notes is the voice pas
 TAIL_MAX = 0.12          # a piece this short at the end of a syllable is its release, not a note
 JOIN_GAP = 0.15          # the same pitch again after a shorter silence, inside one syllable, is one held note
 
+def fold_register(atoms, start, end, into):
+    """Two voices an octave apart (or one voice dropping an octave) make the reader jump between octaves.
+    Inside [start, end) every measured pitch keeps its pitch class and is placed in the register 'into'
+    ([low, high] midi, at most an octave wide). Pieces of one held note that only differed by the
+    octave they were read in become one piece again."""
+    lo, hi = into; out = []
+    for a in atoms:
+        if not start <= a['onset'] < end: out.append(a); continue
+        m = a['midi']
+        while m < lo: m += 12
+        while m > hi: m -= 12
+        a = {**a, 'median': round(a['median'] + m - a['midi'], 2), 'midi': m, **({'foldedFrom': a['midi']} if m != a['midi'] else {})}
+        prev = out[-1] if out else None
+        if prev and start <= prev['onset'] and prev['midi'] == m and a['onset'] - prev['end'] <= 0.05 and not a.get('cut') \
+                and ('foldedFrom' in a or 'foldedFrom' in prev):
+            prev['end'] = a['end']; prev['foldedFrom'] = prev.get('foldedFrom', a.get('foldedFrom')); continue
+        out.append(a)
+    return out
+
 def atom_boundary(atoms, i):
     """What the recording shows between atom i-1 and atom i: a silence, a pitch change, or a loudness dip."""
     if i == 0: return 'silence', 9.0
@@ -328,6 +351,7 @@ def align_atoms(atoms, units):
     typical = min(0.7, max(0.2, sum(dur) / max(1, m)))    # a usual syllable length in this section
     def cont(i):                                     # atom i continues the syllable before it (or is wordless)
         kind, v = bound[i]
+        if atoms[i].get('starts'): return 6.0        # reviewed in the song file: a syllable starts here
         if kind == 'silence': return 2.5 if v >= BREATH else 1.6 if v >= 0.10 else 0.8
         if kind == 'dip': return 0.15 + 1.1 * (1 - v['depth']) + (0.3 if v['colour'] >= SOFT_COLOUR else 0)
         if scoop[i - 1]: return 0.15                 # the atom before slid into this one
@@ -415,7 +439,7 @@ def align_atoms(atoms, units):
                 prev['end'] = p['end']; del pieces[k]
             else: k += 1
         for k, p in enumerate(pieces):
-            for field in ('cut', 'edge', 'glide', 'slides'): p.pop(field, None)
+            for field in ('cut', 'edge', 'glide', 'slides', 'starts'): p.pop(field, None)
             notes.append(p); owned.append(group_units if k == 0 else [])
     return notes, owned, sorted(dropped)
 
@@ -713,8 +737,26 @@ def build(key):
 
     notes = absorb_glides([dict(n) for n in cache['notes']], raw, tune)
     atoms = apply_measured_note_edits(key, spec, [dict(a) for a in atom_cache(key)['atoms']])
+    # stretches the song file leaves out of the chart (backing shouts, a dip that is not part of the tune)
+    excluded = []
+    for ex in spec.get('exclusions', []):
+        inside = lambda n: ex['start'] <= n['onset'] < ex['end']
+        if not any(inside(a) for a in atoms):
+            raise StaleSource(f"{key}: exclusion {ex['start']}-{ex['end']} s contains no measured note; re-review it")
+        excluded += [{'t': round(a['onset'], 2), 'end': round(a['end'], 2), 'midi': a['midi'], 'section': None,
+                      'reason': ex['reason']} for a in atoms if inside(a)]
+        notes = [n for n in notes if not (inside(n) or ex['start'] <= (n['onset'] + n['end']) / 2 < ex['end'])]
+        atoms = [a for a in atoms if not inside(a)]
     sections, absent = find_sections(key, spec, notes, words)
-    events = []; excluded = []; dropped_units = []; issues = []
+    for sec in sections:
+        # a word heard only in a left-out stretch (and not in the lyric sheet) is that left-out sound
+        sec['tokens'] = [t for t in sec.get('tokens') or [] if not (t['status'] == 'extra-sung' and any(
+            ex['start'] - 0.35 <= t['start'] < ex['end'] + 0.35 for ex in spec.get('exclusions', [])))]
+        ov = spec.get('sectionOverrides', {}).get(sec['id'], {})
+        if ov.get('foldInto') and not sec.get('absent'):
+            atoms = fold_register(atoms, sec['start'], sec['end'], ov['foldInto'])
+            sec['octaveFold'] = {'into': ov['foldInto'], 'reason': ov['foldReason']}
+    events = []; dropped_units = []; issues = []
     twinkle = approved_twinkle() if key == 'twinkle' else None
     section_out = []
     # first pass: every lyric-aware section on its own, to learn what each line's syllables are sung on
@@ -953,6 +995,12 @@ def make_modes(key, spec, events, sections, phrases, base, natural_end, twinkle)
     full_level = {'start': 0, 'melodyStart': events[0]['t'], 'melodyEnd': events[-1]['end'],
                   'fadeStart': round(max(events[-1]['end'] + 0.05, natural_end - 0.4), 2), 'end': natural_end,
                   'ending': 'recording plays to its own ending; 0.4 s guard fade'}
+    cut = spec.get('fullEnd')                        # the recording goes on long after the last charted verse
+    if cut:
+        if not events[-1]['end'] + 0.5 <= cut['end'] <= natural_end:
+            raise StaleSource(f"{key}: fullEnd {cut['end']} s is not between the last note and the end of the recording")
+        full_level.update(fadeStart=round(max(events[-1]['end'] + 0.05, cut['end'] - cut.get('fade', 2.5)), 2), end=cut['end'],
+                          ending='deliberate fade after the last sung verse: ' + cut['reason'])
     if full_level['fadeStart'] >= full_level['end']: full_level['fadeStart'] = round(full_level['end'] - 0.05, 2)
     modes = {'full': mode(0, len(events) - 1, full_level, 'Full song', 'every located sung section; see sections')}
     quick = spec.get('quick') or {}

@@ -288,6 +288,8 @@ def align(notes, units):
 
 # ---------------------------------------------------------------- lyric-aware notes from atoms
 CLEAR_EDGE = 0.60        # a pitch change across a loudness dip at least this deep starts a syllable (slides measured 0.68-1.0)
+LEGATO_SHARE = 0.4       # two syllables on one held note when the other verses sing both on that pitch
+SLIDE_ONLY = 3.0         # a syllable alone on a short slide-like pitch that no other verse sings there
 SISTER_COST = 0.5        # a syllable landing on a pitch that the same line's syllable has in no other verse
 PASSING_MAX = 0.12       # a pitch this short between two notes is the voice passing through
 TAIL_MAX = 0.12          # a piece this short at the end of a syllable is its release, not a note
@@ -320,7 +322,7 @@ def atom_boundary(atoms, i):
     if atoms[i]['midi'] != atoms[i - 1]['midi']: return 'pitch', 0.0
     return 'dip', atoms[i].get('cut') or {'depth': 0.3, 'colour': 0.0}      # a hole in the voicing is a clear re-attack
 
-def align_atoms(atoms, units):
+def align_atoms(atoms, units, sister_slides=False):
     """Decide which atoms start a syllable and which continue one, for a whole section at once.
     The syllable count, the transcript times and an even-rhythm preference choose among the boundaries the
     recording offers; a boundary is never invented. Returns (notes, owned, dropped) like align()."""
@@ -346,6 +348,19 @@ def align_atoms(atoms, units):
             min(atoms[i - 1]['midi'], land['midi']) < atoms[i]['midi'] < max(atoms[i - 1]['midi'], land['midi'])
     scoop = [slides_into_next(i) for i in range(n)]
     landing_midi = [atoms[i + 1]['midi'] if scoop[i] else atoms[i]['midi'] for i in range(n)]
+    # a short pitch running straight into a longer one a step or so away: a slide by its shape, but it may
+    # also be a real short note; the other verses decide (see take)
+    def slide_shape(i):
+        if not sister_slides or i + 1 >= n or dur[i] > SCOOP_MAX or bound[i + 1][0] != 'pitch': return False
+        step = atoms[i + 1]['midi'] - atoms[i]['midi']; long = landing(i + 1)['end'] - atoms[i + 1]['onset']
+        if not (1 <= step <= 3 and long > dur[i]): return False
+        return atoms[i].get('glide', 0.0) >= 0.25 or long >= 3 * dur[i]     # still moving up, or a brief lead-in
+    slidey = [slide_shape(i) for i in range(n)]
+    def off_tune(i, j):                              # the other verses sing syllable j on another pitch than atom i
+        want = units[j].get('expect')
+        return want is not None and (atoms[i]['midi'] - want) % 12 != 0
+    def sister_slide(i, j):                          # ...and on the pitch this atom slides into
+        return slidey[i] and off_tune(i, j) and (landing(i + 1)['midi'] - units[j]['expect']) % 12 == 0
     for i in range(n - 1):
         if scoop[i] and breath[i]: breath[i + 1] = True
     typical = min(0.7, max(0.2, sum(dur) / max(1, m)))    # a usual syllable length in this section
@@ -369,7 +384,8 @@ def align_atoms(atoms, units):
         if kind == 'dip': k += max(0.0, 0.5 * v['depth'] - (0.2 if v['colour'] >= SOFT_COLOUR else 0))
         if dur[i] < 0.10 and not scoop[i]: k += 1.0  # too short to be a syllable of its own
         want = units[j].get('expect')                # the other verses sing this syllable of the line on another pitch
-        if want is not None and (landing_midi[i] - want) % 12 != 0: k += SISTER_COST
+        if want is not None and (landing_midi[i] - want) % 12 != 0 and not sister_slide(i, j): k += SISTER_COST
+        if c == 1 and i and j and slidey[i - 1] and off_tune(i - 1, j - 1): k += SLIDE_ONLY
         if c and not breath[i]:                      # the syllable before would be much shorter than usual
             before = atoms[i]['onset'] - atoms[i - c]['onset']
             if before < 0.6 * typical: k += 0.8 * np.log2(0.6 * typical / max(0.03, before)) + 0.2
@@ -392,9 +408,15 @@ def align_atoms(atoms, units):
                     k = v + (1.2 if units[j]['weak'] else 5.0); mv = 4
                     if i > 0 and c:
                         d = dur[i - 1]
-                        share = v + (0.8 if d >= 0.9 else 1.3 if d >= 0.6 else 2.2 if d >= 0.4 else 4.0) + \
-                            tcost(i - 1, j) + (1.5 if units[j]['lineStart'] else 0)
+                        base = 0.8 if d >= 0.9 else 1.3 if d >= 0.6 else 2.2 if d >= 0.4 else 4.0
                         want = units[j].get('expect')
+                        # the syllable before slid into this held note (the other verses confirm the slide)
+                        # and they sing this syllable on the same pitch: two syllables run together on the
+                        # one held note, with no new attack to find
+                        if want is not None and j and c == 2 and i >= 2 and sister_slide(i - 2, j - 1) and \
+                                d >= max(0.3, 1.5 * typical) and (atoms[i - 1]['midi'] - want) % 12 == 0:
+                            base = min(base, LEGATO_SHARE)
+                        share = v + base + tcost(i - 1, j) + (1.5 if units[j]['lineStart'] else 0)
                         if want is not None and (atoms[i - 1]['midi'] - want) % 12 != 0: share += SISTER_COST
                         if share < k: k = share; mv = 3
                     if k < cost[i, j + 1, c]: cost[i, j + 1, c] = k; back[i, j + 1, c] = (mv, c)
@@ -406,6 +428,8 @@ def align_atoms(atoms, units):
         elif mv == 3: own[i - 1].insert(0, j - 1); j -= 1
         else: dropped.append(j - 1); j -= 1
         c = pc
+    for i in range(n - 1):                           # the other verses confirm this short pitch is a slide
+        if started[i] and not started[i + 1] and own[i] and sister_slide(i, own[i][0]): scoop[i] = True
     for i in range(n - 1):                           # a slide belongs to the syllable of the note it lands on
         if scoop[i] and not started[i] and started[i + 1]:
             started[i], own[i], started[i + 1], own[i + 1] = True, own[i + 1], False, []
@@ -800,7 +824,22 @@ def build(key):
             else:
                 units = wordless_units(sec, words, sec['block'], sec['start'], sec['end'])
             if sec['tokens'] and sec['kind'] == 'sung' and units and USE_ATOMS:
-                snotes, owned, dropped = align_atoms([a for a in atoms if sec['start'] <= a['onset'] < sec['end']], units)
+                satoms = [a for a in atoms if sec['start'] <= a['onset'] < sec['end']]
+                snotes, owned, dropped = align_atoms(satoms, units)
+                if USE_SISTERS and any(u.get('expect') is not None for u in units):
+                    # second reading: short lead-in pitches that the other verses do not sing are slides.
+                    # Kept only when it brings the verse closer to the others and moves no lyric line.
+                    alt = align_atoms(satoms, units, sister_slides=True)
+                    def off(result):
+                        pitch = {u: n['midi'] for n, own in zip(result[0], result[1]) for u in own}
+                        return sum(1 for u, unit in enumerate(units) if unit.get('expect') is not None and u in pitch
+                                   and (pitch[u] - unit['expect']) % 12)
+                    def line_starts(result):
+                        return [round(n['onset'], 2) for n, own in zip(result[0], result[1]) if any(units[u]['lineStart'] for u in own)]
+                    if off(alt) < off((snotes, owned)) and len(alt[2]) <= len(dropped) and \
+                            line_starts(alt) == line_starts((snotes, owned)):
+                        snotes, owned, dropped = alt
+                        sec['sisterSlides'] = True
             else:
                 owned, dropped = align(snotes, units) if units else ([[] for _ in snotes], [])
                 snotes, owned = merge_scoops(snotes, owned)

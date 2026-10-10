@@ -359,6 +359,20 @@
     opacity: 0;
     transition: opacity 0.3s;
   }
+
+  #typingPanel { position:fixed;z-index:50;left:50%;transform:translateX(-50%);width:min(520px,100%);height:145px;box-sizing:border-box;padding:8px 10px;background:#10392f;color:white;font:14px system-ui; }
+  #typingPanel[hidden] { display:none; }
+  #typingWords { display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;height:30px;align-items:center;font-weight:700;font-size:clamp(12px,3.6vw,19px);white-space:nowrap; }
+  #typingWords .current { color:#ffe66d;border-bottom:2px solid #ffe66d; }
+  #typingWords .prepared { color:#72f5b2;background:#235944;border-radius:4px; }
+  body.typing-playing .hud-stat:not(:first-child) { display:none; }
+  #typingWords .accepted { color:#72f5b2; }
+  #typingWords .wrong { color:#ff6969; }
+  #typingInput { box-sizing:border-box;width:100%;height:34px;font-size:16px;margin:4px 0;border:2px solid #72ca9f;border-radius:6px;background:#08271f;color:white; }
+  .typing-actions { display:flex;gap:8px;align-items:center;font-size:11px; }
+  .typing-actions button { padding:5px;border:1px solid #72ca9f;border-radius:5px;color:white;background:#245b45; }
+  body.typing-playing #pitchMeter, body.typing-playing #noteHint, body.typing-playing #micStatus, body.typing-playing #pitchFeedback, body.typing-playing #btnMicToggleHud, body.typing-playing #micIndicator, body.typing-playing #karaokeBar { display:none!important; }
+  body.typing-results #completeComfortMessage, body.typing-results #screenComplete .range-actions { display:none; }
 </style>
 </head>
 <body>
@@ -457,6 +471,12 @@
             <option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option>
           </select>
         </label>
+      </div>
+      <div id="controlModeRow" role="group" aria-label="Control mode" style="pointer-events:all;text-align:center;margin-bottom:8px;">
+        <button id="btnSingMode" class="btn secondary" aria-pressed="true" style="padding:6px 18px;font-size:16px;">Sing</button>
+        <button id="btnTypeMode" class="btn secondary" aria-pressed="false" style="padding:6px 18px;font-size:16px;">Type</button>
+        <div id="typingSpeedRow" hidden><label for="typingSpeed">Music speed </label><select id="typingSpeed"><option value="0.75">Slow · 0.75×</option><option value="1" selected>Medium · 1×</option><option value="1.25">Fast · 1.25×</option></select></div>
+        <div id="typingAvailability" style="font-size:12px;color:#b7e4c7;" aria-live="polite"></div>
       </div>
       <div id="playModeRow" role="radiogroup" aria-label="How much of the song to play" style="margin:0 0 10px;text-align:center;pointer-events:all;">
         <button id="btnModeFull" class="btn secondary mode-choice" data-mode="full" role="radio" style="padding:6px 14px;font-size:14px;">Full song</button>
@@ -563,6 +583,12 @@
   </div>
 </div>
 <div id="safeProbe"></div>
+<section id="typingPanel" hidden aria-label="Type the song lyrics">
+  <div id="typingWords" aria-label="Current word and next four words"></div>
+  <label for="typingInput">Prepare words before their beat · spaces optional</label>
+  <input id="typingInput" type="text" inputmode="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-describedby="typingWords typingMessage" placeholder="Tap here to type">
+  <div class="typing-actions"><button id="typingPause">Pause</button><button id="typingRestart">Restart</button><button id="typingMenu">Song select</button><span id="typingMessage" role="status"></span></div>
+</section>
 
 <script id="twinkle-chart" type="application/json">
 {
@@ -1394,6 +1420,317 @@ const TWINKLE_NOTES = TWINKLE_CHART.notes.map(n => ({
   ratio: [0, 0.14, 0.29, 0.43, 0.57, 0.71, 0.86, 1][[0, 2, 4, 5, 7, 9, 11, 12].indexOf(n.midi - TWINKLE_CHART.tonicMidi)]
 }));
 
+// TYPE PROTOTYPE — grouping is outside generated chart blocks. Hyphenated syllables
+// in the approved reference chart join into whole words; every note occurs exactly once.
+let controlMode = 'sing', typingRun = null, typingAudio = null;
+let typingComposition = false, typingCompositionTail = null;
+const TYPING_RULES = 'oohwoo_type_twinkle-reference_en_fixed-v2';
+let typingSpeed = 1;
+const TYPING_LEAD_BEATS = 5; // configurable count-in; at least four real seconds at Fast
+function typingBestKey(speed) { return `${TYPING_RULES}_${speed}`; }
+function typingWordsFromChart() {
+  const words = [];
+  let notes = [], text = '';
+  TWINKLE_NOTES.forEach(note => {
+    notes.push(note); text += note.lyric.replace(/-$/, '');
+    if (!note.lyric.endsWith('-')) {
+      words.push({text, match:text.toLowerCase().replace(/[^a-z]/g,''), notes});
+      notes = []; text = '';
+    }
+  });
+  if (notes.length || words.length !== 32 || words.flatMap(w=>w.notes).length !== 42)
+    throw new Error('Typing verse grouping does not match the approved chart.');
+  return words;
+}
+function updateTypingSelection() {
+  const supported = SONGS[carouselIndex]?.id === 'twinkle';
+  document.getElementById('btnPlaySong').disabled = !supported;
+  document.getElementById('btnPlaySong').textContent = supported ? '▶ Type English verse' : 'Typing unavailable';
+  document.getElementById('typingAvailability').textContent = 'English verse prototype · no pipes or losing · 100 per note + 25 near-beat bonus';
+  document.getElementById('playModeInfo').textContent = 'Type plays the complete reference English verse (32 words / 42 notes).';
+  document.getElementById('comfortMessage').textContent = 'Prepare up to five words ahead. 100 per note · +25 for finishing within 0.3s of its beat. No microphone needed.';
+  for (const id of ['btnModeFull','btnModeQuick','btnTooHigh','btnTooLow','btnResetComfort']) document.getElementById(id).disabled = true;
+}
+function setControlMode(mode) {
+  if (state === 'playing' || isStartingSong || !['sing','type'].includes(mode)) return;
+  stopTypingGame(); stopPreview(); controlMode = mode;
+  document.body?.classList.remove('typing-results');
+  document.getElementById('btnSingMode').setAttribute?.('aria-pressed', String(mode === 'sing'));
+  document.getElementById('btnTypeMode').setAttribute?.('aria-pressed', String(mode === 'type'));
+  document.getElementById('typingAvailability').textContent = '';
+  if (mode === 'type') {
+    songCategory = 'all'; carouselIndex = SONGS.findIndex(s=>s.id === 'twinkle');
+    for (const b of document.querySelectorAll('.song-category')) b.setAttribute('aria-pressed',String(b.dataset.category==='all'));
+  }
+  // Hide singing setup controls in Type; keep the two independent mode choices visible.
+  document.getElementById('scoringMode').parentElement && (document.getElementById('scoringMode').parentElement.hidden = mode === 'type');
+  document.getElementById('guideEnabled').parentElement && (document.getElementById('guideEnabled').parentElement.parentElement.hidden = mode === 'type');
+  document.getElementById('typingSpeedRow').hidden = mode !== 'type';
+  renderCarousel();
+}
+function createTypingRun(speed = typingSpeed) {
+  const words = typingWordsFromChart(), first = words[0].notes[0].t;
+  const lead = TYPING_LEAD_BEATS / speed;
+  const notes = [];
+  words.forEach((word, wi) => {
+    word.deadline = lead + (word.notes[0].t-first)/speed;
+    word.status = 'waiting';
+    word.notes.forEach(note => notes.push({note, wi, at:lead+(note.t-first)/speed,
+      end:lead+(note.end-first)/speed, judged:false}));
+  });
+  return {words, notes, speed, lead, end:notes.at(-1).end+.4, clock:0, anchor:0,
+    word:0, windowStart:0, letter:0, accepted:0, errors:0, score:0, collected:0,
+    done:false, launching:true, flashUntil:0, effects:[], fallbackAt:performance.now()};
+}
+// Audio time is the single run clock. A silent fallback uses monotonic real time.
+function typingNow() {
+  const r=typingRun;
+  if (!r || paused || r.launching) return r?.clock || 0;
+  return typingAudio ? Math.max(0,typingAudio.ctx.currentTime-r.anchor)
+    : r.clock+(performance.now()-r.fallbackAt)/1000;
+}
+function scheduleTypingMelody(r, a) {
+  r.anchor=a.ctx.currentTime;
+  for (const n of r.notes) {
+    const at=r.anchor+n.at, length=Math.max(.025,Math.min(n.end-n.at,
+      (r.notes[r.notes.indexOf(n)+1]?.at ?? n.end)-n.at)*.92);
+    a.oscillator.frequency.setValueAtTime(hzOf(n.note.midi),at);
+    a.gain.gain.setValueAtTime(0,at);
+    a.gain.gain.linearRampToValueAtTime(.20,at+Math.min(.008,length*.2));
+    a.gain.gain.setValueAtTime(.16,at+length*.65);
+    a.gain.gain.linearRampToValueAtTime(0,at+length);
+  }
+}
+function startTypingGame() {
+  if (currentSong !== 'twinkle') return;
+  stopTypingGame(); stopPreview(); stopBackingTrack();
+  const r=typingRun=createTypingRun(); paused=false; state='playing';
+  birdY=H/2; birdVY=0; birdX=BIRD_X_KEY; birdAngle=0;
+  bgOffset1=bgOffset2=bgOffset3=0; heldKeys.clear(); keyRatio=-1; touchHeld=false;
+  document.body?.classList.remove('typing-results'); document.body?.classList.add('typing-playing');
+  showScreen('game');
+  document.getElementById('typingPanel').hidden=false;
+  document.getElementById('typingPause').textContent='Pause';
+  const input=document.getElementById('typingInput'); input.value=''; input.disabled=true;
+  typingComposition=false; typingCompositionTail=null;
+  const ready=()=>{
+    if(typingRun!==r) return;
+    r.launching=false; r.fallbackAt=performance.now(); input.disabled=false;
+    renderTypingWords(); input.focus?.({preventScroll:true});
+  };
+  try {
+    const ac=new (window.AudioContext || window.webkitAudioContext)({latencyHint:'interactive'});
+    const oscillator=ac.createOscillator(),gain=ac.createGain();
+    oscillator.type='triangle'; gain.gain.value=0;
+    oscillator.connect(gain);gain.connect(ac.destination);oscillator.start();
+    const a=typingAudio={ctx:ac,oscillator,gain};
+    ac.resume().then(()=>{
+      if(typingRun!==r) return;
+      scheduleTypingMelody(r,a); ready();
+      if(paused) ac.suspend().catch(()=>{});
+      else if(document.visibilityState==='hidden') toggleTypingPause(true);
+    }).catch(()=>{
+      if(typingRun!==r) return;
+      ac.close().catch(()=>{}); typingAudio=null; r.silent=true; ready();
+    });
+  } catch (_) {r.silent=true;ready();}
+  renderTypingWords();updateTypingHUD();resizeGame();
+  lastTime=null;if(animId)cancelAnimationFrame(animId);
+  animId=requestAnimationFrame(gameLoop);
+}
+function stopTypingGame() {
+  const hadRun=Boolean(typingRun);
+  if(hadRun && animId) {cancelAnimationFrame(animId);animId=null;}
+  if(typingAudio) {
+    try {typingAudio.oscillator.stop();typingAudio.oscillator.disconnect();typingAudio.gain.disconnect();} catch(_) {}
+    typingAudio.ctx.close().catch(()=>{});typingAudio=null;
+  }
+  typingRun=null;typingComposition=false;typingCompositionTail=null;paused=false;
+  document.getElementById('typingPanel').hidden=true;
+  document.getElementById('typingInput').blur?.();
+  document.body?.classList.remove('typing-playing');
+  if(hadRun)resizeGame();
+}
+function advanceTyping(now) {
+  const r=typingRun;if(!r || r.done)return;
+  r.clock=now;r.fallbackAt=performance.now();
+  // Equality belongs to the player: a word expires strictly AFTER its onset.
+  while(r.windowStart<r.words.length && r.words[r.windowStart].deadline<now) {
+    const w=r.words[r.windowStart];if(w.status==='waiting')w.status='missed';
+    r.windowStart++;
+  }
+  const old=r.word;
+  r.word=r.windowStart;
+  while(r.word<Math.min(r.words.length,r.windowStart+5) && r.words[r.word].status!=='waiting')r.word++;
+  if(old!==r.word)r.letter=0;
+  for(const n of r.notes) {
+    if(n.judged || n.at>now)continue;
+    // At the exact deadline leave an unprepared note open for same-timestamp input.
+    if(n.at===now && r.words[n.wi].status==='waiting')continue;
+    n.judged=true;
+    if(r.words[n.wi].status==='prepared') {
+      r.score+=100;r.collected++;
+      if(now-n.at<.35)r.effects.push({at:now,y:typingNoteY(n.note)});
+    }
+  }
+  if(now>=r.end)r.done=true;
+}
+function acceptTypingText(text, now=typingNow()) {
+  const r=typingRun;if(!r || paused || r.done || r.launching)return;
+  const old=r.word, partial=r.letter;
+  advanceTyping(now);
+  // A delayed commit for an expired partial word must not damage its successor.
+  if(partial && old!==r.word) {renderTypingWords();return;}
+  for(const letter of text.toLowerCase()) {
+    if(!/[\p{L}\p{N}]/u.test(letter))continue;
+    if(r.word>=Math.min(r.words.length,r.windowStart+5))break;
+    const word=r.words[r.word];
+    if(letter!==word.match[r.letter]) {r.errors++;r.flashUntil=now+.18;continue;}
+    r.accepted++;r.letter++;
+    if(r.letter!==word.match.length)continue;
+    word.status='prepared';word.preparedAt=now;
+    if(word.deadline-now<=.3+1e-9)r.score+=25;
+    r.word++;r.letter=0;
+    while(r.word<Math.min(r.words.length,r.windowStart+5) && r.words[r.word].status!=='waiting')r.word++;
+  }
+  advanceTyping(now);renderTypingWords();updateTypingHUD();
+}
+function renderTypingWords() {
+  const r=typingRun;if(!r)return;
+  document.getElementById('typingWords').innerHTML=r.words.slice(r.windowStart,r.windowStart+5).map((w,i)=>{
+    const current=r.windowStart+i===r.word;let chars=0;
+    return `<span class="${w.status==='prepared'?'prepared':current?'current':''}">`+[...w.text].map(c=>{
+      const past=/[a-z]/i.test(c) && chars++<r.letter;
+      return `<span class="${current && past?'accepted':current && r.clock<r.flashUntil?'wrong':''}">${c}</span>`;
+    }).join('')+'</span>';
+  }).join('');
+  const ready=r.word>=Math.min(r.words.length,r.windowStart+5);
+  document.getElementById('typingMessage').textContent=paused?'Paused — resume when ready.':r.launching?'Starting sound…':
+    `${r.silent?'Silent mode · ':''}${r.clock<r.lead?`Count-in ${Math.ceil(r.lead-r.clock)} · prepare now. `:''}${ready?'Ready ✓ Listen for the next words.':'Type ahead · green words are ready.'}`;
+}
+function updateTypingHUD() {
+  const r=typingRun;if(!r)return;
+  scoreDisplay.textContent=String(r.score);scoreDisplay.title='100 per collected note + 25 near-beat word bonus';
+  document.getElementById('songProgress').value=Math.min(1,Math.max(0,(r.clock-r.lead)/(r.end-r.lead)));
+  document.getElementById('songTimer').textContent=`${r.collected}/42 notes · ${r.speed}×`;
+}
+function typingStats(r) {
+  const duration=Math.max(0,Math.min(r.clock,r.end)-r.lead)*1000;
+  return {accuracy:r.accepted+r.errors?100*r.accepted/(r.accepted+r.errors):0,
+    wpm:duration? r.accepted/5/(duration/60000):0,duration};
+}
+function finishTypingGame() {
+  const r=typingRun;if(!r || !r.done)return;
+  const stats=typingStats(r);let best=r.score;
+  try {best=Math.max(r.score,Number(localStorage.getItem(typingBestKey(r.speed)))||0);localStorage.setItem(typingBestKey(r.speed),String(best));}catch(_){}
+  document.getElementById('completeScore').textContent=String(r.score);
+  document.getElementById('performanceReport').innerHTML=`Twinkle · English verse prototype · ${r.speed}×<br>${r.collected}/42 notes collected<br>Typing accuracy ${stats.accuracy.toFixed(1)}% · ${stats.wpm.toFixed(1)} WPM<br>WPM: accepted characters ÷ 5 per active song minute;<br>count-in and pauses excluded, including prepared letters.<br>Best at this speed: ${best}`;
+  state='complete';showScreen('complete');document.body?.classList.add('typing-results');
+}
+function toggleTypingPause(force) {
+  const r=typingRun;if(!r || r.done)return;
+  const wanted=typeof force==='boolean'?force:!paused;if(wanted===paused && !r.resuming)return;
+  const serial=r.pauseSerial=(r.pauseSerial||0)+1;
+  if(wanted) {
+    r.resuming=false;
+    r.clock=typingNow();r.fallbackAt=performance.now();paused=true;
+    typingAudio?.ctx.suspend().then(()=>{
+      if(typingRun===r && paused && serial===r.pauseSerial)r.clock=Math.max(0,typingAudio.ctx.currentTime-r.anchor);
+    }).catch(()=>{});
+  } else {
+    r.resuming=true;
+    const resume=()=>{if(typingRun!==r || serial!==r.pauseSerial)return;paused=false;r.fallbackAt=performance.now();lastTime=null;
+      r.resuming=false;
+      document.getElementById('typingPause').textContent='Pause';renderTypingWords();
+      document.getElementById('typingInput').focus?.({preventScroll:true});};
+    if(typingAudio)typingAudio.ctx.resume().then(resume).catch(()=>{if(typingRun===r)r.resuming=false;});else resume();
+  }
+  document.getElementById('typingPause').textContent=paused?'Resume':'Pause';renderTypingWords();
+}
+function typingNoteY(note) {return 200+(1-note.ratio)*450;}
+function typingNoteX(n,r) {
+  // Show the opening notes during the count-in; every note crosses from the right.
+  return birdX+(n.at-r.clock)*(W-80-birdX)/r.lead;
+}
+function typingFrame(ts) {
+  const r=typingRun;if(!r)return;
+  if(!paused && !r.launching && typingAudio && typingAudio.ctx.state!=='running')toggleTypingPause(true);
+  const dt=lastTime===null?0:Math.max(0,Math.min(.05,(ts-lastTime)/1000));lastTime=ts;
+  if(!paused && !r.launching) {
+    advanceTyping(typingNow());gameTime=r.clock;birdWingPhase+=dt*10;
+    bgOffset1+=dt*8;bgOffset2+=dt*16;bgOffset3+=dt*28;
+    const next=r.notes.find(n=>n.at>=r.clock && r.words[n.wi].status==='prepared' && n.at-r.clock<1.2);
+    const previous=birdY,target=next?typingNoteY(next.note):birdY+Math.sin(r.clock*3)*6;
+    // Bounded exponential pursuit from the actual current position; never snap to a note.
+    const move=Math.max(-260*dt,Math.min(260*dt,(target-birdY)*(1-Math.exp(-6*dt))));
+    birdY=Math.max(190,Math.min(660,birdY+move));
+    birdAngle=Math.max(-.35,Math.min(.35,(birdY-previous)*.035));
+    r.effects=r.effects.filter(e=>r.clock-e.at<.35);
+    renderTypingWords();updateTypingHUD();
+  }
+  drawBackground();
+  ctx.save();ctx.strokeStyle='#b7e4c7';ctx.globalAlpha=.35;
+  ctx.beginPath();ctx.moveTo(birdX,175);ctx.lineTo(birdX,680);ctx.stroke();ctx.restore();
+  for(const n of r.notes) {
+    const x=typingNoteX(n,r),y=typingNoteY(n.note);
+    if(x<-30 || x>W+30 || (n.judged && r.words[n.wi].status==='prepared'))continue;
+    ctx.save();ctx.globalAlpha=r.words[n.wi].status==='prepared'?1:.35;
+    ctx.fillStyle='#ffe66d';ctx.beginPath();ctx.arc(x,y,13,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#604708';ctx.font='bold 18px system-ui';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('♪',x,y);ctx.restore();
+    if(r.words[n.wi].status==='prepared') {ctx.save();ctx.strokeStyle='#72f5b2';ctx.lineWidth=3;ctx.beginPath();ctx.arc(x,y,16,0,Math.PI*2);ctx.stroke();ctx.restore();}
+  }
+  for(const e of r.effects) {
+    ctx.save();ctx.globalAlpha=1-(r.clock-e.at)/.35;ctx.strokeStyle='#ffe66d';ctx.lineWidth=3;
+    ctx.beginPath();ctx.moveTo(birdX,birdY);ctx.lineTo(birdX,e.y);ctx.stroke();
+    ctx.beginPath();ctx.arc(birdX,e.y,12+(r.clock-e.at)*65,0,Math.PI*2);ctx.stroke();ctx.restore();
+  }
+  drawBird(birdX,birdY,birdAngle);
+  if(r.done) {finishTypingGame();return;}
+  animId=requestAnimationFrame(gameLoop);
+}
+function resizeTypingGame() {
+  const v=window.visualViewport, width=v?.width??window.innerWidth, height=v?.height??window.innerHeight;
+  const fit=fitGame(width,Math.max(120,height-145),safeInsets());
+  wrapper.style.transform=`scale(${fit.scale})`; wrapper.style.left=`${fit.left+(v?.offsetLeft||0)}px`; wrapper.style.top=`${fit.top+(v?.offsetTop||0)}px`;
+  document.getElementById('typingPanel').style.top=`${(v?.offsetTop||0)+Math.max(0,height-145)}px`;
+}
+function installTypingControls() {
+  const input=document.getElementById('typingInput');
+  document.getElementById('typingSpeed').addEventListener('change',e=>{const speed=Number(e.target.value);if([.75,1,1.25].includes(speed))typingSpeed=speed;});
+  document.getElementById('btnSingMode').addEventListener('click',()=>setControlMode('sing'));
+  document.getElementById('btnTypeMode').addEventListener('click',()=>setControlMode('type'));
+  document.getElementById('typingPause').addEventListener('click',()=>toggleTypingPause());
+  document.getElementById('typingRestart').addEventListener('click',startTypingGame);
+  document.getElementById('typingMenu').addEventListener('click',()=>{state='select';showScreen('select');renderCarousel();requestAnimationFrame(drawSelectBg);});
+  input.addEventListener('paste',e=>{e.preventDefault();document.getElementById('typingMessage').textContent='Type the letters yourself — paste is off.';});
+  input.addEventListener('drop',e=>e.preventDefault());
+  input.addEventListener('beforeinput',e=>{
+    if (['insertFromPaste','insertFromDrop','insertReplacementText'].includes(e.inputType)) {e.preventDefault();input.value='';}
+  });
+  input.addEventListener('compositionstart',()=>{typingComposition=true;typingCompositionTail=null;});
+  input.addEventListener('compositionend',e=>{
+    typingComposition=false; typingCompositionTail=e.data;
+    acceptTypingText(e.data||''); input.value='';
+  });
+  input.addEventListener('input',e=>{
+    if(typingComposition || e.isComposing) return;
+    if(e.inputType?.startsWith('delete') || /Paste|Drop|Replacement/.test(e.inputType||'')) {input.value='';return;}
+    if(typingCompositionTail!==null && /Composition/.test(e.inputType||'')) {typingCompositionTail=null;input.value='';return;}
+    typingCompositionTail=null;
+    acceptTypingText(input.value||e.data||''); input.value='';
+  });
+  // Only Escape is a typing shortcut. Letters, Space, Tab and browser shortcuts
+  // remain normal input/navigation and never reach the singing note controls.
+  document.addEventListener('keydown',e=>{
+    if(!typingRun || e.ctrlKey || e.metaKey || e.altKey || e.isComposing) return;
+    if(e.key==='Escape') {e.preventDefault();toggleTypingPause();}
+  });
+  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden') toggleTypingPause(true);});
+  window.addEventListener('blur',()=>toggleTypingPause(true));
+  window.visualViewport?.addEventListener('resize',resizeGame);
+  window.visualViewport?.addEventListener('scroll',()=>{if(typingRun)resizeGame();});
+}
+
 // Build schedule from notes using absolute timestamps (t = seconds from when singing starts).
 // introOffset shifts all notes forward to align with the MP3's instrumental intro.
 // Each coin spawns early enough to arrive at HIT_ZONE_X exactly at its t.
@@ -1434,6 +1771,7 @@ const screens = {
   pause: document.getElementById('screenPause'),
 };
 function showScreen(name) {
+  if (typingRun && !['game','pause'].includes(name)) stopTypingGame();
   Object.keys(screens).forEach(k => screens[k].classList.add('hidden'));
   screens[name].classList.remove('hidden');
   fsScreenName = name;
@@ -1981,6 +2319,7 @@ function adjustSongKey(delta) {
   stopPreview(); resetRegister(); updateComfortUI();
 }
 function updateComfortUI() {
+  if (controlMode === 'type') { updateTypingSelection(); return; }
   const key = SONGS[carouselIndex]?.id ?? currentSong;
   if (!SONG_DATA[key]) {
     document.getElementById('comfortMessage').textContent =
@@ -2513,6 +2852,7 @@ function drawJudgementFeedback() {
 }
 
 document.addEventListener('keydown', e => {
+  if (controlMode === 'type') return;
   if (e.code === 'F1') {
     e.preventDefault();
     const dbEl = document.getElementById('debugBox');
@@ -2642,6 +2982,7 @@ function updateKeyRatio() {
 }
 
 document.addEventListener('keydown', e => {
+  if (controlMode === 'type') return;
   const k = e.key;
   if (k in KEY_RATIOS) { e.preventDefault(); heldKeys.add(k); updateKeyRatio(); }
   if (e.code === 'Space') { e.preventDefault(); heldKeys.add('5'); updateKeyRatio(); } // space = mid G4
@@ -3068,6 +3409,7 @@ function drawHitZone() {
 }
 
 function gameLoop(ts) {
+  if (typingRun) { typingFrame(ts); return; }
   if (!lastTime) lastTime = ts;
   const dt = Math.min((ts - lastTime) / 1000, 0.05);
   lastTime = ts;
@@ -3421,6 +3763,7 @@ function stopPreview() {
 }
 
 function playPreview(songKey) {
+  if (controlMode === 'type') { stopPreview(); return; }
   stopPreview();
   const song = SONG_DATA[songKey];
   if (!song || (!song.audio && !song.scoreBased)) return;
@@ -3563,6 +3906,9 @@ function renderCarousel(direction) {
 }
 
 function carouselMeta(songKey) {
+  if (controlMode === 'type') return songKey === 'twinkle'
+    ? 'Typing prototype · English reference verse · 32 words · 42 melody notes'
+    : 'Sing mode only · typing unavailable';
   const entry = SONGS.find(song => song.id === songKey);
   if (entry?.unavailable) return entry.unavailable;
   const play = songPlay(songKey);
@@ -4556,6 +4902,7 @@ function setLaunchButtonLoading(button, loading) {
 }
 
 async function launchCurrentSong(button) {
+  if (controlMode === 'type') { startTypingGame(); return; }
   if (isStartingSong) return;
   isStartingSong = true;
   setLaunchButtonLoading(button, true);
@@ -4607,7 +4954,7 @@ document.getElementById('btnPlaySong').addEventListener('click', async (event) =
   const song = SONGS[carouselIndex];
   if (song.unavailable || !SONG_DATA[song.id]) return;
   stopPreview();
-  if (!micReady) initMic();
+  if (controlMode !== 'type' && !micReady) initMic();
   // Musical lanes accept any comfortable octave; range calibration is optional.
   currentSong = song.id;
   await launchCurrentSong(event.currentTarget);
@@ -4719,12 +5066,14 @@ function safeInsets() {
   return { top: px(style.paddingTop), right: px(style.paddingRight), bottom: px(style.paddingBottom), left: px(style.paddingLeft) };
 }
 function resizeGame() {
+  if (typingRun) { resizeTypingGame(); return; }
   const fit = fitGame(window.innerWidth, window.innerHeight, safeInsets());
   const wrapper = document.getElementById('gameWrapper');
   wrapper.style.transform = `scale(${fit.scale})`;
   wrapper.style.left = `${fit.left}px`;
   wrapper.style.top  = `${fit.top}px`;
 }
+installTypingControls();
 resizeGame();
 window.addEventListener('resize', resizeGame);
 window.addEventListener('orientationchange', () => setTimeout(resizeGame, 300));

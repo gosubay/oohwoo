@@ -23,7 +23,7 @@ const noop=()=>{};
 // ---- what each part contains
 {
   const {run}=gameHarness({mode:'full'});
-  const keys=Array.from(run('Object.keys(SONG_DATA)'));
+  const keys=Array.from(run('Object.keys(SONG_DATA).filter(key=>!SONG_DATA[key].scoreBased)'));
   for(const key of keys){
     const full=JSON.parse(run(`JSON.stringify(songPlay('${key}','full'))`));
     const quick=JSON.parse(run(`JSON.stringify(songPlay('${key}','quick'))`));

@@ -25,6 +25,11 @@ Our own recording only fixes #2. A modern composition is still not ours, even wh
 
 ## Adding a song — pipeline (unchanged)
 
+**Christmas practice exception, 2026-10-10:** Galvin chose score-based melody practice with
+locally generated piano-style audio for six Christmas carols. This is a separate practice
+route; see `docs/CAROL-PRACTICE.md` for checked-in score sources and conversion details.
+The original recording catalogue continues to follow the pipeline below.
+
 The game needs an MP3 for every song. Players hear it, and every pipe is timed to a timestamp in it.
 Notes still come from that recording (see "Song charts" in CLAUDE.md). A public-domain score
 (MusicXML/MIDI/ABC from Mutopia, IMSLP, abcnotation.com) is only a **reference** to flag wrong pitches,

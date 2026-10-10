@@ -1,7 +1,8 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const {gameHarness}=require('./game-harness.cjs');
 const {run,sandbox,element}=gameHarness();
-const keys=Array.from(run('Object.keys(SONG_DATA)'));
+// Original recording catalogue. Score-based carols are covered by song-categories.cjs.
+const keys=Array.from(run('Object.keys(SONG_DATA).filter(key=>!SONG_DATA[key].scoreBased)'));
 assert.equal(keys.length,22);
 // Every song is exercised in both Full song and Quick play.
 for(const mode of ['full','quick'])for(const key of keys){

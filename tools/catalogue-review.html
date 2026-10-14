@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OohWoo catalogue audio check</title>
+<style>body{background:#17312c;color:#edf6f2;font:15px system-ui;margin:24px}table{border-collapse:collapse}td,th{padding:8px;border-bottom:1px solid #45685a;text-align:left}a{color:#bde9ca}</style>
+<h1>Catalogue audio check</h1><p id="summary">Checking all backing files without playing audio…</p>
+<p><a href="../index.html">Play OohWoo</a></p>
+<table><thead><tr><th>Song</th><th>Notes</th><th>Playable ending</th><th>Recording duration</th><th>Check</th></tr></thead><tbody id="rows"></tbody></table>
+<iframe id="game" src="../index.html" title="Game data" style="display:none" onload="audit()"></iframe>
+<script>
+async function audit(){
+  const songs=document.getElementById('game').contentWindow.eval(`Object.entries(SONG_DATA).map(([key,s])=>({key,audio:s.audio,count:s.notes.length,end:(s.chart?.level??s.playLevel).end}))`);
+  const context=new OfflineAudioContext(1,1,44100);let passed=0;
+  for(const song of songs){
+    const row=document.createElement('tr');document.getElementById('rows').append(row);
+    try{
+      const response=await fetch('../'+song.audio);if(!response.ok)throw Error('Missing audio');
+      const buffer=await context.decodeAudioData(await response.arrayBuffer());
+      const ok=song.end<=buffer.duration;
+      if(ok)passed++;
+      row.innerHTML=`<td>${song.key}</td><td>${song.count}</td><td>${song.end.toFixed(2)}s</td><td>${buffer.duration.toFixed(2)}s</td><td>${ok?'PASS':'Ending exceeds recording'}</td>`;
+    }catch(error){row.innerHTML=`<td>${song.key}</td><td colspan="4">${error.message}</td>`;}
+    document.getElementById('summary').textContent=`${passed}/${songs.length} recordings passed; checking ${song.key}…`;
+  }
+  document.getElementById('summary').textContent=`Finished: ${passed}/${songs.length} recordings decode and cover their playable arrangements. Musical alignment still requires listening.`;
+}
+</script></html>

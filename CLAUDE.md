@@ -84,7 +84,9 @@ Tuned 2026-07-18 to fix sluggish/unresponsive bird movement. Constants live near
 - Current state, per-song table and unresolved regions: `docs/CATALOGUE-CORRECTION-REVIEW.md`
   (`docs/STEP9-CATALOGUE-REVIEW.md` is the superseded 2026-10-02 excerpt review).
 
-Rebuild commands (repository root; needs numpy, ffmpeg; Whisper only for the first command):
+Rebuild commands (repository root; needs numpy, praat-parselmouth and ffmpeg; Whisper only for the first command).
+The existing `C:/AI/GPT-SoVITS-v2pro-20250604/runtime/python.exe` supplies these Python dependencies;
+put its directory on PATH for ffmpeg. The default bundled Python may not include them.
 
 ```bash
 python tools/chart-builder/transcribe_sections.py   # only when a song file's sections/lyrics changed (cached)
@@ -97,9 +99,16 @@ python tools/chart-builder/report.py                 # refresh the review doc + 
 python tools/chart-builder/selfcheck.py              # every verse against its sister verses (add --lines for lyric lines)
 python tools/chart-builder/probe.py <key>            # evidence for one song: lines, raw notes, pitch, dips, transcript
 python tests/chart-builder.py                        # builder fixtures; then run every tests/*.cjs with node
+python tests/chart-refinement.py                     # consensus, attack, anchor and protection fixtures
 ```
 
-How notes and words are built (2026-10-03, second pass):
+How notes and words are built (second pass plus 2026-10-10 recording refinements):
+
+- `refine.py` measures note interiors with YIN, raw autocorrelation and Praat. At least two stable
+  readers must agree, with no stable dissent, before changing a pitch. Approved and explicit
+  arrangements are protected. Repeated-note boundaries move only to strong measured re-attacks.
+  Contradictory transcript anchors lose their timestamps, not their words. Short releases are not padded.
+  Evidence is stored under each chart's `refinement` and note `edits`; this never grants listening approval.
 
 - `atoms.py` cuts the singer stem wherever the recording shows any sign of a new note (silence, lasting
   pitch change, loudness dip). `align_atoms()` in `build_charts.py` then decides, per section, which atoms

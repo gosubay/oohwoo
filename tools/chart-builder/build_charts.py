@@ -13,8 +13,8 @@ Inputs (all hash-checked):
 Output: docs/catalogue-analysis/charts.json (then apply_to_game.py writes the game block).
 
 Every chart is a recording-based draft: status stays 'owner-listening-pending' until Galvin approves a
-section or song by ear in the song file. Numerical flags are review leads; no pitch is changed because of
-them. Pitch edits happen only through noteEdits / measuredNoteEdits in the song file, each with its evidence.
+section or song by ear. Explicit corrections are preserved. refine.py also applies conservative
+recording-supported repairs with per-note evidence; diagnostic flags alone never change pitches.
 """
 import argparse, copy, hashlib, json, os, re, sys
 import numpy as np
@@ -24,8 +24,9 @@ from notes_from_vocal import decode as decode_11k, pitch_track
 from acoustics import decode, envelope, dips, yin_track, interval_pitch, band_energies, colour_change
 from lyrics import reference_tokens, heard_tokens, reconcile, relation, CJK
 from atoms import atom_cache
+from refine import refine_events, refine_attacks, praat_track, normalize_anchors, VERSION as REFINEMENT_VERSION
 
-BUILDER = 'chart-builder 2026-10-03'
+BUILDER = 'chart-builder 2026-10-10'
 SONG_DIR = os.path.join(os.path.dirname(__file__), 'songs')
 WORDS = os.path.join(ROOT, 'docs', 'catalogue-analysis', 'section-words')
 OUT = os.path.join(ROOT, 'docs', 'catalogue-analysis', 'charts.json')
@@ -98,6 +99,7 @@ def section_units(tokens):
         units.append({'text': tok['text'], 'language': tok['language'], 'token': k, 'status': tok['status'],
                       'start': tok.get('start'), 'end': tok.get('end'), 'weak': weak, 'lineStart': tok['lineStart'],
                       'wordEnd': tok.get('wordEnd', True), 'line': (tok['verse'], tok['line'])})
+    normalize_anchors(units)
     return units
 
 def absorb_glides(notes, raw, tune):
@@ -569,7 +571,7 @@ def split_note(note, owned, units, env, spec):
     if k <= 1: return [(note['onset'], note['end'], owned, None)]
     a, b = note['onset'], note['end']
     found = []
-    for d in dips(env[0], env[1], a, b):
+    for d in dips(env[0], env[1], a, b, edge=.05, spacing=.07):
         d['colour'] = colour_change(spec, d['t'])
         if d['depth'] <= SPLIT_DEPTH or (d['depth'] <= SOFT_DEPTH and d['colour'] >= SOFT_COLOUR): found.append(d)
     expected = []
@@ -581,7 +583,8 @@ def split_note(note, owned, units, env, spec):
     pieces = []; start = a; group = [owned[0]]; attack = None
     for q in range(1, k):
         cut = picks[q - 1]
-        if cut and cut['t'] - start >= MIN_PIECE and b - cut['t'] >= MIN_PIECE:
+        minimum = .07 if cut and cut['depth'] <= .45 and cut['colour'] >= .10 else MIN_PIECE
+        if cut and cut['t'] - start >= minimum and b - cut['t'] >= minimum:
             pieces.append((start, cut['t'], group, attack)); start = cut['t']; group = [owned[q]]
             attack = {'source': 'measured attack', 't': round(cut['t'], 3), 'dipDepth': round(cut['depth'], 2),
                       'colourChange': round(cut['colour'], 3)}
@@ -913,14 +916,14 @@ def build(key):
     for e in events:
         if e['id'] in seen: e['id'] += 'b'
         seen[e['id']] = True
-    # very short blips get a singable length, never past the next note
+    # Preserve recorded releases. Padding a short note into silence demands
+    # that the player sing after the singer has stopped.
     for a, b in zip(events, events[1:] + [None]):
         limit = b['t'] if b else a['end'] + 1
-        if a['end'] - a['t'] < 0.16 and not a.get('source'):
-            a['playedEnd'] = round(min(a['t'] + 0.16, limit), 2)
-            a['measuredEnd'] = a['end']; a['end'] = a['playedEnd']; del a['playedEnd']
         if a['end'] > limit: a['end'] = round(limit, 2)
     apply_note_edits(key, spec, events)
+    refined_pitch = refine_events(events, spec, yin, raw, tune, praat_track(x16))
+    refined_attacks = refine_attacks(events, spec, env)
     for s in section_out:                            # edits may have removed notes: section indices follow the final list
         idx = [i for i, e in enumerate(events) if e['section'] == s['id']]
         if s.get('noteCount'): s.update(firstNote=idx[0] if idx else None, lastNote=idx[-1] if idx else None, noteCount=len(idx))
@@ -949,6 +952,9 @@ def build(key):
                     'wholeFileWords': {'path': 'docs/catalogue-analysis/words/' + spec['recording'] + '.json', 'sha256': legacy_sha},
                     'assets': spec['assets'], 'lyricReference': spec['lyricReference'],
                     **({'approvedTwinkle': twinkle['id']} if twinkle else {})},
+        'refinement': {'method': REFINEMENT_VERSION, 'pitchCorrections': refined_pitch, 'attackCorrections': refined_attacks,
+            'lyricAnchorRepairs': [{'section':sid, **u['anchorRepair']} for sid,(units,_) in prepared.items()
+                                   for u in units if u.get('anchorRepair')]},
         'recordingSeconds': round(cache['duration'], 2), 'playableSeconds': playable, 'naturalEnd': natural_end,
         'tuningSemitones': round(tune, 2), 'keyTonic': NAMES[tonic_pc], 'keySetByHand': key in KEY_OVERRIDES or bool(twinkle),
         'displayBaseMidi': int(base), 'sections': section_out, 'absentSections': [
@@ -1181,6 +1187,7 @@ def main():
             moved = [i for i in bi if i in ai and json.dumps(ai[i], sort_keys=True) != json.dumps(bi[i], sort_keys=True)]
             print(f'   removed {len(gone)} added {len(new)} changed {len(moved)} ' + ' '.join((gone + new + moved)[:8]))
         print('no differences' if not changed else f'{len(changed)} chart(s) would change; nothing written (--check)')
+        if changed: sys.exit(1)
         return
     json.dump(charts, open(OUT, 'w', encoding='utf-8', newline='\n'), ensure_ascii=False, indent=1)
     print('wrote', OUT)

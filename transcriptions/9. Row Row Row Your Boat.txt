@@ -1,0 +1,156 @@
+============================================================
+SONG: 9. Row Row Row Your Boat
+============================================================
+Duration: 53.4s
+BPM: 99.4
+Key: D major
+
+Beat | Time  | Note | Degree | Ratio
+-----|-------|------|--------|------
+    0 |  0.56s | D4    | Do     | 0.00
+    1 |  1.18s | D4    | Do     | 0.00
+    2 |  1.79s | D4    | Do     | 0.00
+    3 |  2.41s | F#4   | Mi     | 0.29
+    4 |  2.93s | F#4   | Mi     | 0.29
+    5 |  3.58s | F#4   | Mi     | 0.29
+    6 |  4.18s | A4    | Sol    | 0.57
+    7 |  4.78s | A5    | Sol    | 0.57
+    8 |  5.39s | D5    | Do     | 0.00
+    9 |  5.99s | A4    | Sol    | 0.57
+   10 |  6.59s | F#4   | Mi     | 0.29
+   11 |  7.22s | D4    | Do     | 0.00
+   12 |  7.80s | A4    | Sol    | 0.57
+   13 |  8.43s | F#4   | Mi     | 0.29
+   14 |  8.99s | D4    | Do     | 0.00
+   15 |  9.61s | B3    | La     | 0.71
+   16 | 10.24s | C#4   | Ti     | 0.86
+   17 | 10.84s | D4    | Do     | 0.00
+   18 | 11.42s | D4    | Do     | 0.00
+   19 | 12.00s | F#4   | Mi     | 0.29
+   20 | 12.59s | E4    | Re     | 0.14
+   21 | 13.19s | F#4   | Mi     | 0.29
+   22 | 13.79s | A4    | Sol    | 0.57
+   23 | 14.40s | A5    | Sol    | 0.57
+   24 | 15.00s | D5    | Do     | 0.00
+   25 | 15.56s | A4    | Sol    | 0.57
+   26 | 16.16s | F#4   | Mi     | 0.29
+   27 | 16.79s | D4    | Do     | 0.00
+   28 | 17.39s | G4    | Fa     | 0.43
+   29 | 18.00s | F#4   | Mi     | 0.29
+   30 | 18.62s | D4    | Do     | 0.00
+   31 | 19.23s | A4    | Sol    | 0.57
+   32 | 19.83s | E4    | Re     | 0.14
+   33 | 20.43s | E4    | Re     | 0.14
+   34 | 21.04s | A5    | Sol    | 0.57
+   35 | 21.64s | A5    | Sol    | 0.57
+   36 | 22.24s | D5    | Do     | 0.00
+   37 | 22.85s | D3    | Do     | 0.00
+   38 | 23.45s | F#5   | Mi     | 0.29
+   39 | 24.06s | A5    | Sol    | 0.57
+   40 | 24.66s | A5    | Sol    | 0.57
+   41 | 25.26s | A5    | Sol    | 0.57
+   42 | 25.87s | A5    | Sol    | 0.57
+   43 | 26.45s | B5    | La     | 0.71
+   44 | 27.03s | A5    | Sol    | 0.57
+   45 | 27.61s | F#5   | Mi     | 0.29
+   46 | 28.19s | D3    | Do     | 0.00
+   47 | 28.77s | D3    | Do     | 0.00
+   48 | 29.35s | D4    | Do     | 0.00
+   49 | 29.98s | D4    | Do     | 0.00
+   50 | 30.58s | D4    | Do     | 0.00
+   51 | 31.14s | F#4   | Mi     | 0.29
+   52 | 31.70s | F#4   | Mi     | 0.29
+   53 | 32.35s | F#4   | Mi     | 0.29
+   54 | 32.97s | A4    | Sol    | 0.57
+   55 | 33.58s | D5    | Do     | 0.00
+   56 | 34.16s | D5    | Do     | 0.00
+   57 | 34.78s | A4    | Sol    | 0.57
+   58 | 35.34s | F#4   | Mi     | 0.29
+   59 | 35.97s | D4    | Do     | 0.00
+   60 | 36.62s | G4    | Fa     | 0.43
+   61 | 37.20s | E4    | Re     | 0.14
+   62 | 37.83s | D4    | Do     | 0.00
+   63 | 38.43s | REST  | REST   | -1.00
+   64 | 39.03s | D3    | Do     | 0.00
+   65 | 39.61s | D3    | Do     | 0.00
+   66 | 40.22s | D4    | Do     | 0.00
+   67 | 40.75s | F#4   | Mi     | 0.29
+   68 | 41.33s | F#4   | Mi     | 0.29
+   69 | 41.96s | F#4   | Mi     | 0.29
+   70 | 42.59s | A4    | Sol    | 0.57
+   71 | 43.19s | A4    | Sol    | 0.57
+   72 | 43.79s | C#5   | Ti     | 0.86
+   73 | 44.40s | A4    | Sol    | 0.57
+   74 | 44.95s | F#4   | Mi     | 0.29
+   75 | 45.58s | D4    | Do     | 0.00
+   76 | 46.18s | A4    | Sol    | 0.57
+   77 | 46.81s | F#4   | Mi     | 0.29
+   78 | 47.39s | D4    | Do     | 0.00
+   79 | 48.00s | A4    | Sol    | 0.57
+
+// === JS NOTE ARRAY (key: D major, BPM: 99) ===
+// Do=0.00 Re=0.14 Mi=0.29 Fa=0.43 Sol=0.57 La=0.71 Ti=0.86
+const SONG_NOTES = [
+  {note:'D4', ratio:0.00, beats:3, lyric:''},  // Do
+  {note:'F#4', ratio:0.29, beats:3, lyric:''},  // Mi
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'A5', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'D5', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'C#4', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'A5', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'D5', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'A5', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'D5', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'D3', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'F#5', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'A5', ratio:0.57, beats:4, lyric:''},  // Sol
+  {note:'B5', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A5', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'F#5', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D3', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'D4', ratio:0.00, beats:3, lyric:''},  // Do
+  {note:'F#4', ratio:0.29, beats:3, lyric:''},  // Mi
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'D5', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  // REST (1 beats)
+  {note:'D3', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'F#4', ratio:0.29, beats:3, lyric:''},  // Mi
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'C#5', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+];
+// BPM: 99
+

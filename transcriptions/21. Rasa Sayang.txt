@@ -1,0 +1,121 @@
+============================================================
+SONG: 21. Rasa Sayang
+============================================================
+Duration: 58.9s
+BPM: 89.1
+Key: B major
+
+Beat | Time  | Note | Degree | Ratio
+-----|-------|------|--------|------
+    0 | 10.19s | E4    | Fa     | 0.43
+    1 | 10.84s | F#4   | Sol    | 0.57
+    2 | 11.54s | F#4   | Sol    | 0.57
+    3 | 12.21s | B4    | Do     | 0.00
+    4 | 12.82s | A#4   | Ti     | 0.86
+    5 | 13.44s | E4    | Fa     | 0.43
+    6 | 14.05s | E4    | Fa     | 0.43
+    7 | 14.74s | E4    | Fa     | 0.43
+    8 | 15.37s | B4    | Do     | 0.00
+    9 | 16.04s | G#4   | La     | 0.71
+   10 | 16.65s | E4    | Fa     | 0.43
+   11 | 17.30s | D#4   | Mi     | 0.29
+   12 | 17.95s | C#4   | Re     | 0.14
+   13 | 18.58s | C#4   | Re     | 0.14
+   14 | 19.23s | A#3   | Ti     | 0.86
+   15 | 19.85s | B3    | Do     | 0.00
+   16 | 20.55s | B3    | Do     | 0.00
+   17 | 21.27s | B3    | Do     | 0.00
+   18 | 21.99s | D#4   | Mi     | 0.29
+   19 | 22.71s | F#4   | Sol    | 0.57
+   20 | 23.41s | E4    | Fa     | 0.43
+   21 | 24.10s | E4    | Fa     | 0.43
+   22 | 24.80s | E4    | Fa     | 0.43
+   23 | 25.50s | E4    | Fa     | 0.43
+   24 | 26.17s | F#4   | Sol    | 0.57
+   25 | 26.80s | F#4   | Sol    | 0.57
+   26 | 27.42s | B4    | Do     | 0.00
+   27 | 28.07s | G#4   | La     | 0.71
+   28 | 28.75s | F#4   | Sol    | 0.57
+   29 | 29.35s | E4    | Fa     | 0.43
+   30 | 29.95s | F#4   | Sol    | 0.57
+   31 | 30.58s | B4    | Do     | 0.00
+   32 | 31.23s | G#4   | La     | 0.71
+   33 | 31.86s | E4    | Fa     | 0.43
+   34 | 32.51s | D#4   | Mi     | 0.29
+   35 | 33.13s | C#4   | Re     | 0.14
+   36 | 33.76s | C#4   | Re     | 0.14
+   37 | 34.39s | A#3   | Ti     | 0.86
+   38 | 35.09s | B3    | Do     | 0.00
+   39 | 35.78s | B3    | Do     | 0.00
+   40 | 36.48s | B3    | Do     | 0.00
+   41 | 37.18s | E4    | Fa     | 0.43
+   42 | 37.87s | F#4   | Sol    | 0.57
+   43 | 38.57s | REST  | REST   | -1.00
+   44 | 39.24s | REST  | REST   | -1.00
+   45 | 39.92s | REST  | REST   | -1.00
+   46 | 40.59s | D#4   | Mi     | 0.29
+   47 | 41.26s | F#4   | Sol    | 0.57
+   48 | 41.91s | F#4   | Sol    | 0.57
+   49 | 42.56s | B4    | Do     | 0.00
+   50 | 43.17s | A#4   | Ti     | 0.86
+   51 | 43.79s | F#4   | Sol    | 0.57
+   52 | 44.49s | E4    | Fa     | 0.43
+   53 | 45.14s | F#4   | Sol    | 0.57
+   54 | 45.74s | B4    | Do     | 0.00
+   55 | 46.32s | G#4   | La     | 0.71
+   56 | 46.95s | F#4   | Sol    | 0.57
+   57 | 47.60s | E4    | Fa     | 0.43
+   58 | 48.25s | C#4   | Re     | 0.14
+   59 | 48.88s | C#4   | Re     | 0.14
+   60 | 49.55s | A#3   | Ti     | 0.86
+
+// === JS NOTE ARRAY (key: B major, BPM: 89) ===
+// Do=0.00 Re=0.14 Mi=0.29 Fa=0.43 Sol=0.57 La=0.71 Ti=0.86
+const SONG_NOTES = [
+  {note:'E4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'B4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A#4', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'E4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'B4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G#4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'E4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'D#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'C#4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'A#3', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'B3', ratio:0.00, beats:3, lyric:''},  // Do
+  {note:'D#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'F#4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'E4', ratio:0.43, beats:4, lyric:''},  // Fa
+  {note:'F#4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'B4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G#4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'F#4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'E4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'B4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G#4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'E4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'D#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'C#4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'A#3', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'B3', ratio:0.00, beats:3, lyric:''},  // Do
+  {note:'E4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.57, beats:1, lyric:''},  // Sol
+  // REST (3 beats)
+  {note:'D#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'F#4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'B4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A#4', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'F#4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'E4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'B4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G#4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'F#4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'E4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'C#4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'A#3', ratio:0.86, beats:1, lyric:''},  // Ti
+];
+// BPM: 89
+

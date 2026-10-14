@@ -1,0 +1,288 @@
+============================================================
+SONG: 2. Brother John - Two Tigers
+============================================================
+Duration: 106.8s
+BPM: 112.3
+Key: D major
+
+Beat | Time  | Note | Degree | Ratio
+-----|-------|------|--------|------
+    0 | 17.32s | D4    | Do     | 0.00
+    1 | 17.88s | E4    | Re     | 0.14
+    2 | 18.41s | F#4   | Mi     | 0.29
+    3 | 18.90s | D4    | Do     | 0.00
+    4 | 19.44s | D4    | Do     | 0.00
+    5 | 19.99s | E4    | Re     | 0.14
+    6 | 20.53s | F#4   | Mi     | 0.29
+    7 | 21.01s | D4    | Do     | 0.00
+    8 | 21.57s | F#4   | Mi     | 0.29
+    9 | 22.08s | G4    | Fa     | 0.43
+   10 | 22.59s | A4    | Sol    | 0.57
+   11 | 23.15s | A4    | Sol    | 0.57
+   12 | 23.71s | F#4   | Mi     | 0.29
+   13 | 24.24s | G4    | Fa     | 0.43
+   14 | 24.78s | A4    | Sol    | 0.57
+   15 | 25.36s | A4    | Sol    | 0.57
+   16 | 25.94s | A4    | Sol    | 0.57
+   17 | 26.45s | G4    | Fa     | 0.43
+   18 | 27.00s | F#4   | Mi     | 0.29
+   19 | 27.52s | D4    | Do     | 0.00
+   20 | 28.05s | A4    | Sol    | 0.57
+   21 | 28.58s | G4    | Fa     | 0.43
+   22 | 29.14s | F#4   | Mi     | 0.29
+   23 | 29.65s | D4    | Do     | 0.00
+   24 | 30.16s | D4    | Do     | 0.00
+   25 | 30.67s | A3    | Sol    | 0.57
+   26 | 31.23s | D4    | Do     | 0.00
+   27 | 31.76s | D4    | Do     | 0.00
+   28 | 32.30s | D4    | Do     | 0.00
+   29 | 32.83s | A3    | Sol    | 0.57
+   30 | 33.39s | D4    | Do     | 0.00
+   31 | 33.92s | A3    | Sol    | 0.57
+   32 | 34.46s | D4    | Do     | 0.00
+   33 | 34.99s | A3    | Sol    | 0.57
+   34 | 35.53s | D3    | Do     | 0.00
+   35 | 36.06s | D3    | Do     | 0.00
+   36 | 36.59s | D3    | Do     | 0.00
+   37 | 37.13s | REST  | REST   | -1.00
+   38 | 37.66s | D3    | Do     | 0.00
+   39 | 38.20s | D4    | Do     | 0.00
+   40 | 38.71s | D4    | Do     | 0.00
+   41 | 39.29s | E4    | Re     | 0.14
+   42 | 39.82s | F#4   | Mi     | 0.29
+   43 | 40.31s | D4    | Do     | 0.00
+   44 | 40.87s | D4    | Do     | 0.00
+   45 | 41.42s | E4    | Re     | 0.14
+   46 | 41.96s | F#4   | Mi     | 0.29
+   47 | 42.45s | D4    | Do     | 0.00
+   48 | 43.00s | F#4   | Mi     | 0.29
+   49 | 43.58s | G4    | Fa     | 0.43
+   50 | 44.07s | A4    | Sol    | 0.57
+   51 | 44.61s | A4    | Sol    | 0.57
+   52 | 45.14s | F#4   | Mi     | 0.29
+   53 | 45.72s | G4    | Fa     | 0.43
+   54 | 46.21s | A4    | Sol    | 0.57
+   55 | 46.74s | A4    | Sol    | 0.57
+   56 | 47.30s | A4    | Sol    | 0.57
+   57 | 47.83s | G4    | Fa     | 0.43
+   58 | 48.39s | F#4   | Mi     | 0.29
+   59 | 48.90s | D4    | Do     | 0.00
+   60 | 49.46s | A4    | Sol    | 0.57
+   61 | 49.99s | G4    | Fa     | 0.43
+   62 | 50.55s | F#4   | Mi     | 0.29
+   63 | 51.06s | D4    | Do     | 0.00
+   64 | 51.57s | D4    | Do     | 0.00
+   65 | 52.08s | A3    | Sol    | 0.57
+   66 | 52.64s | D4    | Do     | 0.00
+   67 | 53.20s | D4    | Do     | 0.00
+   68 | 53.75s | D4    | Do     | 0.00
+   69 | 54.29s | A3    | Sol    | 0.57
+   70 | 54.85s | D4    | Do     | 0.00
+   71 | 55.38s | D4    | Do     | 0.00
+   72 | 55.91s | E4    | Re     | 0.14
+   73 | 56.45s | G5    | Fa     | 0.43
+   74 | 56.98s | A5    | Sol    | 0.57
+   75 | 57.52s | F#5   | Mi     | 0.29
+   76 | 58.05s | E5    | Re     | 0.14
+   77 | 58.58s | F#5   | Mi     | 0.29
+   78 | 59.12s | D5    | Do     | 0.00
+   79 | 59.65s | D5    | Do     | 0.00
+   80 | 60.19s | B4    | La     | 0.71
+   81 | 60.72s | C#5   | Ti     | 0.86
+   82 | 61.25s | C#5   | Ti     | 0.86
+   83 | 61.79s | D4    | Do     | 0.00
+   84 | 62.32s | B3    | La     | 0.71
+   85 | 62.86s | REST  | REST   | -1.00
+   86 | 63.39s | REST  | REST   | -1.00
+   87 | 63.92s | D4    | Do     | 0.00
+   88 | 64.46s | D4    | Do     | 0.00
+   89 | 64.97s | E4    | Re     | 0.14
+   90 | 65.55s | F#4   | Mi     | 0.29
+   91 | 66.08s | D4    | Do     | 0.00
+   92 | 66.62s | D4    | Do     | 0.00
+   93 | 67.15s | E4    | Re     | 0.14
+   94 | 67.71s | F#4   | Mi     | 0.29
+   95 | 68.24s | D4    | Do     | 0.00
+   96 | 68.75s | F#4   | Mi     | 0.29
+   97 | 69.29s | G4    | Fa     | 0.43
+   98 | 69.78s | A4    | Sol    | 0.57
+   99 | 70.31s | A4    | Sol    | 0.57
+  100 | 70.84s | F#4   | Mi     | 0.29
+  101 | 71.38s | G4    | Fa     | 0.43
+  102 | 71.91s | A4    | Sol    | 0.57
+  103 | 72.47s | A4    | Sol    | 0.57
+  104 | 73.05s | A4    | Sol    | 0.57
+  105 | 73.56s | G4    | Fa     | 0.43
+  106 | 74.09s | F#4   | Mi     | 0.29
+  107 | 74.61s | D4    | Do     | 0.00
+  108 | 75.19s | A4    | Sol    | 0.57
+  109 | 75.70s | G4    | Fa     | 0.43
+  110 | 76.25s | F#4   | Mi     | 0.29
+  111 | 76.77s | D4    | Do     | 0.00
+  112 | 77.28s | D4    | Do     | 0.00
+  113 | 77.74s | A3    | Sol    | 0.57
+  114 | 78.32s | D4    | Do     | 0.00
+  115 | 78.90s | REST  | REST   | -1.00
+  116 | 79.46s | D4    | Do     | 0.00
+  117 | 79.99s | A3    | Sol    | 0.57
+  118 | 80.53s | D4    | Do     | 0.00
+  119 | 81.08s | C#4   | Ti     | 0.86
+  120 | 81.62s | D4    | Do     | 0.00
+  121 | 82.18s | E4    | Re     | 0.14
+  122 | 82.71s | F#4   | Mi     | 0.29
+  123 | 83.27s | D4    | Do     | 0.00
+  124 | 83.78s | D4    | Do     | 0.00
+  125 | 84.29s | E4    | Re     | 0.14
+  126 | 84.82s | F#4   | Mi     | 0.29
+  127 | 85.38s | D4    | Do     | 0.00
+  128 | 85.89s | F#4   | Mi     | 0.29
+  129 | 86.40s | G4    | Fa     | 0.43
+  130 | 86.91s | A4    | Sol    | 0.57
+  131 | 87.45s | REST  | REST   | -1.00
+  132 | 87.98s | F#4   | Mi     | 0.29
+  133 | 88.49s | G4    | Fa     | 0.43
+  134 | 89.03s | A4    | Sol    | 0.57
+  135 | 89.58s | A4    | Sol    | 0.57
+  136 | 90.14s | A4    | Sol    | 0.57
+  137 | 90.67s | G4    | Fa     | 0.43
+  138 | 91.21s | F#4   | Mi     | 0.29
+  139 | 91.74s | D4    | Do     | 0.00
+  140 | 92.32s | A4    | Sol    | 0.57
+  141 | 92.83s | G4    | Fa     | 0.43
+  142 | 93.39s | F#4   | Mi     | 0.29
+  143 | 93.90s | D3    | Do     | 0.00
+  144 | 94.39s | D4    | Do     | 0.00
+  145 | 94.90s | B3    | La     | 0.71
+  146 | 95.43s | D4    | Do     | 0.00
+  147 | 96.01s | REST  | REST   | -1.00
+  148 | 96.57s | D4    | Do     | 0.00
+  149 | 97.08s | A3    | Sol    | 0.57
+  150 | 97.69s | D4    | Do     | 0.00
+
+// === JS NOTE ARRAY (key: D major, BPM: 112) ===
+// Do=0.00 Re=0.14 Mi=0.29 Fa=0.43 Sol=0.57 La=0.71 Ti=0.86
+const SONG_NOTES = [
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'A4', ratio:0.57, beats:3, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'A3', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'D4', ratio:0.00, beats:3, lyric:''},  // Do
+  {note:'A3', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A3', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A3', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'D3', ratio:0.00, beats:3, lyric:''},  // Do
+  // REST (1 beats)
+  {note:'D3', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'A4', ratio:0.57, beats:3, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'A3', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'D4', ratio:0.00, beats:3, lyric:''},  // Do
+  {note:'A3', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'G5', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'A5', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'F#5', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'E5', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'F#5', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D5', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'C#5', ratio:0.86, beats:2, lyric:''},  // Ti
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+  // REST (2 beats)
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'A4', ratio:0.57, beats:3, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'A3', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  // REST (1 beats)
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A3', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'C#4', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  // REST (1 beats)
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'A4', ratio:0.57, beats:3, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D3', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  // REST (1 beats)
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A3', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+];
+// BPM: 112
+

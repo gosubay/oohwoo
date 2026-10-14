@@ -2637,8 +2637,8 @@
     "runtime": "v24.16.0",
     "platform": "win32",
     "measured": "this host, Node VM; not mobile browser",
-    "medianMs": 0.11770000000001346,
-    "p95Ms": 0.12409999999999854,
-    "maxMs": 0.22440000000000282
+    "medianMs": 0.11779999999998836,
+    "p95Ms": 0.12220000000002074,
+    "maxMs": 0.14949999999998909
   }
 }

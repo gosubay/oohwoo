@@ -1,0 +1,840 @@
+{
+  "provenance": {
+    "status": "candidate-evidence-only; not corrected charts or listening approval",
+    "gameSha256": "45055fbcbfc7f1170c43e3b8eb4b6997fae9f7d2819f8d6464b70be8313b3899",
+    "chartSourceSha256": "6ab7f9a9a8594dc5507581545c99c18d9eefd438072c6f4487e6779a434ba97b",
+    "method": "Independent YIN-style difference estimator, 16 kHz, 64ms window, 20ms hop; shared vocal stems, no key snapping or neighbour octave correction. Pitch attacks do not locate consonants or repeated syllables."
+  },
+  "songs": [
+    {
+      "song": "twinkle",
+      "recording": "1. Twinkle Twinkle Little Star",
+      "recordingSeconds": 88.96,
+      "playEnd": 40.6,
+      "melodyStart": 10.33,
+      "melodyEnd": 39.9,
+      "notes": 42,
+      "artificialSplits": 0,
+      "unlabelled": 0,
+      "pitchDisagreements": 0,
+      "weakVoice": 0,
+      "attackFlags": 10,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 41,
+      "acousticSections": [
+        [
+          10.482,
+          39.842
+        ],
+        [
+          50.382,
+          80.662
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "brotherjohn",
+      "recording": "2. Brother John - Two Tigers",
+      "recordingSeconds": 106.8,
+      "playEnd": 35.12,
+      "melodyStart": 17.32,
+      "melodyEnd": 33.72,
+      "notes": 32,
+      "artificialSplits": 0,
+      "unlabelled": 0,
+      "pitchDisagreements": 0,
+      "weakVoice": 0,
+      "attackFlags": 0,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 82,
+      "acousticSections": [
+        [
+          17.342,
+          33.762
+        ],
+        [
+          38.722,
+          55.522
+        ],
+        [
+          64.402,
+          94.762
+        ],
+        [
+          96.602,
+          98.282
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "humptydumpty",
+      "recording": "3. Humpty Dumpty",
+      "recordingSeconds": 84.0,
+      "playEnd": 38.91,
+      "melodyStart": 14.19,
+      "melodyEnd": 38.4,
+      "notes": 68,
+      "artificialSplits": 5,
+      "unlabelled": 3,
+      "pitchDisagreements": 2,
+      "weakVoice": 1,
+      "attackFlags": 3,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 75,
+      "acousticSections": [
+        [
+          14.222,
+          42.202
+        ],
+        [
+          46.282,
+          74.502
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "headshoulders",
+      "recording": "4. Head Shoulders Knees Toes",
+      "recordingSeconds": 86.52,
+      "playEnd": 32.27,
+      "melodyStart": 15.72,
+      "melodyEnd": 31.7,
+      "notes": 40,
+      "artificialSplits": 0,
+      "unlabelled": 5,
+      "pitchDisagreements": 2,
+      "weakVoice": 0,
+      "attackFlags": 1,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 89,
+      "acousticSections": [
+        [
+          15.762,
+          46.202
+        ],
+        [
+          50.802,
+          81.282
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "londonbridge",
+      "recording": "5. London Bridge",
+      "recordingSeconds": 94.96,
+      "playEnd": 45.21,
+      "melodyStart": 11.45,
+      "melodyEnd": 43.81,
+      "notes": 75,
+      "artificialSplits": 0,
+      "unlabelled": 2,
+      "pitchDisagreements": 1,
+      "weakVoice": 1,
+      "attackFlags": 0,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 43,
+      "acousticSections": [
+        [
+          11.442,
+          43.822
+        ],
+        [
+          54.962,
+          87.342
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "itsybitsy",
+      "recording": "6. Itsy Bitsy Spider",
+      "recordingSeconds": 94.92,
+      "playEnd": 23.22,
+      "melodyStart": 4.5,
+      "melodyEnd": 21.82,
+      "notes": 46,
+      "artificialSplits": 7,
+      "unlabelled": 0,
+      "pitchDisagreements": 2,
+      "weakVoice": 3,
+      "attackFlags": 2,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 112,
+      "acousticSections": [
+        [
+          4.842,
+          21.842
+        ],
+        [
+          27.102,
+          43.942
+        ],
+        [
+          53.442,
+          88.182
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "baabaa",
+      "recording": "7. Baa Baa Black Sheep",
+      "recordingSeconds": 97.6,
+      "playEnd": 28.9,
+      "melodyStart": 12.17,
+      "melodyEnd": 27.5,
+      "notes": 40,
+      "artificialSplits": 4,
+      "unlabelled": 1,
+      "pitchDisagreements": 2,
+      "weakVoice": 1,
+      "attackFlags": 1,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 104,
+      "acousticSections": [
+        [
+          12.202,
+          27.522
+        ],
+        [
+          32.202,
+          47.562
+        ],
+        [
+          56.182,
+          71.742
+        ],
+        [
+          76.162,
+          91.722
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "marylamb",
+      "recording": "8. Mary Had A Little Lamb",
+      "recordingSeconds": 97.88,
+      "playEnd": 40.9,
+      "melodyStart": 10.13,
+      "melodyEnd": 39.5,
+      "notes": 84,
+      "artificialSplits": 24,
+      "unlabelled": 0,
+      "pitchDisagreements": 13,
+      "weakVoice": 3,
+      "attackFlags": 13,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 75,
+      "acousticSections": [
+        [
+          10.122,
+          39.522
+        ],
+        [
+          50.182,
+          91.182
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "rowboat",
+      "recording": "9. Row Row Row Your Boat",
+      "recordingSeconds": 53.4,
+      "playEnd": 21.47,
+      "melodyStart": 0.5,
+      "melodyEnd": 20.07,
+      "notes": 47,
+      "artificialSplits": 8,
+      "unlabelled": 2,
+      "pitchDisagreements": 7,
+      "weakVoice": 4,
+      "attackFlags": 8,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 38,
+      "acousticSections": [
+        [
+          1.122,
+          19.882
+        ],
+        [
+          29.382,
+          38.122
+        ],
+        [
+          40.762,
+          48.782
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "moretogether",
+      "recording": "10. The More We Get Together",
+      "recordingSeconds": 79.44,
+      "playEnd": 38.12,
+      "melodyStart": 10.59,
+      "melodyEnd": 36.72,
+      "notes": 57,
+      "artificialSplits": 0,
+      "unlabelled": 8,
+      "pitchDisagreements": 9,
+      "weakVoice": 9,
+      "attackFlags": 8,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 41,
+      "acousticSections": [
+        [
+          0.362,
+          36.762
+        ],
+        [
+          39.882,
+          42.262
+        ],
+        [
+          44.222,
+          57.302
+        ],
+        [
+          58.902,
+          62.522
+        ],
+        [
+          64.662,
+          64.962
+        ],
+        [
+          68.102,
+          77.602
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "littlebunny",
+      "recording": "11. Little Bunny",
+      "recordingSeconds": 88.16,
+      "playEnd": 42.46,
+      "melodyStart": 12.5,
+      "melodyEnd": 41.73,
+      "notes": 75,
+      "artificialSplits": 6,
+      "unlabelled": 11,
+      "pitchDisagreements": 11,
+      "weakVoice": 7,
+      "attackFlags": 8,
+      "transcriptLanguage": "zh",
+      "transcriptWordsAfterCut": 58,
+      "acousticSections": [
+        [
+          0.562,
+          8.702
+        ],
+        [
+          12.542,
+          43.762
+        ],
+        [
+          46.762,
+          85.802
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "rainrain",
+      "recording": "12. Rain Rain Go Away",
+      "recordingSeconds": 179.84,
+      "playEnd": 38.73,
+      "melodyStart": 13.55,
+      "melodyEnd": 37.33,
+      "notes": 47,
+      "artificialSplits": 10,
+      "unlabelled": 3,
+      "pitchDisagreements": 1,
+      "weakVoice": 0,
+      "attackFlags": 1,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 229,
+      "acousticSections": [
+        [
+          13.542,
+          24.022
+        ],
+        [
+          26.842,
+          37.342
+        ],
+        [
+          40.162,
+          50.582
+        ],
+        [
+          53.502,
+          64.162
+        ],
+        [
+          66.802,
+          77.402
+        ],
+        [
+          80.122,
+          90.602
+        ],
+        [
+          96.502,
+          106.522
+        ],
+        [
+          109.842,
+          120.162
+        ],
+        [
+          122.882,
+          133.482
+        ],
+        [
+          136.162,
+          146.842
+        ],
+        [
+          149.842,
+          159.802
+        ],
+        [
+          162.982,
+          173.482
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "fingerfamily",
+      "recording": "13. Finger Family",
+      "recordingSeconds": 105.0,
+      "playEnd": 25.99,
+      "melodyStart": 8.87,
+      "melodyEnd": 25.18,
+      "notes": 38,
+      "artificialSplits": 4,
+      "unlabelled": 13,
+      "pitchDisagreements": 1,
+      "weakVoice": 1,
+      "attackFlags": 1,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 132,
+      "acousticSections": [
+        [
+          8.902,
+          41.982
+        ],
+        [
+          51.662,
+          59.022
+        ],
+        [
+          60.682,
+          101.742
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "wheelsbus",
+      "recording": "14. Wheels On The Bus",
+      "recordingSeconds": 134.88,
+      "playEnd": 44.55,
+      "melodyStart": 11.13,
+      "melodyEnd": 43.7,
+      "notes": 79,
+      "artificialSplits": 8,
+      "unlabelled": 11,
+      "pitchDisagreements": 5,
+      "weakVoice": 7,
+      "attackFlags": 5,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 182,
+      "acousticSections": [
+        [
+          11.142,
+          65.822
+        ],
+        [
+          77.442,
+          119.822
+        ],
+        [
+          121.422,
+          130.702
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "oldmcdonald",
+      "recording": "15. Old McDonald Had a Farm",
+      "recordingSeconds": 234.88,
+      "playEnd": 28.01,
+      "melodyStart": 5.58,
+      "melodyEnd": 26.61,
+      "notes": 60,
+      "artificialSplits": 31,
+      "unlabelled": 0,
+      "pitchDisagreements": 6,
+      "weakVoice": 2,
+      "attackFlags": 7,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 460,
+      "acousticSections": [
+        [
+          5.582,
+          26.642
+        ],
+        [
+          29.962,
+          72.082
+        ],
+        [
+          74.382,
+          95.582
+        ],
+        [
+          97.822,
+          117.702
+        ],
+        [
+          120.442,
+          139.982
+        ],
+        [
+          145.622,
+          165.102
+        ],
+        [
+          166.902,
+          206.362
+        ],
+        [
+          212.382,
+          232.682
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "ifhappy",
+      "recording": "16. If you're happy and you know it",
+      "recordingSeconds": 106.72,
+      "playEnd": 52.99,
+      "melodyStart": 7.37,
+      "melodyEnd": 51.59,
+      "notes": 141,
+      "artificialSplits": 44,
+      "unlabelled": 0,
+      "pitchDisagreements": 15,
+      "weakVoice": 16,
+      "attackFlags": 9,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 102,
+      "acousticSections": [
+        [
+          8.162,
+          10.022
+        ],
+        [
+          11.942,
+          21.242
+        ],
+        [
+          23.082,
+          24.842
+        ],
+        [
+          26.802,
+          35.942
+        ],
+        [
+          37.902,
+          51.362
+        ],
+        [
+          60.282,
+          103.402
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "fivemonkeys",
+      "recording": "17. 5 Little Monkeys",
+      "recordingSeconds": 166.36,
+      "playEnd": 61.77,
+      "melodyStart": 20.83,
+      "melodyEnd": 61.16,
+      "notes": 100,
+      "artificialSplits": 28,
+      "unlabelled": 0,
+      "pitchDisagreements": 15,
+      "weakVoice": 5,
+      "attackFlags": 12,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 195,
+      "acousticSections": [
+        [
+          7.662,
+          18.502
+        ],
+        [
+          20.862,
+          74.882
+        ],
+        [
+          79.082,
+          91.962
+        ],
+        [
+          96.002,
+          162.522
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "babyshark",
+      "recording": "18. Baby Shark",
+      "recordingSeconds": 137.64,
+      "playEnd": 54.81,
+      "melodyStart": 15.55,
+      "melodyEnd": 54.13,
+      "notes": 114,
+      "artificialSplits": 14,
+      "unlabelled": 11,
+      "pitchDisagreements": 2,
+      "weakVoice": 0,
+      "attackFlags": 4,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 294,
+      "acousticSections": [
+        [
+          15.542,
+          61.942
+        ],
+        [
+          72.562,
+          103.402
+        ],
+        [
+          111.882,
+          125.742
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "baluobo",
+      "recording": "19. Ba Luo Bo",
+      "recordingSeconds": 139.84,
+      "playEnd": 39.23,
+      "melodyStart": 8.36,
+      "melodyEnd": 37.83,
+      "notes": 68,
+      "artificialSplits": 26,
+      "unlabelled": 0,
+      "pitchDisagreements": 3,
+      "weakVoice": 0,
+      "attackFlags": 6,
+      "transcriptLanguage": "zh",
+      "transcriptWordsAfterCut": 159,
+      "acousticSections": [
+        [
+          8.362,
+          21.722
+        ],
+        [
+          24.682,
+          37.842
+        ],
+        [
+          40.862,
+          53.882
+        ],
+        [
+          67.762,
+          81.202
+        ],
+        [
+          90.282,
+          111.502
+        ],
+        [
+          114.862,
+          136.222
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "xiaoyanzi",
+      "recording": "20. Xiao Yan Zi - Little Bird",
+      "recordingSeconds": 438.4,
+      "playEnd": 36.54,
+      "melodyStart": 12.82,
+      "melodyEnd": 35.14,
+      "notes": 43,
+      "artificialSplits": 0,
+      "unlabelled": 11,
+      "pitchDisagreements": 0,
+      "weakVoice": 1,
+      "attackFlags": 1,
+      "transcriptLanguage": "zh",
+      "transcriptWordsAfterCut": 203,
+      "acousticSections": [
+        [
+          12.822,
+          35.162
+        ],
+        [
+          37.822,
+          66.022
+        ],
+        [
+          94.602,
+          150.742
+        ],
+        [
+          178.362,
+          180.042
+        ],
+        [
+          181.682,
+          182.502
+        ],
+        [
+          185.642,
+          186.882
+        ],
+        [
+          188.902,
+          192.362
+        ],
+        [
+          194.542,
+          200.102
+        ],
+        [
+          204.042,
+          207.442
+        ],
+        [
+          213.182,
+          217.422
+        ],
+        [
+          219.002,
+          258.622
+        ],
+        [
+          261.322,
+          264.442
+        ],
+        [
+          273.922,
+          278.162
+        ],
+        [
+          280.042,
+          315.422
+        ],
+        [
+          329.662,
+          334.262
+        ],
+        [
+          335.902,
+          357.702
+        ],
+        [
+          372.782,
+          375.502
+        ],
+        [
+          377.402,
+          386.062
+        ],
+        [
+          393.702,
+          423.762
+        ],
+        [
+          428.502,
+          438.282
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "rasasayang",
+      "recording": "21. Rasa Sayang",
+      "recordingSeconds": 58.92,
+      "playEnd": 37.23,
+      "melodyStart": 10.28,
+      "melodyEnd": 35.83,
+      "notes": 53,
+      "artificialSplits": 2,
+      "unlabelled": 7,
+      "pitchDisagreements": 2,
+      "weakVoice": 2,
+      "attackFlags": 8,
+      "transcriptLanguage": "en",
+      "transcriptWordsAfterCut": 26,
+      "acousticSections": [
+        [
+          10.282,
+          20.822
+        ],
+        [
+          25.482,
+          35.842
+        ],
+        [
+          40.642,
+          51.302
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    },
+    {
+      "song": "chanmalichan",
+      "recording": "22. Chan Mali Chan",
+      "recordingSeconds": 135.56,
+      "playEnd": 37.24,
+      "melodyStart": 9.35,
+      "melodyEnd": 36.63,
+      "notes": 64,
+      "artificialSplits": 12,
+      "unlabelled": 5,
+      "pitchDisagreements": 6,
+      "weakVoice": 6,
+      "attackFlags": 10,
+      "transcriptLanguage": "ms",
+      "transcriptWordsAfterCut": 193,
+      "acousticSections": [
+        [
+          9.342,
+          83.002
+        ],
+        [
+          92.422,
+          128.442
+        ]
+      ],
+      "status": "numerical-review; listening-unverified"
+    }
+  ]
+}

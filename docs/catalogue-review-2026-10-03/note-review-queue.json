@@ -1,0 +1,8340 @@
+{
+  "provenance": {
+    "status": "candidate-evidence-only; not corrected charts or listening approval",
+    "gameSha256": "45055fbcbfc7f1170c43e3b8eb4b6997fae9f7d2819f8d6464b70be8313b3899",
+    "chartSourceSha256": "6ab7f9a9a8594dc5507581545c99c18d9eefd438072c6f4487e6779a434ba97b",
+    "method": "Independent YIN-style difference estimator, 16 kHz, 64ms window, 20ms hop; shared vocal stems, no key snapping or neighbour octave correction. Pitch attacks do not locate consonants or repeated syllables."
+  },
+  "notes": [
+    {
+      "song": "twinkle",
+      "index": 0,
+      "t": 10.33,
+      "end": 11.04,
+      "midi": 62,
+      "lyric": "Twin-",
+      "voicedFrames": 26,
+      "voicedFraction": 0.839,
+      "medianMidi": 61.923,
+      "pitchAgreement": 0.731,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 10.622,
+      "attackDeltaMs": 292
+    },
+    {
+      "song": "twinkle",
+      "index": 2,
+      "t": 11.66,
+      "end": 12.3,
+      "midi": 69,
+      "lyric": "Twin-",
+      "voicedFrames": 26,
+      "voicedFraction": 0.929,
+      "medianMidi": 68.992,
+      "pitchAgreement": 0.962,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 11.762,
+      "attackDeltaMs": 102
+    },
+    {
+      "song": "twinkle",
+      "index": 7,
+      "t": 15.39,
+      "end": 15.99,
+      "midi": 67,
+      "lyric": "How",
+      "voicedFrames": 25,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.05,
+      "pitchAgreement": 0.72,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 15.582,
+      "attackDeltaMs": 192
+    },
+    {
+      "song": "twinkle",
+      "index": 13,
+      "t": 19.13,
+      "end": 19.7,
+      "midi": 62,
+      "lyric": "Are",
+      "voicedFrames": 21,
+      "voicedFraction": 0.875,
+      "medianMidi": 61.979,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 18.982,
+      "attackDeltaMs": -148
+    },
+    {
+      "song": "twinkle",
+      "index": 14,
+      "t": 20.36,
+      "end": 20.86,
+      "midi": 69,
+      "lyric": "Up",
+      "voicedFrames": 18,
+      "voicedFraction": 0.857,
+      "medianMidi": 68.928,
+      "pitchAgreement": 0.833,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 20.462,
+      "attackDeltaMs": 102
+    },
+    {
+      "song": "twinkle",
+      "index": 25,
+      "t": 27.54,
+      "end": 28.06,
+      "midi": 66,
+      "lyric": "in",
+      "voicedFrames": 22,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.999,
+      "pitchAgreement": 0.864,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 27.642,
+      "attackDeltaMs": 102
+    },
+    {
+      "song": "twinkle",
+      "index": 28,
+      "t": 30.0,
+      "end": 30.57,
+      "midi": 62,
+      "lyric": "Twin-",
+      "voicedFrames": 21,
+      "voicedFraction": 0.875,
+      "medianMidi": 61.809,
+      "pitchAgreement": 0.667,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 30.242,
+      "attackDeltaMs": 242
+    },
+    {
+      "song": "twinkle",
+      "index": 32,
+      "t": 32.48,
+      "end": 33.01,
+      "midi": 71,
+      "lyric": "Lit-",
+      "voicedFrames": 19,
+      "voicedFraction": 0.864,
+      "medianMidi": 70.952,
+      "pitchAgreement": 0.789,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 32.602,
+      "attackDeltaMs": 122
+    },
+    {
+      "song": "twinkle",
+      "index": 35,
+      "t": 34.85,
+      "end": 35.45,
+      "midi": 67,
+      "lyric": "How",
+      "voicedFrames": 25,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.964,
+      "pitchAgreement": 0.76,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 35.022,
+      "attackDeltaMs": 172
+    },
+    {
+      "song": "twinkle",
+      "index": 41,
+      "t": 38.66,
+      "end": 39.9,
+      "midi": 62,
+      "lyric": "Are",
+      "voicedFrames": 57,
+      "voicedFraction": 0.983,
+      "medianMidi": 62.013,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 38.542,
+      "attackDeltaMs": -118
+    },
+    {
+      "song": "humptydumpty",
+      "index": 8,
+      "t": 16.58,
+      "end": 16.73,
+      "midi": 71,
+      "lyric": "sat",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 71.244,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 16.582,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "humptydumpty",
+      "index": 9,
+      "t": 16.73,
+      "end": 16.87,
+      "midi": 71,
+      "lyric": "on",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 71.082,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "humptydumpty",
+      "index": 10,
+      "t": 16.87,
+      "end": 17.02,
+      "midi": 71,
+      "lyric": "a",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 70.996,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "humptydumpty",
+      "index": 16,
+      "t": 19.27,
+      "end": 19.51,
+      "midi": 69,
+      "lyric": "",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.069,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 19.262,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "humptydumpty",
+      "index": 21,
+      "t": 20.59,
+      "end": 20.75,
+      "midi": 62,
+      "lyric": "",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.16,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 20.602,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "humptydumpty",
+      "index": 22,
+      "t": 21.3,
+      "end": 21.39,
+      "midi": 70,
+      "lyric": "All",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "humptydumpty",
+      "index": 32,
+      "t": 24.87,
+      "end": 25.46,
+      "midi": 76,
+      "lyric": "Couldn't",
+      "voicedFrames": 25,
+      "voicedFraction": 1.0,
+      "medianMidi": 76.013,
+      "pitchAgreement": 0.8,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 25.022,
+      "attackDeltaMs": 152
+    },
+    {
+      "song": "humptydumpty",
+      "index": 41,
+      "t": 28.41,
+      "end": 28.96,
+      "midi": 64,
+      "lyric": "Hum",
+      "voicedFrames": 23,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.009,
+      "pitchAgreement": 0.696,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 28.602,
+      "attackDeltaMs": 192
+    },
+    {
+      "song": "humptydumpty",
+      "index": 51,
+      "t": 32.57,
+      "end": 32.84,
+      "midi": 67,
+      "lyric": "",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.966,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 32.562,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "humptydumpty",
+      "index": 57,
+      "t": 34.63,
+      "end": 34.95,
+      "midi": 62,
+      "lyric": "fall",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.608,
+      "pitchAgreement": 0.545,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 34.782,
+      "attackDeltaMs": 152
+    },
+    {
+      "song": "humptydumpty",
+      "index": 62,
+      "t": 36.88,
+      "end": 37.15,
+      "midi": 67,
+      "lyric": "ses",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.634,
+      "pitchAgreement": 0.333,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "humptydumpty",
+      "index": 63,
+      "t": 37.19,
+      "end": 37.49,
+      "midi": 67,
+      "lyric": "and",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.052,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "headshoulders",
+      "index": 18,
+      "t": 22.79,
+      "end": 22.96,
+      "midi": 65,
+      "lyric": "",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.997,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 22.782,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "headshoulders",
+      "index": 20,
+      "t": 23.26,
+      "end": 23.49,
+      "midi": 60,
+      "lyric": "",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.013,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 62,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "headshoulders",
+      "index": 23,
+      "t": 24.52,
+      "end": 24.94,
+      "midi": 72,
+      "lyric": "ears",
+      "voicedFrames": 17,
+      "voicedFraction": 1.0,
+      "medianMidi": 71.858,
+      "pitchAgreement": 0.647,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 24.682,
+      "attackDeltaMs": 162
+    },
+    {
+      "song": "headshoulders",
+      "index": 26,
+      "t": 25.7,
+      "end": 25.9,
+      "midi": 72,
+      "lyric": "",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.057,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 25.722,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "headshoulders",
+      "index": 28,
+      "t": 26.23,
+      "end": 26.42,
+      "midi": 72,
+      "lyric": "",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.022,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 26.202,
+      "attackDeltaMs": -28
+    },
+    {
+      "song": "headshoulders",
+      "index": 39,
+      "t": 31.41,
+      "end": 31.7,
+      "midi": 67,
+      "lyric": "",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.975,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 31.402,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "londonbridge",
+      "index": 22,
+      "t": 20.89,
+      "end": 21.1,
+      "midi": 65,
+      "lyric": "la-",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.337,
+      "pitchAgreement": 0.333,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 64,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "londonbridge",
+      "index": 24,
+      "t": 21.29,
+      "end": 21.82,
+      "midi": 62,
+      "lyric": "",
+      "voicedFrames": 22,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.932,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 21.322,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "londonbridge",
+      "index": 48,
+      "t": 31.91,
+      "end": 32.07,
+      "midi": 66,
+      "lyric": "la-",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 66.014,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ],
+      "pitchAttackCandidate": 31.882,
+      "attackDeltaMs": -28
+    },
+    {
+      "song": "londonbridge",
+      "index": 73,
+      "t": 42.69,
+      "end": 42.85,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.091,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 42.702,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "itsybitsy",
+      "index": 3,
+      "t": 5.61,
+      "end": 5.83,
+      "midi": 64,
+      "lyric": "sy",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.264,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "candidateMidi": 62,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting",
+      "pitchAttackCandidate": 5.802,
+      "attackDeltaMs": 192
+    },
+    {
+      "song": "itsybitsy",
+      "index": 4,
+      "t": 5.87,
+      "end": 6.1,
+      "midi": 64,
+      "lyric": "spi-",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.995,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "itsybitsy",
+      "index": 5,
+      "t": 6.14,
+      "end": 6.4,
+      "midi": 64,
+      "lyric": "der",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.002,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "itsybitsy",
+      "index": 12,
+      "t": 8.96,
+      "end": 9.47,
+      "midi": 64,
+      "lyric": "Down",
+      "voicedFrames": 21,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.975,
+      "pitchAgreement": 0.667,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 9.142,
+      "attackDeltaMs": 182
+    },
+    {
+      "song": "itsybitsy",
+      "index": 15,
+      "t": 10.24,
+      "end": 10.66,
+      "midi": 67,
+      "lyric": "rain",
+      "voicedFrames": 17,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.023,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 10.242,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "itsybitsy",
+      "index": 16,
+      "t": 10.7,
+      "end": 11.16,
+      "midi": 67,
+      "lyric": "and",
+      "voicedFrames": 15,
+      "voicedFraction": 0.789,
+      "medianMidi": 66.899,
+      "pitchAgreement": 0.933,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "itsybitsy",
+      "index": 18,
+      "t": 11.52,
+      "end": 11.68,
+      "midi": 64,
+      "lyric": "the",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 64.149,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "itsybitsy",
+      "index": 21,
+      "t": 12.28,
+      "end": 12.61,
+      "midi": 64,
+      "lyric": "out",
+      "voicedFrames": 4,
+      "voicedFraction": 0.333,
+      "medianMidi": 64.731,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "itsybitsy",
+      "index": 26,
+      "t": 15.08,
+      "end": 15.41,
+      "midi": 64,
+      "lyric": "shine",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.021,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 15.102,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "itsybitsy",
+      "index": 27,
+      "t": 15.45,
+      "end": 15.81,
+      "midi": 64,
+      "lyric": "and",
+      "voicedFrames": 10,
+      "voicedFraction": 0.769,
+      "medianMidi": 63.983,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "itsybitsy",
+      "index": 34,
+      "t": 17.9,
+      "end": 18.06,
+      "midi": 59,
+      "lyric": "it-",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 58.662,
+      "pitchAgreement": 0.2,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "itsybitsy",
+      "index": 42,
+      "t": 20.44,
+      "end": 20.6,
+      "midi": 60,
+      "lyric": "the",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 60.116,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "baabaa",
+      "index": 7,
+      "t": 14.9,
+      "end": 14.99,
+      "midi": 68,
+      "lyric": "ny",
+      "voicedFrames": 2,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.221,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "baabaa",
+      "index": 8,
+      "t": 14.99,
+      "end": 15.12,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.98,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 15.002,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "baabaa",
+      "index": 10,
+      "t": 16.16,
+      "end": 16.33,
+      "midi": 58,
+      "lyric": "Yes",
+      "voicedFrames": 4,
+      "voicedFraction": 0.8,
+      "medianMidi": 59.406,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "baabaa",
+      "index": 28,
+      "t": 24.13,
+      "end": 24.31,
+      "midi": 64,
+      "lyric": "one",
+      "voicedFrames": 4,
+      "voicedFraction": 0.667,
+      "medianMidi": 62.353,
+      "pitchAgreement": 0.25,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 24.262,
+      "attackDeltaMs": 132
+    },
+    {
+      "song": "baabaa",
+      "index": 29,
+      "t": 24.35,
+      "end": 24.57,
+      "midi": 64,
+      "lyric": "for",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.975,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baabaa",
+      "index": 37,
+      "t": 26.64,
+      "end": 26.85,
+      "midi": 59,
+      "lyric": "down",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 59.029,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 26.682,
+      "attackDeltaMs": 42
+    },
+    {
+      "song": "baabaa",
+      "index": 38,
+      "t": 26.89,
+      "end": 27.15,
+      "midi": 59,
+      "lyric": "the",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 58.993,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 0,
+      "t": 10.13,
+      "end": 10.32,
+      "midi": 65,
+      "lyric": "Ma-",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.998,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "candidateMidi": 63,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting",
+      "pitchAttackCandidate": 10.342,
+      "attackDeltaMs": 212
+    },
+    {
+      "song": "marylamb",
+      "index": 1,
+      "t": 10.36,
+      "end": 10.6,
+      "midi": 65,
+      "lyric": "ry",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.029,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 2,
+      "t": 10.6,
+      "end": 10.8,
+      "midi": 61,
+      "lyric": "had",
+      "voicedFrames": 5,
+      "voicedFraction": 0.833,
+      "medianMidi": 62.888,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "candidateMidi": 63,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting",
+      "pitchAttackCandidate": 10.842,
+      "attackDeltaMs": 242
+    },
+    {
+      "song": "marylamb",
+      "index": 7,
+      "t": 12.78,
+      "end": 12.94,
+      "midi": 62,
+      "lyric": "lit-",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.594,
+      "pitchAgreement": 0.6,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 63,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "marylamb",
+      "index": 8,
+      "t": 13.02,
+      "end": 13.48,
+      "midi": 63,
+      "lyric": "tle",
+      "voicedFrames": 19,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.007,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 13.022,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "marylamb",
+      "index": 9,
+      "t": 13.52,
+      "end": 14.03,
+      "midi": 63,
+      "lyric": "lamb",
+      "voicedFrames": 21,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.037,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 18,
+      "t": 17.3,
+      "end": 17.46,
+      "midi": 61,
+      "lyric": "tle",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.799,
+      "pitchAgreement": 0.2,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 19,
+      "t": 17.66,
+      "end": 17.76,
+      "midi": 59,
+      "lyric": "lamb",
+      "voicedFrames": 3,
+      "voicedFraction": 1.0,
+      "medianMidi": 58.548,
+      "pitchAgreement": 0.667,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 20,
+      "t": 17.76,
+      "end": 17.92,
+      "midi": 62,
+      "lyric": "its",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 62.526,
+      "pitchAgreement": 0.667,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 27,
+      "t": 20.18,
+      "end": 20.35,
+      "midi": 65,
+      "lyric": "e-",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.96,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "candidateMidi": 63,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting",
+      "pitchAttackCandidate": 20.342,
+      "attackDeltaMs": 162
+    },
+    {
+      "song": "marylamb",
+      "index": 28,
+      "t": 20.39,
+      "end": 20.6,
+      "midi": 65,
+      "lyric": "ve-",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.027,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 29,
+      "t": 20.6,
+      "end": 21.09,
+      "midi": 61,
+      "lyric": "ryw-",
+      "voicedFrames": 20,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.076,
+      "pitchAgreement": 0.7,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 20.762,
+      "attackDeltaMs": 162
+    },
+    {
+      "song": "marylamb",
+      "index": 32,
+      "t": 21.53,
+      "end": 21.74,
+      "midi": 65,
+      "lyric": "Ma-",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.978,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 21.542,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "marylamb",
+      "index": 33,
+      "t": 21.78,
+      "end": 21.99,
+      "midi": 65,
+      "lyric": "ry",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.964,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 34,
+      "t": 22.03,
+      "end": 22.28,
+      "midi": 65,
+      "lyric": "went",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.013,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 36,
+      "t": 22.79,
+      "end": 23.13,
+      "midi": 63,
+      "lyric": "ry",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.063,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 22.802,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "marylamb",
+      "index": 37,
+      "t": 23.17,
+      "end": 23.54,
+      "midi": 63,
+      "lyric": "went",
+      "voicedFrames": 14,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.052,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 43,
+      "t": 25.58,
+      "end": 26.08,
+      "midi": 61,
+      "lyric": "ryw-",
+      "voicedFrames": 21,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.116,
+      "pitchAgreement": 0.667,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 25.762,
+      "attackDeltaMs": 182
+    },
+    {
+      "song": "marylamb",
+      "index": 45,
+      "t": 26.53,
+      "end": 26.69,
+      "midi": 65,
+      "lyric": "that",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.998,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 26.542,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "marylamb",
+      "index": 46,
+      "t": 26.7,
+      "end": 26.86,
+      "midi": 65,
+      "lyric": "Ma-",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.065,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 47,
+      "t": 26.88,
+      "end": 27.04,
+      "midi": 65,
+      "lyric": "ry",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.933,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 48,
+      "t": 27.05,
+      "end": 27.23,
+      "midi": 65,
+      "lyric": "went",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.026,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 50,
+      "t": 27.69,
+      "end": 28.14,
+      "midi": 63,
+      "lyric": "lamb",
+      "voicedFrames": 18,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.931,
+      "pitchAgreement": 0.833,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 27.802,
+      "attackDeltaMs": 112
+    },
+    {
+      "song": "marylamb",
+      "index": 53,
+      "t": 28.65,
+      "end": 28.9,
+      "midi": 61,
+      "lyric": "to",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.244,
+      "pitchAgreement": 0.625,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 28.762,
+      "attackDeltaMs": 112
+    },
+    {
+      "song": "marylamb",
+      "index": 55,
+      "t": 29.88,
+      "end": 30.04,
+      "midi": 68,
+      "lyric": "It",
+      "voicedFrames": 4,
+      "voicedFraction": 0.8,
+      "medianMidi": 56.038,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 56,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "marylamb",
+      "index": 61,
+      "t": 31.41,
+      "end": 31.83,
+      "midi": 65,
+      "lyric": "one",
+      "voicedFrames": 16,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.998,
+      "pitchAgreement": 0.75,
+      "flags": [
+        "equal-duration-syllable-split",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 31.542,
+      "attackDeltaMs": 132
+    },
+    {
+      "song": "marylamb",
+      "index": 62,
+      "t": 31.87,
+      "end": 32.33,
+      "midi": 65,
+      "lyric": "day",
+      "voicedFrames": 18,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.977,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 63,
+      "t": 32.69,
+      "end": 33.01,
+      "midi": 63,
+      "lyric": "school",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.987,
+      "pitchAgreement": 0.636,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 32.822,
+      "attackDeltaMs": 132
+    },
+    {
+      "song": "marylamb",
+      "index": 64,
+      "t": 33.05,
+      "end": 33.37,
+      "midi": 63,
+      "lyric": "one",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.048,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 65,
+      "t": 33.41,
+      "end": 33.76,
+      "midi": 63,
+      "lyric": "day",
+      "voicedFrames": 13,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.096,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 66,
+      "t": 33.95,
+      "end": 34.24,
+      "midi": 65,
+      "lyric": "school",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.888,
+      "pitchAgreement": 0.6,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 34.082,
+      "attackDeltaMs": 132
+    },
+    {
+      "song": "marylamb",
+      "index": 67,
+      "t": 34.24,
+      "end": 34.44,
+      "midi": 68,
+      "lyric": "one",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 74.042,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "pitchAttackCandidate": 34.262,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "marylamb",
+      "index": 69,
+      "t": 34.86,
+      "end": 35.02,
+      "midi": 62,
+      "lyric": "It",
+      "voicedFrames": 4,
+      "voicedFraction": 0.8,
+      "medianMidi": 62.33,
+      "pitchAgreement": 0.25,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 75,
+      "t": 36.41,
+      "end": 37.3,
+      "midi": 65,
+      "lyric": "one",
+      "voicedFrames": 40,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.005,
+      "pitchAgreement": 0.9,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 36.542,
+      "attackDeltaMs": 132
+    },
+    {
+      "song": "marylamb",
+      "index": 76,
+      "t": 37.3,
+      "end": 37.46,
+      "midi": 68,
+      "lyric": "day",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 55.672,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 77,
+      "t": 37.62,
+      "end": 37.94,
+      "midi": 63,
+      "lyric": "which",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.324,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 37.782,
+      "attackDeltaMs": 162
+    },
+    {
+      "song": "marylamb",
+      "index": 80,
+      "t": 38.65,
+      "end": 38.82,
+      "midi": 61,
+      "lyric": "gainst",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.914,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "candidateMidi": 63,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting",
+      "pitchAttackCandidate": 38.782,
+      "attackDeltaMs": 132
+    },
+    {
+      "song": "marylamb",
+      "index": 81,
+      "t": 38.86,
+      "end": 39.03,
+      "midi": 61,
+      "lyric": "the",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.124,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 82,
+      "t": 39.07,
+      "end": 39.25,
+      "midi": 61,
+      "lyric": "ru-",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.054,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "marylamb",
+      "index": 83,
+      "t": 39.29,
+      "end": 39.5,
+      "midi": 61,
+      "lyric": "le",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.014,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "rowboat",
+      "index": 2,
+      "t": 1.72,
+      "end": 2.18,
+      "midi": 62,
+      "lyric": "row",
+      "voicedFrames": 17,
+      "voicedFraction": 0.895,
+      "medianMidi": 62.068,
+      "pitchAgreement": 0.941,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 1.822,
+      "attackDeltaMs": 102
+    },
+    {
+      "song": "rowboat",
+      "index": 5,
+      "t": 2.91,
+      "end": 3.24,
+      "midi": 66,
+      "lyric": "gen-",
+      "voicedFrames": 10,
+      "voicedFraction": 0.833,
+      "medianMidi": 66.026,
+      "pitchAgreement": 0.9,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 3.022,
+      "attackDeltaMs": 112
+    },
+    {
+      "song": "rowboat",
+      "index": 8,
+      "t": 3.91,
+      "end": 4.07,
+      "midi": 67,
+      "lyric": "the",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 67.045,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ],
+      "pitchAttackCandidate": 3.902,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "rowboat",
+      "index": 10,
+      "t": 5.31,
+      "end": 5.42,
+      "midi": 69,
+      "lyric": "Mer-",
+      "voicedFrames": 2,
+      "voicedFraction": 0.5,
+      "medianMidi": 68.196,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "rowboat",
+      "index": 11,
+      "t": 5.42,
+      "end": 5.63,
+      "midi": 74,
+      "lyric": "ri-",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 74.06,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 5.462,
+      "attackDeltaMs": 42
+    },
+    {
+      "song": "rowboat",
+      "index": 12,
+      "t": 5.67,
+      "end": 5.91,
+      "midi": 74,
+      "lyric": "ly",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 74.089,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "rowboat",
+      "index": 13,
+      "t": 5.91,
+      "end": 6.17,
+      "midi": 69,
+      "lyric": "mer-",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.866,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 5.942,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "rowboat",
+      "index": 14,
+      "t": 6.21,
+      "end": 6.51,
+      "midi": 69,
+      "lyric": "ri-",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.058,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "rowboat",
+      "index": 18,
+      "t": 8.17,
+      "end": 8.33,
+      "midi": 67,
+      "lyric": "is",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 66.905,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ],
+      "pitchAttackCandidate": 8.162,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "rowboat",
+      "index": 22,
+      "t": 10.13,
+      "end": 10.3,
+      "midi": 60,
+      "lyric": "Row",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 58.731,
+      "pitchAgreement": 0.2,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "rowboat",
+      "index": 25,
+      "t": 11.35,
+      "end": 11.79,
+      "midi": 62,
+      "lyric": "your",
+      "voicedFrames": 17,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.589,
+      "pitchAgreement": 0.647,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 11.522,
+      "attackDeltaMs": 172
+    },
+    {
+      "song": "rowboat",
+      "index": 28,
+      "t": 12.54,
+      "end": 12.88,
+      "midi": 65,
+      "lyric": "tly",
+      "voicedFrames": 13,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.013,
+      "pitchAgreement": 0.462,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 12.662,
+      "attackDeltaMs": 122
+    },
+    {
+      "song": "rowboat",
+      "index": 29,
+      "t": 12.94,
+      "end": 13.24,
+      "midi": 66,
+      "lyric": "down",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.102,
+      "pitchAgreement": 0.273,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 13.142,
+      "attackDeltaMs": 202
+    },
+    {
+      "song": "rowboat",
+      "index": 30,
+      "t": 13.28,
+      "end": 13.62,
+      "midi": 66,
+      "lyric": "the",
+      "voicedFrames": 13,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.019,
+      "pitchAgreement": 0.923,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "rowboat",
+      "index": 33,
+      "t": 15.27,
+      "end": 15.54,
+      "midi": 74,
+      "lyric": "you",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 74.029,
+      "pitchAgreement": 0.667,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 15.382,
+      "attackDeltaMs": 112
+    },
+    {
+      "song": "rowboat",
+      "index": 34,
+      "t": 15.54,
+      "end": 15.75,
+      "midi": 69,
+      "lyric": "see",
+      "voicedFrames": 5,
+      "voicedFraction": 0.833,
+      "medianMidi": 68.979,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 15.602,
+      "attackDeltaMs": 62
+    },
+    {
+      "song": "rowboat",
+      "index": 35,
+      "t": 15.79,
+      "end": 16.04,
+      "midi": 69,
+      "lyric": "a",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.092,
+      "pitchAgreement": 0.875,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "rowboat",
+      "index": 39,
+      "t": 17.34,
+      "end": 17.66,
+      "midi": 69,
+      "lyric": "le",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.783,
+      "pitchAgreement": 0.583,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 17.482,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "rowboat",
+      "index": 43,
+      "t": 18.55,
+      "end": 19.09,
+      "midi": 62,
+      "lyric": "to",
+      "voicedFrames": 22,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.673,
+      "pitchAgreement": 0.636,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "rowboat",
+      "index": 45,
+      "t": 19.6,
+      "end": 19.91,
+      "midi": 67,
+      "lyric": "",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.478,
+      "pitchAgreement": 0.636,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 19.722,
+      "attackDeltaMs": 122
+    },
+    {
+      "song": "rowboat",
+      "index": 46,
+      "t": 19.91,
+      "end": 20.07,
+      "midi": 65,
+      "lyric": "",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "moretogether",
+      "index": 1,
+      "t": 11.6,
+      "end": 11.76,
+      "midi": 60,
+      "lyric": "",
+      "voicedFrames": 4,
+      "voicedFraction": 0.8,
+      "medianMidi": 58.964,
+      "pitchAgreement": 0.25,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "moretogether",
+      "index": 3,
+      "t": 13.02,
+      "end": 13.34,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.054,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 13.042,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "moretogether",
+      "index": 6,
+      "t": 14.29,
+      "end": 14.45,
+      "midi": 69,
+      "lyric": "to-",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 68.753,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "moretogether",
+      "index": 9,
+      "t": 15.07,
+      "end": 15.23,
+      "midi": 67,
+      "lyric": "",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.755,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 15.062,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "moretogether",
+      "index": 15,
+      "t": 17.63,
+      "end": 17.79,
+      "midi": 69,
+      "lyric": "her",
+      "voicedFrames": 4,
+      "voicedFraction": 0.8,
+      "medianMidi": 56.969,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 57,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "moretogether",
+      "index": 16,
+      "t": 17.86,
+      "end": 18.41,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 23,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.043,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 17.862,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "moretogether",
+      "index": 18,
+      "t": 18.87,
+      "end": 19.14,
+      "midi": 62,
+      "lyric": "",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.986,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 18.862,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "moretogether",
+      "index": 19,
+      "t": 19.14,
+      "end": 19.34,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.899,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 19.182,
+      "attackDeltaMs": 42
+    },
+    {
+      "song": "moretogether",
+      "index": 21,
+      "t": 19.54,
+      "end": 19.67,
+      "midi": 62,
+      "lyric": "",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "moretogether",
+      "index": 22,
+      "t": 19.67,
+      "end": 19.83,
+      "midi": 66,
+      "lyric": "we",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "moretogether",
+      "index": 23,
+      "t": 20.19,
+      "end": 20.42,
+      "midi": 71,
+      "lyric": "get",
+      "voicedFrames": 6,
+      "voicedFraction": 0.857,
+      "medianMidi": 45.114,
+      "pitchAgreement": 0.333,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "moretogether",
+      "index": 24,
+      "t": 20.42,
+      "end": 20.62,
+      "midi": 69,
+      "lyric": "to-",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "moretogether",
+      "index": 25,
+      "t": 20.77,
+      "end": 21.27,
+      "midi": 66,
+      "lyric": "get-",
+      "voicedFrames": 13,
+      "voicedFraction": 0.65,
+      "medianMidi": 42.195,
+      "pitchAgreement": 0.231,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "moretogether",
+      "index": 26,
+      "t": 21.27,
+      "end": 21.44,
+      "midi": 65,
+      "lyric": "her",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "moretogether",
+      "index": 27,
+      "t": 21.49,
+      "end": 21.88,
+      "midi": 62,
+      "lyric": "the",
+      "voicedFrames": 9,
+      "voicedFraction": 0.6,
+      "medianMidi": 61.896,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 21.662,
+      "attackDeltaMs": 172
+    },
+    {
+      "song": "moretogether",
+      "index": 34,
+      "t": 26.05,
+      "end": 26.44,
+      "midi": 55,
+      "lyric": "friends",
+      "voicedFrames": 11,
+      "voicedFraction": 0.733,
+      "medianMidi": 55.141,
+      "pitchAgreement": 0.909,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 26.222,
+      "attackDeltaMs": 172
+    },
+    {
+      "song": "moretogether",
+      "index": 37,
+      "t": 27.58,
+      "end": 28.07,
+      "midi": 62,
+      "lyric": "friends",
+      "voicedFrames": 17,
+      "voicedFraction": 0.85,
+      "medianMidi": 61.962,
+      "pitchAgreement": 0.765,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 27.762,
+      "attackDeltaMs": 182
+    },
+    {
+      "song": "moretogether",
+      "index": 40,
+      "t": 29.17,
+      "end": 29.61,
+      "midi": 57,
+      "lyric": "friends",
+      "voicedFrames": 17,
+      "voicedFraction": 1.0,
+      "medianMidi": 56.634,
+      "pitchAgreement": 0.824,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 29.282,
+      "attackDeltaMs": 112
+    },
+    {
+      "song": "moretogether",
+      "index": 41,
+      "t": 29.61,
+      "end": 30.16,
+      "midi": 55,
+      "lyric": "are",
+      "voicedFrames": 4,
+      "voicedFraction": 0.174,
+      "medianMidi": 54.986,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "moretogether",
+      "index": 42,
+      "t": 30.16,
+      "end": 30.27,
+      "midi": 62,
+      "lyric": "your",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "moretogether",
+      "index": 43,
+      "t": 30.27,
+      "end": 30.43,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "moretogether",
+      "index": 44,
+      "t": 30.67,
+      "end": 31.13,
+      "midi": 62,
+      "lyric": "friends",
+      "voicedFrames": 18,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.307,
+      "pitchAgreement": 0.611,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 30.942,
+      "attackDeltaMs": 272
+    },
+    {
+      "song": "moretogether",
+      "index": 47,
+      "t": 31.71,
+      "end": 32.09,
+      "midi": 69,
+      "lyric": "we",
+      "voicedFrames": 11,
+      "voicedFraction": 0.786,
+      "medianMidi": 57.107,
+      "pitchAgreement": 0.455,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 31.942,
+      "attackDeltaMs": 232
+    },
+    {
+      "song": "moretogether",
+      "index": 48,
+      "t": 32.47,
+      "end": 32.67,
+      "midi": 71,
+      "lyric": "get",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 57.072,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "pitchAttackCandidate": 32.462,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "moretogether",
+      "index": 49,
+      "t": 32.67,
+      "end": 32.92,
+      "midi": 69,
+      "lyric": "to-",
+      "voicedFrames": 5,
+      "voicedFraction": 0.625,
+      "medianMidi": 68.892,
+      "pitchAgreement": 0.6,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 32.822,
+      "attackDeltaMs": 152
+    },
+    {
+      "song": "moretogether",
+      "index": 50,
+      "t": 33.0,
+      "end": 33.2,
+      "midi": 67,
+      "lyric": "get-",
+      "voicedFrames": 4,
+      "voicedFraction": 0.667,
+      "medianMidi": 65.714,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "moretogether",
+      "index": 51,
+      "t": 33.2,
+      "end": 33.58,
+      "midi": 62,
+      "lyric": "her",
+      "voicedFrames": 6,
+      "voicedFraction": 0.4,
+      "medianMidi": 49.992,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "moretogether",
+      "index": 56,
+      "t": 36.28,
+      "end": 36.72,
+      "midi": 62,
+      "lyric": "'llbe",
+      "voicedFrames": 18,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.875,
+      "pitchAgreement": 0.722,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 36.422,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "littlebunny",
+      "index": 5,
+      "t": 14.34,
+      "end": 14.5,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.068,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 14.362,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "littlebunny",
+      "index": 7,
+      "t": 14.77,
+      "end": 15.0,
+      "midi": 69,
+      "lyric": "",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.056,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 14.802,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "littlebunny",
+      "index": 10,
+      "t": 15.55,
+      "end": 15.76,
+      "midi": 69,
+      "lyric": "",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.01,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 15.562,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "littlebunny",
+      "index": 18,
+      "t": 19.0,
+      "end": 19.22,
+      "midi": 69,
+      "lyric": "",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.024,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 19.022,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "littlebunny",
+      "index": 19,
+      "t": 19.22,
+      "end": 19.42,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.086,
+      "pitchAgreement": 0.667,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 19.302,
+      "attackDeltaMs": 82
+    },
+    {
+      "song": "littlebunny",
+      "index": 22,
+      "t": 19.95,
+      "end": 20.13,
+      "midi": 62,
+      "lyric": "不",
+      "voicedFrames": 2,
+      "voicedFraction": 0.333,
+      "medianMidi": 62.542,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "littlebunny",
+      "index": 25,
+      "t": 21.64,
+      "end": 21.8,
+      "midi": 70,
+      "lyric": "开",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 70.682,
+      "pitchAgreement": 0.2,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 71,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "littlebunny",
+      "index": 28,
+      "t": 23.01,
+      "end": 23.28,
+      "midi": 71,
+      "lyric": "开",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 70.962,
+      "pitchAgreement": 0.667,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 23.122,
+      "attackDeltaMs": 112
+    },
+    {
+      "song": "littlebunny",
+      "index": 32,
+      "t": 25.25,
+      "end": 25.49,
+      "midi": 62,
+      "lyric": "回",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.981,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "candidateMidi": 64,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting",
+      "pitchAttackCandidate": 25.442,
+      "attackDeltaMs": 192
+    },
+    {
+      "song": "littlebunny",
+      "index": 33,
+      "t": 25.53,
+      "end": 25.81,
+      "midi": 62,
+      "lyric": "来",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.094,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "littlebunny",
+      "index": 34,
+      "t": 26.52,
+      "end": 26.74,
+      "midi": 62,
+      "lyric": "谁",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.028,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 26.542,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "littlebunny",
+      "index": 35,
+      "t": 26.78,
+      "end": 27.04,
+      "midi": 62,
+      "lyric": "来",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.032,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "littlebunny",
+      "index": 45,
+      "t": 30.78,
+      "end": 31.01,
+      "midi": 69,
+      "lyric": "",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "littlebunny",
+      "index": 46,
+      "t": 31.01,
+      "end": 31.24,
+      "midi": 71,
+      "lyric": "门",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 43.118,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 43,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "littlebunny",
+      "index": 47,
+      "t": 31.24,
+      "end": 31.36,
+      "midi": 74,
+      "lyric": "",
+      "voicedFrames": 3,
+      "voicedFraction": 0.75,
+      "medianMidi": 49.957,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "insufficient-independent-voice",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 31.382,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "littlebunny",
+      "index": 49,
+      "t": 31.53,
+      "end": 31.67,
+      "midi": 69,
+      "lyric": "",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "littlebunny",
+      "index": 50,
+      "t": 31.67,
+      "end": 31.92,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 3,
+      "voicedFraction": 0.375,
+      "medianMidi": 53.954,
+      "pitchAgreement": 0.333,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "littlebunny",
+      "index": 51,
+      "t": 32.0,
+      "end": 32.49,
+      "midi": 69,
+      "lyric": "开",
+      "voicedFrames": 13,
+      "voicedFraction": 0.65,
+      "medianMidi": 68.815,
+      "pitchAgreement": 0.615,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 32.282,
+      "attackDeltaMs": 282
+    },
+    {
+      "song": "littlebunny",
+      "index": 56,
+      "t": 34.05,
+      "end": 34.49,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 17,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.028,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ]
+    },
+    {
+      "song": "littlebunny",
+      "index": 61,
+      "t": 35.79,
+      "end": 35.97,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.003,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 35.782,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "littlebunny",
+      "index": 63,
+      "t": 36.49,
+      "end": 36.82,
+      "midi": 71,
+      "lyric": "就",
+      "voicedFrames": 11,
+      "voicedFraction": 0.917,
+      "medianMidi": 46.966,
+      "pitchAgreement": 0.364,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 36.702,
+      "attackDeltaMs": 212
+    },
+    {
+      "song": "littlebunny",
+      "index": 64,
+      "t": 36.99,
+      "end": 37.47,
+      "midi": 69,
+      "lyric": "开",
+      "voicedFrames": 13,
+      "voicedFraction": 0.684,
+      "medianMidi": 68.674,
+      "pitchAgreement": 0.538,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 37.282,
+      "attackDeltaMs": 292
+    },
+    {
+      "song": "littlebunny",
+      "index": 65,
+      "t": 37.47,
+      "end": 37.89,
+      "midi": 71,
+      "lyric": "就",
+      "voicedFrames": 16,
+      "voicedFraction": 1.0,
+      "medianMidi": 43.118,
+      "pitchAgreement": 0.125,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 43,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "littlebunny",
+      "index": 66,
+      "t": 37.98,
+      "end": 38.44,
+      "midi": 69,
+      "lyric": "开",
+      "voicedFrames": 16,
+      "voicedFraction": 0.842,
+      "medianMidi": 59.429,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 38.222,
+      "attackDeltaMs": 242
+    },
+    {
+      "song": "littlebunny",
+      "index": 67,
+      "t": 38.44,
+      "end": 38.94,
+      "midi": 66,
+      "lyric": "我",
+      "voicedFrames": 21,
+      "voicedFraction": 1.0,
+      "medianMidi": 42.112,
+      "pitchAgreement": 0.476,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "littlebunny",
+      "index": 68,
+      "t": 38.94,
+      "end": 39.37,
+      "midi": 71,
+      "lyric": "就",
+      "voicedFrames": 13,
+      "voicedFraction": 0.765,
+      "medianMidi": 43.159,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "littlebunny",
+      "index": 69,
+      "t": 39.5,
+      "end": 39.61,
+      "midi": 69,
+      "lyric": "开",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "littlebunny",
+      "index": 70,
+      "t": 39.61,
+      "end": 39.92,
+      "midi": 68,
+      "lyric": "妈",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "littlebunny",
+      "index": 72,
+      "t": 41.01,
+      "end": 41.21,
+      "midi": 64,
+      "lyric": "回",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.071,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "candidateMidi": 66,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting",
+      "pitchAttackCandidate": 41.242,
+      "attackDeltaMs": 232
+    },
+    {
+      "song": "littlebunny",
+      "index": 73,
+      "t": 41.25,
+      "end": 41.49,
+      "midi": 64,
+      "lyric": "来",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.993,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "rainrain",
+      "index": 2,
+      "t": 14.89,
+      "end": 15.16,
+      "midi": 67,
+      "lyric": "go",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.981,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 14.922,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "rainrain",
+      "index": 3,
+      "t": 15.2,
+      "end": 15.51,
+      "midi": 67,
+      "lyric": "a-",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.98,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "rainrain",
+      "index": 5,
+      "t": 16.21,
+      "end": 16.38,
+      "midi": 67,
+      "lyric": "Come",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.106,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 16.242,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "rainrain",
+      "index": 6,
+      "t": 16.42,
+      "end": 16.59,
+      "midi": 67,
+      "lyric": "a-",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.079,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "rainrain",
+      "index": 7,
+      "t": 16.63,
+      "end": 16.84,
+      "midi": 67,
+      "lyric": "gain",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.961,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "rainrain",
+      "index": 9,
+      "t": 17.22,
+      "end": 17.5,
+      "midi": 69,
+      "lyric": "not-",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.963,
+      "pitchAgreement": 0.7,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 17.322,
+      "attackDeltaMs": 102
+    },
+    {
+      "song": "rainrain",
+      "index": 15,
+      "t": 20.26,
+      "end": 20.42,
+      "midi": 65,
+      "lyric": "",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.031,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 20.262,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "rainrain",
+      "index": 19,
+      "t": 21.9,
+      "end": 22.18,
+      "midi": 65,
+      "lyric": "",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.192,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 21.902,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "rainrain",
+      "index": 26,
+      "t": 28.17,
+      "end": 28.34,
+      "midi": 67,
+      "lyric": "go",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.18,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 28.202,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "rainrain",
+      "index": 27,
+      "t": 28.38,
+      "end": 28.55,
+      "midi": 67,
+      "lyric": "a-",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.981,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "rainrain",
+      "index": 28,
+      "t": 28.59,
+      "end": 28.79,
+      "midi": 67,
+      "lyric": "way",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.04,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "rainrain",
+      "index": 33,
+      "t": 30.87,
+      "end": 31.09,
+      "midi": 67,
+      "lyric": "not-",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.036,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 30.902,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "rainrain",
+      "index": 34,
+      "t": 31.13,
+      "end": 31.39,
+      "midi": 67,
+      "lyric": "her",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.071,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "rainrain",
+      "index": 35,
+      "t": 31.5,
+      "end": 31.9,
+      "midi": 64,
+      "lyric": "day",
+      "voicedFrames": 16,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.039,
+      "pitchAgreement": 0.625,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "pitchAttackCandidate": 31.542,
+      "attackDeltaMs": 42
+    },
+    {
+      "song": "rainrain",
+      "index": 41,
+      "t": 34.86,
+      "end": 35.21,
+      "midi": 67,
+      "lyric": "",
+      "voicedFrames": 13,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.006,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 34.862,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "fingerfamily",
+      "index": 8,
+      "t": 11.51,
+      "end": 11.66,
+      "midi": 66,
+      "lyric": "where",
+      "voicedFrames": 3,
+      "voicedFraction": 0.75,
+      "medianMidi": 66.247,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "fingerfamily",
+      "index": 12,
+      "t": 13.37,
+      "end": 13.57,
+      "midi": 64,
+      "lyric": "I",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.964,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 13.382,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "fingerfamily",
+      "index": 13,
+      "t": 13.61,
+      "end": 13.86,
+      "midi": 64,
+      "lyric": "am",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.983,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fingerfamily",
+      "index": 15,
+      "t": 14.43,
+      "end": 14.62,
+      "midi": 64,
+      "lyric": "I",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.948,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 14.442,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "fingerfamily",
+      "index": 16,
+      "t": 14.66,
+      "end": 14.89,
+      "midi": 64,
+      "lyric": "am",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.968,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fingerfamily",
+      "index": 25,
+      "t": 18.77,
+      "end": 18.97,
+      "midi": 61,
+      "lyric": "",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.119,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 18.802,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "fingerfamily",
+      "index": 26,
+      "t": 19.06,
+      "end": 19.68,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 27,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.023,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 19.062,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "fingerfamily",
+      "index": 27,
+      "t": 19.68,
+      "end": 19.99,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.077,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 19.702,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "fingerfamily",
+      "index": 28,
+      "t": 20.09,
+      "end": 20.58,
+      "midi": 69,
+      "lyric": "",
+      "voicedFrames": 20,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.976,
+      "pitchAgreement": 0.75,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 20.242,
+      "attackDeltaMs": 152
+    },
+    {
+      "song": "fingerfamily",
+      "index": 29,
+      "t": 20.58,
+      "end": 20.96,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 14,
+      "voicedFraction": 0.933,
+      "medianMidi": 64.046,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 20.642,
+      "attackDeltaMs": 62
+    },
+    {
+      "song": "fingerfamily",
+      "index": 30,
+      "t": 21.66,
+      "end": 21.92,
+      "midi": 69,
+      "lyric": "",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.051,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 21.682,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "fingerfamily",
+      "index": 31,
+      "t": 21.92,
+      "end": 22.41,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 20,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.908,
+      "pitchAgreement": 0.6,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "independent-pitch-disagreement"
+      ],
+      "pitchAttackCandidate": 21.922,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "fingerfamily",
+      "index": 32,
+      "t": 22.75,
+      "end": 23.0,
+      "midi": 69,
+      "lyric": "",
+      "voicedFrames": 7,
+      "voicedFraction": 0.875,
+      "medianMidi": 68.964,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 22.742,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "fingerfamily",
+      "index": 33,
+      "t": 23.0,
+      "end": 23.47,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 19,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.948,
+      "pitchAgreement": 0.842,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 23.002,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "fingerfamily",
+      "index": 34,
+      "t": 23.92,
+      "end": 24.15,
+      "midi": 59,
+      "lyric": "",
+      "voicedFrames": 5,
+      "voicedFraction": 0.714,
+      "medianMidi": 59.035,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 24.002,
+      "attackDeltaMs": 82
+    },
+    {
+      "song": "fingerfamily",
+      "index": 35,
+      "t": 24.37,
+      "end": 24.64,
+      "midi": 59,
+      "lyric": "",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 59.063,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 24.402,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "fingerfamily",
+      "index": 36,
+      "t": 24.64,
+      "end": 24.84,
+      "midi": 61,
+      "lyric": "",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.917,
+      "pitchAgreement": 0.667,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 24.722,
+      "attackDeltaMs": 82
+    },
+    {
+      "song": "fingerfamily",
+      "index": 37,
+      "t": 24.95,
+      "end": 25.18,
+      "midi": 57,
+      "lyric": "",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 56.997,
+      "pitchAgreement": 0.857,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 24.982,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "wheelsbus",
+      "index": 1,
+      "t": 11.32,
+      "end": 11.65,
+      "midi": 60,
+      "lyric": "Wheels",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 59.285,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 11.482,
+      "attackDeltaMs": 162
+    },
+    {
+      "song": "wheelsbus",
+      "index": 8,
+      "t": 14.12,
+      "end": 14.46,
+      "midi": 62,
+      "lyric": "Round",
+      "voicedFrames": 13,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.602,
+      "pitchAgreement": 0.615,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 14.262,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "wheelsbus",
+      "index": 9,
+      "t": 14.46,
+      "end": 14.91,
+      "midi": 59,
+      "lyric": "",
+      "voicedFrames": 18,
+      "voicedFraction": 1.0,
+      "medianMidi": 58.91,
+      "pitchAgreement": 0.833,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 14.522,
+      "attackDeltaMs": 62
+    },
+    {
+      "song": "wheelsbus",
+      "index": 10,
+      "t": 15.0,
+      "end": 15.16,
+      "midi": 55,
+      "lyric": "",
+      "voicedFrames": 4,
+      "voicedFraction": 0.8,
+      "medianMidi": 55.405,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 15.042,
+      "attackDeltaMs": 42
+    },
+    {
+      "song": "wheelsbus",
+      "index": 11,
+      "t": 15.52,
+      "end": 15.85,
+      "midi": 67,
+      "lyric": "",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.071,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 15.682,
+      "attackDeltaMs": 162
+    },
+    {
+      "song": "wheelsbus",
+      "index": 12,
+      "t": 15.85,
+      "end": 16.22,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 14,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.035,
+      "pitchAgreement": 0.857,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 15.942,
+      "attackDeltaMs": 92
+    },
+    {
+      "song": "wheelsbus",
+      "index": 13,
+      "t": 16.22,
+      "end": 16.54,
+      "midi": 60,
+      "lyric": "",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 59.954,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 16.262,
+      "attackDeltaMs": 42
+    },
+    {
+      "song": "wheelsbus",
+      "index": 14,
+      "t": 16.81,
+      "end": 16.95,
+      "midi": 55,
+      "lyric": "",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 55.048,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 16.822,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "wheelsbus",
+      "index": 15,
+      "t": 16.95,
+      "end": 17.77,
+      "midi": 60,
+      "lyric": "",
+      "voicedFrames": 31,
+      "voicedFraction": 0.861,
+      "medianMidi": 60.027,
+      "pitchAgreement": 0.871,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 17.082,
+      "attackDeltaMs": 132
+    },
+    {
+      "song": "wheelsbus",
+      "index": 16,
+      "t": 17.93,
+      "end": 18.44,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 21,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.043,
+      "pitchAgreement": 0.952,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 17.962,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "wheelsbus",
+      "index": 17,
+      "t": 18.44,
+      "end": 18.64,
+      "midi": 67,
+      "lyric": "",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.081,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 18.442,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "wheelsbus",
+      "index": 18,
+      "t": 18.64,
+      "end": 19.0,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 14,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.991,
+      "pitchAgreement": 0.929,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 18.702,
+      "attackDeltaMs": 62
+    },
+    {
+      "song": "wheelsbus",
+      "index": 19,
+      "t": 19.0,
+      "end": 19.29,
+      "midi": 60,
+      "lyric": "",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.056,
+      "pitchAgreement": 0.9,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 19.062,
+      "attackDeltaMs": 62
+    },
+    {
+      "song": "wheelsbus",
+      "index": 23,
+      "t": 21.1,
+      "end": 21.19,
+      "midi": 56,
+      "lyric": "town",
+      "voicedFrames": 2,
+      "voicedFraction": 1.0,
+      "medianMidi": 56.284,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "wheelsbus",
+      "index": 26,
+      "t": 22.67,
+      "end": 22.82,
+      "midi": 60,
+      "lyric": "pers",
+      "voicedFrames": 3,
+      "voicedFraction": 0.75,
+      "medianMidi": 60.208,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "insufficient-independent-voice",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 22.822,
+      "attackDeltaMs": 152
+    },
+    {
+      "song": "wheelsbus",
+      "index": 27,
+      "t": 22.82,
+      "end": 22.97,
+      "midi": 60,
+      "lyric": "on",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.015,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "wheelsbus",
+      "index": 28,
+      "t": 22.97,
+      "end": 23.12,
+      "midi": 60,
+      "lyric": "the",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.065,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "wheelsbus",
+      "index": 34,
+      "t": 25.21,
+      "end": 25.43,
+      "midi": 61,
+      "lyric": "Swish",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.76,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "wheelsbus",
+      "index": 41,
+      "t": 28.07,
+      "end": 28.23,
+      "midi": 59,
+      "lyric": "Wi-",
+      "voicedFrames": 2,
+      "voicedFraction": 0.4,
+      "medianMidi": 59.758,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "wheelsbus",
+      "index": 42,
+      "t": 28.23,
+      "end": 28.39,
+      "midi": 60,
+      "lyric": "pers",
+      "voicedFrames": 2,
+      "voicedFraction": 0.4,
+      "medianMidi": 59.895,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "insufficient-independent-voice"
+      ],
+      "pitchAttackCandidate": 28.222,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "wheelsbus",
+      "index": 43,
+      "t": 28.43,
+      "end": 28.59,
+      "midi": 60,
+      "lyric": "on",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.082,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "wheelsbus",
+      "index": 44,
+      "t": 28.63,
+      "end": 28.83,
+      "midi": 60,
+      "lyric": "the",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.075,
+      "pitchAgreement": 0.833,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "wheelsbus",
+      "index": 49,
+      "t": 30.76,
+      "end": 30.98,
+      "midi": 62,
+      "lyric": "all",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.078,
+      "pitchAgreement": 0.571,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "wheelsbus",
+      "index": 54,
+      "t": 33.49,
+      "end": 33.6,
+      "midi": 56,
+      "lyric": "horn",
+      "voicedFrames": 3,
+      "voicedFraction": 0.75,
+      "medianMidi": 56.014,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "wheelsbus",
+      "index": 67,
+      "t": 39.09,
+      "end": 39.2,
+      "midi": 57,
+      "lyric": "horn",
+      "voicedFrames": 3,
+      "voicedFraction": 0.75,
+      "medianMidi": 56.941,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ],
+      "pitchAttackCandidate": 39.122,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "wheelsbus",
+      "index": 68,
+      "t": 39.2,
+      "end": 39.52,
+      "midi": 60,
+      "lyric": "on",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.123,
+      "pitchAgreement": 0.833,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 39.282,
+      "attackDeltaMs": 82
+    },
+    {
+      "song": "wheelsbus",
+      "index": 69,
+      "t": 39.56,
+      "end": 39.92,
+      "midi": 60,
+      "lyric": "the",
+      "voicedFrames": 14,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.09,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "wheelsbus",
+      "index": 77,
+      "t": 43.22,
+      "end": 43.36,
+      "midi": 57,
+      "lyric": "the",
+      "voicedFrames": 3,
+      "voicedFraction": 0.75,
+      "medianMidi": 57.038,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ],
+      "pitchAttackCandidate": 43.262,
+      "attackDeltaMs": 42
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 0,
+      "t": 5.58,
+      "end": 5.77,
+      "midi": 67,
+      "lyric": "Old",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.065,
+      "pitchAgreement": 0.2,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 5.702,
+      "attackDeltaMs": 122
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 4,
+      "t": 6.91,
+      "end": 7.12,
+      "midi": 64,
+      "lyric": "had",
+      "voicedFrames": 4,
+      "voicedFraction": 0.571,
+      "medianMidi": 62.887,
+      "pitchAgreement": 0.25,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 7.062,
+      "attackDeltaMs": 152
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 5,
+      "t": 7.16,
+      "end": 7.41,
+      "midi": 64,
+      "lyric": "a",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.124,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 7,
+      "t": 8.33,
+      "end": 8.85,
+      "midi": 71,
+      "lyric": "E",
+      "voicedFrames": 21,
+      "voicedFraction": 1.0,
+      "medianMidi": 71.023,
+      "pitchAgreement": 0.81,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 8.462,
+      "attackDeltaMs": 132
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 8,
+      "t": 8.85,
+      "end": 9.13,
+      "midi": 69,
+      "lyric": "I",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.049,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 8.842,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 9,
+      "t": 9.17,
+      "end": 9.5,
+      "midi": 69,
+      "lyric": "E",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.962,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 10,
+      "t": 9.5,
+      "end": 9.77,
+      "midi": 67,
+      "lyric": "I",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.029,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 9.502,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 11,
+      "t": 9.81,
+      "end": 10.13,
+      "midi": 67,
+      "lyric": "O",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.061,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 13,
+      "t": 10.96,
+      "end": 11.06,
+      "midi": 64,
+      "lyric": "on",
+      "voicedFrames": 3,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.776,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 14,
+      "t": 11.06,
+      "end": 11.21,
+      "midi": 73,
+      "lyric": "his",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 85.504,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 86,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 20,
+      "t": 13.68,
+      "end": 14.17,
+      "midi": 71,
+      "lyric": "E",
+      "voicedFrames": 20,
+      "voicedFraction": 1.0,
+      "medianMidi": 70.973,
+      "pitchAgreement": 0.75,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 13.822,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 21,
+      "t": 14.17,
+      "end": 14.37,
+      "midi": 69,
+      "lyric": "I",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.057,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 14.182,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 22,
+      "t": 14.41,
+      "end": 14.62,
+      "midi": 69,
+      "lyric": "E",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.0,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 23,
+      "t": 14.66,
+      "end": 14.9,
+      "midi": 69,
+      "lyric": "I",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.979,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 26,
+      "t": 16.36,
+      "end": 16.6,
+      "midi": 67,
+      "lyric": "a",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.931,
+      "pitchAgreement": 0.875,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 16.422,
+      "attackDeltaMs": 62
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 27,
+      "t": 16.64,
+      "end": 16.91,
+      "midi": 67,
+      "lyric": "moo",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.023,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 30,
+      "t": 17.71,
+      "end": 17.86,
+      "midi": 67,
+      "lyric": "and",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.552,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 17.822,
+      "attackDeltaMs": 112
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 31,
+      "t": 17.86,
+      "end": 18.02,
+      "midi": 67,
+      "lyric": "a",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.057,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 32,
+      "t": 18.02,
+      "end": 18.17,
+      "midi": 67,
+      "lyric": "moo",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.032,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 33,
+      "t": 18.17,
+      "end": 18.33,
+      "midi": 67,
+      "lyric": "moo",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.99,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 35,
+      "t": 19.07,
+      "end": 19.36,
+      "midi": 67,
+      "lyric": "Here",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.338,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 19.222,
+      "attackDeltaMs": 152
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 36,
+      "t": 19.4,
+      "end": 19.73,
+      "midi": 67,
+      "lyric": "a",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.081,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 37,
+      "t": 19.73,
+      "end": 19.85,
+      "midi": 64,
+      "lyric": "moo",
+      "voicedFrames": 3,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.906,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ],
+      "pitchAttackCandidate": 19.762,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 38,
+      "t": 19.85,
+      "end": 20.06,
+      "midi": 67,
+      "lyric": "there",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.9,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 19.882,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 39,
+      "t": 20.1,
+      "end": 20.3,
+      "midi": 67,
+      "lyric": "a",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.957,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 40,
+      "t": 20.34,
+      "end": 20.55,
+      "midi": 67,
+      "lyric": "moo",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.053,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 41,
+      "t": 20.59,
+      "end": 20.79,
+      "midi": 67,
+      "lyric": "e-",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.082,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 42,
+      "t": 20.83,
+      "end": 21.08,
+      "midi": 67,
+      "lyric": "ve-",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.043,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 43,
+      "t": 21.08,
+      "end": 21.22,
+      "midi": 67,
+      "lyric": "ryw-",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.316,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 44,
+      "t": 21.22,
+      "end": 21.37,
+      "midi": 67,
+      "lyric": "here",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.864,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 45,
+      "t": 21.37,
+      "end": 21.51,
+      "midi": 67,
+      "lyric": "a",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.993,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 46,
+      "t": 21.51,
+      "end": 21.65,
+      "midi": 67,
+      "lyric": "moo",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.946,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 47,
+      "t": 21.65,
+      "end": 21.8,
+      "midi": 67,
+      "lyric": "moo",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.152,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 55,
+      "t": 24.52,
+      "end": 25.06,
+      "midi": 71,
+      "lyric": "E",
+      "voicedFrames": 23,
+      "voicedFraction": 1.0,
+      "medianMidi": 71.037,
+      "pitchAgreement": 0.826,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 24.642,
+      "attackDeltaMs": 122
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 56,
+      "t": 25.06,
+      "end": 25.38,
+      "midi": 69,
+      "lyric": "I",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.025,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 25.062,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 57,
+      "t": 25.42,
+      "end": 25.78,
+      "midi": 69,
+      "lyric": "E",
+      "voicedFrames": 14,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.046,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 58,
+      "t": 25.78,
+      "end": 26.15,
+      "midi": 67,
+      "lyric": "I",
+      "voicedFrames": 14,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.971,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 25.782,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "oldmcdonald",
+      "index": 59,
+      "t": 26.19,
+      "end": 26.61,
+      "midi": 67,
+      "lyric": "O",
+      "voicedFrames": 16,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.004,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 2,
+      "t": 7.87,
+      "end": 8.03,
+      "midi": 66,
+      "lyric": "hap-",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 66.818,
+      "pitchAgreement": 0.333,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 3,
+      "t": 8.16,
+      "end": 8.32,
+      "midi": 67,
+      "lyric": "py",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.046,
+      "pitchAgreement": 0.8,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 8.202,
+      "attackDeltaMs": 42
+    },
+    {
+      "song": "ifhappy",
+      "index": 4,
+      "t": 8.36,
+      "end": 8.52,
+      "midi": 67,
+      "lyric": "and",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.962,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 5,
+      "t": 8.56,
+      "end": 8.72,
+      "midi": 67,
+      "lyric": "you",
+      "voicedFrames": 4,
+      "voicedFraction": 0.8,
+      "medianMidi": 67.124,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 6,
+      "t": 8.76,
+      "end": 8.93,
+      "midi": 67,
+      "lyric": "know",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.957,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 7,
+      "t": 8.97,
+      "end": 9.17,
+      "midi": 67,
+      "lyric": "it",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.07,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 11,
+      "t": 11.16,
+      "end": 11.32,
+      "midi": 72,
+      "lyric": "If",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.323,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 60,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "ifhappy",
+      "index": 12,
+      "t": 11.46,
+      "end": 11.62,
+      "midi": 72,
+      "lyric": "you're",
+      "voicedFrames": 4,
+      "voicedFraction": 0.8,
+      "medianMidi": 60.26,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 13,
+      "t": 11.7,
+      "end": 11.86,
+      "midi": 68,
+      "lyric": "hap-",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 69.018,
+      "pitchAgreement": 0.333,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 14,
+      "t": 11.95,
+      "end": 12.14,
+      "midi": 69,
+      "lyric": "py",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.068,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 11.962,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "ifhappy",
+      "index": 15,
+      "t": 12.18,
+      "end": 12.41,
+      "midi": 69,
+      "lyric": "and",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.013,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 16,
+      "t": 12.41,
+      "end": 12.57,
+      "midi": 69,
+      "lyric": "you",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.049,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 17,
+      "t": 12.6,
+      "end": 12.76,
+      "midi": 69,
+      "lyric": "know",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.049,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 18,
+      "t": 12.79,
+      "end": 12.98,
+      "midi": 69,
+      "lyric": "it",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.109,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 25,
+      "t": 15.7,
+      "end": 15.94,
+      "midi": 72,
+      "lyric": "py",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.023,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 26,
+      "t": 15.98,
+      "end": 16.26,
+      "midi": 72,
+      "lyric": "and",
+      "voicedFrames": 8,
+      "voicedFraction": 0.8,
+      "medianMidi": 72.109,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 27,
+      "t": 16.26,
+      "end": 16.45,
+      "midi": 64,
+      "lyric": "you",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.925,
+      "pitchAgreement": 0.8,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 16.322,
+      "attackDeltaMs": 62
+    },
+    {
+      "song": "ifhappy",
+      "index": 28,
+      "t": 16.49,
+      "end": 16.72,
+      "midi": 64,
+      "lyric": "know",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.044,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 29,
+      "t": 16.77,
+      "end": 17.18,
+      "midi": 72,
+      "lyric": "it",
+      "voicedFrames": 14,
+      "voicedFraction": 0.875,
+      "medianMidi": 71.994,
+      "pitchAgreement": 0.929,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 16.882,
+      "attackDeltaMs": 112
+    },
+    {
+      "song": "ifhappy",
+      "index": 37,
+      "t": 19.39,
+      "end": 19.79,
+      "midi": 67,
+      "lyric": "hap-",
+      "voicedFrames": 15,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.205,
+      "pitchAgreement": 0.533,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 19.582,
+      "attackDeltaMs": 192
+    },
+    {
+      "song": "ifhappy",
+      "index": 38,
+      "t": 19.79,
+      "end": 20.28,
+      "midi": 66,
+      "lyric": "py and you know",
+      "voicedFrames": 17,
+      "voicedFraction": 0.85,
+      "medianMidi": 65.919,
+      "pitchAgreement": 0.647,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 20.022,
+      "attackDeltaMs": 232
+    },
+    {
+      "song": "ifhappy",
+      "index": 44,
+      "t": 22.65,
+      "end": 22.81,
+      "midi": 59,
+      "lyric": "you're",
+      "voicedFrames": 2,
+      "voicedFraction": 0.4,
+      "medianMidi": 59.519,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 45,
+      "t": 23.09,
+      "end": 23.24,
+      "midi": 67,
+      "lyric": "hap-",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.934,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 23.082,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "ifhappy",
+      "index": 46,
+      "t": 23.24,
+      "end": 23.39,
+      "midi": 67,
+      "lyric": "py",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.014,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 47,
+      "t": 23.39,
+      "end": 23.54,
+      "midi": 67,
+      "lyric": "and",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.012,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 48,
+      "t": 23.54,
+      "end": 23.7,
+      "midi": 67,
+      "lyric": "you",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.028,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 49,
+      "t": 23.7,
+      "end": 23.86,
+      "midi": 67,
+      "lyric": "know",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.038,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 50,
+      "t": 23.86,
+      "end": 24.02,
+      "midi": 67,
+      "lyric": "it",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.089,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 54,
+      "t": 26.06,
+      "end": 26.22,
+      "midi": 72,
+      "lyric": "If",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.114,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 60,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "ifhappy",
+      "index": 55,
+      "t": 26.35,
+      "end": 26.51,
+      "midi": 72,
+      "lyric": "you're",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 60.035,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 56,
+      "t": 26.82,
+      "end": 26.96,
+      "midi": 69,
+      "lyric": "hap-",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.068,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 26.802,
+      "attackDeltaMs": -18
+    },
+    {
+      "song": "ifhappy",
+      "index": 57,
+      "t": 26.96,
+      "end": 27.1,
+      "midi": 69,
+      "lyric": "py",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.125,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 58,
+      "t": 27.1,
+      "end": 27.25,
+      "midi": 69,
+      "lyric": "and",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.0,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 59,
+      "t": 27.25,
+      "end": 27.41,
+      "midi": 69,
+      "lyric": "you",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.936,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 60,
+      "t": 27.41,
+      "end": 27.57,
+      "midi": 69,
+      "lyric": "know",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.07,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 61,
+      "t": 27.58,
+      "end": 27.75,
+      "midi": 69,
+      "lyric": "it",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.925,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 66,
+      "t": 30.09,
+      "end": 30.25,
+      "midi": 71,
+      "lyric": "you're",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 71.097,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 68,
+      "t": 30.57,
+      "end": 30.73,
+      "midi": 72,
+      "lyric": "py",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 71.989,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 69,
+      "t": 30.75,
+      "end": 30.91,
+      "midi": 72,
+      "lyric": "and",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.099,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 70,
+      "t": 30.93,
+      "end": 31.11,
+      "midi": 72,
+      "lyric": "you",
+      "voicedFrames": 3,
+      "voicedFraction": 0.5,
+      "medianMidi": 72.198,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 71,
+      "t": 31.11,
+      "end": 31.43,
+      "midi": 76,
+      "lyric": "know",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.967,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 64,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "ifhappy",
+      "index": 72,
+      "t": 31.43,
+      "end": 31.59,
+      "midi": 76,
+      "lyric": "it",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.18,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 64,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "ifhappy",
+      "index": 76,
+      "t": 32.81,
+      "end": 32.97,
+      "midi": 69,
+      "lyric": "will",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 69.105,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ],
+      "pitchAttackCandidate": 32.822,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "ifhappy",
+      "index": 82,
+      "t": 34.61,
+      "end": 34.71,
+      "midi": 66,
+      "lyric": "you",
+      "voicedFrames": 2,
+      "voicedFraction": 0.667,
+      "medianMidi": 66.062,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 34.802,
+      "attackDeltaMs": 192
+    },
+    {
+      "song": "ifhappy",
+      "index": 86,
+      "t": 35.57,
+      "end": 35.73,
+      "midi": 66,
+      "lyric": "your",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 65.98,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ],
+      "pitchAttackCandidate": 35.562,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "ifhappy",
+      "index": 89,
+      "t": 37.47,
+      "end": 37.63,
+      "midi": 60,
+      "lyric": "you're",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 60.322,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 90,
+      "t": 37.91,
+      "end": 38.06,
+      "midi": 67,
+      "lyric": "hap-",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.056,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 37.922,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "ifhappy",
+      "index": 91,
+      "t": 38.06,
+      "end": 38.21,
+      "midi": 67,
+      "lyric": "py",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.057,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 92,
+      "t": 38.21,
+      "end": 38.36,
+      "midi": 67,
+      "lyric": "and",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.024,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 93,
+      "t": 38.36,
+      "end": 38.52,
+      "midi": 67,
+      "lyric": "you",
+      "voicedFrames": 4,
+      "voicedFraction": 0.8,
+      "medianMidi": 66.991,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 94,
+      "t": 38.52,
+      "end": 38.68,
+      "midi": 67,
+      "lyric": "know",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.999,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 95,
+      "t": 38.68,
+      "end": 38.84,
+      "midi": 67,
+      "lyric": "it",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.992,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 97,
+      "t": 39.26,
+      "end": 39.66,
+      "midi": 69,
+      "lyric": "hoo-",
+      "voicedFrames": 16,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.921,
+      "pitchAgreement": 0.625,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 39.422,
+      "attackDeltaMs": 162
+    },
+    {
+      "song": "ifhappy",
+      "index": 99,
+      "t": 40.05,
+      "end": 40.29,
+      "midi": 69,
+      "lyric": "hoo-",
+      "voicedFrames": 6,
+      "voicedFraction": 0.857,
+      "medianMidi": 69.425,
+      "pitchAgreement": 0.667,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 40.162,
+      "attackDeltaMs": 112
+    },
+    {
+      "song": "ifhappy",
+      "index": 100,
+      "t": 40.29,
+      "end": 40.56,
+      "midi": 74,
+      "lyric": "ray",
+      "voicedFrames": 1,
+      "voicedFraction": 0.111,
+      "medianMidi": 74.093,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 101,
+      "t": 40.83,
+      "end": 40.99,
+      "midi": 72,
+      "lyric": "If",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.122,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 60,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "ifhappy",
+      "index": 102,
+      "t": 41.13,
+      "end": 41.29,
+      "midi": 72,
+      "lyric": "you're",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 60.542,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 103,
+      "t": 41.3,
+      "end": 41.46,
+      "midi": 68,
+      "lyric": "hap-",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 68.832,
+      "pitchAgreement": 0.333,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 104,
+      "t": 41.59,
+      "end": 41.78,
+      "midi": 69,
+      "lyric": "py",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.059,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 41.582,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "ifhappy",
+      "index": 105,
+      "t": 41.82,
+      "end": 42.04,
+      "midi": 69,
+      "lyric": "and",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.025,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 106,
+      "t": 42.04,
+      "end": 42.28,
+      "midi": 69,
+      "lyric": "you",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.222,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 107,
+      "t": 42.32,
+      "end": 42.59,
+      "midi": 69,
+      "lyric": "know",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.015,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 112,
+      "t": 43.8,
+      "end": 44.08,
+      "midi": 71,
+      "lyric": "hoo-",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 71.597,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 43.942,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "ifhappy",
+      "index": 114,
+      "t": 44.31,
+      "end": 44.47,
+      "midi": 68,
+      "lyric": "If",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 119,
+      "t": 45.86,
+      "end": 46.02,
+      "midi": 76,
+      "lyric": "you",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 64.09,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 120,
+      "t": 46.02,
+      "end": 46.18,
+      "midi": 76,
+      "lyric": "know",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.014,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 64,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "ifhappy",
+      "index": 121,
+      "t": 46.18,
+      "end": 46.34,
+      "midi": 76,
+      "lyric": "it",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.025,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 64,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "ifhappy",
+      "index": 122,
+      "t": 46.38,
+      "end": 46.78,
+      "midi": 72,
+      "lyric": "then",
+      "voicedFrames": 13,
+      "voicedFraction": 0.812,
+      "medianMidi": 72.086,
+      "pitchAgreement": 0.923,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 46.502,
+      "attackDeltaMs": 122
+    },
+    {
+      "song": "ifhappy",
+      "index": 124,
+      "t": 47.13,
+      "end": 47.28,
+      "midi": 71,
+      "lyric": "face",
+      "voicedFrames": 2,
+      "voicedFraction": 0.5,
+      "medianMidi": 71.13,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 131,
+      "t": 48.98,
+      "end": 49.15,
+      "midi": 67,
+      "lyric": "py",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.032,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "candidateMidi": 69,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting",
+      "pitchAttackCandidate": 49.162,
+      "attackDeltaMs": 182
+    },
+    {
+      "song": "ifhappy",
+      "index": 132,
+      "t": 49.19,
+      "end": 49.41,
+      "midi": 67,
+      "lyric": "and",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.983,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 134,
+      "t": 49.8,
+      "end": 49.96,
+      "midi": 63,
+      "lyric": "know",
+      "voicedFrames": 4,
+      "voicedFraction": 0.8,
+      "medianMidi": 42.691,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "ifhappy",
+      "index": 140,
+      "t": 51.38,
+      "end": 51.59,
+      "midi": 74,
+      "lyric": "ray",
+      "voicedFrames": 4,
+      "voicedFraction": 0.667,
+      "medianMidi": 74.903,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 75,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 0,
+      "t": 20.83,
+      "end": 21.13,
+      "midi": 70,
+      "lyric": "Lit-",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 58.066,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 58,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 1,
+      "t": 21.29,
+      "end": 21.6,
+      "midi": 67,
+      "lyric": "tle",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.746,
+      "pitchAgreement": 0.636,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 21.422,
+      "attackDeltaMs": 132
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 2,
+      "t": 21.64,
+      "end": 22.0,
+      "midi": 67,
+      "lyric": "Mon-",
+      "voicedFrames": 14,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.975,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 10,
+      "t": 24.7,
+      "end": 25.0,
+      "midi": 65,
+      "lyric": "fell",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.529,
+      "pitchAgreement": 0.545,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 24.842,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 11,
+      "t": 25.04,
+      "end": 25.37,
+      "midi": 65,
+      "lyric": "off",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.032,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 12,
+      "t": 25.54,
+      "end": 25.94,
+      "midi": 67,
+      "lyric": "and",
+      "voicedFrames": 16,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.925,
+      "pitchAgreement": 0.75,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 25.662,
+      "attackDeltaMs": 122
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 17,
+      "t": 28.01,
+      "end": 28.12,
+      "midi": 64,
+      "lyric": "ma",
+      "voicedFrames": 2,
+      "voicedFraction": 0.5,
+      "medianMidi": 63.823,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 24,
+      "t": 30.98,
+      "end": 31.24,
+      "midi": 70,
+      "lyric": "No",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.62,
+      "pitchAgreement": 0.556,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 31.102,
+      "attackDeltaMs": 122
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 25,
+      "t": 31.24,
+      "end": 31.52,
+      "midi": 70,
+      "lyric": "more",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 70.065,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 26,
+      "t": 31.56,
+      "end": 31.84,
+      "midi": 70,
+      "lyric": "mon-",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.977,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 27,
+      "t": 31.88,
+      "end": 32.2,
+      "midi": 70,
+      "lyric": "keys",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.987,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 31,
+      "t": 33.44,
+      "end": 33.61,
+      "midi": 63,
+      "lyric": "the",
+      "voicedFrames": 4,
+      "voicedFraction": 0.8,
+      "medianMidi": 61.498,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 33.602,
+      "attackDeltaMs": 162
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 32,
+      "t": 33.65,
+      "end": 33.85,
+      "midi": 63,
+      "lyric": "bed",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.921,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 34,
+      "t": 34.95,
+      "end": 35.11,
+      "midi": 64,
+      "lyric": "lit-",
+      "voicedFrames": 2,
+      "voicedFraction": 0.4,
+      "medianMidi": 64.767,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 35,
+      "t": 35.22,
+      "end": 35.4,
+      "midi": 67,
+      "lyric": "tle",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.979,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 35.242,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 36,
+      "t": 35.44,
+      "end": 35.63,
+      "midi": 67,
+      "lyric": "mon-",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.995,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 37,
+      "t": 35.67,
+      "end": 35.9,
+      "midi": 67,
+      "lyric": "keys",
+      "voicedFrames": 4,
+      "voicedFraction": 0.571,
+      "medianMidi": 67.139,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 42,
+      "t": 37.04,
+      "end": 37.42,
+      "midi": 65,
+      "lyric": "bed",
+      "voicedFrames": 15,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.786,
+      "pitchAgreement": 0.533,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "pitchAttackCandidate": 37.042,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 44,
+      "t": 38.36,
+      "end": 39.04,
+      "midi": 65,
+      "lyric": "fell",
+      "voicedFrames": 30,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.001,
+      "pitchAgreement": 0.833,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 38.502,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 45,
+      "t": 39.19,
+      "end": 39.31,
+      "midi": 65,
+      "lyric": "off",
+      "voicedFrames": 3,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.027,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 51,
+      "t": 41.7,
+      "end": 42.06,
+      "midi": 67,
+      "lyric": "ma",
+      "voicedFrames": 14,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.052,
+      "pitchAgreement": 0.571,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 41.802,
+      "attackDeltaMs": 102
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 57,
+      "t": 44.64,
+      "end": 45.0,
+      "midi": 70,
+      "lyric": "No",
+      "voicedFrames": 14,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.981,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 44.622,
+      "attackDeltaMs": -18
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 58,
+      "t": 45.04,
+      "end": 45.4,
+      "midi": 70,
+      "lyric": "more",
+      "voicedFrames": 14,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.983,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 59,
+      "t": 45.44,
+      "end": 45.84,
+      "midi": 70,
+      "lyric": "mon-",
+      "voicedFrames": 16,
+      "voicedFraction": 1.0,
+      "medianMidi": 70.0,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 61,
+      "t": 46.4,
+      "end": 46.58,
+      "midi": 58,
+      "lyric": "jum-",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 58.071,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 46.422,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 62,
+      "t": 46.62,
+      "end": 46.83,
+      "midi": 58,
+      "lyric": "ping",
+      "voicedFrames": 5,
+      "voicedFraction": 0.833,
+      "medianMidi": 58.044,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 66,
+      "t": 48.19,
+      "end": 48.35,
+      "midi": 58,
+      "lyric": "Three",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 58.051,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 48.202,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 67,
+      "t": 48.39,
+      "end": 48.6,
+      "midi": 58,
+      "lyric": "lit-",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 57.969,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 68,
+      "t": 48.6,
+      "end": 48.76,
+      "midi": 66,
+      "lyric": "tle",
+      "voicedFrames": 3,
+      "voicedFraction": 0.6,
+      "medianMidi": 65.729,
+      "pitchAgreement": 0.667,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 70,
+      "t": 49.19,
+      "end": 49.4,
+      "midi": 67,
+      "lyric": "keys",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 43.177,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 72,
+      "t": 49.82,
+      "end": 50.06,
+      "midi": 65,
+      "lyric": "ping",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.796,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "candidateMidi": 67,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting",
+      "pitchAttackCandidate": 50.102,
+      "attackDeltaMs": 282
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 77,
+      "t": 51.98,
+      "end": 52.28,
+      "midi": 65,
+      "lyric": "fell",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.674,
+      "pitchAgreement": 0.545,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 52.122,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 78,
+      "t": 52.32,
+      "end": 52.67,
+      "midi": 65,
+      "lyric": "off",
+      "voicedFrames": 13,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.967,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 79,
+      "t": 52.82,
+      "end": 53.22,
+      "midi": 67,
+      "lyric": "and",
+      "voicedFrames": 16,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.811,
+      "pitchAgreement": 0.688,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 52.962,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 84,
+      "t": 55.32,
+      "end": 55.43,
+      "midi": 64,
+      "lyric": "ma",
+      "voicedFrames": 2,
+      "voicedFraction": 0.667,
+      "medianMidi": 64.052,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 85,
+      "t": 55.43,
+      "end": 55.69,
+      "midi": 67,
+      "lyric": "called",
+      "voicedFrames": 6,
+      "voicedFraction": 0.75,
+      "medianMidi": 66.923,
+      "pitchAgreement": 0.5,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 86,
+      "t": 55.69,
+      "end": 55.93,
+      "midi": 67,
+      "lyric": "the",
+      "voicedFrames": 5,
+      "voicedFraction": 0.714,
+      "medianMidi": 39.162,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 39,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 87,
+      "t": 56.02,
+      "end": 56.53,
+      "midi": 67,
+      "lyric": "doc-tor and the",
+      "voicedFrames": 20,
+      "voicedFraction": 0.952,
+      "medianMidi": 39.13,
+      "pitchAgreement": 0.1,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 39,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 88,
+      "t": 56.53,
+      "end": 56.83,
+      "midi": 67,
+      "lyric": "doc-",
+      "voicedFrames": 8,
+      "voicedFraction": 0.8,
+      "medianMidi": 39.105,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 39,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 90,
+      "t": 57.45,
+      "end": 57.82,
+      "midi": 68,
+      "lyric": "said",
+      "voicedFrames": 14,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.98,
+      "pitchAgreement": 0.786,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 57.562,
+      "attackDeltaMs": 112
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 91,
+      "t": 58.23,
+      "end": 58.6,
+      "midi": 70,
+      "lyric": "No",
+      "voicedFrames": 14,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.975,
+      "pitchAgreement": 0.929,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 58.302,
+      "attackDeltaMs": 72
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 92,
+      "t": 58.64,
+      "end": 59.01,
+      "midi": 70,
+      "lyric": "more",
+      "voicedFrames": 14,
+      "voicedFraction": 1.0,
+      "medianMidi": 70.033,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 93,
+      "t": 59.05,
+      "end": 59.46,
+      "midi": 70,
+      "lyric": "mon-",
+      "voicedFrames": 16,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.999,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 95,
+      "t": 60.01,
+      "end": 60.18,
+      "midi": 58,
+      "lyric": "jum-",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 58.06,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 60.042,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 96,
+      "t": 60.22,
+      "end": 60.43,
+      "midi": 58,
+      "lyric": "ping",
+      "voicedFrames": 4,
+      "voicedFraction": 0.667,
+      "medianMidi": 58.132,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 98,
+      "t": 60.69,
+      "end": 60.88,
+      "midi": 63,
+      "lyric": "the",
+      "voicedFrames": 5,
+      "voicedFraction": 0.833,
+      "medianMidi": 61.857,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 60.862,
+      "attackDeltaMs": 172
+    },
+    {
+      "song": "fivemonkeys",
+      "index": 99,
+      "t": 60.92,
+      "end": 61.16,
+      "midi": 63,
+      "lyric": "bed",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.057,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 5,
+      "t": 17.01,
+      "end": 17.22,
+      "midi": 67,
+      "lyric": "do",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.037,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 6,
+      "t": 17.26,
+      "end": 17.51,
+      "midi": 67,
+      "lyric": "do",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.013,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 24,
+      "t": 23.4,
+      "end": 23.93,
+      "midi": 62,
+      "lyric": "Mom-",
+      "voicedFrames": 22,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.725,
+      "pitchAgreement": 0.636,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 23.602,
+      "attackDeltaMs": 202
+    },
+    {
+      "song": "babyshark",
+      "index": 33,
+      "t": 26.33,
+      "end": 26.74,
+      "midi": 67,
+      "lyric": "",
+      "voicedFrames": 13,
+      "voicedFraction": 0.812,
+      "medianMidi": 67.025,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 26.362,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "babyshark",
+      "index": 34,
+      "t": 26.81,
+      "end": 27.34,
+      "midi": 67,
+      "lyric": "",
+      "voicedFrames": 22,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.018,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 35,
+      "t": 27.43,
+      "end": 27.61,
+      "midi": 67,
+      "lyric": "",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.145,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 36,
+      "t": 27.78,
+      "end": 28.03,
+      "midi": 62,
+      "lyric": "",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.059,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 27.782,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "babyshark",
+      "index": 37,
+      "t": 28.03,
+      "end": 28.2,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.043,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 28.042,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "babyshark",
+      "index": 38,
+      "t": 28.26,
+      "end": 28.44,
+      "midi": 67,
+      "lyric": "",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.104,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 28.282,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "babyshark",
+      "index": 39,
+      "t": 28.51,
+      "end": 28.67,
+      "midi": 67,
+      "lyric": "",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.103,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 40,
+      "t": 28.74,
+      "end": 30.15,
+      "midi": 67,
+      "lyric": "",
+      "voicedFrames": 63,
+      "voicedFraction": 0.955,
+      "medianMidi": 67.018,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 41,
+      "t": 30.21,
+      "end": 30.43,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.998,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 30.242,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "babyshark",
+      "index": 42,
+      "t": 31.26,
+      "end": 31.78,
+      "midi": 62,
+      "lyric": "Dad-",
+      "voicedFrames": 22,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.014,
+      "pitchAgreement": 0.773,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 31.402,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "babyshark",
+      "index": 49,
+      "t": 33.95,
+      "end": 34.12,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.005,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 33.942,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "babyshark",
+      "index": 50,
+      "t": 34.12,
+      "end": 34.36,
+      "midi": 67,
+      "lyric": "",
+      "voicedFrames": 7,
+      "voicedFraction": 0.875,
+      "medianMidi": 67.014,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 34.182,
+      "attackDeltaMs": 62
+    },
+    {
+      "song": "babyshark",
+      "index": 62,
+      "t": 39.12,
+      "end": 39.33,
+      "midi": 62,
+      "lyric": "Gran-",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.218,
+      "pitchAgreement": 0.167,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 39.262,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "babyshark",
+      "index": 63,
+      "t": 39.37,
+      "end": 39.63,
+      "midi": 62,
+      "lyric": "dma",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.071,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 69,
+      "t": 41.21,
+      "end": 41.36,
+      "midi": 67,
+      "lyric": "do",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.027,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 70,
+      "t": 41.36,
+      "end": 41.52,
+      "midi": 67,
+      "lyric": "do",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.949,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 86,
+      "t": 46.84,
+      "end": 47.39,
+      "midi": 62,
+      "lyric": "Gran-",
+      "voicedFrames": 23,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.922,
+      "pitchAgreement": 0.696,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 47.022,
+      "attackDeltaMs": 182
+    },
+    {
+      "song": "babyshark",
+      "index": 87,
+      "t": 47.39,
+      "end": 47.57,
+      "midi": 64,
+      "lyric": "dpa",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.193,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 47.422,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "babyshark",
+      "index": 88,
+      "t": 47.61,
+      "end": 47.83,
+      "midi": 64,
+      "lyric": "shark",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.049,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 93,
+      "t": 48.99,
+      "end": 49.15,
+      "midi": 67,
+      "lyric": "do",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.054,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 94,
+      "t": 49.15,
+      "end": 49.31,
+      "midi": 67,
+      "lyric": "do",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.975,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 101,
+      "t": 50.99,
+      "end": 51.15,
+      "midi": 67,
+      "lyric": "do",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.016,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 102,
+      "t": 51.15,
+      "end": 51.31,
+      "midi": 67,
+      "lyric": "do",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.011,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 108,
+      "t": 52.59,
+      "end": 52.73,
+      "midi": 67,
+      "lyric": "do",
+      "voicedFrames": 4,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.104,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "babyshark",
+      "index": 109,
+      "t": 52.73,
+      "end": 52.89,
+      "midi": 67,
+      "lyric": "do",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.925,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 0,
+      "t": 8.36,
+      "end": 8.59,
+      "midi": 60,
+      "lyric": "把",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 59.763,
+      "pitchAgreement": 0.714,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 8.442,
+      "attackDeltaMs": 82
+    },
+    {
+      "song": "baluobo",
+      "index": 1,
+      "t": 8.63,
+      "end": 8.9,
+      "midi": 60,
+      "lyric": "萝",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 59.699,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 3,
+      "t": 9.75,
+      "end": 10.09,
+      "midi": 69,
+      "lyric": "把",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.995,
+      "pitchAgreement": 0.667,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 9.882,
+      "attackDeltaMs": 132
+    },
+    {
+      "song": "baluobo",
+      "index": 4,
+      "t": 10.09,
+      "end": 10.39,
+      "midi": 65,
+      "lyric": "萝",
+      "voicedFrames": 9,
+      "voicedFraction": 0.9,
+      "medianMidi": 65.026,
+      "pitchAgreement": 0.556,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 10.242,
+      "attackDeltaMs": 152
+    },
+    {
+      "song": "baluobo",
+      "index": 6,
+      "t": 11.1,
+      "end": 11.35,
+      "midi": 72,
+      "lyric": "嘿",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.09,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 11.122,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "baluobo",
+      "index": 7,
+      "t": 11.39,
+      "end": 11.67,
+      "midi": 72,
+      "lyric": "呦",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.172,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 8,
+      "t": 11.76,
+      "end": 12.01,
+      "midi": 72,
+      "lyric": "嘿",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.273,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 9,
+      "t": 12.05,
+      "end": 12.33,
+      "midi": 72,
+      "lyric": "呦",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.117,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 13,
+      "t": 13.84,
+      "end": 14.07,
+      "midi": 72,
+      "lyric": "嘿",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.077,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 13.842,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "baluobo",
+      "index": 14,
+      "t": 14.11,
+      "end": 14.38,
+      "midi": 72,
+      "lyric": "呦",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.183,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 15,
+      "t": 14.49,
+      "end": 14.73,
+      "midi": 72,
+      "lyric": "嘿",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.276,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 16,
+      "t": 14.77,
+      "end": 15.06,
+      "midi": 72,
+      "lyric": "呦",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.187,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 29,
+      "t": 20.36,
+      "end": 20.66,
+      "midi": 67,
+      "lyric": "我",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.486,
+      "pitchAgreement": 0.545,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 20.502,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "baluobo",
+      "index": 30,
+      "t": 20.66,
+      "end": 20.86,
+      "midi": 65,
+      "lyric": "们",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.025,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 20.702,
+      "attackDeltaMs": 42
+    },
+    {
+      "song": "baluobo",
+      "index": 31,
+      "t": 20.9,
+      "end": 21.14,
+      "midi": 65,
+      "lyric": "把",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.161,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 34,
+      "t": 24.68,
+      "end": 24.92,
+      "midi": 60,
+      "lyric": "把",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.083,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 24.702,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "baluobo",
+      "index": 35,
+      "t": 24.96,
+      "end": 25.23,
+      "midi": 60,
+      "lyric": "萝",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 59.994,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 37,
+      "t": 26.06,
+      "end": 26.46,
+      "midi": 69,
+      "lyric": "把",
+      "voicedFrames": 16,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.774,
+      "pitchAgreement": 0.75,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 26.182,
+      "attackDeltaMs": 122
+    },
+    {
+      "song": "baluobo",
+      "index": 38,
+      "t": 26.46,
+      "end": 26.72,
+      "midi": 65,
+      "lyric": "萝",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.07,
+      "pitchAgreement": 0.667,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 26.562,
+      "attackDeltaMs": 102
+    },
+    {
+      "song": "baluobo",
+      "index": 40,
+      "t": 27.41,
+      "end": 27.65,
+      "midi": 72,
+      "lyric": "嘿",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.128,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 27.402,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "baluobo",
+      "index": 41,
+      "t": 27.69,
+      "end": 27.96,
+      "midi": 72,
+      "lyric": "呦",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.155,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 42,
+      "t": 28.05,
+      "end": 28.3,
+      "midi": 72,
+      "lyric": "嘿",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.132,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 43,
+      "t": 28.34,
+      "end": 28.63,
+      "midi": 72,
+      "lyric": "呦",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.099,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 47,
+      "t": 30.06,
+      "end": 30.31,
+      "midi": 72,
+      "lyric": "嘿",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.126,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 30.082,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "baluobo",
+      "index": 48,
+      "t": 30.35,
+      "end": 30.65,
+      "midi": 72,
+      "lyric": "呦",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.068,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 49,
+      "t": 30.74,
+      "end": 30.98,
+      "midi": 72,
+      "lyric": "嘿",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.148,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 50,
+      "t": 31.02,
+      "end": 31.3,
+      "midi": 72,
+      "lyric": "呦",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.141,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 60,
+      "t": 35.49,
+      "end": 35.74,
+      "midi": 72,
+      "lyric": "快",
+      "voicedFrames": 7,
+      "voicedFraction": 0.875,
+      "medianMidi": 72.087,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 35.562,
+      "attackDeltaMs": 72
+    },
+    {
+      "song": "baluobo",
+      "index": 61,
+      "t": 35.78,
+      "end": 36.08,
+      "midi": 72,
+      "lyric": "来",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.072,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "baluobo",
+      "index": 63,
+      "t": 36.49,
+      "end": 36.85,
+      "midi": 67,
+      "lyric": "我",
+      "voicedFrames": 13,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.227,
+      "pitchAgreement": 0.538,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 36.662,
+      "attackDeltaMs": 172
+    },
+    {
+      "song": "baluobo",
+      "index": 64,
+      "t": 36.85,
+      "end": 37.04,
+      "midi": 65,
+      "lyric": "们",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.092,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 36.862,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "baluobo",
+      "index": 65,
+      "t": 37.08,
+      "end": 37.31,
+      "midi": 65,
+      "lyric": "抱",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.132,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "xiaoyanzi",
+      "index": 1,
+      "t": 12.95,
+      "end": 13.13,
+      "midi": 61,
+      "lyric": "",
+      "voicedFrames": 6,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.045,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 12.962,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "xiaoyanzi",
+      "index": 2,
+      "t": 13.13,
+      "end": 13.41,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.991,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 13.142,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "xiaoyanzi",
+      "index": 4,
+      "t": 13.74,
+      "end": 14.02,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.016,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 13.742,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "xiaoyanzi",
+      "index": 8,
+      "t": 15.92,
+      "end": 16.21,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.046,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 15.902,
+      "attackDeltaMs": -18
+    },
+    {
+      "song": "xiaoyanzi",
+      "index": 9,
+      "t": 16.21,
+      "end": 16.5,
+      "midi": 69,
+      "lyric": "",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.976,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 16.242,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "xiaoyanzi",
+      "index": 18,
+      "t": 21.22,
+      "end": 21.47,
+      "midi": 69,
+      "lyric": "",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.98,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 21.222,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "xiaoyanzi",
+      "index": 19,
+      "t": 21.47,
+      "end": 21.82,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 13,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.104,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 21.502,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "xiaoyanzi",
+      "index": 21,
+      "t": 23.05,
+      "end": 23.72,
+      "midi": 61,
+      "lyric": "",
+      "voicedFrames": 29,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.997,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 23.042,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "xiaoyanzi",
+      "index": 29,
+      "t": 26.69,
+      "end": 26.95,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 8,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.068,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 26.702,
+      "attackDeltaMs": 12
+    },
+    {
+      "song": "xiaoyanzi",
+      "index": 39,
+      "t": 33.18,
+      "end": 33.7,
+      "midi": 59,
+      "lyric": "美",
+      "voicedFrames": 22,
+      "voicedFraction": 1.0,
+      "medianMidi": 59.017,
+      "pitchAgreement": 0.818,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 33.302,
+      "attackDeltaMs": 122
+    },
+    {
+      "song": "xiaoyanzi",
+      "index": 40,
+      "t": 33.7,
+      "end": 34.15,
+      "midi": 61,
+      "lyric": "",
+      "voicedFrames": 18,
+      "voicedFraction": 1.0,
+      "medianMidi": 61.009,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 33.702,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "xiaoyanzi",
+      "index": 41,
+      "t": 34.15,
+      "end": 34.37,
+      "midi": 63,
+      "lyric": "",
+      "voicedFrames": 1,
+      "voicedFraction": 0.167,
+      "medianMidi": 40.222,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "rasasayang",
+      "index": 2,
+      "t": 10.91,
+      "end": 12.16,
+      "midi": 66,
+      "lyric": "sayang",
+      "voicedFrames": 58,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.976,
+      "pitchAgreement": 0.879,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 11.102,
+      "attackDeltaMs": 192
+    },
+    {
+      "song": "rasasayang",
+      "index": 6,
+      "t": 13.12,
+      "end": 13.35,
+      "midi": 68,
+      "lyric": "",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 68.044,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 13.142,
+      "attackDeltaMs": 22
+    },
+    {
+      "song": "rasasayang",
+      "index": 7,
+      "t": 13.42,
+      "end": 13.89,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 19,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.841,
+      "pitchAgreement": 0.684,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 13.582,
+      "attackDeltaMs": 162
+    },
+    {
+      "song": "rasasayang",
+      "index": 8,
+      "t": 13.89,
+      "end": 14.4,
+      "midi": 63,
+      "lyric": "sayang",
+      "voicedFrames": 16,
+      "voicedFraction": 0.762,
+      "medianMidi": 62.94,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 14.082,
+      "attackDeltaMs": 192
+    },
+    {
+      "song": "rasasayang",
+      "index": 12,
+      "t": 15.56,
+      "end": 15.91,
+      "midi": 71,
+      "lyric": "",
+      "voicedFrames": 13,
+      "voicedFraction": 1.0,
+      "medianMidi": 71.051,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 15.562,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "rasasayang",
+      "index": 15,
+      "t": 16.57,
+      "end": 16.69,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 3,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.243,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "insufficient-independent-voice"
+      ],
+      "pitchAttackCandidate": 16.562,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "rasasayang",
+      "index": 18,
+      "t": 17.11,
+      "end": 17.65,
+      "midi": 63,
+      "lyric": "jauh",
+      "voicedFrames": 18,
+      "voicedFraction": 0.818,
+      "medianMidi": 51.077,
+      "pitchAgreement": 0.444,
+      "flags": [
+        "independent-pitch-disagreement"
+      ]
+    },
+    {
+      "song": "rasasayang",
+      "index": 21,
+      "t": 18.19,
+      "end": 18.37,
+      "midi": 63,
+      "lyric": "",
+      "voicedFrames": 5,
+      "voicedFraction": 0.833,
+      "medianMidi": 63.038,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 18.222,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "rasasayang",
+      "index": 22,
+      "t": 18.47,
+      "end": 18.94,
+      "midi": 61,
+      "lyric": "",
+      "voicedFrames": 19,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.997,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 18.502,
+      "attackDeltaMs": 32
+    },
+    {
+      "song": "rasasayang",
+      "index": 24,
+      "t": 19.14,
+      "end": 19.58,
+      "midi": 58,
+      "lyric": "",
+      "voicedFrames": 18,
+      "voicedFraction": 1.0,
+      "medianMidi": 57.975,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 19.182,
+      "attackDeltaMs": 42
+    },
+    {
+      "song": "rasasayang",
+      "index": 30,
+      "t": 26.73,
+      "end": 27.0,
+      "midi": 66,
+      "lyric": "oh",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 65.946,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "rasasayang",
+      "index": 31,
+      "t": 27.04,
+      "end": 27.35,
+      "midi": 66,
+      "lyric": "yeah",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.114,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "rasasayang",
+      "index": 32,
+      "t": 27.35,
+      "end": 27.92,
+      "midi": 71,
+      "lyric": "I",
+      "voicedFrames": 24,
+      "voicedFraction": 1.0,
+      "medianMidi": 70.974,
+      "pitchAgreement": 0.708,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 27.542,
+      "attackDeltaMs": 192
+    },
+    {
+      "song": "rasasayang",
+      "index": 34,
+      "t": 28.36,
+      "end": 28.89,
+      "midi": 66,
+      "lyric": "love",
+      "voicedFrames": 22,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.048,
+      "pitchAgreement": 0.773,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 28.502,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "rasasayang",
+      "index": 38,
+      "t": 30.07,
+      "end": 30.23,
+      "midi": 66,
+      "lyric": "yeah",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "rasasayang",
+      "index": 39,
+      "t": 30.55,
+      "end": 31.12,
+      "midi": 71,
+      "lyric": "hey",
+      "voicedFrames": 24,
+      "voicedFraction": 1.0,
+      "medianMidi": 70.872,
+      "pitchAgreement": 0.625,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 30.782,
+      "attackDeltaMs": 232
+    },
+    {
+      "song": "rasasayang",
+      "index": 47,
+      "t": 33.38,
+      "end": 33.66,
+      "midi": 63,
+      "lyric": "feel",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.866,
+      "pitchAgreement": 0.7,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 33.482,
+      "attackDeltaMs": 102
+    },
+    {
+      "song": "rasasayang",
+      "index": 50,
+      "t": 34.17,
+      "end": 34.77,
+      "midi": 58,
+      "lyric": "now",
+      "voicedFrames": 25,
+      "voicedFraction": 1.0,
+      "medianMidi": 58.133,
+      "pitchAgreement": 0.84,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 34.302,
+      "attackDeltaMs": 132
+    },
+    {
+      "song": "chanmalichan",
+      "index": 0,
+      "t": 9.35,
+      "end": 9.71,
+      "midi": 67,
+      "lyric": "Di",
+      "voicedFrames": 12,
+      "voicedFraction": 0.923,
+      "medianMidi": 66.496,
+      "pitchAgreement": 0.583,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 9.522,
+      "attackDeltaMs": 172
+    },
+    {
+      "song": "chanmalichan",
+      "index": 1,
+      "t": 9.75,
+      "end": 10.11,
+      "midi": 67,
+      "lyric": "ma-",
+      "voicedFrames": 13,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.042,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "chanmalichan",
+      "index": 2,
+      "t": 10.15,
+      "end": 10.51,
+      "midi": 67,
+      "lyric": "na",
+      "voicedFrames": 13,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.018,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "chanmalichan",
+      "index": 3,
+      "t": 10.55,
+      "end": 10.95,
+      "midi": 67,
+      "lyric": "dia",
+      "voicedFrames": 15,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.893,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "chanmalichan",
+      "index": 4,
+      "t": 11.37,
+      "end": 11.49,
+      "midi": 65,
+      "lyric": "a-",
+      "voicedFrames": 2,
+      "voicedFraction": 0.667,
+      "medianMidi": 64.89,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ],
+      "pitchAttackCandidate": 11.422,
+      "attackDeltaMs": 52
+    },
+    {
+      "song": "chanmalichan",
+      "index": 6,
+      "t": 11.66,
+      "end": 11.82,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.005,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 11.662,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "chanmalichan",
+      "index": 9,
+      "t": 12.52,
+      "end": 13.08,
+      "midi": 62,
+      "lyric": "saya",
+      "voicedFrames": 24,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.051,
+      "pitchAgreement": 0.833,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 12.642,
+      "attackDeltaMs": 122
+    },
+    {
+      "song": "chanmalichan",
+      "index": 11,
+      "t": 13.95,
+      "end": 14.11,
+      "midi": 58,
+      "lyric": "nak",
+      "voicedFrames": 1,
+      "voicedFraction": 0.2,
+      "medianMidi": 58.535,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "chanmalichan",
+      "index": 13,
+      "t": 14.82,
+      "end": 15.14,
+      "midi": 69,
+      "lyric": "bing",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.0,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "chanmalichan",
+      "index": 14,
+      "t": 15.18,
+      "end": 15.54,
+      "midi": 69,
+      "lyric": "saya",
+      "voicedFrames": 14,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.038,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "chanmalichan",
+      "index": 20,
+      "t": 17.18,
+      "end": 17.67,
+      "midi": 67,
+      "lyric": "las",
+      "voicedFrames": 20,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.117,
+      "pitchAgreement": 0.75,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 17.322,
+      "attackDeltaMs": 142
+    },
+    {
+      "song": "chanmalichan",
+      "index": 21,
+      "t": 18.68,
+      "end": 18.77,
+      "midi": 63,
+      "lyric": "Di",
+      "voicedFrames": 2,
+      "voicedFraction": 1.0,
+      "medianMidi": 60.827,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "chanmalichan",
+      "index": 22,
+      "t": 18.77,
+      "end": 19.3,
+      "midi": 67,
+      "lyric": "ma-",
+      "voicedFrames": 22,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.036,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ],
+      "pitchAttackCandidate": 18.822,
+      "attackDeltaMs": 52
+    },
+    {
+      "song": "chanmalichan",
+      "index": 23,
+      "t": 19.34,
+      "end": 19.88,
+      "midi": 67,
+      "lyric": "na",
+      "voicedFrames": 23,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.009,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "chanmalichan",
+      "index": 24,
+      "t": 19.92,
+      "end": 20.5,
+      "midi": 67,
+      "lyric": "dia",
+      "voicedFrames": 25,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.044,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "chanmalichan",
+      "index": 25,
+      "t": 20.76,
+      "end": 21.04,
+      "midi": 66,
+      "lyric": "buah",
+      "voicedFrames": 10,
+      "voicedFraction": 1.0,
+      "medianMidi": 66.008,
+      "pitchAgreement": 0.7,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 20.862,
+      "attackDeltaMs": 102
+    },
+    {
+      "song": "chanmalichan",
+      "index": 26,
+      "t": 21.04,
+      "end": 21.2,
+      "midi": 64,
+      "lyric": "",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 63.972,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 21.042,
+      "attackDeltaMs": 2
+    },
+    {
+      "song": "chanmalichan",
+      "index": 29,
+      "t": 21.88,
+      "end": 22.5,
+      "midi": 62,
+      "lyric": "saya",
+      "voicedFrames": 27,
+      "voicedFraction": 1.0,
+      "medianMidi": 62.063,
+      "pitchAgreement": 0.852,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 22.002,
+      "attackDeltaMs": 122
+    },
+    {
+      "song": "chanmalichan",
+      "index": 31,
+      "t": 23.35,
+      "end": 23.51,
+      "midi": 66,
+      "lyric": "",
+      "voicedFrames": 0,
+      "voicedFraction": 0.0,
+      "medianMidi": null,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "chanmalichan",
+      "index": 39,
+      "t": 26.23,
+      "end": 26.32,
+      "midi": 70,
+      "lyric": "",
+      "voicedFrames": 3,
+      "voicedFraction": 1.0,
+      "medianMidi": 70.09,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "unlabelled-note-or-melisma",
+        "insufficient-independent-voice"
+      ],
+      "pitchAttackCandidate": 26.222,
+      "attackDeltaMs": -8
+    },
+    {
+      "song": "chanmalichan",
+      "index": 41,
+      "t": 26.5,
+      "end": 26.63,
+      "midi": 69,
+      "lyric": "ku-",
+      "voicedFrames": 3,
+      "voicedFraction": 0.75,
+      "medianMidi": 69.083,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "insufficient-independent-voice"
+      ]
+    },
+    {
+      "song": "chanmalichan",
+      "index": 44,
+      "t": 27.98,
+      "end": 28.9,
+      "midi": 72,
+      "lyric": "ma-",
+      "voicedFrames": 42,
+      "voicedFraction": 1.0,
+      "medianMidi": 72.002,
+      "pitchAgreement": 0.762,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 28.222,
+      "attackDeltaMs": 242
+    },
+    {
+      "song": "chanmalichan",
+      "index": 46,
+      "t": 29.43,
+      "end": 29.64,
+      "midi": 76,
+      "lyric": "chan",
+      "voicedFrames": 7,
+      "voicedFraction": 1.0,
+      "medianMidi": 64.154,
+      "pitchAgreement": 0.286,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 29.562,
+      "attackDeltaMs": 132
+    },
+    {
+      "song": "chanmalichan",
+      "index": 47,
+      "t": 29.7,
+      "end": 29.85,
+      "midi": 76,
+      "lyric": "oh",
+      "voicedFrames": 4,
+      "voicedFraction": 0.8,
+      "medianMidi": 64.034,
+      "pitchAgreement": 0.0,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 64,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "chanmalichan",
+      "index": 48,
+      "t": 29.85,
+      "end": 30.01,
+      "midi": 76,
+      "lyric": "boy",
+      "voicedFrames": 5,
+      "voicedFraction": 1.0,
+      "medianMidi": 75.595,
+      "pitchAgreement": 0.6,
+      "flags": [
+        "independent-pitch-disagreement"
+      ],
+      "candidateMidi": 76,
+      "candidateStatus": "second-estimator-only; inspect recording before adopting"
+    },
+    {
+      "song": "chanmalichan",
+      "index": 49,
+      "t": 30.3,
+      "end": 30.56,
+      "midi": 71,
+      "lyric": "Chan",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 69.196,
+      "pitchAgreement": 0.111,
+      "flags": [
+        "equal-duration-syllable-split",
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 30.502,
+      "attackDeltaMs": 202
+    },
+    {
+      "song": "chanmalichan",
+      "index": 50,
+      "t": 30.6,
+      "end": 30.86,
+      "midi": 71,
+      "lyric": "ma-",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 71.099,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "chanmalichan",
+      "index": 51,
+      "t": 30.9,
+      "end": 31.21,
+      "midi": 71,
+      "lyric": "li",
+      "voicedFrames": 11,
+      "voicedFraction": 1.0,
+      "medianMidi": 70.994,
+      "pitchAgreement": 1.0,
+      "flags": [
+        "equal-duration-syllable-split"
+      ]
+    },
+    {
+      "song": "chanmalichan",
+      "index": 55,
+      "t": 32.59,
+      "end": 32.92,
+      "midi": 69,
+      "lyric": "Chan",
+      "voicedFrames": 12,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.742,
+      "pitchAgreement": 0.333,
+      "flags": [
+        "independent-pitch-disagreement",
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 32.802,
+      "attackDeltaMs": 212
+    },
+    {
+      "song": "chanmalichan",
+      "index": 62,
+      "t": 35.46,
+      "end": 35.73,
+      "midi": 71,
+      "lyric": "",
+      "voicedFrames": 9,
+      "voicedFraction": 1.0,
+      "medianMidi": 70.934,
+      "pitchAgreement": 0.778,
+      "flags": [
+        "unlabelled-note-or-melisma"
+      ],
+      "pitchAttackCandidate": 35.542,
+      "attackDeltaMs": 82
+    },
+    {
+      "song": "chanmalichan",
+      "index": 63,
+      "t": 35.79,
+      "end": 36.63,
+      "midi": 67,
+      "lyric": "peyang",
+      "voicedFrames": 37,
+      "voicedFraction": 1.0,
+      "medianMidi": 67.017,
+      "pitchAgreement": 0.892,
+      "flags": [
+        "attack-over-100ms-from-pitch-evidence"
+      ],
+      "pitchAttackCandidate": 35.922,
+      "attackDeltaMs": 132
+    }
+  ]
+}

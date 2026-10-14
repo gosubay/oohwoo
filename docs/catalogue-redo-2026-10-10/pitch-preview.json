@@ -1,0 +1,674 @@
+{
+  "twinkle": [],
+  "brotherjohn": [],
+  "humptydumpty": [],
+  "headshoulders": [],
+  "londonbridge": [],
+  "itsybitsy": [
+    {
+      "id": "itsybitsy-en-2-03397",
+      "t": 33.97,
+      "lyric": "spi-",
+      "field": "midi",
+      "old": 65,
+      "new": 53,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 52.995,
+          "frames": 14,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 52.989,
+          "frames": 29,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    },
+    {
+      "id": "itsybitsy-zh-2-07646",
+      "t": 76.46,
+      "lyric": "哗",
+      "field": "midi",
+      "old": 65,
+      "new": 53,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 52.897,
+          "frames": 7,
+          "coverage": 0.778,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 52.888,
+          "frames": 12,
+          "coverage": 0.706,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    },
+    {
+      "id": "itsybitsy-zh-2-07782",
+      "t": 77.82,
+      "lyric": "把",
+      "field": "midi",
+      "old": 65,
+      "new": 53,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 52.943,
+          "frames": 11,
+          "coverage": 0.846,
+          "stable": 0.909,
+          "candidateSupport": 0.909
+        },
+        "praat": {
+          "median": 52.921,
+          "frames": 22,
+          "coverage": 0.846,
+          "stable": 0.909,
+          "candidateSupport": 0.909
+        }
+      }
+    }
+  ],
+  "baabaa": [],
+  "marylamb": [],
+  "rowboat": [],
+  "moretogether": [],
+  "littlebunny": [
+    {
+      "id": "littlebunny-en-2-07102",
+      "t": 71.02,
+      "lyric": "tle",
+      "field": "midi",
+      "old": 62,
+      "new": 50,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 50.049,
+          "frames": 5,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "autocorrelation": {
+          "median": 50.025,
+          "frames": 12,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 50.007,
+          "frames": 11,
+          "coverage": 0.917,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    }
+  ],
+  "rainrain": [
+    {
+      "id": "rainrain-zh-5-15250",
+      "t": 152.5,
+      "lyric": "你",
+      "field": "midi",
+      "old": 60,
+      "new": 48,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 47.953,
+          "frames": 10,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 47.956,
+          "frames": 19,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    },
+    {
+      "id": "rainrain-zh-6-16314",
+      "t": 163.14,
+      "lyric": "雨",
+      "field": "midi",
+      "old": 60,
+      "new": 48,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 48.061,
+          "frames": 9,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 48.044,
+          "frames": 18,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    },
+    {
+      "id": "rainrain-zh-6-16446",
+      "t": 164.46,
+      "lyric": "走",
+      "field": "midi",
+      "old": 60,
+      "new": 48,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 47.978,
+          "frames": 10,
+          "coverage": 0.909,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "autocorrelation": {
+          "median": 47.984,
+          "frames": 21,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 47.963,
+          "frames": 18,
+          "coverage": 0.9,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    },
+    {
+      "id": "rainrain-zh-6-16551",
+      "t": 165.51,
+      "lyric": "",
+      "field": "midi",
+      "old": 60,
+      "new": 48,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "autocorrelation": {
+          "median": 47.937,
+          "frames": 8,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 47.918,
+          "frames": 7,
+          "coverage": 0.778,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    },
+    {
+      "id": "rainrain-zh-6-16681",
+      "t": 166.81,
+      "lyric": "再",
+      "field": "midi",
+      "old": 60,
+      "new": 48,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 47.944,
+          "frames": 7,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "autocorrelation": {
+          "median": 47.955,
+          "frames": 14,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 47.942,
+          "frames": 13,
+          "coverage": 0.929,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    },
+    {
+      "id": "rainrain-zh-6-16718",
+      "t": 167.18,
+      "lyric": "",
+      "field": "midi",
+      "old": 60,
+      "new": 48,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 47.991,
+          "frames": 11,
+          "coverage": 1.0,
+          "stable": 0.818,
+          "candidateSupport": 0.818
+        },
+        "praat": {
+          "median": 47.977,
+          "frames": 20,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    }
+  ],
+  "fingerfamily": [],
+  "wheelsbus": [],
+  "oldmcdonald": [
+    {
+      "id": "oldmcdonald-en-2-03375",
+      "t": 33.75,
+      "lyric": "I",
+      "field": "midi",
+      "old": 70,
+      "new": 71,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 70.825,
+          "frames": 6,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "autocorrelation": {
+          "median": 70.786,
+          "frames": 11,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 0.909
+        },
+        "praat": {
+          "median": 70.878,
+          "frames": 11,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    },
+    {
+      "id": "oldmcdonald-en-3-06043",
+      "t": 60.43,
+      "lyric": "I",
+      "field": "midi",
+      "old": 70,
+      "new": 71,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 70.69,
+          "frames": 6,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 70.679,
+          "frames": 12,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 0.917
+        }
+      }
+    },
+    {
+      "id": "oldmcdonald-en-4-07964",
+      "t": 79.64,
+      "lyric": "And",
+      "field": "midi",
+      "old": 67,
+      "new": 55,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 54.833,
+          "frames": 5,
+          "coverage": 1.0,
+          "stable": 0.8,
+          "candidateSupport": 0.8
+        },
+        "autocorrelation": {
+          "median": 54.939,
+          "frames": 12,
+          "coverage": 1.0,
+          "stable": 0.833,
+          "candidateSupport": 0.833
+        }
+      }
+    }
+  ],
+  "ifhappy": [
+    {
+      "id": "ifhappy-en-2-02635",
+      "t": 26.35,
+      "lyric": "you're",
+      "field": "midi",
+      "old": 72,
+      "new": 60,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "autocorrelation": {
+          "median": 60.025,
+          "frames": 7,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 60.009,
+          "frames": 6,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    },
+    {
+      "id": "ifhappy-en-3-04592",
+      "t": 45.92,
+      "lyric": "know",
+      "field": "midi",
+      "old": 76,
+      "new": 64,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 63.961,
+          "frames": 13,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "autocorrelation": {
+          "median": 63.964,
+          "frames": 26,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 63.958,
+          "frames": 27,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    },
+    {
+      "id": "ifhappy-zh-1-06904",
+      "t": 69.04,
+      "lyric": "我",
+      "field": "midi",
+      "old": 60,
+      "new": 72,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 72.04,
+          "frames": 6,
+          "coverage": 1.0,
+          "stable": 0.833,
+          "candidateSupport": 1.0
+        },
+        "autocorrelation": {
+          "median": 72.062,
+          "frames": 11,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 72.072,
+          "frames": 12,
+          "coverage": 1.0,
+          "stable": 0.833,
+          "candidateSupport": 1.0
+        }
+      }
+    },
+    {
+      "id": "ifhappy-zh-1-06923",
+      "t": 69.23,
+      "lyric": "拍",
+      "field": "midi",
+      "old": 71,
+      "new": 59,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 58.954,
+          "frames": 17,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "autocorrelation": {
+          "median": 58.947,
+          "frames": 35,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 58.96,
+          "frames": 34,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    }
+  ],
+  "fivemonkeys": [
+    {
+      "id": "fivemonkeys-en-5-08725",
+      "t": 87.25,
+      "lyric": "and",
+      "field": "midi",
+      "old": 67,
+      "new": 68,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 67.817,
+          "frames": 5,
+          "coverage": 1.0,
+          "stable": 0.8,
+          "candidateSupport": 0.8
+        },
+        "autocorrelation": {
+          "median": 67.792,
+          "frames": 11,
+          "coverage": 1.0,
+          "stable": 0.818,
+          "candidateSupport": 0.818
+        }
+      }
+    },
+    {
+      "id": "fivemonkeys-en-5-08936",
+      "t": 89.36,
+      "lyric": "more",
+      "field": "midi",
+      "old": 58,
+      "new": 46,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "yin": {
+          "median": 45.979,
+          "frames": 5,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "autocorrelation": {
+          "median": 45.979,
+          "frames": 12,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 45.977,
+          "frames": 12,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    },
+    {
+      "id": "fivemonkeys-zh-5-14950",
+      "t": 149.5,
+      "lyric": "",
+      "field": "midi",
+      "old": 70,
+      "new": 58,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "autocorrelation": {
+          "median": 58.114,
+          "frames": 7,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 58.074,
+          "frames": 7,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    },
+    {
+      "id": "fivemonkeys-zh-5-15626",
+      "t": 156.26,
+      "lyric": "",
+      "field": "midi",
+      "old": 70,
+      "new": 58,
+      "reason": "two stable independent unfolded pitch readings agree",
+      "confidence": "measured-consensus",
+      "review": "numerically-corrected; not-listening-verified",
+      "method": "recording-refinement-2026-10-10-v1",
+      "readings": {
+        "autocorrelation": {
+          "median": 57.919,
+          "frames": 8,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        },
+        "praat": {
+          "median": 57.905,
+          "frames": 9,
+          "coverage": 1.0,
+          "stable": 1.0,
+          "candidateSupport": 1.0
+        }
+      }
+    }
+  ],
+  "babyshark": [],
+  "baluobo": [],
+  "xiaoyanzi": [],
+  "rasasayang": [],
+  "chanmalichan": []
+}

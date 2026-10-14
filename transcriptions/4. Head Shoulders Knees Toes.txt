@@ -1,0 +1,114 @@
+============================================================
+SONG: 4. Head Shoulders Knees Toes
+============================================================
+Duration: 86.5s
+BPM: 63.0
+Key: G major
+
+Beat | Time  | Note | Degree | Ratio
+-----|-------|------|--------|------
+    0 | 15.74s | G4    | Do     | 0.00
+    1 | 16.65s | G4    | Do     | 0.00
+    2 | 17.69s | G4    | Do     | 0.00
+    3 | 18.67s | G4    | Do     | 0.00
+    4 | 19.64s | G4    | Do     | 0.00
+    5 | 20.57s | G4    | Do     | 0.00
+    6 | 21.55s | G4    | Do     | 0.00
+    7 | 22.50s | E4    | La     | 0.71
+    8 | 23.57s | G4    | Do     | 0.00
+    9 | 24.52s | C5    | Fa     | 0.43
+   10 | 25.52s | C5    | Fa     | 0.43
+   11 | 26.49s | A4    | Re     | 0.14
+   12 | 27.42s | B4    | Mi     | 0.29
+   13 | 28.33s | B4    | Mi     | 0.29
+   14 | 29.33s | C5    | Fa     | 0.43
+   15 | 30.28s | C5    | Fa     | 0.43
+   16 | 31.39s | G4    | Do     | 0.00
+   17 | 32.28s | G4    | Do     | 0.00
+   18 | 33.30s | G4    | Do     | 0.00
+   19 | 34.25s | G4    | Do     | 0.00
+   20 | 35.22s | G4    | Do     | 0.00
+   21 | 36.11s | G4    | Do     | 0.00
+   22 | 37.13s | F#4   | Ti     | 0.86
+   23 | 38.08s | E4    | La     | 0.71
+   24 | 39.17s | G4    | Do     | 0.00
+   25 | 40.12s | C5    | Fa     | 0.43
+   26 | 41.10s | C5    | Fa     | 0.43
+   27 | 42.05s | A4    | Re     | 0.14
+   28 | 42.93s | B4    | Mi     | 0.29
+   29 | 43.82s | B4    | Mi     | 0.29
+   30 | 44.84s | C5    | Fa     | 0.43
+   31 | 45.81s | C5    | Fa     | 0.43
+   32 | 46.81s | C3    | Fa     | 0.43
+   33 | 47.81s | G4    | Do     | 0.00
+   34 | 48.79s | C3    | Fa     | 0.43
+   35 | 49.76s | G4    | Do     | 0.00
+   36 | 50.74s | G4    | Do     | 0.00
+   37 | 51.69s | G4    | Do     | 0.00
+   38 | 52.50s | G4    | Do     | 0.00
+   39 | 53.50s | G4    | Do     | 0.00
+   40 | 54.64s | G4    | Do     | 0.00
+   41 | 55.59s | G4    | Do     | 0.00
+   42 | 56.61s | G4    | Do     | 0.00
+   43 | 57.61s | E4    | La     | 0.71
+   44 | 58.63s | G4    | Do     | 0.00
+   45 | 59.61s | C5    | Fa     | 0.43
+   46 | 60.56s | C5    | Fa     | 0.43
+   47 | 61.49s | A4    | Re     | 0.14
+   48 | 62.42s | B4    | Mi     | 0.29
+   49 | 63.34s | A4    | Re     | 0.14
+   50 | 64.37s | C5    | Fa     | 0.43
+   51 | 65.34s | C5    | Fa     | 0.43
+   52 | 66.34s | G4    | Do     | 0.00
+   53 | 67.29s | G4    | Do     | 0.00
+   54 | 68.29s | G4    | Do     | 0.00
+   55 | 69.27s | G4    | Do     | 0.00
+   56 | 70.22s | G4    | Do     | 0.00
+   57 | 71.12s | G4    | Do     | 0.00
+   58 | 72.12s | G4    | Do     | 0.00
+   59 | 73.10s | E4    | La     | 0.71
+   60 | 74.09s | G4    | Do     | 0.00
+   61 | 75.07s | C5    | Fa     | 0.43
+   62 | 76.02s | C5    | Fa     | 0.43
+   63 | 76.97s | A4    | Re     | 0.14
+   64 | 77.88s | B4    | Mi     | 0.29
+   65 | 78.81s | B4    | Mi     | 0.29
+
+// === JS NOTE ARRAY (key: G major, BPM: 63) ===
+// Do=0.00 Re=0.14 Mi=0.29 Fa=0.43 Sol=0.57 La=0.71 Ti=0.86
+const SONG_NOTES = [
+  {note:'G4', ratio:0.00, beats:7, lyric:''},  // Do
+  {note:'E4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'G4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'C5', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'A4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'B4', ratio:0.29, beats:2, lyric:''},  // Mi
+  {note:'C5', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'G4', ratio:0.00, beats:6, lyric:''},  // Do
+  {note:'F#4', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'E4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'G4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'C5', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'A4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'B4', ratio:0.29, beats:2, lyric:''},  // Mi
+  {note:'C5', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'C3', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'G4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'C3', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'G4', ratio:0.00, beats:8, lyric:''},  // Do
+  {note:'E4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'G4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'C5', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'A4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'B4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'A4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'C5', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'G4', ratio:0.00, beats:7, lyric:''},  // Do
+  {note:'E4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'G4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'C5', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'A4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'B4', ratio:0.29, beats:2, lyric:''},  // Mi
+];
+// BPM: 63
+

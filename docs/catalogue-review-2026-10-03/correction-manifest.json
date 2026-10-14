@@ -1,0 +1,856 @@
+{
+  "status": "handoff proposals, not applied chart fixes",
+  "chartSourceSha256": "6ab7f9a9a8594dc5507581545c99c18d9eefd438072c6f4487e6779a434ba97b",
+  "lyricReference": {
+    "path": "lyrics_raw.txt",
+    "sha256": "45368d102e4b43b5487e8c1a7af4f56e128909eaee15cb3973f4338870fb7a69",
+    "status": "intended lyrics; actual recording may vary"
+  },
+  "noteIndexConvention": "zero-based, valid only for the source hash",
+  "editorialRevisions": [
+    {
+      "song": "baluobo",
+      "noteIndex": 0,
+      "t": 8.36,
+      "end": 8.59,
+      "oldText": "把",
+      "newText": "拔",
+      "reason": "Reference says pulling radish: 拔萝卜 / 拔不动.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "baluobo",
+      "noteIndex": 3,
+      "t": 9.75,
+      "end": 10.09,
+      "oldText": "把",
+      "newText": "拔",
+      "reason": "Reference says pulling radish: 拔萝卜 / 拔不动.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "baluobo",
+      "noteIndex": 10,
+      "t": 12.48,
+      "end": 12.78,
+      "oldText": "把",
+      "newText": "拔",
+      "reason": "Reference says pulling radish: 拔萝卜 / 拔不动.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "baluobo",
+      "noteIndex": 17,
+      "t": 15.19,
+      "end": 15.4,
+      "oldText": "把",
+      "newText": "拔",
+      "reason": "Reference says pulling radish: 拔萝卜 / 拔不动.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "baluobo",
+      "noteIndex": 31,
+      "t": 20.9,
+      "end": 21.14,
+      "oldText": "把",
+      "newText": "拔",
+      "reason": "Reference says pulling radish: 拔萝卜 / 拔不动.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "baluobo",
+      "noteIndex": 34,
+      "t": 24.68,
+      "end": 24.92,
+      "oldText": "把",
+      "newText": "拔",
+      "reason": "Reference says pulling radish: 拔萝卜 / 拔不动.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "baluobo",
+      "noteIndex": 37,
+      "t": 26.06,
+      "end": 26.46,
+      "oldText": "把",
+      "newText": "拔",
+      "reason": "Reference says pulling radish: 拔萝卜 / 拔不动.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "baluobo",
+      "noteIndex": 44,
+      "t": 28.75,
+      "end": 29.04,
+      "oldText": "把",
+      "newText": "拔",
+      "reason": "Reference says pulling radish: 拔萝卜 / 拔不动.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "baluobo",
+      "noteIndex": 51,
+      "t": 31.44,
+      "end": 31.65,
+      "oldText": "巴",
+      "newText": "拔",
+      "reason": "Reference says 拔不动.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "baluobo",
+      "noteIndex": 65,
+      "t": 37.08,
+      "end": 37.31,
+      "oldText": "抱",
+      "newText": "拔",
+      "reason": "Reference says 拔萝卜.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "xiaoyanzi",
+      "noteIndex": 6,
+      "t": 15.29,
+      "end": 15.59,
+      "oldText": "春",
+      "newText": "穿",
+      "reason": "Reference opening is 小燕子，穿花衣，年年春天来这里.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "xiaoyanzi",
+      "noteIndex": 10,
+      "t": 16.5,
+      "end": 16.88,
+      "oldText": "一",
+      "newText": "衣",
+      "reason": "Reference opening is 小燕子，穿花衣，年年春天来这里.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "xiaoyanzi",
+      "noteIndex": 11,
+      "t": 17.66,
+      "end": 18.7,
+      "oldText": "念",
+      "newText": "年",
+      "reason": "Reference opening is 小燕子，穿花衣，年年春天来这里.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "xiaoyanzi",
+      "noteIndex": 12,
+      "t": 18.7,
+      "end": 18.97,
+      "oldText": "念",
+      "newText": "年",
+      "reason": "Reference opening is 小燕子，穿花衣，年年春天来这里.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "chanmalichan",
+      "noteIndex": 42,
+      "t": 26.63,
+      "end": 26.79,
+      "oldText": "bas",
+      "newText": "pas",
+      "reason": "Reference word is dikupas, not ASR dikubas. Keep preceding di-/ku- pending realignment.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "chanmalichan",
+      "noteIndex": 47,
+      "t": 29.7,
+      "end": 29.85,
+      "oldText": "oh",
+      "newText": "oi",
+      "reason": "Reference refrain is oi oi; ASR says oh boy. Verify the actual recording.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    },
+    {
+      "song": "chanmalichan",
+      "noteIndex": 48,
+      "t": 29.85,
+      "end": 30.01,
+      "oldText": "boy",
+      "newText": "oi",
+      "reason": "Reference refrain is oi oi; ASR says oh boy. Verify the actual recording.",
+      "status": "reference-supported editorial correction; exact sung wording and placement require listening",
+      "timingAction": "Do not change timestamps merely to fit corrected text."
+    }
+  ],
+  "languageAlignmentRules": [
+    {
+      "language": "ms",
+      "words": {
+        "sayang": [
+          "sa",
+          "yang"
+        ],
+        "saya": [
+          "sa",
+          "ya"
+        ],
+        "dia": [
+          "di",
+          "a"
+        ],
+        "buah": [
+          "bu",
+          "ah"
+        ],
+        "rasa": [
+          "ra",
+          "sa"
+        ],
+        "nona": [
+          "no",
+          "na"
+        ],
+        "mali": [
+          "ma",
+          "li"
+        ],
+        "ketipung": [
+          "ke",
+          "ti",
+          "pung"
+        ],
+        "payung": [
+          "pa",
+          "yung"
+        ]
+      },
+      "rule": "Reference syllables, not equal-duration notes. Confirm sung realization, hiatus/diphthongs, attack timing and melismas per phrase."
+    },
+    {
+      "song": "rasasayang",
+      "rule": "Replace whole-song en assumption with ms/en/zh section tags. Reconstruct nona from ASR noh + na against the recording. Split sayang/saya correctly before alignment."
+    },
+    {
+      "song": "chanmalichan",
+      "currentNoteIndex": 63,
+      "currentLyric": "peyang",
+      "referenceWord": "payung",
+      "rule": "Reconstruct ke-ti-pung pa-yung over approximately 34.3–36.7 s from the recording; cannot safely fix by relabelling a single coin. Repeat correction at later occurrences."
+    },
+    {
+      "language": "zh",
+      "rule": "Correct homophone transcription from context/reference; preserve recorded syllable timing. One character may span multiple pitches. Do not guess missing characters or split notes into equal durations."
+    }
+  ],
+  "fullSongSections": [
+    {
+      "song": "twinkle",
+      "currentPlayEnd": 40.6,
+      "fullRecordingSeconds": 88.96,
+      "acousticSectionCandidates": [
+        [
+          10.482,
+          39.842
+        ],
+        [
+          50.382,
+          80.662
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "brotherjohn",
+      "currentPlayEnd": 35.12,
+      "fullRecordingSeconds": 106.8,
+      "acousticSectionCandidates": [
+        [
+          17.342,
+          33.762
+        ],
+        [
+          38.722,
+          55.522
+        ],
+        [
+          64.402,
+          94.762
+        ],
+        [
+          96.602,
+          98.282
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "humptydumpty",
+      "currentPlayEnd": 38.91,
+      "fullRecordingSeconds": 84,
+      "acousticSectionCandidates": [
+        [
+          14.222,
+          42.202
+        ],
+        [
+          46.282,
+          74.502
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "headshoulders",
+      "currentPlayEnd": 32.27,
+      "fullRecordingSeconds": 86.52,
+      "acousticSectionCandidates": [
+        [
+          15.762,
+          46.202
+        ],
+        [
+          50.802,
+          81.282
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "londonbridge",
+      "currentPlayEnd": 45.21,
+      "fullRecordingSeconds": 94.96,
+      "acousticSectionCandidates": [
+        [
+          11.442,
+          43.822
+        ],
+        [
+          54.962,
+          87.342
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "itsybitsy",
+      "currentPlayEnd": 23.22,
+      "fullRecordingSeconds": 94.92,
+      "acousticSectionCandidates": [
+        [
+          4.842,
+          21.842
+        ],
+        [
+          27.102,
+          43.942
+        ],
+        [
+          53.442,
+          88.182
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "baabaa",
+      "currentPlayEnd": 28.9,
+      "fullRecordingSeconds": 97.6,
+      "acousticSectionCandidates": [
+        [
+          12.202,
+          27.522
+        ],
+        [
+          32.202,
+          47.562
+        ],
+        [
+          56.182,
+          71.742
+        ],
+        [
+          76.162,
+          91.722
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "marylamb",
+      "currentPlayEnd": 40.9,
+      "fullRecordingSeconds": 97.88,
+      "acousticSectionCandidates": [
+        [
+          10.122,
+          39.522
+        ],
+        [
+          50.182,
+          91.182
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "rowboat",
+      "currentPlayEnd": 21.47,
+      "fullRecordingSeconds": 53.4,
+      "acousticSectionCandidates": [
+        [
+          1.122,
+          19.882
+        ],
+        [
+          29.382,
+          38.122
+        ],
+        [
+          40.762,
+          48.782
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "moretogether",
+      "currentPlayEnd": 38.12,
+      "fullRecordingSeconds": 79.44,
+      "acousticSectionCandidates": [
+        [
+          0.362,
+          36.762
+        ],
+        [
+          39.882,
+          42.262
+        ],
+        [
+          44.222,
+          57.302
+        ],
+        [
+          58.902,
+          62.522
+        ],
+        [
+          64.662,
+          64.962
+        ],
+        [
+          68.102,
+          77.602
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "littlebunny",
+      "currentPlayEnd": 42.46,
+      "fullRecordingSeconds": 88.16,
+      "acousticSectionCandidates": [
+        [
+          0.562,
+          8.702
+        ],
+        [
+          12.542,
+          43.762
+        ],
+        [
+          46.762,
+          85.802
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "rainrain",
+      "currentPlayEnd": 38.73,
+      "fullRecordingSeconds": 179.84,
+      "acousticSectionCandidates": [
+        [
+          13.542,
+          24.022
+        ],
+        [
+          26.842,
+          37.342
+        ],
+        [
+          40.162,
+          50.582
+        ],
+        [
+          53.502,
+          64.162
+        ],
+        [
+          66.802,
+          77.402
+        ],
+        [
+          80.122,
+          90.602
+        ],
+        [
+          96.502,
+          106.522
+        ],
+        [
+          109.842,
+          120.162
+        ],
+        [
+          122.882,
+          133.482
+        ],
+        [
+          136.162,
+          146.842
+        ],
+        [
+          149.842,
+          159.802
+        ],
+        [
+          162.982,
+          173.482
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "fingerfamily",
+      "currentPlayEnd": 25.99,
+      "fullRecordingSeconds": 105,
+      "acousticSectionCandidates": [
+        [
+          8.902,
+          41.982
+        ],
+        [
+          51.662,
+          59.022
+        ],
+        [
+          60.682,
+          101.742
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "wheelsbus",
+      "currentPlayEnd": 44.55,
+      "fullRecordingSeconds": 134.88,
+      "acousticSectionCandidates": [
+        [
+          11.142,
+          65.822
+        ],
+        [
+          77.442,
+          119.822
+        ],
+        [
+          121.422,
+          130.702
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "oldmcdonald",
+      "currentPlayEnd": 28.01,
+      "fullRecordingSeconds": 234.88,
+      "acousticSectionCandidates": [
+        [
+          5.582,
+          26.642
+        ],
+        [
+          29.962,
+          72.082
+        ],
+        [
+          74.382,
+          95.582
+        ],
+        [
+          97.822,
+          117.702
+        ],
+        [
+          120.442,
+          139.982
+        ],
+        [
+          145.622,
+          165.102
+        ],
+        [
+          166.902,
+          206.362
+        ],
+        [
+          212.382,
+          232.682
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "ifhappy",
+      "currentPlayEnd": 52.99,
+      "fullRecordingSeconds": 106.72,
+      "acousticSectionCandidates": [
+        [
+          8.162,
+          10.022
+        ],
+        [
+          11.942,
+          21.242
+        ],
+        [
+          23.082,
+          24.842
+        ],
+        [
+          26.802,
+          35.942
+        ],
+        [
+          37.902,
+          51.362
+        ],
+        [
+          60.282,
+          103.402
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "fivemonkeys",
+      "currentPlayEnd": 61.77,
+      "fullRecordingSeconds": 166.36,
+      "acousticSectionCandidates": [
+        [
+          7.662,
+          18.502
+        ],
+        [
+          20.862,
+          74.882
+        ],
+        [
+          79.082,
+          91.962
+        ],
+        [
+          96.002,
+          162.522
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "babyshark",
+      "currentPlayEnd": 54.81,
+      "fullRecordingSeconds": 137.64,
+      "acousticSectionCandidates": [
+        [
+          15.542,
+          61.942
+        ],
+        [
+          72.562,
+          103.402
+        ],
+        [
+          111.882,
+          125.742
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "baluobo",
+      "currentPlayEnd": 39.23,
+      "fullRecordingSeconds": 139.84,
+      "acousticSectionCandidates": [
+        [
+          8.362,
+          21.722
+        ],
+        [
+          24.682,
+          37.842
+        ],
+        [
+          40.862,
+          53.882
+        ],
+        [
+          67.762,
+          81.202
+        ],
+        [
+          90.282,
+          111.502
+        ],
+        [
+          114.862,
+          136.222
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "xiaoyanzi",
+      "currentPlayEnd": 36.54,
+      "fullRecordingSeconds": 438.4,
+      "acousticSectionCandidates": [
+        [
+          12.822,
+          35.162
+        ],
+        [
+          37.822,
+          66.022
+        ],
+        [
+          94.602,
+          150.742
+        ],
+        [
+          178.362,
+          180.042
+        ],
+        [
+          181.682,
+          182.502
+        ],
+        [
+          185.642,
+          186.882
+        ],
+        [
+          188.902,
+          192.362
+        ],
+        [
+          194.542,
+          200.102
+        ],
+        [
+          204.042,
+          207.442
+        ],
+        [
+          213.182,
+          217.422
+        ],
+        [
+          219.002,
+          258.622
+        ],
+        [
+          261.322,
+          264.442
+        ],
+        [
+          273.922,
+          278.162
+        ],
+        [
+          280.042,
+          315.422
+        ],
+        [
+          329.662,
+          334.262
+        ],
+        [
+          335.902,
+          357.702
+        ],
+        [
+          372.782,
+          375.502
+        ],
+        [
+          377.402,
+          386.062
+        ],
+        [
+          393.702,
+          423.762
+        ],
+        [
+          428.502,
+          438.282
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "rasasayang",
+      "currentPlayEnd": 37.23,
+      "fullRecordingSeconds": 58.92,
+      "acousticSectionCandidates": [
+        [
+          10.282,
+          20.822
+        ],
+        [
+          25.482,
+          35.842
+        ],
+        [
+          40.642,
+          51.302
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    },
+    {
+      "song": "chanmalichan",
+      "currentPlayEnd": 37.24,
+      "fullRecordingSeconds": 135.56,
+      "acousticSectionCandidates": [
+        [
+          9.342,
+          83.002
+        ],
+        [
+          92.422,
+          128.442
+        ]
+      ],
+      "status": "Not lyric/verse ground truth; confirm every language/repeat and natural ending."
+    }
+  ],
+  "excludedAutomaticActions": [
+    "Apply all independent pitch candidates",
+    "Shift all note attacks to periodic-voice onset",
+    "Duplicate first verse into later languages",
+    "Lengthen level.end without a full chart",
+    "Overwrite owner-approved Twinkle excerpt"
+  ]
+}

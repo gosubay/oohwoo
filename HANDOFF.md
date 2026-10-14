@@ -1,6 +1,19 @@
 # HANDOFF — OohWoo
 
-Last updated: 2026-10-04 (SGT)
+Last updated: 2026-10-10 (SGT)
+
+## Latest recording rebuild (2026-10-10)
+
+- Rebuilt and applied all 22 songs (4,587 notes). Added conservative three-reader pitch consensus,
+  measured repeated-note boundary repair, and monotonic transcript anchor cleanup in `refine.py`.
+- 21 pitch corrections, 32 attack corrections, four contradictory transcript anchors removed.
+  Removed artificial 160 ms release padding; 328 release endpoints changed including attack repairs.
+- Approved Twinkle playable notes and prior arrangement/exclusion choices remain unchanged.
+- Asset/chart validation, 69 builder fixtures, new refinement tests, and 15 game test files passed,
+  including all 44 Full/Quick simulations. This is not blanket listening verification.
+- See `docs/catalogue-redo-2026-10-10/README.md` and regenerated correction review for exact counts
+  and remaining ambiguous vocals. Listening tools are optional, not an owner approval assignment.
+- Unrelated local changes (including song-category UI work) were preserved. No commit or deployment.
 
 ## Where things stand
 

@@ -1,0 +1,1032 @@
+============================================================
+SONG: 15. Old McDonald Had a Farm
+============================================================
+Duration: 234.9s
+BPM: 184.6
+Key: D major
+
+Beat | Time  | Note | Degree | Ratio
+-----|-------|------|--------|------
+    0 |  5.29s | E4    | Re     | 0.14
+    1 |  5.62s | G4    | Fa     | 0.43
+    2 |  5.97s | G4    | Fa     | 0.43
+    3 |  6.29s | G4    | Fa     | 0.43
+    4 |  6.59s | D4    | Do     | 0.00
+    5 |  6.87s | D4    | Do     | 0.00
+    6 |  7.17s | E4    | Re     | 0.14
+    7 |  7.48s | D4    | Do     | 0.00
+    8 |  7.78s | D4    | Do     | 0.00
+    9 |  8.08s | D4    | Do     | 0.00
+   10 |  8.38s | B4    | La     | 0.71
+   11 |  8.71s | A4    | Sol    | 0.57
+   12 |  9.06s | A4    | Sol    | 0.57
+   13 |  9.38s | G4    | Fa     | 0.43
+   14 |  9.71s | G4    | Fa     | 0.43
+   15 | 10.05s | G4    | Fa     | 0.43
+   16 | 10.38s | G4    | Fa     | 0.43
+   17 | 10.70s | D4    | Do     | 0.00
+   18 | 11.01s | G4    | Fa     | 0.43
+   19 | 11.38s | G4    | Fa     | 0.43
+   20 | 11.70s | G4    | Fa     | 0.43
+   21 | 12.00s | D4    | Do     | 0.00
+   22 | 12.33s | D4    | Do     | 0.00
+   23 | 12.65s | E4    | Re     | 0.14
+   24 | 12.98s | D4    | Do     | 0.00
+   25 | 13.35s | A4    | Sol    | 0.57
+   26 | 13.72s | B4    | La     | 0.71
+   27 | 14.05s | A4    | Sol    | 0.57
+   28 | 14.37s | A4    | Sol    | 0.57
+   29 | 14.70s | A4    | Sol    | 0.57
+   30 | 15.05s | G4    | Fa     | 0.43
+   31 | 15.37s | G4    | Fa     | 0.43
+   32 | 15.70s | D4    | Do     | 0.00
+   33 | 16.04s | D4    | Do     | 0.00
+   34 | 16.39s | G4    | Fa     | 0.43
+   35 | 16.72s | G4    | Fa     | 0.43
+   36 | 17.04s | G4    | Fa     | 0.43
+   37 | 17.39s | D4    | Do     | 0.00
+   38 | 17.74s | G4    | Fa     | 0.43
+   39 | 18.07s | G4    | Fa     | 0.43
+   40 | 18.41s | G4    | Fa     | 0.43
+   41 | 18.81s | F#4   | Mi     | 0.29
+   42 | 19.13s | G4    | Fa     | 0.43
+   43 | 19.48s | G4    | Fa     | 0.43
+   44 | 19.83s | G4    | Fa     | 0.43
+   45 | 20.18s | G4    | Fa     | 0.43
+   46 | 20.50s | G4    | Fa     | 0.43
+   47 | 20.85s | G4    | Fa     | 0.43
+   48 | 21.20s | G4    | Fa     | 0.43
+   49 | 21.55s | G4    | Fa     | 0.43
+   50 | 21.87s | G4    | Fa     | 0.43
+   51 | 22.22s | G4    | Fa     | 0.43
+   52 | 22.52s | G4    | Fa     | 0.43
+   53 | 22.89s | D4    | Do     | 0.00
+   54 | 23.24s | E4    | Re     | 0.14
+   55 | 23.59s | E4    | Re     | 0.14
+   56 | 23.94s | D4    | Do     | 0.00
+   57 | 24.29s | A4    | Sol    | 0.57
+   58 | 24.59s | B4    | La     | 0.71
+   59 | 24.89s | B4    | La     | 0.71
+   60 | 25.19s | A4    | Sol    | 0.57
+   61 | 25.50s | A4    | Sol    | 0.57
+   62 | 25.80s | G4    | Fa     | 0.43
+   63 | 26.12s | G4    | Fa     | 0.43
+   64 | 26.45s | G4    | Fa     | 0.43
+   65 | 26.77s | G4    | Fa     | 0.43
+   66 | 27.10s | G4    | Fa     | 0.43
+   67 | 27.42s | B4    | La     | 0.71
+   68 | 27.75s | A4    | Sol    | 0.57
+   69 | 28.07s | REST  | REST   | -1.00
+   70 | 28.40s | REST  | REST   | -1.00
+   71 | 28.72s | REST  | REST   | -1.00
+   72 | 29.05s | B2    | La     | 0.71
+   73 | 29.37s | B2    | La     | 0.71
+   74 | 29.70s | D4    | Do     | 0.00
+   75 | 30.00s | G4    | Fa     | 0.43
+   76 | 30.37s | G4    | Fa     | 0.43
+   77 | 30.70s | G4    | Fa     | 0.43
+   78 | 31.00s | D4    | Do     | 0.00
+   79 | 31.32s | E4    | Re     | 0.14
+   80 | 31.67s | E4    | Re     | 0.14
+   81 | 32.02s | D4    | Do     | 0.00
+   82 | 32.35s | D4    | Do     | 0.00
+   83 | 32.67s | B4    | La     | 0.71
+   84 | 33.00s | A4    | Sol    | 0.57
+   85 | 33.34s | A4    | Sol    | 0.57
+   86 | 33.67s | A4    | Sol    | 0.57
+   87 | 33.99s | G4    | Fa     | 0.43
+   88 | 34.32s | G4    | Fa     | 0.43
+   89 | 34.64s | D4    | Do     | 0.00
+   90 | 34.99s | D4    | Do     | 0.00
+   91 | 35.29s | G4    | Fa     | 0.43
+   92 | 35.64s | G4    | Fa     | 0.43
+   93 | 35.97s | G4    | Fa     | 0.43
+   94 | 36.27s | D4    | Do     | 0.00
+   95 | 36.59s | E4    | Re     | 0.14
+   96 | 36.92s | E4    | Re     | 0.14
+   97 | 37.24s | D4    | Do     | 0.00
+   98 | 37.64s | E4    | Re     | 0.14
+   99 | 37.99s | B4    | La     | 0.71
+  100 | 38.31s | A4    | Sol    | 0.57
+  101 | 38.64s | A4    | Sol    | 0.57
+  102 | 38.96s | A4    | Sol    | 0.57
+  103 | 39.29s | G4    | Fa     | 0.43
+  104 | 39.61s | G4    | Fa     | 0.43
+  105 | 39.94s | D4    | Do     | 0.00
+  106 | 40.26s | D4    | Do     | 0.00
+  107 | 40.57s | G4    | Fa     | 0.43
+  108 | 40.91s | G4    | Fa     | 0.43
+  109 | 41.26s | G4    | Fa     | 0.43
+  110 | 41.59s | D4    | Do     | 0.00
+  111 | 41.91s | F#4   | Mi     | 0.29
+  112 | 42.24s | F#4   | Mi     | 0.29
+  113 | 42.56s | G4    | Fa     | 0.43
+  114 | 42.89s | G4    | Fa     | 0.43
+  115 | 43.21s | F#4   | Mi     | 0.29
+  116 | 43.58s | F#4   | Mi     | 0.29
+  117 | 43.93s | G4    | Fa     | 0.43
+  118 | 44.28s | G4    | Fa     | 0.43
+  119 | 44.61s | G4    | Fa     | 0.43
+  120 | 44.95s | G4    | Fa     | 0.43
+  121 | 45.28s | G4    | Fa     | 0.43
+  122 | 45.63s | F#4   | Mi     | 0.29
+  123 | 46.00s | G4    | Fa     | 0.43
+  124 | 46.35s | G4    | Fa     | 0.43
+  125 | 46.67s | G4    | Fa     | 0.43
+  126 | 47.02s | D4    | Do     | 0.00
+  127 | 47.35s | E4    | Re     | 0.14
+  128 | 47.69s | E4    | Re     | 0.14
+  129 | 48.02s | D4    | Do     | 0.00
+  130 | 48.37s | A4    | Sol    | 0.57
+  131 | 48.69s | B4    | La     | 0.71
+  132 | 49.02s | A4    | Sol    | 0.57
+  133 | 49.37s | A4    | Sol    | 0.57
+  134 | 49.69s | A4    | Sol    | 0.57
+  135 | 50.04s | G4    | Fa     | 0.43
+  136 | 50.36s | G4    | Fa     | 0.43
+  137 | 50.67s | G4    | Fa     | 0.43
+  138 | 50.99s | E4    | Re     | 0.14
+  139 | 51.39s | G4    | Fa     | 0.43
+  140 | 51.76s | G4    | Fa     | 0.43
+  141 | 52.08s | F#4   | Mi     | 0.29
+  142 | 52.43s | D4    | Do     | 0.00
+  143 | 52.78s | E4    | Re     | 0.14
+  144 | 53.10s | E4    | Re     | 0.14
+  145 | 53.43s | D4    | Do     | 0.00
+  146 | 53.75s | D4    | Do     | 0.00
+  147 | 54.06s | B4    | La     | 0.71
+  148 | 54.38s | A4    | Sol    | 0.57
+  149 | 54.71s | A4    | Sol    | 0.57
+  150 | 55.03s | A4    | Sol    | 0.57
+  151 | 55.38s | G4    | Fa     | 0.43
+  152 | 55.70s | G4    | Fa     | 0.43
+  153 | 56.05s | D4    | Do     | 0.00
+  154 | 56.40s | D4    | Do     | 0.00
+  155 | 56.70s | G4    | Fa     | 0.43
+  156 | 57.05s | G4    | Fa     | 0.43
+  157 | 57.38s | G4    | Fa     | 0.43
+  158 | 57.68s | D4    | Do     | 0.00
+  159 | 58.00s | E4    | Re     | 0.14
+  160 | 58.33s | E4    | Re     | 0.14
+  161 | 58.65s | D4    | Do     | 0.00
+  162 | 58.98s | E4    | Re     | 0.14
+  163 | 59.35s | B4    | La     | 0.71
+  164 | 59.68s | A4    | Sol    | 0.57
+  165 | 60.00s | A4    | Sol    | 0.57
+  166 | 60.33s | A4    | Sol    | 0.57
+  167 | 60.65s | G4    | Fa     | 0.43
+  168 | 60.98s | G4    | Fa     | 0.43
+  169 | 61.30s | D4    | Do     | 0.00
+  170 | 61.65s | D4    | Do     | 0.00
+  171 | 61.97s | G4    | Fa     | 0.43
+  172 | 62.30s | G4    | Fa     | 0.43
+  173 | 62.65s | G4    | Fa     | 0.43
+  174 | 62.97s | D4    | Do     | 0.00
+  175 | 63.30s | E4    | Re     | 0.14
+  176 | 63.62s | G4    | Fa     | 0.43
+  177 | 63.95s | G4    | Fa     | 0.43
+  178 | 64.30s | B3    | La     | 0.71
+  179 | 64.57s | F#4   | Mi     | 0.29
+  180 | 64.90s | G4    | Fa     | 0.43
+  181 | 65.29s | G4    | Fa     | 0.43
+  182 | 65.60s | G4    | Fa     | 0.43
+  183 | 65.94s | G4    | Fa     | 0.43
+  184 | 66.32s | G4    | Fa     | 0.43
+  185 | 66.66s | G4    | Fa     | 0.43
+  186 | 67.04s | G4    | Fa     | 0.43
+  187 | 67.36s | G4    | Fa     | 0.43
+  188 | 67.73s | G4    | Fa     | 0.43
+  189 | 68.03s | G4    | Fa     | 0.43
+  190 | 68.38s | D4    | Do     | 0.00
+  191 | 68.71s | E4    | Re     | 0.14
+  192 | 69.06s | E4    | Re     | 0.14
+  193 | 69.38s | D4    | Do     | 0.00
+  194 | 69.75s | A4    | Sol    | 0.57
+  195 | 70.03s | B4    | La     | 0.71
+  196 | 70.36s | A4    | Sol    | 0.57
+  197 | 70.68s | A4    | Sol    | 0.57
+  198 | 71.01s | A4    | Sol    | 0.57
+  199 | 71.35s | G4    | Fa     | 0.43
+  200 | 71.70s | G4    | Fa     | 0.43
+  201 | 72.05s | G4    | Fa     | 0.43
+  202 | 72.40s | G4    | Fa     | 0.43
+  203 | 72.75s | G4    | Fa     | 0.43
+  204 | 73.07s | G4    | Fa     | 0.43
+  205 | 73.40s | A5    | Sol    | 0.57
+  206 | 73.72s | A5    | Sol    | 0.57
+  207 | 74.09s | G4    | Fa     | 0.43
+  208 | 74.44s | G4    | Fa     | 0.43
+  209 | 74.77s | G4    | Fa     | 0.43
+  210 | 75.07s | G4    | Fa     | 0.43
+  211 | 75.40s | D4    | Do     | 0.00
+  212 | 75.74s | E4    | Re     | 0.14
+  213 | 76.12s | E4    | Re     | 0.14
+  214 | 76.46s | D4    | Do     | 0.00
+  215 | 76.79s | D4    | Do     | 0.00
+  216 | 77.11s | B4    | La     | 0.71
+  217 | 77.44s | B4    | La     | 0.71
+  218 | 77.79s | A4    | Sol    | 0.57
+  219 | 78.11s | A4    | Sol    | 0.57
+  220 | 78.46s | G4    | Fa     | 0.43
+  221 | 78.81s | G4    | Fa     | 0.43
+  222 | 79.16s | A4    | Sol    | 0.57
+  223 | 79.48s | G3    | Fa     | 0.43
+  224 | 79.81s | G4    | Fa     | 0.43
+  225 | 80.11s | G4    | Fa     | 0.43
+  226 | 80.43s | G4    | Fa     | 0.43
+  227 | 80.78s | D4    | Do     | 0.00
+  228 | 81.13s | E4    | Re     | 0.14
+  229 | 81.50s | E4    | Re     | 0.14
+  230 | 81.85s | D4    | Do     | 0.00
+  231 | 82.18s | B4    | La     | 0.71
+  232 | 82.52s | B4    | La     | 0.71
+  233 | 82.85s | B4    | La     | 0.71
+  234 | 83.17s | A4    | Sol    | 0.57
+  235 | 83.52s | A4    | Sol    | 0.57
+  236 | 83.85s | G4    | Fa     | 0.43
+  237 | 84.17s | G4    | Fa     | 0.43
+  238 | 84.50s | D4    | Do     | 0.00
+  239 | 84.85s | D4    | Do     | 0.00
+  240 | 85.17s | G4    | Fa     | 0.43
+  241 | 85.52s | G4    | Fa     | 0.43
+  242 | 85.87s | G4    | Fa     | 0.43
+  243 | 86.22s | D4    | Do     | 0.00
+  244 | 86.56s | G4    | Fa     | 0.43
+  245 | 86.91s | G4    | Fa     | 0.43
+  246 | 87.28s | G4    | Fa     | 0.43
+  247 | 87.66s | E4    | Re     | 0.14
+  248 | 88.00s | G4    | Fa     | 0.43
+  249 | 88.33s | G4    | Fa     | 0.43
+  250 | 88.68s | G4    | Fa     | 0.43
+  251 | 89.00s | G4    | Fa     | 0.43
+  252 | 89.35s | G4    | Fa     | 0.43
+  253 | 89.70s | G4    | Fa     | 0.43
+  254 | 90.02s | G4    | Fa     | 0.43
+  255 | 90.37s | G4    | Fa     | 0.43
+  256 | 90.72s | G4    | Fa     | 0.43
+  257 | 91.09s | G4    | Fa     | 0.43
+  258 | 91.42s | G4    | Fa     | 0.43
+  259 | 91.77s | D4    | Do     | 0.00
+  260 | 92.09s | E4    | Re     | 0.14
+  261 | 92.42s | E4    | Re     | 0.14
+  262 | 92.76s | D4    | Do     | 0.00
+  263 | 93.07s | D4    | Do     | 0.00
+  264 | 93.39s | B4    | La     | 0.71
+  265 | 93.72s | A4    | Sol    | 0.57
+  266 | 94.04s | A4    | Sol    | 0.57
+  267 | 94.37s | A4    | Sol    | 0.57
+  268 | 94.69s | G4    | Fa     | 0.43
+  269 | 95.02s | G4    | Fa     | 0.43
+  270 | 95.34s | G4    | Fa     | 0.43
+  271 | 95.67s | G4    | Fa     | 0.43
+  272 | 95.99s | F#4   | Mi     | 0.29
+  273 | 96.29s | REST  | REST   | -1.00
+  274 | 96.60s | REST  | REST   | -1.00
+  275 | 96.90s | REST  | REST   | -1.00
+  276 | 97.20s | REST  | REST   | -1.00
+  277 | 97.50s | REST  | REST   | -1.00
+  278 | 97.80s | G4    | Fa     | 0.43
+  279 | 98.13s | G4    | Fa     | 0.43
+  280 | 98.45s | G4    | Fa     | 0.43
+  281 | 98.75s | E4    | Re     | 0.14
+  282 | 99.03s | E4    | Re     | 0.14
+  283 | 99.33s | E4    | Re     | 0.14
+  284 | 99.64s | D4    | Do     | 0.00
+  285 | 99.96s | D4    | Do     | 0.00
+  286 | 100.29s | B4    | La     | 0.71
+  287 | 100.59s | B4    | La     | 0.71
+  288 | 100.89s | A4    | Sol    | 0.57
+  289 | 101.22s | A4    | Sol    | 0.57
+  290 | 101.54s | G4    | Fa     | 0.43
+  291 | 101.84s | G4    | Fa     | 0.43
+  292 | 102.14s | D4    | Do     | 0.00
+  293 | 102.47s | D4    | Do     | 0.00
+  294 | 102.77s | G4    | Fa     | 0.43
+  295 | 103.07s | G4    | Fa     | 0.43
+  296 | 103.40s | G4    | Fa     | 0.43
+  297 | 103.70s | D4    | Do     | 0.00
+  298 | 104.00s | E4    | Re     | 0.14
+  299 | 104.30s | E4    | Re     | 0.14
+  300 | 104.63s | D4    | Do     | 0.00
+  301 | 104.93s | D4    | Do     | 0.00
+  302 | 105.28s | B4    | La     | 0.71
+  303 | 105.60s | A4    | Sol    | 0.57
+  304 | 105.91s | A4    | Sol    | 0.57
+  305 | 106.21s | B4    | La     | 0.71
+  306 | 106.51s | G4    | Fa     | 0.43
+  307 | 106.81s | G4    | Fa     | 0.43
+  308 | 107.14s | D4    | Do     | 0.00
+  309 | 107.44s | D4    | Do     | 0.00
+  310 | 107.74s | G4    | Fa     | 0.43
+  311 | 108.04s | G4    | Fa     | 0.43
+  312 | 108.34s | G4    | Fa     | 0.43
+  313 | 108.65s | D4    | Do     | 0.00
+  314 | 108.97s | G4    | Fa     | 0.43
+  315 | 109.30s | G4    | Fa     | 0.43
+  316 | 109.60s | G4    | Fa     | 0.43
+  317 | 109.97s | D4    | Do     | 0.00
+  318 | 110.27s | G4    | Fa     | 0.43
+  319 | 110.57s | G4    | Fa     | 0.43
+  320 | 110.88s | G4    | Fa     | 0.43
+  321 | 111.22s | G4    | Fa     | 0.43
+  322 | 111.53s | G4    | Fa     | 0.43
+  323 | 111.85s | G4    | Fa     | 0.43
+  324 | 112.18s | G4    | Fa     | 0.43
+  325 | 112.50s | G4    | Fa     | 0.43
+  326 | 112.83s | G4    | Fa     | 0.43
+  327 | 113.13s | G4    | Fa     | 0.43
+  328 | 113.43s | G4    | Fa     | 0.43
+  329 | 113.71s | D4    | Do     | 0.00
+  330 | 114.01s | E4    | Re     | 0.14
+  331 | 114.34s | E4    | Re     | 0.14
+  332 | 114.68s | D4    | Do     | 0.00
+  333 | 115.01s | D4    | Do     | 0.00
+  334 | 115.33s | B4    | La     | 0.71
+  335 | 115.68s | A4    | Sol    | 0.57
+  336 | 116.03s | A4    | Sol    | 0.57
+  337 | 116.38s | G4    | Fa     | 0.43
+  338 | 116.73s | G4    | Fa     | 0.43
+  339 | 117.08s | G4    | Fa     | 0.43
+  340 | 117.42s | G4    | Fa     | 0.43
+  341 | 117.75s | G4    | Fa     | 0.43
+  342 | 118.07s | G4    | Fa     | 0.43
+  343 | 118.40s | A4    | Sol    | 0.57
+  344 | 118.72s | REST  | REST   | -1.00
+  345 | 119.05s | REST  | REST   | -1.00
+  346 | 119.37s | B2    | La     | 0.71
+  347 | 119.70s | REST  | REST   | -1.00
+  348 | 120.02s | B3    | La     | 0.71
+  349 | 120.35s | G4    | Fa     | 0.43
+  350 | 120.70s | G4    | Fa     | 0.43
+  351 | 121.00s | G4    | Fa     | 0.43
+  352 | 121.30s | D4    | Do     | 0.00
+  353 | 121.60s | E4    | Re     | 0.14
+  354 | 121.90s | E4    | Re     | 0.14
+  355 | 122.23s | D4    | Do     | 0.00
+  356 | 122.55s | D4    | Do     | 0.00
+  357 | 122.88s | B4    | La     | 0.71
+  358 | 123.21s | B4    | La     | 0.71
+  359 | 123.53s | A4    | Sol    | 0.57
+  360 | 123.83s | B4    | La     | 0.71
+  361 | 124.13s | G4    | Fa     | 0.43
+  362 | 124.44s | G4    | Fa     | 0.43
+  363 | 124.74s | G4    | Fa     | 0.43
+  364 | 125.04s | A4    | Sol    | 0.57
+  365 | 125.34s | F#4   | Mi     | 0.29
+  366 | 125.67s | G4    | Fa     | 0.43
+  367 | 125.97s | G4    | Fa     | 0.43
+  368 | 126.34s | D4    | Do     | 0.00
+  369 | 126.64s | E4    | Re     | 0.14
+  370 | 126.99s | E4    | Re     | 0.14
+  371 | 127.29s | D4    | Do     | 0.00
+  372 | 127.59s | D4    | Do     | 0.00
+  373 | 127.90s | B4    | La     | 0.71
+  374 | 128.22s | B4    | La     | 0.71
+  375 | 128.52s | A4    | Sol    | 0.57
+  376 | 128.82s | G4    | Fa     | 0.43
+  377 | 129.13s | G4    | Fa     | 0.43
+  378 | 129.43s | G4    | Fa     | 0.43
+  379 | 129.73s | F#4   | Mi     | 0.29
+  380 | 130.03s | D4    | Do     | 0.00
+  381 | 130.36s | G4    | Fa     | 0.43
+  382 | 130.71s | G4    | Fa     | 0.43
+  383 | 131.03s | G4    | Fa     | 0.43
+  384 | 131.33s | D4    | Do     | 0.00
+  385 | 131.66s | G4    | Fa     | 0.43
+  386 | 131.98s | G4    | Fa     | 0.43
+  387 | 132.28s | G4    | Fa     | 0.43
+  388 | 132.59s | A4    | Sol    | 0.57
+  389 | 132.91s | G4    | Fa     | 0.43
+  390 | 133.24s | G4    | Fa     | 0.43
+  391 | 133.56s | G4    | Fa     | 0.43
+  392 | 133.86s | G4    | Fa     | 0.43
+  393 | 134.16s | G4    | Fa     | 0.43
+  394 | 134.47s | G4    | Fa     | 0.43
+  395 | 134.79s | G4    | Fa     | 0.43
+  396 | 135.12s | G4    | Fa     | 0.43
+  397 | 135.44s | G4    | Fa     | 0.43
+  398 | 135.74s | G4    | Fa     | 0.43
+  399 | 136.07s | G4    | Fa     | 0.43
+  400 | 136.37s | D4    | Do     | 0.00
+  401 | 136.67s | E4    | Re     | 0.14
+  402 | 137.00s | E4    | Re     | 0.14
+  403 | 137.30s | D4    | Do     | 0.00
+  404 | 137.62s | A4    | Sol    | 0.57
+  405 | 137.95s | B4    | La     | 0.71
+  406 | 138.27s | A4    | Sol    | 0.57
+  407 | 138.60s | A4    | Sol    | 0.57
+  408 | 138.92s | G4    | Fa     | 0.43
+  409 | 139.23s | G4    | Fa     | 0.43
+  410 | 139.53s | G4    | Fa     | 0.43
+  411 | 139.83s | G4    | Fa     | 0.43
+  412 | 140.16s | G4    | Fa     | 0.43
+  413 | 140.48s | G4    | Fa     | 0.43
+  414 | 140.81s | G4    | Fa     | 0.43
+  415 | 141.13s | G4    | Fa     | 0.43
+  416 | 141.46s | D5    | Do     | 0.00
+  417 | 141.78s | E5    | Re     | 0.14
+  418 | 142.11s | D5    | Do     | 0.00
+  419 | 142.43s | D5    | Do     | 0.00
+  420 | 142.76s | G3    | Fa     | 0.43
+  421 | 143.08s | G3    | Fa     | 0.43
+  422 | 143.41s | REST  | REST   | -1.00
+  423 | 143.73s | D4    | Do     | 0.00
+  424 | 144.06s | C#4   | Ti     | 0.86
+  425 | 144.38s | C#4   | Ti     | 0.86
+  426 | 144.71s | D4    | Do     | 0.00
+  427 | 145.03s | D4    | Do     | 0.00
+  428 | 145.36s | D4    | Do     | 0.00
+  429 | 145.68s | G4    | Fa     | 0.43
+  430 | 146.01s | G4    | Fa     | 0.43
+  431 | 146.31s | G4    | Fa     | 0.43
+  432 | 146.61s | D4    | Do     | 0.00
+  433 | 146.91s | E4    | Re     | 0.14
+  434 | 147.24s | E4    | Re     | 0.14
+  435 | 147.56s | D4    | Do     | 0.00
+  436 | 147.86s | D4    | Do     | 0.00
+  437 | 148.17s | B4    | La     | 0.71
+  438 | 148.47s | B4    | La     | 0.71
+  439 | 148.77s | A4    | Sol    | 0.57
+  440 | 149.07s | A4    | Sol    | 0.57
+  441 | 149.37s | G4    | Fa     | 0.43
+  442 | 149.70s | G4    | Fa     | 0.43
+  443 | 150.02s | G4    | Fa     | 0.43
+  444 | 150.33s | C#4   | Ti     | 0.86
+  445 | 150.63s | G4    | Fa     | 0.43
+  446 | 150.95s | G4    | Fa     | 0.43
+  447 | 151.23s | G4    | Fa     | 0.43
+  448 | 151.58s | D4    | Do     | 0.00
+  449 | 151.90s | E4    | Re     | 0.14
+  450 | 152.21s | E4    | Re     | 0.14
+  451 | 152.51s | D4    | Do     | 0.00
+  452 | 152.83s | D4    | Do     | 0.00
+  453 | 153.16s | B4    | La     | 0.71
+  454 | 153.46s | B4    | La     | 0.71
+  455 | 153.76s | A4    | Sol    | 0.57
+  456 | 154.06s | A4    | Sol    | 0.57
+  457 | 154.37s | G4    | Fa     | 0.43
+  458 | 154.67s | G4    | Fa     | 0.43
+  459 | 154.97s | E4    | Re     | 0.14
+  460 | 155.27s | D4    | Do     | 0.00
+  461 | 155.55s | G4    | Fa     | 0.43
+  462 | 155.85s | G4    | Fa     | 0.43
+  463 | 156.18s | G4    | Fa     | 0.43
+  464 | 156.53s | D4    | Do     | 0.00
+  465 | 156.80s | G4    | Fa     | 0.43
+  466 | 157.11s | G4    | Fa     | 0.43
+  467 | 157.43s | G4    | Fa     | 0.43
+  468 | 157.76s | G4    | Fa     | 0.43
+  469 | 158.08s | G4    | Fa     | 0.43
+  470 | 158.41s | G4    | Fa     | 0.43
+  471 | 158.75s | G4    | Fa     | 0.43
+  472 | 159.06s | G4    | Fa     | 0.43
+  473 | 159.38s | G4    | Fa     | 0.43
+  474 | 159.68s | G4    | Fa     | 0.43
+  475 | 160.01s | G4    | Fa     | 0.43
+  476 | 160.33s | G4    | Fa     | 0.43
+  477 | 160.66s | G4    | Fa     | 0.43
+  478 | 160.96s | G4    | Fa     | 0.43
+  479 | 161.26s | G4    | Fa     | 0.43
+  480 | 161.56s | D4    | Do     | 0.00
+  481 | 161.87s | E4    | Re     | 0.14
+  482 | 162.17s | E4    | Re     | 0.14
+  483 | 162.49s | D4    | Do     | 0.00
+  484 | 162.82s | D4    | Do     | 0.00
+  485 | 163.14s | B4    | La     | 0.71
+  486 | 163.49s | A4    | Sol    | 0.57
+  487 | 163.82s | A4    | Sol    | 0.57
+  488 | 164.14s | G4    | Fa     | 0.43
+  489 | 164.47s | G4    | Fa     | 0.43
+  490 | 164.82s | G4    | Fa     | 0.43
+  491 | 165.16s | G4    | Fa     | 0.43
+  492 | 165.51s | G4    | Fa     | 0.43
+  493 | 165.86s | G4    | Fa     | 0.43
+  494 | 166.19s | G4    | Fa     | 0.43
+  495 | 166.51s | G4    | Fa     | 0.43
+  496 | 166.84s | C#4   | Ti     | 0.86
+  497 | 167.16s | E4    | Re     | 0.14
+  498 | 167.49s | E4    | Re     | 0.14
+  499 | 167.81s | B3    | La     | 0.71
+  500 | 168.16s | B3    | La     | 0.71
+  501 | 168.48s | C#4   | Ti     | 0.86
+  502 | 168.83s | B3    | La     | 0.71
+  503 | 169.16s | B3    | La     | 0.71
+  504 | 169.48s | G4    | Fa     | 0.43
+  505 | 169.81s | F#4   | Mi     | 0.29
+  506 | 170.11s | F#4   | Mi     | 0.29
+  507 | 170.41s | E4    | Re     | 0.14
+  508 | 170.71s | E4    | Re     | 0.14
+  509 | 171.01s | E4    | Re     | 0.14
+  510 | 171.32s | E4    | Re     | 0.14
+  511 | 171.62s | F#4   | Mi     | 0.29
+  512 | 171.92s | D4    | Do     | 0.00
+  513 | 172.25s | E4    | Re     | 0.14
+  514 | 172.55s | E4    | Re     | 0.14
+  515 | 172.90s | B3    | La     | 0.71
+  516 | 173.20s | B3    | La     | 0.71
+  517 | 173.50s | C#4   | Ti     | 0.86
+  518 | 173.82s | B3    | La     | 0.71
+  519 | 174.15s | B3    | La     | 0.71
+  520 | 174.47s | G4    | Fa     | 0.43
+  521 | 174.80s | F#4   | Mi     | 0.29
+  522 | 175.10s | F#4   | Mi     | 0.29
+  523 | 175.40s | G4    | Fa     | 0.43
+  524 | 175.71s | E4    | Re     | 0.14
+  525 | 176.01s | E4    | Re     | 0.14
+  526 | 176.31s | D4    | Do     | 0.00
+  527 | 176.61s | B3    | La     | 0.71
+  528 | 176.94s | D4    | Do     | 0.00
+  529 | 177.24s | E4    | Re     | 0.14
+  530 | 177.56s | E4    | Re     | 0.14
+  531 | 177.91s | B3    | La     | 0.71
+  532 | 178.19s | E4    | Re     | 0.14
+  533 | 178.49s | E4    | Re     | 0.14
+  534 | 178.82s | E4    | Re     | 0.14
+  535 | 179.14s | REST  | REST   | -1.00
+  536 | 179.44s | E4    | Re     | 0.14
+  537 | 179.79s | E4    | Re     | 0.14
+  538 | 180.14s | E4    | Re     | 0.14
+  539 | 180.47s | E4    | Re     | 0.14
+  540 | 180.77s | E4    | Re     | 0.14
+  541 | 181.09s | E4    | Re     | 0.14
+  542 | 181.39s | E4    | Re     | 0.14
+  543 | 181.70s | E4    | Re     | 0.14
+  544 | 182.00s | E4    | Re     | 0.14
+  545 | 182.30s | E4    | Re     | 0.14
+  546 | 182.58s | E4    | Re     | 0.14
+  547 | 182.88s | B3    | La     | 0.71
+  548 | 183.23s | B3    | La     | 0.71
+  549 | 183.58s | C#4   | Ti     | 0.86
+  550 | 183.90s | B3    | La     | 0.71
+  551 | 184.25s | A3    | Sol    | 0.57
+  552 | 184.55s | G4    | Fa     | 0.43
+  553 | 184.88s | F#4   | Mi     | 0.29
+  554 | 185.20s | F#4   | Mi     | 0.29
+  555 | 185.50s | E4    | Re     | 0.14
+  556 | 185.81s | E4    | Re     | 0.14
+  557 | 186.11s | E4    | Re     | 0.14
+  558 | 186.41s | E4    | Re     | 0.14
+  559 | 186.71s | E4    | Re     | 0.14
+  560 | 187.04s | E4    | Re     | 0.14
+  561 | 187.36s | E4    | Re     | 0.14
+  562 | 187.66s | E4    | Re     | 0.14
+  563 | 187.97s | B3    | La     | 0.71
+  564 | 188.29s | C#4   | Ti     | 0.86
+  565 | 188.59s | C#4   | Ti     | 0.86
+  566 | 188.89s | B3    | La     | 0.71
+  567 | 189.22s | B3    | La     | 0.71
+  568 | 189.54s | G4    | Fa     | 0.43
+  569 | 189.87s | F#4   | Mi     | 0.29
+  570 | 190.22s | F#4   | Mi     | 0.29
+  571 | 190.57s | E4    | Re     | 0.14
+  572 | 190.91s | E4    | Re     | 0.14
+  573 | 191.26s | E4    | Re     | 0.14
+  574 | 191.59s | REST  | REST   | -1.00
+  575 | 191.96s | E4    | Re     | 0.14
+  576 | 192.28s | E4    | Re     | 0.14
+  577 | 192.56s | E4    | Re     | 0.14
+  578 | 192.91s | B3    | La     | 0.71
+  579 | 193.24s | C#4   | Ti     | 0.86
+  580 | 193.56s | C#4   | Ti     | 0.86
+  581 | 193.86s | B3    | La     | 0.71
+  582 | 194.21s | B3    | La     | 0.71
+  583 | 194.54s | G4    | Fa     | 0.43
+  584 | 194.89s | F#4   | Mi     | 0.29
+  585 | 195.23s | F#4   | Mi     | 0.29
+  586 | 195.58s | E4    | Re     | 0.14
+  587 | 195.93s | E4    | Re     | 0.14
+  588 | 196.28s | B3    | La     | 0.71
+  589 | 196.58s | B3    | La     | 0.71
+  590 | 196.91s | D4    | Do     | 0.00
+  591 | 197.23s | E4    | Re     | 0.14
+  592 | 197.56s | E4    | Re     | 0.14
+  593 | 197.86s | B3    | La     | 0.71
+  594 | 198.16s | D4    | Do     | 0.00
+  595 | 198.46s | E4    | Re     | 0.14
+  596 | 198.76s | E4    | Re     | 0.14
+  597 | 199.06s | D4    | Do     | 0.00
+  598 | 199.37s | D4    | Do     | 0.00
+  599 | 199.71s | E4    | Re     | 0.14
+  600 | 200.04s | E4    | Re     | 0.14
+  601 | 200.34s | E4    | Re     | 0.14
+  602 | 200.64s | E4    | Re     | 0.14
+  603 | 200.97s | E4    | Re     | 0.14
+  604 | 201.32s | E4    | Re     | 0.14
+  605 | 201.67s | E4    | Re     | 0.14
+  606 | 202.01s | E4    | Re     | 0.14
+  607 | 202.36s | E4    | Re     | 0.14
+  608 | 202.71s | B3    | La     | 0.71
+  609 | 203.06s | B3    | La     | 0.71
+  610 | 203.41s | C#4   | Ti     | 0.86
+  611 | 203.73s | B3    | La     | 0.71
+  612 | 204.06s | B3    | La     | 0.71
+  613 | 204.36s | G4    | Fa     | 0.43
+  614 | 204.66s | G4    | Fa     | 0.43
+  615 | 204.99s | F#4   | Mi     | 0.29
+  616 | 205.31s | E4    | Re     | 0.14
+  617 | 205.64s | E4    | Re     | 0.14
+  618 | 205.96s | E4    | Re     | 0.14
+  619 | 206.29s | E4    | Re     | 0.14
+  620 | 206.61s | E4    | Re     | 0.14
+  621 | 206.94s | F#4   | Mi     | 0.29
+  622 | 207.26s | E4    | Re     | 0.14
+  623 | 207.59s | D3    | Do     | 0.00
+  624 | 207.91s | E3    | Re     | 0.14
+  625 | 208.24s | C#4   | Ti     | 0.86
+  626 | 208.56s | E3    | Re     | 0.14
+  627 | 208.89s | E3    | Re     | 0.14
+  628 | 209.21s | E3    | Re     | 0.14
+  629 | 209.54s | E3    | Re     | 0.14
+  630 | 209.86s | E5    | Re     | 0.14
+  631 | 210.19s | D5    | Do     | 0.00
+  632 | 210.51s | E5    | Re     | 0.14
+  633 | 210.84s | REST  | REST   | -1.00
+  634 | 211.16s | REST  | REST   | -1.00
+  635 | 211.49s | E4    | Re     | 0.14
+  636 | 211.81s | E4    | Re     | 0.14
+  637 | 212.14s | E4    | Re     | 0.14
+  638 | 212.44s | E4    | Re     | 0.14
+  639 | 212.79s | E4    | Re     | 0.14
+  640 | 213.09s | E4    | Re     | 0.14
+  641 | 213.39s | B3    | La     | 0.71
+  642 | 213.69s | B3    | La     | 0.71
+  643 | 214.00s | C#4   | Ti     | 0.86
+  644 | 214.32s | B3    | La     | 0.71
+  645 | 214.65s | B3    | La     | 0.71
+  646 | 214.97s | G4    | Fa     | 0.43
+  647 | 215.30s | G4    | Fa     | 0.43
+  648 | 215.60s | F#4   | Mi     | 0.29
+  649 | 215.90s | F#4   | Mi     | 0.29
+  650 | 216.22s | E4    | Re     | 0.14
+  651 | 216.55s | E4    | Re     | 0.14
+  652 | 216.85s | E4    | Re     | 0.14
+  653 | 217.15s | E4    | Re     | 0.14
+  654 | 217.45s | D4    | Do     | 0.00
+  655 | 217.78s | E4    | Re     | 0.14
+  656 | 218.08s | E4    | Re     | 0.14
+  657 | 218.43s | B3    | La     | 0.71
+  658 | 218.76s | C#4   | Ti     | 0.86
+  659 | 219.10s | C#4   | Ti     | 0.86
+  660 | 219.41s | B3    | La     | 0.71
+  661 | 219.71s | B3    | La     | 0.71
+  662 | 220.01s | G4    | Fa     | 0.43
+  663 | 220.33s | G4    | Fa     | 0.43
+  664 | 220.66s | F#4   | Mi     | 0.29
+  665 | 220.98s | G4    | Fa     | 0.43
+  666 | 221.31s | E4    | Re     | 0.14
+  667 | 221.61s | E4    | Re     | 0.14
+  668 | 221.91s | D4    | Do     | 0.00
+  669 | 222.24s | B3    | La     | 0.71
+  670 | 222.59s | E4    | Re     | 0.14
+  671 | 222.91s | E4    | Re     | 0.14
+  672 | 223.21s | E4    | Re     | 0.14
+  673 | 223.54s | B3    | La     | 0.71
+  674 | 223.86s | E4    | Re     | 0.14
+  675 | 224.19s | E4    | Re     | 0.14
+  676 | 224.51s | E4    | Re     | 0.14
+  677 | 224.84s | E4    | Re     | 0.14
+  678 | 225.12s | E4    | Re     | 0.14
+  679 | 225.51s | E4    | Re     | 0.14
+  680 | 225.81s | E4    | Re     | 0.14
+  681 | 226.14s | E4    | Re     | 0.14
+  682 | 226.44s | E4    | Re     | 0.14
+  683 | 226.77s | E4    | Re     | 0.14
+  684 | 227.11s | E4    | Re     | 0.14
+  685 | 227.44s | E4    | Re     | 0.14
+  686 | 227.76s | E4    | Re     | 0.14
+  687 | 228.07s | E4    | Re     | 0.14
+  688 | 228.39s | E4    | Re     | 0.14
+  689 | 228.69s | B3    | La     | 0.71
+  690 | 228.97s | B3    | La     | 0.71
+  691 | 229.27s | C#4   | Ti     | 0.86
+  692 | 229.60s | B3    | La     | 0.71
+
+// === JS NOTE ARRAY (key: D major, BPM: 185) ===
+// Do=0.00 Re=0.14 Mi=0.29 Fa=0.43 Sol=0.57 La=0.71 Ti=0.86
+const SONG_NOTES = [
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:3, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:4, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:3, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:11, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'B4', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:5, lyric:''},  // Fa
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  // REST (3 beats)
+  {note:'B2', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:3, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:3, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'F#4', ratio:0.29, beats:2, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:2, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:5, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:3, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:3, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:3, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:10, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:3, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:6, lyric:''},  // Fa
+  {note:'A5', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:4, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'G3', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:3, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'G4', ratio:0.43, beats:11, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:3, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:4, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  // REST (5 beats)
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'E4', ratio:0.14, beats:3, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:11, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:6, lyric:''},  // Fa
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  // REST (2 beats)
+  {note:'B2', ratio:0.71, beats:1, lyric:''},  // La
+  // REST (1 beats)
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:11, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'A4', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:8, lyric:''},  // Fa
+  {note:'D5', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E5', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'D5', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'G3', ratio:0.43, beats:2, lyric:''},  // Fa
+  // REST (1 beats)
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'C#4', ratio:0.86, beats:2, lyric:''},  // Ti
+  {note:'D4', ratio:0.00, beats:3, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'C#4', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:3, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'G4', ratio:0.43, beats:15, lyric:''},  // Fa
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'B4', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A4', ratio:0.57, beats:2, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:8, lyric:''},  // Fa
+  {note:'C#4', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'B3', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'C#4', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'B3', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:2, lyric:''},  // Mi
+  {note:'E4', ratio:0.14, beats:4, lyric:''},  // Re
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'B3', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'C#4', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'B3', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:2, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'E4', ratio:0.14, beats:3, lyric:''},  // Re
+  // REST (1 beats)
+  {note:'E4', ratio:0.14, beats:11, lyric:''},  // Re
+  {note:'B3', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'C#4', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'A3', ratio:0.57, beats:1, lyric:''},  // Sol
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:2, lyric:''},  // Mi
+  {note:'E4', ratio:0.14, beats:8, lyric:''},  // Re
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'C#4', ratio:0.86, beats:2, lyric:''},  // Ti
+  {note:'B3', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:2, lyric:''},  // Mi
+  {note:'E4', ratio:0.14, beats:3, lyric:''},  // Re
+  // REST (1 beats)
+  {note:'E4', ratio:0.14, beats:3, lyric:''},  // Re
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'C#4', ratio:0.86, beats:2, lyric:''},  // Ti
+  {note:'B3', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:2, lyric:''},  // Mi
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'B3', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:2, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:9, lyric:''},  // Re
+  {note:'B3', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'C#4', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'B3', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'E4', ratio:0.14, beats:5, lyric:''},  // Re
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'E4', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'D3', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E3', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'C#4', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'E3', ratio:0.14, beats:4, lyric:''},  // Re
+  {note:'E5', ratio:0.14, beats:1, lyric:''},  // Re
+  {note:'D5', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E5', ratio:0.14, beats:1, lyric:''},  // Re
+  // REST (2 beats)
+  {note:'E4', ratio:0.14, beats:6, lyric:''},  // Re
+  {note:'B3', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'C#4', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'B3', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:2, lyric:''},  // Mi
+  {note:'E4', ratio:0.14, beats:4, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'C#4', ratio:0.86, beats:2, lyric:''},  // Ti
+  {note:'B3', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'G4', ratio:0.43, beats:2, lyric:''},  // Fa
+  {note:'F#4', ratio:0.29, beats:1, lyric:''},  // Mi
+  {note:'G4', ratio:0.43, beats:1, lyric:''},  // Fa
+  {note:'E4', ratio:0.14, beats:2, lyric:''},  // Re
+  {note:'D4', ratio:0.00, beats:1, lyric:''},  // Do
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'E4', ratio:0.14, beats:3, lyric:''},  // Re
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+  {note:'E4', ratio:0.14, beats:15, lyric:''},  // Re
+  {note:'B3', ratio:0.71, beats:2, lyric:''},  // La
+  {note:'C#4', ratio:0.86, beats:1, lyric:''},  // Ti
+  {note:'B3', ratio:0.71, beats:1, lyric:''},  // La
+];
+// BPM: 185
+
